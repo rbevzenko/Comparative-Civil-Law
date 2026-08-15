@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}Источники — Корпус сравнительного права{% endblock %}
+{% block content %}
+  <h1>Источники</h1>
+
+  <form method="get" action="/ui/sources" class="filter-bar">
+    <label for="jurisdiction">Юрисдикция</label>
+    <select name="jurisdiction" id="jurisdiction" onchange="this.form.submit()">
+      <option value="">Все</option>
+      {% for j in jurisdictions %}
+        <option value="{{ j }}" {% if j == selected_jurisdiction %}selected{% endif %}>{{ j }}</option>
+      {% endfor %}
+    </select>
+    <noscript><button type="submit">Применить</button></noscript>
+  </form>
+
+  {% if sources %}
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Юрисдикция</th>
+          <th>Название</th>
+          <th>Авторы</th>
+          <th>Издание</th>
+          <th>Год</th>
+          <th>Тип</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for source in sources %}
+          <tr>
+            <td>{{ source.jurisdiction }}</td>
+            <td><a href="/ui/sources/{{ source.id }}">{{ source.title }}</a></td>
+            <td>{{ source.authors | join(", ") }}</td>
+            <td>{{ source.edition or "—" }}</td>
+            <td>{{ source.year or "—" }}</td>
+            <td>{{ source.source_type }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p class="empty">Источников пока нет.</p>
+  {% endif %}
+{% endblock %}

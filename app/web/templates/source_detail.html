@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}{{ source.title }} — Корпус сравнительного права{% endblock %}
+{% block content %}
+  <p><a href="/ui/sources">&larr; ко всем источникам</a></p>
+  <h1>{{ source.title }}</h1>
+
+  <dl class="meta-list">
+    <dt>Авторы</dt><dd>{{ source.authors | join(", ") or "—" }}</dd>
+    <dt>Юрисдикция</dt><dd>{{ source.jurisdiction }}</dd>
+    <dt>Издание</dt><dd>{{ source.edition or "—" }}</dd>
+    <dt>Год</dt><dd>{{ source.year or "—" }}</dd>
+    <dt>Издательство</dt><dd>{{ source.publisher or "—" }}</dd>
+    <dt>Язык</dt><dd>{{ source.language or "—" }}</dd>
+    <dt>Тип источника</dt><dd>{{ source.source_type }}</dd>
+    <dt>Страниц в PDF</dt><dd>{{ source.pdf_pages_total or "—" }}</dd>
+    <dt>PDF</dt>
+    <dd>
+      {% if pdf_url %}
+        <a href="{{ pdf_url }}" target="_blank" rel="noopener">открыть оригинал (ссылка временная)</a>
+      {% else %}
+        —
+      {% endif %}
+    </dd>
+  </dl>
+
+  <h2>Чанки ({{ chunks | length }})</h2>
+  {% if chunks %}
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Цитата</th>
+          <th>№ пункта</th>
+          <th>Страницы</th>
+          <th>Текст (начало)</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for chunk in chunks %}
+          <tr>
+            <td><a href="/ui/chunks/{{ chunk.id }}">{{ chunk.citation }}</a></td>
+            <td>{{ chunk.point_number or "—" }}</td>
+            <td>
+              {% if chunk.page_start %}
+                {{ chunk.page_start }}{% if chunk.page_end and chunk.page_end != chunk.page_start %}–{{ chunk.page_end }}{% endif %}
+              {% else %}
+                —
+              {% endif %}
+            </td>
+            <td class="text-preview">{{ chunk.text[:160] }}{% if chunk.text | length > 160 %}…{% endif %}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p class="empty">Чанков пока нет.</p>
+  {% endif %}
+{% endblock %}
