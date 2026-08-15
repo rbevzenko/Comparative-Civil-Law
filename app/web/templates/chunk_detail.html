@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}{{ chunk.citation }} — Корпус сравнительного права{% endblock %}
+{% block content %}
+  {% if chunk.source %}
+    <p><a href="/ui/sources/{{ chunk.source.id }}">&larr; к источнику «{{ chunk.source.title }}»</a></p>
+  {% endif %}
+
+  <h1>{{ chunk.citation }}</h1>
+
+  {% if chunk.hierarchy %}
+    <p class="hierarchy">{{ chunk.hierarchy | join(" › ") }}</p>
+  {% endif %}
+
+  <dl class="meta-list">
+    <dt>№ пункта</dt><dd>{{ chunk.point_number or "—" }}</dd>
+    <dt>Страницы</dt>
+    <dd>
+      {% if chunk.page_start %}
+        {{ chunk.page_start }}{% if chunk.page_end and chunk.page_end != chunk.page_start %}–{{ chunk.page_end }}{% endif %}
+        {% if pdf_url %}
+          — <a href="{{ pdf_url }}#page={{ chunk.page_start }}" target="_blank" rel="noopener">открыть страницу в оригинале</a>
+        {% endif %}
+      {% else %}
+        —
+      {% endif %}
+    </dd>
+  </dl>
+
+  <div class="chunk-text">{{ chunk.text }}</div>
+
+  {% if chunk.footnotes %}
+    <h2>Сноски</h2>
+    <ol class="footnotes">
+      {% for fn in chunk.footnotes %}
+        <li value="{{ fn.number }}">{{ fn.text }}</li>
+      {% endfor %}
+    </ol>
+  {% endif %}
+{% endblock %}
