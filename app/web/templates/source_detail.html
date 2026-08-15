@@ -1,12 +1,16 @@
 {% extends "base.html" %}
 {% block title %}{{ source.title }} — Корпус сравнительного права{% endblock %}
 {% block content %}
-  <p><a href="/ui/sources">&larr; ко всем источникам</a></p>
-  <h1>{{ source.title }}</h1>
+  <p class="breadcrumb"><a href="/ui/sources">&larr; ко всем источникам</a></p>
+
+  <div class="page-head">
+    <h1>{{ source.title }}</h1>
+    <a href="/ui/upload/chunks?source_id={{ source.id }}" class="btn btn--primary">Загрузить чанки</a>
+  </div>
 
   <dl class="meta-list">
     <dt>Авторы</dt><dd>{{ source.authors | join(", ") or "—" }}</dd>
-    <dt>Юрисдикция</dt><dd>{{ source.jurisdiction }}</dd>
+    <dt>Юрисдикция</dt><dd><span class="badge">{{ source.jurisdiction }}</span></dd>
     <dt>Издание</dt><dd>{{ source.edition or "—" }}</dd>
     <dt>Год</dt><dd>{{ source.year or "—" }}</dd>
     <dt>Издательство</dt><dd>{{ source.publisher or "—" }}</dd>
@@ -52,6 +56,8 @@
       </tbody>
     </table>
   {% else %}
-    <p class="empty">Чанков пока нет.</p>
+    <p class="empty">
+      Чанков пока нет — <a href="/ui/upload/chunks?source_id={{ source.id }}">загрузите файл с чанками</a>.
+    </p>
   {% endif %}
 {% endblock %}

@@ -8,10 +8,10 @@ from sqlalchemy.orm import selectinload
 
 from app.api.database import get_db
 from app.api.models.chunk import Chunk
-from app.api.models.footnote import Footnote
 from app.api.models.source import Source
 from app.api.schemas.chunk import ChunkBulkCreate, ChunkDetail, ChunkList, ChunkRead
 from app.api.security import require_api_token
+from app.api.services.chunks import create_chunks as create_chunks_records
 
 # Bulk upload / listing scoped to a source — used by the normalization
 # pipeline that turns a parsed PDF into chunks.
@@ -39,28 +39,7 @@ async def create_chunks(
     db: Annotated[AsyncSession, Depends(get_db)],
 ) -> ChunkList:
     await _get_source_or_404(source_id, db)
-
-    created: list[Chunk] = []
-    for item in payload.chunks:
-        chunk = Chunk(
-            source_id=source_id,
-            citation=item.citation,
-            point_number=item.point_number,
-            text=item.text,
-            hierarchy=item.hierarchy,
-            page_start=item.page_start,
-            page_end=item.page_end,
-            embedding=item.embedding,
-            concept_ids=item.concept_ids,
-        )
-        for fn in item.footnotes:
-            chunk.footnotes.append(Footnote(number=fn.number, text=fn.text))
-        db.add(chunk)
-        created.append(chunk)
-
-    await db.commit()
-    for chunk in created:
-        await db.refresh(chunk)
+    created = await create_chunks_records(db, source_id, payload.chunks)
     return ChunkList(items=[ChunkRead.model_validate(c) for c in created], total=len(created))
 
 

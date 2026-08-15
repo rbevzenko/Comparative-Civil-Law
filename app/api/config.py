@@ -17,7 +17,13 @@ class Settings(BaseSettings):
     s3_bucket_name: str
     s3_presigned_url_expiry_seconds: int = 3600
 
-    ui_basic_auth_username: str = "admin"
+    # Two shared access passwords for the /ui/* web interface (session-cookie
+    # login, not HTTP Basic — see app/web/auth.py). Two, not one, so the
+    # password can be rotated per person without sharing a single secret.
+    ui_password_1: str
+    ui_password_2: str
+    # Signing key for the session cookie (starlette SessionMiddleware).
+    session_secret_key: str
 
     db_pool_size: int = 5
     db_max_overflow: int = 5
