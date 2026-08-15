@@ -9,11 +9,11 @@ from app.api.database import get_db
 from app.api.models.source import Source
 from app.api.schemas.source import SourceDetail, SourceList, SourceRead
 from app.api.security import require_api_token
-from app.api.storage import build_object_key, generate_presigned_url, upload_pdf
+from app.api.services.sources import InvalidSourceUpload
+from app.api.services.sources import create_source as create_source_record
+from app.api.storage import generate_presigned_url
 
 router = APIRouter(prefix="/sources", tags=["sources"], dependencies=[Depends(require_api_token)])
-
-ALLOWED_SOURCE_TYPES = {"commentary", "textbook"}
 
 
 @router.post("", response_model=SourceRead, status_code=status.HTTP_201_CREATED)
@@ -30,37 +30,24 @@ async def create_source(
     language: Annotated[str | None, Form()] = None,
     pdf_pages_total: Annotated[int | None, Form()] = None,
 ) -> Source:
-    if source_type not in ALLOWED_SOURCE_TYPES:
-        raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
-            detail=f"source_type must be one of {sorted(ALLOWED_SOURCE_TYPES)}",
+    try:
+        return await create_source_record(
+            db,
+            title=title,
+            jurisdiction=jurisdiction,
+            source_type=source_type,
+            authors_raw=authors,
+            edition=edition,
+            year=year,
+            publisher=publisher,
+            language=language,
+            pdf_pages_total=pdf_pages_total,
+            pdf_filename=pdf.filename,
+            pdf_content_type=pdf.content_type,
+            pdf_file=pdf.file,
         )
-    if pdf.content_type not in ("application/pdf", "application/x-pdf"):
-        raise HTTPException(status_code=status.HTTP_422_UNPROCESSABLE_ENTITY, detail="pdf must be a PDF file")
-
-    author_list = [a.strip() for a in authors.split(";") if a.strip()]
-
-    source_id = uuid.uuid4()
-    object_key = build_object_key(source_id, pdf.filename or "source.pdf")
-    upload_pdf(object_key, pdf.file, pdf.content_type or "application/pdf")
-
-    source = Source(
-        id=source_id,
-        title=title,
-        authors=author_list,
-        jurisdiction=jurisdiction,
-        edition=edition,
-        year=year,
-        publisher=publisher,
-        language=language,
-        pdf_object_key=object_key,
-        pdf_pages_total=pdf_pages_total,
-        source_type=source_type,
-    )
-    db.add(source)
-    await db.commit()
-    await db.refresh(source)
-    return source
+    except InvalidSourceUpload as exc:
+        raise HTTPException(status_code=status.HTTP_422_UNPROCESSABLE_ENTITY, detail=str(exc)) from exc
 
 
 @router.get("", response_model=SourceList)

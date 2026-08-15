@@ -1,7 +1,10 @@
 {% extends "base.html" %}
 {% block title %}Источники — Корпус сравнительного права{% endblock %}
 {% block content %}
-  <h1>Источники</h1>
+  <div class="page-head">
+    <h1>Источники</h1>
+    <a href="/ui/upload/source" class="btn btn--primary">Добавить источник</a>
+  </div>
 
   <form method="get" action="/ui/sources" class="filter-bar">
     <label for="jurisdiction">Юрисдикция</label>
@@ -11,7 +14,7 @@
         <option value="{{ j }}" {% if j == selected_jurisdiction %}selected{% endif %}>{{ j }}</option>
       {% endfor %}
     </select>
-    <noscript><button type="submit">Применить</button></noscript>
+    <noscript><button type="submit" class="btn btn--ghost">Применить</button></noscript>
   </form>
 
   {% if sources %}
@@ -29,7 +32,7 @@
       <tbody>
         {% for source in sources %}
           <tr>
-            <td>{{ source.jurisdiction }}</td>
+            <td><span class="badge">{{ source.jurisdiction }}</span></td>
             <td><a href="/ui/sources/{{ source.id }}">{{ source.title }}</a></td>
             <td>{{ source.authors | join(", ") }}</td>
             <td>{{ source.edition or "—" }}</td>
@@ -40,6 +43,6 @@
       </tbody>
     </table>
   {% else %}
-    <p class="empty">Источников пока нет.</p>
+    <p class="empty">Источников пока нет — <a href="/ui/upload/source">добавьте первый</a>.</p>
   {% endif %}
 {% endblock %}

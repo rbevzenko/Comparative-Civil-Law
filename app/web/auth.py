@@ -1,20 +1,26 @@
 import secrets
 
-from fastapi import Depends, HTTPException, status
-from fastapi.security import HTTPBasic, HTTPBasicCredentials
+from fastapi import Request
 
 from app.api.config import get_settings
 
-basic_scheme = HTTPBasic()
+SESSION_KEY = "authenticated"
 
 
-def require_basic_auth(credentials: HTTPBasicCredentials = Depends(basic_scheme)) -> None:
+class NotAuthenticated(Exception):
+    """Raised by require_session; caught by an app-level handler that
+    redirects to /ui/login (see app/api/main.py)."""
+
+
+def check_password(password: str) -> bool:
     settings = get_settings()
-    valid_user = secrets.compare_digest(credentials.username, settings.ui_basic_auth_username)
-    valid_pass = secrets.compare_digest(credentials.password, settings.api_token)
-    if not (valid_user and valid_pass):
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Invalid credentials",
-            headers={"WWW-Authenticate": "Basic"},
-        )
+    # Two independent shared passwords, either grants access — see
+    # Settings.ui_password_1/2 for why there are two.
+    return secrets.compare_digest(password, settings.ui_password_1) or secrets.compare_digest(
+        password, settings.ui_password_2
+    )
+
+
+def require_session(request: Request) -> None:
+    if not request.session.get(SESSION_KEY):
+        raise NotAuthenticated()

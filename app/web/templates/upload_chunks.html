@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title %}Загрузить чанки — Корпус сравнительного права{% endblock %}
+{% block content %}
+  <h1>Загрузить чанки</h1>
+  <p class="page-lede">
+    JSON-файл с уже нарезанными фрагментами и посчитанными эмбеддингами —
+    результат работы внешнего скрипта нормализации PDF. Сайт эмбеддинги не
+    считает, только сохраняет присланные.
+  </p>
+
+  {% if error %}<p class="form-error">{{ error }}</p>{% endif %}
+
+  {% if not sources %}
+    <p class="empty">Сначала <a href="/ui/upload/source">добавьте источник</a> — чанки привязываются к нему.</p>
+  {% else %}
+    <form method="post" action="/ui/upload/chunks" enctype="multipart/form-data" class="form">
+      <div class="field">
+        <label for="source_id">Источник *</label>
+        <select id="source_id" name="source_id" required>
+          <option value="">—</option>
+          {% for s in sources %}
+            <option value="{{ s.id }}" {% if selected_source_id and (selected_source_id | string) == (s.id | string) %}selected{% endif %}>
+              {{ s.jurisdiction }} — {{ s.title }}{% if s.edition %} ({{ s.edition }}){% endif %}
+            </option>
+          {% endfor %}
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="chunks_file">Файл чанков (JSON) *</label>
+        <input type="file" id="chunks_file" name="chunks_file" accept="application/json,.json" required>
+      </div>
+
+      <button type="submit" class="btn btn--primary">Загрузить чанки</button>
+    </form>
+
+    <details class="format-help">
+      <summary>Ожидаемый формат файла</summary>
+      <p>Объект с массивом <code>chunks</code> — та же схема, что у <code>POST /sources/{id}/chunks</code>:</p>
+      <pre class="code-block">{
+  "chunks": [
+    {
+      "citation": "Terré et al., Les obligations, 13e éd., n° 19",
+      "point_number": "19",
+      "text": "Le contrat est un accord de volontés…",
+      "hierarchy": ["Livre 1", "Titre 1", "Chapitre préliminaire"],
+      "page_start": 42,
+      "page_end": 43,
+      "embedding": [0.0123, -0.0456, "… 1536 чисел всего"],
+      "concept_ids": [],
+      "footnotes": [
+        {"number": 1, "text": "V. Cass. civ. 1re, 3 juin 2010."}
+      ]
+    }
+  ]
+}</pre>
+      <p>Полная схема — на <a href="/docs" target="_blank" rel="noopener">/docs</a> (модель <code>ChunkCreate</code>).</p>
+    </details>
+  {% endif %}
+{% endblock %}

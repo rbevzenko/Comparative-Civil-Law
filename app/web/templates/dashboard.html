@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block title %}Дашборд — Корпус сравнительного права{% endblock %}
+{% block content %}
+  <section class="hero">
+    <p class="hero__eyebrow">Сравнительное частное право · внутренний корпус</p>
+    <h1>Хранилище источников и чанков</h1>
+    <p class="hero__lede">
+      PDF книг по частному праву Германии, Швейцарии, Австрии, Нидерландов, Италии,
+      Испании, Англии, Греции, Бельгии и Франции, разобранных на цитируемые фрагменты
+      для справок по сравнительному праву.
+    </p>
+    <div class="hero__actions">
+      <a href="/ui/upload/source" class="btn btn--primary">Добавить источник</a>
+      <a href="/ui/upload/chunks" class="btn btn--ghost">Загрузить чанки</a>
+    </div>
+  </section>
+
+  <section class="stat-row">
+    <div class="stat-tile">
+      <span class="stat-tile__value">{{ n_sources }}</span>
+      <span class="stat-tile__label">источников</span>
+    </div>
+    <div class="stat-tile">
+      <span class="stat-tile__value">{{ n_chunks }}</span>
+      <span class="stat-tile__label">чанков</span>
+    </div>
+    <div class="stat-tile">
+      <span class="stat-tile__value">{{ n_footnotes }}</span>
+      <span class="stat-tile__label">сносок</span>
+    </div>
+    <div class="stat-tile">
+      <span class="stat-tile__value">{{ n_jurisdictions }}</span>
+      <span class="stat-tile__label">юрисдикций</span>
+    </div>
+  </section>
+
+  <section class="two-col">
+    <div>
+      <h2>По юрисдикциям</h2>
+      {% if breakdown %}
+        <table class="data-table">
+          <thead>
+            <tr><th>Юрисдикция</th><th>Источников</th><th>Чанков</th></tr>
+          </thead>
+          <tbody>
+            {% for row in breakdown %}
+              <tr>
+                <td><a href="/ui/sources?jurisdiction={{ row.jurisdiction }}">{{ row.jurisdiction }}</a></td>
+                <td>{{ row.n_sources }}</td>
+                <td>{{ row.n_chunks }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      {% else %}
+        <p class="empty">Пока пусто — <a href="/ui/upload/source">добавьте первый источник</a>.</p>
+      {% endif %}
+    </div>
+
+    <div>
+      <h2>Недавно добавленные источники</h2>
+      {% if recent_sources %}
+        <ul class="recent-list">
+          {% for source in recent_sources %}
+            <li>
+              <a href="/ui/sources/{{ source.id }}">{{ source.title }}</a>
+              <span class="badge">{{ source.jurisdiction }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p class="empty">Источников пока нет.</p>
+      {% endif %}
+    </div>
+  </section>
+{% endblock %}

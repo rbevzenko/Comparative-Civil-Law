@@ -2,7 +2,7 @@
 {% block title %}{{ chunk.citation }} — Корпус сравнительного права{% endblock %}
 {% block content %}
   {% if chunk.source %}
-    <p><a href="/ui/sources/{{ chunk.source.id }}">&larr; к источнику «{{ chunk.source.title }}»</a></p>
+    <p class="breadcrumb"><a href="/ui/sources/{{ chunk.source.id }}">&larr; к источнику «{{ chunk.source.title }}»</a></p>
   {% endif %}
 
   <h1>{{ chunk.citation }}</h1>

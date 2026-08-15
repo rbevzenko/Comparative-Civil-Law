@@ -8,11 +8,32 @@
 </head>
 <body>
   <header class="site-header">
-    <a href="/ui/sources" class="brand">Корпус сравнительного частного права</a>
-    <span class="subtitle">просмотр источников и чанков</span>
+    <div class="site-header__inner">
+      <a href="/ui/" class="brand">
+        <span class="brand__mark">CCL</span>
+        <span class="brand__name">Корпус сравнительного частного права</span>
+      </a>
+      <nav class="site-nav">
+        <a href="/ui/" class="{{ 'is-active' if active == 'dashboard' else '' }}">Дашборд</a>
+        <a href="/ui/sources" class="{{ 'is-active' if active == 'sources' else '' }}">Источники</a>
+        <a href="/ui/upload/source" class="{{ 'is-active' if active == 'upload_source' else '' }}">Добавить источник</a>
+        <a href="/ui/upload/chunks" class="{{ 'is-active' if active == 'upload_chunks' else '' }}">Загрузить чанки</a>
+        <a href="/docs" class="site-nav__api" target="_blank" rel="noopener">API&nbsp;↗</a>
+      </nav>
+      <form method="post" action="/ui/logout" class="logout-form">
+        <button type="submit" class="btn-link">Выйти</button>
+      </form>
+    </div>
   </header>
-  <main>
-    {% block content %}{% endblock %}
-  </main>
+
+  <div class="page">
+    {% if flash %}
+      <div class="flash">{{ flash }}</div>
+    {% endif %}
+
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+  </div>
 </body>
 </html>
