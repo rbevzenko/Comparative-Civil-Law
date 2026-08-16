@@ -4,7 +4,6 @@ from typing import Annotated
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy import func, select
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy.orm import selectinload
 
 from app.api.database import get_db
 from app.api.models.chunk import Chunk
@@ -12,6 +11,7 @@ from app.api.models.source import Source
 from app.api.schemas.chunk import ChunkBulkCreate, ChunkDetail, ChunkList, ChunkRead
 from app.api.security import require_api_token
 from app.api.services.chunks import create_chunks as create_chunks_records
+from app.api.services.chunks import get_chunk as get_chunk_record
 
 # Bulk upload / listing scoped to a source — used by the normalization
 # pipeline that turns a parsed PDF into chunks.
@@ -68,12 +68,7 @@ async def list_source_chunks(
 
 @chunks_router.get("/{chunk_id}", response_model=ChunkDetail)
 async def get_chunk(chunk_id: uuid.UUID, db: Annotated[AsyncSession, Depends(get_db)]) -> Chunk:
-    stmt = (
-        select(Chunk)
-        .where(Chunk.id == chunk_id)
-        .options(selectinload(Chunk.footnotes), selectinload(Chunk.source))
-    )
-    chunk = (await db.execute(stmt)).scalar_one_or_none()
+    chunk = await get_chunk_record(db, chunk_id)
     if chunk is None:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Chunk not found")
     return chunk
