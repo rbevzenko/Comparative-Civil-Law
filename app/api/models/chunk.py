@@ -3,7 +3,7 @@ from datetime import datetime
 from typing import TYPE_CHECKING
 
 from pgvector.sqlalchemy import Vector
-from sqlalchemy import ARRAY, Computed, DateTime, ForeignKey, Integer, Text, func
+from sqlalchemy import ARRAY, Computed, DateTime, ForeignKey, Integer, Text, UniqueConstraint, func
 from sqlalchemy.dialects.postgresql import JSONB, TSVECTOR, UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
@@ -25,11 +25,21 @@ EMBEDDING_DIM = 1536
 
 class Chunk(Base):
     __tablename__ = "chunks"
+    __table_args__ = (
+        UniqueConstraint("source_id", "external_id", name="uq_chunks_source_external_id"),
+    )
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     source_id: Mapped[uuid.UUID] = mapped_column(
         UUID(as_uuid=True), ForeignKey("sources.id", ondelete="CASCADE"), nullable=False, index=True
     )
+    # Stable id from the external normalization pipeline (e.g. the chunker's
+    # own "book_id-unit" key). Optional, but when present it lets re-uploading
+    # the same normalization output update existing chunks for this source
+    # instead of duplicating them — see app.api.services.chunks.create_chunks.
+    # NULL is excluded from the unique constraint by Postgres, so chunks
+    # without one never collide with each other.
+    external_id: Mapped[str | None] = mapped_column(Text, nullable=True)
     citation: Mapped[str] = mapped_column(Text, nullable=False)
     point_number: Mapped[str | None] = mapped_column(Text, nullable=True)
     text: Mapped[str] = mapped_column(Text, nullable=False)

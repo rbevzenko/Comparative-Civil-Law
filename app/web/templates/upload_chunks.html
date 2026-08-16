@@ -7,6 +7,12 @@
     результат работы внешнего скрипта нормализации PDF. Сайт эмбеддинги не
     считает, только сохраняет присланные.
   </p>
+  <p class="page-lede">
+    Если в чанках указан <code>external_id</code> (стабильный id из скрипта
+    нарезки) — повторная загрузка того же файла для этого источника обновит
+    существующие чанки, а не задублирует их. Без <code>external_id</code>
+    каждая загрузка добавляет новые строки.
+  </p>
 
   {% if error %}<p class="form-error">{{ error }}</p>{% endif %}
 
@@ -40,6 +46,7 @@
       <pre class="code-block">{
   "chunks": [
     {
+      "external_id": "terre-obligations-13ed-p1-n19",
       "citation": "Terré et al., Les obligations, 13e éd., n° 19",
       "point_number": "19",
       "text": "Le contrat est un accord de volontés…",
