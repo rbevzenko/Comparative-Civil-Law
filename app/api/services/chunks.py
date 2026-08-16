@@ -9,6 +9,16 @@ from app.api.models.footnote import Footnote
 from app.api.schemas.chunk import ChunkCreate
 
 
+async def get_chunk(db: AsyncSession, chunk_id: uuid.UUID) -> Chunk | None:
+    """Shared by GET /chunks/{id} and the MCP get_chunk tool."""
+    stmt = (
+        select(Chunk)
+        .where(Chunk.id == chunk_id)
+        .options(selectinload(Chunk.footnotes), selectinload(Chunk.source))
+    )
+    return (await db.execute(stmt)).scalar_one_or_none()
+
+
 async def create_chunks(db: AsyncSession, source_id: uuid.UUID, items: list[ChunkCreate]) -> list[Chunk]:
     """Shared by POST /sources/{id}/chunks and the /ui/upload/chunks form.
 

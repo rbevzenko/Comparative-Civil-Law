@@ -36,5 +36,28 @@ services:
       - "8000:8000"
     mem_limit: 1024m
 
+  # Reverse proxy in front of api: gets a real Let's Encrypt certificate for
+  # MCP_DOMAIN automatically. Required because Claude.ai custom connectors
+  # must be reachable over HTTPS with a valid cert — a bare IP on plain HTTP
+  # (the api service above, kept for backward-compatible direct access)
+  # doesn't qualify.
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    depends_on:
+      - api
+    environment:
+      MCP_DOMAIN: ${MCP_DOMAIN:?MCP_DOMAIN must be set}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    mem_limit: 128m
+
 volumes:
   db_data:
+  caddy_data:
+  caddy_config:

@@ -28,6 +28,17 @@ class Settings(BaseSettings):
     db_pool_size: int = 5
     db_max_overflow: int = 5
 
+    # --- MCP server (/mcp) ---
+    # Claude.ai custom connectors have no field for a static bearer token, so
+    # the token travels as a query param baked into the connector URL itself
+    # (https://.../mcp?token=...) instead of an Authorization header.
+    mcp_access_token: str
+    # Needed to embed the free-text query for the vector half of search —
+    # must be the same model/dimensionality the corpus chunks were embedded
+    # with (text-embedding-3-small, 1536-dim). Without it the MCP search
+    # tool falls back to lexical-only search.
+    openai_api_key: str | None = None
+
 
 @lru_cache
 def get_settings() -> Settings:

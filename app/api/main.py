@@ -1,3 +1,5 @@
+import contextlib
+from collections.abc import AsyncIterator
 from pathlib import Path
 from urllib.parse import quote
 
@@ -10,6 +12,8 @@ from app.api.config import get_settings
 from app.api.routers.chunks import chunks_router, source_chunks_router
 from app.api.routers.search import router as search_router
 from app.api.routers.sources import router as sources_router
+from app.mcp.auth import MCPTokenMiddleware
+from app.mcp.server import mcp
 from app.web.auth import NotAuthenticated
 from app.web.router import login_router
 from app.web.router import router as web_router
@@ -17,7 +21,14 @@ from app.web.router import router as web_router
 WEB_DIR = Path(__file__).resolve().parent.parent / "web"
 settings = get_settings()
 
-app = FastAPI(title="Comparative Civil Law — Corpus Storage Service")
+
+@contextlib.asynccontextmanager
+async def lifespan(app: FastAPI) -> AsyncIterator[None]:
+    async with mcp.session_manager.run():
+        yield
+
+
+app = FastAPI(title="Comparative Civil Law — Corpus Storage Service", lifespan=lifespan)
 
 app.add_middleware(
     SessionMiddleware,
@@ -26,6 +37,7 @@ app.add_middleware(
     max_age=14 * 24 * 60 * 60,
     same_site="lax",
 )
+app.add_middleware(MCPTokenMiddleware)
 
 app.include_router(sources_router)
 app.include_router(source_chunks_router)
@@ -53,3 +65,11 @@ async def root_redirect() -> RedirectResponse:
 @app.get("/health", tags=["health"])
 async def health() -> dict[str, str]:
     return {"status": "ok"}
+
+
+# Mounted last: Starlette matches routes in registration order, and a Mount
+# at "/" matches every path as a prefix, so anything registered after this
+# would be unreachable. Everything above (including /health, /ui/*, /static)
+# is checked first; only /mcp — the one route inside this sub-app — falls
+# through to here.
+app.mount("/", mcp.streamable_http_app())
