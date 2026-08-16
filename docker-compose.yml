@@ -49,7 +49,9 @@ services:
     environment:
       MCP_DOMAIN: ${MCP_DOMAIN:?MCP_DOMAIN must be set}
     ports:
-      - "80:80"
+      # Port 80 is intentionally not mapped: it's already taken by a system
+      # nginx on the host. Caddy gets its cert via TLS-ALPN-01 instead (see
+      # Caddyfile), which only needs 443.
       - "443:443"
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
