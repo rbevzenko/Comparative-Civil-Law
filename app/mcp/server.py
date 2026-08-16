@@ -1,12 +1,25 @@
 import uuid
 
 from mcp.server.fastmcp import FastMCP
+from mcp.server.transport_security import TransportSecuritySettings
 
+from app.api.config import get_settings
 from app.api.database import AsyncSessionLocal
 from app.api.schemas.search import SearchRequest
 from app.api.services.chunks import get_chunk as get_chunk_record
 from app.api.services.search import run_search
 from app.mcp.embeddings import embed_query
+
+_settings = get_settings()
+
+# The SDK's DNS-rebinding protection defaults to allowing only
+# localhost/127.0.0.1 Host headers — everything arriving through the Caddy
+# reverse proxy would otherwise get rejected with 421.
+_allowed_hosts = ["127.0.0.1:*", "localhost:*", "[::1]:*"]
+_allowed_origins = ["http://127.0.0.1:*", "http://localhost:*", "http://[::1]:*"]
+if _settings.mcp_domain:
+    _allowed_hosts += [_settings.mcp_domain, f"{_settings.mcp_domain}:*"]
+    _allowed_origins.append(f"https://{_settings.mcp_domain}")
 
 mcp = FastMCP(
     name="Comparative Civil Law Corpus",
@@ -19,6 +32,7 @@ mcp = FastMCP(
     ),
     stateless_http=True,
     json_response=True,
+    transport_security=TransportSecuritySettings(allowed_hosts=_allowed_hosts, allowed_origins=_allowed_origins),
 )
 
 
