@@ -24,6 +24,9 @@
         —
       {% endif %}
     </dd>
+    {% if chunk.external_id %}
+      <dt>External ID</dt><dd><code>{{ chunk.external_id }}</code></dd>
+    {% endif %}
   </dl>
 
   <div class="chunk-text">{{ chunk.text }}</div>

@@ -9,6 +9,10 @@ from app.api.schemas.source import SourceRead
 
 
 class ChunkCreate(BaseModel):
+    # Stable id from the external normalization pipeline. Optional, but
+    # strongly recommended: when set, re-uploading the same file for this
+    # source updates the matching chunks instead of duplicating them.
+    external_id: str | None = None
     citation: str
     point_number: str | None = None
     text: str
@@ -31,6 +35,7 @@ class ChunkRead(BaseModel):
 
     id: uuid.UUID
     source_id: uuid.UUID
+    external_id: str | None
     citation: str
     point_number: str | None
     text: str
