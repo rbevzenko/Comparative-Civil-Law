@@ -33,6 +33,11 @@ class Settings(BaseSettings):
     # the token travels as a query param baked into the connector URL itself
     # (https://.../mcp?token=...) instead of an Authorization header.
     mcp_access_token: str
+    # Public hostname MCP is reachable at (matches Caddyfile/nginx server_name).
+    # The MCP SDK's DNS-rebinding protection checks the incoming Host header
+    # against an allowlist that defaults to localhost only — without this,
+    # every request arriving through the reverse proxy gets 421'd.
+    mcp_domain: str | None = None
     # Needed to embed the free-text query for the vector half of search —
     # must be the same model/dimensionality the corpus chunks were embedded
     # with (text-embedding-3-small, 1536-dim). Without it the MCP search
