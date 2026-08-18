@@ -1,11 +1,12 @@
 import uuid
 from datetime import datetime
 
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, ConfigDict, Field, computed_field
 
 from app.api.models.chunk import EMBEDDING_DIM
 from app.api.schemas.footnote import FootnoteCreate, FootnoteRead
 from app.api.schemas.source import SourceRead
+from app.api.security import build_universal_ref
 
 
 class ChunkCreate(BaseModel):
@@ -45,6 +46,13 @@ class ChunkRead(BaseModel):
     concept_ids: list[uuid.UUID] | None
     created_at: datetime
     updated_at: datetime
+
+    @computed_field  # type: ignore[prop-decorator]
+    @property
+    def universal_ref(self) -> str | None:
+        """Public, citable link to this fragment — show it next to every
+        quote pulled from this chunk (see app.web.router's /source route)."""
+        return build_universal_ref(self.id)
 
 
 class ChunkDetail(ChunkRead):

@@ -6,6 +6,7 @@ from mcp.server.transport_security import TransportSecuritySettings
 from app.api.config import get_settings
 from app.api.database import AsyncSessionLocal
 from app.api.schemas.search import SearchRequest
+from app.api.security import build_universal_ref
 from app.api.services.chunks import get_chunk as get_chunk_record
 from app.api.services.search import run_search
 from app.mcp.embeddings import embed_query
@@ -28,7 +29,13 @@ mcp = FastMCP(
         "гражданского права: учебники, комментарии, статьи по разным "
         "юрисдикциям, нарезанные на цитируемые фрагменты с указанием "
         "страницы источника. search_corpus ищет; get_chunk отдаёт "
-        "фрагмент целиком по id, полученному из результатов поиска."
+        "фрагмент целиком по id, полученному из результатов поиска. "
+        "У каждого фрагмента есть universal_ref — постоянная кликабельная "
+        "ссылка на страницу с этим конкретным фрагментом и его "
+        "реквизитами. ВСЕГДА показывай universal_ref пользователю рядом "
+        "с цитатой из корпуса, чтобы он мог проверить фрагмент по ссылке "
+        "— так же, как ссылки на источник в других коннекторах контура "
+        "(КонсультантПлюс, «Высшие суды» и т.п.)."
     ),
     stateless_http=True,
     json_response=True,
@@ -43,12 +50,15 @@ def _format_chunk(chunk, score: float | None = None) -> str:
     if chunk.page_end and chunk.page_end != chunk.page_start:
         pages += f"–{chunk.page_end}"
     hierarchy = " › ".join(chunk.hierarchy) if chunk.hierarchy else None
+    ref = build_universal_ref(chunk.id)
 
     lines = [f"id: {chunk.id}", f"источник: {src_desc}", f"цитата: {chunk.citation}", f"страница: {pages}"]
     if hierarchy:
         lines.append(f"раздел: {hierarchy}")
     if score is not None:
         lines.append(f"релевантность: {score:.4f}")
+    if ref:
+        lines.append(f"universal_ref: {ref}")
     lines.append("")
     lines.append(chunk.text)
     if chunk.footnotes:
@@ -72,6 +82,11 @@ async def search_corpus(
     jurisdiction — необязательный фильтр по юрисдикции (например, "AT", "FR", "DE").
     source_type — необязательный фильтр по типу источника (например, "textbook", "commentary").
     limit — сколько фрагментов вернуть (1-100, по умолчанию 10).
+
+    Каждый найденный фрагмент содержит universal_ref — постоянную ссылку
+    на страницу именно с этим фрагментом и его библиографическими
+    реквизитами. ВСЕГДА показывай эту ссылку пользователю рядом с цитатой,
+    чтобы он мог проверить фрагмент по первоисточнику.
     """
     limit = max(1, min(limit, 100))
     embedding = await embed_query(query)
@@ -95,7 +110,11 @@ async def search_corpus(
 
 @mcp.tool()
 async def get_chunk(chunk_id: str) -> str:
-    """Вернуть фрагмент целиком по его id (полученному из search_corpus)."""
+    """Вернуть фрагмент целиком по его id (полученному из search_corpus).
+
+    Ответ содержит universal_ref — постоянную ссылку на этот фрагмент.
+    ВСЕГДА показывай её пользователю рядом с цитатой для проверки.
+    """
     try:
         parsed_id = uuid.UUID(chunk_id)
     except ValueError:
