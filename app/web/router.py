@@ -4,10 +4,10 @@ from pathlib import Path
 from typing import Annotated
 
 from fastapi import APIRouter, Depends, File, Form, Request, UploadFile, status
-from fastapi.responses import RedirectResponse
+from fastapi.responses import RedirectResponse, Response
 from fastapi.templating import Jinja2Templates
 from pydantic import ValidationError
-from sqlalchemy import func, select
+from sqlalchemy import func, select, tuple_
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import selectinload
 
@@ -16,6 +16,7 @@ from app.api.models.chunk import Chunk
 from app.api.models.footnote import Footnote
 from app.api.models.source import Source
 from app.api.schemas.chunk import ChunkBulkCreate
+from app.api.security import verify_chunk_signature
 from app.api.services.chunks import create_chunks as create_chunks_records
 from app.api.services.sources import ALLOWED_SOURCE_TYPES, InvalidSourceUpload
 from app.api.services.sources import create_source as create_source_record
@@ -29,6 +30,14 @@ templates = Jinja2Templates(directory=str(TEMPLATES_DIR))
 # this module requires one.
 login_router = APIRouter(prefix="/ui", tags=["web"])
 router = APIRouter(prefix="/ui", tags=["web"], dependencies=[Depends(require_session)])
+
+# The public citation page (universal_ref target). Deliberately outside
+# /ui: it must be openable by anyone who follows a link from a citation,
+# with no session and no API token — access is instead gated per-chunk by
+# the ?sig= query param (see app.api.security.verify_chunk_signature), and
+# the page itself shows only the one fragment plus a short snippet of its
+# immediate neighbors — never a way to browse the rest of the source.
+public_router = APIRouter(tags=["public"])
 
 
 def _pop_flash(request: Request) -> str | None:
@@ -304,3 +313,93 @@ async def ui_upload_chunks_submit(
     created = await create_chunks_records(db, source_id, payload.chunks)
     _set_flash(request, f"Загружено чанков: {len(created)} для источника «{source.title}».")
     return RedirectResponse(url=f"/ui/sources/{source_id}", status_code=status.HTTP_303_SEE_OTHER)
+
+
+# --- public citation page (universal_ref target) ---------------------------
+
+_NOT_FOUND_HTML = """<!doctype html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Ссылка недействительна</title>
+<link rel="stylesheet" href="/static/style.css"></head>
+<body><div class="page"><main>
+<h1>Ссылка недействительна</h1>
+<p class="page-lede">Такой фрагмент не найден, либо ссылка повреждена или устарела.</p>
+</main></div></body></html>"""
+
+
+def _snippet(text: str, limit: int = 220) -> str:
+    """Short, non-navigable teaser of a neighboring chunk's text — enough to
+    place the requested fragment in context, not enough to read the source
+    by hopping between /source/ links (there's nothing to click here)."""
+    flat = " ".join(text.split())
+    if len(flat) <= limit:
+        return flat
+    return flat[:limit].rsplit(" ", 1)[0] + "…"
+
+
+@public_router.get("/source/{chunk_id}", include_in_schema=False)
+async def source_public_detail(
+    chunk_id: uuid.UUID,
+    request: Request,
+    db: Annotated[AsyncSession, Depends(get_db)],
+    sig: str | None = None,
+):
+    """universal_ref target: renders one fragment (+ a short snippet of its
+    immediate neighbors for context) with its bibliographic reference.
+
+    No session, no API token — access is a per-chunk signature in ?sig=
+    (see app.api.security), and the page never exposes anything the
+    signature doesn't already name: no table of contents, no PDF, no
+    next/prev page links, no browsing to the rest of the source.
+    """
+    if not verify_chunk_signature(chunk_id, sig):
+        return Response(_NOT_FOUND_HTML, status_code=404, media_type="text/html", headers={"X-Robots-Tag": "noindex, nofollow"})
+
+    stmt = (
+        select(Chunk)
+        .where(Chunk.id == chunk_id)
+        .options(selectinload(Chunk.footnotes), selectinload(Chunk.source))
+    )
+    chunk = (await db.execute(stmt)).scalar_one_or_none()
+    if chunk is None:
+        return Response(_NOT_FOUND_HTML, status_code=404, media_type="text/html", headers={"X-Robots-Tag": "noindex, nofollow"})
+
+    # Nearest neighbors within the same source, by the same ordering used
+    # everywhere else chunks are listed (page_start, then created_at as a
+    # tiebreaker). Row-wise tuple comparison instead of two separate
+    # inequalities so the tiebreaker actually breaks ties correctly.
+    order_key = func.coalesce(Chunk.page_start, -1)
+    current_key = (chunk.page_start if chunk.page_start is not None else -1, chunk.created_at)
+
+    prev_stmt = (
+        select(Chunk)
+        .where(Chunk.source_id == chunk.source_id, Chunk.id != chunk.id)
+        .where(tuple_(order_key, Chunk.created_at) < current_key)
+        .order_by(order_key.desc(), Chunk.created_at.desc())
+        .limit(1)
+    )
+    next_stmt = (
+        select(Chunk)
+        .where(Chunk.source_id == chunk.source_id, Chunk.id != chunk.id)
+        .where(tuple_(order_key, Chunk.created_at) > current_key)
+        .order_by(order_key.asc(), Chunk.created_at.asc())
+        .limit(1)
+    )
+    prev_chunk = (await db.execute(prev_stmt)).scalar_one_or_none()
+    next_chunk = (await db.execute(next_stmt)).scalar_one_or_none()
+
+    response = templates.TemplateResponse(
+        request,
+        "source_public.html",
+        {
+            "chunk": chunk,
+            "prev_citation": prev_chunk.citation if prev_chunk else None,
+            "prev_snippet": _snippet(prev_chunk.text) if prev_chunk else None,
+            "next_citation": next_chunk.citation if next_chunk else None,
+            "next_snippet": _snippet(next_chunk.text) if next_chunk else None,
+        },
+    )
+    response.headers["X-Robots-Tag"] = "noindex, nofollow"
+    return response

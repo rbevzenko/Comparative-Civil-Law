@@ -16,6 +16,7 @@ from app.mcp.auth import MCPTokenMiddleware
 from app.mcp.server import mcp
 from app.web.auth import NotAuthenticated
 from app.web.router import login_router
+from app.web.router import public_router
 from app.web.router import router as web_router
 
 WEB_DIR = Path(__file__).resolve().parent.parent / "web"
@@ -45,6 +46,7 @@ app.include_router(chunks_router)
 app.include_router(search_router)
 app.include_router(login_router)
 app.include_router(web_router)
+app.include_router(public_router)
 
 app.mount("/static", StaticFiles(directory=str(WEB_DIR / "static")), name="static")
 

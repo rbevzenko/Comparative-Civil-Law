@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>{{ chunk.citation }} — Корпус сравнительного права</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    /* This page is intentionally not the editorial UI (no header, no nav,
+       no source-wide browsing) — see app/web/router.py's public_router. */
+    .source-public { max-width: 68ch; }
+    .source-mark {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-size: 0.85rem; color: var(--muted); margin-bottom: 1.5rem;
+    }
+    .source-mark__badge {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 1.6rem; height: 1.6rem; border-radius: 0.4rem;
+      background: var(--brand); color: #fff; font-weight: 700; font-size: 0.7rem;
+    }
+    .context-block { margin-top: 2.5rem; }
+    .context-item {
+      border-left: 3px solid var(--border, #e2e2e2); padding-left: 1rem;
+      margin-bottom: 1.25rem; color: var(--muted);
+    }
+    .context-item__label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 0.25rem; }
+    .context-item__citation { font-weight: 600; color: inherit; }
+    .copyright-note {
+      margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e2e2);
+      font-size: 0.8rem; color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <main class="source-public">
+      <div class="source-mark">
+        <span class="source-mark__badge">CCL</span>
+        <span>Корпус сравнительного частного права — фрагмент источника</span>
+      </div>
+
+      <h1>{{ chunk.citation }}</h1>
+
+      {% if chunk.hierarchy %}
+        <p class="hierarchy">{{ chunk.hierarchy | join(" › ") }}</p>
+      {% endif %}
+
+      <dl class="meta-list">
+        {% if chunk.source %}
+          <dt>Источник</dt>
+          <dd>
+            {{ chunk.source.title }}{% if chunk.source.edition %}, {{ chunk.source.edition }}{% endif %}
+            {% if chunk.source.authors %} — {{ chunk.source.authors | join(", ") }}{% endif %}
+          </dd>
+          <dt>Юрисдикция</dt><dd><span class="badge">{{ chunk.source.jurisdiction }}</span></dd>
+          {% if chunk.source.publisher or chunk.source.year %}
+            <dt>Издание</dt>
+            <dd>{{ chunk.source.publisher or "—" }}{% if chunk.source.year %}, {{ chunk.source.year }}{% endif %}</dd>
+          {% endif %}
+        {% endif %}
+        <dt>№ пункта</dt><dd>{{ chunk.point_number or "—" }}</dd>
+        <dt>Страница</dt>
+        <dd>
+          {% if chunk.page_start %}
+            {{ chunk.page_start }}{% if chunk.page_end and chunk.page_end != chunk.page_start %}–{{ chunk.page_end }}{% endif %}
+          {% else %}
+            —
+          {% endif %}
+        </dd>
+      </dl>
+
+      <div class="chunk-text">{{ chunk.text }}</div>
+
+      {% if chunk.footnotes %}
+        <h2>Сноски</h2>
+        <ol class="footnotes">
+          {% for fn in chunk.footnotes %}
+            <li value="{{ fn.number }}">{{ fn.text }}</li>
+          {% endfor %}
+        </ol>
+      {% endif %}
+
+      {% if prev_snippet or next_snippet %}
+        <div class="context-block">
+          <h2>Контекст</h2>
+          {% if prev_snippet %}
+            <div class="context-item">
+              <div class="context-item__label">Перед этим фрагментом — <span class="context-item__citation">{{ prev_citation }}</span></div>
+              <div>{{ prev_snippet }}</div>
+            </div>
+          {% endif %}
+          {% if next_snippet %}
+            <div class="context-item">
+              <div class="context-item__label">После этого фрагмента — <span class="context-item__citation">{{ next_citation }}</span></div>
+              <div>{{ next_snippet }}</div>
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      <p class="copyright-note">
+        Показан только запрошенный фрагмент источника для целей цитирования и проверки. Полный текст источника
+        охраняется авторским правом и через эту страницу не публикуется.
+      </p>
+    </main>
+  </div>
+</body>
+</html>
