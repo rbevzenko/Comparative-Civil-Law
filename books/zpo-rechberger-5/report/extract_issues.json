@@ -1,0 +1,26 @@
+{
+  "number_issues": [
+    {
+      "raw": "1",
+      "action": "repaired_by_neighbours",
+      "to": 3,
+      "expected": 3,
+      "line": 42438,
+      "evidence": "предыдущий 2, следующий 4"
+    }
+  ],
+  "absorbed_units": 0,
+  "sections_found": 57,
+  "toc_entries": 0,
+  "toc_anchored_to_line": 0,
+  "toc_page_only": 0,
+  "pages_without_lines": [
+    553,
+    601,
+    1737,
+    1943,
+    1987
+  ],
+  "profile": "verlag-oesterreich-zpo-kommentar-v1",
+  "method": "digital"
+}

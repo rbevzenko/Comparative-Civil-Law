@@ -1,0 +1,78 @@
+id: verlag-oesterreich-zpo-kommentar-v1
+publisher: Verlag Österreich
+jurisdiction: AT
+language: de
+# Rechberger/Klicka (Hrsg), ZPO Kommentar, 5. Aufl., Verlag Österreich 2019.
+# Издательский PDF, 2455 страниц, полоса 346×524 pt — та же, что у
+# Praxiskommentar GmbHG того же издательства.
+#
+# От `verlag-oesterreich-praxiskommentar-v1` отличается двумя вещами, и обе
+# упрощают разбор.
+#
+# Первая: сносок в книге нет вовсе. Ссылки набраны прямо в тексте, в скобках
+# («OLG Wien EvBl 1935/144; Buchegger in Fasching/Konecny II/3 §142 Rz3»).
+# Кегль 7.5 здесь несёт не аппарат, а списки Lit: и справки «[Fassung …]» в
+# начале параграфа — они часть текста, а не сносок, и отделять их не надо.
+#
+# Вторая: единственный кегль тела — 8.5, тем же кеглем набран и текст
+# закона, и колонцифра, и колонтитул. Поэтому колонтитул снимается только
+# полосой, а не кеглем.
+#
+# Том комментирует ЧЕТЫРЕ акта: EGJN (f44-69), JN (f70-553), EGZPO
+# (f554-601) и ZPO (f602-2216). Номера параграфов JN и ZPO пересекаются
+# сплошь, поэтому после нарезки идёт qualify_sections.py: он берёт параграф и
+# автора из колонтитула, а код акта — из диапазона полос, и оформляет адрес
+# по конвенции самой книги (у ZPO код не пишется, у остальных пишется после
+# номера).
+
+units:
+  - type: "Rz"
+    id_prefix: "rz"
+    mode: margin
+
+margin:
+  side: outer          # verso — поле слева (x37 при полосе 48), recto — справа
+  parity: printed      # смещение постоянно (printed = file − 43)
+  scope: book          # коридор ищется по всей книге: на первой полосе
+                       # параграфа набран текст закона с отступом, и его
+                       # «(1)», «(2)» сбивают постраничную меру полосы
+  pad: 2.0
+
+hierarchy:
+  outline_pages: [44, 2216]
+
+address:
+  section:
+    mode: outline      # черновой раздел; настоящий ставит qualify_sections.py
+    outline_pattern: '(?:§|Art)\s*([\dIVXL]+[a-z]?)'
+
+footnotes:
+  mode: none           # аппарата нет: ссылки набраны в тексте, в скобках
+
+printed_page:
+  band: 0.10           # колонцифра отдельной строкой на 0.914 высоты
+
+junk:
+  header_band: 0.085   # колонтитул «§52 Fucik» / «Zuständigkeit JN § 28»;
+                       # нижний край на 0.081, снимается ПОСЛЕ чтения колонцифры
+  footer_band: 0.93
+  patterns:
+    # Übersicht в начале некоторых параграфов: строки с отточием, справа
+    # номер Rz. Номер садится ровно в коридор маргиналий и без чистки даёт
+    # дубли первых Rz параграфа.
+    - '\.\s?\.\s?\.\s?\.\s?\.'
+
+statutory:
+  patterns:
+    - '§+\s*\d+[a-z]?\s*(?:Abs\s*\d+\s*)?(?:ZPO|JN|EO|AußStrG|ABGB|UGB|GmbHG|AktG|IO|ASGG|ZustG|GOG|RATG|GGG|B-VG|MRK)'
+    - '§§\s*\d+[a-z]?\s*(?:ff|f)?'
+    - 'Art\s*[IVXL]+\s*(?:EGJN|EGZPO)'
+    - 'Art\s*\d+\s*(?:Abs\s*\d+\s*)?(?:EuGVVO|MRK|B-VG)'
+
+cross_refs:
+  patterns:
+    - '(?:oben|unten|siehe|vgl|dazu|s)\s+Rz\s*\d+(?:\s*(?:ff|f)\.?)?'
+    - '§\s*\d+[a-z]?\s*Rz\s*\d+'
+
+citation:
+  template: "{cite_as} {address}"
