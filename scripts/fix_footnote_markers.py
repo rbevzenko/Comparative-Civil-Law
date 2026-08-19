@@ -24,6 +24,13 @@
 попадает в диапазон случайно и вниз. Первый номер страницы принимается,
 только если строка не похожа на продолжение (не начинается с номера дела
 вида «5 Ob …»).
+
+Сноска, начатая внизу одной полосы и продолженная вверху следующей, своего
+номера на второй полосе не имеет и иметь не может. Такой хвост приписывается
+к последней нумерованной сноске предыдущей полосы: иначе он остаётся блоком
+без номера, а при загрузке блоки без номера отсеиваются — в схеме приёмника
+номер обязателен. У Posch, IPR⁵ так висело 26 хвостов из 27 безномерных
+блоков.
 """
 
 import argparse
@@ -33,8 +40,10 @@ import re
 
 # «29 Dazu näher …» — знак и сразу текст.
 BARE = re.compile(r"^(\d{1,3})\s+(?=\S)")
-# «5 Ob 142/68», «3 Ob 627/82» — номер дела, а не знак сноски.
-CASE = re.compile(r"^\d{1,3}\s+(?:Ob|Ob[AS]|Präs|Nc|Fsc|Ds|Nd)\b")
+# «5 Ob 142/68», «3 Ob 627/82» — номер дела, а не знак сноски. Отделения
+# суда мало: «103 Ob die Rechtswahl wirksam ist…» — это сноска 103, начатая
+# с немецкого «ob» (ли), и без требования цифры после отделения она теряется.
+CASE = re.compile(r"^\d{1,3}\s+(?:Ob|Ob[AS]|Präs|Nc|Fsc|Ds|Nd)\s+\d")
 # Знак верхним индексом мог уехать на свою строку.
 LONE = re.compile(r"^[\(\[]?(\d{1,3})[\)\].]?$")
 # Штатные знаки со скобкой/точкой — их пайплайн читает и сам.
@@ -97,7 +106,7 @@ def main():
     a = ap.parse_args()
 
     path = os.path.join(a.book, "work", "pages.jsonl")
-    before = after = pages_touched = unnumbered = 0
+    before = after = pages_touched = unnumbered = carried_merged = 0
     out = []
     sample = []
 
@@ -113,11 +122,28 @@ def main():
                         sample.append((p["pdf_page"], old, new))
                     p["notes"] = new
                     pages_touched += 1
-            after += len(p.get("notes") or [])
-            unnumbered += sum(1 for n in (p.get("notes") or []) if n.get("number") is None)
             out.append(p)
 
+    # Хвост сноски с предыдущей полосы: номера у него нет, приписываем к
+    # последней нумерованной сноске той полосы, где сноска началась.
+    for prev, cur in zip(out, out[1:]):
+        notes = cur.get("notes") or []
+        if not notes or not notes[0].get("carried"):
+            continue
+        host = next((n for n in reversed(prev.get("notes") or [])
+                     if n.get("number") is not None), None)
+        if host is None:
+            continue
+        host["text"] = (host.get("text", "") + " " + notes[0].get("text", "")).strip()
+        cur["notes"] = notes[1:]
+        carried_merged += 1
+
+    for p in out:
+        after += len(p.get("notes") or [])
+        unnumbered += sum(1 for n in (p.get("notes") or []) if n.get("number") is None)
+
     print(f"страниц со сносками: {pages_touched}")
+    print(f"хвостов с предыдущей полосы прирощено: {carried_merged}")
     print(f"сносок было: {before} → стало: {after}, из них без номера: {unnumbered}")
     for pg, old, new in sample:
         print(f"\n  f{pg} было {len(old)}: {json.dumps(old[:1], ensure_ascii=False)[:150]}")
