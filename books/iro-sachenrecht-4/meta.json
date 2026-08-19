@@ -1,0 +1,16 @@
+{
+  "book_id": "iro-sachenrecht-4",
+  "authors": ["Gert Iro"],
+  "title": "Bürgerliches Recht. Band IV: Sachenrecht",
+  "edition": "6. Aufl.",
+  "year": 2016,
+  "publisher": "Verlag Österreich GmbH, Wien",
+  "jurisdiction": "AT",
+  "language": "de",
+  "isbn": null,
+  "cite_as": "Iro, Bürgerliches Recht IV⁶ (2016)",
+  "pdf_pages_total": 333,
+  "body_pages_pdf": "25-301",
+  "printed_page_offset": -24,
+  "notes": "Титул (f3) и оборот титула (f4): Gert Iro, Bürgerliches Recht Band IV, 6. Auflage, 2016, Verlag Österreich GmbH, Wien; серия под редакцией P. Bydlinski/F. Kerschner. Единица цитирования составная и печатается слитно: «1/13» = § 1 Rz 13; так же устроено оглавление книги (колонка «Rz» со значениями вида «2/26») и её внутренние отсылки («vgl Rz 2/29»). Форма cite_as согласована с уже загруженным томом той же серии (S. Dullinger, Schuldrecht AT⁸ Rz 1/7)."
+}
