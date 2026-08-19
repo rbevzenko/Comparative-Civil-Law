@@ -1,0 +1,77 @@
+id: verlag-oesterreich-praxiskommentar-v1
+publisher: Verlag Österreich
+jurisdiction: AT
+language: de
+# Foglar-Deinhardstein/Aburumieh/Hoffenscher-Summer (Hrsg), GmbHG
+# Praxiskommentar, Verlag Österreich 2017. Издательский PDF, 2094 страницы.
+#
+# Издательство то же, что у `verlag-oesterreich-kommentar-v1` (Insolvenz-
+# ordnung²), но линейка другая: там полоса 24×36 см и кегль тела 9.5, здесь
+# карманный формат 346×524 pt и кегль 8.5. Совпадает конвенция — маргиналии
+# на внешнем поле, голое число знаком сноски, оглавление у каждого параграфа
+# отточием, — а пороги свои.
+
+units:
+  - type: "Rz"
+    id_prefix: "rz"
+    mode: margin
+
+margin:
+  side: outer          # recto — поле справа, verso — слева
+  parity: printed      # смещение постоянно (printed = file − 51), колонцифра
+                       # читается на 100% полос
+  scope: book          # коридор ищется по всей книге: на первой полосе
+                       # каждого параграфа набран текст закона, и его «(1)»,
+                       # «(2)» сбивают постраничную меру полосы
+  pad: 2.0
+
+hierarchy:
+  outline_pages: [54, 2055]
+
+address:
+  section:
+    mode: outline
+    outline_pattern: '(?:§|Artikel)\s*(\d+[a-z]?)'
+
+footnotes:
+  # Здесь ни кегль, ни положение сносок не отделяют. Кегль 7.5 несёт разом
+  # три вещи: сам аппарат, списки Literatur в начале каждого параграфа и
+  # Inhaltsübersicht. Положение тоже не помогает: настоящий блок сносок
+  # начинается в среднем на 0.71 высоты, но на плотных полосах поднимается
+  # до 0.28, а список Literatur на первой полосе параграфа занимает всю
+  # полосу от 0.11 донизу. Любая полоса, взятая достаточно низко, чтобы
+  # поймать все сноски, разрезает списки Literatur пополам.
+  #
+  # Поэтому здесь сноски отделяет отдельный шаг — books/gmbhg-fah/
+  # split_footnotes.py — по признаку, который в этой книге работает без
+  # исключений: непрерывный хвост мелкого кегля до низа полосы, ПЕРВАЯ
+  # строка которого начинается с голого номера сноски.
+  mode: none
+
+printed_page:
+  # Колонцифра стоит отдельной строкой на 0.921 высоты; полоса 0.06 до неё
+  # не достаёт.
+  band: 0.10
+
+junk:
+  header_band: 0.08    # колонтитул «§16a Szöky» / «Hoffenscher-Summer §127»;
+                       # нижний край на 0.074, полоса 0.075 его не берёт
+  footer_band: 0.93    # снимается ПОСЛЕ чтения колонцифры
+  patterns:
+    # Оглавление параграфа (Inhaltsübersicht): строки с отточием, справа
+    # номер Rz. Номер садится ровно в коридор маргиналий, и без чистки
+    # каждый параграф получает дубли своих же первых Rz.
+    - '\.\s?\.\s?\.\s?\.\s?\.'
+
+statutory:
+  patterns:
+    - '§+\s*\d+[a-z]?\s*(?:Abs\s*\d+\s*)?(?:GmbHG|AktG|UGB|ABGB|EO|IO|URG|FBG|GebG|StGB|IPRG|ASVG|KSchG|ZPO|JN|GOG|ERV)'
+    - '§§\s*\d+[a-z]?\s*(?:ff|f)?'
+
+cross_refs:
+  patterns:
+    - '(?:oben|unten|siehe|vgl|dazu|s)\s+Rz\s*\d+(?:\s*(?:ff|f)\.?)?'
+    - '§\s*\d+[a-z]?\s*Rz\s*\d+'
+
+citation:
+  template: "{cite_as} {address}"

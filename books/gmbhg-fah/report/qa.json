@@ -1,0 +1,148 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/gmbhg-fah",
+  "cards": 4285,
+  "profile": "verlag-oesterreich-praxiskommentar-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 123,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Rz": 4285
+    }
+  },
+  "coverage": {
+    "share": 0.9979,
+    "covered_chars": 3191781,
+    "book_chars": 3198481,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 533,
+    "min": 32,
+    "max": 24615,
+    "too_short": [
+      "gmbhg-fah:rz:2/10",
+      "gmbhg-fah:rz:6/9",
+      "gmbhg-fah:rz:6a/23",
+      "gmbhg-fah:rz:9a/6",
+      "gmbhg-fah:rz:11/17",
+      "gmbhg-fah:rz:15/3",
+      "gmbhg-fah:rz:15/9",
+      "gmbhg-fah:rz:15/22",
+      "gmbhg-fah:rz:15a/10",
+      "gmbhg-fah:rz:16/2",
+      "gmbhg-fah:rz:16/13",
+      "gmbhg-fah:rz:18/2",
+      "gmbhg-fah:rz:18/3",
+      "gmbhg-fah:rz:18/10",
+      "gmbhg-fah:rz:18/29"
+    ],
+    "too_long": [
+      "gmbhg-fah:rz:25/31",
+      "gmbhg-fah:rz:29/1",
+      "gmbhg-fah:rz:30g/1",
+      "gmbhg-fah:rz:30j/1",
+      "gmbhg-fah:rz:33/1",
+      "gmbhg-fah:rz:41/1",
+      "gmbhg-fah:rz:63/1",
+      "gmbhg-fah:rz:76/1",
+      "gmbhg-fah:rz:81/1",
+      "gmbhg-fah:rz:82/1",
+      "gmbhg-fah:rz:ExkursIPRG/1"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.83,
+    "footnotes_total": 9426,
+    "unparsed_blocks": 1,
+    "per_card_median": 2,
+    "cards_with_calls_but_no_notes": 318,
+    "notes_without_visible_call": 1007
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 248,
+      "2": 102,
+      "3": 1662,
+      "4": 2273
+    }
+  },
+  "internal_refs": {
+    "refs_total": 5524,
+    "unresolved": 9,
+    "resolved_share": 0.998,
+    "sample": [
+      {
+        "card": "gmbhg-fah:rz:10/38",
+        "ref": "§10 Rz433",
+        "missing": 433
+      },
+      {
+        "card": "gmbhg-fah:rz:30b/38",
+        "ref": "§110 Rz262",
+        "missing": 262
+      },
+      {
+        "card": "gmbhg-fah:rz:35/6",
+        "ref": "§ 25 Rz 1717",
+        "missing": 1717
+      },
+      {
+        "card": "gmbhg-fah:rz:35/42",
+        "ref": "§ 49 Rz 49106",
+        "missing": 49106
+      },
+      {
+        "card": "gmbhg-fah:rz:35/78",
+        "ref": "§115 Rz20208",
+        "missing": 20208
+      },
+      {
+        "card": "gmbhg-fah:rz:35/81",
+        "ref": "vgl Rz 15212",
+        "missing": 15212
+      },
+      {
+        "card": "gmbhg-fah:rz:39/17",
+        "ref": "§50 Rz713",
+        "missing": 713
+      },
+      {
+        "card": "gmbhg-fah:rz:41/118",
+        "ref": "oben Rz 55316",
+        "missing": 55316
+      },
+      {
+        "card": "gmbhg-fah:rz:96/77",
+        "ref": "§225a Rz15",
+        "missing": 225
+      }
+    ]
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

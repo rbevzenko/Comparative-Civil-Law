@@ -1,0 +1,295 @@
+{
+  "path": "/home/user/books/gmbhg-praxiskommentar.pdf",
+  "sha256": "e08347478cd9944effe7ccc313d0fbc28b27a89305c09654b6dc6718b3fb71b9",
+  "pages": 2094,
+  "sampled_pages": [
+    354,
+    379,
+    404,
+    429,
+    454,
+    479,
+    504,
+    529,
+    554,
+    579,
+    604,
+    629,
+    654,
+    679,
+    704,
+    729,
+    754,
+    779,
+    804,
+    829,
+    854,
+    879,
+    904,
+    929,
+    954,
+    979,
+    1004,
+    1029,
+    1054,
+    1079,
+    1104,
+    1129,
+    1154,
+    1179,
+    1204,
+    1229,
+    1254,
+    1279,
+    1304,
+    1329,
+    1354,
+    1379,
+    1404,
+    1429,
+    1454,
+    1479,
+    1504,
+    1529,
+    1554,
+    1579,
+    1604,
+    1629,
+    1654,
+    1679,
+    1704,
+    1729,
+    1754,
+    1779,
+    1804,
+    1829
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 159,
+    "max_depth": 4,
+    "resolved_pages": 159,
+    "section_nodes": 126,
+    "sample": [
+      {
+        "title": "Inhaltsverzeichnis\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 10,
+        "depth": 0
+      },
+      {
+        "title": "Abkürzungsverzeichnis\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 16,
+        "depth": 0
+      },
+      {
+        "title": "Verzeichnis abgekürzt zitierter Literatur\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 34,
+        "depth": 0
+      },
+      {
+        "title": "Autorenverzeichnis\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 40,
+        "depth": 0
+      },
+      {
+        "title": "Bearbeiterverzeichnis\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 46,
+        "depth": 0
+      },
+      {
+        "title": "Gesetz über Gesellschaften mit beschränkter Haftung\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 52,
+        "depth": 0
+      },
+      {
+        "title": "I. Hauptstück. Organisatorische Bestimmungen\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 54,
+        "depth": 0
+      },
+      {
+        "title": "Erster Abschnitt. Errichtung der Gesellschaft\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 54,
+        "depth": 1
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 1951,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 1.0,
+    "offset_mode": -51,
+    "offset_stable": true,
+    "sample": [
+      {
+        "pdf_page": 354,
+        "printed": 303
+      },
+      {
+        "pdf_page": 379,
+        "printed": 328
+      },
+      {
+        "pdf_page": 404,
+        "printed": 353
+      },
+      {
+        "pdf_page": 429,
+        "printed": 378
+      },
+      {
+        "pdf_page": 454,
+        "printed": 403
+      },
+      {
+        "pdf_page": 479,
+        "printed": 428
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "8.5": 78568,
+      "7.5": 36240,
+      "8.0": 1363,
+      "5.5": 684,
+      "9.0": 611,
+      "9.5": 345,
+      "4.9": 155
+    },
+    "body": 8.5,
+    "candidates_footnote": [
+      5.5
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 839,
+    "share_at_page_bottom": 0.15
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      43,
+      29,
+      34,
+      25
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "n° голый номер в начале абзаца": {
+      "hits": 356,
+      "monotonic_share": 0.88,
+      "first": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 381,
+      "monotonic_share": 0.85,
+      "first": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42"
+      ]
+    },
+    "§ с номером": {
+      "hits": 70,
+      "monotonic_share": 0.6,
+      "first": [
+        "20",
+        "22",
+        "22",
+        "22",
+        "24"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 18170,
+    "suspicious": 369,
+    "share": 0.0203,
+    "sample": [
+      "GmbHG",
+      "GmbHR",
+      "GmbHG",
+      "GmbHG",
+      "GmbHR",
+      "GmbHG",
+      "GmbHG",
+      "GmbHG",
+      "GmbHG",
+      "GmbHG",
+      "GmbHG",
+      "GmbHG"
+    ]
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        48.0,
+        303.0
+      ],
+      "even": [
+        43.0,
+        298.0
+      ]
+    },
+    "left": {
+      "hits": 63,
+      "monotonic_share": 0.77,
+      "even_page_share": 0.0,
+      "first": [
+        36,
+        18,
+        25,
+        26,
+        47,
+        48
+      ]
+    },
+    "right": {
+      "hits": 70,
+      "monotonic_share": 0.78,
+      "even_page_share": 1.0,
+      "first": [
+        22,
+        23,
+        24,
+        15,
+        16,
+        5
+      ]
+    }
+  },
+  "statutory": {
+    "DE/AT/CH": 9
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "В оглавлении 126 узлов с номером параграфа: адрес единицы, скорее всего, составной (§ NNN + номер), это влияет на id.",
+      "Кликабельных сносок нет — привязка по кеглю и положению."
+    ]
+  }
+}
