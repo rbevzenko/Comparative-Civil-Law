@@ -34,6 +34,29 @@ EMBEDDING_MODEL = "text-embedding-3-small"
 MAX_CHARS = 18000
 
 
+class TooLarge(Exception):
+    """Тело запроса не прошло через прокси перед сервисом."""
+
+
+def post_chunks(url, items, token, limit=None):
+    """Отправка карточек с делением пачки пополам при 413.
+
+    Предел на размер тела стоит не в сервисе, а в прокси перед ним, и узнать
+    его заранее неоткуда. Поэтому он нащупывается: пачка делится пополам,
+    пока не пройдёт, и найденный размер запоминается на остаток загрузки.
+    """
+    try:
+        post_json(url, {"chunks": items}, token)
+        return limit or len(items)
+    except TooLarge:
+        if len(items) == 1:
+            raise SystemExit(f"одна карточка {items[0]['external_id']} не лезет в предел прокси")
+        half = len(items) // 2
+        print(f"  тело велико, делю пачку {len(items)} → {half}", flush=True)
+        found = post_chunks(url, items[:half], token, limit)
+        return post_chunks(url, items[half:], token, min(found, half))
+
+
 def post_json(url, payload, token, timeout=180, retries=4):
     body = json.dumps(payload).encode()
     last = None
@@ -47,7 +70,12 @@ def post_json(url, payload, token, timeout=180, retries=4):
                 return json.loads(r.read().decode())
         except urllib.error.HTTPError as e:
             detail = e.read().decode()[:600]
-            # 4xx — это наша ошибка в данных, повтор её не вылечит.
+            # 413 — единственный код, который лечится повтором меньшей пачкой:
+            # перед сервисом стоит nginx со своим пределом на тело запроса, а
+            # пачка из 64 карточек с векторами на 1536 весит около двух мегабайт.
+            if e.code == 413:
+                raise TooLarge(detail)
+            # Остальные 4xx — наша ошибка в данных, повтор её не вылечит.
             if 400 <= e.code < 500:
                 raise SystemExit(f"HTTP {e.code} от {url}: {detail}")
             last = f"HTTP {e.code}: {detail}"
@@ -103,7 +131,7 @@ def main():
     ap.add_argument("--upload", required=True, help="output/upload.json от upload_projection.py")
     ap.add_argument("--source-id", required=True, help="uuid источника, уже заведённого в сервисе")
     ap.add_argument("--base-url", required=True)
-    ap.add_argument("--batch", type=int, default=64, help="карточек в одном POST")
+    ap.add_argument("--batch", type=int, default=32, help="карточек в одном POST (уменьшается сам, если прокси не пропускает)")
     ap.add_argument("--embed-batch", type=int, default=96)
     ap.add_argument("--limit", type=int, help="взять только первые N карточек (проверка тракта)")
     ap.add_argument("--dry-run", action="store_true", help="посчитать и проверить, ничего не грузить")
@@ -162,7 +190,7 @@ def main():
 
     url = f"{a.base_url.rstrip('/')}/sources/{a.source_id}/chunks"
     state = open(a.state, "a", encoding="utf-8") if a.state else None
-    sent = 0
+    sent, batch = 0, a.batch
     # Эмбеддинги считаются пачками покрупнее, чем идёт POST: у эмбеддера
     # накладные расходы на запрос, у приёмника — на размер тела.
     for s in range(0, len(items), a.embed_batch):
@@ -170,9 +198,11 @@ def main():
         vecs = embed([i["text"] for i in block], key)
         for i, v in zip(block, vecs):
             i["embedding"] = v
-        for b in range(0, len(block), a.batch):
-            part = block[b:b + a.batch]
-            post_json(url, {"chunks": part}, token)
+        b = 0
+        while b < len(block):
+            part = block[b:b + batch]
+            batch = min(batch, post_chunks(url, part, token, batch))
+            b += len(part)
             sent += len(part)
             if state:
                 state.write("".join(i["external_id"] + "\n" for i in part))
