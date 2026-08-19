@@ -1,0 +1,71 @@
+id: br-reihe-digital-v1
+publisher: Springer Wien New York / Verlag Österreich
+jurisdiction: AT
+language: de
+# Серия «Bürgerliches Recht» (Lehrbuchreihe), издательские файлы.
+# Собран по Kerschner, Bürgerliches Recht V: Familienrecht, 4. Aufl. 2010.
+#
+# Издательство у серии менялось на ходу: тома до 2010 выходили в Springer
+# Wien New York, с 2013 — в Verlag Österreich. Вёрстка и конвенции при этом
+# те же, поэтому профиль привязан к СЕРИИ, а не к издательству.
+#
+# От `verlag-oesterreich-lehrbuch-v1` отличается тем, что там скан (полоса
+# 1777×2659 pt, кегль тела 43), а здесь издательский файл (439×666, кегль
+# 10.5). Общими остаются только конвенции книги, пороги — свои.
+#
+# Единица цитирования составная и печатается слитно: «1/21» = § 1 Rz 21.
+# Номер висит на ВНЕШНЕМ поле и меняет сторону на развороте, поэтому книга
+# проходит через scripts/normalize_margin_numbers.py до extract.py.
+#
+# В файле нет пробелов: слова разделены только позицией. Своя сборка слов из
+# символов это переживает (порог пробела считается от ширины символа строки),
+# а вот pdfplumber.extract_text() с настройками по умолчанию склеивает текст
+# в «DasFamilienrechtdringt» — не пользоваться им для проверки.
+
+units:
+  - type: "Rz"
+    id_prefix: "rz"
+    mode: flow
+    # Неразрывный пробел ставит normalize_margin_numbers.py и только для
+    # номеров, снятых с поля: без метки паттерн ловит перенос перекрёстной
+    # ссылки («2/41]) gegenüber…»), а не начало единицы. §§ здесь 1-6.
+    pattern: '^(?:[1-6])/(\d{1,3}) \s*'
+    address_template: "Rz {section}/{number}"
+
+address:
+  section:
+    mode: pattern
+    pattern: '^([1-6])/\d{1,3} '
+    anchor: start
+  template: "Rz {section}/{number}"
+
+footnotes:
+  # Кегли разделяются чисто: тело 10.5, сноски 8.5 (и 8.0 у части блоков).
+  # Полоса подпирает снизу: блок сносок начинается не выше 0.76 высоты, а
+  # мелкий кегль внутри тела не опускается ниже 0.74. Замерено по 44 полосам.
+  mode: font_bottom
+  note_size_max: 9.0
+  bottom_band: 0.75
+
+printed_page:
+  # Колонцифра стоит внизу полосы отдельной строкой, но НЕ у самого края:
+  # на высоте 0.91, поэтому полоса поиска 0.06 её не достаёт и в карточках
+  # не остаётся типографской страницы вовсе.
+  band: 0.10
+
+junk:
+  header_band: 0.075   # колонтитул «§1 Allgemeines» / «FamilieundRecht §1»
+  footer_band: 0.93    # снимается ПОСЛЕ чтения колонцифры
+  patterns: []
+
+statutory:
+  patterns:
+    - '§+\s*\d+[a-z]?\s*(?:Abs\s*\d+\s*)?(?:ABGB|EheG|EPG|AußStrG|KSchG|UVG|UStG|ASVG|IO|EO|GBG|StGB)'
+    - '§§\s*\d+[a-z]?\s*(?:ff|f)?'
+
+cross_refs:
+  patterns:
+    - '(?:oben|unten|siehe|vgl|dazu|s)\s+Rz\s?\d{1,2}/\d{1,3}(?:\s*(?:ff|f)\.?)?'
+
+citation:
+  template: "{cite_as} {address}"

@@ -1,0 +1,276 @@
+{
+  "path": "/home/user/books/kerschner-familienrecht.pdf",
+  "sha256": "0f3f911a44044102add4899ed55d6a1062ea8d26d8caf3d11969879ca9444a1f",
+  "pages": 196,
+  "sampled_pages": [
+    30,
+    33,
+    36,
+    39,
+    42,
+    45,
+    48,
+    51,
+    54,
+    57,
+    60,
+    63,
+    66,
+    69,
+    72,
+    75,
+    78,
+    81,
+    84,
+    87,
+    90,
+    93,
+    96,
+    99,
+    102,
+    105,
+    108,
+    111,
+    114,
+    117,
+    120,
+    123,
+    126,
+    129,
+    132,
+    135,
+    138,
+    141,
+    144,
+    147
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 180,
+    "max_depth": 6,
+    "resolved_pages": 180,
+    "section_nodes": 43,
+    "sample": [
+      {
+        "title": "Title Page",
+        "page": 4,
+        "depth": 0
+      },
+      {
+        "title": "Copyright Page",
+        "page": 5,
+        "depth": 0
+      },
+      {
+        "title": "Geleitwort des Herausgebers",
+        "page": 7,
+        "depth": 0
+      },
+      {
+        "title": "Vorwort zur vierten Auflage",
+        "page": 9,
+        "depth": 0
+      },
+      {
+        "title": "Aus dem Vorwort zur 1. Auflage (Juli 2000)",
+        "page": 10,
+        "depth": 0
+      },
+      {
+        "title": "Inhaltsübersicht",
+        "page": 11,
+        "depth": 0
+      },
+      {
+        "title": "Table of Contents",
+        "page": 12,
+        "depth": 0
+      },
+      {
+        "title": "Abkürzungsverzeichnis",
+        "page": 17,
+        "depth": 0
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 2090,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 1.0,
+    "offset_mode": -20,
+    "offset_stable": true,
+    "sample": [
+      {
+        "pdf_page": 30,
+        "printed": 10
+      },
+      {
+        "pdf_page": 33,
+        "printed": 13
+      },
+      {
+        "pdf_page": 36,
+        "printed": 16
+      },
+      {
+        "pdf_page": 39,
+        "printed": 19
+      },
+      {
+        "pdf_page": 42,
+        "printed": 22
+      },
+      {
+        "pdf_page": 45,
+        "printed": 25
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "10.5": 69715,
+      "8.5": 11486,
+      "8.0": 829,
+      "12.5": 204,
+      "9.0": 194,
+      "6.8": 149,
+      "9.5": 83,
+      "13.9": 63
+    },
+    "body": 10.5,
+    "candidates_footnote": [
+      8.0,
+      8.5
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 12697,
+    "share_at_page_bottom": 0.42
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      56,
+      29,
+      23,
+      57
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [
+    {
+      "line": "§ 2 Das Eherecht",
+      "pages": 17
+    }
+  ],
+  "units": {
+    "n° голый номер в начале абзаца": {
+      "hits": 77,
+      "monotonic_share": 0.93,
+      "first": [
+        "16",
+        "17",
+        "18",
+        "19",
+        "20"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 102,
+      "monotonic_share": 0.83,
+      "first": [
+        "16",
+        "17",
+        "18",
+        "19",
+        "20"
+      ]
+    },
+    "§ с номером": {
+      "hits": 33,
+      "monotonic_share": 0.37,
+      "first": [
+        "1",
+        "1",
+        "1247",
+        "2",
+        "2"
+      ]
+    },
+    "para. англ. раздел-пункт": {
+      "hits": 1,
+      "monotonic_share": 0.0,
+      "first": [
+        "9–11"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 12720,
+    "suspicious": 18,
+    "share": 0.0014,
+    "sample": [
+      "(BGBl",
+      "VfGH-Erkenntnis",
+      "BGBl",
+      "(BGBl",
+      "(BGBl",
+      "(BGBl",
+      "hRsp;",
+      "BGBl",
+      "Z8a",
+      "(Hrsg),",
+      "VfGH",
+      "DemwilldasFamRÄG2009durch§95Abs1AußStrGneueFassungentge-"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        56.0,
+        382.0
+      ],
+      "even": [
+        57.0,
+        383.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "DE/AT/CH": 5
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "В оглавлении 43 узлов с номером параграфа: адрес единицы, скорее всего, составной (§ NNN + номер), это влияет на id.",
+      "Кликабельных сносок нет — привязка по кеглю и положению.",
+      "Повторяющийся мусор (1 шаблонов) — вычистить первым шагом."
+    ]
+  }
+}
