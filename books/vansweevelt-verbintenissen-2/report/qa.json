@@ -1,0 +1,189 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/vansweevelt-verbintenissen-2",
+  "cards": 1664,
+  "profile": "larcier-intersentia-handboek-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9401,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "nr",
+        "section": null,
+        "from": 546,
+        "to": 561,
+        "missing": 14
+      },
+      {
+        "family": "nr",
+        "section": null,
+        "from": 561,
+        "to": 570,
+        "missing": 8
+      },
+      {
+        "family": "nr",
+        "section": null,
+        "from": 680,
+        "to": 685,
+        "missing": 4
+      },
+      {
+        "family": "nr",
+        "section": null,
+        "from": 685,
+        "to": 700,
+        "missing": 14
+      },
+      {
+        "family": "nr",
+        "section": null,
+        "from": 767,
+        "to": 774,
+        "missing": 6
+      },
+      {
+        "family": "nr",
+        "section": null,
+        "from": 774,
+        "to": 783,
+        "missing": 8
+      },
+      {
+        "family": "nr",
+        "section": null,
+        "from": 800,
+        "to": 810,
+        "missing": 9
+      },
+      {
+        "family": "nr",
+        "section": null,
+        "from": 810,
+        "to": 812,
+        "missing": 1
+      },
+      {
+        "family": "nr",
+        "section": null,
+        "from": 956,
+        "to": 960,
+        "missing": 3
+      },
+      {
+        "family": "nr",
+        "section": null,
+        "from": 960,
+        "to": 979,
+        "missing": 18
+      },
+      {
+        "family": "nr",
+        "section": null,
+        "from": 1078,
+        "to": 1080,
+        "missing": 1
+      },
+      {
+        "family": "nr",
+        "section": null,
+        "from": 1207,
+        "to": 1226,
+        "missing": 18
+      },
+      {
+        "family": "nr",
+        "section": null,
+        "from": 1649,
+        "to": 1652,
+        "missing": 2
+      }
+    ],
+    "gaps_total": 13,
+    "missing_total": 106,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "nr": 1664
+    }
+  },
+  "coverage": {
+    "share": 0.9886,
+    "covered_chars": 2182461,
+    "book_chars": 2207560,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 4607,
+        "from": 376527,
+        "to": 381134
+      },
+      {
+        "chars": 2272,
+        "from": 920812,
+        "to": 923084
+      },
+      {
+        "chars": 1107,
+        "from": 398060,
+        "to": 399167
+      }
+    ]
+  },
+  "lengths": {
+    "median": 1095,
+    "min": 70,
+    "max": 12526,
+    "too_short": [
+      "vansweevelt-verbintenissen-2:nr:1435",
+      "vansweevelt-verbintenissen-2:nr:1438",
+      "vansweevelt-verbintenissen-2:nr:1443",
+      "vansweevelt-verbintenissen-2:nr:1558"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.59,
+    "footnotes_total": 2596,
+    "unparsed_blocks": 643,
+    "per_card_median": 1.0,
+    "cards_with_calls_but_no_notes": 167,
+    "notes_without_visible_call": 1591
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 1,
+      "2": 42,
+      "3": 437,
+      "4": 1184
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 94.0% < 98%: пропущено номеров 106. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

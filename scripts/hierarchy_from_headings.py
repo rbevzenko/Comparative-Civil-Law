@@ -64,7 +64,23 @@ def main():
                     and not any(rx.match(nxt) for rx in levels)):
                 text = f"{text}. {nxt}"
                 nxt = " ".join(lines[i + 2]["text"].split()) if i + 2 < len(lines) else ""
-            if len(nxt) > 2 and nxt[:1].islower():
+            # Название в прописных переносится на две-три строки целиком
+            # («AFDELING 2. VAN HET BW VAN 1804 NAAR DE / BOEKEN 1 EN 5 BW»).
+            # Строчной буквы в начале продолжения тут не бывает, поэтому
+            # признаком служит сам регистр.
+            j = i + 1
+            while (text.isupper() and j + 1 <= len(lines) - 1 and j - i <= 3):
+                cand = " ".join(lines[j + 1]["text"].split())
+                if not cand or not cand.isupper() or len(cand) > 70:
+                    break
+                if any(rx.match(cand) for rx in levels):
+                    break
+                text = f"{text} {cand}"
+                j += 1
+            nxt = " ".join(lines[j + 1]["text"].split()) if j + 1 < len(lines) else nxt
+            # К заголовку в прописных строчная строка не приклеивается: это
+            # уже текст, а не продолжение названия.
+            if len(nxt) > 2 and nxt[:1].islower() and not text.isupper():
                 text = f"{text[:-1]}{nxt}" if text.endswith("-") else f"{text} {nxt}"
             text = re.sub(r"(\w)-\s+(\w)", r"\1\2", text)
             text = re.sub(r"\s+(?:er|re|e|ère)$", "", text)
