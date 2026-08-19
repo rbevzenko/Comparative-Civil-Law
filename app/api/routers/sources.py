@@ -7,10 +7,11 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.api.database import get_db
 from app.api.models.source import Source
-from app.api.schemas.source import SourceDetail, SourceList, SourceRead
+from app.api.schemas.source import SourceDetail, SourceList, SourceRead, SourceUpdate
 from app.api.security import require_api_token
 from app.api.services.sources import InvalidSourceUpload
 from app.api.services.sources import create_source as create_source_record
+from app.api.services.sources import update_source as update_source_record
 from app.api.storage import generate_presigned_url
 
 router = APIRouter(prefix="/sources", tags=["sources"], dependencies=[Depends(require_api_token)])
@@ -81,3 +82,23 @@ async def get_source(source_id: uuid.UUID, db: Annotated[AsyncSession, Depends(g
     detail = SourceDetail.model_validate(source)
     detail.pdf_url = generate_presigned_url(source.pdf_object_key)
     return detail
+
+
+@router.patch("/{source_id}", response_model=SourceRead)
+async def update_source(
+    source_id: uuid.UUID,
+    payload: SourceUpdate,
+    db: Annotated[AsyncSession, Depends(get_db)],
+) -> Source:
+    """Edit a source's bibliographic details. The PDF is not replaceable —
+    chunk page numbers point into that exact file."""
+    source = await db.get(Source, source_id)
+    if source is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Source not found")
+    changes = payload.model_dump(exclude_unset=True)
+    if not changes:
+        return source
+    try:
+        return await update_source_record(db, source, changes)
+    except InvalidSourceUpload as exc:
+        raise HTTPException(status_code=status.HTTP_422_UNPROCESSABLE_ENTITY, detail=str(exc)) from exc
