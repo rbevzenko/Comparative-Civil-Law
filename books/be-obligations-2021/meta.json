@@ -1,0 +1,23 @@
+{
+  "book_id": "be-obligations-2021",
+  "authors": [
+    "Koen Geens",
+    "Khalil Aouasti",
+    "Nathalie Gilson",
+    "Claire Hugon",
+    "Katja Gabriëls"
+  ],
+  "title": "Proposition de loi portant le livre 5 «Les obligations» du Code civil — Commentaire des articles",
+  "edition": "DOC 55 1806/001",
+  "year": 2021,
+  "publisher": "Chambre des représentants de Belgique",
+  "jurisdiction": "BE",
+  "language": "fr",
+  "isbn": null,
+  "cite_as": "Doc. parl., Chambre, 2021, DOC 55 1806/001, comm.",
+  "pdf_pages_total": 380,
+  "body_pages_pdf": "15-297",
+  "printed_page_offset": 0,
+  "notes": "Парламентский документ Палаты представителей Бельгии от 24 февраля 2021 г. — мотивы к книге 5 «Обязательства» ГК Бельгии. Документ двуязычный и двухколонный, но, в отличие от документа о личных обеспечениях, французская колонка здесь ЛЕВАЯ (scripts/pages_column.py --column left). Взят раздел «Commentaire des articles» (f15-297); общая часть «Développements» (f4-14) и текст законопроекта (f298-380) в корпус не идут.",
+  "service_source_id": "31c95dfd-9b06-4410-ab2d-21048a88c701"
+}

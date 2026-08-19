@@ -1,0 +1,91 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/be-obligations-2021",
+  "cards": 270,
+  "profile": "be-chambre-doc-obligations-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 1,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Art": 270
+    }
+  },
+  "coverage": {
+    "share": 0.9938,
+    "covered_chars": 640461,
+    "book_chars": 644482,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 1420,
+    "min": 66,
+    "max": 14157,
+    "too_short": [
+      "be-obligations-2021:art:5/18",
+      "be-obligations-2021:art:5/40",
+      "be-obligations-2021:art:5/43",
+      "be-obligations-2021:art:5/44",
+      "be-obligations-2021:art:5/48",
+      "be-obligations-2021:art:5/185",
+      "be-obligations-2021:art:5/215",
+      "be-obligations-2021:art:5/251",
+      "be-obligations-2021:art:5/252",
+      "be-obligations-2021:art:5/259"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0.0,
+    "cards_with_calls_but_no_notes": 72,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 4,
+      "2": 95,
+      "3": 69,
+      "4": 102
+    }
+  },
+  "internal_refs": {
+    "refs_total": 4,
+    "unresolved": 1,
+    "resolved_share": 0.75,
+    "sample": [
+      {
+        "card": "be-obligations-2021:art:5/167",
+        "ref": "voir art. 1320",
+        "missing": 1320
+      }
+    ]
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

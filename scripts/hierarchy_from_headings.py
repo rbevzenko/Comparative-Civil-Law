@@ -34,6 +34,8 @@ def main():
     ap.add_argument("--book", required=True)
     ap.add_argument("--level", action="append", required=True,
                     help="регулярное выражение уровня; порядок флагов = порядок вложенности")
+    ap.add_argument("--title-on-next", action="store_true",
+                    help="заголовок состоит из одного номера, название — следующей строкой")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
 
@@ -54,6 +56,14 @@ def main():
             if depth is None:
                 continue
             nxt = " ".join(lines[i + 1]["text"].split()) if i + 1 < len(lines) else ""
+            # У части документов заголовок состоит из одного номера («TITRE 1»),
+            # а название стоит следующей строкой и начинается с прописной.
+            # Отличить её от начала текста можно по самому заголовку: пока в
+            # нём нет ничего, кроме слова и номера, названия у него нет.
+            if (a.title_on_next and len(text.split()) <= 2 and nxt
+                    and not any(rx.match(nxt) for rx in levels)):
+                text = f"{text}. {nxt}"
+                nxt = " ".join(lines[i + 2]["text"].split()) if i + 2 < len(lines) else ""
             if len(nxt) > 2 and nxt[:1].islower():
                 text = f"{text[:-1]}{nxt}" if text.endswith("-") else f"{text} {nxt}"
             text = re.sub(r"(\w)-\s+(\w)", r"\1\2", text)
