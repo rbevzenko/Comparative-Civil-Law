@@ -6,3 +6,10 @@ venv/
 *.egg-info/
 .pytest_cache/
 .DS_Store
+
+# Рабочие каталоги нарезки книг: кэш растров, постраничная модель, OCR.
+# Тяжёлые и воспроизводимые — в репозитории лежит только результат.
+books/*/cache/
+books/*/work/
+books/*/ocr/
+books/*/source/*.pdf

@@ -1,0 +1,39 @@
+id: manz-koziol-grundriss-scan-ocr-v1
+publisher: MANZ
+jurisdiction: AT
+language: de
+units:
+- type: Rz
+  id_prefix: rz
+  mode: margin
+  address_template: Rz {number}
+margin:
+  side: inner
+  parity: pdf
+  scope: page
+  pad: 2.0
+address:
+  section:
+    mode: none
+footnotes:
+  mode: position_bottom
+  bottom_band: 0.65
+printed_page:
+  band: 0.06
+  patterns:
+  - ^(\d{1,4})\s+\S
+  - \s(\d{1,4})$
+junk:
+  header_band: 0.045
+  footer_band: 0.945
+  patterns:
+  - ^\)+$
+statutory:
+  patterns:
+  - §+\s*\d+[a-z]?\s*(?:Abs\s*\d+\s*)?(?:ABGB|EO|KSchG|UGB|GBG|EheG|UrhG|WEG|MRG|IO|GmbHG|AktG|VersVG|EKHG|PHG|UbG|SPG|EPG|AußStrG|ZPO|JN)
+  - §§\s*\d+[a-z]?\s*(?:ff|f)?
+cross_refs:
+  patterns:
+  - (?:oben|unten|siehe|vgl|dazu)\s+Rz\s*\d+(?:\s*(?:ff|f)\.?)?
+citation:
+  template: '{cite_as} {address}'

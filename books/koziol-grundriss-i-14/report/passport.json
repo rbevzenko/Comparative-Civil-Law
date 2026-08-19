@@ -1,0 +1,248 @@
+{
+  "path": "/home/user/books/koziol.pdf",
+  "sha256": "2b8d41131d202ee3eac93d9a6237cdf807016362f38fff20357c33bd929da6c2",
+  "pages": 709,
+  "sampled_pages": [
+    107,
+    120,
+    133,
+    146,
+    159,
+    172,
+    185,
+    198,
+    211,
+    224,
+    237,
+    250,
+    263,
+    276,
+    289,
+    302,
+    315,
+    328,
+    341,
+    354,
+    367,
+    380,
+    393,
+    406,
+    419,
+    432,
+    445,
+    458,
+    471,
+    484,
+    497,
+    510,
+    523,
+    536,
+    549,
+    562,
+    575,
+    588,
+    601,
+    614
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": false
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 3118,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 1.0
+  },
+  "printed_pages": {
+    "detected_share": 0.78,
+    "offset_mode": -9,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 107,
+        "printed": 98
+      },
+      {
+        "pdf_page": 120,
+        "printed": null
+      },
+      {
+        "pdf_page": 133,
+        "printed": 14
+      },
+      {
+        "pdf_page": 146,
+        "printed": 14
+      },
+      {
+        "pdf_page": 159,
+        "printed": 91
+      },
+      {
+        "pdf_page": 172,
+        "printed": 7
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "12.3": 28232,
+      "14.5": 15852,
+      "12.4": 12608,
+      "14.7": 12584,
+      "12.5": 10918,
+      "12.2": 8601,
+      "14.4": 5470,
+      "12.1": 5360
+    },
+    "body": 12.3,
+    "candidates_footnote": [
+      10.6,
+      10.7
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 21984,
+    "share_at_page_bottom": 0.56
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      54,
+      51,
+      50,
+      55
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [
+    {
+      "line": ")",
+      "pages": 196
+    },
+    {
+      "line": "9",
+      "pages": 15
+    },
+    {
+      "line": "7",
+      "pages": 13
+    }
+  ],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 316,
+      "monotonic_share": 0.56,
+      "first": [
+        "72",
+        "228",
+        "229",
+        "9",
+        "9"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 199,
+      "monotonic_share": 0.47,
+      "first": [
+        "72",
+        "228",
+        "229",
+        "9",
+        "9"
+      ]
+    },
+    "§ с номером": {
+      "hits": 15,
+      "monotonic_share": 0.42,
+      "first": [
+        "5",
+        "5j",
+        "916",
+        "874",
+        "696"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 17939,
+    "suspicious": 42,
+    "share": 0.0023,
+    "sample": [
+      "Aigner!Kletecka/Kletecka-Pulker!Memmer,",
+      "VfGH",
+      "KSchG:",
+      "KSchG",
+      "KSchG",
+      "Wolf!Neuner,",
+      "Kletecka!Schauer,",
+      "Welser!Kletelka,",
+      "F/oretta/Spielbüchler!Strasser,",
+      "Apathy!Riedler",
+      "BGHZ",
+      "hRsp"
+    ]
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        89.0,
+        542.0
+      ],
+      "even": [
+        56.0,
+        508.0
+      ]
+    },
+    "left": {
+      "hits": 52,
+      "monotonic_share": 1.0,
+      "even_page_share": 0.0,
+      "first": [
+        228,
+        229,
+        290,
+        291,
+        360,
+        361
+      ]
+    },
+    "right": {
+      "hits": 71,
+      "monotonic_share": 1.0,
+      "even_page_share": 1.0,
+      "first": [
+        257,
+        258,
+        259,
+        260,
+        326,
+        327
+      ]
+    }
+  },
+  "statutory": {
+    "DE/AT/CH": 4
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "B?",
+    "problems": [],
+    "notes": [
+      "Под текстом растр на всю полосу, но слой выглядит чистым (0.2% подозрительных слов). Слой всё равно чужой и сделан неизвестно чем; прежде чем идти веткой A, прогнать обе ветки на двух десятках страниц и сравнить.",
+      "Оглавление в файле не зашито — иерархию собирать по печатному оглавлению и колонтитулам; качество поля hierarchy будет ниже.",
+      "Маргинальные номера у левого поля: 52 попаданий, монотонность 100%, доля чётных страниц 0% — кандидат на режим margin.",
+      "Маргинальные номера у правого поля: 71 попаданий, монотонность 100%, доля чётных страниц 100% — кандидат на режим margin.",
+      "Типографская пагинация читается, но смещение относительно страниц файла непостоянно (вклейки, вкладки). Хранить обе нумерации, не пересчитывать.",
+      "Повторяющийся мусор (3 шаблонов) — вычистить первым шагом."
+    ]
+  }
+}
