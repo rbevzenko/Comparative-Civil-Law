@@ -1,0 +1,17 @@
+{
+  "book_id": "koziol-grundriss-i-14",
+  "authors": ["Helmut Koziol", "Raimund Bollenberger", "Andreas Kletečka"],
+  "title": "Grundriss des bürgerlichen Rechts. Band I: Allgemeiner Teil, Sachenrecht, Familienrecht",
+  "edition": "14. Aufl.",
+  "year": 2014,
+  "publisher": "MANZ",
+  "jurisdiction": "AT",
+  "language": "de",
+  "isbn": "978-3-214-14710-5",
+  "cite_as": "Koziol – Welser/Kletečka, Bürgerliches Recht I¹⁴ (2014)",
+  "service_source_id": "5574adbd-c786-4939-a7ef-e60a6e820b84",
+  "pdf_pages_total": 709,
+  "body_pages_pdf": "36-658",
+  "printed_page_offset": -35,
+  "notes": "Выходные данные с титула (f2) и оборота титула (f3): «bearbeitet von Dr. Andreas Kletecka, 14. Auflage, Wien 2014, MANZ», ISBN 978-3-214-14710-5 (geb). cite_as — дословный Zitiervorschlag издательства с оборота титула. Состав авторов в поле authors взят из карточки источника, уже заведённой в сервисе (id 5574adbd-…); на титуле 14-го издания как обработчик назван только Кletečka, Koziol и Welser — основатели линейки, Bollenberger — соавтор 11-12 изданий."
+}

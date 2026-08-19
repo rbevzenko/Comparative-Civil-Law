@@ -5,7 +5,10 @@
 
   <div class="page-head">
     <h1>{{ source.title }}</h1>
-    <a href="/ui/upload/chunks?source_id={{ source.id }}" class="btn btn--primary">Загрузить чанки</a>
+    <div class="page-actions">
+      <a href="/ui/sources/{{ source.id }}/edit" class="btn btn--ghost">Править карточку</a>
+      <a href="/ui/upload/chunks?source_id={{ source.id }}" class="btn btn--primary">Загрузить чанки</a>
+    </div>
   </div>
 
   <dl class="meta-list">

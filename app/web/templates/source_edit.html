@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block title %}Правка источника — Корпус сравнительного права{% endblock %}
+{% block content %}
+  <p class="breadcrumb"><a href="/ui/sources/{{ source.id }}">&larr; к источнику</a></p>
+
+  <h1>Правка карточки источника</h1>
+  <p class="page-lede">
+    Реквизиты книги. Идентификатор источника не меняется, поэтому чанки
+    остаются на месте, а выданные ранее ссылки на фрагменты продолжают
+    открываться. PDF заменить нельзя: номера страниц в чанках указывают
+    именно в этот файл.
+  </p>
+
+  {% if error %}<p class="form-error">{{ error }}</p>{% endif %}
+
+  <form method="post" action="/ui/sources/{{ source.id }}/edit" class="form">
+    <div class="form-grid">
+      <div class="field field--wide">
+        <label for="title">Название *</label>
+        <input type="text" id="title" name="title" value="{{ form.title or '' }}" required>
+      </div>
+
+      <div class="field">
+        <label for="jurisdiction">Юрисдикция *</label>
+        <input type="text" id="jurisdiction" name="jurisdiction" list="jurisdiction-suggestions"
+               value="{{ form.jurisdiction or '' }}" placeholder="FR, DE, CH…" required>
+        <datalist id="jurisdiction-suggestions">
+          <option value="DE"><option value="CH"><option value="AT"><option value="NL">
+          <option value="IT"><option value="ES"><option value="EN"><option value="GR">
+          <option value="BE"><option value="FR">
+        </datalist>
+      </div>
+
+      <div class="field">
+        <label for="source_type">Тип источника *</label>
+        <select id="source_type" name="source_type" required>
+          {% for t in source_types %}
+            <option value="{{ t }}" {% if form.source_type == t %}selected{% endif %}>{{ t }}</option>
+          {% endfor %}
+        </select>
+      </div>
+
+      <div class="field field--wide">
+        <label for="authors">Авторы</label>
+        <input type="text" id="authors" name="authors" value="{{ form.authors or '' }}"
+               placeholder="Koziol; Bollenberger; Kletecka">
+        <p class="field-hint">через точку с запятой</p>
+      </div>
+
+      <div class="field">
+        <label for="edition">Издание</label>
+        <input type="text" id="edition" name="edition" value="{{ form.edition or '' }}" placeholder="14. Aufl.">
+      </div>
+
+      <div class="field">
+        <label for="year">Год</label>
+        <input type="number" id="year" name="year" value="{{ form.year or '' }}">
+      </div>
+
+      <div class="field">
+        <label for="publisher">Издательство</label>
+        <input type="text" id="publisher" name="publisher" value="{{ form.publisher or '' }}">
+      </div>
+
+      <div class="field">
+        <label for="language">Язык</label>
+        <input type="text" id="language" name="language" value="{{ form.language or '' }}" placeholder="de">
+      </div>
+
+      <div class="field">
+        <label for="pdf_pages_total">Страниц в PDF</label>
+        <input type="number" id="pdf_pages_total" name="pdf_pages_total" value="{{ form.pdf_pages_total or '' }}">
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <button type="submit" class="btn btn--primary">Сохранить</button>
+      <a href="/ui/sources/{{ source.id }}" class="btn btn--ghost">Отмена</a>
+    </div>
+  </form>
+{% endblock %}

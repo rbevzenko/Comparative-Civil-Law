@@ -18,8 +18,9 @@ from app.api.models.source import Source
 from app.api.schemas.chunk import ChunkBulkCreate
 from app.api.security import verify_chunk_signature
 from app.api.services.chunks import create_chunks as create_chunks_records
-from app.api.services.sources import ALLOWED_SOURCE_TYPES, InvalidSourceUpload
+from app.api.services.sources import ALLOWED_SOURCE_TYPES, InvalidSourceUpload, parse_authors
 from app.api.services.sources import create_source as create_source_record
+from app.api.services.sources import update_source as update_source_record
 from app.api.storage import generate_presigned_url
 from app.web.auth import SESSION_KEY, check_password, require_session
 
@@ -46,6 +47,37 @@ def _pop_flash(request: Request) -> str | None:
 
 def _set_flash(request: Request, message: str) -> None:
     request.session["flash"] = message
+
+
+def _optional_int(raw: str | None, field: str) -> int | None:
+    """Числовое поле формы: пустое — это NULL, а не ошибка.
+
+    Пустой <input type="number"> приходит как "", и объявить параметр
+    `int | None` мало: FastAPI отвечает на "" своей 422 в JSON, мимо формы,
+    и человек видит голый машинный ответ вместо подсвеченного поля.
+    """
+    raw = (raw or "").strip()
+    if not raw:
+        return None
+    try:
+        return int(raw)
+    except ValueError:
+        raise InvalidSourceUpload(f"{field}: нужно целое число, а не «{raw}»") from None
+
+
+def _source_form_values(source: Source) -> dict:
+    """Source row → the shape the upload/edit form template expects."""
+    return {
+        "title": source.title,
+        "jurisdiction": source.jurisdiction,
+        "source_type": source.source_type,
+        "authors": "; ".join(source.authors or []),
+        "edition": source.edition,
+        "year": source.year,
+        "publisher": source.publisher,
+        "language": source.language,
+        "pdf_pages_total": source.pdf_pages_total,
+    }
 
 
 # --- auth ---------------------------------------------------------------
@@ -167,6 +199,88 @@ async def ui_source_detail(source_id: uuid.UUID, request: Request, db: Annotated
     )
 
 
+@router.get("/sources/{source_id}/edit")
+async def ui_source_edit_form(source_id: uuid.UUID, request: Request, db: Annotated[AsyncSession, Depends(get_db)]):
+    source = await db.get(Source, source_id)
+    if source is None:
+        return templates.TemplateResponse(request, "not_found.html", {"kind": "источник"}, status_code=404)
+    return templates.TemplateResponse(
+        request,
+        "source_edit.html",
+        {
+            "active": "sources",
+            "source": source,
+            "error": None,
+            "form": _source_form_values(source),
+            "source_types": sorted(ALLOWED_SOURCE_TYPES),
+        },
+    )
+
+
+@router.post("/sources/{source_id}/edit")
+async def ui_source_edit_submit(
+    source_id: uuid.UUID,
+    request: Request,
+    db: Annotated[AsyncSession, Depends(get_db)],
+    title: Annotated[str, Form()],
+    jurisdiction: Annotated[str, Form()],
+    source_type: Annotated[str, Form()],
+    authors: Annotated[str, Form()] = "",
+    edition: Annotated[str | None, Form()] = None,
+    year: Annotated[str | None, Form()] = None,
+    publisher: Annotated[str | None, Form()] = None,
+    language: Annotated[str | None, Form()] = None,
+    pdf_pages_total: Annotated[str | None, Form()] = None,
+):
+    source = await db.get(Source, source_id)
+    if source is None:
+        return templates.TemplateResponse(request, "not_found.html", {"kind": "источник"}, status_code=404)
+
+    submitted = {
+        "title": title,
+        "jurisdiction": jurisdiction,
+        "source_type": source_type,
+        "authors": authors,
+        "edition": edition,
+        "year": year,
+        "publisher": publisher,
+        "language": language,
+        "pdf_pages_total": pdf_pages_total,
+    }
+    # The form always posts the whole card, so an emptied optional field is a
+    # deliberate erasure, not "leave as is" — an empty text input arrives as
+    # "" and has to become NULL, or the card keeps a blank string forever.
+    try:
+        changes = {
+            "title": title,
+            "jurisdiction": jurisdiction,
+            "source_type": source_type,
+            "authors": parse_authors(authors),
+            "edition": edition or None,
+            "year": _optional_int(year, "Год"),
+            "publisher": publisher or None,
+            "language": language or None,
+            "pdf_pages_total": _optional_int(pdf_pages_total, "Страниц в PDF"),
+        }
+        await update_source_record(db, source, changes)
+    except InvalidSourceUpload as exc:
+        return templates.TemplateResponse(
+            request,
+            "source_edit.html",
+            {
+                "active": "sources",
+                "source": source,
+                "error": str(exc),
+                "form": submitted,
+                "source_types": sorted(ALLOWED_SOURCE_TYPES),
+            },
+            status_code=422,
+        )
+
+    _set_flash(request, "Карточка источника обновлена.")
+    return RedirectResponse(url=f"/ui/sources/{source_id}", status_code=status.HTTP_303_SEE_OTHER)
+
+
 @router.get("/chunks/{chunk_id}")
 async def ui_chunk_detail(chunk_id: uuid.UUID, request: Request, db: Annotated[AsyncSession, Depends(get_db)]):
     stmt = (
@@ -207,10 +321,10 @@ async def ui_upload_source_submit(
     pdf: Annotated[UploadFile, File()],
     authors: Annotated[str, Form()] = "",
     edition: Annotated[str | None, Form()] = None,
-    year: Annotated[int | None, Form()] = None,
+    year: Annotated[str | None, Form()] = None,
     publisher: Annotated[str | None, Form()] = None,
     language: Annotated[str | None, Form()] = None,
-    pdf_pages_total: Annotated[int | None, Form()] = None,
+    pdf_pages_total: Annotated[str | None, Form()] = None,
 ):
     submitted = {
         "title": title,
@@ -230,11 +344,11 @@ async def ui_upload_source_submit(
             jurisdiction=jurisdiction,
             source_type=source_type,
             authors_raw=authors,
-            edition=edition,
-            year=year,
-            publisher=publisher,
-            language=language,
-            pdf_pages_total=pdf_pages_total,
+            edition=edition or None,
+            year=_optional_int(year, "Год"),
+            publisher=publisher or None,
+            language=language or None,
+            pdf_pages_total=_optional_int(pdf_pages_total, "Страниц в PDF"),
             pdf_filename=pdf.filename,
             pdf_content_type=pdf.content_type,
             pdf_file=pdf.file,
