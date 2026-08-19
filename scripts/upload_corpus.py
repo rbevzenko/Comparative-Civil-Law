@@ -21,10 +21,16 @@
 import argparse
 import json
 import os
+import re
 import sys
 import time
 import urllib.error
 import urllib.request
+
+# Управляющие символы, которые Postgres не принимает в text/jsonb. Чаще
+# прочих приходит \x00: им набивают хвосты заголовков в оглавлении PDF, и
+# приёмник отвечает на такую карточку голой 500 без объяснения.
+CONTROL = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
 
 EMBEDDING_DIM = 1536
 EMBEDDING_MODEL = "text-embedding-3-small"
@@ -95,6 +101,21 @@ def embed(texts, key):
         if len(v) != EMBEDDING_DIM:
             raise SystemExit(f"размерность {len(v)}, а колонка в базе — vector({EMBEDDING_DIM})")
     return vecs
+
+
+def scrub(value, stats):
+    """Чистит строки от управляющих символов, считая, сколько вычищено."""
+    if isinstance(value, str):
+        clean = CONTROL.sub("", value)
+        if clean != value:
+            stats["fields"] += 1
+            stats["chars"] += len(value) - len(clean)
+        return clean
+    if isinstance(value, list):
+        return [scrub(v, stats) for v in value]
+    if isinstance(value, dict):
+        return {k: scrub(v, stats) for k, v in value.items()}
+    return value
 
 
 def to_chunk(card):
@@ -169,8 +190,10 @@ def main():
         print(f"уже загружено ранее: {len(done)}, осталось: {len(cards)}")
 
     items, dropped_notes = [], 0
+    scrubbed = {"fields": 0, "chars": 0}
     for c in cards:
         it, d = to_chunk(c)
+        it = scrub(it, scrubbed)
         dropped_notes += d
         if not it["text"].strip():
             raise SystemExit(f"пустой текст у {it['external_id']}")
@@ -183,6 +206,9 @@ def main():
     total_notes = sum(len(i["footnotes"]) for i in items)
     print(f"карточек: {len(items)}, сносок: {total_notes}, "
           f"сносок без читаемого номера (не грузятся): {dropped_notes}")
+    if scrubbed["fields"]:
+        print(f"вычищено управляющих символов: {scrubbed['chars']} "
+              f"в {scrubbed['fields']} полях")
     if a.dry_run:
         print("dry-run: ничего не отправлено")
         print(json.dumps(items[0] | {"text": items[0]["text"][:200] + "…"}, ensure_ascii=False, indent=1))
