@@ -1,0 +1,104 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/be-suretes-2024",
+  "cards": 55,
+  "profile": "be-chambre-doc-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 1,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Art": 55
+    }
+  },
+  "coverage": {
+    "share": 0.9859,
+    "covered_chars": 73329,
+    "book_chars": 74377,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 1108,
+    "min": 75,
+    "max": 4420,
+    "too_short": [
+      "be-suretes-2024:art:9.1/31",
+      "be-suretes-2024:art:9.1/52",
+      "be-suretes-2024:art:9.1/53",
+      "be-suretes-2024:art:9.1/54",
+      "be-suretes-2024:art:9.1/55"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0,
+    "cards_with_calls_but_no_notes": 14,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "2": 31,
+      "3": 24
+    }
+  },
+  "internal_refs": {
+    "refs_total": 21,
+    "unresolved": 5,
+    "resolved_share": 0.762,
+    "sample": [
+      {
+        "card": "be-suretes-2024:art:9.1/4",
+        "ref": "voir art. 5.125",
+        "missing": 125
+      },
+      {
+        "card": "be-suretes-2024:art:9.1/8",
+        "ref": "voir art. 5.161",
+        "missing": 161
+      },
+      {
+        "card": "be-suretes-2024:art:9.1/16",
+        "ref": "voir art. 5.75",
+        "missing": 75
+      },
+      {
+        "card": "be-suretes-2024:art:9.1/22",
+        "ref": "voir art. 2021",
+        "missing": 2021
+      },
+      {
+        "card": "be-suretes-2024:art:9.1/22",
+        "ref": "voir art. 5.231",
+        "missing": 231
+      }
+    ]
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}
