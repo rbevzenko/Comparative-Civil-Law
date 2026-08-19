@@ -12,7 +12,10 @@
 обновляет совпавшие карточки, а не плодит дубли, и внутренний uuid
 фрагмента сохраняется — иначе умрут все ранее выданные universal_ref.
 
-Секреты только из окружения: API_TOKEN, OPENAI_API_KEY.
+Секреты берутся из окружения (API_TOKEN, OPENAI_API_KEY) или из файла
+`--env-file` в формате KEY=VALUE. Файл с ключами лежит вне репозитория и в
+гит не попадает; в аргументах команды секретов нет намеренно — иначе они
+оседают в истории оболочки и в журналах.
 """
 
 import argparse
@@ -105,10 +108,23 @@ def main():
     ap.add_argument("--limit", type=int, help="взять только первые N карточек (проверка тракта)")
     ap.add_argument("--dry-run", action="store_true", help="посчитать и проверить, ничего не грузить")
     ap.add_argument("--state", help="файл с уже загруженными external_id (докачка после обрыва)")
+    ap.add_argument("--env-file", help="файл KEY=VALUE с API_TOKEN и OPENAI_API_KEY")
     a = ap.parse_args()
 
-    token = os.environ.get("API_TOKEN")
-    key = os.environ.get("OPENAI_API_KEY")
+    env = dict(os.environ)
+    if a.env_file:
+        path = os.path.expanduser(a.env_file)
+        if not os.path.exists(path):
+            raise SystemExit(f"нет файла с ключами: {path}")
+        for line in open(path, encoding="utf-8"):
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            k, v = line.split("=", 1)
+            env[k.strip()] = v.strip().strip("'\"")
+
+    token = env.get("API_TOKEN")
+    key = env.get("OPENAI_API_KEY")
     if not a.dry_run and not token:
         raise SystemExit("нет API_TOKEN в окружении")
     if not a.dry_run and not key:

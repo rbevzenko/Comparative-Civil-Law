@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "permissions": {
+    "allow": [
+      "Bash(python3 scripts/upload_corpus.py:*)",
+      "Bash(python3 /home/user/Comparative-Civil-Law/scripts/upload_corpus.py:*)"
+    ]
+  }
+}
