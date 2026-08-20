@@ -1,0 +1,70 @@
+id: cavendish-harpwood-tort-v1
+publisher: Cavendish Publishing
+jurisdiction: UK
+language: en
+# Vivienne Harpwood, Principles of Tort Law, 4th ed. Издательский PDF,
+# 588 страниц, тело f68–f566 (печатные 1–499, смещение 67).
+#
+# Кегли: тело 10.0, заголовок главы 14.0, нумерованный раздел 13.0,
+# подраздел 13-го уровня 11.0, колонцифра 8.2 внизу по центру.
+#
+# Сносок в книге нет вовсе: паспорт не нашёл ни одного кегля-кандидата,
+# ссылки на дела и статуты идут прямо в тексте. Поэтому footnotes.mode: none.
+#
+# Единица цитирования — нумерованный заголовок ЛЮБОЙ глубины: и раздел
+# «1.2 Tort and contract» (кегль 13), и подраздел «1.2.3 Redressable by an
+# action for unliquidated damages» (кегль 11). Один паттерн ловит оба:
+# «{section}.{number}», где section — всё до последней точки.
+#
+# Делить только по разделам нельзя: у «7.2 The standard of care» двадцать
+# страниц и 55 тысяч знаков, а эмбеддер видит первые 18 тысяч — две трети
+# карточки в поиск не попадают вовсе.
+#
+# Порог кегля 9.9–13.5 отделяет заголовки от заголовка главы (14.0) и от
+# оглавления (9.0). Нижнюю границу пришлось опустить до кегля тела: три
+# подзаголовка («12.2.5», «14.2.3», «14.2.4») набраны вперемешку кеглями 10
+# и 11, и медиана по строке даёт 10.0.
+#
+# Ценой этого стало требование ЗАГЛАВНОЙ буквы (или открывающей кавычки:
+# «18.5 ‘Without lawful justification’ – defences») после номера. Без него в
+# единицы попадают перенесённые на начало строки перекрёстные ссылки —
+# «5.1.9 below), the scope of liability…», «7.2.2 above) and in product
+# liability…»: они дают дубли номеров и рвут настоящую карточку пополам.
+# Ненумерованные заголовки конспекта в конце главы («Problems of
+# definition») отсекает сам паттерн, требующий номера.
+
+units:
+  - type: "section"
+    id_prefix: "sec"
+    mode: flow
+    pattern: '^\d{1,2}(?:\.\d{1,2})*\.(\d{1,2})(?=\s*[A-Z‘“"(\[]|$)'
+    size_min: 9.9
+    size_max: 13.5
+    address_template: "{section}.{number}"
+
+address:
+  template: "{section}.{number}"
+  section:
+    mode: pattern
+    pattern: '^(\d{1,2}(?:\.\d{1,2})*)\.\d{1,2}(?=\s*[A-Z‘“"(\[]|$)'
+
+footnotes:
+  mode: none
+
+printed_page:
+  band: 0.06
+
+junk:
+  header_band: 0.075
+  footer_band: 0.94
+
+statutory:
+  patterns:
+    - '\b[A-Z][A-Za-z’\'' ]{3,40}Act\s+\d{4}(?:\s+ss?\.?\s*\d+[A-Za-z]*)?'
+    - '\bss?\s?\d+[A-Za-z]*(?:\(\d+\))?'
+
+cross_refs:
+  patterns: []
+
+citation:
+  template: "{cite_as} {address}"
