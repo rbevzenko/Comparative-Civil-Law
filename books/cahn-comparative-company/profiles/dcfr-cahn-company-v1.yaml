@@ -1,0 +1,42 @@
+id: dcfr-cahn-company-v1
+publisher: Cambridge University Press
+jurisdiction: DCFR
+language: en
+# Andreas Cahn & David C. Donald, Comparative Company Law. Text and Cases on
+# the Laws Governing Corporations in Germany, the UK and the USA (2010).
+# 957 полос, цифровой PDF.
+#
+# Кегли: 10.8 тело, 8.5 сноски, 10.5 колонтитул С КОЛОНЦИФРОЙ, 6.4 знак
+# сноски в тексте, 5.1 номер сноски в аппарате.
+# Колонтитул на 35 из 646 — это 0.054.
+#
+# Единица — ПОЛОСА, адрес — печатная страница.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  # Кегль сносок 8.5 против 10.8 у тела — зазор широкий.
+  mode: font_bottom
+  note_size_max: 9.5
+  bottom_band: 0.40
+
+printed_page:
+  band: [0.07, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+\D'
+    - '[A-Za-z]\s+(\d{1,4})$'
+
+junk:
+  header_band: 0.08
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'

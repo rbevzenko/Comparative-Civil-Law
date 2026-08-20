@@ -1,0 +1,190 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/cahn-comparative-company",
+  "cards": 871,
+  "profile": "dcfr-cahn-company-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9853,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "p.",
+        "section": null,
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 127,
+        "to": 129,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 129,
+        "to": 131,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 295,
+        "to": 297,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 297,
+        "to": 299,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 463,
+        "to": 465,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 465,
+        "to": 467,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 617,
+        "to": 619,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 619,
+        "to": 621,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 621,
+        "to": 623,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 675,
+        "to": 677,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 751,
+        "to": 753,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 753,
+        "to": 755,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 13,
+    "missing_total": 13,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 871
+    }
+  },
+  "coverage": {
+    "share": 0.9994,
+    "covered_chars": 1408054,
+    "book_chars": 1408924,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 1401,
+    "min": 21,
+    "max": 2899,
+    "too_short": [
+      "cahn-comparative-company:p:1",
+      "cahn-comparative-company:p:129",
+      "cahn-comparative-company:p:295",
+      "cahn-comparative-company:p:297",
+      "cahn-comparative-company:p:465",
+      "cahn-comparative-company:p:619",
+      "cahn-comparative-company:p:621",
+      "cahn-comparative-company:p:675",
+      "cahn-comparative-company:p:753"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.42,
+    "footnotes_total": 1152,
+    "unparsed_blocks": 0,
+    "per_card_median": 0,
+    "cards_with_calls_but_no_notes": 104,
+    "notes_without_visible_call": 148
+  },
+  "dead_pages": {
+    "pages": [
+      32,
+      158,
+      160,
+      326,
+      328,
+      494,
+      496,
+      648,
+      650,
+      652,
+      706,
+      782,
+      784
+    ],
+    "count": 13
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 1,
+    "sample": [
+      "cahn-comparative-company:p:1"
+    ],
+    "depth_histogram": {
+      "0": 1,
+      "1": 870
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}
