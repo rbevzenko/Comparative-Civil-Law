@@ -1,0 +1,84 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/be-biens-2020",
+  "cards": 186,
+  "profile": "be-chambre-doc-biens-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9163,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "Art",
+        "section": "3",
+        "from": 98,
+        "to": 116,
+        "missing": 17
+      }
+    ],
+    "gaps_total": 1,
+    "missing_total": 17,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Art": 186
+    }
+  },
+  "coverage": {
+    "share": 0.9962,
+    "covered_chars": 757075,
+    "book_chars": 759982,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 3723,
+    "min": 355,
+    "max": 11207,
+    "too_short": [],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0.0,
+    "cards_with_calls_but_no_notes": 28,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 18,
+      "2": 126,
+      "3": 21,
+      "4": 21
+    }
+  },
+  "internal_refs": {
+    "refs_total": 12,
+    "unresolved": 0,
+    "resolved_share": 1.0,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 91.6% < 98%: пропущено номеров 17. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

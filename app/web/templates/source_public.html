@@ -50,7 +50,11 @@
         {% if chunk.source %}
           <dt>Источник</dt>
           <dd>
+            {# Название источника ведёт на сам PDF: ссылка подписанная и
+               живёт ограниченное время, выдаёт её объектное хранилище. #}
+            {% if pdf_url %}<a href="{{ pdf_url }}" target="_blank" rel="noopener">{% endif %}
             {{ chunk.source.title }}{% if chunk.source.edition %}, {{ chunk.source.edition }}{% endif %}
+            {% if pdf_url %}</a>{% endif %}
             {% if chunk.source.authors %} — {{ chunk.source.authors | join(", ") }}{% endif %}
           </dd>
           <dt>Юрисдикция</dt><dd><span class="badge">{{ chunk.source.jurisdiction }}</span></dd>
@@ -60,14 +64,9 @@
           {% endif %}
         {% endif %}
         <dt>№ пункта</dt><dd>{{ chunk.point_number or "—" }}</dd>
-        <dt>Страница</dt>
-        <dd>
-          {% if chunk.page_start %}
-            {{ chunk.page_start }}{% if chunk.page_end and chunk.page_end != chunk.page_start %}–{{ chunk.page_end }}{% endif %}
-          {% else %}
-            —
-          {% endif %}
-        </dd>
+        {# Номер страницы на публичной странице не показывается: в корпусе
+           лежит страница файла-источника, а не печатного издания, и
+           показанный номер уходит в чужую сноску как страница книги. #}
       </dl>
 
       <div class="chunk-text">{{ chunk.text }}</div>

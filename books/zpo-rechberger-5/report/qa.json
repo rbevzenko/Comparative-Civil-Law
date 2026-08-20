@@ -1,0 +1,421 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/zpo-rechberger-5",
+  "cards": 4059,
+  "profile": "verlag-oesterreich-zpo-kommentar-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9895,
+    "rows": 750,
+    "gaps": [
+      {
+        "family": "Rz",
+        "section": "ZPO § 74",
+        "from": 4,
+        "to": 6,
+        "missing": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO § 74",
+        "from": 13,
+        "to": 15,
+        "missing": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO § 75",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO § 75a",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO § 84",
+        "from": 6,
+        "to": 8,
+        "missing": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO § 84",
+        "from": 16,
+        "to": 18,
+        "missing": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO § 84",
+        "from": 20,
+        "to": 22,
+        "missing": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO § 84",
+        "from": 23,
+        "to": 25,
+        "missing": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO § 86",
+        "from": 4,
+        "to": 6,
+        "missing": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO § 93",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO § 115",
+        "from": 2,
+        "to": 5,
+        "missing": 2
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO §§ 116–119",
+        "from": 7,
+        "to": 9,
+        "missing": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO § 123",
+        "from": 3,
+        "to": 5,
+        "missing": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO §§ 124–126",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO §§ 124–126",
+        "from": 7,
+        "to": 10,
+        "missing": 2
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO §§ 124–126",
+        "from": 13,
+        "to": 15,
+        "missing": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO §§ 128–129",
+        "from": 1,
+        "to": 4,
+        "missing": 2
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO § 146",
+        "from": 7,
+        "to": 10,
+        "missing": 2
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO § 146",
+        "from": 20,
+        "to": 22,
+        "missing": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO § 148",
+        "from": 4,
+        "to": 6,
+        "missing": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO § 154",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO §§ 155–157",
+        "from": 4,
+        "to": 6,
+        "missing": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO § 160",
+        "from": 3,
+        "to": 5,
+        "missing": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO § 162",
+        "from": 2,
+        "to": 4,
+        "missing": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO § 163",
+        "from": 6,
+        "to": 8,
+        "missing": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO §§ 164–166",
+        "from": 2,
+        "to": 4,
+        "missing": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO §§ 164–166",
+        "from": 9,
+        "to": 11,
+        "missing": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO § 168",
+        "from": 5,
+        "to": 7,
+        "missing": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO § 204",
+        "from": 7,
+        "to": 9,
+        "missing": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO § 204",
+        "from": 13,
+        "to": 15,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 37,
+    "missing_total": 42,
+    "duplicates": [
+      {
+        "family": "Rz",
+        "section": "JN § 76a",
+        "number": 1
+      },
+      {
+        "family": "Rz",
+        "section": "EGZPO Art XXVII",
+        "number": 1
+      },
+      {
+        "family": "Rz",
+        "section": "EGZPO Art XXVII",
+        "number": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO Vor §§ 155 ff",
+        "number": 5
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO § 591",
+        "number": 1
+      },
+      {
+        "family": "Rz",
+        "section": "ZPO § 591",
+        "number": 2
+      }
+    ],
+    "duplicates_total": 6,
+    "by_family": {
+      "Rz": 4059
+    }
+  },
+  "coverage": {
+    "share": 0.9986,
+    "covered_chars": 5517186,
+    "book_chars": 5524805,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 899,
+    "min": 27,
+    "max": 208043,
+    "too_short": [
+      "zpo-rechberger-5:rz:JN69/2",
+      "zpo-rechberger-5:rz:JN79/4",
+      "zpo-rechberger-5:rz:JN105/2",
+      "zpo-rechberger-5:rz:EGZPOArtIV/4",
+      "zpo-rechberger-5:rz:EGZPOArtXXX/2",
+      "zpo-rechberger-5:rz:ZPO2/4",
+      "zpo-rechberger-5:rz:ZPO6a/10",
+      "zpo-rechberger-5:rz:ZPO9/2",
+      "zpo-rechberger-5:rz:ZPO11/4",
+      "zpo-rechberger-5:rz:ZPO12/2",
+      "zpo-rechberger-5:rz:ZPO13/2",
+      "zpo-rechberger-5:rz:ZPO16/3",
+      "zpo-rechberger-5:rz:ZPO17/6",
+      "zpo-rechberger-5:rz:ZPO19/5",
+      "zpo-rechberger-5:rz:ZPO20/4"
+    ],
+    "too_long": [
+      "zpo-rechberger-5:rz:EGJNArtIX/1",
+      "zpo-rechberger-5:rz:JNNach27a/1",
+      "zpo-rechberger-5:rz:JN104/1",
+      "zpo-rechberger-5:rz:ZPOVor74ff/6",
+      "zpo-rechberger-5:rz:ZPO74/13",
+      "zpo-rechberger-5:rz:ZPOVor87ff/9",
+      "zpo-rechberger-5:rz:ZPO87/10",
+      "zpo-rechberger-5:rz:ZPOVor155ff/5",
+      "zpo-rechberger-5:rz:ZPO219/2",
+      "zpo-rechberger-5:rz:ZPOVor266/1",
+      "zpo-rechberger-5:rz:ZPOVor577/1",
+      "zpo-rechberger-5:rz:ZPO611/1",
+      "zpo-rechberger-5:rz:ZPO617/1"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0,
+    "cards_with_calls_but_no_notes": 2164,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "2": 137,
+      "3": 2141,
+      "4": 1781
+    }
+  },
+  "internal_refs": {
+    "refs_total": 6425,
+    "unresolved": 2832,
+    "resolved_share": 0.559,
+    "sample": [
+      {
+        "card": "zpo-rechberger-5:rz:EGJNArtVIII/5",
+        "ref": "§7 Rz264",
+        "missing": 264
+      },
+      {
+        "card": "zpo-rechberger-5:rz:EGJNArtVIII/5",
+        "ref": "§8 Rz77",
+        "missing": 77
+      },
+      {
+        "card": "zpo-rechberger-5:rz:EGJNArtIX/5",
+        "ref": "§ 7 Rz 284",
+        "missing": 284
+      },
+      {
+        "card": "zpo-rechberger-5:rz:EGJNArtIX/5",
+        "ref": "§7 Rz266",
+        "missing": 266
+      },
+      {
+        "card": "zpo-rechberger-5:rz:EGJNArtIX/8",
+        "ref": "§ 7 Rz 271",
+        "missing": 271
+      },
+      {
+        "card": "zpo-rechberger-5:rz:EGJNArtIX/15",
+        "ref": "§7 Rz 286",
+        "missing": 286
+      },
+      {
+        "card": "zpo-rechberger-5:rz:EGJNArtIX/15",
+        "ref": "§ 7 Rz 287",
+        "missing": 287
+      },
+      {
+        "card": "zpo-rechberger-5:rz:EGJNArtIX/15",
+        "ref": "§7 Rz287",
+        "missing": 287
+      },
+      {
+        "card": "zpo-rechberger-5:rz:EGJNArtIX/17",
+        "ref": "§2 Rz63",
+        "missing": 63
+      },
+      {
+        "card": "zpo-rechberger-5:rz:JNVor1/5",
+        "ref": "§1 Rz63",
+        "missing": 63
+      },
+      {
+        "card": "zpo-rechberger-5:rz:JNVor1/7",
+        "ref": "§1 Rz73",
+        "missing": 73
+      },
+      {
+        "card": "zpo-rechberger-5:rz:JNVor1/8",
+        "ref": "§1 Rz97",
+        "missing": 97
+      },
+      {
+        "card": "zpo-rechberger-5:rz:JNVor1/17",
+        "ref": "§ 24 Rz 60",
+        "missing": 60
+      },
+      {
+        "card": "zpo-rechberger-5:rz:JNVor1/17",
+        "ref": "§1 Rz94",
+        "missing": 94
+      },
+      {
+        "card": "zpo-rechberger-5:rz:JNVor1/18",
+        "ref": "§1 Rz76",
+        "missing": 76
+      }
+    ]
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 1
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

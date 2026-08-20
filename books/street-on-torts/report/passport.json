@@ -1,0 +1,262 @@
+{
+  "path": "/home/user/books/uk/street-on-torts.pdf",
+  "sha256": "58cdde037159e0cd61021b3045eedf3f83724cba36945806ec4df6a7b10e1290",
+  "pages": 819,
+  "sampled_pages": [
+    123,
+    143,
+    163,
+    183,
+    203,
+    223,
+    243,
+    263,
+    283,
+    303,
+    323,
+    343,
+    363,
+    383,
+    403,
+    423,
+    443,
+    463,
+    483,
+    503,
+    523,
+    543,
+    563,
+    583,
+    603,
+    623,
+    643,
+    663,
+    683,
+    703
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 204,
+    "max_depth": 3,
+    "resolved_pages": 204,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Cover",
+        "page": 1,
+        "depth": 0
+      },
+      {
+        "title": "Contents",
+        "page": 10,
+        "depth": 0
+      },
+      {
+        "title": "Table of Cases",
+        "page": 15,
+        "depth": 0
+      },
+      {
+        "title": "Table of Statutes",
+        "page": 61,
+        "depth": 0
+      },
+      {
+        "title": "Table of Statutory Instruments",
+        "page": 68,
+        "depth": 0
+      },
+      {
+        "title": "Table of Treaties and Conventions",
+        "page": 68,
+        "depth": 0
+      },
+      {
+        "title": "Table of European Secondary Legislation",
+        "page": 69,
+        "depth": 0
+      },
+      {
+        "title": "Table of National Legislation",
+        "page": 69,
+        "depth": 0
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 4,
+    "with_destination": 4,
+    "per_page": 0.1,
+    "sample": [
+      {
+        "page": 123,
+        "rect": [
+          64,
+          477,
+          357,
+          505
+        ]
+      },
+      {
+        "page": 143,
+        "rect": [
+          106,
+          528,
+          315,
+          544
+        ]
+      },
+      {
+        "page": 563,
+        "rect": [
+          58,
+          359,
+          363,
+          375
+        ]
+      }
+    ]
+  },
+  "text_layer": {
+    "median_chars_per_page": 3244,
+    "empty_pages_share": 0.13,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.0,
+    "offset_mode": null,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 123,
+        "printed": null
+      },
+      {
+        "pdf_page": 143,
+        "printed": null
+      },
+      {
+        "pdf_page": 163,
+        "printed": null
+      },
+      {
+        "pdf_page": 183,
+        "printed": null
+      },
+      {
+        "pdf_page": 203,
+        "printed": null
+      },
+      {
+        "pdf_page": 223,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "10.2": 52589,
+      "8.0": 22629,
+      "9.2": 8628,
+      "10.5": 909,
+      "12.0": 268,
+      "9.8": 188,
+      "11.0": 75,
+      "17.0": 16
+    },
+    "body": 10.2,
+    "candidates_footnote": [
+      8.0
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 22307,
+    "share_at_page_bottom": 0.9
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      37,
+      36
+    ]
+  },
+  "duplicate_pages": 3,
+  "repeated_lines": [],
+  "units": {
+    "n° голый номер в начале абзаца": {
+      "hits": 152,
+      "monotonic_share": 0.83,
+      "first": [
+        "54",
+        "156",
+        "157",
+        "158",
+        "159"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 152,
+      "monotonic_share": 0.83,
+      "first": [
+        "54",
+        "156",
+        "157",
+        "158",
+        "159"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 14229,
+    "suspicious": 6,
+    "share": 0.0004,
+    "sample": [
+      "LJKB",
+      "SJLB",
+      "(NSWSC).",
+      "LJKB",
+      "SPRL",
+      "Lynch"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        37.0,
+        387.0
+      ],
+      "even": [
+        37.0,
+        387.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "EN": 1
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Сноски кликабельны — привязку берём из файла напрямую, без эвристик.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы.",
+      "Одинаковых страниц в выборке: 3 — проверить, не дубль ли разворота в файле."
+    ]
+  }
+}

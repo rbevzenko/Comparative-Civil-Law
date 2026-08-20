@@ -1,0 +1,59 @@
+id: sweet-maxwell-treitel-v1
+publisher: Sweet & Maxwell
+jurisdiction: UK
+language: en
+# Edwin Peel, Treitel: The Law of Contract, 14th ed. Издательский PDF,
+# 2170 страниц, одна колонка. Файл отмасштабирован: кегль тела 14.4,
+# сносок 10.8, знака сноски 8.64.
+#
+# Единица цитирования — номер абзаца «глава-номер» через ТИРЕ, а не дефис:
+# «1–001» (U+2013). Стоит он на правом поле, за краем полосы набора (полоса
+# 72–482 pt, номер 500–540 pt), последним словом первой строки абзаца, и
+# сторону на развороте НЕ меняет. Переносит его в начало строки
+# scripts/move_margin_numbers.py.
+#
+# Слова в текстовом слое разделены табуляцией нулевой ширины, а не пробелом
+# (63% строк тела). Перед всем остальным идёт scripts/detab_lines.py.
+
+units:
+  - type: "para."
+    id_prefix: "para"
+    mode: flow
+    pattern: '^\d{1,2}[–-](\d{3})(?=$|\s+[A-Z“"(\[])'
+    address_template: "para. {section}-{number}"
+
+address:
+  template: "para. {section}-{number}"
+  section:
+    mode: pattern
+    pattern: '^(\d{1,2})[–-]\d{3}(?=$|\s+[A-Z“"(\[])'
+
+footnotes:
+  # Кегль здесь НЕ различает аппарат: 10.8 набраны сразу три вещи — сноски,
+  # выключные цитаты внутри абзаца и заголовки разделов («2. ACCEPTANCE»).
+  # font_bottom утаскивал цитату в аппарат, и из карточки пропадал кусок
+  # рассуждения. Различает положение: блок сносок стоит в конце полосы, а
+  # цитата и заголовок — внутри потока, под ними снова идёт тело. Поэтому
+  # mode: none, а хвост режет scripts/split_notes_by_tail.py --size-max 12.
+  mode: none
+
+printed_page:
+  # Колонцифры в теле нет вовсе: ни колонтитула, ни номера страницы.
+  band: 0.0
+
+junk:
+  patterns:
+    - '^CHAPTER\s'
+
+statutory:
+  patterns:
+    - '\b[A-Z][A-Za-z’\'' ]{3,40}Act\s+\d{4}(?:\s+ss?\.?\s*\d+[A-Za-z]*)?'
+    - '\bss?\.\s?\d+[A-Za-z]*(?:\(\d+\))?'
+
+cross_refs:
+  patterns:
+    - '(?:para|paras)\.?\s*\d{1,2}[–-]\d{3}'
+    - '\bCh\.\s?\d{1,2}\b'
+
+citation:
+  template: "{cite_as} {address}"

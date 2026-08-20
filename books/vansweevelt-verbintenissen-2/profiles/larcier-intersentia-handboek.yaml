@@ -1,0 +1,61 @@
+id: larcier-intersentia-handboek-v1
+publisher: Larcier-Intersentia
+jurisdiction: BE
+language: nl
+# Vansweevelt/Weyts (eds.), Handboek Verbintenissenrecht, 2e ed., 2023.
+# Издательский PDF, 1402 страницы, одна колонка, нидерландский язык.
+#
+# Единица цитирования — сквозной номер абзаца, набранный в самом начале
+# абзаца («109. Ten eerste is dus de ongeldigheid …»). Так эта книга и
+# цитируется в бельгийской литературе: nr. 109. Нумерация сквозная по всей
+# книге, а не по главам.
+#
+# Знак сноски — голое число, приклеенное к слову («…geleende bedrag,424»),
+# и в самой сноске он тоже голый («424 Zie …»). После разбора полос идёт
+# scripts/fix_footnote_markers.py.
+
+units:
+  - type: "nr"
+    id_prefix: "nr"
+    mode: flow
+    pattern: '^(\d{1,4})\.\s'
+    address_template: "nr. {number}"
+
+address:
+  template: "nr. {number}"
+
+footnotes:
+  # Кегли разделяются чисто: тело 10.0, сноски 8.0. Полоса взята низкой
+  # нарочно: на плотных полосах блок сносок поднимается до 0.135 высоты, а
+  # тело кеглем 8 не набирается нигде, кроме колонтитула, который снимается
+  # полосой сверху.
+  mode: font_bottom
+  note_size_max: 8.5
+  bottom_band: 0.10
+
+printed_page:
+  # Колонцифра сидит в одной строке с маркой издательства: «74 Larcier-
+  # Intersentia» на одной стороне разворота и «Larcier-Intersentia75» на
+  # другой. Отдельной строкой она не стоит, поэтому нужны паттерны.
+  band: 0.06
+  patterns:
+    - '^(\d{1,4})\s*Larcier-Intersentia$'
+    - '^Larcier-Intersentia\s*(\d{1,4})$'
+
+junk:
+  header_band: 0.07
+  footer_band: 0.96
+  patterns:
+    - 'Larcier-Intersentia'
+
+statutory:
+  patterns:
+    - '\bart(?:ikel)?\.?\s*\d+(?:\.\d+)*(?:\s*(?:oud\s*)?BW)?'
+    - '\bWet van \d{1,2} \w+ \d{4}'
+
+cross_refs:
+  patterns:
+    - '(?:supra|infra|zie)\s+nr\.?\s*\d{1,4}'
+
+citation:
+  template: "{cite_as} {address}"

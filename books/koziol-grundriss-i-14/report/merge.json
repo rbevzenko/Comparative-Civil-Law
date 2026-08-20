@@ -1,0 +1,43 @@
+{
+  "secondary": "/home/user/books/koziol-check-b",
+  "merged": [
+    {
+      "external_id": "koziol-grundriss-i-14:rz:166",
+      "number": 166,
+      "printed_page": 52,
+      "method": "ocr:tesseract lang=deu dpi=300"
+    },
+    {
+      "external_id": "koziol-grundriss-i-14:rz:297",
+      "number": 297,
+      "printed_page": 101,
+      "method": "ocr:tesseract lang=deu dpi=300"
+    },
+    {
+      "external_id": "koziol-grundriss-i-14:rz:686",
+      "number": 686,
+      "printed_page": 239,
+      "method": "ocr:tesseract lang=deu dpi=300"
+    },
+    {
+      "external_id": "koziol-grundriss-i-14:rz:708",
+      "number": 708,
+      "printed_page": 245,
+      "method": "ocr:tesseract lang=deu dpi=300"
+    },
+    {
+      "external_id": "koziol-grundriss-i-14:rz:1074",
+      "number": 1074,
+      "printed_page": 375,
+      "method": "ocr:tesseract lang=deu dpi=300"
+    },
+    {
+      "external_id": "koziol-grundriss-i-14:rz:1674",
+      "number": 1674,
+      "printed_page": 570,
+      "method": "ocr:tesseract lang=deu dpi=300"
+    }
+  ],
+  "cards_before": 1839,
+  "cards_after": 1845
+}

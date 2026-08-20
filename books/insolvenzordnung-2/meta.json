@@ -1,0 +1,17 @@
+{
+  "book_id": "insolvenzordnung-2",
+  "authors": ["Christian Koller", "Elisabeth Lovrek", "Martin Spitzer"],
+  "title": "Insolvenzordnung",
+  "edition": "2. Aufl.",
+  "year": 2023,
+  "publisher": "Verlag Österreich GmbH, Wien",
+  "jurisdiction": "AT",
+  "language": "de",
+  "isbn": null,
+  "cite_as": "Koller/Lovrek/Spitzer, IO²",
+  "service_source_id": "2b1ac524-6112-4c09-b137-fb7b67a31394",
+  "pdf_pages_total": 3727,
+  "body_pages_pdf": "70-3629",
+  "printed_page_offset": -69,
+  "notes": "Реквизиты взяты из карточки источника, заведённой в сервисе. Том комментирует четыре акта: IO, ReO, EKEG и EuInsVO; номера параграфов между ними повторяются, поэтому код акта входит в адрес карточки."
+}

@@ -21,9 +21,16 @@
         <input type="text" id="jurisdiction" name="jurisdiction" list="jurisdiction-suggestions"
                value="{{ form.jurisdiction or '' }}" placeholder="FR, DE, CH…" required>
         <datalist id="jurisdiction-suggestions">
-          <option value="DE"><option value="CH"><option value="AT"><option value="NL">
-          <option value="IT"><option value="ES"><option value="EN"><option value="GR">
-          <option value="BE"><option value="FR">
+          {# Тот же словарь, что и в правилах коннектора (app/mcp/server.py).
+             Англия — UK, а не EN: этим кодом заведены все английские
+             источники. DCFR и COMP к национальной юрисдикции не привязаны:
+             первое — Draft Common Frame of Reference, второе —
+             сравнительно-правовые исследования; только на них разрешено
+             ссылаться при обосновании вывода по чужой юрисдикции. #}
+          <option value="AT"><option value="BE"><option value="UK"><option value="DE">
+          <option value="CH"><option value="IT"><option value="ES"><option value="NL">
+          <option value="GR"><option value="FR">
+          <option value="DCFR"><option value="COMP">
         </datalist>
       </div>
 

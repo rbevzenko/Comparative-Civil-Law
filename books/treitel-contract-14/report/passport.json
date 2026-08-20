@@ -1,0 +1,260 @@
+{
+  "path": "/home/user/books/uk/treitel-contract.pdf",
+  "sha256": "97a1626376021f27d9d4f51f09d30fa3ec032804cafb4d6f896dca61c9df8ca4",
+  "pages": 2170,
+  "sampled_pages": [
+    655,
+    686,
+    717,
+    748,
+    779,
+    810,
+    841,
+    872,
+    903,
+    934,
+    965,
+    996,
+    1027,
+    1058,
+    1089,
+    1120,
+    1151,
+    1182,
+    1213,
+    1244,
+    1275,
+    1306,
+    1337,
+    1368,
+    1399,
+    1430,
+    1461,
+    1492,
+    1523,
+    1554,
+    1585,
+    1616,
+    1647,
+    1678,
+    1709,
+    1740,
+    1771,
+    1802,
+    1833,
+    1864
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 761,
+    "max_depth": 2,
+    "resolved_pages": 761,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Cover",
+        "page": 2,
+        "depth": 0
+      },
+      {
+        "title": "Half Title",
+        "page": 3,
+        "depth": 0
+      },
+      {
+        "title": "Title Page",
+        "page": 4,
+        "depth": 0
+      },
+      {
+        "title": "Copyright",
+        "page": 5,
+        "depth": 0
+      },
+      {
+        "title": "Preface to the Fourteenth Edition",
+        "page": 6,
+        "depth": 0
+      },
+      {
+        "title": "Contents",
+        "page": 10,
+        "depth": 0
+      },
+      {
+        "title": "Table of Cases",
+        "page": 35,
+        "depth": 0
+      },
+      {
+        "title": "Table of Statutes",
+        "page": 280,
+        "depth": 0
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 643,
+    "with_destination": 643,
+    "per_page": 16.1,
+    "sample": [
+      {
+        "page": 655,
+        "rect": [
+          428,
+          673,
+          433,
+          689
+        ]
+      },
+      {
+        "page": 655,
+        "rect": [
+          446,
+          613,
+          482,
+          629
+        ]
+      },
+      {
+        "page": 655,
+        "rect": [
+          446,
+          597,
+          482,
+          613
+        ]
+      }
+    ]
+  },
+  "text_layer": {
+    "median_chars_per_page": 2381,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.33,
+    "offset_mode": -364,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 655,
+        "printed": null
+      },
+      {
+        "pdf_page": 686,
+        "printed": 322
+      },
+      {
+        "pdf_page": 717,
+        "printed": 629
+      },
+      {
+        "pdf_page": 748,
+        "printed": null
+      },
+      {
+        "pdf_page": 779,
+        "printed": null
+      },
+      {
+        "pdf_page": 810,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "14.4": 62941,
+      "10.8": 35163,
+      "8.6": 1459
+    },
+    "body": 14.4,
+    "candidates_footnote": [
+      8.6,
+      10.8
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 3124,
+    "share_at_page_bottom": 0.35
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      72,
+      104
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 241,
+      "monotonic_share": 0.95,
+      "first": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "424"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 234,
+      "monotonic_share": 0.95,
+      "first": [
+        "424",
+        "425",
+        "426",
+        "427",
+        "428"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 16686,
+    "suspicious": 0,
+    "share": 0.0,
+    "sample": []
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        72.0,
+        482.0
+      ],
+      "even": [
+        72.0,
+        482.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 2,
+      "monotonic_share": 0.0,
+      "even_page_share": 1.0,
+      "first": [
+        2,
+        2
+      ]
+    }
+  },
+  "statutory": {},
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Сноски кликабельны — привязку берём из файла напрямую, без эвристик."
+    ]
+  }
+}

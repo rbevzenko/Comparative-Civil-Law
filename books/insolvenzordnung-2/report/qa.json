@@ -1,0 +1,178 @@
+{
+  "book": "/home/user/books/insolvenzordnung-2",
+  "cards": 8774,
+  "profile": "verlag-oesterreich-kommentar-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 516,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Rz": 8774
+    }
+  },
+  "coverage": {
+    "share": 0.9981,
+    "covered_chars": 6490905,
+    "book_chars": 6503426,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 544,
+    "min": 9,
+    "max": 57611,
+    "too_short": [
+      "insolvenzordnung-2:rz:IO2/15",
+      "insolvenzordnung-2:rz:IO2/19",
+      "insolvenzordnung-2:rz:IO3/3",
+      "insolvenzordnung-2:rz:IO3/29",
+      "insolvenzordnung-2:rz:IO6/27",
+      "insolvenzordnung-2:rz:IO7/15",
+      "insolvenzordnung-2:rz:IO7/17",
+      "insolvenzordnung-2:rz:IO7/18",
+      "insolvenzordnung-2:rz:IO8/14",
+      "insolvenzordnung-2:rz:IO8/19",
+      "insolvenzordnung-2:rz:IO10/6",
+      "insolvenzordnung-2:rz:IO10/32",
+      "insolvenzordnung-2:rz:IO11/11",
+      "insolvenzordnung-2:rz:IO11/35",
+      "insolvenzordnung-2:rz:IO31/7"
+    ],
+    "too_long": [
+      "insolvenzordnung-2:rz:IO24/15",
+      "insolvenzordnung-2:rz:IO65/15",
+      "insolvenzordnung-2:rz:IO66/53",
+      "insolvenzordnung-2:rz:IO68/9",
+      "insolvenzordnung-2:rz:IO69/97",
+      "insolvenzordnung-2:rz:IO239/8",
+      "insolvenzordnung-2:rz:IO281/4",
+      "insolvenzordnung-2:rz:EKEG18/2",
+      "insolvenzordnung-2:rz:EuInsVO2/15",
+      "insolvenzordnung-2:rz:EuInsVO6/39"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.81,
+    "footnotes_total": 19365,
+    "unparsed_blocks": 116,
+    "per_card_median": 2.0,
+    "cards_with_calls_but_no_notes": 820,
+    "notes_without_visible_call": 2389
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "2": 226,
+      "3": 1262,
+      "4": 3230,
+      "5": 3176,
+      "6": 880
+    }
+  },
+  "internal_refs": {
+    "refs_total": 1317,
+    "unresolved": 200,
+    "resolved_share": 0.848,
+    "sample": [
+      {
+        "card": "insolvenzordnung-2:rz:IO48/30",
+        "ref": "§ 149 Rz 6",
+        "missing": 149
+      },
+      {
+        "card": "insolvenzordnung-2:rz:IO61/11",
+        "ref": "§ 156c Rz 2",
+        "missing": 156
+      },
+      {
+        "card": "insolvenzordnung-2:rz:IO94/1",
+        "ref": "§148 Rz3",
+        "missing": 148
+      },
+      {
+        "card": "insolvenzordnung-2:rz:IO107/21",
+        "ref": "§ 184a Rz 3",
+        "missing": 184
+      },
+      {
+        "card": "insolvenzordnung-2:rz:IO123/4",
+        "ref": "§139 Rz8",
+        "missing": 139
+      },
+      {
+        "card": "insolvenzordnung-2:rz:IO123/10",
+        "ref": "§139 Rz11",
+        "missing": 139
+      },
+      {
+        "card": "insolvenzordnung-2:rz:IO128/61",
+        "ref": "§237 Rz15",
+        "missing": 237
+      },
+      {
+        "card": "insolvenzordnung-2:rz:IO129/12",
+        "ref": "§ 257 Rz 7",
+        "missing": 257
+      },
+      {
+        "card": "insolvenzordnung-2:rz:IO135/5",
+        "ref": "§ 139 Rz 1",
+        "missing": 139
+      },
+      {
+        "card": "insolvenzordnung-2:rz:IO138/19",
+        "ref": "§139 Rz 26",
+        "missing": 139
+      },
+      {
+        "card": "insolvenzordnung-2:rz:IO140/10",
+        "ref": "§141 Rz 2",
+        "missing": 141
+      },
+      {
+        "card": "insolvenzordnung-2:rz:IO140/11",
+        "ref": "§141 Rz31",
+        "missing": 141
+      },
+      {
+        "card": "insolvenzordnung-2:rz:IO140/21",
+        "ref": "§ 167 Rz 3",
+        "missing": 167
+      },
+      {
+        "card": "insolvenzordnung-2:rz:IO140/23",
+        "ref": "§ 145a Rz 3",
+        "missing": 145
+      },
+      {
+        "card": "insolvenzordnung-2:rz:IO140/23",
+        "ref": "§ 141 Rz 29",
+        "missing": 141
+      }
+    ]
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

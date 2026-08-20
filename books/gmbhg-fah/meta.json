@@ -1,0 +1,21 @@
+{
+  "book_id": "gmbhg-fah",
+  "authors": [
+    "Heinrich Foglar-Deinhardstein",
+    "Nora Aburumieh",
+    "Alexandra Hoffenscher-Summer"
+  ],
+  "title": "GmbHG. Gesetz über Gesellschaften mit beschränkter Haftung. Praxiskommentar",
+  "edition": "1. Aufl.",
+  "year": 2017,
+  "publisher": "Verlag Österreich",
+  "jurisdiction": "AT",
+  "language": "de",
+  "isbn": null,
+  "cite_as": "FAH, GmbHG",
+  "pdf_pages_total": 2094,
+  "body_pages_pdf": "54-2055",
+  "printed_page_offset": -51,
+  "notes": "Титул (f4): «Heinrich Foglar-Deinhardstein, Nora Aburumieh, Alexandra Hoffenscher-Summer (Hrsg), GmbHG, Gesetz über Gesellschaften mit beschränkter Haftung, Mit einem Exkurs zum Wirtschaftsstrafrecht, 2017, Kommentar». Издательство названо в предисловии (f7: «Wir danken auch dem Verlag Österreich»). Оборот титула (f5) предписывает форму ссылки: «Kurzform: A.Winkler/M.Winkler in FAH, GmbHG §1» — автор комментария к параграфу входит в ссылку, поэтому он берётся из колонтитула и подставляется в citation. Кроме параграфов GmbHG том содержит два экскурса со сквозной нумерацией Rz: к международному корпоративному праву (§§ 10, 12 IPRG, f1914–1955) и к хозяйственному уголовному праву (f1980–2055).",
+  "service_source_id": "01337b21-5e8f-4ea0-bdc0-3e0e5e4c7918"
+}

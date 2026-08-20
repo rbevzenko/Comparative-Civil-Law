@@ -1,0 +1,221 @@
+{
+  "path": "/home/user/books/uk/burrows-english-private-law.pdf",
+  "sha256": "c77252d011af350040906ef5d9a883d37a8744547adabb26e7f868d377cc38d3",
+  "pages": 2561,
+  "sampled_pages": [
+    385,
+    449,
+    513,
+    577,
+    641,
+    705,
+    769,
+    833,
+    897,
+    961,
+    1025,
+    1089,
+    1153,
+    1217,
+    1281,
+    1345,
+    1409,
+    1473,
+    1537,
+    1601,
+    1665,
+    1729,
+    1793,
+    1857,
+    1921,
+    1985,
+    2049,
+    2113,
+    2177,
+    2241
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 213,
+    "max_depth": 3,
+    "resolved_pages": 193,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Cover Page",
+        "page": 2,
+        "depth": 0
+      },
+      {
+        "title": "ENGLISH PRIVATE LAW",
+        "page": 3,
+        "depth": 1
+      },
+      {
+        "title": "Title Page",
+        "page": 4,
+        "depth": 0
+      },
+      {
+        "title": "Copyright Page",
+        "page": 5,
+        "depth": 0
+      },
+      {
+        "title": "Dedication",
+        "page": 6,
+        "depth": 0
+      },
+      {
+        "title": "EDITOR",
+        "page": 7,
+        "depth": 1
+      },
+      {
+        "title": "Preface",
+        "page": 9,
+        "depth": 0
+      },
+      {
+        "title": "Introduction",
+        "page": 12,
+        "depth": 0
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 2045,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.03,
+    "offset_mode": -507,
+    "offset_stable": true,
+    "sample": [
+      {
+        "pdf_page": 385,
+        "printed": null
+      },
+      {
+        "pdf_page": 449,
+        "printed": null
+      },
+      {
+        "pdf_page": 513,
+        "printed": 6
+      },
+      {
+        "pdf_page": 577,
+        "printed": null
+      },
+      {
+        "pdf_page": 641,
+        "printed": null
+      },
+      {
+        "pdf_page": 705,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "15.0": 53128,
+      "16.9": 709,
+      "11.2": 411,
+      "21.2": 117
+    },
+    "body": 15.0,
+    "candidates_footnote": [
+      11.2
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 411,
+    "share_at_page_bottom": 0.22
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      96,
+      87,
+      81,
+      105
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "n° голый номер в начале абзаца": {
+      "hits": 3,
+      "monotonic_share": 0.5,
+      "first": [
+        "1981",
+        "4",
+        "109"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 3,
+      "monotonic_share": 0.5,
+      "first": [
+        "1981",
+        "4",
+        "109"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 8942,
+    "suspicious": 3,
+    "share": 0.0003,
+    "sample": [
+      "CBNS",
+      "NZLR",
+      "GmbH"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        137.0,
+        525.0
+      ],
+      "even": [
+        137.0,
+        525.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {},
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Кликабельных сносок нет — привязка по кеглю и положению."
+    ]
+  }
+}

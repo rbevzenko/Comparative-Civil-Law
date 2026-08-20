@@ -1,0 +1,115 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/goff-jones-unjust-enrichment-9",
+  "cards": 2396,
+  "profile": "westlaw-proview-export-gj-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 40,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "para.": 2396
+    }
+  },
+  "coverage": {
+    "share": 0.9943,
+    "covered_chars": 2384389,
+    "book_chars": 2398090,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 943,
+    "min": 119,
+    "max": 3258,
+    "too_short": [
+      "goff-jones-unjust-enrichment-9:para:24/12"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.83,
+    "footnotes_total": 6025,
+    "unparsed_blocks": 0,
+    "per_card_median": 2.0,
+    "cards_with_calls_but_no_notes": 20,
+    "notes_without_visible_call": 6021
+  },
+  "dead_pages": {
+    "pages": [
+      3,
+      6,
+      11,
+      16,
+      18,
+      21,
+      26,
+      31,
+      35,
+      39,
+      44,
+      49,
+      52,
+      58,
+      63,
+      67,
+      71,
+      73,
+      79,
+      83,
+      90,
+      95,
+      104,
+      112,
+      114,
+      117,
+      120,
+      125,
+      131,
+      134,
+      138,
+      142,
+      146,
+      148,
+      153,
+      162,
+      163,
+      164,
+      166,
+      168
+    ],
+    "count": 357
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "2": 25,
+      "3": 2371
+    }
+  },
+  "internal_refs": {
+    "refs_total": 117,
+    "unresolved": 0,
+    "resolved_share": 1.0,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

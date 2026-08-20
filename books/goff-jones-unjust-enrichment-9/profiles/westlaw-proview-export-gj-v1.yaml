@@ -1,0 +1,60 @@
+id: westlaw-proview-export-gj-v1
+publisher: Sweet & Maxwell
+jurisdiction: UK
+language: en
+# Тот же формат выгрузки Westlaw/ProView, что и у Chitty, но с двумя
+# отличиями, из-за которых профиль отдельный.
+#
+# 1. Номер абзаца двузначный: «1-01», а не «1-001». Трёхзначные встречаются
+#    только в главах длиннее ста абзацев.
+# 2. Сноски набраны ТЕМ ЖЕ кеглем 10, что и тело, и занимают целые полосы
+#    подряд. Ни по кеглю, ни по положению внизу полосы их не отделить,
+#    поэтому footnotes.mode: none, а блок сносок вырезает
+#    scripts/split_notes_by_chunk.py по границе куска выгрузки.
+#
+# Заголовок куска («Goff & Jones The Law of Unjust Enrichment 9th Ed.») в
+# мусор НЕ вынесен нарочно: он служит границей куска, и снимает его тот же
+# скрипт, использовав по назначению.
+
+units:
+  - type: "para."
+    id_prefix: "para"
+    mode: flow
+    pattern: '^\d{1,2}-(\d{2,3})(?=$|\s+[A-Z“"(\[])'
+    address_template: "para. {section}-{number}"
+
+address:
+  template: "para. {section}-{number}"
+  section:
+    mode: pattern
+    pattern: '^(\d{1,2})-\d{2,3}(?=$|\s+[A-Z“"(\[])'
+
+footnotes:
+  mode: none
+
+printed_page:
+  # Типографской пагинации нет: «Page 1» — номер полосы внутри куска
+  # выгрузки, и он сбрасывается на каждом разделе.
+  band: 0.0
+
+junk:
+  patterns:
+    - '^Page\s*\d+$'
+    - '^© \d{4} Sweet & Maxwell$'
+    - '^Mainwork$'
+    - '^Part \d+ - '
+    - '^Chapter \d+ - '
+    - '^Section \d+\. - '
+
+statutory:
+  patterns:
+    - '\b[A-Z][A-Za-z’\'' ]{3,40}Act\s+\d{4}(?:\s+ss?\.?\s*\d+[A-Za-z]*)?'
+    - '\bss?\.\s?\d+[A-Za-z]*(?:\(\d+\))?'
+
+cross_refs:
+  patterns:
+    - '(?:para|paras)\.?\s*\d{1,2}-\d{2,3}'
+    - '\bCh\.\s?\d{1,2}\b'
+
+citation:
+  template: "{cite_as} {address}"

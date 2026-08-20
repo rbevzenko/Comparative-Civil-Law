@@ -1,69 +1,37 @@
 {
   "book": "/home/user/books/koziol-grundriss-i-14",
-  "cards": 1839,
+  "cards": 1845,
   "profile": "manz-koziol-grundriss-scan-v1",
   "method": "digital",
   "continuity": {
-    "share": 0.9967,
+    "share": 1.0,
     "rows": 1,
-    "gaps": [
-      {
-        "family": "Rz",
-        "section": null,
-        "from": 165,
-        "to": 167,
-        "missing": 1
-      },
-      {
-        "family": "Rz",
-        "section": null,
-        "from": 296,
-        "to": 298,
-        "missing": 1
-      },
-      {
-        "family": "Rz",
-        "section": null,
-        "from": 685,
-        "to": 687,
-        "missing": 1
-      },
-      {
-        "family": "Rz",
-        "section": null,
-        "from": 707,
-        "to": 709,
-        "missing": 1
-      },
-      {
-        "family": "Rz",
-        "section": null,
-        "from": 1073,
-        "to": 1075,
-        "missing": 1
-      },
-      {
-        "family": "Rz",
-        "section": null,
-        "from": 1673,
-        "to": 1675,
-        "missing": 1
-      }
-    ],
-    "gaps_total": 6,
-    "missing_total": 6,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
     "duplicates": [],
     "duplicates_total": 0,
     "by_family": {
-      "Rz": 1839
+      "Rz": 1845
     }
   },
   "coverage": {
-    "share": 0.9986,
-    "covered_chars": 1365494,
+    "share": 0.9963,
+    "covered_chars": 1362427,
     "book_chars": 1367450,
-    "cards_without_offsets": 0,
-    "biggest_holes": []
+    "cards_without_offsets": 6,
+    "biggest_holes": [
+      {
+        "chars": 2276,
+        "from": 1245826,
+        "to": 1248102
+      },
+      {
+        "chars": 795,
+        "from": 116031,
+        "to": 116826
+      }
+    ]
   },
   "lengths": {
     "median": 572,
@@ -90,11 +58,11 @@
   },
   "footnotes": {
     "cards_with_footnotes_share": 0.51,
-    "footnotes_total": 2291,
+    "footnotes_total": 2299,
     "unparsed_blocks": 36,
     "per_card_median": 1,
     "cards_with_calls_but_no_notes": 18,
-    "notes_without_visible_call": 2203
+    "notes_without_visible_call": 2209
   },
   "dead_pages": {
     "pages": [],
@@ -110,10 +78,10 @@
     "depth_histogram": {
       "1": 1,
       "2": 42,
-      "3": 104,
-      "4": 509,
-      "5": 716,
-      "6": 467
+      "3": 105,
+      "4": 510,
+      "5": 718,
+      "6": 469
     }
   },
   "internal_refs": {

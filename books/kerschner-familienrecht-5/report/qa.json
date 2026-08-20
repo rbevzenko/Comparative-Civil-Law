@@ -1,0 +1,82 @@
+{
+  "book": "/home/user/books/kerschner-familienrecht-5",
+  "cards": 223,
+  "profile": "br-reihe-digital-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 6,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Rz": 223
+    }
+  },
+  "coverage": {
+    "share": 0.996,
+    "covered_chars": 343469,
+    "book_chars": 344858,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 937,
+    "min": 138,
+    "max": 10963,
+    "too_short": [],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.55,
+    "footnotes_total": 282,
+    "unparsed_blocks": 11,
+    "per_card_median": 1,
+    "cards_with_calls_but_no_notes": 20,
+    "notes_without_visible_call": 248
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 1,
+      "2": 20,
+      "3": 74,
+      "4": 81,
+      "5": 28,
+      "6": 19
+    }
+  },
+  "internal_refs": {
+    "refs_total": 166,
+    "unresolved": 1,
+    "resolved_share": 0.994,
+    "sample": [
+      {
+        "card": "kerschner-familienrecht-5:rz:2/156",
+        "ref": "oben Rz2/230ff.",
+        "missing": 230
+      }
+    ]
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

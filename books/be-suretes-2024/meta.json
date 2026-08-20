@@ -1,0 +1,22 @@
+{
+  "book_id": "be-suretes-2024",
+  "authors": [
+    "Steven Matheï",
+    "Leentje Grillaert",
+    "Katja Gabriëls",
+    "Paul Van Tigchelt"
+  ],
+  "title": "Proposition de loi portant le titre 1er «Les sûretés personnelles» du livre 9 «Les sûretés» du Code civil — Commentaire des articles",
+  "edition": "DOC 56 0261/001",
+  "year": 2024,
+  "publisher": "Chambre des représentants de Belgique",
+  "jurisdiction": "BE",
+  "language": "fr",
+  "isbn": null,
+  "cite_as": "Doc. parl., Chambre, 2024, DOC 56 0261/001, comm.",
+  "pdf_pages_total": 65,
+  "body_pages_pdf": "14-45",
+  "printed_page_offset": 0,
+  "notes": "Парламентский документ Палаты представителей Бельгии от 24 сентября 2024 г. Документ двуязычный и двухколонный: слева нидерландский, справа французский. В корпус взята ФРАНЦУЗСКАЯ колонка (scripts/pages_column.py --column right); нидерландская осталась в файле и при желании заводится вторым источником. Взят раздел «Commentaire des articles» (f14-45) — постатейные мотивы; общая часть «Développements» (f3-13) и текст самого законопроекта (f46-65) в корпус не идут: у первой нет единиц цитирования мельче страницы, второй — это текст будущего Кодекса, а не доктрина.",
+  "service_source_id": "45bc3bf6-4b79-43c7-ad81-ca89d1dfd84c"
+}

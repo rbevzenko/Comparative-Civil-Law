@@ -1,0 +1,265 @@
+{
+  "path": "/home/user/books/book5.pdf",
+  "sha256": "e061162e33689c44fb8088f1a53a679a79e4b62803b2dfb5ee23c54cd9f51b35",
+  "pages": 269,
+  "sampled_pages": [
+    59,
+    63,
+    67,
+    71,
+    75,
+    79,
+    83,
+    87,
+    91,
+    95,
+    99,
+    103,
+    107,
+    111,
+    115,
+    119,
+    123,
+    127,
+    131,
+    135,
+    139,
+    143,
+    147,
+    151,
+    155,
+    159,
+    163,
+    167,
+    171,
+    175,
+    179,
+    183,
+    187,
+    191,
+    195,
+    199,
+    203,
+    207,
+    211,
+    215
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 169,
+    "max_depth": 6,
+    "resolved_pages": 169,
+    "section_nodes": 23,
+    "sample": [
+      {
+        "title": "Cover",
+        "page": 1,
+        "depth": 0
+      },
+      {
+        "title": "Bürgerliches Recht Band VII\rInternationales Privatrecht",
+        "page": 4,
+        "depth": 0
+      },
+      {
+        "title": "ISBN 9783709100677",
+        "page": 5,
+        "depth": 0
+      },
+      {
+        "title": "Geleitwort des Herausgebers",
+        "page": 6,
+        "depth": 0
+      },
+      {
+        "title": "Vorwort zur 5. Auflage",
+        "page": 8,
+        "depth": 0
+      },
+      {
+        "title": "Inhaltsübersicht",
+        "page": 10,
+        "depth": 0
+      },
+      {
+        "title": "Inhaltsverzeichnis",
+        "page": 12,
+        "depth": 0
+      },
+      {
+        "title": "Abkürzungsverzeichnis",
+        "page": 18,
+        "depth": 1
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 2379,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 1.0,
+    "offset_mode": -23,
+    "offset_stable": true,
+    "sample": [
+      {
+        "pdf_page": 59,
+        "printed": 36
+      },
+      {
+        "pdf_page": 63,
+        "printed": 40
+      },
+      {
+        "pdf_page": 67,
+        "printed": 44
+      },
+      {
+        "pdf_page": 71,
+        "printed": 48
+      },
+      {
+        "pdf_page": 75,
+        "printed": 52
+      },
+      {
+        "pdf_page": 79,
+        "printed": 56
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "10.5": 67326,
+      "8.5": 22833,
+      "8.0": 952,
+      "6.8": 337,
+      "12.5": 264,
+      "13.9": 66,
+      "5.5": 5,
+      "9.1": 1
+    },
+    "body": 10.5,
+    "candidates_footnote": [
+      6.8,
+      8.0,
+      8.5
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 22638,
+    "share_at_page_bottom": 0.77
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      29,
+      23,
+      35,
+      57
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "n° голый номер в начале абзаца": {
+      "hits": 164,
+      "monotonic_share": 0.93,
+      "first": [
+        "1",
+        "2",
+        "15",
+        "16",
+        "17"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 166,
+      "monotonic_share": 0.92,
+      "first": [
+        "1",
+        "2",
+        "15",
+        "16",
+        "17"
+      ]
+    },
+    "§ с номером": {
+      "hits": 51,
+      "monotonic_share": 0.38,
+      "first": [
+        "6",
+        "6",
+        "6",
+        "7",
+        "28"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 14116,
+    "suspicious": 87,
+    "share": 0.0062,
+    "sample": [
+      "BGBl",
+      "ZfRV",
+      "BGBl",
+      "ZfRV",
+      "BGBl",
+      "ZfRV",
+      "DRGBl",
+      "ZfRV",
+      "ZfRV",
+      "ZfRV",
+      "ZfRV",
+      "ZfRV"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        57.0,
+        383.0
+      ],
+      "even": [
+        57.0,
+        383.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "DE/AT/CH": 8
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "В оглавлении 23 узлов с номером параграфа: адрес единицы, скорее всего, составной (§ NNN + номер), это влияет на id.",
+      "Кликабельных сносок нет — привязка по кеглю и положению.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы."
+    ]
+  }
+}

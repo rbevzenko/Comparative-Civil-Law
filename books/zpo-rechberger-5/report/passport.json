@@ -1,0 +1,295 @@
+{
+  "path": "/home/user/books/zpo-rechberger-klicka.pdf",
+  "sha256": "89b9afd72eb691e3d80261630c12669d6c1d4d0c7773112079fc087373778ca0",
+  "pages": 2455,
+  "sampled_pages": [
+    370,
+    397,
+    424,
+    451,
+    478,
+    505,
+    532,
+    559,
+    586,
+    613,
+    640,
+    667,
+    694,
+    721,
+    748,
+    775,
+    802,
+    829,
+    856,
+    883,
+    910,
+    937,
+    964,
+    991,
+    1018,
+    1045,
+    1072,
+    1099,
+    1126,
+    1153,
+    1180,
+    1207,
+    1234,
+    1261,
+    1288,
+    1315,
+    1342,
+    1369,
+    1396,
+    1423,
+    1450,
+    1477,
+    1504,
+    1531,
+    1558,
+    1585,
+    1612,
+    1639,
+    1666,
+    1693,
+    1720,
+    1747,
+    1774,
+    1801,
+    1828,
+    1855,
+    1882,
+    1909,
+    1936,
+    1963
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 86,
+    "max_depth": 3,
+    "resolved_pages": 86,
+    "section_nodes": 57,
+    "sample": [
+      {
+        "title": "Bearbeiterverzeichnis\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 14,
+        "depth": 0
+      },
+      {
+        "title": "Hinweise für den Gebrauch\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 16,
+        "depth": 0
+      },
+      {
+        "title": "Abkürzungsverzeichnis\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 18,
+        "depth": 0
+      },
+      {
+        "title": "Verzeichnis abgekürzt zitierter Literatur\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 38,
+        "depth": 0
+      },
+      {
+        "title": "Einführungsgesetz zur Jurisdiktionsnorm (EGJN)\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 44,
+        "depth": 0
+      },
+      {
+        "title": "Jurisdiktionsnorm (JN)\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 70,
+        "depth": 0
+      },
+      {
+        "title": "Erster Teil: Von der Gerichtsbarkeit im allgemeinen\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 70,
+        "depth": 1
+      },
+      {
+        "title": "Erster Abschnitt – Gerichte und gerichtliche Organe (§§ 1–18)\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 70,
+        "depth": 2
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 2228,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 1.0,
+    "offset_mode": -43,
+    "offset_stable": true,
+    "sample": [
+      {
+        "pdf_page": 370,
+        "printed": 327
+      },
+      {
+        "pdf_page": 397,
+        "printed": 354
+      },
+      {
+        "pdf_page": 424,
+        "printed": 381
+      },
+      {
+        "pdf_page": 451,
+        "printed": 408
+      },
+      {
+        "pdf_page": 478,
+        "printed": 435
+      },
+      {
+        "pdf_page": 505,
+        "printed": 462
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "8.5": 111194,
+      "7.5": 20995,
+      "10.0": 324,
+      "9.0": 321,
+      "8.0": 149,
+      "10.5": 58,
+      "5.5": 4,
+      "4.9": 1
+    },
+    "body": 8.5,
+    "candidates_footnote": []
+  },
+  "footnotes": {
+    "small_font_chars": 5,
+    "share_at_page_bottom": 0.6
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      43,
+      37,
+      32,
+      48
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "§ с номером": {
+      "hits": 96,
+      "monotonic_share": 0.65,
+      "first": [
+        "82",
+        "83",
+        "83",
+        "85",
+        "92"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 69,
+      "monotonic_share": 0.63,
+      "first": [
+        "1",
+        "2",
+        "1",
+        "6",
+        "6"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 70,
+      "monotonic_share": 0.62,
+      "first": [
+        "1",
+        "2",
+        "2",
+        "1",
+        "6"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 20686,
+    "suspicious": 48,
+    "share": 0.0023,
+    "sample": [
+      "BlgNR",
+      "BlgNR",
+      "GmbH",
+      "ZfRV",
+      "KSchG",
+      "BlgNR",
+      "BlgNR",
+      "ZfRV",
+      "(Hrsg),",
+      "(Hrsg),",
+      "ZfRV",
+      "ZfRV"
+    ]
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        48.0,
+        303.0
+      ],
+      "even": [
+        43.0,
+        298.0
+      ]
+    },
+    "left": {
+      "hits": 52,
+      "monotonic_share": 0.65,
+      "even_page_share": 0.0,
+      "first": [
+        1,
+        2,
+        1,
+        6,
+        7,
+        2
+      ]
+    },
+    "right": {
+      "hits": 58,
+      "monotonic_share": 0.7,
+      "even_page_share": 1.0,
+      "first": [
+        1,
+        1,
+        2,
+        3,
+        4,
+        1
+      ]
+    }
+  },
+  "statutory": {
+    "DE/AT/CH": 21
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "В оглавлении 57 узлов с номером параграфа: адрес единицы, скорее всего, составной (§ NNN + номер), это влияет на id.",
+      "Кегль сносок не отделяется от основного текста — отделять по положению на полосе.",
+      "Кликабельных сносок нет — привязка по кеглю и положению."
+    ]
+  }
+}

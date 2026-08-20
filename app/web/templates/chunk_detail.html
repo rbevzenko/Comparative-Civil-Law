@@ -13,7 +13,7 @@
 
   <dl class="meta-list">
     <dt>№ пункта</dt><dd>{{ chunk.point_number or "—" }}</dd>
-    <dt>Страницы</dt>
+    <dt>Страницы PDF</dt>
     <dd>
       {% if chunk.page_start %}
         {{ chunk.page_start }}{% if chunk.page_end and chunk.page_end != chunk.page_start %}–{{ chunk.page_end }}{% endif %}
