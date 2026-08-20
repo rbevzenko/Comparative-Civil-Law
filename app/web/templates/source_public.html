@@ -50,7 +50,11 @@
         {% if chunk.source %}
           <dt>Источник</dt>
           <dd>
+            {# Название источника ведёт на сам PDF: ссылка подписанная и
+               живёт ограниченное время, выдаёт её объектное хранилище. #}
+            {% if pdf_url %}<a href="{{ pdf_url }}" target="_blank" rel="noopener">{% endif %}
             {{ chunk.source.title }}{% if chunk.source.edition %}, {{ chunk.source.edition }}{% endif %}
+            {% if pdf_url %}</a>{% endif %}
             {% if chunk.source.authors %} — {{ chunk.source.authors | join(", ") }}{% endif %}
           </dd>
           <dt>Юрисдикция</dt><dd><span class="badge">{{ chunk.source.jurisdiction }}</span></dd>

@@ -455,7 +455,7 @@ def _snippet(text: str, limit: int = 220) -> str:
 
 @public_router.get("/source/{chunk_id}", include_in_schema=False)
 async def source_public_detail(
-    chunk_id: uuid.UUID,
+    chunk_id: str,
     request: Request,
     db: Annotated[AsyncSession, Depends(get_db)],
     sig: str | None = None,
@@ -468,12 +468,24 @@ async def source_public_detail(
     signature doesn't already name: no table of contents, no PDF, no
     next/prev page links, no browsing to the rest of the source.
     """
-    if not verify_chunk_signature(chunk_id, sig):
+    # id принимается строкой, а не uuid.UUID, нарочно. При типе uuid.UUID
+    # FastAPI отвечает на испорченную ссылку сырым 422 с телом валидатора
+    # («invalid group length in group 3»), и человек видит JSON вместо
+    # страницы. Ссылку портит не сервис: её пересобирает клиент, когда
+    # оформляет сноску. Разбираем сами и отвечаем той же страницей, что и на
+    # ненайденный фрагмент.
+    try:
+        parsed_id = uuid.UUID(chunk_id)
+    except (ValueError, AttributeError, TypeError):
+        return Response(_NOT_FOUND_HTML, status_code=404, media_type="text/html",
+                        headers={"X-Robots-Tag": "noindex, nofollow"})
+
+    if not verify_chunk_signature(parsed_id, sig):
         return Response(_NOT_FOUND_HTML, status_code=404, media_type="text/html", headers={"X-Robots-Tag": "noindex, nofollow"})
 
     stmt = (
         select(Chunk)
-        .where(Chunk.id == chunk_id)
+        .where(Chunk.id == parsed_id)
         .options(selectinload(Chunk.footnotes), selectinload(Chunk.source))
     )
     chunk = (await db.execute(stmt)).scalar_one_or_none()
@@ -509,6 +521,7 @@ async def source_public_detail(
         "source_public.html",
         {
             "chunk": chunk,
+            "pdf_url": generate_presigned_url(chunk.source.pdf_object_key) if chunk.source else None,
             "prev_citation": prev_chunk.citation if prev_chunk else None,
             "prev_snippet": _snippet(prev_chunk.text) if prev_chunk else None,
             "next_citation": next_chunk.citation if next_chunk else None,
