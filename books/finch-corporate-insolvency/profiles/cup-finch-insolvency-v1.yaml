@@ -1,0 +1,57 @@
+id: cup-finch-insolvency-v1
+publisher: Cambridge University Press
+jurisdiction: UK
+language: en
+# Vanessa Finch, Corporate Insolvency Law: Perspectives and Principles,
+# 2nd ed. (CUP 2009). Издательский PDF, 919 страниц, тело f53–f839.
+# Дальше библиография и указатель.
+#
+# Кегли: тело 10.7, заголовок раздела 11.0, заголовок главы и части 13.9,
+# сноски 8.5, колонтитул 10.5.
+#
+# СВОЕЙ ЕДИНИЦЫ ЦИТИРОВАНИЯ У КНИГИ НЕТ: разделы не нумерованы. Единица —
+# раздел по заголовку, адрес — типографская страница из колонтитула.
+#
+# Заголовок отличается от тела ТОЛЬКО кеглем (11.0 против 10.7) и никакого
+# паттерна не имеет: это обычная фраза со строчной буквы («How to borrow»,
+# «Creditor wealth maximisation and the creditors’ bargain»). Отсюда узкое
+# окно кегля.
+
+units:
+  - type: "p."
+    id_prefix: "sec"
+    mode: heading
+    pattern: '^\S.{0,90}$'
+    size_min: 10.9
+    size_max: 11.2
+    address_template: "p. {page}"
+
+address:
+  template: "p. {page}"
+
+footnotes:
+  mode: font_bottom
+  note_size_max: 9.2
+  bottom_band: 0.45
+
+printed_page:
+  # Колонцифра в колонтитуле: «2 corporate insolvency law» на чётной,
+  # «rescue 249» на нечётной. Нижняя полоса выключена.
+  band: [0.075, 0.0]
+  patterns:
+    - '^(\d{1,4})\s'
+    - '\s(\d{1,4})$'
+
+junk:
+  header_band: 0.075
+
+statutory:
+  patterns:
+    - '\b[A-Z][A-Za-z’\'' ]{3,40}Act\s+\d{4}(?:\s+ss?\.?\s*\d+[A-Za-z]*)?'
+    - '\bss?\.?\s?\d+[A-Za-z]*(?:\(\d+\))?'
+
+cross_refs:
+  patterns: []
+
+citation:
+  template: "{cite_as} {address}"

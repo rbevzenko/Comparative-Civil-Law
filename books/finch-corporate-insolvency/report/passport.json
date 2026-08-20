@@ -1,0 +1,280 @@
+{
+  "path": "/home/user/books/uk/finch-corporate-insolvency.pdf",
+  "sha256": "b8cb7e4cdf031ad77fc743f6d25e5c127177deb4dc2162ebfde8004453152db5",
+  "pages": 919,
+  "sampled_pages": [
+    138,
+    155,
+    172,
+    189,
+    206,
+    223,
+    240,
+    257,
+    274,
+    291,
+    308,
+    325,
+    342,
+    359,
+    376,
+    393,
+    410,
+    427,
+    444,
+    461,
+    478,
+    495,
+    512,
+    529,
+    546,
+    563,
+    580,
+    597,
+    614,
+    631,
+    648,
+    665,
+    682,
+    699,
+    716,
+    733,
+    750,
+    767,
+    784,
+    801
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 235,
+    "max_depth": 5,
+    "resolved_pages": 235,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Cover",
+        "page": 1,
+        "depth": 0
+      },
+      {
+        "title": "Half-title",
+        "page": 3,
+        "depth": 0
+      },
+      {
+        "title": "Title",
+        "page": 5,
+        "depth": 0
+      },
+      {
+        "title": "Copyright",
+        "page": 6,
+        "depth": 0
+      },
+      {
+        "title": "Dedication",
+        "page": 7,
+        "depth": 0
+      },
+      {
+        "title": "Contents",
+        "page": 9,
+        "depth": 0
+      },
+      {
+        "title": "Acknowledgements",
+        "page": 13,
+        "depth": 0
+      },
+      {
+        "title": "Table of cases",
+        "page": 14,
+        "depth": 0
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 278,
+    "with_destination": 278,
+    "per_page": 7.0,
+    "sample": [
+      {
+        "page": 138,
+        "rect": [
+          196,
+          520,
+          204,
+          531
+        ]
+      },
+      {
+        "page": 138,
+        "rect": [
+          245,
+          367,
+          253,
+          378
+        ]
+      },
+      {
+        "page": 138,
+        "rect": [
+          96,
+          329,
+          104,
+          340
+        ]
+      }
+    ]
+  },
+  "text_layer": {
+    "median_chars_per_page": 2343,
+    "empty_pages_share": 0.03,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.0,
+    "offset_mode": null,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 138,
+        "printed": null
+      },
+      {
+        "pdf_page": 155,
+        "printed": null
+      },
+      {
+        "pdf_page": 172,
+        "printed": null
+      },
+      {
+        "pdf_page": 189,
+        "printed": null
+      },
+      {
+        "pdf_page": 206,
+        "printed": null
+      },
+      {
+        "pdf_page": 223,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "10.7": 58940,
+      "8.5": 28886,
+      "9.0": 1492,
+      "10.5": 1082,
+      "5.6": 405,
+      "7.1": 394,
+      "11.0": 357,
+      "7.3": 18
+    },
+    "body": 10.7,
+    "candidates_footnote": [
+      5.6,
+      7.1,
+      8.5,
+      9.0
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 19896,
+    "share_at_page_bottom": 0.69
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      54,
+      65
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "n° голый номер в начале абзаца": {
+      "hits": 144,
+      "monotonic_share": 0.9,
+      "first": [
+        "73",
+        "74",
+        "75",
+        "76",
+        "141"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 144,
+      "monotonic_share": 0.9,
+      "first": [
+        "73",
+        "74",
+        "75",
+        "76",
+        "141"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 17080,
+    "suspicious": 26,
+    "share": 0.0015,
+    "sample": [
+      "html).",
+      "BCLC",
+      "BCLC",
+      "RPBs",
+      "RPBs",
+      "‘RPBs",
+      "JCLS",
+      "(QFCs)",
+      "BCLC",
+      "BCLC",
+      "BCLC",
+      "BCLC"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        54.0,
+        366.0
+      ],
+      "even": [
+        65.0,
+        377.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "EN": 7
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Сноски кликабельны — привязку берём из файла напрямую, без эвристик.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы."
+    ]
+  }
+}
