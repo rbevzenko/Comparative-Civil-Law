@@ -1,0 +1,234 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/vogenauer-general-principles",
+  "cards": 390,
+  "profile": "dcfr-vogenauer-general-principles-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9535,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "p.",
+        "section": null,
+        "from": 3,
+        "to": 5,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 19,
+        "to": 21,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 39,
+        "to": 41,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 51,
+        "to": 53,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 75,
+        "to": 77,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 103,
+        "to": 105,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 129,
+        "to": 131,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 131,
+        "to": 133,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 143,
+        "to": 145,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 177,
+        "to": 179,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 193,
+        "to": 195,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 241,
+        "to": 243,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 251,
+        "to": 253,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 253,
+        "to": 255,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 305,
+        "to": 307,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 327,
+        "to": 329,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 353,
+        "to": 355,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 363,
+        "to": 365,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 395,
+        "to": 397,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 19,
+    "missing_total": 19,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 390
+    }
+  },
+  "coverage": {
+    "share": 0.9996,
+    "covered_chars": 915907,
+    "book_chars": 916296,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2443,
+    "min": 18,
+    "max": 3560,
+    "too_short": [
+      "vogenauer-general-principles:p:39",
+      "vogenauer-general-principles:p:131",
+      "vogenauer-general-principles:p:253",
+      "vogenauer-general-principles:p:395"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.89,
+    "footnotes_total": 1455,
+    "unparsed_blocks": 0,
+    "per_card_median": 4.0,
+    "cards_with_calls_but_no_notes": 0,
+    "notes_without_visible_call": 116
+  },
+  "dead_pages": {
+    "pages": [
+      17,
+      33,
+      53,
+      65,
+      89,
+      117,
+      143,
+      145,
+      157,
+      191,
+      207,
+      255,
+      265,
+      267,
+      319,
+      341,
+      367,
+      377,
+      409
+    ],
+    "count": 19
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 4,
+      "3": 38,
+      "4": 348
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 95.3% < 98%: пропущено номеров 19. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

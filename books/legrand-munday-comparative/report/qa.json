@@ -1,0 +1,186 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/legrand-munday-comparative",
+  "cards": 496,
+  "profile": "dcfr-legrand-munday-comparative-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9841,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "p.",
+        "section": null,
+        "from": 29,
+        "to": 31,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 127,
+        "to": 129,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 129,
+        "to": 131,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 195,
+        "to": 197,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 433,
+        "to": 435,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 435,
+        "to": 437,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 489,
+        "to": 491,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 491,
+        "to": 493,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 8,
+    "missing_total": 8,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 496
+    }
+  },
+  "coverage": {
+    "share": 0.9995,
+    "covered_chars": 1028220,
+    "book_chars": 1028715,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2141,
+    "min": 10,
+    "max": 2861,
+    "too_short": [
+      "legrand-munday-comparative:p:29",
+      "legrand-munday-comparative:p:129",
+      "legrand-munday-comparative:p:195",
+      "legrand-munday-comparative:p:435",
+      "legrand-munday-comparative:p:491"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.85,
+    "footnotes_total": 1387,
+    "unparsed_blocks": 0,
+    "per_card_median": 2.5,
+    "cards_with_calls_but_no_notes": 6,
+    "notes_without_visible_call": 207
+  },
+  "dead_pages": {
+    "pages": [
+      38,
+      136,
+      138,
+      204,
+      248,
+      249,
+      250,
+      251,
+      252,
+      253,
+      254,
+      255,
+      256,
+      257,
+      258,
+      259,
+      260,
+      261,
+      262,
+      263,
+      264,
+      265,
+      266,
+      267,
+      268,
+      269,
+      270,
+      271,
+      272,
+      273,
+      274,
+      275,
+      276,
+      277,
+      278,
+      279,
+      280,
+      281,
+      282,
+      283
+    ],
+    "count": 51
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 496,
+    "sample": [
+      "legrand-munday-comparative:p:6",
+      "legrand-munday-comparative:p:7",
+      "legrand-munday-comparative:p:8",
+      "legrand-munday-comparative:p:9",
+      "legrand-munday-comparative:p:10",
+      "legrand-munday-comparative:p:11",
+      "legrand-munday-comparative:p:12",
+      "legrand-munday-comparative:p:13",
+      "legrand-munday-comparative:p:14",
+      "legrand-munday-comparative:p:15"
+    ],
+    "depth_histogram": {
+      "0": 496
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

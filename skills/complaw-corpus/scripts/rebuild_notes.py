@@ -57,7 +57,11 @@ def main():
         # вовсе — у книги выходило 0 сносок при 455 полосах с аппаратом.
         marker = re.compile(r"^(\d{1,%d})$" % a.max_digits)
     else:
-        marker = re.compile(r"^(\d{1,%d})\s+(\S.*)$" % a.max_digits)
+        # Точка или скобка после номера необязательна: у Hyland сноски
+        # набраны «1. Traer 42», у большинства книг — «1 Traer 42».
+        # Без этого послабления у Hyland выходило 121 сноска при 642
+        # полосах с аппаратом.
+        marker = re.compile(r"^(\d{1,%d})[.)]?\s+(\S.*)$" % a.max_digits)
     path = os.path.join(a.book, "work", "pages.jsonl")
     pages = [json.loads(l) for l in open(path, encoding="utf-8")]
 
