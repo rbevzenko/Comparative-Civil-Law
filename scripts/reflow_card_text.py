@@ -17,7 +17,8 @@
 фразе не находит то, что глазом читается.
 
 Скрипт сращивает перенос слова, склеивает строки одного абзаца пробелом и
-приводит пробелы к обычным.
+приводит пробелы к обычным. Мягкий перенос U+00AD снимается вместе с
+переводом строки: висячим дефисом он не бывает, его ставит только вёрстка.
 
 Две оговорки, из-за которых это не однострочный replace.
 
@@ -30,6 +31,13 @@ oder gesetzwidrige Geschäfte» дефис у «sitten-» СВОЙ, он зам�
 Конец абзаца от переноса строки отличает длина: строка, которая заметно
 короче остальных в этой карточке, кончает абзац (заголовок, конец мысли), и
 перевод строки после неё остаётся.
+
+Скрипт одноразовый и метит карточку ключом `text_reflowed`. Второй прогон по
+собранному тексту НЕ безобиден: конец абзаца распознаётся по длине строки
+относительно остальных в карточке, а в собранном тексте строка — это уже
+целый абзац, и соседние абзацы склеиваются между собой. На Megarry & Wade
+второй прогон менял текст у 714 карточек из 2929. Помеченные карточки
+пропускаются; `--again` снимает защиту.
 
 Отдельно сохраняется начало пункта перечисления («(a)», «(iii)», «(2)»,
 «1.», маркер списка): в юридическом тексте каждый подпункт — отдельное
@@ -95,6 +103,14 @@ def reflow(text, suspended, short_ratio=0.6):
         # обеих сторон; короткая в конце — просто конец абзаца.
         # Строка, оборванная переносом слова, абзаца не кончает никогда —
         # этот случай разбирается первым.
+        # Мягкий перенос U+00AD ставит только вёрстка и только по слогам:
+        # висячим дефисом он не бывает никогда, поэтому склеивается без
+        # оглядки на следующее слово. У Vansweevelt так набрано 1557 карточек
+        # («achter\u00ad\nliggende»), и без этой ветки в тексте оставался
+        # невидимый знак посреди слова.
+        if prev.endswith("\u00ad"):
+            out = prev[:-1] + stripped
+            continue
         if prev.endswith("-"):
             first = re.split(r"[\s,.;:]", stripped, 1)[0].lower().strip("«»\"'")
             out = (prev + " " + stripped) if first in suspended else (prev[:-1] + stripped)
@@ -110,6 +126,12 @@ def reflow(text, suspended, short_ratio=0.6):
             out = prev + "\n" + stripped
             continue
         out = prev + " " + stripped
+    # Оставшиеся мягкие переносы — внутри строки — снимаются вместе с
+    # пробелом, который мог оказаться следом: знака на экране не видно, а
+    # слово он всё равно разрывает. Заодно скрипт остаётся идемпотентным —
+    # текст, уже собранный прошлой версией, не рассыпается на «achter
+    # liggende».
+    out = re.sub("\u00ad\\s*", "", out)
     return re.sub(r" {2,}", " ", out).strip()
 
 
@@ -118,15 +140,21 @@ def main():
     ap.add_argument("--book", required=True)
     ap.add_argument("--lang", default="en", choices=sorted(SUSPENDED))
     ap.add_argument("--short-ratio", type=float, default=0.6)
+    ap.add_argument("--again", action="store_true",
+                    help="прогнать заново по уже собранным карточкам (склеит абзацы — см. docstring)")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
 
     suspended = SUSPENDED[a.lang]
     path = os.path.join(a.book, "output", "cards.jsonl")
     cards = [json.loads(l) for l in open(path, encoding="utf-8")]
-    changed = notes = 0
+    changed = notes = heads = 0
     sample = None
+    skipped = 0
     for c in cards:
+        if c.get("text_reflowed") and not a.again:
+            skipped += 1
+            continue
         before = c.get("text") or ""
         after = reflow(before, suspended, a.short_ratio)
         if after != before:
@@ -134,6 +162,16 @@ def main():
                 sample = (before[:220], after[:220])
             c["text"] = after
             changed += 1
+        # Узлы иерархии — тот же набранный текст: у Vansweevelt в 30 из них
+        # остался мягкий перенос, а показываются они в выдаче наравне с
+        # цитатой.
+        nodes = c.get("hierarchy") or []
+        for k, node in enumerate(nodes):
+            nn = reflow(node, suspended, a.short_ratio)
+            if nn != node:
+                nodes[k] = nn
+                heads += 1
+        c["text_reflowed"] = True
         for fn in c.get("footnotes") or []:
             t = fn.get("text") or ""
             nt = reflow(t, suspended, a.short_ratio)
@@ -141,7 +179,8 @@ def main():
                 fn["text"] = nt
                 notes += 1
 
-    print(f"карточек перебрано: {changed} из {len(cards)}, сносок: {notes}")
+    print(f"карточек перебрано: {changed} из {len(cards)}, сносок: {notes}, узлов иерархии: {heads}"
+          + (f", пропущено как уже собранные: {skipped}" if skipped else ""))
     if sample:
         print("  было: " + repr(sample[0]))
         print("  стало: " + repr(sample[1]))
