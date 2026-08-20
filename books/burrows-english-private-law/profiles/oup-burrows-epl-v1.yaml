@@ -1,0 +1,56 @@
+id: oup-burrows-epl-v1
+publisher: Oxford University Press
+jurisdiction: UK
+language: en
+# Andrew Burrows (ed.), English Private Law, 3rd ed. Не типографский PDF, а
+# перевёрстанная электронная выгрузка: кегль тела 15.0 на всех полосах,
+# колонтитулов и колонцифр нет вовсе, аппарата сносок в файле нет —
+# знаки сносок стоят в тексте («gametes4», «presumptions.5»), а самих сносок
+# нет ни на полосах, ни в конце глав.
+#
+# Единица цитирования — номер абзаца «глава.номер»: 2.01, 4.492. Стоит в
+# начале строки, с выступом влево (x≈105 против x≈137 у продолжения).
+#
+# Первая полоса каждой главы занята её оглавлением: строки вида
+# «A. The Creation of Legal Family Relationships 2.01». Они снимаются как
+# мусор — иначе целиком уезжают в хвост последней карточки предыдущей главы.
+
+units:
+  - type: "para."
+    id_prefix: "para"
+    mode: flow
+    pattern: '^\d{1,2}\.(\d{1,3})(?=$|\s+[A-Z“‘(\[])'
+    address_template: "para. {section}.{number}"
+
+address:
+  template: "para. {section}.{number}"
+  section:
+    mode: pattern
+    pattern: '^(\d{1,2})\.\d{1,3}(?=$|\s+[A-Z“‘(\[])'
+
+footnotes:
+  # Аппарата в выгрузке нет. Ставить font_bottom не на чем.
+  mode: none
+
+printed_page:
+  # Ни колонтитула, ни номера страницы.
+  band: 0.0
+
+junk:
+  patterns:
+    # Оглавление главы на её первой полосе: буква или номер, название,
+    # номер абзаца в конце строки.
+    - '^[A-Z]\.\s.+\s\d{1,2}\.\d{2,3}$'
+    - '^\([0-9a-z]+\)\s.+\s\d{1,2}\.\d{2,3}$'
+
+statutory:
+  patterns:
+    - '\b[A-Z][A-Za-z’\'' ]{3,40}Act\s+\d{4}(?:\s+ss?\.?\s*\d+[A-Za-z]*)?'
+    - '\bss?\s?\d+[A-Za-z]*(?:\(\d+\))?'
+
+cross_refs:
+  patterns:
+    - '(?:para|paras)\.?\s*\d{1,2}\.\d{2,3}'
+
+citation:
+  template: "{cite_as} {address}"

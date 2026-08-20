@@ -1,12 +1,18 @@
 {
-  "book_id": "burrows-english-private-law",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
+  "book_id": "burrows-english-private-law-3",
+  "authors": [
+    "Andrew Burrows"
+  ],
+  "title": "English Private Law",
+  "edition": "3rd ed.",
+  "year": 2013,
+  "publisher": "Oxford University Press",
+  "jurisdiction": "UK",
+  "language": "en",
   "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "cite_as": "Burrows (ed.), English Private Law, 3rd edn",
+  "pdf_pages_total": 2561,
+  "body_pages_pdf": "22-1799",
+  "printed_page_offset": null,
+  "notes": "Титул (f4): «ENGLISH PRIVATE LAW, THIRD EDITION, Edited by PROFESSOR ANDREW BURROWS, All Souls College, Oxford». Файл — перевёрстанная электронная выгрузка, а не типографский PDF: кегль тела 15.0 на всех полосах, колонтитулов и колонцифр нет вовсе. АППАРАТА СНОСОК В ФАЙЛЕ НЕТ: знаки сносок стоят в тексте («gametes4»), а самих сносок нет ни на полосах, ни в конце глав. Тело f22–f1799 (22 главы); с f1800 Index, дальше Table of Cases и Table of Statutes."
 }

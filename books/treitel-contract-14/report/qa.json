@@ -45,12 +45,12 @@
     "too_long": []
   },
   "footnotes": {
-    "cards_with_footnotes_share": 0.87,
-    "footnotes_total": 10635,
+    "cards_with_footnotes_share": 0.88,
+    "footnotes_total": 10613,
     "unparsed_blocks": 0,
     "per_card_median": 4,
-    "cards_with_calls_but_no_notes": 181,
-    "notes_without_visible_call": 1684
+    "cards_with_calls_but_no_notes": 158,
+    "notes_without_visible_call": 1686
   },
   "dead_pages": {
     "pages": [],
