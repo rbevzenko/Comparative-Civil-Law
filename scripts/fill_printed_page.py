@@ -16,6 +16,13 @@
 смещение гуляет — вклейки, вкладки, несколько нумераций, — скрипт ничего не
 делает и говорит об этом: выдуманная страница хуже отсутствующей.
 
+Флаг `--sequential` достраивает иначе: не по смещению от номера листа, а по
+ПОРЯДКУ полос. Это для сканов разворотами (scripts/pages_spread.py), где на
+одном листе две полосы книги и постоянного смещения нет вовсе. Между двумя
+прочитанными номерами номера идут подряд — но достраивается только там, где
+счёт сходится: если пропущенных полос больше, чем номеров между ними, в
+скане не хватает листа, и выдуманный номер увёл бы адрес на чужую страницу.
+
 Флаг `--drop-outliers` сначала стирает колонцифры, чьё смещение расходится
 с преобладающим, и только потом достраивает. Это для случая, когда номер
 прочитан НЕВЕРНО, а не отсутствует: у Duddington на двух полосах из 203
@@ -42,6 +49,9 @@ def main():
     ap.add_argument("--book", required=True)
     ap.add_argument("--max-spread", type=int, default=0,
                     help="на сколько смещение вправе гулять, чтобы считаться постоянным")
+    ap.add_argument("--sequential", action="store_true",
+                    help="достраивать не по смещению от номера листа, а по порядку полос: "
+                         "между двумя прочитанными номерами номера идут подряд")
     ap.add_argument("--drop-outliers", action="store_true",
                     help="сначала стереть колонцифры, чьё смещение расходится с "
                          "преобладающим, и только потом достраивать")
@@ -53,6 +63,36 @@ def main():
     known = [(p["pdf_page"], p["printed_page"]) for p in pages if p.get("printed_page")]
     if not known:
         print("Колонцифры нет ни на одной полосе — достраивать не от чего.")
+        return
+
+    if a.sequential:
+        anchors = [i for i, p in enumerate(pages) if p.get("printed_page")]
+        filled = skipped = 0
+        for k in range(len(anchors) - 1):
+            i, j = anchors[k], anchors[k + 1]
+            lo, hi = pages[i]["printed_page"], pages[j]["printed_page"]
+            if j - i < 2:
+                continue
+            # Достраиваем только там, где счёт сходится: между двумя
+            # прочитанными номерами пропущенных полос ровно столько, сколько
+            # номеров между ними. Иначе в скане не хватает листа, и
+            # выдуманный номер увёл бы адрес на чужую страницу.
+            if hi - lo != j - i:
+                skipped += j - i - 1
+                continue
+            for t in range(i + 1, j):
+                pages[t]["printed_page"] = lo + (t - i)
+                pages[t]["printed_page_filled"] = True
+                filled += 1
+        print(f"полос с колонцифрой: {len(known)} из {len(pages)}")
+        print(f"достроено по порядку: {filled}, оставлено без номера: {skipped}")
+        if a.dry_run:
+            print("dry-run: файл не тронут")
+            return
+        with open(path, "w", encoding="utf-8") as f:
+            for p in pages:
+                f.write(json.dumps(p, ensure_ascii=False) + "\n")
+        print(f"Записано: {path}")
         return
 
     offsets = collections.Counter(pp - f for f, pp in known)

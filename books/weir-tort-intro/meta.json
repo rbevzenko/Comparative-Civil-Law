@@ -1,12 +1,19 @@
 {
-  "book_id": "weir-tort-intro",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
-  "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "book_id": "weir-tort-intro-2",
+  "authors": [
+    "Tony Weir"
+  ],
+  "title": "An Introduction to Tort Law",
+  "edition": "2nd ed.",
+  "year": 2006,
+  "publisher": "Oxford University Press",
+  "jurisdiction": "UK",
+  "language": "en",
+  "isbn": "9780199290376",
+  "cite_as": "Weir, An Introduction to Tort Law, 2nd edn",
+  "pdf_pages_total": 132,
+  "body_pages_pdf": "16-128",
+  "printed_page_offset": null,
+  "notes": "Clarendon Law Series. Оборот титула (f3): «© Tony Weir 2006», «Reprinted 2009», ISBN 978-0-19-929037-6. Скан, где на ОДНОМ листе файла сняты ДВЕ страницы книги: разбирается scripts/pages_spread.py с границей x=421. Текстовый слой OCR. Своей нумерации абзацев у книги нет — единица цитирования — типографская страница.",
+  "service_source_id": "6660d71c-5130-43cb-a8d5-d1ac3757e0a5"
 }

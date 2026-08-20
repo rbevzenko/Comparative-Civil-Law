@@ -326,7 +326,10 @@ def _page(index, fam):
     """
     out, seen = [], set()
     for ln in index:
-        key = ln["pdf_page"]
+        # Ключ составной: у скана разворота (см. scripts/pages_spread.py) на
+        # одном листе две полосы книги, у обеих один pdf_page и разные
+        # колонцифры.
+        key = (ln["pdf_page"], ln.get("printed_page"))
         if key in seen:
             continue
         seen.add(key)
