@@ -1,0 +1,60 @@
+id: hodder-turner-contract-v1
+publisher: Hodder Education
+jurisdiction: UK
+language: en
+# Chris Turner, Contract Law, 2nd ed. Издательский PDF, 264 страницы,
+# тело f22–f248 (печатные 1–227, смещение 21).
+#
+# Книга набрана в ДВЕ КОЛОНКИ, читаемые слева направо. Обычная сборка строк
+# идёт через всю полосу и склеивает строку левой колонки со строкой правой:
+# «negligence and also for breach of implied  Self-assessment questions».
+# Поэтому страницы разбираются не pages_digital.py, а
+# scripts/pages_two_column.py --split 277 --gutter 13 --wide-size 20.
+#
+# Кегли: тело 10.0 и 11.0, заголовок раздела 18.0, подраздела 14.0,
+# заголовок главы 43.9, колонтитул с колонцифрой 12.0.
+#
+# Сносок в книге нет: ссылки на дела идут врезками в правой колонке.
+#
+# Единица цитирования — нумерованный заголовок любой глубины: «2.1.», «2.2.1.»
+# У номера здесь ЗАМЫКАЮЩАЯ ТОЧКА, в отличие от Harpwood.
+
+units:
+  - type: "section"
+    id_prefix: "sec"
+    mode: flow
+    pattern: '^\d{1,2}(?:\.\d{1,2})*\.(\d{1,2})\.(?=\s*[A-Z‘“"(\[]|$)'
+    size_min: 13.5
+    size_max: 18.5
+    address_template: "{section}.{number}"
+
+address:
+  template: "{section}.{number}"
+  section:
+    mode: pattern
+    pattern: '^(\d{1,2}(?:\.\d{1,2})*)\.\d{1,2}\.(?=\s*[A-Z‘“"(\[]|$)'
+
+footnotes:
+  mode: none
+
+printed_page:
+  # Колонцифра сидит в колонтитуле: «220 Contract Law» на чётной,
+  # «…Offer and Acceptance 7» на нечётной. Нижняя полоса выключена.
+  band: [0.075, 0.0]
+  patterns:
+    - '^(\d{1,4})\s'
+    - '\s(\d{1,4})$'
+
+junk:
+  header_band: 0.075
+
+statutory:
+  patterns:
+    - '\b[A-Z][A-Za-z’\'' ]{3,40}Act\s+\d{4}(?:\s+ss?\.?\s*\d+[A-Za-z]*)?'
+    - '\bss?\s?\d+[A-Za-z]*(?:\(\d+\))?'
+
+cross_refs:
+  patterns: []
+
+citation:
+  template: "{cite_as} {address}"

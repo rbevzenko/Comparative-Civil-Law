@@ -1,0 +1,19 @@
+{
+  "book_id": "turner-contract-2",
+  "authors": [
+    "Chris Turner"
+  ],
+  "title": "Contract Law",
+  "edition": "2nd ed.",
+  "year": 2007,
+  "publisher": "Hodder Education",
+  "jurisdiction": "UK",
+  "language": "en",
+  "isbn": "9780340941614",
+  "cite_as": "Turner, Contract Law, 2nd edn",
+  "pdf_pages_total": 264,
+  "body_pages_pdf": "22-248",
+  "printed_page_offset": 21,
+  "notes": "Титул (f2): «2nd Edition. Contract Law. Chris Turner». Оборот (f3): «First Edition Published 2003. This Edition Published 2007. Copyright © 2007 Chris Turner», ISBN 978 0 340 94161 4, Hodder Education (Bookpoint Ltd, Abingdon). Книга набрана в ДВЕ КОЛОНКИ, читаемые слева направо; разбирается scripts/pages_two_column.py с границей x=277. Единица цитирования — нумерованный раздел «2.2.1.» кеглем 14 и 18. Сносок нет.",
+  "service_source_id": "62a73b60-b153-4c5d-b2dd-56a7201068f6"
+}
