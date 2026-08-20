@@ -9,9 +9,9 @@
 | Карточек, перенесённых из другого прогона | 0 | — |
 | Пропусков в нумерации | 0 (номеров: 0) | — |
 | Дублей номеров | 0 | — |
-| Длина карточки, медиана | 932 символов | — |
-| Карточек со сносками | 91% (всего сносок 9156) | — |
-| Блоков сносок без читаемых номеров | 5 | — |
+| Длина карточки, медиана | 931 символов | — |
+| Карточек со сносками | 49% (всего сносок 1214) | — |
+| Блоков сносок без читаемых номеров | 389 | — |
 | Мёртвых страниц | 0 | — |
 | Одинаковых страниц | 0 | — |
 | Карточек без иерархии | 0 | — |
@@ -22,8 +22,8 @@
 
 ## Крупнейшие незакрытые куски текста
 
-- 3681 символов, офсеты 767811–771492 в book.txt
-- 2191 символов, офсеты 855308–857499 в book.txt
+- 3681 символов, офсеты 767388–771069 в book.txt
+- 2191 символов, офсеты 854883–857074 в book.txt
 
 Обычно это разделы с другой вёрсткой: указатели, таблицы, приложения. Либо отсечь их диапазоном страниц, либо расширить профиль.
 
@@ -50,9 +50,7 @@ where the maintenance of conﬁdence would suppress the detection, or permit the
 commission, of crime.110 As noted at para.9-008, in some cases, but not all, there
 of Appeal gav…
 
-> [107] Beloff v Pressdram Ltd [1973] 1 All E.R. 241 at 260, per Ungoed Thomas J.
-> [108] Gartside v Outram (1857) 26 L.J. Ch. (NS) 113 at 114, per Sir William Page Wood VC.
-> [109] Beloff v Pressdram Ltd [1973] 1 All E.R. 241 at 260, per Ungoed Thomas J.
+> [None] primary liability of C1 and C2: indeed, it was found, following Primary Group (UK) Ltd v Royal Bank of Scotland Plc [2014] EWHC 1082 (Ch), that the test was objective, and so the reasoning on this poi
 
 ### snell-equity-34:para:21/39
 *Snell's Equity, 34th edn (2020) para. 21-039*
@@ -72,9 +70,8 @@ so that in equity the third party is entitled to the beneﬁt of the contract ab
 the contract is not performed, the trustee can take proceedings in his own name81
 to enforce it f…
 
-> [79] Contracts (Rights of Third Parties) Act 1999 s.1.
-> [80] See the surveys by A. L. Corbin (1930) 46 L.Q.R. 12; and J. G. Starke (1948) 21 Austr.L.J. 382 at 422, 455; F. E. Dowrick (1956) 19 M.L.R. 374 at 386.
-> [81] As, e.g. in Gregory and Parker v Williams (1817) 3 Mer. 582; Lloyd’s v Harper (1880) 16 Ch. D.
+> [83] 76 See below para.25-033. 77 Barclays Bank Ltd v Quistclose Investments Ltd [1970] A.C. 567; Twinsectra Ltd v Yardley [2002] 2 A.C. 164; [2002] UKHL 12. 78 Target Holdings Ltd v Redferns (a ﬁrm) [1996
+> [290] In Les Affreteurs Reunis Societe Anonyme v Leopold Walford (London) Ltd [1919] A.C. 801 the trustee was not a party but the defendants agreed to treat the case as if they were. 82 Vandepitte v Preferr
 
 ### snell-equity-34:para:19/28
 *Snell's Equity, 34th edn (2020) para. 19-028*
@@ -93,16 +90,15 @@ in equity.”171 Further, if a person or a company is insolvent, no receiver by 
 equitable execution172 will be appointed to secure payment of a debt, for that would in ef-
 fect be an irregular subs…
 
-> [167] See Hall v Vernon 34 S.E. 764 at 765 (1899), cited M. Megarry, A Second Miscellany-at-law (1973) p.295.
-> [168] Maclaine Watson & Co Ltd v International Tin Council [1989] Ch. 253.
-> [169] Holmes v Millage [1893] 1 Q.B. 551. But see now Attachment of Earnings Act 1971.
+> [171] 154 See Lloyds Bank Ltd v Medway Upper Navigation Co [1905] 2 K.B. 359. 155 Norburn v Norburn [1894] 1 Q.B. 448. 156 Re Shepherd (1889) 43 Ch. D. 131; but see Re Pope (1886) 17 Q.B.D. 743. 157 Stevens
+> [None] 172 Contrast an interim receiver: para.19-003. 173 Harris v Beauchamp Bros [1894] 1 Q.B. 801; Re Swallow Footwear, The Times, 23 October 1956, where Roxburgh J held that six Queen’s Bench judges had i
 
 ### snell-equity-34:para:19/1
 *Snell's Equity, 34th edn (2020) para. 19-001*
 Адрес: para. 19-001 | иерархия: PART IV—EQUITABLE REMEDIES → CHAPTER 19. RECEIVERS | стр. файла 595–596, книги 589–590
 Нормы: but the Judicature Act 1873 | отсылки: —
 
-(a) Origin and purpose. By the time of Elizabeth 1 the jurisdiction of the Court
+(a) Origin and purpose. By the time of Elizabeth1 the jurisdiction of the Court
 of Chancery to appoint a receiver had become well-established; indeed, such an ap-
 pointment “is one of the oldest remedies in this Court”.2 The remedy is purely
 equitable in its origin. The common law courts had no power to appoint receivers,
@@ -113,9 +109,7 @@ lect, preserve and apply the income of the property which is subject to his auth
 ity, and preserve the outstanding assets.5 A receiver may be appointed either out of
 court or in court.
 
-> [2] Hopkins v Worcester & Birmingham Canal Proprietors (1868) L.R. 6 Eq. 437 at 447, per Giffard VC; and see Rowley v Ridley (1784) 2 Dick. 622 at 630 (distinguishing receivers from sequestrators). See al
-> [3] JA 1873 s.25(8); JA 1925 s.45; SCA 1981 s.37.
-> [4] Harris v Beauchamp Bros [1894] 1 Q.B. 801.
+> [3] 1 G. Spence, Equitable Jurisdiction (1846) Vol.1 pp.378, 673. 2 Hopkins v Worcester & Birmingham Canal Proprietors (1868) L.R. 6 Eq. 437 at 447, per Giffard VC; and see Rowley v Ridley (1784) 2 Dick. 
 
 ### snell-equity-34:para:27/23
 *Snell's Equity, 34th edn (2020) para. 27-023*
@@ -138,7 +132,6 @@ of Parliament.
 These forms of property must be vested in the trustee by the appropriate form of
 conveyance or transfer. The reason for the ﬁrst exce…
 
-> [129] TA 1925 s.40(4).
 
 ### snell-equity-34:para:24/45
 *Snell's Equity, 34th edn (2020) para. 24-045*
@@ -151,7 +144,6 @@ valid and enforceable express trust that deﬁnes their beneﬁcial entitlements
 property. The express, enforceable statement of the parties’intentions displaces any
 informal understanding between them.199
 
-> [199] Stack v Dowden [2007] UKHL 17; [2007] 2 A.C. 432 at [49].
 
 ### snell-equity-34:para:27/24
 *Snell's Equity, 34th edn (2020) para. 27-024*
@@ -162,11 +154,10 @@ If it is difﬁcult or impossible to procure the transfer of the trust property 
 trustees, the court has power to make a vesting order.130
 1. Appointment and Powers
 
-> [130] See para.27-018.
 
 ### snell-equity-34:para:16/13
 *Snell's Equity, 34th edn (2020) para. 16-013*
-Адрес: para. 16-013 | иерархия: PART IV—EQUITABLE REMEDIES → CHAPTER 16. RECTIFICATION → 3.— MISTAKE. 16-012 There are two distinct types of mistake which may lead to rectiﬁcation. In some cases, both parties will have entered into an instrument under a common mistake | стр. файла 480–481, книги 473–474
+Адрес: para. 16-013 | иерархия: PART IV—EQUITABLE REMEDIES → CHAPTER 16. RECTIFICATION → 3.— MISTAKE | стр. файла 480–481, книги 473–474
 Нормы: — | отсылки: —
 
 The general rule is that rectiﬁcation will not be granted unless there has been a
@@ -177,9 +168,7 @@ thirdly, that by mistake the instrument fails to carry out that agreement; and f
 that if rectiﬁed as claimed, the instrument would carry out the agreement.88 These
 points will be taken in turn.89
 
-> [86] Murray v Parker (1854) 19 Beav. 305; Vaudeville Electric Cinema Ltd v Muriset [1923] 2 Ch. 74; W Higgins Ltd v Northampton Corp [1927] 1 Ch. 128.
-> [87] This passage was referred to in Lee v Lee [2018] EWHC 149 (Ch) where the judge observed: “However, there is no doubt that a document such as notice of severance, even if given unilaterally … may be re
-> [89] This approach in a previous edition of this work was adopted in Ashcroft v Barnsdale [2010] EWHC 1948 (Ch).
+> [87] 82 See Walker Property Investments (Brighton) Ltd v Walker (1947) 177 L.T. 204. 83 In Chartbrook Ltd v Persimmon Homes Ltd [2009] UKHL 38; [2009] 1 A.C. 1101 at [40], Lord Hoffmann recognised that the
 
 ### snell-equity-34:para:27/33
 *Snell's Equity, 34th edn (2020) para. 27-033*
@@ -198,13 +187,10 @@ judicial trustee may retire on giving notice to the court stating what proposals
 makes as to the appointment of a successor.164 A trustee may also be required to
 retire in certain circumstances by the beneﬁciaries.165
 
-> [161] TA 1925 s.39, replacing TA 1893 s.11. cf. Katz v Moore (1997/98) 1 O.F.L.R. 500, Manx SGD. Before 1893 he could not retire in the absence of an express power, consent of the beneﬁciaries, or an order 
-> [162] TA 1925 s.69(2). For the situation where the terms of a trust itself allow the trustee to resign, see Custodial Ltd v Cardinal Financial Services Ltd (2005) 7 I.T.E.L.R. 512.
-> [163] Public Trustee Act 1906 s.5(2).
 
 ### snell-equity-34:para:6/87
 *Snell's Equity, 34th edn (2020) para. 6-087*
-Адрес: para. 6-087 | иерархия: PART II—MAXIMS AND DOCTRINES → CHAPTER 6. THE EQUITABLE DOCTRINES → 3.— PERFORMANCE. 1. The Doctrine | стр. файла 152–152, книги 139–139
+Адрес: para. 6-087 | иерархия: PART II—MAXIMS AND DOCTRINES → CHAPTER 6. THE EQUITABLE DOCTRINES → 3.— PERFORMANCE | стр. файла 152–152, книги 139–139
 Нормы: — | отсылки: —
 
 Although the presumption applies both to the ademption of legacies by portions

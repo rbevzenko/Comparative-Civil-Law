@@ -143,6 +143,11 @@ def to_chunk(card):
         "hierarchy": card.get("hierarchy") or [],
         "page_start": card.get("page_start"),
         "page_end": card.get("page_end"),
+        # Страница печатного издания. Наружу — в коннектор и на публичную
+        # страницу цитаты — уходит только она; page_start/page_end остаются
+        # служебными, это страницы файла.
+        "printed_page_start": card.get("printed_page_start"),
+        "printed_page_end": card.get("printed_page_end"),
         "footnotes": notes,
     }, dropped
 

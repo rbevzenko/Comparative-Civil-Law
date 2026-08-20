@@ -22,6 +22,11 @@ pull_margin_tokens проверяет токен через `re.fullmatch(r"\\d{
 («see para. 3-042») и строки постраничного оглавления главы с отточием, но
 они лежат внутри полосы набора, а поле начинается за её правым краем.
 
+Порядок в конвейере: скрипт идёт ПОСЛЕ inline_superscripts.py, а не до.
+`_rebuild` в inline_superscripts пересортировывает слова строки по x0 — номер,
+уже перенесённый в начало, уезжает обратно на поле, и extract.py его теряет
+(у Snell так пропали 92 адреса из 1981).
+
 Флаг `--from-text` включает второй способ — для сканов, где геометрии взять
 не за что: номер снимается с конца ТЕКСТА строки, а свой он или чужой,
 решает СЧЁТ. Подробности в docstring `from_text`.
@@ -168,7 +173,16 @@ def main():
                     continue
                 ln["words"] = [last] + rest
                 before = ln["text"]
-                ln["text"] = (last["text"] + " " + " ".join(w["text"] for w in rest)).strip()
+                # Текст строки правим НА МЕСТЕ, а не пересобираем из слов:
+                # inline_superscripts.py уже склеил маркер сноски с предыдущим
+                # словом («equity.9»), и сборка через " ".join вернула бы пробел.
+                tail = last["text"].strip()
+                body = before.rstrip()
+                if body.endswith(tail):
+                    body = body[: -len(tail)].rstrip()
+                else:
+                    body = " ".join(w["text"] for w in rest)
+                ln["text"] = (tail + " " + body).strip()
                 ln["x0"] = min(w["x0"] for w in ln["words"])
                 ln["x1"] = max(w["x1"] for w in ln["words"])
                 moved += 1

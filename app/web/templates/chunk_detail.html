@@ -13,6 +13,14 @@
 
   <dl class="meta-list">
     <dt>№ пункта</dt><dd>{{ chunk.point_number or "—" }}</dd>
+    <dt>Страницы книги</dt>
+    <dd>
+      {% if chunk.printed_page_start %}
+        {{ chunk.printed_page_start }}{% if chunk.printed_page_end and chunk.printed_page_end != chunk.printed_page_start %}–{{ chunk.printed_page_end }}{% endif %}
+      {% else %}
+        — <span class="field-hint">в файле нет типографской пагинации</span>
+      {% endif %}
+    </dd>
     <dt>Страницы PDF</dt>
     <dd>
       {% if chunk.page_start %}

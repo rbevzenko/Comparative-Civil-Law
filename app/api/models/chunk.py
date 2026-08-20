@@ -44,8 +44,15 @@ class Chunk(Base):
     point_number: Mapped[str | None] = mapped_column(Text, nullable=True)
     text: Mapped[str] = mapped_column(Text, nullable=False)
     hierarchy: Mapped[list] = mapped_column(JSONB, nullable=False, default=list)
+    # Pages of the SOURCE FILE — not what a reader cites.
     page_start: Mapped[int | None] = mapped_column(Integer, nullable=True)
     page_end: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    # Pages of the PRINTED EDITION, read off the folio by the pipeline. This
+    # is the pair that may be quoted. NULL means the file carries no folio
+    # (Westlaw exports, most e-books) — which is not the same as "not
+    # uploaded yet", so the two are never conflated in display.
+    printed_page_start: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    printed_page_end: Mapped[int | None] = mapped_column(Integer, nullable=True)
     # Computed externally by the normalization pipeline and supplied as-is on
     # write; the API never calls an embedding model itself.
     embedding: Mapped[list[float] | None] = mapped_column(Vector(EMBEDDING_DIM), nullable=True)

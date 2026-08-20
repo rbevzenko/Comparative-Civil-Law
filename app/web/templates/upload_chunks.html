@@ -53,6 +53,8 @@
       "hierarchy": ["Livre 1", "Titre 1", "Chapitre préliminaire"],
       "page_start": 42,
       "page_end": 43,
+      "printed_page_start": 26,
+      "printed_page_end": 27,
       "embedding": [0.0123, -0.0456, "… 1536 чисел всего"],
       "concept_ids": [],
       "footnotes": [
@@ -61,6 +63,10 @@
     }
   ]
 }</pre>
+      <p><code>page_start</code>/<code>page_end</code> — страницы ФАЙЛА-источника,
+      <code>printed_page_*</code> — страницы печатного издания. Наружу показываются
+      только вторые: первые в чужой сноске дадут не ту страницу. Если типографской
+      пагинации в файле нет, <code>printed_page_*</code> опускаются.</p>
       <p>Полная схема — на <a href="/docs" target="_blank" rel="noopener">/docs</a> (модель <code>ChunkCreate</code>).</p>
     </details>
   {% endif %}

@@ -53,15 +53,15 @@
   },
   "coverage": {
     "share": 0.9954,
-    "covered_chars": 1874153,
-    "book_chars": 1882744,
+    "covered_chars": 1852961,
+    "book_chars": 1861552,
     "cards_without_offsets": 0,
     "biggest_holes": []
   },
   "lengths": {
-    "median": 1068,
+    "median": 1062,
     "min": 8,
-    "max": 17743,
+    "max": 17530,
     "too_short": [
       "mackenzie-phillips-land-law-14:sec:2/4",
       "mackenzie-phillips-land-law-14:sec:2/5",
@@ -89,7 +89,7 @@
     "footnotes_total": 0,
     "unparsed_blocks": 0,
     "per_card_median": 0.0,
-    "cards_with_calls_but_no_notes": 126,
+    "cards_with_calls_but_no_notes": 127,
     "notes_without_visible_call": 0
   },
   "dead_pages": {

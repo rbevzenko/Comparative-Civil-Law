@@ -17,24 +17,24 @@
   },
   "coverage": {
     "share": 0.991,
-    "covered_chars": 2357525,
-    "book_chars": 2378897,
+    "covered_chars": 2355885,
+    "book_chars": 2377257,
     "cards_without_offsets": 0,
     "biggest_holes": [
       {
         "chars": 3681,
-        "from": 767811,
-        "to": 771492
+        "from": 767388,
+        "to": 771069
       },
       {
         "chars": 2191,
-        "from": 855308,
-        "to": 857499
+        "from": 854883,
+        "to": 857074
       }
     ]
   },
   "lengths": {
-    "median": 932,
+    "median": 931,
     "min": 48,
     "max": 7290,
     "too_short": [
@@ -57,12 +57,12 @@
     "too_long": []
   },
   "footnotes": {
-    "cards_with_footnotes_share": 0.91,
-    "footnotes_total": 9156,
-    "unparsed_blocks": 5,
-    "per_card_median": 4,
-    "cards_with_calls_but_no_notes": 41,
-    "notes_without_visible_call": 907
+    "cards_with_footnotes_share": 0.49,
+    "footnotes_total": 1214,
+    "unparsed_blocks": 389,
+    "per_card_median": 0,
+    "cards_with_calls_but_no_notes": 878,
+    "notes_without_visible_call": 568
   },
   "dead_pages": {
     "pages": [],
@@ -76,8 +76,8 @@
     "cards_without_hierarchy": 0,
     "sample": [],
     "depth_histogram": {
-      "2": 144,
-      "3": 1835
+      "2": 155,
+      "3": 1824
     }
   },
   "internal_refs": {
