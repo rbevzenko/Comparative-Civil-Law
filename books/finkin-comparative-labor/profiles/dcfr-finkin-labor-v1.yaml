@@ -1,0 +1,48 @@
+id: dcfr-finkin-labor-v1
+publisher: Edward Elgar
+jurisdiction: DCFR
+language: en
+# Matthew W. Finkin & Guy Mundlak (eds), Comparative Labor Law (2015),
+# Edward Elgar. 504 полосы. Файл — ТИПОГРАФСКАЯ КОРРЕКТУРА: вверху полосы
+# служебная строка наборщика «JOBNAME:Finkin PAGE:3 SESS:3 OUTPUT:…»
+# (кегль 10.0, top 18), внизу — «ColumnsDesignXMLLtd / Job:Finkin-
+# Comparative_Labor_Law / Division:06_Chapter6» (кегль 8.0, top 759).
+#
+# Настоящий колонтитул с колонцифрой идёт ВТОРОЙ строкой: «Introduction 3».
+# «PAGE:3» из служебной строки — номер внутри ГЛАВЫ, а не книги, и брать
+# его нельзя. Шаблон требует БУКВУ и пробел перед номером: служебная
+# строка кончается «OUTPUT:ThuJun2515:23:462015» без пробела и под него
+# не подходит.
+#
+# Кегли: 10.5 тело, 9.5 сноски, 6.3 знак сноски, 5.7 номер в аппарате.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  mode: font_bottom
+  note_size_max: 10.0
+  bottom_band: 0.55
+
+printed_page:
+  band: [0.06, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+\D'
+    - '[A-Za-z]\s+(\d{1,4})$'
+
+junk:
+  header_band: 0.065
+  footer_band: 0.95
+  patterns:
+    - '^JOBNAME:'
+    - 'ColumnsDesignXMLLtd'
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'
