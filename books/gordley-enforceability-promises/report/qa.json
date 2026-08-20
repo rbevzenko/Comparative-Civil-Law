@@ -1,0 +1,112 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/gordley-enforceability-promises",
+  "cards": 391,
+  "profile": "dcfr-commoncore-cup-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9924,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "p.",
+        "section": null,
+        "from": 21,
+        "to": 23,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 335,
+        "to": 337,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 391,
+        "to": 393,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 3,
+    "missing_total": 3,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 391
+    }
+  },
+  "coverage": {
+    "share": 0.9996,
+    "covered_chars": 868143,
+    "book_chars": 868533,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2349,
+    "min": 24,
+    "max": 2930,
+    "too_short": [
+      "gordley-enforceability-promises:p:23",
+      "gordley-enforceability-promises:p:393"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.71,
+    "footnotes_total": 885,
+    "unparsed_blocks": 0,
+    "per_card_median": 2,
+    "cards_with_calls_but_no_notes": 0,
+    "notes_without_visible_call": 78
+  },
+  "dead_pages": {
+    "pages": [
+      58,
+      372,
+      428
+    ],
+    "count": 3
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 16,
+    "sample": [
+      "gordley-enforceability-promises:p:1",
+      "gordley-enforceability-promises:p:2",
+      "gordley-enforceability-promises:p:3",
+      "gordley-enforceability-promises:p:4",
+      "gordley-enforceability-promises:p:5",
+      "gordley-enforceability-promises:p:6",
+      "gordley-enforceability-promises:p:7",
+      "gordley-enforceability-promises:p:8",
+      "gordley-enforceability-promises:p:9",
+      "gordley-enforceability-promises:p:10"
+    ],
+    "depth_histogram": {
+      "0": 16,
+      "1": 375
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}
