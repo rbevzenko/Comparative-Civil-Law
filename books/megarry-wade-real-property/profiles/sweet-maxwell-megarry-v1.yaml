@@ -1,0 +1,60 @@
+id: sweet-maxwell-megarry-v1
+publisher: Sweet & Maxwell
+jurisdiction: UK
+language: en
+# Megarry & Wade, The Law of Real Property, 8th ed. (2012). Издательский
+# PDF, 1688 страниц, одна колонка. Кегль тела 9.9, сносок 8.0, знака сноски
+# в тексте 5.5, хвоста номера сноски в аппарате 4.4.
+#
+# Единица цитирования — номер абзаца «глава-номер» через ТИРЕ (U+2013):
+# «3–011». Стоит на правом поле за краем полосы набора (полоса 85–396 pt,
+# номер до 431 pt) последним словом первой строки абзаца. Переносит его в
+# начало строки scripts/move_margin_numbers.py --min-x 400.
+#
+# Номер сноски в самом аппарате набран ДВУМЯ кеглями: «27» — это «2» кеглем
+# 8 и «7» кеглем 4.4. Кластеризация разводит их по разным строкам, и без
+# scripts/inline_superscripts.py --host-notes сноска 27 читается как 2.
+
+units:
+  - type: "para."
+    id_prefix: "para"
+    mode: flow
+    pattern: '^\d{1,2}[–-](\d{3})\b'
+    address_template: "para. {section}-{number}"
+
+address:
+  template: "para. {section}-{number}"
+  section:
+    mode: pattern
+    pattern: '^(\d{1,2})[–-]\d{3}\b'
+
+footnotes:
+  # Кеглем 8 и мельче набраны не только сноски, но и заголовки разделов
+  # (6.67, «I. CONVEYANCES INTER VIVOS») внутри полосы. Правило по кеглю
+  # утащило бы их в аппарат, поэтому mode: none, а хвост полосы режет
+  # scripts/split_notes_by_tail.py --size-max 8.5.
+  mode: none
+
+printed_page:
+  # Колонцифра сидит в колонтитуле и меняет сторону: «Leaseholds 41» на
+  # нечётной, «42 Estates» на чётной. Отдельной строкой не стоит.
+  band: 0.12
+  patterns:
+    - '\s(\d{1,4})$'
+    - '^(\d{1,4})\s'
+
+junk:
+  header_band: 0.11
+
+statutory:
+  patterns:
+    - '\b[A-Z][A-Za-z’\'' ]{3,40}Act\s+\d{4}(?:\s+ss?\.?\s*\d+[A-Za-z]*)?'
+    - '\bss?\.\s?\d+[A-Za-z]*(?:\(\d+\))?'
+
+cross_refs:
+  patterns:
+    - '(?:para|paras)\.?\s*\d{1,2}[–-]\d{3}'
+    - '\bCh\.\s?\d{1,2}\b'
+
+citation:
+  template: "{cite_as} {address}"

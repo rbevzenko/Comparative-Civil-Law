@@ -81,6 +81,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--book", required=True)
     ap.add_argument("--size-max", type=float, default=7.0)
+    ap.add_argument("--host-notes", action="store_true",
+                    help="искать строку-хозяина и среди строк аппарата")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
 
@@ -98,18 +100,25 @@ def main():
                 out.append(pg)
                 continue
             body = [ln for ln in lines if not is_marker_line(ln, a.size_max)]
+            # У Megarry & Wade номер сноски в самом аппарате набран двумя
+            # кеглями: «27» — это «2» кеглем 8 и «7» кеглем 4.4, и кластеризация
+            # разводит их по разным строкам. Без --host-notes хвост номера
+            # некуда вернуть, и сноска 27 читается как сноска 2.
+            hosts = body
+            if a.host_notes:
+                hosts = body + [ln for ln in notes if not is_marker_line(ln, a.size_max)]
             pulled = set()
             changed = set()
             for ml in markers:
                 # Половина высоты знака: случайного касания рамок мало,
                 # знак должен стоять ВНУТРИ строки-хозяина по вертикали.
                 need = 0.5 * max(1.0, ml["bottom"] - ml["top"])
-                hosts = [(overlap(ml, b), -abs(ml["x0"] - b["x0"]), i)
-                         for i, b in enumerate(body) if overlap(ml, b) >= need]
-                if not hosts:
+                cand = [(overlap(ml, b), -abs(ml["x0"] - b["x0"]), i)
+                        for i, b in enumerate(hosts) if overlap(ml, b) >= need]
+                if not cand:
                     dropped += len(ml.get("words") or [])
                     continue
-                host = body[max(hosts)[2]]
+                host = hosts[max(cand)[2]]
                 before = host["text"]
                 for w in ml["words"]:
                     host["words"].append(dict(w, _marker=True))
