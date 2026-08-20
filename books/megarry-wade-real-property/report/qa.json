@@ -1,0 +1,112 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/megarry-wade-real-property",
+  "cards": 2929,
+  "profile": "sweet-maxwell-megarry-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9993,
+    "rows": 36,
+    "gaps": [
+      {
+        "family": "para.",
+        "section": "21",
+        "from": 18,
+        "to": 21,
+        "missing": 2
+      }
+    ],
+    "gaps_total": 1,
+    "missing_total": 2,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "para.": 2929
+    }
+  },
+  "coverage": {
+    "share": 0.992,
+    "covered_chars": 2972259,
+    "book_chars": 2996313,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 2008,
+        "from": 851966,
+        "to": 853974
+      },
+      {
+        "chars": 800,
+        "from": 1402866,
+        "to": 1403666
+      }
+    ]
+  },
+  "lengths": {
+    "median": 861,
+    "min": 20,
+    "max": 99200,
+    "too_short": [
+      "megarry-wade-real-property-8:para:3/39",
+      "megarry-wade-real-property-8:para:3/85",
+      "megarry-wade-real-property-8:para:7/4",
+      "megarry-wade-real-property-8:para:7/65",
+      "megarry-wade-real-property-8:para:7/80",
+      "megarry-wade-real-property-8:para:8/15",
+      "megarry-wade-real-property-8:para:8/42",
+      "megarry-wade-real-property-8:para:8/48",
+      "megarry-wade-real-property-8:para:8/71",
+      "megarry-wade-real-property-8:para:8/77",
+      "megarry-wade-real-property-8:para:9/56",
+      "megarry-wade-real-property-8:para:9/81",
+      "megarry-wade-real-property-8:para:9/104",
+      "megarry-wade-real-property-8:para:9/182",
+      "megarry-wade-real-property-8:para:11/38"
+    ],
+    "too_long": [
+      "megarry-wade-real-property-8:para:36/30"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.86,
+    "footnotes_total": 13297,
+    "unparsed_blocks": 0,
+    "per_card_median": 4,
+    "cards_with_calls_but_no_notes": 250,
+    "notes_without_visible_call": 1135
+  },
+  "dead_pages": {
+    "pages": [
+      263,
+      264,
+      265
+    ],
+    "count": 3
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 2929
+    }
+  },
+  "internal_refs": {
+    "refs_total": 39,
+    "unresolved": 0,
+    "resolved_share": 1.0,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}
