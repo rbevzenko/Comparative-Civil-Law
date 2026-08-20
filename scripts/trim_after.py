@@ -17,6 +17,14 @@ les articles 2011 à 2043octies … sont abrogés»), и весь этот хв�
 фразы карточку не тронет.
 """
 
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import _safeprint
+
+_safeprint.install()
+
 import argparse
 import json
 import os

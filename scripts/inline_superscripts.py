@@ -32,6 +32,14 @@ or of the next-of-kin…») под это правило не подходит �
 остаётся там, где был: в самом блоке сносок верхние индексы настоящие.
 """
 
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import _safeprint
+
+_safeprint.install()
+
 import argparse
 import json
 import os

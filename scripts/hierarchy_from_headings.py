@@ -28,6 +28,14 @@ Les sûretés personnelles», «Chapitre 2 – La sûreté personnelle accessoir
 строкой, и без этой оговорки заголовок кончается словом «er».
 """
 
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import _safeprint
+
+_safeprint.install()
+
 import argparse
 import json
 import os

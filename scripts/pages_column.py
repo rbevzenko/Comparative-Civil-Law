@@ -19,6 +19,14 @@
 другой каталог книги.
 """
 
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import _safeprint
+
+_safeprint.install()
+
 import argparse
 import os
 import re

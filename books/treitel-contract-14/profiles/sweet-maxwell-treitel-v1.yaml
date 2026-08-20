@@ -1,0 +1,59 @@
+id: sweet-maxwell-treitel-v1
+publisher: Sweet & Maxwell
+jurisdiction: UK
+language: en
+# Edwin Peel, Treitel: The Law of Contract, 14th ed. Издательский PDF,
+# 2170 страниц, одна колонка. Файл отмасштабирован: кегль тела 14.4,
+# сносок 10.8, знака сноски 8.64.
+#
+# Единица цитирования — номер абзаца «глава-номер» через ТИРЕ, а не дефис:
+# «1–001» (U+2013). Стоит он на правом поле, за краем полосы набора (полоса
+# 72–482 pt, номер 500–540 pt), последним словом первой строки абзаца, и
+# сторону на развороте НЕ меняет. Переносит его в начало строки
+# scripts/move_margin_numbers.py.
+#
+# Слова в текстовом слое разделены табуляцией нулевой ширины, а не пробелом
+# (63% строк тела). Перед всем остальным идёт scripts/detab_lines.py.
+
+units:
+  - type: "para."
+    id_prefix: "para"
+    mode: flow
+    pattern: '^\d{1,2}[–-](\d{3})(?=$|\s+[A-Z“"(\[])'
+    address_template: "para. {section}-{number}"
+
+address:
+  template: "para. {section}-{number}"
+  section:
+    mode: pattern
+    pattern: '^(\d{1,2})[–-]\d{3}(?=$|\s+[A-Z“"(\[])'
+
+footnotes:
+  # Кегль разделяет чисто: тело 14.4, сноски 10.8. Полоса сведена почти к
+  # нулю нарочно: блок сносок занимает не только низ полосы, но и целые
+  # полосы подряд, и на такой полосе «низа» нет. Телом кегль 10.8 не
+  # набирается нигде, кроме строки «CHAPTER N», которая снимается как мусор.
+  mode: font_bottom
+  note_size_max: 12.0
+  bottom_band: 0.05
+
+printed_page:
+  # Колонцифры в теле нет вовсе: ни колонтитула, ни номера страницы.
+  band: 0.0
+
+junk:
+  patterns:
+    - '^CHAPTER\s'
+
+statutory:
+  patterns:
+    - '\b[A-Z][A-Za-z’\'' ]{3,40}Act\s+\d{4}(?:\s+ss?\.?\s*\d+[A-Za-z]*)?'
+    - '\bss?\.\s?\d+[A-Za-z]*(?:\(\d+\))?'
+
+cross_refs:
+  patterns:
+    - '(?:para|paras)\.?\s*\d{1,2}[–-]\d{3}'
+    - '\bCh\.\s?\d{1,2}\b'
+
+citation:
+  template: "{cite_as} {address}"

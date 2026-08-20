@@ -34,6 +34,14 @@ Snell's Equity номер абзаца — «глава-номер», и пос�
 с составным адресом уместнее «{section}-{number:03d} ».
 """
 
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import _safeprint
+
+_safeprint.install()
+
 import argparse
 import json
 import os
