@@ -1,0 +1,108 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/mckendrick-contract",
+  "cards": 410,
+  "profile": "hart-law-masters-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 68,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "§": 410
+    }
+  },
+  "coverage": {
+    "share": 0.9984,
+    "covered_chars": 1510092,
+    "book_chars": 1512459,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2889,
+    "min": 190,
+    "max": 15645,
+    "too_short": [],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0.0,
+    "cards_with_calls_but_no_notes": 67,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "2": 9,
+      "3": 401
+    }
+  },
+  "internal_refs": {
+    "refs_total": 971,
+    "unresolved": 7,
+    "resolved_share": 0.993,
+    "sample": [
+      {
+        "card": "mckendrick-contract:sec:3/2",
+        "ref": "1.00",
+        "missing": 0
+      },
+      {
+        "card": "mckendrick-contract:sec:3.12/1",
+        "ref": "4.45",
+        "missing": 45
+      },
+      {
+        "card": "mckendrick-contract:sec:5.1/1",
+        "ref": "8.33",
+        "missing": 33
+      },
+      {
+        "card": "mckendrick-contract:sec:7/8",
+        "ref": "3.33",
+        "missing": 33
+      },
+      {
+        "card": "mckendrick-contract:sec:7.14/2",
+        "ref": "7.40",
+        "missing": 40
+      },
+      {
+        "card": "mckendrick-contract:sec:7.14/2",
+        "ref": "7.49",
+        "missing": 49
+      },
+      {
+        "card": "mckendrick-contract:sec:9/4",
+        "ref": "3.50",
+        "missing": 50
+      }
+    ]
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}
