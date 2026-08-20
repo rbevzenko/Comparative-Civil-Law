@@ -13,3 +13,9 @@ books/*/cache/
 books/*/work/
 books/*/ocr/
 books/*/source/*.pdf
+
+# Промежуточные файлы выгрузки: несжатые карточки, проекция и список уже
+# загруженных external_id. Воспроизводятся из cards.jsonl.gz и профиля.
+books/*/output/cards.jsonl
+books/*/output/upload.json
+books/*/output/uploaded.txt
