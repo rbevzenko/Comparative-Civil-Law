@@ -1,0 +1,197 @@
+{
+  "path": "/home/user/books/uk/lawson-rudden-property.pdf",
+  "sha256": "c2933071ccc7862108ff39d605b768b61d85079479d333f04e8bdaf74fbb8a3d",
+  "pages": 226,
+  "sampled_pages": [
+    34,
+    38,
+    42,
+    46,
+    50,
+    54,
+    58,
+    62,
+    66,
+    70,
+    74,
+    78,
+    82,
+    86,
+    90,
+    94,
+    98,
+    102,
+    106,
+    110,
+    114,
+    118,
+    122,
+    126,
+    130,
+    134,
+    138,
+    142,
+    146,
+    150,
+    154,
+    158,
+    162,
+    166,
+    170,
+    174,
+    178,
+    182,
+    186,
+    190
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": false
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 2711,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 1.0
+  },
+  "printed_pages": {
+    "detected_share": 0.0,
+    "offset_mode": null,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 34,
+        "printed": null
+      },
+      {
+        "pdf_page": 38,
+        "printed": null
+      },
+      {
+        "pdf_page": 42,
+        "printed": null
+      },
+      {
+        "pdf_page": 46,
+        "printed": null
+      },
+      {
+        "pdf_page": 50,
+        "printed": null
+      },
+      {
+        "pdf_page": 54,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "9.1": 31654,
+      "9.3": 18353,
+      "9.2": 17355,
+      "9.4": 8613,
+      "8.9": 7395,
+      "9.0": 6490,
+      "7.4": 3988,
+      "8.8": 2330
+    },
+    "body": 9.1,
+    "candidates_footnote": [
+      7.2,
+      7.4
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 4973,
+    "share_at_page_bottom": 0.98
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      37,
+      38,
+      40,
+      34
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "n° голый номер в начале абзаца": {
+      "hits": 36,
+      "monotonic_share": 0.97,
+      "first": [
+        "20",
+        "24",
+        "28",
+        "32",
+        "36"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 40,
+      "monotonic_share": 0.9,
+      "first": [
+        "20",
+        "24",
+        "28",
+        "32",
+        "36"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 17138,
+    "suspicious": 2,
+    "share": 0.0001,
+    "sample": [
+      "ales6h",
+      "crys-"
+    ]
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        38.0,
+        328.0
+      ],
+      "even": [
+        38.0,
+        328.0
+      ]
+    },
+    "left": {
+      "hits": 1,
+      "monotonic_share": 0.0,
+      "even_page_share": 1.0,
+      "first": [
+        7
+      ]
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {},
+  "verdict": {
+    "state": "пригоден",
+    "branch": "B?",
+    "problems": [],
+    "notes": [
+      "Под текстом растр на всю полосу, но слой выглядит чистым (0.0% подозрительных слов). Слой всё равно чужой и сделан неизвестно чем; прежде чем идти веткой A, прогнать обе ветки на двух десятках страниц и сравнить.",
+      "Оглавление в файле не зашито — иерархию собирать по печатному оглавлению и колонтитулам; качество поля hierarchy будет ниже.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы."
+    ]
+  }
+}

@@ -228,6 +228,8 @@ def find_units(index, tokens, prof, sections, method):
             hits += _margin(index, tokens, fam)
         elif mode == "heading":
             hits += _heading(index, fam)
+        elif mode == "page":
+            hits += _page(index, fam)
         else:
             sys.exit(f"Неизвестный режим единицы: {mode}")
 
@@ -306,6 +308,33 @@ def _heading(index, fam):
         num = m.group(1) if m.groups() else str(n)
         out.append({"family": fam, "number_raw": num, "line": ln["i"], "order": 0,
                     "mode": "heading", "evidence": {"heading": ln["text"][:120]}, "strip": 0})
+    return out
+
+
+def _page(index, fam):
+    """Единица — типографская страница.
+
+    Для книги, у которой нет НИ нумерации абзацев, НИ достаточного числа
+    заголовков. У Lawson & Rudden, The Law of Property (Clarendon Law
+    Series) заголовок стоит раз в четыре полосы: по ним выходит 39 карточек
+    на 198 полос, из них девять длиннее 18 000 знаков — эмбеддер таких не
+    видит целиком. При этом книга и цитируется страницей: «Lawson & Rudden,
+    The Law of Property, 3rd edn, p. 47».
+
+    Резать по границе полосы — не выдумка структуры, а ровно та единица,
+    которой книга пользуется сама.
+    """
+    out, seen = [], set()
+    for ln in index:
+        key = ln["pdf_page"]
+        if key in seen:
+            continue
+        seen.add(key)
+        num = ln.get("printed_page")
+        out.append({"family": fam, "number_raw": str(num if num is not None else ln["pdf_page"]),
+                    "line": ln["i"], "order": 0, "mode": "page",
+                    "evidence": {"pdf_page": ln["pdf_page"], "printed_page": num},
+                    "strip": 0})
     return out
 
 
