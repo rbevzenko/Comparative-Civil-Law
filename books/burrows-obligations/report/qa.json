@@ -1,0 +1,74 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/burrows-obligations",
+  "cards": 1394,
+  "profile": "oup-burrows-obligations-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 4,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "para.": 1394
+    }
+  },
+  "coverage": {
+    "share": 0.9921,
+    "covered_chars": 1055459,
+    "book_chars": 1063849,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 686,
+    "min": 75,
+    "max": 4360,
+    "too_short": [
+      "burrows-obligations-1:para:1/198",
+      "burrows-obligations-1:para:4/3"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.75,
+    "footnotes_total": 3258,
+    "unparsed_blocks": 0,
+    "per_card_median": 2.0,
+    "cards_with_calls_but_no_notes": 203,
+    "notes_without_visible_call": 892
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "2": 1394
+    }
+  },
+  "internal_refs": {
+    "refs_total": 4,
+    "unresolved": 0,
+    "resolved_share": 1.0,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

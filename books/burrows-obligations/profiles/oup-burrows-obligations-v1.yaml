@@ -1,0 +1,50 @@
+id: oup-burrows-obligations-v1
+publisher: Oxford University Press
+jurisdiction: UK
+language: en
+# Andrew Burrows (ed.), Principles of the English Law of Obligations, OUP.
+# Перевёрстанная электронная выгрузка: кегль тела 15.0, сносок 12.5,
+# колонтитулов и колонцифр нет вовсе.
+#
+# Единица цитирования — номер абзаца «глава.номер» (1.09). В книге четыре
+# главы, и диапазон закреплён в паттерне: иначе перенос вида «section /
+# 12.345» становится единицей несуществующей главы.
+#
+# Аппарат собран НЕ на полосе с текстом, а отдельными полосами в конце
+# главы, целиком набранными мелким кеглем. Поэтому footnotes.mode: none, а
+# хвост режет scripts/split_notes_by_tail.py --size-max 13.5: на полосе
+# тела последняя строка кеглем 15, и хвоста там нет.
+
+units:
+  - type: "para."
+    id_prefix: "para"
+    mode: flow
+    pattern: '^[1-4]\.(\d{2,3})(?=$|\s+[A-Z“‘(\[])'
+    address_template: "para. {section}.{number}"
+
+address:
+  template: "para. {section}.{number}"
+  section:
+    mode: pattern
+    pattern: '^([1-4])\.\d{2,3}(?=$|\s+[A-Z“‘(\[])'
+
+footnotes:
+  mode: none
+
+printed_page:
+  band: 0.0
+
+junk:
+  patterns: []
+
+statutory:
+  patterns:
+    - '\b[A-Z][A-Za-z’\'' ]{3,40}Act\s+\d{4}(?:\s+ss?\.?\s*\d+[A-Za-z]*)?'
+    - '\bss?\s?\d+[A-Za-z]*(?:\(\d+\))?'
+
+cross_refs:
+  patterns:
+    - '(?:para|paras)\s*\d{1,2}\.\d{2,3}'
+
+citation:
+  template: "{cite_as} {address}"
