@@ -39,6 +39,8 @@ def main():
                     help="минимальный кегль строки, которая может быть заголовком")
     ap.add_argument("--max-lines", type=int, default=1,
                     help="сколько строк подряд может занимать заголовок")
+    ap.add_argument("--head-start", default=None,
+                    help="с чего заголовок вправе начинаться; всё выше первой такой строки отбрасывается")
     ap.add_argument("--skip", action="append", default=[],
                     help="строка, которая заголовком не бывает (колонтитул выгрузки)")
     ap.add_argument("--dry-run", action="store_true")
@@ -46,6 +48,7 @@ def main():
 
     num_rx = re.compile(a.number)
     skips = [re.compile(rx) for rx in a.skip]
+    head_rx = re.compile(a.head_start) if a.head_start else None
     path = os.path.join(a.book, "work", "pages.jsonl")
     joined = bare = 0
     sample = []
@@ -71,10 +74,20 @@ def main():
                         break
                     head_lines.append((j, cand))
                     j -= 1
+                head_lines.reverse()
+                # Хвост колонтитула выгрузки: строка «Sub-section (x) - The
+                # Unfair Terms in Consumer Contracts Regulations» снимается
+                # как мусор, а перенесённый на следующую строку «1999»
+                # остаётся сиротой того же кегля — и уходит в заголовок
+                # абзаца впереди его собственного текста. Настоящий заголовок
+                # начинается с прописной, поэтому всё, что стоит выше первой
+                # такой строки, отбрасывается.
+                if head_rx is not None:
+                    while head_lines and not head_rx.match(head_lines[0][1]["text"].strip()):
+                        head_lines.pop(0)
                 if not head_lines:
                     bare += 1
                     continue
-                head_lines.reverse()
                 head = " ".join(h["text"].strip() for _, h in head_lines)
                 if len(sample) < 6:
                     sample.append((pg["pdf_page"], head[:60], ln["text"].strip()))
