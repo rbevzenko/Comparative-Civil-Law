@@ -1,0 +1,542 @@
+[
+  {
+    "id": "42d126d0-5b2c-48c3-81b8-4399c112a416",
+    "title": "ABGB-ON — Klang Grosskommentar, §§ 1002-1044 (Bevollmächtigung und andere Arten der Geschäftsführung)",
+    "authors": [
+      "Fenyves",
+      "Kerschner",
+      "Vonkilch"
+    ],
+    "jurisdiction": "AT",
+    "edition": "3. Auflage",
+    "year": 2021,
+    "publisher": "Verlag Österreich, Wien",
+    "language": "de",
+    "pdf_pages_total": null,
+    "source_type": "commentary",
+    "created_at": "2026-08-18T08:11:34.930671Z",
+    "updated_at": "2026-08-20T09:40:35.936576Z"
+  },
+  {
+    "id": "7fd3556a-9c10-4f36-a5bb-ac03d5bae02b",
+    "title": "ABGB-ON — Klang Grosskommentar, §§ 1151-1164a (Dienstvertrag)",
+    "authors": [
+      "Fenyves",
+      "Kerschner",
+      "Vonkilch"
+    ],
+    "jurisdiction": "AT",
+    "edition": "3. Auflage",
+    "year": 2012,
+    "publisher": "Verlag Österreich, Wien",
+    "language": "de",
+    "pdf_pages_total": null,
+    "source_type": "commentary",
+    "created_at": "2026-08-18T10:19:59.807000Z",
+    "updated_at": "2026-08-20T09:40:36.660801Z"
+  },
+  {
+    "id": "e0180a5d-224f-4172-b680-ac940cde488a",
+    "title": "ABGB-ON — Klang Grosskommentar, §§ 1165-1174 (Werkvertrag, Verlagsvertrag)",
+    "authors": [
+      "Fenyves",
+      "Kerschner",
+      "Vonkilch"
+    ],
+    "jurisdiction": "AT",
+    "edition": "3. Auflage",
+    "year": 2020,
+    "publisher": "Verlag Österreich, Wien",
+    "language": "de",
+    "pdf_pages_total": null,
+    "source_type": "commentary",
+    "created_at": "2026-08-17T20:08:56.316776Z",
+    "updated_at": "2026-08-20T09:40:37.358504Z"
+  },
+  {
+    "id": "bcf932a3-669c-458a-bb92-55b7fb5ea644",
+    "title": "ABGB-ON — Klang Grosskommentar, §§ 1175-1216e (GesbR)",
+    "authors": [
+      "Fenyves",
+      "Kerschner",
+      "Vonkilch"
+    ],
+    "jurisdiction": "AT",
+    "edition": "3. Auflage",
+    "year": 2016,
+    "publisher": "Verlag Österreich, Wien",
+    "language": "de",
+    "pdf_pages_total": null,
+    "source_type": "commentary",
+    "created_at": "2026-08-18T07:23:53.704344Z",
+    "updated_at": "2026-08-20T09:40:37.842523Z"
+  },
+  {
+    "id": "b5fcae4f-85a9-4da4-a49f-7afa52859809",
+    "title": "ABGB-ON — Klang Grosskommentar, §§ 1328-1329 (Schadenersatz)",
+    "authors": [
+      "Fenyves",
+      "Kerschner",
+      "Vonkilch"
+    ],
+    "jurisdiction": "AT",
+    "edition": "3. Auflage",
+    "year": 2021,
+    "publisher": "Verlag Österreich, Wien",
+    "language": "de",
+    "pdf_pages_total": null,
+    "source_type": "commentary",
+    "created_at": "2026-08-18T09:33:32.301961Z",
+    "updated_at": "2026-08-20T09:40:38.542346Z"
+  },
+  {
+    "id": "6a023cbc-d151-4a76-bcae-48e0be6750da",
+    "title": "ABGB-ON — Klang Grosskommentar, §§ 1342-1374 (Bürgschaft, Pfandrecht)",
+    "authors": [
+      "Fenyves",
+      "Kerschner",
+      "Vonkilch"
+    ],
+    "jurisdiction": "AT",
+    "edition": "3. Auflage",
+    "year": 2020,
+    "publisher": "Verlag Österreich, Wien",
+    "language": "de",
+    "pdf_pages_total": null,
+    "source_type": "commentary",
+    "created_at": "2026-08-18T09:37:42.244867Z",
+    "updated_at": "2026-08-20T09:40:39.019251Z"
+  },
+  {
+    "id": "7d519a85-6f80-4374-8d4e-9236ca6fb7f3",
+    "title": "ABGB-ON — Klang Grosskommentar, §§ 1375-1410 (Anweisung, Vergleich und Zession)",
+    "authors": [
+      "Fenyves",
+      "Kerschner",
+      "Vonkilch"
+    ],
+    "jurisdiction": "AT",
+    "edition": "3. Auflage",
+    "year": 2011,
+    "publisher": "Verlag Österreich, Wien",
+    "language": "de",
+    "pdf_pages_total": null,
+    "source_type": "commentary",
+    "created_at": "2026-08-18T13:26:47.440369Z",
+    "updated_at": "2026-08-20T09:40:39.682023Z"
+  },
+  {
+    "id": "05b2c6ff-60c0-4b35-b53d-edb65e7fe93b",
+    "title": "ABGB-ON — Klang Grosskommentar, §§ 1411-1430 (Aufhebung der Rechte)",
+    "authors": [
+      "Fenyves",
+      "Kerschner",
+      "Vonkilch"
+    ],
+    "jurisdiction": "AT",
+    "edition": "3. Auflage",
+    "year": 2017,
+    "publisher": "Verlag Österreich, Wien",
+    "language": "de",
+    "pdf_pages_total": null,
+    "source_type": "commentary",
+    "created_at": "2026-08-17T20:09:23.450070Z",
+    "updated_at": "2026-08-20T09:40:40.159095Z"
+  },
+  {
+    "id": "41b39a63-81f7-4052-8cde-eaf21ba84504",
+    "title": "ABGB-ON — Klang Grosskommentar, §§ 1431-1437 (Bereicherungsrecht)",
+    "authors": [
+      "Fenyves",
+      "Kerschner",
+      "Vonkilch"
+    ],
+    "jurisdiction": "AT",
+    "edition": "3. Auflage",
+    "year": 2018,
+    "publisher": "Verlag Österreich, Wien",
+    "language": "de",
+    "pdf_pages_total": null,
+    "source_type": "commentary",
+    "created_at": "2026-08-17T20:09:26.896045Z",
+    "updated_at": "2026-08-20T09:40:40.634882Z"
+  },
+  {
+    "id": "f2daa10e-abd9-481d-948d-87eba8375ab9",
+    "title": "ABGB-ON — Klang Grosskommentar, §§ 380-446 (Eigentum)",
+    "authors": [
+      "Fenyves",
+      "Kerschner",
+      "Vonkilch"
+    ],
+    "jurisdiction": "AT",
+    "edition": "3. Auflage",
+    "year": 2016,
+    "publisher": "Verlag Österreich, Wien",
+    "language": "de",
+    "pdf_pages_total": null,
+    "source_type": "commentary",
+    "created_at": "2026-08-18T08:43:56.020959Z",
+    "updated_at": "2026-08-20T09:40:41.188843Z"
+  },
+  {
+    "id": "85cb6963-442a-46d6-8007-c0a1bdb25eb0",
+    "title": "ABGB-ON — Klang Grosskommentar, §§ 447-530 (Pfandrecht)",
+    "authors": [
+      "Fenyves",
+      "Kerschner",
+      "Vonkilch"
+    ],
+    "jurisdiction": "AT",
+    "edition": "3. Auflage",
+    "year": 2015,
+    "publisher": "Verlag Österreich, Wien",
+    "language": "de",
+    "pdf_pages_total": null,
+    "source_type": "commentary",
+    "created_at": "2026-08-18T13:39:32.471370Z",
+    "updated_at": "2026-08-20T09:40:41.711608Z"
+  },
+  {
+    "id": "0a517995-f526-4781-9e6e-b0215ca0265b",
+    "title": "ABGB-ON — Klang Grosskommentar, §§ 859-887 (Allgemeines Vertragsrecht)",
+    "authors": [
+      "Fenyves",
+      "Kerschner",
+      "Vonkilch"
+    ],
+    "jurisdiction": "AT",
+    "edition": "3. Auflage",
+    "year": 2021,
+    "publisher": "Verlag Österreich, Wien",
+    "language": "de",
+    "pdf_pages_total": null,
+    "source_type": "commentary",
+    "created_at": "2026-08-18T09:25:27.152589Z",
+    "updated_at": "2026-08-20T09:40:42.355884Z"
+  },
+  {
+    "id": "e4d055cc-e4d9-42d8-888c-c717c63a149a",
+    "title": "ABGB-ON — Klang Grosskommentar, §§ 888-896 (Gemeinschaft von Gläubigern und Schuldnern)",
+    "authors": [
+      "Fenyves",
+      "Kerschner",
+      "Vonkilch"
+    ],
+    "jurisdiction": "AT",
+    "edition": "3. Auflage",
+    "year": 2008,
+    "publisher": "Verlag Österreich, Wien",
+    "language": "de",
+    "pdf_pages_total": null,
+    "source_type": "commentary",
+    "created_at": "2026-08-17T20:09:30.542423Z",
+    "updated_at": "2026-08-20T09:40:42.821750Z"
+  },
+  {
+    "id": "885bae49-a913-4912-9813-ff712042f265",
+    "title": "ABGB-ON — Klang Grosskommentar, §§ 897-916 (Vertragsrecht)",
+    "authors": [
+      "Fenyves",
+      "Kerschner",
+      "Vonkilch"
+    ],
+    "jurisdiction": "AT",
+    "edition": "3. Auflage",
+    "year": 2011,
+    "publisher": "Verlag Österreich, Wien",
+    "language": "de",
+    "pdf_pages_total": null,
+    "source_type": "commentary",
+    "created_at": "2026-08-18T13:46:36.604788Z",
+    "updated_at": "2026-08-20T09:40:43.328597Z"
+  },
+  {
+    "id": "15b9327e-83d3-4052-a8c1-334b333fa816",
+    "title": "ABGB-ON — Klang Grosskommentar, §§ 905-907b (Erfüllung von Geldschulden)",
+    "authors": [
+      "Aichberger-Beig",
+      "Stabentheiner"
+    ],
+    "jurisdiction": "AT",
+    "edition": "3. Auflage",
+    "year": 2017,
+    "publisher": "Verlag Österreich, Wien",
+    "language": "de",
+    "pdf_pages_total": null,
+    "source_type": "commentary",
+    "created_at": "2026-08-17T18:08:27.554401Z",
+    "updated_at": "2026-08-20T09:40:43.801547Z"
+  },
+  {
+    "id": "5bf5bad1-adac-4f3c-8e3d-4b50938ca151",
+    "title": "ABGB-ON — Klang Grosskommentar, §§ 938-1001 (Schenkung, Verwahrung, Leihe und Darlehen)",
+    "authors": [
+      "Fenyves",
+      "Kerschner",
+      "Vonkilch"
+    ],
+    "jurisdiction": "AT",
+    "edition": "3. Auflage",
+    "year": 2013,
+    "publisher": "Verlag Österreich, Wien",
+    "language": "de",
+    "pdf_pages_total": null,
+    "source_type": "commentary",
+    "created_at": "2026-08-18T14:03:01.809905Z",
+    "updated_at": "2026-08-20T09:40:44.593193Z"
+  },
+  {
+    "id": "3e796acb-f890-4559-a9e5-61748bc537fd",
+    "title": "Allgemeiner Teil des Bürgerlichen Rechts",
+    "authors": [
+      "Peter Bydlinski"
+    ],
+    "jurisdiction": "AT",
+    "edition": "10 Aufl.",
+    "year": 2024,
+    "publisher": "Verlag Österreich GmbH, Wien",
+    "language": "De",
+    "pdf_pages_total": 433,
+    "source_type": "textbook",
+    "created_at": "2026-08-15T21:31:22.006409Z",
+    "updated_at": "2026-08-15T21:31:22.006409Z"
+  },
+  {
+    "id": "0281ce69-2004-4142-91a6-a87dab149e4e",
+    "title": "Bürgerliches Recht. Band III. Schuldrecht. Besonderer Teil",
+    "authors": [
+      "Peter Apathy, Andreas Riedler"
+    ],
+    "jurisdiction": "AT",
+    "edition": "4 aufl.",
+    "year": 2010,
+    "publisher": "Springer",
+    "language": "De",
+    "pdf_pages_total": 309,
+    "source_type": "textbook",
+    "created_at": "2026-08-15T21:09:06.231430Z",
+    "updated_at": "2026-08-15T21:09:06.231430Z"
+  },
+  {
+    "id": "33d97cda-d0d3-4e41-a8e6-8b5e24635c0a",
+    "title": "Bürgerliches Recht Band VI. Erbrecht",
+    "authors": [
+      "Bernhard Eccher"
+    ],
+    "jurisdiction": "AT",
+    "edition": "6 aufl.",
+    "year": 2016,
+    "publisher": "Verlag Österreich GmbH, Wien",
+    "language": "De",
+    "pdf_pages_total": 218,
+    "source_type": "textbook",
+    "created_at": "2026-08-18T15:23:27.751216Z",
+    "updated_at": "2026-08-18T15:23:27.751216Z"
+  },
+  {
+    "id": "15d05cc4-0b6f-462a-b7e7-93c51225358a",
+    "title": "Grundbuchsrecht",
+    "authors": [
+      "Jürgen C. T. Rassi"
+    ],
+    "jurisdiction": "AT",
+    "edition": "3. Aufl.",
+    "year": 2019,
+    "publisher": "MANZ Verlag Wien",
+    "language": "de",
+    "pdf_pages_total": null,
+    "source_type": "textbook",
+    "created_at": "2026-08-17T12:50:41.607679Z",
+    "updated_at": "2026-08-17T12:50:41.607679Z"
+  },
+  {
+    "id": "7bf6ab50-ccf7-4302-83ce-bdec2dae2c46",
+    "title": "Grundriss des bürgerlichen Rechts. Band II. Schuldrecht Allgemeiner Teil. Schuldrecht Besonderer Teil. Erbrecht",
+    "authors": [
+      "Helmut Koziol, Raimund Bollenberger, Andreas Kletecka"
+    ],
+    "jurisdiction": "AT",
+    "edition": "14 Aufl.",
+    "year": 2014,
+    "publisher": "MANZ",
+    "language": "De",
+    "pdf_pages_total": 755,
+    "source_type": "textbook",
+    "created_at": "2026-08-19T08:53:46.484912Z",
+    "updated_at": "2026-08-19T08:53:46.484912Z"
+  },
+  {
+    "id": "199fa63c-5904-4c59-9a53-8130f984f261",
+    "title": "Kommentar zum ABGB Allgemeines bürgerliches Gesetzbuch, EheG, KSchG, VGG, IPRG, Rom I-, Rom II- und Rom III-VO",
+    "authors": [
+      "Peter Bydlinski, Stefan Perner, Martin Spitzer"
+    ],
+    "jurisdiction": "AT",
+    "edition": "7 aufl.",
+    "year": 2023,
+    "publisher": "Verlag Österreich GmbH, Wien",
+    "language": "De",
+    "pdf_pages_total": 2877,
+    "source_type": "commentary",
+    "created_at": "2026-08-15T14:47:31.204154Z",
+    "updated_at": "2026-08-15T14:47:31.204154Z"
+  },
+  {
+    "id": "08576050-021a-4c4a-a6fa-f943698e4211",
+    "title": "Österreichisches Bankvertragsrecht, Band III: Zahlungsverkehr",
+    "authors": [
+      "Helmut Koziol",
+      "Gert Iro",
+      "Peter Apathy"
+    ],
+    "jurisdiction": "AT",
+    "edition": "2. Aufl.",
+    "year": 2008,
+    "publisher": "Verlag Österreich, Wien",
+    "language": "de",
+    "pdf_pages_total": null,
+    "source_type": "textbook",
+    "created_at": "2026-08-17T14:29:49.080727Z",
+    "updated_at": "2026-08-17T14:29:49.080727Z"
+  },
+  {
+    "id": "55cf87c3-5921-4b29-9c8b-4ad264929e4c",
+    "title": "Österreichisches Bankvertragsrecht, Band II: Konto und Depot",
+    "authors": [
+      "Helmut Koziol",
+      "Gert Iro"
+    ],
+    "jurisdiction": "AT",
+    "edition": "2. Aufl.",
+    "year": 2008,
+    "publisher": "Verlag Österreich, Wien",
+    "language": "de",
+    "pdf_pages_total": null,
+    "source_type": "textbook",
+    "created_at": "2026-08-17T14:20:13.814174Z",
+    "updated_at": "2026-08-17T14:20:13.814174Z"
+  },
+  {
+    "id": "076b9520-67de-448a-a5d3-20e67e3c0dd8",
+    "title": "Österreichisches Bankvertragsrecht, Band IV: Kreditgeschäft",
+    "authors": [
+      "Raimund Bollenberger",
+      "Wilma Dehn"
+    ],
+    "jurisdiction": "AT",
+    "edition": "2. Aufl.",
+    "year": 2012,
+    "publisher": "Verlag Österreich, Wien",
+    "language": "de",
+    "pdf_pages_total": null,
+    "source_type": "textbook",
+    "created_at": "2026-08-17T14:36:13.320005Z",
+    "updated_at": "2026-08-17T14:36:13.320005Z"
+  },
+  {
+    "id": "ef420057-ce43-4e3d-9b63-67385fc8096b",
+    "title": "Österreichisches Bankvertragsrecht, Band IX: Kreditsicherheiten, Teil II: Sachsicherheiten",
+    "authors": [
+      "Gernot Eicher",
+      "Bernhard Koch",
+      "Andreas Riedler",
+      "Gert Iro"
+    ],
+    "jurisdiction": "AT",
+    "edition": "1. Aufl.",
+    "year": 2012,
+    "publisher": "Verlag Österreich, Wien",
+    "language": "de",
+    "pdf_pages_total": null,
+    "source_type": "textbook",
+    "created_at": "2026-08-17T15:02:44.369368Z",
+    "updated_at": "2026-08-17T15:02:44.369368Z"
+  },
+  {
+    "id": "5106da31-8691-488d-9dde-7ef7a169c8f3",
+    "title": "Österreichisches Bankvertragsrecht, Band V: Akkreditiv und Garantie",
+    "authors": [
+      "Peter Apathy",
+      "Helmut Koziol",
+      "Gert Iro"
+    ],
+    "jurisdiction": "AT",
+    "edition": "2. Aufl.",
+    "year": 2010,
+    "publisher": "Verlag Österreich, Wien",
+    "language": "de",
+    "pdf_pages_total": null,
+    "source_type": "textbook",
+    "created_at": "2026-08-17T14:49:40.153618Z",
+    "updated_at": "2026-08-17T14:49:40.153618Z"
+  },
+  {
+    "id": "cf87809c-2f4c-4b2b-ace0-d309008a5161",
+    "title": "Österreichisches Bankvertragsrecht, Band VII: Factoring, Leasing und Forfaitierung",
+    "authors": [
+      "Gert Iro",
+      "Alexander Schopper",
+      "Florian Skarics"
+    ],
+    "jurisdiction": "AT",
+    "edition": "2. Aufl.",
+    "year": 2015,
+    "publisher": "Verlag Österreich, Wien",
+    "language": "de",
+    "pdf_pages_total": null,
+    "source_type": "textbook",
+    "created_at": "2026-08-17T14:53:51.320792Z",
+    "updated_at": "2026-08-17T14:53:51.320792Z"
+  },
+  {
+    "id": "4c03b507-21c2-4e21-8152-4c0c3f19a083",
+    "title": "Österreichisches Bankvertragsrecht, Band VIII: Kreditsicherheiten, Teil I: Personalsicherheiten",
+    "authors": [
+      "Peter Apathy",
+      "Gert Iro",
+      "Helmut Koziol"
+    ],
+    "jurisdiction": "AT",
+    "edition": "1. Aufl.",
+    "year": 2012,
+    "publisher": "Verlag Österreich, Wien",
+    "language": "de",
+    "pdf_pages_total": 423,
+    "source_type": "textbook",
+    "created_at": "2026-08-17T14:58:19.670848Z",
+    "updated_at": "2026-08-19T16:59:40.507945Z"
+  },
+  {
+    "id": "c6417342-fbd0-469f-9ce2-95314a51765b",
+    "title": "Schuldrecht. Allgemeiner Teil",
+    "authors": [
+      "Silvia Dullinger"
+    ],
+    "jurisdiction": "AT",
+    "edition": "8 aufl.",
+    "year": 2025,
+    "publisher": "Verlag Österreich GmbH, Wien",
+    "language": "De",
+    "pdf_pages_total": 289,
+    "source_type": "textbook",
+    "created_at": "2026-08-17T07:52:16.775645Z",
+    "updated_at": "2026-08-17T07:52:16.775645Z"
+  },
+  {
+    "id": "66bf2223-4454-4c4f-adbd-d41e6d741057",
+    "title": "Zivilrecht. Grundriss und Einfuerung in das Rechtsdenken. Teil 1",
+    "authors": [
+      "Heinz Barta"
+    ],
+    "jurisdiction": "AT",
+    "edition": "",
+    "year": 2004,
+    "publisher": "WUV-Univ.-Verl",
+    "language": "De",
+    "pdf_pages_total": 1207,
+    "source_type": "textbook",
+    "created_at": "2026-08-17T09:37:57.477681Z",
+    "updated_at": "2026-08-17T09:37:57.477681Z"
+  }
+]
