@@ -15,6 +15,11 @@ Les sûretés personnelles», «Chapitre 2 – La sûreté personnelle accessoir
 Порядок `--level` задаёт уровни вложенности: первый флаг — верхний уровень.
 Заголовок сбрасывает все уровни ниже своего.
 
+`--stop` перечисляет строки, которые продолжением заголовка не бывают
+никогда: у Snell's Equity под названием главы стоит слово CONTENTS и её
+собственное оглавление, и без оговорки название главы кончается словом
+«CONTENTS».
+
 Заголовок, не поместившийся в строку, продолжается следующей строкой; она
 опознаётся по строчной букве в начале и приклеивается. Иначе в иерархию
 попадает «Section 2 – Les effets du cautionnement entre le» с обрывом на
@@ -36,10 +41,15 @@ def main():
                     help="регулярное выражение уровня; порядок флагов = порядок вложенности")
     ap.add_argument("--title-on-next", action="store_true",
                     help="заголовок состоит из одного номера, название — следующей строкой")
+    ap.add_argument("--stop", action="append", default=[],
+                    help="строка, которая продолжением заголовка не считается")
+    ap.add_argument("--drop-trailing-marker", action="store_true",
+                    help="снять знак сноски, приклеившийся к последнему слову заголовка")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
 
     levels = [re.compile(rx) for rx in a.level]
+    stops = [re.compile(rx) for rx in a.stop]
     pages = {}
     for line in open(os.path.join(a.book, "work", "pages.jsonl"), encoding="utf-8"):
         p = json.loads(line)
@@ -61,7 +71,8 @@ def main():
             # Отличить её от начала текста можно по самому заголовку: пока в
             # нём нет ничего, кроме слова и номера, названия у него нет.
             if (a.title_on_next and len(text.split()) <= 2 and nxt
-                    and not any(rx.match(nxt) for rx in levels)):
+                    and not any(rx.match(nxt) for rx in levels)
+                    and not any(rx.match(nxt) for rx in stops)):
                 text = f"{text}. {nxt}"
                 nxt = " ".join(lines[i + 2]["text"].split()) if i + 2 < len(lines) else ""
             # Название в прописных переносится на две-три строки целиком
@@ -73,7 +84,7 @@ def main():
                 cand = " ".join(lines[j + 1]["text"].split())
                 if not cand or not cand.isupper() or len(cand) > 70:
                     break
-                if any(rx.match(cand) for rx in levels):
+                if any(rx.match(cand) for rx in levels + stops):
                     break
                 text = f"{text} {cand}"
                 j += 1
@@ -84,6 +95,10 @@ def main():
                 text = f"{text[:-1]}{nxt}" if text.endswith("-") else f"{text} {nxt}"
             text = re.sub(r"(\w)-\s+(\w)", r"\1\2", text)
             text = re.sub(r"\s+(?:er|re|e|ère)$", "", text)
+            # Знак сноски у заголовка приклеивается к последнему слову
+            # («2.— HISTORY OF EQUITY IN ENGLAND7»): в иерархии он лишний.
+            if a.drop_trailing_marker:
+                text = re.sub(r"(?<=[^\W\d_])\d{1,3}$", "", text)
             marks.append((pno, ln["top"] / H, depth, " ".join(text.split())))
 
     print(f"заголовков найдено: {len(marks)}")

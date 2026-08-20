@@ -1,0 +1,99 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/snell-equity-34",
+  "cards": 1979,
+  "profile": "sweet-maxwell-snell-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 45,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "para.": 1979
+    }
+  },
+  "coverage": {
+    "share": 0.991,
+    "covered_chars": 2357525,
+    "book_chars": 2378897,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 3681,
+        "from": 767811,
+        "to": 771492
+      },
+      {
+        "chars": 2191,
+        "from": 855308,
+        "to": 857499
+      }
+    ]
+  },
+  "lengths": {
+    "median": 932,
+    "min": 48,
+    "max": 7290,
+    "too_short": [
+      "snell-equity-34:para:3/5",
+      "snell-equity-34:para:3/13",
+      "snell-equity-34:para:4/53",
+      "snell-equity-34:para:6/17",
+      "snell-equity-34:para:6/35",
+      "snell-equity-34:para:6/47",
+      "snell-equity-34:para:6/62",
+      "snell-equity-34:para:6/76",
+      "snell-equity-34:para:18/97",
+      "snell-equity-34:para:20/8",
+      "snell-equity-34:para:20/39",
+      "snell-equity-34:para:23/34",
+      "snell-equity-34:para:24/17",
+      "snell-equity-34:para:27/35",
+      "snell-equity-34:para:29/54"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.91,
+    "footnotes_total": 9156,
+    "unparsed_blocks": 5,
+    "per_card_median": 4,
+    "cards_with_calls_but_no_notes": 41,
+    "notes_without_visible_call": 907
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "2": 144,
+      "3": 1835
+    }
+  },
+  "internal_refs": {
+    "refs_total": 154,
+    "unresolved": 0,
+    "resolved_share": 1.0,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

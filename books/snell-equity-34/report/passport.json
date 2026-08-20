@@ -1,0 +1,275 @@
+{
+  "path": "/home/user/books/uk/snell-equity.pdf",
+  "sha256": "3fb41c5773d15b1bb54e890d5677e1e8d70396103ff17370e846fec39e0fa632",
+  "pages": 1155,
+  "sampled_pages": [
+    180,
+    196,
+    212,
+    228,
+    244,
+    260,
+    276,
+    292,
+    308,
+    324,
+    340,
+    356,
+    372,
+    388,
+    404,
+    420,
+    436,
+    452,
+    468,
+    484,
+    500,
+    516,
+    532,
+    548,
+    564,
+    580,
+    596,
+    612,
+    628,
+    644,
+    660,
+    676,
+    692,
+    708,
+    724,
+    740,
+    756,
+    772,
+    788,
+    804,
+    820,
+    836,
+    852,
+    868,
+    884,
+    900,
+    916,
+    932,
+    948,
+    964
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 47,
+    "max_depth": 1,
+    "resolved_pages": 47,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "0",
+        "page": 1,
+        "depth": 0
+      },
+      {
+        "title": "1-1",
+        "page": 18,
+        "depth": 0
+      },
+      {
+        "title": "2-2",
+        "page": 38,
+        "depth": 0
+      },
+      {
+        "title": "3",
+        "page": 45,
+        "depth": 0
+      },
+      {
+        "title": "4",
+        "page": 72,
+        "depth": 0
+      },
+      {
+        "title": "5",
+        "page": 103,
+        "depth": 0
+      },
+      {
+        "title": "6",
+        "page": 124,
+        "depth": 0
+      },
+      {
+        "title": "7",
+        "page": 154,
+        "depth": 0
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 2956,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 1.0,
+    "offset_mode": -5,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 180,
+        "printed": 252
+      },
+      {
+        "pdf_page": 196,
+        "printed": 435
+      },
+      {
+        "pdf_page": 212,
+        "printed": 591
+      },
+      {
+        "pdf_page": 228,
+        "printed": 33
+      },
+      {
+        "pdf_page": 244,
+        "printed": 232
+      },
+      {
+        "pdf_page": 260,
+        "printed": 291
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "10.0": 87011,
+      "8.0": 51922,
+      "9.0": 4021,
+      "6.0": 1866,
+      "5.0": 1082,
+      "11.0": 996,
+      "7.2": 204,
+      "5.4": 54
+    },
+    "body": 10.0,
+    "candidates_footnote": [
+      5.0,
+      6.0,
+      7.2,
+      8.0
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 36196,
+    "share_at_page_bottom": 0.75
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      51,
+      28,
+      65
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "n° голый номер в начале абзаца": {
+      "hits": 442,
+      "monotonic_share": 0.93,
+      "first": [
+        "252",
+        "253",
+        "254",
+        "255",
+        "256"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 526,
+      "monotonic_share": 0.87,
+      "first": [
+        "252",
+        "253",
+        "254",
+        "255",
+        "256"
+      ]
+    },
+    "para. англ. раздел-пункт": {
+      "hits": 47,
+      "monotonic_share": 0.0,
+      "first": [
+        "7-024",
+        "7-046",
+        "7-047",
+        "7-059",
+        "8-009"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 28812,
+    "suspicious": 12,
+    "share": 0.0004,
+    "sample": [
+      "NZSC",
+      "Smyth-Tyrrell",
+      "Lynch",
+      "(Cmnd.",
+      "FSHC",
+      "FSHC",
+      "SGHC",
+      "Gmbh",
+      "Gmbh",
+      "Gmbh",
+      "Gmbh",
+      "Cmnd."
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        51.0,
+        391.0
+      ],
+      "even": [
+        51.0,
+        391.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "EN": 1
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Кликабельных сносок нет — привязка по кеглю и положению.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы.",
+      "Типографская пагинация читается, но смещение относительно страниц файла непостоянно (вклейки, вкладки). Хранить обе нумерации, не пересчитывать."
+    ]
+  }
+}
