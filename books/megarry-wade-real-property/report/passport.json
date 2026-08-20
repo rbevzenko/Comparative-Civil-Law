@@ -1,0 +1,244 @@
+{
+  "path": "/home/user/books/uk/megarry-wade-real-property.pdf",
+  "sha256": "1875b51bfd43378d43eef609a69a856b1ad05beeeb73815c1bc1ee42cb118c00",
+  "pages": 1688,
+  "sampled_pages": [
+    254,
+    296,
+    338,
+    380,
+    422,
+    464,
+    506,
+    548,
+    590,
+    632,
+    674,
+    716,
+    758,
+    800,
+    842,
+    884,
+    926,
+    968,
+    1010,
+    1052,
+    1094,
+    1136,
+    1178,
+    1220,
+    1262,
+    1304,
+    1346,
+    1388,
+    1430,
+    1472
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 39,
+    "max_depth": 1,
+    "resolved_pages": 39,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Preliminary",
+        "page": 1,
+        "depth": 0
+      },
+      {
+        "title": "Chapter 1 - Introduction",
+        "page": 20,
+        "depth": 0
+      },
+      {
+        "title": "Chapter 2 - Tenures and Estates",
+        "page": 42,
+        "depth": 0
+      },
+      {
+        "title": "Chapter 3 - Estates",
+        "page": 57,
+        "depth": 0
+      },
+      {
+        "title": "Chapter 4 - Possession of Land",
+        "page": 105,
+        "depth": 0
+      },
+      {
+        "title": "Chapter 5 - Law and Equity",
+        "page": 122,
+        "depth": 0
+      },
+      {
+        "title": "Chapter 6 - The Legislative Transformation of the Law of Real Property and the Protection of Estates and Interests",
+        "page": 135,
+        "depth": 0
+      },
+      {
+        "title": "Chapter 7 - Registration of Title",
+        "page": 166,
+        "depth": 0
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 2945,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.77,
+    "offset_mode": -231,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 254,
+        "printed": 23
+      },
+      {
+        "pdf_page": 296,
+        "printed": null
+      },
+      {
+        "pdf_page": 338,
+        "printed": 9
+      },
+      {
+        "pdf_page": 380,
+        "printed": 81
+      },
+      {
+        "pdf_page": 422,
+        "printed": 6
+      },
+      {
+        "pdf_page": 464,
+        "printed": 10
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "9.9": 48405,
+      "8.0": 29570,
+      "10.0": 8014,
+      "5.5": 768,
+      "4.4": 768,
+      "7.0": 165,
+      "6.7": 105
+    },
+    "body": 9.9,
+    "candidates_footnote": [
+      4.4,
+      5.5,
+      8.0
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 23712,
+    "share_at_page_bottom": 0.73
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      52,
+      57,
+      53,
+      92
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 293,
+      "monotonic_share": 0.16,
+      "first": [
+        "234",
+        "9",
+        "9",
+        "9",
+        "9"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 287,
+      "monotonic_share": 0.15,
+      "first": [
+        "234",
+        "9",
+        "9",
+        "9",
+        "9"
+      ]
+    },
+    "para. англ. раздел-пункт": {
+      "hits": 62,
+      "monotonic_share": 0.0,
+      "first": [
+        "7–136",
+        "7–137",
+        "8–038",
+        "9–013",
+        "9–014"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 14835,
+    "suspicious": 2,
+    "share": 0.0001,
+    "sample": [
+      "Cmnd.",
+      "Schs"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        92.0,
+        402.0
+      ],
+      "even": [
+        92.0,
+        402.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "EN": 3
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Кликабельных сносок нет — привязка по кеглю и положению.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы.",
+      "Типографская пагинация читается, но смещение относительно страниц файла непостоянно (вклейки, вкладки). Хранить обе нумерации, не пересчитывать."
+    ]
+  }
+}

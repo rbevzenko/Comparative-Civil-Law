@@ -1,0 +1,265 @@
+{
+  "path": "/home/user/books/uk/virgo-restitution.pdf",
+  "sha256": "57a45d8c9efccb16a6fcaa1036751e9c68f7a34b5f038b802d38f0196d51f7cc",
+  "pages": 815,
+  "sampled_pages": [
+    123,
+    143,
+    163,
+    183,
+    203,
+    223,
+    243,
+    263,
+    283,
+    303,
+    323,
+    343,
+    363,
+    383,
+    403,
+    423,
+    443,
+    463,
+    483,
+    503,
+    523,
+    543,
+    563,
+    583,
+    603,
+    623,
+    643,
+    663,
+    683,
+    703
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 1104,
+    "max_depth": 8,
+    "resolved_pages": 1104,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Cover",
+        "page": 1,
+        "depth": 0
+      },
+      {
+        "title": "The Principles of the Law of Restitution",
+        "page": 4,
+        "depth": 0
+      },
+      {
+        "title": "Copyright",
+        "page": 5,
+        "depth": 0
+      },
+      {
+        "title": "Preface",
+        "page": 6,
+        "depth": 0
+      },
+      {
+        "title": "Contents",
+        "page": 10,
+        "depth": 0
+      },
+      {
+        "title": "Table of Cases",
+        "page": 16,
+        "depth": 0
+      },
+      {
+        "title": "Table of Legislation",
+        "page": 41,
+        "depth": 0
+      },
+      {
+        "title": "Australia",
+        "page": 41,
+        "depth": 1
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 47,
+    "with_destination": 47,
+    "per_page": 1.6,
+    "sample": [
+      {
+        "page": 123,
+        "rect": [
+          72,
+          639,
+          173,
+          650
+        ]
+      },
+      {
+        "page": 123,
+        "rect": [
+          72,
+          400,
+          219,
+          410
+        ]
+      },
+      {
+        "page": 143,
+        "rect": [
+          72,
+          334,
+          290,
+          344
+        ]
+      }
+    ]
+  },
+  "text_layer": {
+    "median_chars_per_page": 3243,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.03,
+    "offset_mode": -157,
+    "offset_stable": true,
+    "sample": [
+      {
+        "pdf_page": 123,
+        "printed": null
+      },
+      {
+        "pdf_page": 143,
+        "printed": null
+      },
+      {
+        "pdf_page": 163,
+        "printed": 6
+      },
+      {
+        "pdf_page": 183,
+        "printed": null
+      },
+      {
+        "pdf_page": 203,
+        "printed": null
+      },
+      {
+        "pdf_page": 223,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "9.8": 76945,
+      "8.0": 15473,
+      "9.2": 1064,
+      "7.3": 986,
+      "10.2": 702,
+      "6.5": 497,
+      "5.3": 497,
+      "9.0": 190
+    },
+    "body": 9.8,
+    "candidates_footnote": [
+      5.3,
+      6.5,
+      7.3,
+      8.0
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 17453,
+    "share_at_page_bottom": 0.91
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      72
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 151,
+      "monotonic_share": 0.8,
+      "first": [
+        "80",
+        "115",
+        "117",
+        "118",
+        "120"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 150,
+      "monotonic_share": 0.8,
+      "first": [
+        "80",
+        "115",
+        "117",
+        "118",
+        "120"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 18806,
+    "suspicious": 10,
+    "share": 0.0005,
+    "sample": [
+      "NSWLR",
+      "HMRC",
+      "NSWSC",
+      "Slynn",
+      "Slynn).",
+      "HMRC",
+      "HMRC",
+      "LJKB",
+      "GmbH",
+      "HSBC"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        72.0,
+        419.0
+      ],
+      "even": [
+        72.0,
+        419.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {},
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Сноски кликабельны — привязку берём из файла напрямую, без эвристик.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы."
+    ]
+  }
+}

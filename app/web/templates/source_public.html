@@ -60,14 +60,9 @@
           {% endif %}
         {% endif %}
         <dt>№ пункта</dt><dd>{{ chunk.point_number or "—" }}</dd>
-        <dt>Страница</dt>
-        <dd>
-          {% if chunk.page_start %}
-            {{ chunk.page_start }}{% if chunk.page_end and chunk.page_end != chunk.page_start %}–{{ chunk.page_end }}{% endif %}
-          {% else %}
-            —
-          {% endif %}
-        </dd>
+        {# Номер страницы на публичной странице не показывается: в корпусе
+           лежит страница файла-источника, а не печатного издания, и
+           показанный номер уходит в чужую сноску как страница книги. #}
       </dl>
 
       <div class="chunk-text">{{ chunk.text }}</div>
