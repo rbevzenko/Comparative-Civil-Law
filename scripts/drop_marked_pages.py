@@ -13,6 +13,12 @@ Registered Land 31». Эти строки неотличимы по виду о�
 
 Отличает их полоса, на которой они стоят: на ней есть строка-маркер и нет
 текста книги. Скрипт вычищает такие полосы целиком.
+
+С `--lines-only` снимаются только сами строки с маркером. Это для книг, где
+оглавление главы стоит на ТОЙ ЖЕ полосе, что и начало её текста: у Hanbury
+& Martin, Modern Equity первая полоса главы держит и оглавление с отточием
+(«B. Agency ........... 2-003»), и первые абзацы. Снять полосу целиком там
+значит потерять текст книги.
 """
 
 import os
@@ -32,6 +38,8 @@ def main():
     ap.add_argument("--book", required=True)
     ap.add_argument("--marker", action="append", required=True,
                     help="строка-маркер, можно повторять; сравнение без учёта регистра")
+    ap.add_argument("--lines-only", action="store_true",
+                    help="снимать только строки с маркером, а не всю полосу")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
 
@@ -41,6 +49,20 @@ def main():
     hit = lines = 0
     sample = []
     for pg in pages:
+        if a.lines_only:
+            keep, drop = [], []
+            for ln in pg.get("lines") or []:
+                t = (ln.get("text") or "").lower()
+                (drop if any(m in t for m in marks) else keep).append(ln)
+            if not drop:
+                continue
+            hit += 1
+            lines += len(drop)
+            if len(sample) < 5:
+                sample.append(pg["pdf_page"])
+            if not a.dry_run:
+                pg["lines"] = keep
+            continue
         text = "\n".join((l.get("text") or "") for l in (pg.get("lines") or [])).lower()
         if not any(m in text for m in marks):
             continue
