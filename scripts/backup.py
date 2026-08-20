@@ -112,6 +112,33 @@ def make_tar(dest, files):
     return os.path.getsize(dest)
 
 
+def split_books(files, limit):
+    """Деление книг на части не крупнее limit байт — по книгам, а не по байтам.
+
+    Каждая часть остаётся самостоятельным архивом: `cards-part2.tar.gz`
+    распаковывается сам по себе, и потеря одной части не портит остальные,
+    в отличие от нарезки готового архива на куски. Нужно там, где на пути
+    к хранилищу стоит предел на размер файла (вложение в переписке,
+    почта): у Диска такого предела нет, и по умолчанию деления нет тоже.
+
+    Раскладка жадная: самая тяжёлая книга идёт в самую лёгкую часть.
+    Книга, которая одна больше предела, кладётся отдельной частью — резать
+    её было бы уже не по книгам.
+    """
+    by_book = {}
+    for f in files:
+        by_book.setdefault(f.split("/")[1], []).append(f)
+    size = {b: sum(os.path.getsize(os.path.join(REPO, f)) for f in fs) for b, fs in by_book.items()}
+    total = sum(size.values())
+    parts = [[] for _ in range(max(1, -(-total // limit)))]
+    weight = [0] * len(parts)
+    for b in sorted(size, key=lambda b: -size[b]):
+        i = weight.index(min(weight))
+        parts[i].append(b)
+        weight[i] += size[b]
+    return [sorted(f for b in part for f in by_book[b]) for part in parts if part]
+
+
 def fetch(url, token, tries=4):
     req = urllib.request.Request(url, headers={"Authorization": f"Bearer {token}"})
     for attempt in range(tries):
@@ -214,6 +241,11 @@ def main():
     ap.add_argument("--no-cards", action="store_true")
     ap.add_argument("--no-system", action="store_true")
     ap.add_argument("--no-corpus", action="store_true")
+    ap.add_argument(
+        "--split-mb",
+        type=int,
+        help="делить карточки на части не крупнее N МБ (каждая — самостоятельный архив)",
+    )
     a = ap.parse_args()
 
     day = datetime.date.today().isoformat()
@@ -229,10 +261,18 @@ def main():
 
     if not a.no_cards:
         files = tracked(prefix="books/")
-        size = make_tar(os.path.join(root, "cards.tar.gz"), files)
-        books = len({f.split("/")[1] for f in files})
-        parts.append(("cards.tar.gz", size, f"{books} книг, {len(files)} файлов"))
-        print(f"cards.tar.gz: {books} книг, {len(files)} файлов, {human(size)}")
+        groups = split_books(files, a.split_mb * 1024 * 1024) if a.split_mb else [files]
+        for n, group in enumerate(groups, 1):
+            name = "cards.tar.gz" if len(groups) == 1 else f"cards-part{n}.tar.gz"
+            size = make_tar(os.path.join(root, name), group)
+            books = len({f.split("/")[1] for f in group})
+            parts.append((name, size, f"{books} книг, {len(group)} файлов"))
+            print(f"{name}: {books} книг, {len(group)} файлов, {human(size)}")
+        if len(groups) > 1:
+            notes.append(
+                f"cards-part*.tar.gz: {len(groups)} частей, каждая — самостоятельный "
+                "архив, а не кусок файла; распаковывать все в корень репозитория"
+            )
 
     corpus_stats = []
     if not a.no_corpus and a.service_url:
