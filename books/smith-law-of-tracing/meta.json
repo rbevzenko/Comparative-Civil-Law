@@ -1,12 +1,19 @@
 {
-  "book_id": "smith-law-of-tracing",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
+  "book_id": "smith-law-of-tracing-1",
+  "authors": [
+    "Lionel D. Smith"
+  ],
+  "title": "The Law of Tracing",
+  "edition": "1st ed.",
+  "year": 1997,
+  "publisher": "Oxford University Press",
+  "jurisdiction": "UK",
+  "language": "en",
   "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "cite_as": "L. Smith, The Law of Tracing",
+  "pdf_pages_total": 439,
+  "body_pages_pdf": "43-431",
+  "printed_page_offset": -41,
+  "notes": "Оборот титула (f3): «© Lionel D. Smith 1997», «Reprinted 2003», Oxford University Press. Скан с текстовым слоем OCR: размеры листов гуляют (1114×1669 … 1184×1796), кегль тела 25–30, сносок 21–22. Своей нумерации абзацев у книги нет — единица цитирования — типографская страница.",
+  "service_source_id": "50c0ebda-d72d-4e05-b6ee-58676b7d4e46"
 }

@@ -1,0 +1,50 @@
+id: oup-smith-tracing-v1
+publisher: Oxford University Press
+jurisdiction: UK
+language: en
+# Lionel D. Smith, The Law of Tracing, OUP 1997 (переиздание 2003).
+# Скан с текстовым слоем OCR, 439 листов, тело f43–f431.
+#
+# Файл сканированный: размеры листов гуляют от 1114×1669 до 1184×1796,
+# кегль тела 25–30, сносок 21–22. Все пороги поэтому в долях высоты.
+#
+# СВОЕЙ ЕДИНИЦЫ ЦИТИРОВАНИЯ У КНИГИ НЕТ: абзацы не нумерованы. Единица —
+# типографская страница, ею книга и цитируется.
+#
+# Аппарат сносок не отделяется: знак сноски в OCR не читается («l-l»,
+# «1 19 14 l AC 3 9 8 {H L). 4 I»), а без номера сноска не грузится. Пусть
+# остаётся внизу своей карточки.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+    address_template: "p. {number}"
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  mode: none
+
+printed_page:
+  # Колонцифра в колонтитуле: «20 Introduction» на чётной,
+  # «Foundations 21» на нечётной. Нижняя полоса выключена.
+  band: [0.09, 0.0]
+  patterns:
+    - '^(\d{1,4})\s'
+    - '\s(\d{1,4})$'
+
+junk:
+  header_band: 0.085
+
+statutory:
+  patterns:
+    - '\b[A-Z][A-Za-z’\'' ]{3,40}Act\s+\d{4}(?:\s+ss?\.?\s*\d+[A-Za-z]*)?'
+    - '\bss?\s?\d+[A-Za-z]*(?:\(\d+\))?'
+
+cross_refs:
+  patterns: []
+
+citation:
+  template: "{cite_as} {address}"

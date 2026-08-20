@@ -66,8 +66,42 @@ def main():
         return
 
     if a.sequential:
+        # Сначала снимаем одиночные ошибки чтения. У скана колонцифра
+        # иногда читается с чужой строки: «137» на f139 там, где идёт 97.
+        # Признак — смещение, не совпадающее НИ с предыдущим соседом, НИ со
+        # следующим. Так отсеивается одиночный выброс, но не настоящий сдвиг
+        # нумерации (вклейка, пропущенный оборот): тот держится многими
+        # полосами подряд, и у первой же полосы после сдвига смещение
+        # совпадает со следующей.
+        marks = [(i, pg["printed_page"] - pg["pdf_page"])
+                 for i, pg in enumerate(pages) if pg.get("printed_page")]
+        dropped_lone = 0
+        for k, (i, off) in enumerate(marks):
+            prev_off = marks[k - 1][1] if k else None
+            next_off = marks[k + 1][1] if k + 1 < len(marks) else None
+            if prev_off is None and next_off is None:
+                continue
+            if off != prev_off and off != next_off:
+                pages[i]["printed_page"] = None
+                dropped_lone += 1
+        if dropped_lone:
+            print(f"снято одиночных ошибок чтения колонцифры: {dropped_lone}")
+
         anchors = [i for i, p in enumerate(pages) if p.get("printed_page")]
-        filled = skipped = 0
+        filled = skipped = approx = 0
+        if anchors:
+            # Полосы ДО первого прочитанного номера и ПОСЛЕ последнего:
+            # это шмуцтитул и первая полоса главы в начале тела и такие же в
+            # конце. Считаем от края наружу.
+            first, last = anchors[0], anchors[-1]
+            for t in range(first - 1, -1, -1):
+                pages[t]["printed_page"] = pages[first]["printed_page"] - (first - t)
+                pages[t]["printed_page_filled"] = True
+                filled += 1
+            for t in range(last + 1, len(pages)):
+                pages[t]["printed_page"] = pages[last]["printed_page"] + (t - last)
+                pages[t]["printed_page_filled"] = True
+                filled += 1
         for k in range(len(anchors) - 1):
             i, j = anchors[k], anchors[k + 1]
             lo, hi = pages[i]["printed_page"], pages[j]["printed_page"]
@@ -78,14 +112,27 @@ def main():
             # номеров между ними. Иначе в скане не хватает листа, и
             # выдуманный номер увёл бы адрес на чужую страницу.
             if hi - lo != j - i:
-                skipped += j - i - 1
+                # Счёт не сошёлся: в скане не хватает полос (пустые обороты
+                # перед началом главы цифровые переиздания часто не снимают).
+                # Тогда считаем НАЗАД от следующего прочитанного номера:
+                # полоса перед ним — это точно hi-1, а вот у самых ранних
+                # полос прогона номер может оказаться на единицу больше
+                # настоящего. Это шмуцтитулы и первые полосы глав, где текста
+                # две строки, — лучше, чем оставить их без адреса вовсе.
+                for t in range(j - 1, i, -1):
+                    pages[t]["printed_page"] = hi - (j - t)
+                    pages[t]["printed_page_filled"] = True
+                    pages[t]["printed_page_approx"] = True
+                    filled += 1
+                    approx += 1
                 continue
             for t in range(i + 1, j):
                 pages[t]["printed_page"] = lo + (t - i)
                 pages[t]["printed_page_filled"] = True
                 filled += 1
         print(f"полос с колонцифрой: {len(known)} из {len(pages)}")
-        print(f"достроено по порядку: {filled}, оставлено без номера: {skipped}")
+        print(f"достроено по порядку: {filled}, из них счётом назад: {approx}, "
+              f"оставлено без номера: {skipped}")
         if a.dry_run:
             print("dry-run: файл не тронут")
             return
