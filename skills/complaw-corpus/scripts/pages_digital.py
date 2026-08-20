@@ -29,7 +29,7 @@ except ImportError:
     sys.exit("Нужен pdfplumber: pip install pdfplumber")
 
 
-def build_page(page, i, prof, junk_rx):
+def build_page(page, i, prof, junk_rx, case_upper=None):
     chars = page.chars
     height, width = float(page.height), float(page.width)
     if not chars:
@@ -43,7 +43,7 @@ def build_page(page, i, prof, junk_rx):
     # которых во встроенном шрифте перепутан ToUnicode, и молча портить
     # остальные нельзя.
     if (prof.get("case_repair") or "") == "width":
-        chars = P.repair_case_by_width(chars)
+        chars = P.repair_case_by_width(chars, case_upper)
     lines = P.chars_to_lines(chars)
     printed, head_i = P.detect_printed_page_line(lines, height, pp.get("band", 0.12),
                                                  pp.get("patterns"), pp.get("max_chars", 70))
@@ -84,13 +84,24 @@ def main():
 
     with pdfplumber.open(a.pdf) as pdf:
         idx = P.parse_range(a.pages, len(pdf.pages))
+        # Таблица ширин строчных букв собирается ПО ВСЕЙ книге до разбора:
+        # буква, встречающаяся на одной полосе только в испорченном виде
+        # («k» в «kEy CASE»), по этой полосе неотличима, а по книге —
+        # отличима.
+        case_upper = None
+        if (prof.get("case_repair") or "") == "width":
+            table = {}
+            for i in idx:
+                P.case_width_table(pdf.pages[i].chars, table)
+            case_upper = P.case_upper_widths(table)
+            print(f"  правка регистра: испорченных букв {len(case_upper)}", flush=True)
         done = 0
         for i in idx:
             path = os.path.join(cache, f"page-{i + 1:05d}.json")
             if a.skip_done and os.path.exists(path):
                 done += 1
                 continue
-            P.write_json(path, build_page(pdf.pages[i], i, prof, junk_rx))
+            P.write_json(path, build_page(pdf.pages[i], i, prof, junk_rx, case_upper))
             done += 1
             if done % 50 == 0:
                 print(f"  страниц разобрано: {done}/{len(idx)}", flush=True)

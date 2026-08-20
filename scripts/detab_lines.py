@@ -31,15 +31,27 @@ import re
 WS = re.compile(r"[\t   ]+")
 
 
-def clean(s):
+def clean(s, subs=()):
+    for old, new in subs:
+        s = s.replace(old, new)
     return re.sub(r" {2,}", " ", WS.sub(" ", s)).strip()
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--book", required=True)
+    ap.add_argument("--map", action="append", default=None, metavar="ИЗ=В",
+                    help="дополнительная замена в тексте строки, можно повторять; "
+                         "у Duddington маркер списка «■■» заменяется на тире")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
+
+    subs = []
+    for item in a.map or []:
+        old, _, new = item.partition("=")
+        if not old:
+            raise SystemExit(f"--map ждёт «ИЗ=В», получено {item!r}")
+        subs.append((old, new))
 
     path = os.path.join(a.book, "work", "pages.jsonl")
     pages = [json.loads(l) for l in open(path, encoding="utf-8")]
@@ -49,14 +61,14 @@ def main():
         for key in ("lines", "note_lines"):
             for ln in pg.get(key) or []:
                 before = ln.get("text") or ""
-                after = clean(before)
+                after = clean(before, subs)
                 if after != before:
                     if len(sample) < 4:
                         sample.append((pg["pdf_page"], before[:60], after[:60]))
                     ln["text"] = after
                     touched += 1
                 for w in ln.get("words") or []:
-                    t = clean(w.get("text") or "")
+                    t = clean(w.get("text") or "", subs)
                     if t != w.get("text"):
                         w["text"] = t
                         words += 1

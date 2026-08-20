@@ -43,7 +43,11 @@ footnotes:
   mode: none
 
 printed_page:
-  band: 0.08
+  # Колонтитул стоит на 0.075 высоты, колонцифра — на 0.93. Симметричная
+  # полоса ловит либо оба, либо ничего, и из колонтитула «10 Adverse
+  # possession» приезжает номер главы вместо номера страницы. Поэтому
+  # верхняя полоса выключена совсем.
+  band: [0.0, 0.08]
 
 junk:
   header_band: 0.095
@@ -62,3 +66,5 @@ cross_refs:
 
 citation:
   template: "{cite_as} {address}"
+
+case_repair: width

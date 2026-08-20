@@ -235,7 +235,33 @@ def drop_phantom_spaces(row):
     return [c for c in row if id(c) not in drop]
 
 
-def repair_case_by_width(chars):
+def case_width_table(chars, table=None):
+    """Копит ширины строчных букв по шрифтам: (fontname, буква) → {ширины}."""
+    table = table if table is not None else {}
+    for c in chars:
+        t = c.get("text") or ""
+        if len(t) != 1 or not t.isalpha() or not t.islower():
+            continue
+        size = c.get("size") or 0
+        if size <= 0:
+            continue
+        table.setdefault((c.get("fontname"), t), set()).add(round((c["x1"] - c["x0"]) / size, 3))
+    return table
+
+
+def case_upper_widths(table):
+    """Из таблицы ширин — ширина ПРОПИСНОЙ для каждой испорченной буквы."""
+    upper = {}
+    for key, ws in table.items():
+        lo, hi = min(ws), max(ws)
+        # Порог 1.04 отделяет пару «строчная/прописная» от дрожания
+        # округления: у «m» и «M» разница всего 7% (0.778 против 0.833).
+        if len(ws) >= 2 and hi >= lo * 1.04:
+            upper[key] = hi
+    return upper
+
+
+def repair_case_by_width(chars, upper=None):
     """Возвращает регистр буквам, у которых во встроенном шрифте перепутан ToUnicode.
 
     У Pearson (Duddington, Law Express: Land Law, 3rd ed.) часть глифов
@@ -249,8 +275,9 @@ def repair_case_by_width(chars):
     ширины: настоящее строчное («l» — 0.222 кегля) и прописное («L» — 0.5).
     Большее и есть прописная.
 
-    Считается по одной странице: буква, встречающаяся на полосе только в
-    испорченном виде, останется как была — это осторожнее, чем угадывать.
+    Таблица ширин собирается по ВСЕЙ книге и передаётся сюда готовой: буква,
+    встречающаяся на одной полосе только в испорченном виде («k» в «kEy
+    CASE»), по этой полосе неотличима, а по книге — отличима.
     """
     def norm(c):
         size = c.get("size") or 0
@@ -258,23 +285,8 @@ def repair_case_by_width(chars):
             return None
         return round((c["x1"] - c["x0"]) / size, 3)
 
-    widths = {}
-    for c in chars:
-        t = c.get("text") or ""
-        if len(t) != 1 or not t.isalpha() or not t.islower():
-            continue
-        w = norm(c)
-        if w is None:
-            continue
-        widths.setdefault((c.get("fontname"), t), set()).add(w)
-
-    upper = {}
-    for key, ws in widths.items():
-        lo, hi = min(ws), max(ws)
-        # Порог 1.04 отделяет пару «строчная/прописная» от дрожания округления:
-        # у «m» и «M» разница всего 7% (0.778 против 0.833).
-        if len(ws) >= 2 and hi >= lo * 1.04:
-            upper[key] = hi
+    if upper is None:
+        upper = case_upper_widths(case_width_table(chars))
 
     if not upper:
         return chars
@@ -550,7 +562,17 @@ def detect_printed_page_line(lines, height, band=0.12, patterns=None, max_chars=
     сидит внутри него («18 Das Recht im objektiven Sinn» на чётной, «… 19»
     на нечётной). Такие случаи описываются паттернами в профиле.
     """
-    top_band, bottom_band = height * band, height * (1 - band)
+    # `band` — либо одно число (обе полосы одинаковы), либо пара
+    # [верхняя, нижняя]. Пара нужна там, где колонтитул стоит ниже, чем
+    # колонцифра снизу: у Duddington колонтитул на 0.075 высоты, а
+    # колонцифра — на 0.93, и симметричная полоса ловит либо оба, либо
+    # ничего. Из колонтитула «10 Adverse possession» при этом приезжает
+    # номер главы вместо номера страницы.
+    if isinstance(band, (list, tuple)):
+        top_frac, bottom_frac = float(band[0]), float(band[1])
+    else:
+        top_frac = bottom_frac = float(band)
+    top_band, bottom_band = height * top_frac, height * (1 - bottom_frac)
     rx = [re.compile(p) for p in (patterns or [])]
     for i, ln in enumerate(lines):
         s = ln["text"].strip()
