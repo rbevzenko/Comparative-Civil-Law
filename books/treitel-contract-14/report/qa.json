@@ -1,0 +1,88 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/treitel-contract-14",
+  "cards": 2131,
+  "profile": "sweet-maxwell-treitel-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9995,
+    "rows": 23,
+    "gaps": [
+      {
+        "family": "para.",
+        "section": "11",
+        "from": 105,
+        "to": 107,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 1,
+    "missing_total": 1,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "para.": 2131
+    }
+  },
+  "coverage": {
+    "share": 0.9951,
+    "covered_chars": 2850713,
+    "book_chars": 2864848,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 1087,
+    "min": 62,
+    "max": 6564,
+    "too_short": [
+      "treitel-contract-14:para:5/21",
+      "treitel-contract-14:para:7/45",
+      "treitel-contract-14:para:9/43",
+      "treitel-contract-14:para:12/54",
+      "treitel-contract-14:para:13/25",
+      "treitel-contract-14:para:15/33",
+      "treitel-contract-14:para:23/10"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.73,
+    "footnotes_total": 5892,
+    "unparsed_blocks": 333,
+    "per_card_median": 1,
+    "cards_with_calls_but_no_notes": 469,
+    "notes_without_visible_call": 1316
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 21,
+      "2": 2110
+    }
+  },
+  "internal_refs": {
+    "refs_total": 70,
+    "unresolved": 0,
+    "resolved_share": 1.0,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

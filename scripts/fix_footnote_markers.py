@@ -240,16 +240,20 @@ def main():
             p = json.loads(line)
             old = p.get("notes") or []
             before += len(old)
-            if p.get("note_lines"):
-                new = parse_page(p["note_lines"], p.get("printed_page") or p["pdf_page"],
-                                 a.marker, a.max_step, carry)
-                nums = [n["number"] for n in new if n.get("number") is not None]
-                carry = nums[-1] if nums else carry
-                if new:
-                    if len(sample) < 3 and len(new) > 2:
-                        sample.append((p["pdf_page"], old, new))
-                    p["notes"] = new
-                    pages_touched += 1
+            # Поле notes ВСЕГДА пересобирается из note_lines, даже когда их
+            # не осталось. Иначе на полосе, у которой inline_superscripts.py
+            # забрал из аппарата одни знаки сносок, остаётся прежний разбор:
+            # блок «1 2 3» без номера, сделанный ещё в pages_digital. У
+            # Treitel так висело 573 блока из 3907.
+            new = parse_page(p["note_lines"], p.get("printed_page") or p["pdf_page"],
+                             a.marker, a.max_step, carry) if p.get("note_lines") else []
+            nums = [n["number"] for n in new if n.get("number") is not None]
+            carry = nums[-1] if nums else carry
+            if new:
+                if len(sample) < 3 and len(new) > 2:
+                    sample.append((p["pdf_page"], old, new))
+                pages_touched += 1
+            p["notes"] = new
             out.append(p)
 
     # Хвост сноски с предыдущей полосы: номера у него нет, приписываем к
