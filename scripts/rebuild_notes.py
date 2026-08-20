@@ -44,10 +44,20 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--book", required=True)
     ap.add_argument("--max-digits", type=int, default=4)
+    ap.add_argument("--marker-line", action="store_true",
+                    help="номер сноски стоит ОТДЕЛЬНОЙ строкой (обычно мельче), "
+                         "текст — следующими строками")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
 
-    marker = re.compile(r"^(\d{1,%d})\s+(\S.*)$" % a.max_digits)
+    if a.marker_line:
+        # Номер сноски набран отдельной строкой и обычно мельче текста
+        # сноски: у Vicente это кегль 5.2 против 9.0. Штатный разбор ищет
+        # «номер, пробел, текст» в одной строке и такой аппарат не видит
+        # вовсе — у книги выходило 0 сносок при 455 полосах с аппаратом.
+        marker = re.compile(r"^(\d{1,%d})$" % a.max_digits)
+    else:
+        marker = re.compile(r"^(\d{1,%d})\s+(\S.*)$" % a.max_digits)
     path = os.path.join(a.book, "work", "pages.jsonl")
     pages = [json.loads(l) for l in open(path, encoding="utf-8")]
 
@@ -105,6 +115,18 @@ def _parse_page(nl, marker, last, pg):
             continue
         m = marker.match(t)
         num = int(m.group(1)) if m else None
+        if m is not None and m.re.groups == 1:
+            # Режим --marker-line: в строке стоит ТОЛЬКО номер, а текст
+            # сноски идёт следующими строками. У Vicente номер набран
+            # кеглем 5.2 против 9.0 у самой сноски, и штатный разбор
+            # («номер, пробел, текст» в одной строке) не видел аппарата
+            # вовсе: 0 сносок при 455 полосах с аппаратом.
+            if cur:
+                notes.append(cur)
+            cur = {"number": num, "text": "",
+                   "page": pg.get("printed_page") or pg["pdf_page"]}
+            last = num
+            continue
         if num is not None and (num > last or num == 1):
             if cur:
                 notes.append(cur)
