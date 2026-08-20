@@ -55,6 +55,10 @@ def main():
                     help="числительные словами и римские цифры перевести в арабские")
     ap.add_argument("--template", default="{unit} {section}-{number}",
                     help="шаблон адреса; поля {unit} {section} {number}")
+    ap.add_argument("--renumber", action="store_true",
+                    help="не брать номер карточки, а нумеровать их подряд "
+                         "внутри раздела: для книг без пагинации и без "
+                         "нумерованных абзацев")
     ap.add_argument("--split-restarts", action="store_true",
                     help="счёт внутри раздела начинается заново — считать это "
                          "новым подразделом (4, 4.2, 4.3…)")
@@ -66,7 +70,7 @@ def main():
     cards = [json.loads(l) for l in open(path, encoding="utf-8")]
 
     seen, missed, restarts = collections.Counter(), 0, 0
-    seq = {}
+    seq, order = {}, {}
     for c in cards:
         nodes = c.get("hierarchy") or []
         node = nodes[a.level] if len(nodes) > a.level else None
@@ -78,6 +82,15 @@ def main():
         if a.words:
             key = WORDS.get(key.strip().lower(), key)
         num = c.get("number")
+        if a.renumber:
+            # У переверстанных электронных книг нет ни колонцифр, ни номеров
+            # абзацев: цитировать нечем. Номер полосы ФАЙЛА не годится — он
+            # не совпадает с печатным изданием. Тогда фрагменты нумеруются
+            # подряд внутри своего раздела, и адрес «ch. 18-3» остаётся
+            # привязан к месту, которое читатель найдёт по оглавлению.
+            order[key] = order.get(key, 0) + 1
+            num = order[key]
+            c["number"] = num
         if a.split_restarts:
             # Внутри одного раздела номера обязаны возрастать. Пошли по
             # второму кругу — значит, рядом идёт ВТОРАЯ нумерация: у von Bar
