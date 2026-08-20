@@ -2,5 +2,6 @@
   "path": "/home/user/books/uk/chitty-vol1.pdf",
   "original_name": "chitty-vol1.pdf",
   "sha256": "fafeff317cbec7d42477be54bc5da089c2ac16b7c93536e3bfeb1749ccb96517",
-  "size_bytes": 38514726
+  "size_bytes": 38514726,
+  "service_source_id": "8494b9f8-b7ac-430c-84df-22bd0f32aeac"
 }

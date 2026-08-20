@@ -37,6 +37,8 @@ def main():
     ap.add_argument("--number", required=True, help="строка-номер единицы, полное совпадение")
     ap.add_argument("--min-size", type=float, default=11.0,
                     help="минимальный кегль строки, которая может быть заголовком")
+    ap.add_argument("--max-lines", type=int, default=1,
+                    help="сколько строк подряд может занимать заголовок")
     ap.add_argument("--skip", action="append", default=[],
                     help="строка, которая заголовком не бывает (колонтитул выгрузки)")
     ap.add_argument("--dry-run", action="store_true")
@@ -56,23 +58,33 @@ def main():
             for i, ln in enumerate(lines):
                 if not num_rx.match(ln["text"].strip()):
                     continue
-                if i == 0:
+                # Заголовок бывает и в две строки («Contracts for the Sale of /
+                # a Person's Property»). Взять только последнюю — значит
+                # оставить в адресе обрывок, начинающийся со строчной.
+                head_lines = []
+                j = i - 1
+                while j >= 0 and len(head_lines) < a.max_lines:
+                    cand = lines[j]
+                    text = cand["text"].strip()
+                    if ((cand.get("size") or 0) < a.min_size or not text
+                            or num_rx.match(text) or any(rx.match(text) for rx in skips)):
+                        break
+                    head_lines.append((j, cand))
+                    j -= 1
+                if not head_lines:
                     bare += 1
                     continue
-                prev = lines[i - 1]
-                head = prev["text"].strip()
-                if ((prev.get("size") or 0) < a.min_size or not head
-                        or num_rx.match(head) or any(rx.match(head) for rx in skips)):
-                    bare += 1
-                    continue
+                head_lines.reverse()
+                head = " ".join(h["text"].strip() for _, h in head_lines)
                 if len(sample) < 6:
-                    sample.append((pg["pdf_page"], head[:50], ln["text"].strip()))
+                    sample.append((pg["pdf_page"], head[:60], ln["text"].strip()))
                 ln["text"] = f"{ln['text'].strip()} {head}"
-                ln["words"] = list(ln.get("words") or []) + list(prev.get("words") or [])
-                ln["top"] = min(ln["top"], prev["top"])
-                ln["x0"] = min(ln["x0"], prev["x0"])
-                ln["x1"] = max(ln["x1"], prev["x1"])
-                drop.add(i - 1)
+                for idx, h in head_lines:
+                    ln["words"] = list(ln.get("words") or []) + list(h.get("words") or [])
+                    ln["top"] = min(ln["top"], h["top"])
+                    ln["x0"] = min(ln["x0"], h["x0"])
+                    ln["x1"] = max(ln["x1"], h["x1"])
+                    drop.add(idx)
                 joined += 1
             keep = [ln for i, ln in enumerate(lines) if i not in drop]
             pg["lines"] = keep

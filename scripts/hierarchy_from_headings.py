@@ -65,9 +65,21 @@ def main():
         with pdfplumber.open(a.pdf) as pdf:
             for i, page in enumerate(pdf.pages):
                 lines = P.chars_to_lines(page.chars)
+                page.flush_cache()
                 if not lines:
                     continue
-                pages[i + 1] = {"pdf_page": i + 1, "height": float(page.height), "lines": lines}
+                # В памяти держим только окрестности заголовков: у выгрузки
+                # на две с половиной тысячи полос полная модель страницы не
+                # помещается, и процесс убивает по памяти.
+                keep = set()
+                for k, ln in enumerate(lines):
+                    text = " ".join(ln["text"].split())
+                    if any(rx.match(text) for rx in levels):
+                        keep.update(range(k, min(k + 5, len(lines))))
+                if not keep:
+                    continue
+                pages[i + 1] = {"pdf_page": i + 1, "height": float(page.height),
+                                "lines": [ln for k, ln in enumerate(lines) if k in keep]}
     else:
         for line in open(os.path.join(a.book, "work", "pages.jsonl"), encoding="utf-8"):
             p = json.loads(line)

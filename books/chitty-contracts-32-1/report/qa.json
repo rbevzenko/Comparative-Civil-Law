@@ -1,0 +1,148 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/chitty-contracts-32-1",
+  "cards": 3798,
+  "profile": "westlaw-proview-export-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9995,
+    "rows": 30,
+    "gaps": [
+      {
+        "family": "para.",
+        "section": "1",
+        "from": 117,
+        "to": 119,
+        "missing": 1
+      },
+      {
+        "family": "para.",
+        "section": "19",
+        "from": 58,
+        "to": 60,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 2,
+    "missing_total": 2,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "para.": 3798
+    }
+  },
+  "coverage": {
+    "share": 0.995,
+    "covered_chars": 4987549,
+    "book_chars": 5012826,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 1123,
+    "min": 72,
+    "max": 10210,
+    "too_short": [
+      "chitty-contracts-32-1:para:1/131",
+      "chitty-contracts-32-1:para:15/160",
+      "chitty-contracts-32-1:para:16/90",
+      "chitty-contracts-32-1:para:17/24",
+      "chitty-contracts-32-1:para:22/10",
+      "chitty-contracts-32-1:para:22/23",
+      "chitty-contracts-32-1:para:25/30",
+      "chitty-contracts-32-1:para:25/31",
+      "chitty-contracts-32-1:para:28/8",
+      "chitty-contracts-32-1:para:28/100",
+      "chitty-contracts-32-1:para:30/105",
+      "chitty-contracts-32-1:para:30/345"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.89,
+    "footnotes_total": 18623,
+    "unparsed_blocks": 0,
+    "per_card_median": 4.0,
+    "cards_with_calls_but_no_notes": 261,
+    "notes_without_visible_call": 5424
+  },
+  "dead_pages": {
+    "pages": [
+      442,
+      480,
+      606,
+      689,
+      778,
+      853,
+      913,
+      927,
+      956,
+      1009,
+      1093,
+      1183,
+      1216,
+      1421,
+      1434,
+      1664,
+      1677,
+      1746,
+      1866,
+      1902,
+      1907,
+      1967,
+      2219,
+      2510
+    ],
+    "count": 24
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "3": 81,
+      "4": 1024,
+      "5": 2032,
+      "6": 661
+    }
+  },
+  "internal_refs": {
+    "refs_total": 835,
+    "unresolved": 4,
+    "resolved_share": 0.995,
+    "sample": [
+      {
+        "card": "chitty-contracts-32-1:para:14/45",
+        "ref": "para.38-531",
+        "missing": 531
+      },
+      {
+        "card": "chitty-contracts-32-1:para:26/76",
+        "ref": "para.44-417",
+        "missing": 417
+      },
+      {
+        "card": "chitty-contracts-32-1:para:26/162",
+        "ref": "paras 44-411",
+        "missing": 411
+      },
+      {
+        "card": "chitty-contracts-32-1:para:26/244",
+        "ref": "paras 44-387",
+        "missing": 387
+      }
+    ]
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

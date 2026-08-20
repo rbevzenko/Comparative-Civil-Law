@@ -25,6 +25,18 @@
 только если строка не похожа на продолжение (не начинается с номера дела
 вида «5 Ob …»).
 
+Голое число можно спутать не только с номером дела. При четырёхзначной
+нумерации (`--max-digits 4`) знаком сноски становится год в скобках:
+«(2007) Ch.1.» — продолжение ссылки, а читается как сноска 2007. Против
+этого два средства. `--marker dot` оставляет только ту форму знака, которой
+книга пользуется на самом деле (у выгрузок Westlaw это «29.»), и заодно
+отключает разбор голого числа: на живом прогоне Chitty vol.1 голое число
+давало 883 ложные сноски из 19 523 — годы из перенесённых ссылок. `--max-step`
+ограничивает шаг вперёд: номер сноски растёт на единицу и перезапускается с
+1 в новой главе, а год прыгает на сотни. Счётчик при этом ведётся сквозь
+полосы, а не с нуля на каждой: сноска 172 стоит на той полосе, где кончилась
+171, и сравнивать её не с чем, если счётчик сбросить.
+
 Сноска, начатая внизу одной полосы и продолженная вверху следующей, своего
 номера на второй полосе не имеет и иметь не может. Такой хвост приписывается
 к последней нумерованной сноске предыдущей полосы: иначе он остаётся блоком
@@ -54,7 +66,8 @@ PUNCT = re.compile(r"^(?:\((\d{1,3})\)|\[(\d{1,3})\]|(\d{1,3})[\).])\s+(?=\S)")
 
 def widen(digits):
     """Те же правила под номер сноски длиной до `digits` знаков."""
-    global BARE, CASE, LONE, PUNCT
+    global BARE, CASE, LONE, PUNCT, DIGITS
+    DIGITS = digits
     d = "{1,%d}" % digits
     BARE = re.compile(r"^(\d%s)\s+(?=\S)" % d)
     CASE = re.compile(r"^\d%s\s+(?:Ob|Ob[AS]|Präs|Nc|Fsc|Ds|Nd)\s+\d" % d)
@@ -62,8 +75,33 @@ def widen(digits):
     PUNCT = re.compile(r"^(?:\((\d%s)\)|\[(\d%s)\]|(\d%s)[\).])\s+(?=\S)" % (d, d, d))
 
 
-def parse_page(note_lines, page):
-    notes, cur, pending, last = [], None, None, 0
+MARKER_FORMS = {"any", "dot", "paren", "bracket"}
+
+
+DIGITS = 3
+
+
+def punct_form(s, form):
+    """Знак сноски выбранной формы: «(29)», «[29]», «29.»."""
+    d = "{1,%d}" % DIGITS
+    if form in ("any", "paren"):
+        m = re.match(r"^\((\d%s)\)\s+(?=\S)" % d, s)
+        if m:
+            return int(m.group(1)), m.end()
+    if form in ("any", "bracket"):
+        m = re.match(r"^\[(\d%s)\]\s+(?=\S)" % d, s)
+        if m:
+            return int(m.group(1)), m.end()
+    if form in ("any", "dot"):
+        tail = r"[\).]" if form == "any" else r"\."
+        m = re.match(r"^(\d%s)%s\s+(?=\S)" % (d, tail), s)
+        if m:
+            return int(m.group(1)), m.end()
+    return None, None
+
+
+def parse_page(note_lines, page, form="any", max_step=0, last=0):
+    notes, cur, pending = [], None, None
 
     def close():
         nonlocal cur
@@ -82,15 +120,28 @@ def parse_page(note_lines, page):
             pending = int(m.group(1))
             continue
 
+        def plausible(cand):
+            if max_step <= 0:
+                return cand > last
+            # Номер сноски растёт на единицу и перезапускается с 1 в новой
+            # главе. Всё остальное — год в скобках («(2007) Ch.1.») или номер
+            # страницы в продолжении ссылки, и знаком сноски не является.
+            return cand == 1 or last < cand <= last + max_step
+
         num = None
-        m = PUNCT.match(s)
-        if m:
-            num, rest = int(next(g for g in m.groups() if g)), s[m.end():].strip()
-        else:
+        cand, end = punct_form(s, form)
+        if cand is not None and (max_step <= 0 or plausible(cand)):
+            num, rest = cand, s[end:].strip()
+        elif form == "any":
+            # Голое число принимается только тогда, когда форма знака заранее
+            # не названа. Если книга ставит знак со скобкой или точкой (это и
+            # говорит --marker), голое число в начале строки — продолжение
+            # ссылки: «…Regulations 2004 (SI 2004/2095)…», перенесённое так,
+            # что строка начинается с года.
             m = BARE.match(s)
             if m and not CASE.match(s):
                 cand = int(m.group(1))
-                if cand > last:
+                if plausible(cand):
                     num, rest = cand, s[m.end():].strip()
 
         if num is not None:
@@ -111,11 +162,60 @@ def parse_page(note_lines, page):
     return notes
 
 
+def repair_sequence(pages, max_step):
+    """Снятие ложного знака сноски по ряду номеров.
+
+    Номер дела или год, оказавшийся в начале перенесённой строки, читается
+    как знак сноски и с точкой: «…[2014] EWCA Civ 75. [2014] 1 C.L.C. 113…».
+    Отличить его от настоящего знака по виду строки нельзя — отличает ряд:
+    после ложного знака нумерация продолжается с того места, где была, а не
+    с него. Такая сноска приписывается обратно к предыдущей вместе со своим
+    числом, как и была напечатана.
+    """
+    flat = [(pg, n) for pg in pages for n in (pg.get("notes") or [])]
+    numbered = [(k, n) for k, (_, n) in enumerate(flat) if n.get("number") is not None]
+    drop, last, fixed = set(), 0, 0
+
+    def ok(num):
+        return last == 0 or num == 1 or last < num <= last + max_step
+
+    for i, (k, n) in enumerate(numbered):
+        num = n["number"]
+        if ok(num):
+            last = num
+            continue
+        nxt = numbered[i + 1][1]["number"] if i + 1 < len(numbered) else None
+        if nxt is not None and ok(nxt) and nxt != 1:
+            host = next((flat[j][1] for j in range(k - 1, -1, -1) if j not in drop), None)
+            if host is not None:
+                host["text"] = f"{host.get('text', '')} {num}. {n.get('text', '')}".strip()
+                drop.add(k)
+                fixed += 1
+                continue
+        last = num
+
+    if drop:
+        seen = 0
+        for pg in pages:
+            notes = pg.get("notes") or []
+            if not notes:
+                continue
+            pg["notes"] = [n for j, n in enumerate(notes, start=seen) if j not in drop]
+            seen += len(notes)
+    return fixed
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--book", required=True)
     ap.add_argument("--max-digits", type=int, default=3,
                     help="сколько знаков может быть в номере сноски")
+    ap.add_argument("--marker", default="any", choices=sorted(MARKER_FORMS),
+                    help="форма знака сноски: dot «29.», paren «(29)», bracket «[29]»")
+    ap.add_argument("--max-step", type=int, default=0,
+                    help="на сколько номер сноски вправе обогнать предыдущий (0 — без ограничения)")
+    ap.add_argument("--repair-sequence", type=int, default=0, metavar="MAXSTEP",
+                    help="снять ложный знак, если следующая сноска продолжает ряд (0 — не чинить)")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
 
@@ -123,7 +223,7 @@ def main():
         widen(a.max_digits)
 
     path = os.path.join(a.book, "work", "pages.jsonl")
-    before = after = pages_touched = unnumbered = carried_merged = 0
+    before = after = pages_touched = unnumbered = carried_merged = carry = 0
     out = []
     sample = []
 
@@ -133,7 +233,10 @@ def main():
             old = p.get("notes") or []
             before += len(old)
             if p.get("note_lines"):
-                new = parse_page(p["note_lines"], p.get("printed_page") or p["pdf_page"])
+                new = parse_page(p["note_lines"], p.get("printed_page") or p["pdf_page"],
+                                 a.marker, a.max_step, carry)
+                nums = [n["number"] for n in new if n.get("number") is not None]
+                carry = nums[-1] if nums else carry
                 if new:
                     if len(sample) < 3 and len(new) > 2:
                         sample.append((p["pdf_page"], old, new))
@@ -154,6 +257,10 @@ def main():
         host["text"] = (host.get("text", "") + " " + notes[0].get("text", "")).strip()
         cur["notes"] = notes[1:]
         carried_merged += 1
+
+    if a.repair_sequence:
+        repaired = repair_sequence(out, a.repair_sequence)
+        print(f"ложных знаков снято по ряду: {repaired}")
 
     for p in out:
         after += len(p.get("notes") or [])
