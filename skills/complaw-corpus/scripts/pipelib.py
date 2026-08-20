@@ -164,11 +164,40 @@ def cluster_lines(tokens, tol=None):
     return [r["items"] for r in rows]
 
 
+def drop_phantom_spaces(row):
+    """Убирает пробельные глифы, налезающие на соседнюю букву.
+
+    У Pearson (Smith, Property Law: Cases and Materials, 6th ed.) шрифт
+    рисует лишний пробел ПОВЕРХ предыдущего глифа: «Th» занимает
+    104.88–115.59, а пробел за ним — 110.23–112.50, то есть целиком внутри
+    буквы. Текстовый слой от этого разрывает слова: «Th e», «signifi cance»,
+    «aft er», «L and Law», «E quities». Настоящий пробел стоит МЕЖДУ
+    глифами и ни на один из них не налезает, поэтому правило чисто
+    геометрическое и книгам без этого дефекта ничего не делает.
+    """
+    out = []
+    n = len(row)
+    for i, ch in enumerate(row):
+        if (ch.get("text") or "").isspace():
+            eps = 0.25 * max(ch["x1"] - ch["x0"], 0.01)
+            best = 0.0
+            for o in (row[i - 1] if i else None, row[i + 1] if i + 1 < n else None):
+                if o is None or (o.get("text") or "").isspace():
+                    continue
+                best = max(best, min(ch["x1"], o["x1"]) - max(ch["x0"], o["x0"]))
+            if best > eps:
+                continue
+        out.append(ch)
+    return out
+
+
 def chars_to_lines(chars):
     """Ветка A: символы pdfplumber → строки со словами и координатами."""
     lines = []
     for row in cluster_lines(chars):
-        row = sorted(row, key=lambda c: c["x0"])
+        row = drop_phantom_spaces(sorted(row, key=lambda c: c["x0"]))
+        if not row:
+            continue
         words, buf, prev = [], [], None
         gap = _space_gap(row)
         for ch in row:
