@@ -25,18 +25,17 @@
   },
   "coverage": {
     "share": 0.9951,
-    "covered_chars": 2850713,
-    "book_chars": 2864848,
+    "covered_chars": 2891949,
+    "book_chars": 2906084,
     "cards_without_offsets": 0,
     "biggest_holes": []
   },
   "lengths": {
-    "median": 1087,
-    "min": 62,
+    "median": 1111,
+    "min": 85,
     "max": 6564,
     "too_short": [
       "treitel-contract-14:para:5/21",
-      "treitel-contract-14:para:7/45",
       "treitel-contract-14:para:9/43",
       "treitel-contract-14:para:12/54",
       "treitel-contract-14:para:13/25",
@@ -46,12 +45,12 @@
     "too_long": []
   },
   "footnotes": {
-    "cards_with_footnotes_share": 0.73,
-    "footnotes_total": 5892,
-    "unparsed_blocks": 333,
-    "per_card_median": 1,
-    "cards_with_calls_but_no_notes": 469,
-    "notes_without_visible_call": 1316
+    "cards_with_footnotes_share": 0.87,
+    "footnotes_total": 10635,
+    "unparsed_blocks": 0,
+    "per_card_median": 4,
+    "cards_with_calls_but_no_notes": 181,
+    "notes_without_visible_call": 1684
   },
   "dead_pages": {
     "pages": [],

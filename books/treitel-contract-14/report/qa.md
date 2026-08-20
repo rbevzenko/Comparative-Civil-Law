@@ -9,9 +9,9 @@
 | Карточек, перенесённых из другого прогона | 0 | — |
 | Пропусков в нумерации | 1 (номеров: 1) | — |
 | Дублей номеров | 0 | — |
-| Длина карточки, медиана | 1087 символов | — |
-| Карточек со сносками | 73% (всего сносок 5892) | — |
-| Блоков сносок без читаемых номеров | 333 | — |
+| Длина карточки, медиана | 1111 символов | — |
+| Карточек со сносками | 87% (всего сносок 10635) | — |
+| Блоков сносок без читаемых номеров | 0 | — |
 | Мёртвых страниц | 0 | — |
 | Одинаковых страниц | 0 | — |
 | Карточек без иерархии | 0 | — |
@@ -27,7 +27,7 @@
 Дыра в нумерации — это либо не сработавший паттерн, либо действительно отсутствующий в книге номер. Различать глазами по странице разрыва.
 
 ## Подозрительно короткие карточки
-treitel-contract-14:para:5/21, treitel-contract-14:para:7/45, treitel-contract-14:para:9/43, treitel-contract-14:para:12/54, treitel-contract-14:para:13/25, treitel-contract-14:para:15/33, treitel-contract-14:para:23/10
+treitel-contract-14:para:5/21, treitel-contract-14:para:9/43, treitel-contract-14:para:12/54, treitel-contract-14:para:13/25, treitel-contract-14:para:15/33, treitel-contract-14:para:23/10
 
 ## Случайные карточки для глазной проверки
 
@@ -51,6 +51,9 @@ payments which represented their “economic value” to the claimant
 beneficiaries of the estate.226
 (d) Undue Influence and Third Parties
 
+> [224] Mahoney v Purnell [1996] 3 All E.R. 61; Birks [1997] R.L.R. 72.
+> [225] Hart v Burbidge [2013] EWHC 1628 (Ch); [2013] W.T.L.R. 1191 at [142]; affirmed [2014] EWCA Civ 992; [2014] W.T.L.R. 1361.
+> [226] Hart v Burbidge [2013] EWHC 1628 (Ch); [2013] W.T.L.R. 1191 at [141]; affirmed [2014] EWCA Civ 992; [2014] W.T.L.R. 1361.
 
 ### treitel-contract-14:para:20/73
 *Treitel, The Law of Contract, 14th edn para. 20-073*
@@ -72,6 +75,9 @@ house for £6,000. The sale was to be completed in October 1971, when
 the value of the house had risen to £7,500; but in July 1971 the
 defendant had wrongfully re…
 
+> [443] cf. Shearson Lehman Hutton Inc v Maclaine Watson & Co Ltd [1989] 2 Lloyd’s Rep. 570 at 647 (dealings suspended at time of alleged breach).
+> [444] [1974] Ch. 30; for further discussion see below, at fn.452 and below, para.21–063; cf. Hulbert v Avens [2003] EWHC 76 (Ch).
+> [445] See below, para.21–030.
 
 ### treitel-contract-14:para:18/68
 *Treitel, The Law of Contract, 14th edn para. 18-068*
@@ -89,9 +95,11 @@ the list is “non-exhaustive” this restriction would not preclude the
 court from holding that a cancellation clause in a fixed-term contract
 was also unfair.
 
+> [465] SI 1999/2083 reg.8(1); above, para.7–093 et seq. The 1999 Regulations will be replaced by Pt 2 of the Consumer Rights Act 2015 when it comes into force: see Ch.23.
+> [466] Regulation 5(5) and Sch.2 para.1(g). The same wording is employed in the equivalent indicative term under the Consumer Rights Act 2015 Sch.2 para.8
 
 ### treitel-contract-14:para:18/14
-*Treitel, The Law of Contract, 14th edn para. 18-014*
+*Treitel, The Law of Contract, 014th edn para. 18-014*
 Адрес: para. 18-014 | иерархия: 18. TERMINATION FOR BREACH → (i) Termination | стр. файла 1554–1554
 Нормы: — | отсылки: —
 
@@ -126,7 +134,6 @@ expected to foresee. It is not entirely clear whether it is enough for the
 express term to provide that A and B may by agreement rescind or
 vary the contract or whether it must go on to say in so many words th…
 
-> [None] 727 728 729
 
 ### treitel-contract-14:para:8/18
 *Treitel, The Law of Contract, 14th edn para. 8-018*
@@ -167,6 +174,8 @@ can lead to results which, though explicable on technical grounds,
 appear to do little to further the policies underlying the legal
 prohibitions which are the cause of the illegality of the contract.911
 
+> [910] See above, paras 11–117—11–129.
+> [911] See above, paras 11–144, 11–149.
 
 ### treitel-contract-14:para:3/118
 *Treitel, The Law of Contract, 14th edn para. 3-118*
@@ -188,7 +197,9 @@ operation and in its effects. But under both doctrines some legal effects
 are given to promises which are not contractually binding for want of
 con…
 
-> [7] PROPRIETARY ESTOPPEL
+> [650] See above, para.3–055.
+> [651] Pao On v Lau Yiu Long [1980] A.C. 614 at 634; cf. Huyton SA v Peter Cremer GmbH [1999] 1 Lloyd’s Rep 620, where the requirement of consideration was satisfied (above, para.3–102) but there was no dure
+> [652] See below, para.3–147.
 
 ### treitel-contract-14:para:15/75
 *Treitel, The Law of Contract, 14th edn para. 15-075*
@@ -210,6 +221,9 @@ court takes account of “what appears … to be necessary for meeting
 the reasonable domestic needs of the bankrupt and his family”:298 an
 …
 
+> [293] Insolvency Act 1986 s.310(7).
+> [294] Insolvency Act 1986 s.283(1)(a).
+> [295] See Krasner v Dennison [2001] Ch. 76 at [33] (on such facts see now above, at fn.288).
 
 ### treitel-contract-14:para:14/48
 *Treitel, The Law of Contract, 14th edn para. 14-048*

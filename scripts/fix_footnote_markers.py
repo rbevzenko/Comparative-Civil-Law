@@ -117,14 +117,29 @@ def parse_page(note_lines, page, form="any", max_step=0, last=0):
             notes.append(cur)
             cur = None
 
+    # Номера, которые вообще встречаются на этой полосе: по ним проверяется
+    # перезапуск нумерации.
+    page_nums = set()
+    for ln in note_lines:
+        t = (ln["text"] or "").strip()
+        c, _ = punct_form(t, form)
+        if c is None:
+            m = BARE.match(t)
+            c = int(m.group(1)) if m and not CASE.match(t) else None
+        if c is not None:
+            page_nums.add(c)
+
     def plausible(cand):
         if max_step <= 0:
             return cand > last
-        # Номер сноски растёт на единицу и перезапускается с 1 в новой
-        # главе. Всё остальное — год в скобках («(2007) Ch.1.»), год
-        # отдельной строкой или номер страницы в продолжении ссылки, и
-        # знаком сноски не является.
-        return cand == 1 or last < cand <= last + max_step
+        if last < cand <= last + max_step:
+            return True
+        # Нумерация сносок перезапускается с единицы в новой главе — но
+        # только если на этой же полосе за ней идёт двойка. Без этой оговорки
+        # одинокая «1» (номер дела, сноска на цитату) сбрасывает счётчик, и
+        # весь остаток главы перестаёт читаться: у Treitel так терялись
+        # сноски с 41-й до конца главы 2.
+        return cand == 1 and 2 in page_nums
 
     for ln in note_lines:
         s = ln["text"].strip()
@@ -156,11 +171,14 @@ def parse_page(note_lines, page, form="any", max_step=0, last=0):
         if num is not None:
             close()
             cur = {"number": num, "text": rest, "page": page}
-            last, pending = num, None
+            # Счётчик не опускается: ложный мелкий номер иначе занижает
+            # планку и следующие настоящие номера отвергаются как «слишком
+            # далёкие вперёд».
+            last, pending = max(last, num), None
         elif pending is not None:
             close()
             cur = {"number": pending, "text": s, "page": page}
-            last, pending = pending, None
+            last, pending = max(last, pending), None
         elif cur:
             cur["text"] += " " + s
         else:

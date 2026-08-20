@@ -13,6 +13,7 @@
   "notes": "Титул (f4): «THE LAW OF CONTRACT, Fourteenth Edition, EDWIN PEEL, B.C.L., M.A., Professor of Law … Barrister, One Essex Court». Файл отмасштабирован: кегль тела 14.4, сносок 10.8, знака сноски 8.64. Колонцифры в теле нет вовсе — ни колонтитула, ни номера страницы, поэтому printed_page не заполняется. Слова в текстовом слое разделены табуляцией нулевой ширины (63% строк тела). Номер абзаца набран через тире (U+2013), а не дефис: «1–001». Тело начинается на f323 (CHAPTER 1); до него оглавление и таблицы дел, статутов и подзаконных актов.",
   "cite_as": "Treitel, The Law of Contract, 14th edn",
   "pdf_pages_total": 2170,
-  "body_pages_pdf": "323-?",
-  "printed_page_offset": null
+  "body_pages_pdf": "323-2015",
+  "printed_page_offset": null,
+  "service_source_id": "fcf8cbe0-91a2-4ccd-9cbe-be84baaa1d7b"
 }
