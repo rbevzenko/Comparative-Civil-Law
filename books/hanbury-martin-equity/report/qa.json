@@ -1,0 +1,293 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/hanbury-martin-equity",
+  "cards": 1025,
+  "profile": "sweetmaxwell-hanbury-equity-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.978,
+    "rows": 27,
+    "gaps": [
+      {
+        "family": "para.",
+        "section": "1",
+        "from": 13,
+        "to": 15,
+        "missing": 1
+      },
+      {
+        "family": "para.",
+        "section": "5",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "para.",
+        "section": "5",
+        "from": 13,
+        "to": 15,
+        "missing": 1
+      },
+      {
+        "family": "para.",
+        "section": "6",
+        "from": 6,
+        "to": 8,
+        "missing": 1
+      },
+      {
+        "family": "para.",
+        "section": "7",
+        "from": 7,
+        "to": 9,
+        "missing": 1
+      },
+      {
+        "family": "para.",
+        "section": "13",
+        "from": 19,
+        "to": 21,
+        "missing": 1
+      },
+      {
+        "family": "para.",
+        "section": "9",
+        "from": 14,
+        "to": 16,
+        "missing": 1
+      },
+      {
+        "family": "para.",
+        "section": "12",
+        "from": 22,
+        "to": 24,
+        "missing": 1
+      },
+      {
+        "family": "para.",
+        "section": "17",
+        "from": 30,
+        "to": 32,
+        "missing": 1
+      },
+      {
+        "family": "para.",
+        "section": "18",
+        "from": 20,
+        "to": 22,
+        "missing": 1
+      },
+      {
+        "family": "para.",
+        "section": "21",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "para.",
+        "section": "22",
+        "from": 11,
+        "to": 13,
+        "missing": 1
+      },
+      {
+        "family": "para.",
+        "section": "23",
+        "from": 25,
+        "to": 27,
+        "missing": 1
+      },
+      {
+        "family": "para.",
+        "section": "23",
+        "from": 45,
+        "to": 47,
+        "missing": 1
+      },
+      {
+        "family": "para.",
+        "section": "23",
+        "from": 57,
+        "to": 59,
+        "missing": 1
+      },
+      {
+        "family": "para.",
+        "section": "24",
+        "from": 3,
+        "to": 5,
+        "missing": 1
+      },
+      {
+        "family": "para.",
+        "section": "24",
+        "from": 5,
+        "to": 7,
+        "missing": 1
+      },
+      {
+        "family": "para.",
+        "section": "24",
+        "from": 30,
+        "to": 32,
+        "missing": 1
+      },
+      {
+        "family": "para.",
+        "section": "25",
+        "from": 34,
+        "to": 36,
+        "missing": 1
+      },
+      {
+        "family": "para.",
+        "section": "25",
+        "from": 36,
+        "to": 39,
+        "missing": 2
+      },
+      {
+        "family": "para.",
+        "section": "25",
+        "from": 39,
+        "to": 41,
+        "missing": 1
+      },
+      {
+        "family": "para.",
+        "section": "25",
+        "from": 64,
+        "to": 66,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 22,
+    "missing_total": 23,
+    "duplicates": [
+      {
+        "family": "para.",
+        "section": "3",
+        "number": 8
+      },
+      {
+        "family": "para.",
+        "section": "13",
+        "number": 16
+      },
+      {
+        "family": "para.",
+        "section": "26",
+        "number": 14
+      }
+    ],
+    "duplicates_total": 3,
+    "by_family": {
+      "para.": 1025
+    }
+  },
+  "coverage": {
+    "share": 0.9971,
+    "covered_chars": 2416590,
+    "book_chars": 2423685,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2113,
+    "min": 49,
+    "max": 12741,
+    "too_short": [
+      "hanbury-martin-equity-17:para:1/29",
+      "hanbury-martin-equity-17:para:2/24",
+      "hanbury-martin-equity-17:para:3/29",
+      "hanbury-martin-equity-17:para:4/2",
+      "hanbury-martin-equity-17:para:15/52",
+      "hanbury-martin-equity-17:para:17/37",
+      "hanbury-martin-equity-17:para:19/11"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0,
+    "cards_with_calls_but_no_notes": 958,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 1025
+    }
+  },
+  "internal_refs": {
+    "refs_total": 1940,
+    "unresolved": 8,
+    "resolved_share": 0.996,
+    "sample": [
+      {
+        "card": "hanbury-martin-equity-17:para:1/5",
+        "ref": "5-135",
+        "missing": 135
+      },
+      {
+        "card": "hanbury-martin-equity-17:para:3/38",
+        "ref": "99-100",
+        "missing": 99
+      },
+      {
+        "card": "hanbury-martin-equity-17:para:3/38",
+        "ref": "99-100",
+        "missing": 100
+      },
+      {
+        "card": "hanbury-martin-equity-17:para:13/4",
+        "ref": "99-101",
+        "missing": 99
+      },
+      {
+        "card": "hanbury-martin-equity-17:para:13/4",
+        "ref": "99-101",
+        "missing": 101
+      },
+      {
+        "card": "hanbury-martin-equity-17:para:14/3",
+        "ref": "3-632",
+        "missing": 632
+      },
+      {
+        "card": "hanbury-martin-equity-17:para:23/44",
+        "ref": "95-104",
+        "missing": 104
+      },
+      {
+        "card": "hanbury-martin-equity-17:para:24/30",
+        "ref": "91-103",
+        "missing": 103
+      }
+    ]
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 97.8% < 98%: пропущено номеров 23. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

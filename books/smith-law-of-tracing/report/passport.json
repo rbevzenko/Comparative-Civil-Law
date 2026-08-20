@@ -1,0 +1,300 @@
+{
+  "path": "/home/user/books/uk/smith-law-of-tracing.pdf",
+  "sha256": "a6f66f3fab109f0166ff6d1f4a9eb1f43cfebd7a1108dc46b7487fd61bd56e7c",
+  "pages": 439,
+  "sampled_pages": [
+    66,
+    74,
+    82,
+    90,
+    98,
+    106,
+    114,
+    122,
+    130,
+    138,
+    146,
+    154,
+    162,
+    170,
+    178,
+    186,
+    194,
+    202,
+    210,
+    218,
+    226,
+    234,
+    242,
+    250,
+    258,
+    266,
+    274,
+    282,
+    290,
+    298,
+    306,
+    314,
+    322,
+    330,
+    338,
+    346,
+    354,
+    362,
+    370,
+    378
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 27,
+    "max_depth": 5,
+    "resolved_pages": 27,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Smith, The Law of Tracing",
+        "page": 1,
+        "depth": 0
+      },
+      {
+        "title": "Smith, The Law of Tracing",
+        "page": 1,
+        "depth": 1
+      },
+      {
+        "title": "Smith, The Law of Tracing",
+        "page": 1,
+        "depth": 2
+      },
+      {
+        "title": "Smith, The Law of Tracing",
+        "page": 1,
+        "depth": 3
+      },
+      {
+        "title": "cover",
+        "page": 1,
+        "depth": 4
+      },
+      {
+        "title": "TITLE",
+        "page": 2,
+        "depth": 4
+      },
+      {
+        "title": "Preface",
+        "page": 5,
+        "depth": 4
+      },
+      {
+        "title": "Contents",
+        "page": 7,
+        "depth": 4
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 3182,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 1.0
+  },
+  "printed_pages": {
+    "detected_share": 0.28,
+    "offset_mode": 14,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 66,
+        "printed": null
+      },
+      {
+        "pdf_page": 74,
+        "printed": 88
+      },
+      {
+        "pdf_page": 82,
+        "printed": 112
+      },
+      {
+        "pdf_page": 90,
+        "printed": null
+      },
+      {
+        "pdf_page": 98,
+        "printed": 78
+      },
+      {
+        "pdf_page": 106,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "29.1": 10887,
+      "28.4": 9474,
+      "28.8": 9289,
+      "29.4": 8015,
+      "28.9": 6901,
+      "22.5": 6734,
+      "29.3": 6244,
+      "28.6": 4200
+    },
+    "body": 29.1,
+    "candidates_footnote": [
+      20.5,
+      20.9,
+      21.0,
+      21.1,
+      21.2,
+      21.3,
+      21.4,
+      21.5,
+      21.6,
+      21.7,
+      21.8,
+      21.9,
+      22.0,
+      22.1,
+      22.2,
+      22.4,
+      22.5,
+      22.6,
+      22.7,
+      22.8,
+      22.9,
+      23.0,
+      23.2,
+      23.5,
+      24.1,
+      24.2,
+      24.4,
+      25.5,
+      26.1,
+      26.4,
+      26.8,
+      26.9,
+      27.2
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 36413,
+    "share_at_page_bottom": 0.71
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      159,
+      154,
+      160,
+      134
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "n° голый номер в начале абзаца": {
+      "hits": 82,
+      "monotonic_share": 0.35,
+      "first": [
+        "5",
+        "8",
+        "1",
+        "1",
+        "1"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 82,
+      "monotonic_share": 0.35,
+      "first": [
+        "5",
+        "8",
+        "1",
+        "1",
+        "1"
+      ]
+    },
+    "§ с номером": {
+      "hits": 1,
+      "monotonic_share": 0.0,
+      "first": [
+        "818"
+      ]
+    },
+    "para. англ. раздел-пункт": {
+      "hits": 2,
+      "monotonic_share": 0.0,
+      "first": [
+        "314-20",
+        "518-19"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 20899,
+    "suspicious": 74,
+    "share": 0.0035,
+    "sample": [
+      "Bmmm.",
+      "Bktcy.);",
+      "i\\rticle",
+      "detern1ine",
+      "i\\sset'",
+      "Black\\Nell,",
+      "NZLR",
+      "!l!s",
+      "Myth",
+      "(SDNY",
+      "(SDNY",
+      "Rptr."
+    ]
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        162.0,
+        1064.0
+      ],
+      "even": [
+        162.0,
+        1064.0
+      ]
+    },
+    "left": {
+      "hits": 3,
+      "monotonic_share": 0.0,
+      "even_page_share": 1.0,
+      "first": [
+        1,
+        1,
+        1
+      ]
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {},
+  "verdict": {
+    "state": "пригоден",
+    "branch": "B?",
+    "problems": [],
+    "notes": [
+      "Под текстом растр на всю полосу, но слой выглядит чистым (0.4% подозрительных слов). Слой всё равно чужой и сделан неизвестно чем; прежде чем идти веткой A, прогнать обе ветки на двух десятках страниц и сравнить.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы."
+    ]
+  }
+}

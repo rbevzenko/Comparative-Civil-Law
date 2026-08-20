@@ -1,0 +1,266 @@
+{
+  "path": "/home/user/books/uk/smith-property-law.pdf",
+  "sha256": "ae8d95f520665e1113a187940d04aef51cb79a8c227ce0ddd5a712af019335f0",
+  "pages": 881,
+  "sampled_pages": [
+    133,
+    149,
+    165,
+    181,
+    197,
+    213,
+    229,
+    245,
+    261,
+    277,
+    293,
+    309,
+    325,
+    341,
+    357,
+    373,
+    389,
+    405,
+    421,
+    437,
+    453,
+    469,
+    485,
+    501,
+    517,
+    533,
+    549,
+    565,
+    581,
+    597,
+    613,
+    629,
+    645,
+    661,
+    677,
+    693,
+    709,
+    725,
+    741,
+    757
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 251,
+    "max_depth": 4,
+    "resolved_pages": 251,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Cover",
+        "page": 1,
+        "depth": 0
+      },
+      {
+        "title": "Contents in detail",
+        "page": 8,
+        "depth": 0
+      },
+      {
+        "title": "Preface",
+        "page": 15,
+        "depth": 0
+      },
+      {
+        "title": "Acknowledgements",
+        "page": 16,
+        "depth": 0
+      },
+      {
+        "title": "Table of cases",
+        "page": 23,
+        "depth": 0
+      },
+      {
+        "title": "Table of statutes",
+        "page": 50,
+        "depth": 0
+      },
+      {
+        "title": "Table of statutory instruments",
+        "page": 63,
+        "depth": 0
+      },
+      {
+        "title": "Part I Introductory matters",
+        "page": 64,
+        "depth": 0
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 3477,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.0,
+    "offset_mode": null,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 133,
+        "printed": null
+      },
+      {
+        "pdf_page": 149,
+        "printed": null
+      },
+      {
+        "pdf_page": 165,
+        "printed": null
+      },
+      {
+        "pdf_page": 181,
+        "printed": null
+      },
+      {
+        "pdf_page": 197,
+        "printed": null
+      },
+      {
+        "pdf_page": 213,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "8.5": 89020,
+      "10.0": 32323,
+      "9.0": 6980,
+      "8.0": 5084,
+      "6.0": 4193,
+      "9.5": 2107,
+      "11.5": 602,
+      "7.5": 222
+    },
+    "body": 8.5,
+    "candidates_footnote": [
+      6.0
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 6963,
+    "share_at_page_bottom": 0.9
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      53
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [
+    {
+      "line": "Comment",
+      "pages": 29
+    },
+    {
+      "line": ". . .",
+      "pages": 14
+    }
+  ],
+  "units": {
+    "n° голый номер в начале абзаца": {
+      "hits": 51,
+      "monotonic_share": 0.8,
+      "first": [
+        "70",
+        "86",
+        "28",
+        "102",
+        "118"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 76,
+      "monotonic_share": 0.67,
+      "first": [
+        "70",
+        "86",
+        "28",
+        "102",
+        "118"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 22592,
+    "suspicious": 47,
+    "share": 0.0021,
+    "sample": [
+      "PPMM",
+      "PPMM",
+      "PPMM",
+      "PPMM",
+      "PPMM",
+      "LMCLQ",
+      "PPMM",
+      "PPMM",
+      "WTLR",
+      "PPMM",
+      "PPMM",
+      "PPMM"
+    ]
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        105.0,
+        467.0
+      ],
+      "even": [
+        105.0,
+        467.0
+      ]
+    },
+    "left": {
+      "hits": 40,
+      "monotonic_share": 1.0,
+      "even_page_share": 0.0,
+      "first": [
+        70,
+        86,
+        102,
+        118,
+        134,
+        150
+      ]
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "EN": 2
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Кликабельных сносок нет — привязка по кеглю и положению.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы.",
+      "Маргинальные номера у левого поля: 40 попаданий, монотонность 100%, доля чётных страниц 0% — кандидат на режим margin.",
+      "Повторяющийся мусор (2 шаблонов) — вычистить первым шагом."
+    ]
+  }
+}

@@ -1,12 +1,20 @@
 {
-  "book_id": "street-on-torts",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
+  "book_id": "street-on-torts-13",
+  "authors": [
+    "John Murphy",
+    "Christian Witting"
+  ],
+  "title": "Street on Torts",
+  "edition": "13th ed.",
+  "year": 2012,
+  "publisher": "Oxford University Press",
+  "jurisdiction": "UK",
+  "language": "en",
   "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "cite_as": "Street on Torts, 13th edn",
+  "pdf_pages_total": 819,
+  "body_pages_pdf": "72-801",
+  "printed_page_offset": null,
+  "notes": "Титул (f4): «STREET ON TORTS, Thirteenth Edition, JOHN MURPHY … CHRISTIAN WITTING», Oxford University Press. Своей единицы цитирования у книги нет — единицей взят подраздел по заголовку, адресом типографская страница. Во встроенном шрифте лигатуры Th, fi, fl без карты в Unicode: слово рвётся на них («Th e protection»). Тело f72–f801; с f802 указатель.",
+  "service_source_id": "13241132-64fc-4a9c-ac80-de5b97640ae7"
 }

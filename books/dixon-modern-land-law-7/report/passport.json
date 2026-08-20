@@ -1,0 +1,234 @@
+{
+  "path": "/home/user/books/uk/dixon-modern-land-law-7.pdf",
+  "sha256": "bde0d05f32c09eeeb7e7267347cd80cba5ea558c14f6836dfae910ca9df01f7b",
+  "pages": 440,
+  "sampled_pages": [
+    67,
+    75,
+    83,
+    91,
+    99,
+    107,
+    115,
+    123,
+    131,
+    139,
+    147,
+    155,
+    163,
+    171,
+    179,
+    187,
+    195,
+    203,
+    211,
+    219,
+    227,
+    235,
+    243,
+    251,
+    259,
+    267,
+    275,
+    283,
+    291,
+    299,
+    307,
+    315,
+    323,
+    331,
+    339,
+    347,
+    355,
+    363,
+    371,
+    379
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": false
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 3621,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 1.0
+  },
+  "printed_pages": {
+    "detected_share": 0.15,
+    "offset_mode": 15,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 67,
+        "printed": null
+      },
+      {
+        "pdf_page": 75,
+        "printed": null
+      },
+      {
+        "pdf_page": 83,
+        "printed": null
+      },
+      {
+        "pdf_page": 91,
+        "printed": 106
+      },
+      {
+        "pdf_page": 99,
+        "printed": null
+      },
+      {
+        "pdf_page": 107,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "23.1": 33420,
+      "22.8": 22178,
+      "22.6": 12771,
+      "23.3": 11278,
+      "23.2": 9402,
+      "23.0": 6153,
+      "17.9": 6035,
+      "22.3": 5369
+    },
+    "body": 23.1,
+    "candidates_footnote": [
+      16.8,
+      17.0,
+      17.1,
+      17.2,
+      17.3,
+      17.5,
+      17.6,
+      17.7,
+      17.8,
+      17.9,
+      18.0,
+      18.3,
+      20.9,
+      21.3
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 21091,
+    "share_at_page_bottom": 0.87
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      194,
+      193,
+      195,
+      192
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "n° голый номер в начале абзаца": {
+      "hits": 121,
+      "monotonic_share": 0.8,
+      "first": [
+        "10",
+        "13",
+        "71",
+        "2002",
+        "147"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 125,
+      "monotonic_share": 0.78,
+      "first": [
+        "10",
+        "13",
+        "2",
+        "3",
+        "2"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 22368,
+    "suspicious": 336,
+    "share": 0.015,
+    "sample": [
+      "freel1old",
+      "qt1ite",
+      "Ct1rrently,",
+      "wl1ile",
+      "tl1e",
+      "inecl1anics",
+      "Tl1ere",
+      "tl1at",
+      "i1umber.",
+      "compt1lsory",
+      "O\\vnership",
+      "tl1e"
+    ]
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        195.0,
+        1093.0
+      ],
+      "even": [
+        195.0,
+        1093.0
+      ]
+    },
+    "left": {
+      "hits": 8,
+      "monotonic_share": 1.0,
+      "even_page_share": 0.0,
+      "first": [
+        214,
+        240,
+        250,
+        260,
+        282,
+        318
+      ]
+    },
+    "right": {
+      "hits": 32,
+      "monotonic_share": 1.0,
+      "even_page_share": 0.0,
+      "first": [
+        29,
+        37,
+        45,
+        53,
+        61,
+        69
+      ]
+    }
+  },
+  "statutory": {
+    "EN": 2
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "B",
+    "problems": [],
+    "notes": [
+      "Под текстом растр на всю полосу, а сам слой шумит (1.5% подозрительных слов: freel1old, qt1ite, Ct1rrently,, wl1ile). Это чужой зашитый OCR, а не цифровое издание: ветка B (§5).",
+      "Оглавление в файле не зашито — иерархию собирать по печатному оглавлению и колонтитулам; качество поля hierarchy будет ниже.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы.",
+      "Маргинальные номера у правого поля: 32 попаданий, монотонность 100%, доля чётных страниц 0% — кандидат на режим margin."
+    ]
+  }
+}

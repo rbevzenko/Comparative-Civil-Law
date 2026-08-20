@@ -18,8 +18,13 @@ class ChunkCreate(BaseModel):
     point_number: str | None = None
     text: str
     hierarchy: list[str] = Field(default_factory=list)
+    # Pages of the source FILE.
     page_start: int | None = None
     page_end: int | None = None
+    # Pages of the PRINTED edition — the pair a reader may cite. Optional:
+    # files without a folio (Westlaw exports, most e-books) leave them unset.
+    printed_page_start: int | None = None
+    printed_page_end: int | None = None
     # Precomputed by the external normalization pipeline; the API does not
     # generate embeddings itself.
     embedding: list[float] = Field(..., min_length=EMBEDDING_DIM, max_length=EMBEDDING_DIM)
@@ -43,6 +48,8 @@ class ChunkRead(BaseModel):
     hierarchy: list
     page_start: int | None
     page_end: int | None
+    printed_page_start: int | None
+    printed_page_end: int | None
     concept_ids: list[uuid.UUID] | None
     created_at: datetime
     updated_at: datetime
@@ -62,4 +69,21 @@ class ChunkDetail(ChunkRead):
 
 class ChunkList(BaseModel):
     items: list[ChunkRead]
+    total: int
+
+
+class ChunkWithFootnotes(ChunkRead):
+    """Чанк со сносками, но БЕЗ источника.
+
+    ChunkDetail сюда не годится: его поле `source` в списке заставило бы
+    подгружать источник на каждый чанк, а он у всей страницы один и тот же.
+    """
+
+    footnotes: list[FootnoteRead] = Field(default_factory=list)
+
+
+class ChunkDetailList(BaseModel):
+    """Ответ списка чанков с ?with_footnotes=true — чанк отдаётся со сносками."""
+
+    items: list[ChunkWithFootnotes]
     total: int

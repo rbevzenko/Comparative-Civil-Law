@@ -15,6 +15,10 @@ Les sûretés personnelles», «Chapitre 2 – La sûreté personnelle accessoir
 Порядок `--level` задаёт уровни вложенности: первый флаг — верхний уровень.
 Заголовок сбрасывает все уровни ниже своего.
 
+`--title-on-next` берёт название со следующей строки только тогда, когда в
+самой строке заголовка после номера НИЧЕГО не осталось. Иначе к разделу вида
+«1.— GENERAL.» приклеивается первый абзац его же тела.
+
 `--stop` перечисляет строки, которые продолжением заголовка не бывают
 никогда: у Snell's Equity под названием главы стоит слово CONTENTS и её
 собственное оглавление, и без оговорки название главы кончается словом
@@ -103,30 +107,45 @@ def main():
             depth = next((d for d, rx in enumerate(levels) if rx.match(text)), None)
             if depth is None:
                 continue
-            nxt = " ".join(lines[i + 1]["text"].split()) if i + 1 < len(lines) else ""
+            # k — индекс первой ещё не съеденной строки после заголовка.
+            # Раньше он не велся, и продолжение искалось в lines[j + 1], то
+            # есть ЧЕРЕЗ строку: заголовок «1. Introduction of compulsion»
+            # прирастал не своим продолжением, а куском абзаца двумя
+            # строками ниже. С --title-on-next это не вылезало, потому что
+            # там первая строка съедалась заведомо.
+            k = i + 1
+            nxt = " ".join(lines[k]["text"].split()) if k < len(lines) else ""
             # У части документов заголовок состоит из одного номера («TITRE 1»),
             # а название стоит следующей строкой и начинается с прописной.
-            # Отличить её от начала текста можно по самому заголовку: пока в
-            # нём нет ничего, кроме слова и номера, названия у него нет.
-            if (a.title_on_next and len(text.split()) <= 2 and nxt
+            # Признак «номер без названия» — не длина строки, а то, что
+            # ПОСЛЕ совпадения с уровнем ничего не осталось. У Snell's Equity
+            # раздел набран как «1.— GENERAL.»: две «слова», и по длине он
+            # проходил за голый номер, а следующей строкой к нему приклеивался
+            # первый абзац тела — 32 узла иерархии превращались в куски текста.
+            rest = levels[depth].match(text).group(0)
+            rest = text[len(rest):].strip(" .—–-")
+            rest = re.sub(r"^(?:er|re|ère|e)$", "", rest)
+            if (a.title_on_next and not rest and nxt
                     and not any(rx.match(nxt) for rx in levels)
                     and not any(rx.match(nxt) for rx in stops)):
                 text = f"{text}. {nxt}"
-                nxt = " ".join(lines[i + 2]["text"].split()) if i + 2 < len(lines) else ""
+                k += 1
+                nxt = " ".join(lines[k]["text"].split()) if k < len(lines) else ""
             # Название в прописных переносится на две-три строки целиком
             # («AFDELING 2. VAN HET BW VAN 1804 NAAR DE / BOEKEN 1 EN 5 BW»).
             # Строчной буквы в начале продолжения тут не бывает, поэтому
             # признаком служит сам регистр.
-            j = i + 1
-            while (text.isupper() and j + 1 <= len(lines) - 1 and j - i <= 3):
-                cand = " ".join(lines[j + 1]["text"].split())
+            steps = 0
+            while text.isupper() and k < len(lines) and steps < 3:
+                cand = " ".join(lines[k]["text"].split())
                 if not cand or not cand.isupper() or len(cand) > 70:
                     break
                 if any(rx.match(cand) for rx in levels + stops):
                     break
                 text = f"{text} {cand}"
-                j += 1
-            nxt = " ".join(lines[j + 1]["text"].split()) if j + 1 < len(lines) else nxt
+                k += 1
+                steps += 1
+            nxt = " ".join(lines[k]["text"].split()) if k < len(lines) else ""
             # К заголовку в прописных строчная строка не приклеивается: это
             # уже текст, а не продолжение названия.
             if len(nxt) > 2 and nxt[:1].islower() and not text.isupper():

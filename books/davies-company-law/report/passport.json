@@ -1,0 +1,283 @@
+{
+  "path": "/home/user/books/uk/davies-company-law.pdf",
+  "sha256": "6b6d7fe3bdc98a1fa0c47379db61c72f38bde811b04482e977c49151a0497c85",
+  "pages": 2134,
+  "sampled_pages": [
+    321,
+    361,
+    401,
+    441,
+    481,
+    521,
+    561,
+    601,
+    641,
+    681,
+    721,
+    761,
+    801,
+    841,
+    881,
+    921,
+    961,
+    1001,
+    1041,
+    1081,
+    1121,
+    1161,
+    1201,
+    1241,
+    1281,
+    1321,
+    1361,
+    1401,
+    1441,
+    1481,
+    1521,
+    1561,
+    1601,
+    1641,
+    1681,
+    1721,
+    1761,
+    1801,
+    1841,
+    1881
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 1036,
+    "max_depth": 5,
+    "resolved_pages": 1036,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Cover",
+        "page": 2,
+        "depth": 0
+      },
+      {
+        "title": "Halftitle Page",
+        "page": 3,
+        "depth": 0
+      },
+      {
+        "title": "Title Page",
+        "page": 4,
+        "depth": 0
+      },
+      {
+        "title": "Copyright Page",
+        "page": 6,
+        "depth": 0
+      },
+      {
+        "title": "Acknowledgements",
+        "page": 7,
+        "depth": 0
+      },
+      {
+        "title": "Preface",
+        "page": 8,
+        "depth": 0
+      },
+      {
+        "title": "Table of Abbreviations",
+        "page": 10,
+        "depth": 0
+      },
+      {
+        "title": "Contents",
+        "page": 15,
+        "depth": 0
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 452,
+    "with_destination": 452,
+    "per_page": 11.3,
+    "sample": [
+      {
+        "page": 321,
+        "rect": [
+          492,
+          700,
+          536,
+          716
+        ]
+      },
+      {
+        "page": 321,
+        "rect": [
+          496,
+          683,
+          539,
+          699
+        ]
+      },
+      {
+        "page": 321,
+        "rect": [
+          492,
+          662,
+          536,
+          678
+        ]
+      }
+    ]
+  },
+  "text_layer": {
+    "median_chars_per_page": 2320,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.0,
+    "offset_mode": null,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 321,
+        "printed": null
+      },
+      {
+        "pdf_page": 361,
+        "printed": null
+      },
+      {
+        "pdf_page": 401,
+        "printed": null
+      },
+      {
+        "pdf_page": 441,
+        "printed": null
+      },
+      {
+        "pdf_page": 481,
+        "printed": null
+      },
+      {
+        "pdf_page": 521,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "14.4": 65374,
+      "10.8": 30562,
+      "8.6": 491,
+      "16.6": 399
+    },
+    "body": 14.4,
+    "candidates_footnote": [
+      8.6,
+      10.8
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 2054,
+    "share_at_page_bottom": 0.28
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      72,
+      130,
+      132
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "n° голый номер в начале абзаца": {
+      "hits": 187,
+      "monotonic_share": 0.97,
+      "first": [
+        "2011",
+        "2012",
+        "2013",
+        "4",
+        "5"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 188,
+      "monotonic_share": 0.96,
+      "first": [
+        "2011",
+        "2012",
+        "2013",
+        "4",
+        "5"
+      ]
+    },
+    "para. англ. раздел-пункт": {
+      "hits": 35,
+      "monotonic_share": 0.0,
+      "first": [
+        "31–015",
+        "31–016",
+        "31–021",
+        "31–021",
+        "24–002"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 15506,
+    "suspicious": 4,
+    "share": 0.0003,
+    "sample": [
+      "Cmnd.1749.",
+      "Cmnd.6659.",
+      "Schs",
+      "Cmnd."
+    ]
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        130.0,
+        540.0
+      ],
+      "even": [
+        130.0,
+        540.0
+      ]
+    },
+    "left": {
+      "hits": 186,
+      "monotonic_share": 0.97,
+      "even_page_share": 0.0,
+      "first": [
+        2011,
+        2012,
+        2013,
+        4,
+        5,
+        6
+      ]
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {},
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Сноски кликабельны — привязку берём из файла напрямую, без эвристик.",
+      "Маргинальные номера у левого поля: 186 попаданий, монотонность 97%, доля чётных страниц 0% — кандидат на режим margin."
+    ]
+  }
+}

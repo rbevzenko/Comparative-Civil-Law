@@ -1,0 +1,253 @@
+{
+  "path": "/home/user/books/uk/weir-tort-intro.pdf",
+  "sha256": "90039eea2f2b206613390907dd93fcc6ff4ec8c53438b18151b175fbe918638b",
+  "pages": 132,
+  "sampled_pages": [
+    20,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32,
+    34,
+    36,
+    38,
+    40,
+    42,
+    44,
+    46,
+    48,
+    50,
+    52,
+    54,
+    56,
+    58,
+    60,
+    62,
+    64,
+    66,
+    68,
+    70,
+    72,
+    74,
+    76,
+    78,
+    80,
+    82,
+    84,
+    86,
+    88,
+    90,
+    92,
+    94,
+    96,
+    98
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 7,
+    "max_depth": 2,
+    "resolved_pages": 7,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Weir, An Introduction to Tort Law 1",
+        "page": 1,
+        "depth": 0
+      },
+      {
+        "title": "Weir, An Introduction to Tort Law 2",
+        "page": 2,
+        "depth": 0
+      },
+      {
+        "title": "An Introduction to Tort Law part 01",
+        "page": 2,
+        "depth": 1
+      },
+      {
+        "title": "An Introduction to Tort Law part 02",
+        "page": 18,
+        "depth": 1
+      },
+      {
+        "title": "An Introduction to Tort Law part 03",
+        "page": 48,
+        "depth": 1
+      },
+      {
+        "title": "An Introduction to Tort Law part 04",
+        "page": 69,
+        "depth": 1
+      },
+      {
+        "title": "An Introduction to Tort Law part 05",
+        "page": 105,
+        "depth": 1
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 5201,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 1.0
+  },
+  "printed_pages": {
+    "detected_share": 0.57,
+    "offset_mode": -19,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 20,
+        "printed": 1
+      },
+      {
+        "pdf_page": 22,
+        "printed": null
+      },
+      {
+        "pdf_page": 24,
+        "printed": null
+      },
+      {
+        "pdf_page": 26,
+        "printed": 41
+      },
+      {
+        "pdf_page": 28,
+        "printed": 1
+      },
+      {
+        "pdf_page": 30,
+        "printed": 11
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "9.9": 93269,
+      "9.8": 69453,
+      "9.7": 9715,
+      "9.6": 5559,
+      "9.5": 5392,
+      "8.2": 2319,
+      "7.7": 1021,
+      "9.3": 883
+    },
+    "body": 9.9,
+    "candidates_footnote": [
+      7.4,
+      7.6,
+      7.7,
+      7.8,
+      8.1,
+      8.2,
+      8.3
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 7662,
+    "share_at_page_bottom": 0.9
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 2,
+    "left_edges": [
+      81,
+      84,
+      97,
+      83
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "n° голый номер в начале абзаца": {
+      "hits": 54,
+      "monotonic_share": 0.62,
+      "first": [
+        "12",
+        "1",
+        "20",
+        "34",
+        "28"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 54,
+      "monotonic_share": 0.62,
+      "first": [
+        "12",
+        "1",
+        "20",
+        "34",
+        "28"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 33090,
+    "suspicious": 61,
+    "share": 0.0018,
+    "sample": [
+      "m1ury,",
+      "ava1l~ble",
+      "d1stmgmshable",
+      "Z!J",
+      "nghts",
+      "nghts",
+      "Wtwd",
+      "i1Sn1mI1994!",
+      "Bdrndrd",
+      "vA1ki11s",
+      "lntr()(luctinn",
+      "Htdlq"
+    ]
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        82.0,
+        776.0
+      ],
+      "even": [
+        82.0,
+        776.0
+      ]
+    },
+    "left": {
+      "hits": 1,
+      "monotonic_share": 0.0,
+      "even_page_share": 1.0,
+      "first": [
+        1
+      ]
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {},
+  "verdict": {
+    "state": "пригоден",
+    "branch": "B?",
+    "problems": [],
+    "notes": [
+      "Под текстом растр на всю полосу, но слой выглядит чистым (0.2% подозрительных слов). Слой всё равно чужой и сделан неизвестно чем; прежде чем идти веткой A, прогнать обе ветки на двух десятках страниц и сравнить.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы.",
+      "Типографская пагинация читается, но смещение относительно страниц файла непостоянно (вклейки, вкладки). Хранить обе нумерации, не пересчитывать."
+    ]
+  }
+}

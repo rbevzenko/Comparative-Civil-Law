@@ -1,0 +1,20 @@
+{
+  "number_issues": [
+    {
+      "raw": "17",
+      "action": "repaired_by_neighbours",
+      "to": 16,
+      "expected": 16,
+      "line": 583,
+      "evidence": "предыдущий 15, следующий 17"
+    }
+  ],
+  "absorbed_units": 0,
+  "sections_found": 1653,
+  "toc_entries": 0,
+  "toc_anchored_to_line": 0,
+  "toc_page_only": 0,
+  "pages_without_lines": [],
+  "profile": "hart-sparkes-land-law-v1",
+  "method": "digital"
+}

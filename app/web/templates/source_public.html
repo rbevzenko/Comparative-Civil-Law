@@ -64,9 +64,14 @@
           {% endif %}
         {% endif %}
         <dt>№ пункта</dt><dd>{{ chunk.point_number or "—" }}</dd>
-        {# Номер страницы на публичной странице не показывается: в корпусе
-           лежит страница файла-источника, а не печатного издания, и
-           показанный номер уходит в чужую сноску как страница книги. #}
+        {# Показывается ТОЛЬКО страница печатного издания: страница
+           файла-источника с ней не совпадает и, будучи показанной, уходит в
+           чужую сноску как страница книги. Нет типографской пагинации в
+           файле — строки нет вовсе. #}
+        {% if chunk.printed_page_start %}
+          <dt>Страница</dt>
+          <dd>{{ chunk.printed_page_start }}{% if chunk.printed_page_end and chunk.printed_page_end != chunk.printed_page_start %}–{{ chunk.printed_page_end }}{% endif %}</dd>
+        {% endif %}
       </dl>
 
       <div class="chunk-text">{{ chunk.text }}</div>

@@ -49,6 +49,8 @@ async def create_chunks(db: AsyncSession, source_id: uuid.UUID, items: list[Chun
             existing.hierarchy = item.hierarchy
             existing.page_start = item.page_start
             existing.page_end = item.page_end
+            existing.printed_page_start = item.printed_page_start
+            existing.printed_page_end = item.printed_page_end
             existing.embedding = item.embedding
             existing.concept_ids = item.concept_ids
             existing.footnotes.clear()
@@ -65,6 +67,8 @@ async def create_chunks(db: AsyncSession, source_id: uuid.UUID, items: list[Chun
                 hierarchy=item.hierarchy,
                 page_start=item.page_start,
                 page_end=item.page_end,
+                printed_page_start=item.printed_page_start,
+                printed_page_end=item.printed_page_end,
                 embedding=item.embedding,
                 concept_ids=item.concept_ids,
             )

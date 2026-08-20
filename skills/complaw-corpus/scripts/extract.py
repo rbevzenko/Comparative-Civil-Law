@@ -228,6 +228,8 @@ def find_units(index, tokens, prof, sections, method):
             hits += _margin(index, tokens, fam)
         elif mode == "heading":
             hits += _heading(index, fam)
+        elif mode == "page":
+            hits += _page(index, fam)
         else:
             sys.exit(f"Неизвестный режим единицы: {mode}")
 
@@ -285,10 +287,20 @@ def _heading(index, fam):
     """Запасной режим: единица — подраздел по заголовку источника.
 
     Более дробную единицу не изобретаем, даже если текст это позволяет (§7).
+
+    Кегль строки (`size_min` / `size_max`) отсекает то же, что и во `_flow`.
+    У Duddington, Law Express: Land Law заголовок отличается от тела ТОЛЬКО
+    кеглем (18 и 16 против 10) и никакого различимого паттерна не имеет:
+    это обычная фраза со строчной буквы.
     """
     rx = re.compile(fam["pattern"])
+    lo, hi = fam.get("size_min"), fam.get("size_max")
     out, n = [], 0
     for ln in index:
+        if lo is not None and (ln.get("size") is None or ln["size"] < lo):
+            continue
+        if hi is not None and (ln.get("size") is None or ln["size"] > hi):
+            continue
         m = rx.match(ln["text"])
         if not m:
             continue
@@ -296,6 +308,36 @@ def _heading(index, fam):
         num = m.group(1) if m.groups() else str(n)
         out.append({"family": fam, "number_raw": num, "line": ln["i"], "order": 0,
                     "mode": "heading", "evidence": {"heading": ln["text"][:120]}, "strip": 0})
+    return out
+
+
+def _page(index, fam):
+    """Единица — типографская страница.
+
+    Для книги, у которой нет НИ нумерации абзацев, НИ достаточного числа
+    заголовков. У Lawson & Rudden, The Law of Property (Clarendon Law
+    Series) заголовок стоит раз в четыре полосы: по ним выходит 39 карточек
+    на 198 полос, из них девять длиннее 18 000 знаков — эмбеддер таких не
+    видит целиком. При этом книга и цитируется страницей: «Lawson & Rudden,
+    The Law of Property, 3rd edn, p. 47».
+
+    Резать по границе полосы — не выдумка структуры, а ровно та единица,
+    которой книга пользуется сама.
+    """
+    out, seen = [], set()
+    for ln in index:
+        # Ключ составной: у скана разворота (см. scripts/pages_spread.py) на
+        # одном листе две полосы книги, у обеих один pdf_page и разные
+        # колонцифры.
+        key = (ln["pdf_page"], ln.get("printed_page"))
+        if key in seen:
+            continue
+        seen.add(key)
+        num = ln.get("printed_page")
+        out.append({"family": fam, "number_raw": str(num if num is not None else ln["pdf_page"]),
+                    "line": ln["i"], "order": 0, "mode": "page",
+                    "evidence": {"pdf_page": ln["pdf_page"], "printed_page": num},
+                    "strip": 0})
     return out
 
 

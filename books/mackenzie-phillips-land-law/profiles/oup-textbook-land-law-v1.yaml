@@ -1,0 +1,59 @@
+id: oup-textbook-land-law-v1
+publisher: Oxford University Press
+jurisdiction: UK
+language: en
+# Judith-Anne MacKenzie & Mary Phillips, Textbook on Land Law, 14th ed.
+# (2012). Издательский PDF, 649 страниц. Кегль тела 8.3.
+#
+# Единица цитирования — нумерованный раздел, и уровней у него четыре:
+# 1.1 (кегль 12), 1.5.2 (9.6), 1.5.1.3 (8.5). Берутся одним семейством:
+# номер единицы — последняя составляющая, раздел — всё, что перед ней.
+#
+# Порог кегля 8.4 обязателен и стоит близко к телу нарочно: на первой полосе
+# каждой главы её оглавление набрано кеглем 8.3 в две колонки, и строки там
+# начинаются теми же номерами («1.2 Viewing Trant House 3 1.7 The two modern
+# legal estates 7»). Разница с заголовком четвёртого уровня — две десятых
+# пункта, и другого признака нет.
+
+units:
+  - type: "§"
+    id_prefix: "sec"
+    mode: flow
+    pattern: '^(?:\d{1,2}\.)+(\d{1,3})(?=\s+\S)'
+    size_min: 8.4
+    address_template: "§ {section}.{number}"
+
+address:
+  template: "§ {section}.{number}"
+  section:
+    mode: pattern
+    pattern: '^((?:\d{1,2}\.)*\d{1,2})\.\d{1,3}(?=\s+\S)'
+
+footnotes:
+  # Сносок в книге нет: ссылки на дела и литературу даны в тексте.
+  mode: none
+
+printed_page:
+  # Колонцифра в колонтитуле: «Interests in land 23» на нечётной полосе.
+  band: 0.06
+  patterns:
+    - '\s(\d{1,4})$'
+    - '^(\d{1,4})\s'
+
+junk:
+  header_band: 0.06
+  patterns:
+    # Служебная строка вёрстки внизу полосы: «02_Judith_Chap02.indd 23 …».
+    - '\.indd\s'
+
+statutory:
+  patterns:
+    - '\b[A-Z][A-Za-z’\'' ]{3,40}Act\s+\d{4}(?:\s+ss?\.?\s*\d+[A-Za-z]*)?'
+    - '\bss?\s?\d+[A-Za-z]*(?:\(\d+\))?'
+
+cross_refs:
+  patterns:
+    - '\b\d{1,2}\.\d{1,2}(?:\.\d{1,2}){0,2}\b'
+
+citation:
+  template: "{cite_as} {address}"

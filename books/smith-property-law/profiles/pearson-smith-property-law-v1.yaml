@@ -1,0 +1,68 @@
+id: pearson-smith-property-law-v1
+publisher: Pearson Education
+jurisdiction: UK
+language: en
+# Roger J. Smith, Property Law: Cases and Materials, 6th ed. Издательский PDF,
+# 881 страница, тело f66–f864 (печатные 3–801, смещение 63).
+#
+# Хрестоматия: извлечения из судебных решений, статутов и докладов Law
+# Commission вперемежку с авторским комментарием.
+#
+# Кегли: авторский текст 10.0 MinionPro, текст извлечения 8.5 NeueHaas,
+# заголовок извлечения 9.0 полужирный по центру, заголовок раздела 11.5,
+# «Comment» 9.5 полужирный, сноски автора 8.0 внизу полосы.
+#
+# Единица цитирования — номер извлечения «Extract 21.4.42»: глава.раздел.номер.
+# Карточка = извлечение плюс следующий за ним авторский комментарий до
+# следующего извлечения.
+#
+# Порог кегля 8.6–9.4 обязателен: тем же текстом «Extract 1.1.1 from …»
+# набран список благодарностей в препринте (кегль 10), и без порога он
+# даёт 60 ложных единиц.
+#
+# Внутри извлечений встречаются собственные сноски римскими цифрами кеглем
+# 4.5 посреди полосы — они остаются в тексте карточки, это часть извлечения.
+
+units:
+  - type: "Extract"
+    id_prefix: "extract"
+    mode: flow
+    pattern: '^Extract\s+\d{1,2}\.\d{1,2}\.(\d{1,3})(?=$|\s)'
+    size_min: 8.6
+    size_max: 9.4
+    address_template: "Extract {section}.{number}"
+
+address:
+  template: "Extract {section}.{number}"
+  section:
+    mode: pattern
+    pattern: '^Extract\s+(\d{1,2}\.\d{1,2})\.\d{1,3}(?=$|\s)'
+
+footnotes:
+  mode: font_bottom
+  note_size_max: 8.2
+  bottom_band: 0.22
+
+printed_page:
+  band: 0.12
+  patterns:
+    - '^(\d{1,4})\s'
+    - '\s(\d{1,4})$'
+
+junk:
+  header_band: 0.115
+  footer_band: 0.96
+  patterns:
+    - '^[A-Z]{2}\d{2}__[A-Z]{2}'
+
+statutory:
+  patterns:
+    - '\b[A-Z][A-Za-z’\'' ]{3,40}Act\s+\d{4}(?:\s+ss?\.?\s*\d+[A-Za-z]*)?'
+    - '\bss?\s?\d+[A-Za-z]*(?:\(\d+\))?'
+
+cross_refs:
+  patterns:
+    - 'Extract\s+\d{1,2}\.\d{1,2}\.\d{1,3}'
+
+citation:
+  template: "{cite_as} {address}"

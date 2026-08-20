@@ -37,6 +37,7 @@
         <tr>
           <th>Цитата</th>
           <th>№ пункта</th>
+          <th>Стр. книги</th>
           <th>Страницы PDF</th>
           <th>Текст (начало)</th>
         </tr>
@@ -46,6 +47,13 @@
           <tr>
             <td><a href="/ui/chunks/{{ chunk.id }}">{{ chunk.citation }}</a></td>
             <td>{{ chunk.point_number or "—" }}</td>
+            <td>
+              {% if chunk.printed_page_start %}
+                {{ chunk.printed_page_start }}{% if chunk.printed_page_end and chunk.printed_page_end != chunk.printed_page_start %}–{{ chunk.printed_page_end }}{% endif %}
+              {% else %}
+                —
+              {% endif %}
+            </td>
             <td>
               {% if chunk.page_start %}
                 {{ chunk.page_start }}{% if chunk.page_end and chunk.page_end != chunk.page_start %}–{{ chunk.page_end }}{% endif %}

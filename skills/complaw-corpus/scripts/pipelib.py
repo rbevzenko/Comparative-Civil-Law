@@ -164,11 +164,155 @@ def cluster_lines(tokens, tol=None):
     return [r["items"] for r in rows]
 
 
+def drop_phantom_spaces(row):
+    """Убирает пробельные глифы, нарисованные поверх соседней буквы.
+
+    У Pearson (Smith, Property Law: Cases and Materials, 6th ed.) шрифт
+    ставит лишние пробелы поверх глифов, и текстовый слой рвёт слова:
+    «Th e», «signifi cance», «aft er», «Y axley», «L and Law». Разрывов на
+    книгу около 850.
+
+    Разбираются два случая, и оба — в порядке ПОТОКА, а не по x0:
+    сортировка по x0 сама по себе перемешивает пробел с курсивным глифом,
+    который начинается на сотую долю пункта левее.
+
+    1. Пробел нарисован ПОВЕРХ предыдущего глифа: у лигатуры «Th»
+       (104.88–115.59) следом идёт пробел 110.23–112.50, целиком внутри
+       буквы. Такой пробел ненастоящий.
+    2. Из пары одинаковых пробелов между курсивом и прямым начертанием
+       («Ingram  v  IRC») второй налезает на следующий глиф. Первый —
+       настоящий, второй лишний; условие «перед ним тоже пробел» и
+       отличает эту пару от одиночного настоящего пробела.
+
+    Настоящий одиночный пробел стоит между глифами и ни на один не
+    налезает, поэтому книгам без этого дефекта правило ничего не делает.
+    """
+    if any("_stream" in c for c in row):
+        order = sorted(row, key=lambda c: c["_stream"])
+    else:
+        order = sorted(row, key=lambda c: c["x0"])
+    drop = set()
+    n = len(order)
+    for i, ch in enumerate(order):
+        if not (ch.get("text") or "").isspace():
+            continue
+        w = max(ch["x1"] - ch["x0"], 0.01)
+        prev = order[i - 1] if i else None
+        nxt = order[i + 1] if i + 1 < n else None
+        prev_is_space = prev is None or (prev.get("text") or "").isspace()
+        if prev is not None and not prev_is_space:
+            ov = min(ch["x1"], prev["x1"]) - max(ch["x0"], prev["x0"])
+            if ov > 0.5 * w:
+                drop.add(id(ch))
+                continue
+        if prev_is_space and nxt is not None and not (nxt.get("text") or "").isspace():
+            ov = min(ch["x1"], nxt["x1"]) - max(ch["x0"], nxt["x0"])
+            if ov > 0.25 * w:
+                drop.add(id(ch))
+
+    # Второй проход — уже в порядке x0, в котором строка и будет собрана.
+    # Сортировка ставит пробел то до, то после налезающего на него глифа
+    # (ключ у cluster_lines — (top, x0), а top у пробела и у буквы разные),
+    # поэтому одного прохода по потоку мало: «( 2) H ow» получается из
+    # пробелов, уехавших ЗА свою букву. Здесь условие строже — пробел должен
+    # целиком помещаться внутри соседнего глифа; настоящий пробел стоит
+    # встык и внутрь не помещается никогда.
+    rest = [c for c in row if id(c) not in drop]
+    rest.sort(key=lambda c: c["x0"])
+    for i, ch in enumerate(rest):
+        if not (ch.get("text") or "").isspace():
+            continue
+        # Соседа ищем через пробелы: подряд идущих пробелов бывает по три,
+        # и «ближайший сосед по списку» у второго из них — снова пробел.
+        left = next((o for o in reversed(rest[:i]) if not (o.get("text") or "").isspace()), None)
+        right = next((o for o in rest[i + 1:] if not (o.get("text") or "").isspace()), None)
+        for o in (left, right):
+            if o is None:
+                continue
+            if ch["x0"] >= o["x0"] - 0.05 and ch["x1"] <= o["x1"] + 0.05:
+                drop.add(id(ch))
+                break
+    return [c for c in row if id(c) not in drop]
+
+
+def case_width_table(chars, table=None):
+    """Копит ширины строчных букв по шрифтам: (fontname, буква) → {ширины}."""
+    table = table if table is not None else {}
+    for c in chars:
+        t = c.get("text") or ""
+        if len(t) != 1 or not t.isalpha() or not t.islower():
+            continue
+        size = c.get("size") or 0
+        if size <= 0:
+            continue
+        table.setdefault((c.get("fontname"), t), set()).add(round((c["x1"] - c["x0"]) / size, 3))
+    return table
+
+
+def case_upper_widths(table):
+    """Из таблицы ширин — ширина ПРОПИСНОЙ для каждой испорченной буквы."""
+    upper = {}
+    for key, ws in table.items():
+        lo, hi = min(ws), max(ws)
+        # Порог 1.04 отделяет пару «строчная/прописная» от дрожания
+        # округления: у «m» и «M» разница всего 7% (0.778 против 0.833).
+        if len(ws) >= 2 and hi >= lo * 1.04:
+            upper[key] = hi
+    return upper
+
+
+def repair_case_by_width(chars, upper=None):
+    """Возвращает регистр буквам, у которых во встроенном шрифте перепутан ToUnicode.
+
+    У Pearson (Duddington, Law Express: Land Law, 3rd ed.) часть глифов
+    отдаёт в текстовый слой строчную букву вместо прописной: «lAnd lAw»
+    вместо «LAND LAW», «the law of Property act 1925» вместо «the Law of
+    Property Act 1925», «EWCa Civ 347», «ukHL 17».
+
+    Высота глифа тут не помогает — pdfplumber отдаёт её равной кеглю, — а
+    ШИРИНА помогает: в Helvetica прописная и строчная одной буквы всегда
+    разной ширины. В шрифте страницы у испорченной буквы ровно два значения
+    ширины: настоящее строчное («l» — 0.222 кегля) и прописное («L» — 0.5).
+    Большее и есть прописная.
+
+    Таблица ширин собирается по ВСЕЙ книге и передаётся сюда готовой: буква,
+    встречающаяся на одной полосе только в испорченном виде («k» в «kEy
+    CASE»), по этой полосе неотличима, а по книге — отличима.
+    """
+    def norm(c):
+        size = c.get("size") or 0
+        if size <= 0:
+            return None
+        return round((c["x1"] - c["x0"]) / size, 3)
+
+    if upper is None:
+        upper = case_upper_widths(case_width_table(chars))
+
+    if not upper:
+        return chars
+    for c in chars:
+        t = c.get("text") or ""
+        if len(t) != 1 or not t.isalpha() or not t.islower():
+            continue
+        target = upper.get((c.get("fontname"), t))
+        if target is None:
+            continue
+        w = norm(c)
+        if w is not None and abs(w - target) < 0.006:
+            c["text"] = t.upper()
+    return chars
+
+
 def chars_to_lines(chars):
     """Ветка A: символы pdfplumber → строки со словами и координатами."""
+    for i, ch in enumerate(chars):
+        if "_stream" not in ch:
+            ch["_stream"] = i
     lines = []
     for row in cluster_lines(chars):
-        row = sorted(row, key=lambda c: c["x0"])
+        row = drop_phantom_spaces(sorted(row, key=lambda c: c["x0"]))
+        if not row:
+            continue
         words, buf, prev = [], [], None
         gap = _space_gap(row)
         for ch in row:
@@ -218,7 +362,10 @@ def _space_gap(row):
 
 def _mk_word(chs):
     return {
-        "text": "".join(c["text"] for c in chs).strip(),
+        # Подряд идущие пробелы схлопываются: у книг с двойным пробелом между
+        # курсивом и прямым начертанием («Ingram  v  IRC») иначе остаётся
+        # рваная разрядка внутри названия дела.
+        "text": re.sub(r"\s{2,}", " ", "".join(c["text"] for c in chs)).strip(),
         "x0": min(c["x0"] for c in chs), "x1": max(c["x1"] for c in chs),
         "top": min(c["top"] for c in chs), "bottom": max(c["bottom"] for c in chs),
         "size": _median([c["size"] for c in chs]),
@@ -415,7 +562,17 @@ def detect_printed_page_line(lines, height, band=0.12, patterns=None, max_chars=
     сидит внутри него («18 Das Recht im objektiven Sinn» на чётной, «… 19»
     на нечётной). Такие случаи описываются паттернами в профиле.
     """
-    top_band, bottom_band = height * band, height * (1 - band)
+    # `band` — либо одно число (обе полосы одинаковы), либо пара
+    # [верхняя, нижняя]. Пара нужна там, где колонтитул стоит ниже, чем
+    # колонцифра снизу: у Duddington колонтитул на 0.075 высоты, а
+    # колонцифра — на 0.93, и симметричная полоса ловит либо оба, либо
+    # ничего. Из колонтитула «10 Adverse possession» при этом приезжает
+    # номер главы вместо номера страницы.
+    if isinstance(band, (list, tuple)):
+        top_frac, bottom_frac = float(band[0]), float(band[1])
+    else:
+        top_frac = bottom_frac = float(band)
+    top_band, bottom_band = height * top_frac, height * (1 - bottom_frac)
     rx = [re.compile(p) for p in (patterns or [])]
     for i, ln in enumerate(lines):
         s = ln["text"].strip()
