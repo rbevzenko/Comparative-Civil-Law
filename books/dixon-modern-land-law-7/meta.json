@@ -1,12 +1,19 @@
 {
   "book_id": "dixon-modern-land-law-7",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
+  "authors": [
+    "Martin Dixon"
+  ],
+  "title": "Modern Land Law",
+  "edition": "7th ed.",
+  "year": 2010,
+  "publisher": "Routledge",
+  "jurisdiction": "UK",
+  "language": "en",
   "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "cite_as": "Dixon, Modern Land Law, 7th edn",
+  "pdf_pages_total": 440,
+  "body_pages_pdf": "41-430",
+  "printed_page_offset": -38,
+  "notes": "Оборот титула (f2): «Seventh edition Published 2010 by Routledge», «© 2010 Martin Dixon», «First published by Cavendish Publishing as Principles in Land Law in 1994». Скан с текстовым слоем OCR: листы одного размера 1280×1735, кегль тела 22.8–23.3, раздела 36–40, подраздела 28–31, сносок 16.4. Единица цитирования — нумерованный раздел «1.2.1».",
+  "service_source_id": "a0587e0c-735b-4b23-8653-fe6ccae2e199"
 }

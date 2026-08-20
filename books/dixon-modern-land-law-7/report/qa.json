@@ -1,0 +1,166 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/dixon-modern-land-law-7",
+  "cards": 380,
+  "profile": "routledge-dixon-land-law-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9744,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "p.",
+        "section": null,
+        "from": 25,
+        "to": 27,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 93,
+        "to": 95,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 123,
+        "to": 125,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 183,
+        "to": 185,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 201,
+        "to": 203,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 249,
+        "to": 251,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 279,
+        "to": 281,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 302,
+        "to": 304,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 327,
+        "to": 329,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 367,
+        "to": 369,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 10,
+    "missing_total": 10,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 380
+    }
+  },
+  "coverage": {
+    "share": 0.9997,
+    "covered_chars": 1308464,
+    "book_chars": 1308843,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 3526,
+    "min": 350,
+    "max": 4328,
+    "too_short": [],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0.0,
+    "cards_with_calls_but_no_notes": 372,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [
+      64,
+      132,
+      162,
+      222,
+      240,
+      288,
+      318,
+      341,
+      366,
+      406
+    ],
+    "count": 10
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 380,
+    "sample": [
+      "dixon-modern-land-law-7:p:3",
+      "dixon-modern-land-law-7:p:4",
+      "dixon-modern-land-law-7:p:5",
+      "dixon-modern-land-law-7:p:6",
+      "dixon-modern-land-law-7:p:7",
+      "dixon-modern-land-law-7:p:8",
+      "dixon-modern-land-law-7:p:9",
+      "dixon-modern-land-law-7:p:10",
+      "dixon-modern-land-law-7:p:11",
+      "dixon-modern-land-law-7:p:12"
+    ],
+    "depth_histogram": {
+      "0": 380
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 97.4% < 98%: пропущено номеров 10. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}
