@@ -71,34 +71,59 @@ python3 scripts/backup.py --out ~/backups --split-mb 25
 ## Как отправить на Google Диск
 
 ```bash
-python3 scripts/upload_to_drive.py --folder-id <id папки> \
-    --env-file ~/.corpus.env ~/backups/comparative-civil-law-<дата>
+python3 scripts/upload_to_drive.py --folder-name "Comparative Civil Law Backups" \
+    --subfolder comparative-civil-law-<дата> --env-file .env \
+    /root/backups/comparative-civil-law-<дата>
 ```
 
-Идентификатор папки виден в её адресе:
-`drive.google.com/drive/folders/<id>`. Файл льётся возобновляемой сессией
-кусками по 8 МБ — обрыв на сороковом мегабайте продолжается с места
-обрыва. Одноимённый файл в папке обновляется новой версией, ссылка на него
-не меняется; `--keep-both` кладёт рядом второй, `--skip-existing` не
-трогает вовсе.
+Файл льётся возобновляемой сессией кусками по 8 МБ — обрыв на сороковом
+мегабайте продолжается с места обрыва. Одноимённый файл в папке
+обновляется новой версией, ссылка на него не меняется; `--keep-both`
+кладёт рядом второй, `--skip-existing` не трогает вовсе.
+
+### Про папку: почему `--folder-name`, а не `--folder-id`
+
+Ключ для бэкапа берётся со scope `drive.file` — он даёт доступ только к
+тому, что создано этим же клиентом, и не открывает остальной Диск. Обратная
+сторона: заранее сделанная руками папка для такого ключа НЕ СУЩЕСТВУЕТ, и
+заливка в неё по идентификатору падает с 404 «файл не найден». Поэтому
+папку заводит сам скрипт (`--folder-name`), а человек может потом
+перетащить её в любое место Диска — доступа к своим файлам скрипт не
+теряет. `--folder-id` остаётся для ключа, открывающего весь Диск.
 
 ### Ключи
 
-Годится любой из трёх наборов в `~/.corpus.env`, скрипт берёт первый
-найденный.
+**Для бэкапа по расписанию — refresh-токен.** Разовый
+`GOOGLE_OAUTH_ACCESS_TOKEN` живёт час и для крона не годится; сервисный
+аккаунт для ЛИЧНОГО Диска не годится вовсе — своего места на Диске у него
+нет, и заливка падает на квоте («Service Accounts do not have storage
+quota»); он работает только с общим диском Google Workspace.
 
-**1. Разовый токен — быстрее всего, живёт час.** На
-[developers.google.com/oauthplayground](https://developers.google.com/oauthplayground/)
-выбрать scope `https://www.googleapis.com/auth/drive.file`, обменять код
-на токен и положить его:
+Порядок такой.
 
-```
-GOOGLE_OAUTH_ACCESS_TOKEN=ya29.…
-```
-
-**2. Refresh-токен — для регулярного бэкапа.** OAuth-клиент типа
-«Desktop app» в Google Cloud Console, один раз получить refresh-токен (тот
-же Playground, галочка «Use your own OAuth credentials»):
+1. [console.cloud.google.com](https://console.cloud.google.com/) — создать
+   проект (имя любое, например `corpus-backup`).
+2. «APIs & Services» → «Library» → найти **Google Drive API** → Enable.
+3. «APIs & Services» → «OAuth consent screen» → тип **External**, имя
+   приложения, свой почтовый адрес в двух полях контактов. Сохранить.
+4. Там же «Publishing status» → **Publish app** → In production. Шаг не
+   косметический: пока приложение в статусе Testing, refresh-токен
+   протухает через семь дней, и недельный бэкап отвалится ровно перед
+   вторым запуском. Проверки Google для scope `drive.file` не требует —
+   он не относится к чувствительным.
+5. «Credentials» → «Create credentials» → «OAuth client ID» → тип **Web
+   application**, в «Authorized redirect URIs» добавить
+   `https://developers.google.com/oauthplayground`. Записать Client ID и
+   Client secret.
+6. [developers.google.com/oauthplayground](https://developers.google.com/oauthplayground/)
+   → шестерёнка справа сверху → галочка «Use your own OAuth credentials» →
+   вставить ID и secret.
+7. В левом поле «Input your own scopes» ввести
+   `https://www.googleapis.com/auth/drive.file` → «Authorize APIs» → войти
+   своим аккаунтом → «Allow».
+8. «Exchange authorization code for tokens» → скопировать **Refresh
+   token** (начинается с `1//`).
+9. Положить три строки в `.env` репозитория на сервере:
 
 ```
 GOOGLE_OAUTH_CLIENT_ID=….apps.googleusercontent.com
@@ -106,29 +131,40 @@ GOOGLE_OAUTH_CLIENT_SECRET=…
 GOOGLE_OAUTH_REFRESH_TOKEN=1//…
 ```
 
-**3. Сервисный аккаунт — когда бэкап ходит по расписанию без человека.**
-Ключ в JSON, а папку на Диске надо отдать в доступ на адрес аккаунта вида
-`…@….iam.gserviceaccount.com`: своего места на Диске у него нет, и
-заливка в чужую папку без явного доступа падает с 404, а не с 403.
+Скрипт сам меняет refresh-токен на часовой access-токен при каждом
+запуске; больше к консоли Google возвращаться не нужно.
 
-```
-GOOGLE_SERVICE_ACCOUNT_FILE=/root/.google-backup.json
-```
-
-Scope везде `drive.file` — он даёт доступ только к тому, что создано этим
-же клиентом, и не открывает остальной Диск.
+**Разовая заливка руками** обходится без всего этого: в
+[OAuth Playground](https://developers.google.com/oauthplayground/) выбрать
+scope `drive.file`, обменять код на токен и положить его как
+`GOOGLE_OAUTH_ACCESS_TOKEN=ya29.…`. Через час он мёртв — это нормально,
+для одного прогона хватает.
 
 ## По расписанию
 
-Раз в неделю на хосте сервиса, `crontab -e`:
+Всё вместе — дамп базы, сборка набора, заливка, уборка старых копий —
+делает `scripts/weekly_backup.sh`. Сначала прогнать руками:
+
+```bash
+cd /root/Comparative-Civil-Law
+scripts/weekly_backup.sh
+```
+
+Потом поставить в крон, `crontab -e`, — раз в неделю, в ночь на
+понедельник:
 
 ```cron
-0 4 * * 1 cd /opt/comparative-civil-law && \
-  docker compose exec -T db pg_dump -U corpus -Fc corpus > /tmp/corpus.dump && \
-  python3 scripts/backup.py --out /var/backups --include-dump /tmp/corpus.dump \
-    --service-url https://<домен> --env-file /root/.corpus.env && \
-  python3 scripts/upload_to_drive.py --folder-id <id> --env-file /root/.corpus.env \
-    /var/backups/comparative-civil-law-$(date +\%F) >> /var/log/corpus-backup.log 2>&1
+0 4 * * 1 /root/Comparative-Civil-Law/scripts/weekly_backup.sh >> /var/log/corpus-backup.log 2>&1
+```
+
+На сервере скрипт держит последние два набора (`BACKUP_KEEP`), остальные
+удаляет: диск CPX22 меньше трёх дампов подряд, и заполнить его бэкапами —
+способ уронить сервис. На Диске не удаляется ничего.
+
+Раз в месяц стоит заглядывать в журнал:
+
+```bash
+tail -40 /var/log/corpus-backup.log
 ```
 
 Раз в квартал бэкап стоит проверять восстановлением: `pg_restore` в пустую

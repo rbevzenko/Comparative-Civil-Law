@@ -1,12 +1,21 @@
 #!/usr/bin/env python3
 """Заливка файлов бэкапа в папку Google Drive.
 
-    python scripts/upload_to_drive.py --folder-id <id> --env-file ~/.corpus.env \
-        ~/backups/comparative-civil-law-2026-08-20/*
+    python scripts/upload_to_drive.py --folder-name "Comparative Civil Law" \
+        --subfolder comparative-civil-law-2026-08-20 --env-file .env \
+        /root/backups/comparative-civil-law-2026-08-20
 
 Вторая копия имеет смысл только там, где не лежит первая: карточки и код
-живут в гите, поэтому набор уходит наружу, в папку Диска. Идентификатор
-папки виден в её адресе: drive.google.com/drive/folders/<id>.
+живут в гите, поэтому набор уходит наружу, в папку Диска.
+
+Папка задаётся одним из двух ключей. `--folder-id` — по идентификатору из
+адреса папки (drive.google.com/drive/folders/<id>); годится, когда ключ
+открывает весь Диск. `--folder-name` — по имени: скрипт заведёт папку в
+корне Диска сам, и это ЕДИНСТВЕННЫЙ рабочий путь для scope `drive.file`,
+на котором стоит бэкап по расписанию. Такой ключ видит только созданное им
+же, и заливка в сделанную руками папку падает с 404 «файл не найден».
+Заведённую скриптом папку человек может потом перетащить куда угодно —
+доступа к своим файлам скрипт не теряет.
 
 Авторизация — по одному из трёх наборов ключей в `--env-file`, первый
 найденный и берётся:
@@ -15,9 +24,10 @@
     GOOGLE_OAUTH_CLIENT_ID / _SECRET / _REFRESH_TOKEN   регулярный бэкап
     GOOGLE_SERVICE_ACCOUNT_FILE=/path/key.json  сервисный аккаунт
 
-Сервисному аккаунту папку надо отдать в доступ на его адрес вида
-…@….iam.gserviceaccount.com — своего места на Диске у него нет, и заливка
-в чужую папку без явного доступа падает с 404, а не с 403.
+Сервисный аккаунт годится ТОЛЬКО с общим диском Google Workspace: своего
+места на Диске у него нет, и заливка в папку личного аккаунта падает на
+квоте («Service Accounts do not have storage quota»). Для личного gmail
+берите refresh-токен.
 
 Файл льётся возобновляемой сессией кусками по 8 МБ: обрыв на сороковом
 мегабайте продолжается с места обрыва, а не с начала. Файл с тем же
@@ -167,6 +177,35 @@ def api(url, token, method="GET", body=None, headers=None, tries=4):
             time.sleep(2 ** attempt)
 
 
+def find_folder(token, name, parent):
+    """Найти или завести папку. Ищется только среди своих же файлов.
+
+    Scope `drive.file` даёт доступ ТОЛЬКО к тому, что создано этим самым
+    клиентом: чужая папка на Диске для него не существует, и заливка в неё
+    по идентификатору падает с 404. Поэтому папку заводит сам скрипт.
+    """
+    q = (
+        f"name = '{name}' and mimeType = 'application/vnd.google-apps.folder' "
+        f"and '{parent}' in parents and trashed = false"
+    )
+    url = f"{FILES}?q={urllib.parse.quote(q)}&fields=files(id,name)&supportsAllDrives=true"
+    code, _, raw = api(url, token)
+    if code != 200:
+        raise SystemExit(f"поиск папки: HTTP {code} {raw[:300].decode(errors='replace')}")
+    found = json.loads(raw).get("files", [])
+    if found:
+        return found[0]["id"], False
+    code, _, raw = api(
+        f"{FILES}?fields=id&supportsAllDrives=true",
+        token,
+        method="POST",
+        body={"name": name, "mimeType": "application/vnd.google-apps.folder", "parents": [parent]},
+    )
+    if code not in (200, 201):
+        raise SystemExit(f"папка не завелась: HTTP {code} {raw[:300].decode(errors='replace')}")
+    return json.loads(raw)["id"], True
+
+
 def find_existing(token, folder_id, name):
     q = f"name = '{name}' and '{folder_id}' in parents and trashed = false"
     url = f"{FILES}?q={urllib.parse.quote(q)}&fields=files(id,name,size)&supportsAllDrives=true"
@@ -258,7 +297,13 @@ def human(n):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--folder-id", required=True)
+    ap.add_argument("--folder-id", help="папка по идентификатору из её адреса на Диске")
+    ap.add_argument(
+        "--folder-name",
+        help="папка по имени: заводится в корне Диска, если её нет. Единственный "
+        "путь для ключа со scope drive.file — чужую папку он не видит",
+    )
+    ap.add_argument("--subfolder", help="подпапка внутри целевой, например по дате набора")
     ap.add_argument("--env-file", required=True)
     ap.add_argument("--keep-both", action="store_true", help="не обновлять одноимённый, класть второй")
     ap.add_argument("--skip-existing", action="store_true", help="одноимённый не трогать вовсе")
@@ -276,20 +321,31 @@ def main():
         else:
             raise SystemExit(f"нет файла: {p}")
 
+    if not a.folder_id and not a.folder_name:
+        raise SystemExit("нужен либо --folder-id, либо --folder-name")
+
     token = access_token(read_env(a.env_file))
+    folder_id = a.folder_id
+    if not folder_id:
+        folder_id, made = find_folder(token, a.folder_name, "root")
+        print(f"папка «{a.folder_name}»: {'заведена' if made else 'нашлась'}, id {folder_id}")
+    if a.subfolder:
+        folder_id, made = find_folder(token, a.subfolder, folder_id)
+        print(f"подпапка «{a.subfolder}»: {'заведена' if made else 'нашлась'}, id {folder_id}")
+
     total = sum(os.path.getsize(f) for f in files)
     print(f"файлов {len(files)}, объём {human(total)}")
 
     for i, path in enumerate(sorted(files), 1):
         name = os.path.basename(path)
         size = os.path.getsize(path)
-        existing = find_existing(token, a.folder_id, name)
+        existing = find_existing(token, folder_id, name)
         if existing and a.skip_existing:
             print(f"[{i}/{len(files)}] {name}: уже есть, пропуск")
             continue
         file_id = existing[0]["id"] if existing and not a.keep_both else None
         print(f"[{i}/{len(files)}] {name}: {human(size)}" + (" (новая версия)" if file_id else ""))
-        got = upload(path, token, a.folder_id, file_id)
+        got = upload(path, token, folder_id, file_id)
         print(f"  готово: https://drive.google.com/file/d/{got.get('id', file_id)}")
 
 

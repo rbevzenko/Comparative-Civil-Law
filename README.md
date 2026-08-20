@@ -298,10 +298,7 @@ Google Диска возобновляемой заливкой. Состав н
 в [docs/backup.md](docs/backup.md).
 
 ```bash
-python3 scripts/backup.py --out ~/backups \
-    --service-url https://<домен> --env-file ~/.corpus.env
-python3 scripts/upload_to_drive.py --folder-id <id папки> \
-    --env-file ~/.corpus.env ~/backups/comparative-civil-law-<дата>
+scripts/weekly_backup.sh          # дамп базы, сборка набора, заливка на Диск
 ```
 
 ## Известные ограничения этого захода
