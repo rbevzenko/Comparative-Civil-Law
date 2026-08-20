@@ -32,7 +32,7 @@ S=/root/.claude/skills/synced/complaw-corpus/scripts
 ENVFILE="${ENVFILE:-/home/user/.corpus.env}"
 BASE="${BASE:-https://37-27-248-75.sslip.io}"
 
-BOOK=""; PDF=""; PAGES=""; PROFILE=""; MARKER=""; SUPMAX="7.2"; UPLOAD=1; NOTES=1
+BOOK=""; PDF=""; PAGES=""; PROFILE=""; MARKER=""; SUPMAX="7.2"; UPLOAD=1; NOTES=1; DETAB=0
 LEVELS=()
 while [ $# -gt 0 ]; do
   case "$1" in
@@ -42,6 +42,7 @@ while [ $# -gt 0 ]; do
     --profile) PROFILE="$2"; shift 2;;
     --marker-line) MARKER="--marker-line"; shift;;
     --keep-notes) NOTES=0; shift;;
+    --detab) DETAB=1; shift;;
     --sup-max) SUPMAX="$2"; shift 2;;
     --level) LEVELS+=(--level "$2"); shift 2;;
     --no-upload) UPLOAD=0; shift;;
@@ -54,6 +55,14 @@ B="$R/books/$BOOK"
 
 echo "== 1/8 разбор полос"
 python3 "$S/pages_digital.py" "$PDF" --book "$B" --profile "$PROFILE" --pages "$PAGES" | tail -2
+# У части книг рубрики пробелы в выключенных строках заменены табуляциями
+# («order\tto\tpromote»). Снимается до всего остального: иначе шаблоны
+# заголовков и сносок не совпадут ни с чем.
+if [ "$DETAB" = "1" ]; then
+  echo "== 1a/8 табуляции вместо пробелов"
+  python3 "$R/scripts/detab_lines.py" --book "$B" 2>&1 | grep -E "строк|Записано" | head -2 || true
+fi
+
 # rebuild_notes переписывает поле notes ВСЕГДА, даже когда штатный разбор
 # уже справился: у Vicente обычный режим затёр правильно найденные сноски,
 # а у Gordley --marker-line дал ноль вместо 885, потому что номер сноски
@@ -61,22 +70,24 @@ python3 "$S/pages_digital.py" "$PDF" --book "$B" --profile "$PROFILE" --pages "$
 # сначала смотреть, что вышло само.
 if [ "$NOTES" = "1" ]; then
   echo "== 2/8 аппарат сносок"
-  python3 "$R/scripts/rebuild_notes.py" --book "$B" --max-digits 4 $MARKER | head -2
+  python3 "$R/scripts/rebuild_notes.py" --book "$B" --max-digits 4 $MARKER 2>&1 | head -2 || true
 else
   echo "== 2/8 аппарат сносок: оставлен как разобран (--keep-notes)"
 fi
+# У переверстанных электронных книг колонцифр нет вовсе, и достраивать
+# нечего. grep без совпадений под `set -e` обрывал бы весь прогон.
 echo "== 3/8 колонцифры"
-python3 "$R/scripts/fill_printed_page.py" --book "$B" --sequential | grep -E "колонцифрой|достроено"
+python3 "$R/scripts/fill_printed_page.py" --book "$B" --sequential 2>&1 | grep -E "колонцифрой|достроено" || echo "  колонцифр в книге нет"
 echo "== 4/8 знаки сносок"
-python3 "$R/scripts/inline_superscripts.py" --book "$B" --size-max "$SUPMAX" | grep -E "^полос|знаков"
+python3 "$R/scripts/inline_superscripts.py" --book "$B" --size-max "$SUPMAX" 2>&1 | grep -E "^полос|знаков" || echo "  надстрочных знаков отдельными строками нет"
 echo "== 5/8 карточки"
 python3 "$S/extract.py" --book "$B" --profile "$PROFILE" --meta "$B/meta.json" | grep -E "Карточек"
 if [ ${#LEVELS[@]} -gt 0 ]; then
   echo "== 6/8 иерархия"
-  python3 "$R/scripts/hierarchy_from_headings.py" --book "$B" "${LEVELS[@]}" | grep -E "заголовков|карточек с иерархией"
+  python3 "$R/scripts/hierarchy_from_headings.py" --book "$B" "${LEVELS[@]}" 2>&1 | grep -E "заголовков|карточек с иерархией" || true
 fi
 echo "== 7/8 сборка абзацев"
-python3 "$R/scripts/reflow_card_text.py" --book "$B" | grep перебрано
+python3 "$R/scripts/reflow_card_text.py" --book "$B" 2>&1 | grep перебрано || true
 echo "== 8/8 контроль качества"
 python3 "$S/qa_report.py" --book "$B" > /dev/null
 python3 - "$B" <<'PYEOF'

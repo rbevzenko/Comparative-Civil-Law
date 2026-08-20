@@ -1,0 +1,88 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/martinez-velencoso-transfer-immovables",
+  "cards": 699,
+  "profile": "dcfr-ebook-reflow-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 1,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "frg.": 699
+    }
+  },
+  "coverage": {
+    "share": 0.9993,
+    "covered_chars": 962258,
+    "book_chars": 962956,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 1587,
+    "min": 22,
+    "max": 2057,
+    "too_short": [
+      "martinez-velencoso-transfer-immovables:frg:69",
+      "martinez-velencoso-transfer-immovables:frg:70",
+      "martinez-velencoso-transfer-immovables:frg:79",
+      "martinez-velencoso-transfer-immovables:frg:99",
+      "martinez-velencoso-transfer-immovables:frg:100",
+      "martinez-velencoso-transfer-immovables:frg:157",
+      "martinez-velencoso-transfer-immovables:frg:177",
+      "martinez-velencoso-transfer-immovables:frg:178",
+      "martinez-velencoso-transfer-immovables:frg:179",
+      "martinez-velencoso-transfer-immovables:frg:198",
+      "martinez-velencoso-transfer-immovables:frg:207",
+      "martinez-velencoso-transfer-immovables:frg:263",
+      "martinez-velencoso-transfer-immovables:frg:309",
+      "martinez-velencoso-transfer-immovables:frg:330",
+      "martinez-velencoso-transfer-immovables:frg:343"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0,
+    "cards_with_calls_but_no_notes": 431,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 698,
+      "2": 1
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

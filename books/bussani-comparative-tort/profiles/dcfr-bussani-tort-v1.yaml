@@ -1,0 +1,45 @@
+id: dcfr-bussani-tort-v1
+publisher: Edward Elgar
+jurisdiction: DCFR
+language: en
+# Mauro Bussani & Anthony J. Sebok (eds), Comparative Tort Law. Global
+# Perspectives (2015), Edward Elgar. 578 полос, цифровой PDF.
+#
+# Вёрстка Elgar — та же, что у Vicente: тело 10.0, сноски 9.0 (разница в
+# один пункт, но выдержана), колонтитул 10.0 с колонцифрой, 5.8 знак
+# сноски в тексте, 5.2 номер сноски в аппарате.
+#
+# Колонтитул на 64 из 733 — это 0.087.
+#
+# Единица — ПОЛОСА, адрес — печатная страница.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  # Кегль сносок 9.0 против 10.0 у тела: разница в один пункт, но выдержана.
+  # Порог по умолчанию (медиана минус 1.5) их бы не взял, поэтому задан явно.
+  mode: font_bottom
+  note_size_max: 9.5
+  bottom_band: 0.45
+
+printed_page:
+  # Колонтитул на 68 из 734 — это 0.093, полоса взята чуть шире.
+  band: [0.10, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+\D'
+    - '\D\s+(\d{1,4})$'
+
+junk:
+  header_band: 0.10
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'
