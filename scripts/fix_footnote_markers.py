@@ -40,6 +40,8 @@ import re
 
 # «29 Dazu näher …» — знак и сразу текст.
 BARE = re.compile(r"^(\d{1,3})\s+(?=\S)")
+# Те же три правила под нумерацию длиннее трёх знаков: у выгрузок Westlaw
+# сноски нумеруются сквозняком по тому и доходят до «1449.».
 # «5 Ob 142/68», «3 Ob 627/82» — номер дела, а не знак сноски. Отделения
 # суда мало: «103 Ob die Rechtswahl wirksam ist…» — это сноска 103, начатая
 # с немецкого «ob» (ли), и без требования цифры после отделения она теряется.
@@ -48,6 +50,16 @@ CASE = re.compile(r"^\d{1,3}\s+(?:Ob|Ob[AS]|Präs|Nc|Fsc|Ds|Nd)\s+\d")
 LONE = re.compile(r"^[\(\[]?(\d{1,3})[\)\].]?$")
 # Штатные знаки со скобкой/точкой — их пайплайн читает и сам.
 PUNCT = re.compile(r"^(?:\((\d{1,3})\)|\[(\d{1,3})\]|(\d{1,3})[\).])\s+(?=\S)")
+
+
+def widen(digits):
+    """Те же правила под номер сноски длиной до `digits` знаков."""
+    global BARE, CASE, LONE, PUNCT
+    d = "{1,%d}" % digits
+    BARE = re.compile(r"^(\d%s)\s+(?=\S)" % d)
+    CASE = re.compile(r"^\d%s\s+(?:Ob|Ob[AS]|Präs|Nc|Fsc|Ds|Nd)\s+\d" % d)
+    LONE = re.compile(r"^[\(\[]?(\d%s)[\)\].]?$" % d)
+    PUNCT = re.compile(r"^(?:\((\d%s)\)|\[(\d%s)\]|(\d%s)[\).])\s+(?=\S)" % (d, d, d))
 
 
 def parse_page(note_lines, page):
@@ -102,8 +114,13 @@ def parse_page(note_lines, page):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--book", required=True)
+    ap.add_argument("--max-digits", type=int, default=3,
+                    help="сколько знаков может быть в номере сноски")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
+
+    if a.max_digits != 3:
+        widen(a.max_digits)
 
     path = os.path.join(a.book, "work", "pages.jsonl")
     before = after = pages_touched = unnumbered = carried_merged = 0

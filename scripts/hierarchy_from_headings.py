@@ -32,6 +32,7 @@ import argparse
 import json
 import os
 import re
+import sys
 
 
 def main():
@@ -45,15 +46,32 @@ def main():
                     help="строка, которая продолжением заголовка не считается")
     ap.add_argument("--drop-trailing-marker", action="store_true",
                     help="снять знак сноски, приклеившийся к последнему слову заголовка")
+    ap.add_argument("--pdf",
+                    help="читать заголовки прямо из PDF, а не из work/pages.jsonl")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
 
     levels = [re.compile(rx) for rx in a.level]
     stops = [re.compile(rx) for rx in a.stop]
     pages = {}
-    for line in open(os.path.join(a.book, "work", "pages.jsonl"), encoding="utf-8"):
-        p = json.loads(line)
-        pages[p["pdf_page"]] = p
+    if a.pdf:
+        # Колонтитул выгрузки — он же источник иерархии — снимается профилем
+        # как мусор, иначе он попадает в текст карточки. Поэтому заголовки
+        # читаются из PDF заново, а не из очищенной модели страницы.
+        import pdfplumber
+        sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                        "..", "skills", "complaw-corpus", "scripts"))
+        import pipelib as P
+        with pdfplumber.open(a.pdf) as pdf:
+            for i, page in enumerate(pdf.pages):
+                lines = P.chars_to_lines(page.chars)
+                if not lines:
+                    continue
+                pages[i + 1] = {"pdf_page": i + 1, "height": float(page.height), "lines": lines}
+    else:
+        for line in open(os.path.join(a.book, "work", "pages.jsonl"), encoding="utf-8"):
+            p = json.loads(line)
+            pages[p["pdf_page"]] = p
 
     marks = []          # (полоса, доля высоты, уровень, заголовок)
     for pno in sorted(pages):
