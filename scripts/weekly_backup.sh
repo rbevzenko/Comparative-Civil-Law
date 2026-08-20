@@ -18,11 +18,13 @@
 # корне репозитория и в командную строку не попадают.
 
 set -euo pipefail
+trap 'echo "!! бэкап оборвался на строке $LINENO" >&2' ERR
 # Крон запускается с урезанным PATH, docker в нём обычно не находится.
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 
 cd "$(dirname "$(readlink -f "$0")")/.."
 REPO="$PWD"
+echo "=== $(date +'%F %T') бэкап начат, каталог $REPO"
 [ -f .env ] || { echo "нет .env в $REPO"; exit 1; }
 
 OUT="${BACKUP_OUT:-/root/backups}"
@@ -33,15 +35,20 @@ SET="$OUT/comparative-civil-law-$DAY"
 DUMP="$OUT/corpus-$DAY.dump"
 
 # Адрес сервиса и имена базы — из .env, чтобы не держать их в двух местах.
-# grep, а не source: в .env есть значения с пробелами и знаками доллара,
-# и выполнять этот файл как код незачем.
-env_get() { grep -E "^$1=" .env | head -1 | cut -d= -f2- | tr -d "\"'"; }
+# awk, а не source: в .env есть значения с пробелами и знаками доллара, и
+# выполнять этот файл как код незачем. И не `grep | head`: head закрывает
+# трубу после первой строки, grep получает SIGPIPE, а с `set -o pipefail`
+# это валит весь скрипт — молча, до первой печати. Один процесс без
+# конвейера такого не умеет.
+env_get() {
+    awk -F= -v key="$1" '$1 == key { sub(/^[^=]*=/, ""); gsub(/["\047]/, ""); print; exit }' .env
+}
 URL="${SERVICE_URL:-https://$(env_get MCP_DOMAIN)}"
 PGUSER_="$(env_get POSTGRES_USER)"; PGUSER_="${PGUSER_:-corpus}"
 PGDB_="$(env_get POSTGRES_DB)"; PGDB_="${PGDB_:-corpus}"
 
 mkdir -p "$OUT"
-echo "=== $(date +'%F %T') бэкап начат, сервис $URL"
+echo "сервис $URL, база $PGDB_ от имени $PGUSER_, набор в $SET"
 
 # Дамп пишется во временный файл и переименовывается только после успеха:
 # оборванный pg_dump иначе останется лежать под правильным именем и будет
@@ -64,7 +71,9 @@ rm -f "$DUMP"
 # Сортировка по ИМЕНИ, а не по времени: в имени стоит дата, и наборы,
 # созданные в одну минуту (первый запуск и проверочный), при сортировке по
 # mtime встают в произвольном порядке — можно снести свежий.
-ls -1d "$OUT"/comparative-civil-law-* 2>/dev/null | sort -r | tail -n "+$((KEEP + 1))" | while read -r old; do
+# `|| true`: когда наборов ещё нет, ls отдаёт ненулевой код и pipefail
+# уронил бы скрипт уже ПОСЛЕ удачной заливки — на пустом месте.
+{ ls -1d "$OUT"/comparative-civil-law-* 2>/dev/null || true; } | sort -r | tail -n "+$((KEEP + 1))" | while read -r old; do
     echo "убираю старый набор: $old"
     rm -rf "$old"
 done
