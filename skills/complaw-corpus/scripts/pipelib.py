@@ -165,34 +165,81 @@ def cluster_lines(tokens, tol=None):
 
 
 def drop_phantom_spaces(row):
-    """Убирает пробельные глифы, налезающие на соседнюю букву.
+    """Убирает пробельные глифы, нарисованные поверх соседней буквы.
 
     У Pearson (Smith, Property Law: Cases and Materials, 6th ed.) шрифт
-    рисует лишний пробел ПОВЕРХ предыдущего глифа: «Th» занимает
-    104.88–115.59, а пробел за ним — 110.23–112.50, то есть целиком внутри
-    буквы. Текстовый слой от этого разрывает слова: «Th e», «signifi cance»,
-    «aft er», «L and Law», «E quities». Настоящий пробел стоит МЕЖДУ
-    глифами и ни на один из них не налезает, поэтому правило чисто
-    геометрическое и книгам без этого дефекта ничего не делает.
+    ставит лишние пробелы поверх глифов, и текстовый слой рвёт слова:
+    «Th e», «signifi cance», «aft er», «Y axley», «L and Law». Разрывов на
+    книгу около 850.
+
+    Разбираются два случая, и оба — в порядке ПОТОКА, а не по x0:
+    сортировка по x0 сама по себе перемешивает пробел с курсивным глифом,
+    который начинается на сотую долю пункта левее.
+
+    1. Пробел нарисован ПОВЕРХ предыдущего глифа: у лигатуры «Th»
+       (104.88–115.59) следом идёт пробел 110.23–112.50, целиком внутри
+       буквы. Такой пробел ненастоящий.
+    2. Из пары одинаковых пробелов между курсивом и прямым начертанием
+       («Ingram  v  IRC») второй налезает на следующий глиф. Первый —
+       настоящий, второй лишний; условие «перед ним тоже пробел» и
+       отличает эту пару от одиночного настоящего пробела.
+
+    Настоящий одиночный пробел стоит между глифами и ни на один не
+    налезает, поэтому книгам без этого дефекта правило ничего не делает.
     """
-    out = []
-    n = len(row)
-    for i, ch in enumerate(row):
-        if (ch.get("text") or "").isspace():
-            eps = 0.25 * max(ch["x1"] - ch["x0"], 0.01)
-            best = 0.0
-            for o in (row[i - 1] if i else None, row[i + 1] if i + 1 < n else None):
-                if o is None or (o.get("text") or "").isspace():
-                    continue
-                best = max(best, min(ch["x1"], o["x1"]) - max(ch["x0"], o["x0"]))
-            if best > eps:
+    if any("_stream" in c for c in row):
+        order = sorted(row, key=lambda c: c["_stream"])
+    else:
+        order = sorted(row, key=lambda c: c["x0"])
+    drop = set()
+    n = len(order)
+    for i, ch in enumerate(order):
+        if not (ch.get("text") or "").isspace():
+            continue
+        w = max(ch["x1"] - ch["x0"], 0.01)
+        prev = order[i - 1] if i else None
+        nxt = order[i + 1] if i + 1 < n else None
+        prev_is_space = prev is None or (prev.get("text") or "").isspace()
+        if prev is not None and not prev_is_space:
+            ov = min(ch["x1"], prev["x1"]) - max(ch["x0"], prev["x0"])
+            if ov > 0.5 * w:
+                drop.add(id(ch))
                 continue
-        out.append(ch)
-    return out
+        if prev_is_space and nxt is not None and not (nxt.get("text") or "").isspace():
+            ov = min(ch["x1"], nxt["x1"]) - max(ch["x0"], nxt["x0"])
+            if ov > 0.25 * w:
+                drop.add(id(ch))
+
+    # Второй проход — уже в порядке x0, в котором строка и будет собрана.
+    # Сортировка ставит пробел то до, то после налезающего на него глифа
+    # (ключ у cluster_lines — (top, x0), а top у пробела и у буквы разные),
+    # поэтому одного прохода по потоку мало: «( 2) H ow» получается из
+    # пробелов, уехавших ЗА свою букву. Здесь условие строже — пробел должен
+    # целиком помещаться внутри соседнего глифа; настоящий пробел стоит
+    # встык и внутрь не помещается никогда.
+    rest = [c for c in row if id(c) not in drop]
+    rest.sort(key=lambda c: c["x0"])
+    for i, ch in enumerate(rest):
+        if not (ch.get("text") or "").isspace():
+            continue
+        # Соседа ищем через пробелы: подряд идущих пробелов бывает по три,
+        # и «ближайший сосед по списку» у второго из них — снова пробел.
+        left = next((o for o in reversed(rest[:i]) if not (o.get("text") or "").isspace()), None)
+        right = next((o for o in rest[i + 1:] if not (o.get("text") or "").isspace()), None)
+        for o in (left, right):
+            if o is None:
+                continue
+            if ch["x0"] >= o["x0"] - 0.05 and ch["x1"] <= o["x1"] + 0.05:
+                drop.add(id(ch))
+                break
+    return [c for c in row if id(c) not in drop]
 
 
 def chars_to_lines(chars):
     """Ветка A: символы pdfplumber → строки со словами и координатами."""
+    for i, ch in enumerate(chars):
+        if "_stream" not in ch:
+            ch["_stream"] = i
     lines = []
     for row in cluster_lines(chars):
         row = drop_phantom_spaces(sorted(row, key=lambda c: c["x0"]))
@@ -247,7 +294,10 @@ def _space_gap(row):
 
 def _mk_word(chs):
     return {
-        "text": "".join(c["text"] for c in chs).strip(),
+        # Подряд идущие пробелы схлопываются: у книг с двойным пробелом между
+        # курсивом и прямым начертанием («Ingram  v  IRC») иначе остаётся
+        # рваная разрядка внутри названия дела.
+        "text": re.sub(r"\s{2,}", " ", "".join(c["text"] for c in chs)).strip(),
         "x0": min(c["x0"] for c in chs), "x1": max(c["x1"] for c in chs),
         "top": min(c["top"] for c in chs), "bottom": max(c["bottom"] for c in chs),
         "size": _median([c["size"] for c in chs]),
