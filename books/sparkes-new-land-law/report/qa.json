@@ -1,0 +1,102 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/sparkes-new-land-law",
+  "cards": 1651,
+  "profile": "hart-sparkes-land-law-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9988,
+    "rows": 36,
+    "gaps": [
+      {
+        "family": "para.",
+        "section": "32",
+        "from": 43,
+        "to": 46,
+        "missing": 2
+      }
+    ],
+    "gaps_total": 1,
+    "missing_total": 2,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "para.": 1651
+    }
+  },
+  "coverage": {
+    "share": 0.9903,
+    "covered_chars": 1546722,
+    "book_chars": 1561911,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 2119,
+        "from": 1420937,
+        "to": 1423056
+      }
+    ]
+  },
+  "lengths": {
+    "median": 793,
+    "min": 40,
+    "max": 3930,
+    "too_short": [
+      "sparkes-new-land-law-2:para:6/26",
+      "sparkes-new-land-law-2:para:8/12",
+      "sparkes-new-land-law-2:para:9/13",
+      "sparkes-new-land-law-2:para:9/34",
+      "sparkes-new-land-law-2:para:10/42",
+      "sparkes-new-land-law-2:para:10/46",
+      "sparkes-new-land-law-2:para:15/52",
+      "sparkes-new-land-law-2:para:17/23",
+      "sparkes-new-land-law-2:para:18/8",
+      "sparkes-new-land-law-2:para:19/13",
+      "sparkes-new-land-law-2:para:20/30",
+      "sparkes-new-land-law-2:para:21/17",
+      "sparkes-new-land-law-2:para:21/18",
+      "sparkes-new-land-law-2:para:21/41",
+      "sparkes-new-land-law-2:para:25/5"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.57,
+    "footnotes_total": 6458,
+    "unparsed_blocks": 22,
+    "per_card_median": 1,
+    "cards_with_calls_but_no_notes": 432,
+    "notes_without_visible_call": 5248
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 145,
+      "2": 1506
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 1
+  },
+  "absorbed_units": 0,
+  "stops": []
+}
