@@ -9,13 +9,13 @@
 | Карточек, перенесённых из другого прогона | 0 | — |
 | Пропусков в нумерации | 0 (номеров: 0) | — |
 | Дублей номеров | 0 | — |
-| Длина карточки, медиана | 3051 символов | — |
+| Длина карточки, медиана | 3047 символов | — |
 | Карточек со сносками | 56% (всего сносок 738) | — |
 | Блоков сносок без читаемых номеров | 0 | — |
 | Мёртвых страниц | 0 | — |
 | Одинаковых страниц | 0 | — |
 | Карточек без иерархии | 0 | — |
-| Внутренние отсылки разрешаются | 100.0% (0 из 147 не нашлись) | — |
+| Внутренние отсылки разрешаются | 100.0% (0 из 204 не нашлись) | — |
 | Слабых страниц OCR | 0 | — |
 | Спорных номеров | 0 | — |
 | Поглощённых единиц (contains_also) | 0 | — |
@@ -39,9 +39,9 @@ order to decide the extent of Miss Anderson’s beneficial interest in Stone Cot
 the principle on which such a decision ought to be made, a brief diversion into the burgeoning
 question of the …
 
-> [69] S ee p 250 above.
-> [70] [ 2000] Ch 162 at p 176; see Extract 5 .2.13 above.
-> [71] [ 2005] Fam 211 at [71]; Extracts 8.2.1 and 8.6.1 above. Note the criticism of Gardner (2004) 120 LQR 541.
+> [69] See p 250 above.
+> [70] [2000] Ch 162 at p 176; see Extract 5.2.13 above.
+> [71] [2005] Fam 211 at [71]; Extracts 8.2.1 and 8.6.1 above. Note the criticism of Gardner (2004) 120 LQR 541.
 
 ### smith-property-law-6:extract:16.3/3
 *Smith, Property Law: Cases and Materials, 6th edn Extract 16.3.3*
@@ -115,7 +115,7 @@ to the grantor leaving the purchase price outstanding as a loan secured on the p
 present purposes, the expression ‘clog on the equity of redemption’ means an objectionable
 restriction on the rights of a borrowe…
 
-> [15] [ 2007] 1 P&CR 34.
+> [15] [2007] 1 P&CR 34.
 
 ### smith-property-law-6:extract:20.1/4
 *Smith, Property Law: Cases and Materials, 6th edn Extract 20.1.4*
@@ -135,7 +135,7 @@ However, I consider that the view cannot stand in light of the reasoning of the 
 in Beswick v Beswick [1968] AC 58. In that case Lord Upjohn discussed the history and ambit
 of section 56 in some detail, at pp 102–107. Although he described his views as ‘obiter …
 
-> [8] 5 2 LJ Ch 34 at p 39, approved by the Court of Appeal in Grant v Edmondson [1931] 1 Ch 1 at p 27.
+> [8] 52 LJ Ch 34 at p 39, approved by the Court of Appeal in Grant v Edmondson [1931] 1 Ch 1 at p 27.
 
 ### smith-property-law-6:extract:12.2/6
 *Smith, Property Law: Cases and Materials, 6th edn Extract 12.2.6*
@@ -143,7 +143,7 @@ of section 56 in some detail, at pp 102–107. Although he described his views a
 Нормы: Family Law Act 1996, ss 30, s 33(3), s 33(6), s 62(2), s 62(1), s 31, s 35, s 40, s 30, s 33, s 36, s 13, s 14 | отсылки: —
 
 Family Law Act 1996, ss 30, 33, 36
-3 0.—(1) This section applies if—
+30.—(1) This section applies if—
 (a) one spouse or civil partner (‘A’) is entitled to occupy a dwelling-house by virtue of—
 (i) a beneficial estate or interest or contract; or
 (ii) any enactment giving A the right to remain in occupation; and
@@ -153,13 +153,13 @@ Family Law Act 1996, ss 30, 33, 36
 part of it by A except with the leave of the court given by an order under section 33;
 (b) if not in occupation, a right with the leave of the court so given to enter into and occupy
 the dwelling-house.
-3 3.—(1) If—
+33.—(1) If—
 (a) a person (‘the person entitled’)—
 (i) is entitled to occupy a dwelling-house by virtue of a beneficial estate or interest or
-contract or by virtue of any enac…
+contract or by virtue of any enactm…
 
-> [9] C ompare the position regarding sale: p 418 below.
-> [10] B ut only if the payee’s rights have been restricted under s 13.
+> [9] Compare the position regarding sale: p 418 below.
+> [10] But only if the payee’s rights have been restricted under s 13.
 
 ### smith-property-law-6:extract:21.4/15
 *Smith, Property Law: Cases and Materials, 6th edn Extract 21.4.15*
@@ -179,8 +179,8 @@ fixing a time for payment of the money – and at last there came the final orde
 forecl…
 
 > [24] LPA, s 91(1).
-> [25] Lockhart vHardy (1846) 9 Beav 349 (50 ER 378); Rudge v Richens (1873) LR 8 CP 358. The reasoning is based on the mortgagor’s entitlement to redeem if repayment of the secured loan is required.
-> [26] L aw Com No 204, para 7.27, recommended its abolition.
+> [25] Lockhart v Hardy (1846) 9 Beav 349 (50 ER 378); Rudge v Richens (1873) LR 8 CP 358. The reasoning is based on the mortgagor’s entitlement to redeem if repayment of the secured loan is required.
+> [26] Law Com No 204, para 7.27, recommended its abolition.
 
 ### smith-property-law-6:extract:5.7/2
 *Smith, Property Law: Cases and Materials, 6th edn Extract 5.7.2*

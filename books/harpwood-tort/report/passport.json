@@ -1,0 +1,226 @@
+{
+  "path": "/home/user/books/uk/harpwood-tort.pdf",
+  "sha256": "47408fad907abe9de81aa46b7ead6039e682371517dc580cf0634ea70e4c0a8c",
+  "pages": 588,
+  "sampled_pages": [
+    89,
+    100,
+    111,
+    122,
+    133,
+    144,
+    155,
+    166,
+    177,
+    188,
+    199,
+    210,
+    221,
+    232,
+    243,
+    254,
+    265,
+    276,
+    287,
+    298,
+    309,
+    320,
+    331,
+    342,
+    353,
+    364,
+    375,
+    386,
+    397,
+    408,
+    419,
+    430,
+    441,
+    452,
+    463,
+    474,
+    485,
+    496,
+    507,
+    518
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 27,
+    "max_depth": 1,
+    "resolved_pages": 27,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "BOOK COVER",
+        "page": 1,
+        "depth": 0
+      },
+      {
+        "title": "TITLE",
+        "page": 4,
+        "depth": 0
+      },
+      {
+        "title": "COPYRIGHT",
+        "page": 5,
+        "depth": 0
+      },
+      {
+        "title": "CONTENTS",
+        "page": 8,
+        "depth": 0
+      },
+      {
+        "title": "1 AN OVERVIEW OF THE LAW OF TORT",
+        "page": 68,
+        "depth": 0
+      },
+      {
+        "title": "2 INTRODUCTION TO THE TORT OF NEGLIGENCE",
+        "page": 88,
+        "depth": 0
+      },
+      {
+        "title": "3 DUTY OF CARE  GENERAL PRINCIPLES",
+        "page": 98,
+        "depth": 0
+      },
+      {
+        "title": "4 DUTY OF CARE  PSYCHIATRIC INJURY",
+        "page": 114,
+        "depth": 0
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 2679,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 1.0,
+    "offset_mode": -67,
+    "offset_stable": true,
+    "sample": [
+      {
+        "pdf_page": 89,
+        "printed": 22
+      },
+      {
+        "pdf_page": 100,
+        "printed": 33
+      },
+      {
+        "pdf_page": 111,
+        "printed": 44
+      },
+      {
+        "pdf_page": 122,
+        "printed": 55
+      },
+      {
+        "pdf_page": 133,
+        "printed": 66
+      },
+      {
+        "pdf_page": 144,
+        "printed": 77
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "10.0": 93368,
+      "9.0": 3969,
+      "13.0": 1069,
+      "11.0": 796,
+      "9.8": 142,
+      "8.2": 112,
+      "14.0": 107,
+      "9.9": 76
+    },
+    "body": 10.0,
+    "candidates_footnote": []
+  },
+  "footnotes": {
+    "small_font_chars": 110,
+    "share_at_page_bottom": 1.0
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 2,
+    "left_edges": [
+      47,
+      62,
+      26,
+      121
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [
+    {
+      "line": "Principles of Tort Law",
+      "pages": 20
+    }
+  ],
+  "units": {},
+  "text_noise": {
+    "words": 16607,
+    "suspicious": 3,
+    "share": 0.0002,
+    "sample": [
+      "PTSD",
+      "PTSD,",
+      "PTSD"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        47.0,
+        386.0
+      ],
+      "even": [
+        47.0,
+        387.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "EN": 12
+  },
+  "verdict": {
+    "state": "непригоден",
+    "branch": "A",
+    "problems": [
+      "Ни один паттерн единицы цитирования не сработал. Либо книга без сквозной нумерации (режим heading), либо паттерн нестандартный — смотреть глазами."
+    ],
+    "notes": [
+      "Кегль сносок не отделяется от основного текста — отделять по положению на полосе.",
+      "Кликабельных сносок нет — привязка по кеглю и положению.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы.",
+      "Повторяющийся мусор (1 шаблонов) — вычистить первым шагом."
+    ]
+  }
+}

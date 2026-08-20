@@ -17,15 +17,15 @@
   },
   "coverage": {
     "share": 0.9961,
-    "covered_chars": 2644717,
-    "book_chars": 2654993,
+    "covered_chars": 2643360,
+    "book_chars": 2653635,
     "cards_without_offsets": 0,
     "biggest_holes": []
   },
   "lengths": {
-    "median": 3051,
+    "median": 3047,
     "min": 288,
-    "max": 35383,
+    "max": 35372,
     "too_short": [],
     "too_long": []
   },
@@ -34,7 +34,7 @@
     "footnotes_total": 738,
     "unparsed_blocks": 0,
     "per_card_median": 1,
-    "cards_with_calls_but_no_notes": 43,
+    "cards_with_calls_but_no_notes": 42,
     "notes_without_visible_call": 412
   },
   "dead_pages": {
@@ -54,7 +54,7 @@
     }
   },
   "internal_refs": {
-    "refs_total": 147,
+    "refs_total": 204,
     "unresolved": 0,
     "resolved_share": 1.0,
     "sample": []
