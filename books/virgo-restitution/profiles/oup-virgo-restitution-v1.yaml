@@ -1,0 +1,59 @@
+id: oup-virgo-restitution-v1
+publisher: Oxford University Press
+jurisdiction: UK
+language: en
+# Graham Virgo, The Principles of the Law of Restitution, 3rd ed.
+# Издательский PDF, 815 страниц, кегль тела 9.8.
+#
+# СВОЕЙ ЕДИНИЦЫ ЦИТИРОВАНИЯ У КНИГИ НЕТ: ни номеров абзацев, ни нумерованных
+# разделов сквозняком. Есть только заголовки разной глубины: «5. THE
+# PRINCIPAL TYPES…» (кегль 12), «(A) MONEY HAD AND RECEIVED» (9.8),
+# «(ii) The Process of Rescission» (10.2), «(b) The Defendant Must Not…»
+# (9.0). Поэтому режим heading: единица — подраздел по заголовку, более
+# дробную единицу не изобретаем.
+#
+# Адресом служит типографская страница: так эту книгу и цитируют. Номер
+# читается из колонтитула («78 THE PRINCIPLES OF THE LAW OF RESTITUTION»)
+# на 100 полосах из 102 в выборке. Две карточки с одной полосы получают
+# один адрес — это честно, они и стоят на одной странице.
+
+units:
+  - type: "p."
+    id_prefix: "sec"
+    mode: heading
+    # Заголовок: номер или буква в скобках, дальше прописная, вся строка без
+    # точки и не длиннее 70 знаков. Точка и длина отсекают перечисления
+    # внутри абзаца, набранные тем же кеглем.
+    pattern: '^(?:\d{1,2}\.\s+[A-Z]|\([A-Za-z]{1,4}\)\s+[A-Z])[^.]{0,70}$'
+    address_template: "p. {page}"
+
+address:
+  template: "p. {page}"
+
+footnotes:
+  # Тело 9.8, сноски 8.0. Полоса низкая: блок сносок занимает до двух третей
+  # полосы.
+  mode: font_bottom
+  note_size_max: 8.5
+  bottom_band: 0.25
+
+printed_page:
+  band: 0.06
+  patterns:
+    - '^(\d{1,4})\s'
+    - '\s(\d{1,4})$'
+
+junk:
+  header_band: 0.055
+
+statutory:
+  patterns:
+    - '\b[A-Z][A-Za-z’\'' ]{3,40}Act\s+\d{4}(?:\s+ss?\.?\s*\d+[A-Za-z]*)?'
+    - '\bss?\s?\d+[A-Za-z]*(?:\(\d+\))?'
+
+cross_refs:
+  patterns:
+    - '\bChapter\s+\d{1,2}\b'
+
+citation:
+  template: "{cite_as} {address}"

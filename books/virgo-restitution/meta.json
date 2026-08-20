@@ -1,12 +1,19 @@
 {
-  "book_id": "virgo-restitution",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
+  "book_id": "virgo-restitution-3",
+  "authors": [
+    "Graham Virgo"
+  ],
+  "title": "The Principles of the Law of Restitution",
+  "edition": "3rd ed.",
+  "year": 2015,
+  "publisher": "Oxford University Press",
+  "jurisdiction": "UK",
+  "language": "en",
   "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "cite_as": "Virgo, The Principles of the Law of Restitution, 3rd edn",
+  "pdf_pages_total": 815,
+  "body_pages_pdf": "46-786",
+  "printed_page_offset": -157,
+  "notes": "Титул (f4): «THE PRINCIPLES OF THE LAW OF RESTITUTION, Third Edition, GRAHAM VIRGO», Oxford University Press. СВОЕЙ ЕДИНИЦЫ ЦИТИРОВАНИЯ У КНИГИ НЕТ: ни номеров абзацев, ни сквозной нумерации разделов. Единицей взят подраздел по заголовку, адресом — типографская страница из колонтитула. Тело f46–f786.",
+  "service_source_id": "b809efa9-4c9a-4a75-b753-587e0ea24b03"
 }

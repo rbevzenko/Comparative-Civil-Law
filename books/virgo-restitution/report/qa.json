@@ -1,0 +1,104 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/virgo-restitution",
+  "cards": 868,
+  "profile": "oup-virgo-restitution-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 1,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 868
+    }
+  },
+  "coverage": {
+    "share": 0.9996,
+    "covered_chars": 2253020,
+    "book_chars": 2253914,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 1461,
+    "min": 9,
+    "max": 35538,
+    "too_short": [
+      "virgo-restitution-3:sec:2",
+      "virgo-restitution-3:sec:3",
+      "virgo-restitution-3:sec:6",
+      "virgo-restitution-3:sec:14",
+      "virgo-restitution-3:sec:17",
+      "virgo-restitution-3:sec:35",
+      "virgo-restitution-3:sec:42",
+      "virgo-restitution-3:sec:64",
+      "virgo-restitution-3:sec:83",
+      "virgo-restitution-3:sec:104",
+      "virgo-restitution-3:sec:108",
+      "virgo-restitution-3:sec:129",
+      "virgo-restitution-3:sec:142",
+      "virgo-restitution-3:sec:153",
+      "virgo-restitution-3:sec:186"
+    ],
+    "too_long": [
+      "virgo-restitution-3:sec:168",
+      "virgo-restitution-3:sec:205",
+      "virgo-restitution-3:sec:208",
+      "virgo-restitution-3:sec:248",
+      "virgo-restitution-3:sec:270",
+      "virgo-restitution-3:sec:271",
+      "virgo-restitution-3:sec:401",
+      "virgo-restitution-3:sec:416",
+      "virgo-restitution-3:sec:576",
+      "virgo-restitution-3:sec:619",
+      "virgo-restitution-3:sec:627",
+      "virgo-restitution-3:sec:724"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.79,
+    "footnotes_total": 3836,
+    "unparsed_blocks": 4,
+    "per_card_median": 2.0,
+    "cards_with_calls_but_no_notes": 43,
+    "notes_without_visible_call": 1146
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "3": 35,
+      "4": 262,
+      "5": 411,
+      "6": 80,
+      "7": 80
+    }
+  },
+  "internal_refs": {
+    "refs_total": 7,
+    "unresolved": 0,
+    "resolved_share": 1.0,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}
