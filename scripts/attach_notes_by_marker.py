@@ -111,9 +111,13 @@ def main():
                     here.append(pool[pending[j]])
                 skipped += ahead[-1] - k
                 k = ahead[-1] + 1
-            if here:
-                card["footnotes"] = sorted(here, key=lambda n: n["number"])
-                attached += len(here)
+            # Поле переписывается ВСЕГДА, даже пустым списком: иначе у
+            # карточки, которой на этом прогоне сносок не досталось,
+            # остаётся постраничная привязка от extract.py — та самая, ради
+            # замены которой скрипт и написан. На перезапуске это выглядит
+            # как сноски из чужой главы.
+            card["footnotes"] = sorted(here, key=lambda n: n["number"])
+            attached += len(here)
         orphan += len(pending) - k
 
     with_notes = sum(1 for c in cards if c.get("footnotes"))

@@ -117,24 +117,25 @@ def parse_page(note_lines, page, form="any", max_step=0, last=0):
             notes.append(cur)
             cur = None
 
+    def plausible(cand):
+        if max_step <= 0:
+            return cand > last
+        # Номер сноски растёт на единицу и перезапускается с 1 в новой
+        # главе. Всё остальное — год в скобках («(2007) Ch.1.»), год
+        # отдельной строкой или номер страницы в продолжении ссылки, и
+        # знаком сноски не является.
+        return cand == 1 or last < cand <= last + max_step
+
     for ln in note_lines:
         s = ln["text"].strip()
         if not s:
             continue
 
         m = LONE.match(s)
-        if m:
+        if m and (max_step <= 0 or plausible(int(m.group(1)))):
             close()
             pending = int(m.group(1))
             continue
-
-        def plausible(cand):
-            if max_step <= 0:
-                return cand > last
-            # Номер сноски растёт на единицу и перезапускается с 1 в новой
-            # главе. Всё остальное — год в скобках («(2007) Ch.1.») или номер
-            # страницы в продолжении ссылки, и знаком сноски не является.
-            return cand == 1 or last < cand <= last + max_step
 
         num = None
         cand, end = punct_form(s, form)
