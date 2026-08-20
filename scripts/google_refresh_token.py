@@ -77,6 +77,12 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--env-file", required=True)
     ap.add_argument("--write", action="store_true", help="дописать токен в файл ключей")
+    ap.add_argument(
+        "--code",
+        help="адрес приземления браузера (или голый код). Кладите в ОДИНАРНЫЕ кавычки: "
+        "в адресе есть знак &, и без кавычек оболочка порвёт его на куски",
+    )
+    ap.add_argument("--url-only", action="store_true", help="только напечатать ссылку согласия")
     a = ap.parse_args()
 
     env = read_env(a.env_file)
@@ -98,15 +104,25 @@ def main():
             "prompt": "consent",
         }
     )
-    print("\n1. Откройте эту ссылку в браузере (одной строкой, целиком):\n")
-    print(url)
-    print(
-        "\n2. Войдите своим аккаунтом и разрешите доступ. Если Google скажет,"
-        "\n   что приложение не проверено: Advanced -> Go to ... (unsafe)."
-        "\n3. Браузер приземлится на страницу developers.google.com/oauthplayground."
-        "\n   Скопируйте ВЕСЬ адрес из адресной строки и вставьте сюда.\n"
-    )
-    code = extract_code(input("Адрес или код: "))
+    if a.url_only:
+        print(url)
+        return
+
+    if not a.code:
+        print("\n1. Откройте эту ссылку в браузере (одной строкой, целиком):\n")
+        print(url)
+        print(
+            "\n2. Войдите своим аккаунтом и разрешите доступ до конца: кнопок"
+            "\n   «Continue»/«Allow» бывает две-три подряд. Если Google скажет, что"
+            "\n   приложение не проверено: Advanced -> Go to ... (unsafe)."
+            "\n3. Дождитесь, пока в адресной строке появится developers.google.com"
+            "\n   и внутри будет code=… . Пока там accounts.google.com — рано."
+            "\n4. Скопируйте ВЕСЬ адрес и выполните (кавычки обязательны):\n"
+        )
+        print(f"   python3 {sys.argv[0]} --env-file {a.env_file} --write \\")
+        print("       --code 'СЮДА_АДРЕС'\n")
+        return
+    code = extract_code(a.code)
 
     data = urllib.parse.urlencode(
         {

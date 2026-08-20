@@ -96,11 +96,14 @@ python3 scripts/upload_to_drive.py --folder-name "Comparative Civil Law Backups"
 **Быстрый путь — получить токен на самом сервере:**
 
 ```bash
-python3 scripts/google_refresh_token.py --env-file .env --write
+python3 scripts/google_refresh_token.py --env-file .env          # печатает ссылку
+python3 scripts/google_refresh_token.py --env-file .env --write \
+    --code 'https://developers.google.com/oauthplayground/?…code=4/0A…'
 ```
 
-Скрипт печатает ссылку, вы открываете её в браузере, разрешаете доступ и
-вставляете обратно адрес, на который приземлился браузер. Токен он
+Первая команда печатает ссылку согласия, вторая меняет на токен адрес, на
+который приземлился браузер. Адрес — в ОДИНАРНЫХ кавычках: в нём есть `&`,
+и без кавычек оболочка порвёт его на куски и уведёт часть в фон. Токен он
 записывает в `.env` сам — мимо буфера обмена, где длинная строка легко
 копируется наполовину. Нужны только `GOOGLE_OAUTH_CLIENT_ID` и
 `GOOGLE_OAUTH_CLIENT_SECRET`, уже лежащие в `.env`.
