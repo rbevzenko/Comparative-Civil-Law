@@ -70,3 +70,20 @@ class ChunkDetail(ChunkRead):
 class ChunkList(BaseModel):
     items: list[ChunkRead]
     total: int
+
+
+class ChunkWithFootnotes(ChunkRead):
+    """Чанк со сносками, но БЕЗ источника.
+
+    ChunkDetail сюда не годится: его поле `source` в списке заставило бы
+    подгружать источник на каждый чанк, а он у всей страницы один и тот же.
+    """
+
+    footnotes: list[FootnoteRead] = Field(default_factory=list)
+
+
+class ChunkDetailList(BaseModel):
+    """Ответ списка чанков с ?with_footnotes=true — чанк отдаётся со сносками."""
+
+    items: list[ChunkWithFootnotes]
+    total: int
