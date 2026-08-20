@@ -1,0 +1,42 @@
+id: dcfr-commoncore-palmer-v1
+publisher: Cambridge University Press
+jurisdiction: DCFR
+language: en
+# Vernon Valentine Palmer & Mauro Bussani (eds), The Recovery of Non-
+# Pecuniary Loss in European Contract Law (2015). Том серии Common Core,
+# но НЕ издательский PDF, а СКАН с распознаванием: кегли «плывут».
+#
+# Тело 9.5–10.1, сноски 7.8–8.2, колонтитул 6.7–6.9. Пороги поэтому
+# грубее, чем у остальных томов серии: между сносками и телом зазор
+# 8.2 → 9.3, в него и поставлен `note_size_max`.
+#
+# Единица — ПОЛОСА, адрес — печатная страница из колонтитула.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  mode: font_bottom
+  note_size_max: 8.6
+  bottom_band: 0.60
+
+printed_page:
+  # Колонтитул на 17–22 из 606 — это 0.036.
+  band: [0.045, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+\D'
+    - '[A-Za-z]\s+(\d{1,4})$'
+
+junk:
+  header_band: 0.05
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'
