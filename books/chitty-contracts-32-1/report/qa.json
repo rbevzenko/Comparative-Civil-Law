@@ -1,38 +1,23 @@
 {
   "book": "/home/user/Comparative-Civil-Law/books/chitty-contracts-32-1",
-  "cards": 3798,
+  "cards": 3800,
   "profile": "westlaw-proview-export-v1",
   "method": "digital",
   "continuity": {
-    "share": 0.9995,
+    "share": 1.0,
     "rows": 30,
-    "gaps": [
-      {
-        "family": "para.",
-        "section": "1",
-        "from": 117,
-        "to": 119,
-        "missing": 1
-      },
-      {
-        "family": "para.",
-        "section": "19",
-        "from": 58,
-        "to": 60,
-        "missing": 1
-      }
-    ],
-    "gaps_total": 2,
-    "missing_total": 2,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
     "duplicates": [],
     "duplicates_total": 0,
     "by_family": {
-      "para.": 3798
+      "para.": 3800
     }
   },
   "coverage": {
     "share": 0.995,
-    "covered_chars": 4987549,
+    "covered_chars": 4987536,
     "book_chars": 5012826,
     "cards_without_offsets": 0,
     "biggest_holes": []
@@ -104,8 +89,8 @@
     "depth_histogram": {
       "3": 81,
       "4": 1024,
-      "5": 2032,
-      "6": 661
+      "5": 2033,
+      "6": 662
     }
   },
   "internal_refs": {
