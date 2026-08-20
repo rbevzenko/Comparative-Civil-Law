@@ -1,0 +1,275 @@
+{
+  "path": "/home/user/books/uk/burrows-restatement-contract.pdf",
+  "sha256": "470f0a2a13c9ad8f12c17683c218b6f2323e01b0d853644df9c53146991388b0",
+  "pages": 309,
+  "sampled_pages": [
+    47,
+    52,
+    57,
+    62,
+    67,
+    72,
+    77,
+    82,
+    87,
+    92,
+    97,
+    102,
+    107,
+    112,
+    117,
+    122,
+    127,
+    132,
+    137,
+    142,
+    147,
+    152,
+    157,
+    162,
+    167,
+    172,
+    177,
+    182,
+    187,
+    192,
+    197,
+    202,
+    207,
+    212,
+    217,
+    222,
+    227,
+    232,
+    237,
+    242
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 318,
+    "max_depth": 4,
+    "resolved_pages": 318,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Cover",
+        "page": 1,
+        "depth": 0
+      },
+      {
+        "title": "A Restatement of the English Law of Contract",
+        "page": 4,
+        "depth": 0
+      },
+      {
+        "title": "Copyright",
+        "page": 5,
+        "depth": 0
+      },
+      {
+        "title": "Contents",
+        "page": 6,
+        "depth": 0
+      },
+      {
+        "title": "Advisory Group",
+        "page": 8,
+        "depth": 0
+      },
+      {
+        "title": "Introduction",
+        "page": 10,
+        "depth": 0
+      },
+      {
+        "title": "A RESTATEMENT OF THE ENGLISH LAW OF CONTRACT",
+        "page": 18,
+        "depth": 0
+      },
+      {
+        "title": "PART 1: GENERAL",
+        "page": 20,
+        "depth": 1
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 73,
+    "with_destination": 73,
+    "per_page": 1.8,
+    "sample": [
+      {
+        "page": 47,
+        "rect": [
+          60,
+          410,
+          86,
+          420
+        ]
+      },
+      {
+        "page": 47,
+        "rect": [
+          60,
+          410,
+          388,
+          420
+        ]
+      },
+      {
+        "page": 52,
+        "rect": [
+          54,
+          585,
+          80,
+          595
+        ]
+      }
+    ]
+  },
+  "text_layer": {
+    "median_chars_per_page": 2253,
+    "empty_pages_share": 0.03,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 1.0,
+    "offset_mode": -15,
+    "offset_stable": true,
+    "sample": [
+      {
+        "pdf_page": 47,
+        "printed": 32
+      },
+      {
+        "pdf_page": 52,
+        "printed": 37
+      },
+      {
+        "pdf_page": 62,
+        "printed": 47
+      },
+      {
+        "pdf_page": 67,
+        "printed": 52
+      },
+      {
+        "pdf_page": 72,
+        "printed": 57
+      },
+      {
+        "pdf_page": 77,
+        "printed": 62
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "10.0": 85121,
+      "10.5": 1261,
+      "9.0": 1105,
+      "8.0": 76
+    },
+    "body": 10.0,
+    "candidates_footnote": []
+  },
+  "footnotes": {
+    "small_font_chars": 76,
+    "share_at_page_bottom": 0.0
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      54,
+      60,
+      99,
+      93
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "n° голый номер в начале абзаца": {
+      "hits": 21,
+      "monotonic_share": 0.65,
+      "first": [
+        "39",
+        "40",
+        "48",
+        "5",
+        "7"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 22,
+      "monotonic_share": 0.62,
+      "first": [
+        "39",
+        "40",
+        "48",
+        "5",
+        "7"
+      ]
+    },
+    "para. англ. раздел-пункт": {
+      "hits": 1,
+      "monotonic_share": 0.0,
+      "first": [
+        "13–14"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 17052,
+    "suspicious": 7,
+    "share": 0.0004,
+    "sample": [
+      "GMBH",
+      "LGLR",
+      "Rlys",
+      "GmbH",
+      "DSND",
+      "GmbH",
+      "WTLR"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        60.0,
+        388.0
+      ],
+      "even": [
+        54.0,
+        383.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "EN": 2
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Кегль сносок не отделяется от основного текста — отделять по положению на полосе.",
+      "Сноски кликабельны — привязку берём из файла напрямую, без эвристик."
+    ]
+  }
+}

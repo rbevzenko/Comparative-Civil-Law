@@ -1,0 +1,83 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/burrows-restatement-contract",
+  "cards": 317,
+  "profile": "oup-burrows-restatement-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 317,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "s": 317
+    }
+  },
+  "coverage": {
+    "share": 0.9994,
+    "covered_chars": 576555,
+    "book_chars": 576886,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 1254,
+    "min": 41,
+    "max": 39155,
+    "too_short": [
+      "burrows-restatement-contract-1:s:16(3)(a)–(b)/66",
+      "burrows-restatement-contract-1:s:16(7)(b)/74",
+      "burrows-restatement-contract-1:s:17(4)/79",
+      "burrows-restatement-contract-1:s:26(3)(b)/134",
+      "burrows-restatement-contract-1:s:26(3)(d)/136",
+      "burrows-restatement-contract-1:s:26(3)(e)/137",
+      "burrows-restatement-contract-1:s:40(2)/216"
+    ],
+    "too_long": [
+      "burrows-restatement-contract-1:s:44(1)/231"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0,
+    "cards_with_calls_but_no_notes": 22,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "2": 3,
+      "3": 313,
+      "4": 1
+    }
+  },
+  "internal_refs": {
+    "refs_total": 340,
+    "unresolved": 0,
+    "resolved_share": 1.0,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

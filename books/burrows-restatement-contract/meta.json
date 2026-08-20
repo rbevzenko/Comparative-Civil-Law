@@ -1,0 +1,19 @@
+{
+  "book_id": "burrows-restatement-contract-1",
+  "authors": [
+    "Andrew Burrows"
+  ],
+  "title": "A Restatement of the English Law of Contract",
+  "edition": "1st ed.",
+  "year": 2016,
+  "publisher": "Oxford University Press",
+  "jurisdiction": "UK",
+  "language": "en",
+  "isbn": null,
+  "cite_as": "Burrows, A Restatement of the English Law of Contract",
+  "pdf_pages_total": 309,
+  "body_pages_pdf": "58-275",
+  "printed_page_offset": 15,
+  "notes": "Титул (f4): «A RESTATEMENT OF THE ENGLISH LAW OF CONTRACT. ANDREW BURROWS. ASSISTED BY AN ADVISORY GROUP OF ACADEMICS, JUDGES, AND PRACTITIONERS». Оборот (f5): Oxford University Press, «First Edition published in 2016». Книга состоит из двух частей: сам Restatement (f16–f54) и комментарий к нему (f58–f275). Комментарий ПОВТОРЯЕТ текст каждой секции и разбирает её, поэтому в корпус берётся только он — иначе каждая норма попадёт в корпус дважды.",
+  "service_source_id": "1540ae2f-ae99-411e-92b5-bb7bc7b88736"
+}
