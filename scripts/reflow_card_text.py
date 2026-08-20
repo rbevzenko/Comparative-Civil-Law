@@ -30,6 +30,10 @@ oder gesetzwidrige Geschäfte» дефис у «sitten-» СВОЙ, он зам�
 Конец абзаца от переноса строки отличает длина: строка, которая заметно
 короче остальных в этой карточке, кончает абзац (заголовок, конец мысли), и
 перевод строки после неё остаётся.
+
+Отдельно сохраняется начало пункта перечисления («(a)», «(iii)», «(2)»,
+«1.», маркер списка): в юридическом тексте каждый подпункт — отдельное
+правило, и склеивать их в сплошной абзац значит терять структуру нормы.
 """
 
 import os
@@ -53,6 +57,11 @@ SUSPENDED = {
     "en": {"or", "and", "nor", "to"},
 }
 SPACES = re.compile(r"[   \t]")
+
+# Перечисление начинает новую строку: «(a)», «(iii)», «(2)», «1.», маркер
+# списка. Иначе пункты слипаются в один абзац, и структура нормы, где
+# каждый подпункт — отдельное правило, читается как сплошной текст.
+ENUM = re.compile(r"^(?:\(\s?(?:[0-9]{1,3}|[a-z]{1,2}|[ivxlcdm]{1,6})\s?\)|[0-9]{1,3}[.)]\s|[•■□▪–—]\s)")
 
 
 def reflow(text, suspended, short_ratio=0.6):
@@ -89,6 +98,9 @@ def reflow(text, suspended, short_ratio=0.6):
         if prev.endswith("-"):
             first = re.split(r"[\s,.;:]", stripped, 1)[0].lower().strip("«»\"'")
             out = (prev + " " + stripped) if first in suspended else (prev[:-1] + stripped)
+            continue
+        if ENUM.match(stripped):
+            out = prev + "\n" + stripped
             continue
         ends_para = len(lines[i - 1].strip()) < full * short_ratio
         is_short = len(stripped) < full * short_ratio

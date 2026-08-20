@@ -285,10 +285,20 @@ def _heading(index, fam):
     """Запасной режим: единица — подраздел по заголовку источника.
 
     Более дробную единицу не изобретаем, даже если текст это позволяет (§7).
+
+    Кегль строки (`size_min` / `size_max`) отсекает то же, что и во `_flow`.
+    У Duddington, Law Express: Land Law заголовок отличается от тела ТОЛЬКО
+    кеглем (18 и 16 против 10) и никакого различимого паттерна не имеет:
+    это обычная фраза со строчной буквы.
     """
     rx = re.compile(fam["pattern"])
+    lo, hi = fam.get("size_min"), fam.get("size_max")
     out, n = [], 0
     for ln in index:
+        if lo is not None and (ln.get("size") is None or ln["size"] < lo):
+            continue
+        if hi is not None and (ln.get("size") is None or ln["size"] > hi):
+            continue
         m = rx.match(ln["text"])
         if not m:
             continue

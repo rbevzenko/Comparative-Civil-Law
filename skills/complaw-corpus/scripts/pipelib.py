@@ -235,6 +235,62 @@ def drop_phantom_spaces(row):
     return [c for c in row if id(c) not in drop]
 
 
+def repair_case_by_width(chars):
+    """Возвращает регистр буквам, у которых во встроенном шрифте перепутан ToUnicode.
+
+    У Pearson (Duddington, Law Express: Land Law, 3rd ed.) часть глифов
+    отдаёт в текстовый слой строчную букву вместо прописной: «lAnd lAw»
+    вместо «LAND LAW», «the law of Property act 1925» вместо «the Law of
+    Property Act 1925», «EWCa Civ 347», «ukHL 17».
+
+    Высота глифа тут не помогает — pdfplumber отдаёт её равной кеглю, — а
+    ШИРИНА помогает: в Helvetica прописная и строчная одной буквы всегда
+    разной ширины. В шрифте страницы у испорченной буквы ровно два значения
+    ширины: настоящее строчное («l» — 0.222 кегля) и прописное («L» — 0.5).
+    Большее и есть прописная.
+
+    Считается по одной странице: буква, встречающаяся на полосе только в
+    испорченном виде, останется как была — это осторожнее, чем угадывать.
+    """
+    def norm(c):
+        size = c.get("size") or 0
+        if size <= 0:
+            return None
+        return round((c["x1"] - c["x0"]) / size, 3)
+
+    widths = {}
+    for c in chars:
+        t = c.get("text") or ""
+        if len(t) != 1 or not t.isalpha() or not t.islower():
+            continue
+        w = norm(c)
+        if w is None:
+            continue
+        widths.setdefault((c.get("fontname"), t), set()).add(w)
+
+    upper = {}
+    for key, ws in widths.items():
+        lo, hi = min(ws), max(ws)
+        # Порог 1.04 отделяет пару «строчная/прописная» от дрожания округления:
+        # у «m» и «M» разница всего 7% (0.778 против 0.833).
+        if len(ws) >= 2 and hi >= lo * 1.04:
+            upper[key] = hi
+
+    if not upper:
+        return chars
+    for c in chars:
+        t = c.get("text") or ""
+        if len(t) != 1 or not t.isalpha() or not t.islower():
+            continue
+        target = upper.get((c.get("fontname"), t))
+        if target is None:
+            continue
+        w = norm(c)
+        if w is not None and abs(w - target) < 0.006:
+            c["text"] = t.upper()
+    return chars
+
+
 def chars_to_lines(chars):
     """Ветка A: символы pdfplumber → строки со словами и координатами."""
     for i, ch in enumerate(chars):
