@@ -1,0 +1,126 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/graziadei-commercial-trusts",
+  "cards": 556,
+  "profile": "dcfr-commoncore-cup-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9893,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "p.",
+        "section": null,
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 97,
+        "to": 99,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 99,
+        "to": 101,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 101,
+        "to": 103,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 531,
+        "to": 533,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 533,
+        "to": 535,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 6,
+    "missing_total": 6,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 556
+    }
+  },
+  "coverage": {
+    "share": 0.9995,
+    "covered_chars": 1136046,
+    "book_chars": 1136601,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2114,
+    "min": 22,
+    "max": 2838,
+    "too_short": [
+      "graziadei-commercial-trusts:p:1",
+      "graziadei-commercial-trusts:p:99",
+      "graziadei-commercial-trusts:p:533"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.83,
+    "footnotes_total": 1301,
+    "unparsed_blocks": 0,
+    "per_card_median": 2.0,
+    "cards_with_calls_but_no_notes": 13,
+    "notes_without_visible_call": 89
+  },
+  "dead_pages": {
+    "pages": [
+      48,
+      144,
+      146,
+      148,
+      578,
+      580
+    ],
+    "count": 6
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 101,
+      "2": 455
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}
