@@ -1,12 +1,14 @@
 {
   "book_id": "fr-wyckoff-construction",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
-  "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "authors": [
+    "Patricia Grelier Wyckoff"
+  ],
+  "title": "Pratique du droit de la construction",
+  "edition": null,
+  "year": 2007,
+  "publisher": "Eyrolles",
+  "jurisdiction": "FR",
+  "language": "fr",
+  "isbn": "978-2-212-12131-5",
+  "notes": ""
 }

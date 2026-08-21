@@ -1,12 +1,14 @@
 {
   "book_id": "fr-reboul-maupin-biens",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
-  "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "authors": [
+    "Nadège Reboul-Maupin"
+  ],
+  "title": "Droit des biens",
+  "edition": "9e éd.",
+  "year": 2022,
+  "publisher": "Dalloz",
+  "jurisdiction": "FR",
+  "language": "fr",
+  "isbn": "978-2-247-22025-0",
+  "notes": "Серия HyperCours Dalloz, электронное издание; ISBN numérique 978-2-247-22025-0. Ссылки-аннотации ведут в глоссарий, а не в сноски."
 }

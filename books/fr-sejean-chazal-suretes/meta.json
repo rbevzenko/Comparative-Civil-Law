@@ -1,12 +1,15 @@
 {
   "book_id": "fr-sejean-chazal-suretes",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
-  "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "authors": [
+    "Claire Séjean-Chazal",
+    "Gaël Piette"
+  ],
+  "title": "Droit des sûretés",
+  "edition": "19e éd. (Mémentos, 2025-2026)",
+  "year": 2025,
+  "publisher": "Gualino",
+  "jurisdiction": "FR",
+  "language": "fr",
+  "isbn": "978-2-297-28408-0",
+  "notes": "Серия Mémentos, № 62. Титул: «Droit des sûretés, 19e éd., 2025», учитывает закон от 30 апреля 2025 г. о залоге цифровых активов. Именной водяной знак покупателя внизу полосы вычищается как мусор."
 }

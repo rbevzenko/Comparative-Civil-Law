@@ -1,12 +1,15 @@
 {
   "book_id": "fr-thery-gijsbers-suretes",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
-  "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "authors": [
+    "Philippe Théry",
+    "Charles Gijsbers"
+  ],
+  "title": "Droit des sûretés",
+  "edition": null,
+  "year": 2022,
+  "publisher": "LGDJ",
+  "jurisdiction": "FR",
+  "language": "fr",
+  "isbn": "978-2-275-09500-4",
+  "notes": "Издание учитывает ордонанс 2021 г. о реформе обеспечительного права. Именной водяной знак покупателя вычищается как мусор."
 }

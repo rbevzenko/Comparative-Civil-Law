@@ -1,12 +1,15 @@
 {
   "book_id": "fr-lecannu-dondero-societes",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
+  "authors": [
+    "Paul Le Cannu",
+    "Bruno Dondero"
+  ],
+  "title": "Droit des sociétés",
+  "edition": "10e éd.",
+  "year": 2023,
+  "publisher": "LGDJ",
+  "jurisdiction": "FR",
+  "language": "fr",
   "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "notes": "Именной водяной знак покупателя внизу каждой полосы — вычищается как мусор."
 }

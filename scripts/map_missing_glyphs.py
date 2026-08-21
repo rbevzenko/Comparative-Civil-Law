@@ -12,6 +12,18 @@
 
 Подстановка не угадывается, а задаётся вручную: --map 2=N. Смотреть, какой
 это знак, надо по окружению — код cid у каждого шрифта свой.
+
+ЦЕЛЫЙ ШРИФТ РАЗБИРАЕТСЯ СМЕЩЕНИЕМ. У подмножества шрифта глифы нередко
+идут в порядке ASCII, только со сдвигом: у Симлера, Les sûretés (Précis
+Dalloz) cid 1 — пробел, cid 49 — «P», cid 66 — «a», то есть знак равен
+cid + 31. Перечислять девяносто пять подстановок по одной бессмысленно,
+поэтому есть `--offset НИЗ-ВЕРХ=СДВИГ`: cid из этого диапазона заменяется
+на chr(cid + сдвиг).
+
+Диапазон обязателен: за пределами ASCII порядок ломается. У того же Симлера
+cid 207 — это «é», а не chr(238), и такие знаки задаются поштучно через
+--map. Проверять надо по осмысленности: «Privilñge» вместо «Privilège»
+означает, что для этого cid сдвиг не тот.
 """
 
 import os
@@ -30,15 +42,27 @@ import re
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--book", required=True)
-    ap.add_argument("--map", action="append", required=True, metavar="CID=ЗНАК",
+    ap.add_argument("--map", action="append", default=[], metavar="CID=ЗНАК",
                     help="код cid и знак, которым его заменить; можно повторять")
+    ap.add_argument("--offset", action="append", default=[], metavar="НИЗ-ВЕРХ=СДВИГ",
+                    help="диапазон cid, который переводится в знак как chr(cid+сдвиг); "
+                         "можно повторять")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
 
     table = {}
+    for item in a.offset:
+        rng, _, shift = item.partition("=")
+        lo, _, hi = rng.partition("-")
+        for cid in range(int(lo), int(hi) + 1):
+            table[f"(cid:{cid})"] = chr(cid + int(shift))
+    # поштучные подстановки идут ПОСЛЕ диапазона и перекрывают его:
+    # у акцентированных знаков порядок глифов сдвигу не подчиняется
     for item in a.map:
         cid, _, ch = item.partition("=")
         table[f"(cid:{cid.strip()})"] = ch
+    if not table:
+        ap.error("нужен хотя бы один --map или --offset")
     rx = re.compile("|".join(re.escape(k) for k in table))
 
     path = os.path.join(a.book, "work", "pages.jsonl")

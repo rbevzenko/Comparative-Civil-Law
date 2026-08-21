@@ -43,8 +43,8 @@ exactement un transfert de créance qui se réalise sur le fondement
 d’un paiement. Il convient donc d’étudier successivement la cession de créance,
 570
 puis la subrogation personnelle .
-Section	1
-La	cession	de	créance
+Section 1
+La cession de créance
 571
 
 > [570] La saisie-attribution d'une créance emporte également transfert, au profit du créancier saisissant, de la créance que son débiteur détient contre un tiers (C. pr. exéc., art. L. 211-2). Son étude relè

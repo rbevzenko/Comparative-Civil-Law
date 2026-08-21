@@ -1,12 +1,14 @@
 {
   "book_id": "fr-fages-obligations",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
-  "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "authors": [
+    "Bertrand Fages"
+  ],
+  "title": "Droit des obligations",
+  "edition": "9e éd.",
+  "year": 2019,
+  "publisher": "LGDJ",
+  "jurisdiction": "FR",
+  "language": "fr",
+  "isbn": "978-2-275-06590-8",
+  "notes": ""
 }
