@@ -1,0 +1,73 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/fr-duchemin-travail",
+  "cards": 471,
+  "profile": "these-duchemin",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 1,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "n°": 471
+    }
+  },
+  "coverage": {
+    "share": 0.9909,
+    "covered_chars": 992319,
+    "book_chars": 1001447,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2115,
+    "min": 261,
+    "max": 5221,
+    "too_short": [],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.88,
+    "footnotes_total": 2639,
+    "unparsed_blocks": 0,
+    "per_card_median": 5,
+    "cards_with_calls_but_no_notes": 0,
+    "notes_without_visible_call": 2548
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 18,
+      "2": 4,
+      "3": 449
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}
