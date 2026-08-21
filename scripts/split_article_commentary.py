@@ -2,7 +2,7 @@
 """Дробление карточки-статьи DCFR/PEL на печатные части: правило, комментарии, заметки.
 
     python scripts/split_article_commentary.py --book books/<id> [--dry-run]
-        [--heading-size 13.5]
+        [--heading-size 13.5] [--marker-style letters|cn]
 
 Зачем. Единица цитирования у DCFR — статья, и это правильный адрес. Но у
 полного издания комментарий к одной статье доходит до девяноста полос: в
@@ -19,6 +19,18 @@
 
 Адрес ребёнка — тоже цитируемый: «II.–8:103, Comment F», «II.–8:103, Note 21».
 Так DCFR и цитируют в литературе.
+
+Помечают эти части по-разному, и стиль задаётся ключом `--marker-style`:
+
+    letters  комментарий — буквенный подзаголовок «F. Approval by …»,
+             заметка — номер «21. In POLAND …». Так набраны DCFR и серия PEL.
+    cn       комментарий — «C4.», заметка — «N1.», прямо в начале абзаца.
+             Так набран PEICL, и это не наша выдумка: собственный указатель
+             книги ссылается ровно так — «Art. 1:101 C6», «Art. 2:202 N1».
+
+При стиле `cn` кегль не проверяется: метка стоит в начале обычного абзаца
+тем же кеглем, что и текст, и отличать её по типографике нечем — да и
+незачем, буква «C» с цифрой сама по себе однозначна.
 
 Буквенный подзаголовок опознаётся по КЕГЛЮ, а не по виду строки. В
 иллюстрациях DCFR стороны названы буквами, и предложение начинается ровно
@@ -51,6 +63,9 @@ NOTES = re.compile(r"^NOTES\s*$|^(?:National\s+)?Notes\s*$", re.M)
 # Буквенный подзаголовок: одна заглавная, точка, пробел, дальше текст.
 # Строка короткая — это заголовок, а не абзац, начатый с инициала.
 LETTER = re.compile(r"^([A-Z])\.\s+(\S[^\n]{0,90})$", re.M)
+# Стиль PEICL: «C4. Two methods are apparent…», «N1. The full range…».
+CN_COMMENT = re.compile(r"^C(\d{1,3})\.\s", re.M)
+CN_NOTE = re.compile(r"^N(\d{1,3})\.\s", re.M)
 # Нумерованная заметка: число, точка, пробел, дальше содержательный знак.
 NOTE = re.compile(r"^(\d{1,3})\.\s+(?=[A-ZА-Я“‘\"(\[])", re.M)
 
@@ -117,7 +132,7 @@ def split_block(text, base, rx, kind, monotonic, headings=None):
     return parts
 
 
-def split_card(card, pagemap, starts, headings=None):
+def split_card(card, pagemap, starts, headings=None, style="letters"):
     text = card["text"]
     mc, mn = COMMENTS.search(text), NOTES.search(text)
     # Заметки идут после комментариев; если порядок нарушен, метка ложная.
@@ -131,11 +146,14 @@ def split_card(card, pagemap, starts, headings=None):
     if mc:
         cend = mn.start() if mn else len(text)
         body = text[mc.end():cend]
-        for label, a, b in split_block(body, mc.end(), LETTER, "Comment", False, headings):
+        crx = CN_COMMENT if style == "cn" else LETTER
+        cheads = None if style == "cn" else headings
+        for label, a, b in split_block(body, mc.end(), crx, "Comment", style == "cn", cheads):
             segments.append(("Comment", label, a, b))
     if mn:
         body = text[mn.end():]
-        for label, a, b in split_block(body, mn.end(), NOTE, "Note", True):
+        nrx = CN_NOTE if style == "cn" else NOTE
+        for label, a, b in split_block(body, mn.end(), nrx, "Note", True):
             segments.append(("Note", label, a, b))
 
     out = []
@@ -148,12 +166,22 @@ def split_card(card, pagemap, starts, headings=None):
         elif kind == "Comment":
             suffix = label or "x"
             ext = f"{card['external_id']}#c{suffix}"
-            addr = f"{card['address']}, Comment {label}" if label else f"{card['address']}, Comments"
+            if not label:
+                addr = f"{card['address']}, Comments"
+            elif style == "cn":
+                addr = f"{card['address']} C{label}"
+            else:
+                addr = f"{card['address']}, Comment {label}"
             num = label or ""
         else:
             suffix = label or "x"
             ext = f"{card['external_id']}#n{suffix}"
-            addr = f"{card['address']}, Note {label}" if label else f"{card['address']}, Notes"
+            if not label:
+                addr = f"{card['address']}, Notes"
+            elif style == "cn":
+                addr = f"{card['address']} N{label}"
+            else:
+                addr = f"{card['address']}, Note {label}"
             num = label or ""
         # Числовое поле — своё, а не родительское. Отчёт о качестве считает
         # непрерывность по нему, и с унаследованным номером статьи все
@@ -161,6 +189,8 @@ def split_card(card, pagemap, starts, headings=None):
         if kind == "Art.":
             number = card.get("number")
         elif kind == "Note":
+            number = int(label) if label and label.isdigit() else None
+        elif style == "cn":
             number = int(label) if label and label.isdigit() else None
         else:
             # Буква комментария как порядковый номер: A→1, B→2. Ряд
@@ -224,6 +254,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--book", required=True)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--marker-style", choices=("letters", "cn"), default="letters",
+                    help="чем помечены части статьи: буквой (DCFR, PEL) или C/N (PEICL)")
     ap.add_argument("--heading-size", type=float, default=13.5,
                     help="кегль, с которого строка считается подзаголовком комментария")
     a = ap.parse_args()
@@ -237,7 +269,7 @@ def main():
 
     out = []
     for c in cards:
-        out.extend(split_card(c, pagemap, starts, headings))
+        out.extend(split_card(c, pagemap, starts, headings, a.marker_style))
 
     out = mark_repeats(out)
     ids = [c["external_id"] for c in out]

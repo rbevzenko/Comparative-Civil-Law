@@ -1,0 +1,272 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/peicl-heiss-insurance",
+  "cards": 1473,
+  "profile": "peicl-sellier-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.3675,
+    "rows": 195,
+    "gaps": [
+      {
+        "family": "Art.",
+        "section": "1",
+        "from": 104,
+        "to": 106,
+        "missing": 1
+      },
+      {
+        "family": "Art.",
+        "section": "1",
+        "from": 105,
+        "to": 201,
+        "missing": 95
+      },
+      {
+        "family": "Art.",
+        "section": "1",
+        "from": 208,
+        "to": 301,
+        "missing": 92
+      },
+      {
+        "family": "Note",
+        "section": "Art. 1:103",
+        "from": 12,
+        "to": 14,
+        "missing": 1
+      },
+      {
+        "family": "Art.",
+        "section": "2",
+        "from": 106,
+        "to": 201,
+        "missing": 94
+      },
+      {
+        "family": "Art.",
+        "section": "2",
+        "from": 203,
+        "to": 301,
+        "missing": 97
+      },
+      {
+        "family": "Art.",
+        "section": "2",
+        "from": 304,
+        "to": 401,
+        "missing": 96
+      },
+      {
+        "family": "Art.",
+        "section": "2",
+        "from": 403,
+        "to": 501,
+        "missing": 97
+      },
+      {
+        "family": "Art.",
+        "section": "2",
+        "from": 502,
+        "to": 601,
+        "missing": 98
+      },
+      {
+        "family": "Art.",
+        "section": "2",
+        "from": 604,
+        "to": 701,
+        "missing": 96
+      },
+      {
+        "family": "Art.",
+        "section": "4",
+        "from": 103,
+        "to": 201,
+        "missing": 97
+      },
+      {
+        "family": "Art.",
+        "section": "4",
+        "from": 203,
+        "to": 301,
+        "missing": 97
+      },
+      {
+        "family": "Art.",
+        "section": "6",
+        "from": 105,
+        "to": 111,
+        "missing": 5
+      },
+      {
+        "family": "Comment",
+        "section": "Art. 14:105",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Art.",
+        "section": "17",
+        "from": 105,
+        "to": 201,
+        "missing": 95
+      },
+      {
+        "family": "Art.",
+        "section": "17",
+        "from": 205,
+        "to": 301,
+        "missing": 95
+      },
+      {
+        "family": "Art.",
+        "section": "17",
+        "from": 304,
+        "to": 401,
+        "missing": 96
+      },
+      {
+        "family": "Art.",
+        "section": "17",
+        "from": 402,
+        "to": 501,
+        "missing": 98
+      },
+      {
+        "family": "Art.",
+        "section": "17",
+        "from": 503,
+        "to": 601,
+        "missing": 97
+      },
+      {
+        "family": "Art.",
+        "section": "18",
+        "from": 102,
+        "to": 201,
+        "missing": 98
+      },
+      {
+        "family": "Art.",
+        "section": "18",
+        "from": 204,
+        "to": 301,
+        "missing": 96
+      }
+    ],
+    "gaps_total": 21,
+    "missing_total": 1642,
+    "duplicates": [
+      {
+        "family": "Art.",
+        "section": "5",
+        "number": 101
+      },
+      {
+        "family": "Art.",
+        "section": "5",
+        "number": 101
+      },
+      {
+        "family": "Note",
+        "section": "Art. 5:101",
+        "number": 1
+      },
+      {
+        "family": "Note",
+        "section": "Art. 5:101",
+        "number": 2
+      },
+      {
+        "family": "Note",
+        "section": "Art. 5:101",
+        "number": 3
+      },
+      {
+        "family": "Note",
+        "section": "Art. 5:101",
+        "number": 4
+      }
+    ],
+    "duplicates_total": 6,
+    "by_family": {
+      "Art.": 123,
+      "Comment": 899,
+      "Note": 451
+    }
+  },
+  "coverage": {
+    "share": 0.9965,
+    "covered_chars": 939566,
+    "book_chars": 942904,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 581,
+    "min": 6,
+    "max": 6642,
+    "too_short": [
+      "peicl-heiss-insurance:art:1/101#cx",
+      "peicl-heiss-insurance:art:1/101#nx",
+      "peicl-heiss-insurance:art:1/102#cx",
+      "peicl-heiss-insurance:art:1/103#cx",
+      "peicl-heiss-insurance:art:1/104#cx",
+      "peicl-heiss-insurance:art:1/105#cx",
+      "peicl-heiss-insurance:art:1/201#cx",
+      "peicl-heiss-insurance:art:1/201#nx",
+      "peicl-heiss-insurance:art:1/202#cx",
+      "peicl-heiss-insurance:art:1/203#cx",
+      "peicl-heiss-insurance:art:1/203#nx",
+      "peicl-heiss-insurance:art:1/204#nx",
+      "peicl-heiss-insurance:art:1/205#cx",
+      "peicl-heiss-insurance:art:1/205#nx",
+      "peicl-heiss-insurance:art:1/206#cx"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0,
+    "cards_with_calls_but_no_notes": 74,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "5": 92,
+      "6": 674,
+      "7": 707
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 36.8% < 98%: пропущено номеров 1642. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

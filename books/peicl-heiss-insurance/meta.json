@@ -1,12 +1,21 @@
 {
   "book_id": "peicl-heiss-insurance",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
+  "authors": [
+    "Helmut Heiss",
+    "Jürgen Basedow",
+    "John Birds",
+    "Malcolm Clarke",
+    "Herman Cousy",
+    "Leander D. Loacker",
+    "Manfred Wandt"
+  ],
+  "title": "Principles of European Insurance Contract Law (PEICL)",
+  "edition": "2nd expanded ed.",
+  "year": 2016,
+  "publisher": "Verlag Dr. Otto Schmidt",
+  "jurisdiction": "DCFR",
+  "language": "en",
   "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "notes": "Файл распознан владельцем. Тело — полосы 85–423; вступительная статья (55–84, своя нумерация «I12») и переводы на полтора десятка языков (с 424) не берутся.",
+  "service_source_id": "bb0b6c87-e794-4b05-8d9b-95974f320d67"
 }
