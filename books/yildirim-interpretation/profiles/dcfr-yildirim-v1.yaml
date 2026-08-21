@@ -1,0 +1,35 @@
+id: dcfr-yildirim-v1
+publisher: Springer
+jurisdiction: Comparative law
+language: en
+# Ahmet Cemil Yildirim, Interpretation of Contracts in Comparative and
+# Uniform Law (2019), Kluwer. 280 полос.
+#
+# Колонцифр в файле нет вовсе, поэтому единица названа «frg.»: номер — это
+# номер полосы ФАЙЛА, а не печатной страницы.
+#
+# Тело 14.4, сноски 10.8, знак сноски 8.6.
+
+units:
+  - type: "frg."
+    id_prefix: "frg"
+    mode: page
+
+address:
+  template: "frg. {number}"
+
+footnotes:
+  mode: font_bottom
+  note_size_max: 12.0
+  bottom_band: 0.15
+
+printed_page:
+  band: 0.0
+
+junk:
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'

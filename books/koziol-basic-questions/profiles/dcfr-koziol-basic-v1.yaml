@@ -1,0 +1,46 @@
+id: dcfr-koziol-basic-v1
+publisher: Jan Sramek Verlag
+jurisdiction: Comparative law
+language: en
+# Helmut Koziol (ed.), Basic Questions of Tort Law from a Comparative
+# Perspective (2015). 912 полос, цифровой PDF.
+#
+# Колонтитул тут в ТРИ строки и стоит выше нуля: автор очерка (top −4),
+# страна (9), «Part 6» (22), и только под ними колонцифра (43). Все
+# кеглем 9.8 — тем же, что тело.
+#
+# ШАБЛОНОВ КОЛОНЦИФРЫ НЕТ НАМЕРЕННО. Колонцифра стоит отдельной строкой и
+# берётся точным совпадением. Стоит добавить шаблон «буква, пробел, число
+# в конце» — и строка «Part 6» станет колонцифрой 6 на каждой полосе.
+#
+# Кегли: 9.8 тело и колонтитул, 7.8 сноски, 6.4 знак сноски, 13.0 и 14.0
+# заголовки.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  mode: font_bottom
+  note_size_max: 8.6
+  bottom_band: 0.60
+
+printed_page:
+  band: [0.075, 0.0]
+
+junk:
+  # Колонтитул снимается ПОСЛЕ чтения колонцифры: строка с номером к тому
+  # времени уже убрана по индексу.
+  header_band: 0.05
+  patterns:
+    # Водяной знак издателя внизу каждой полосы.
+    - 'Basic Questions of Tort Law from a Comparative Perspective'
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'

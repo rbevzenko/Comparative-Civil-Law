@@ -1,0 +1,82 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/andenas-european-company",
+  "cards": 587,
+  "profile": "dcfr-andenas-european-company-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 1,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 587
+    }
+  },
+  "coverage": {
+    "share": 0.9995,
+    "covered_chars": 1158828,
+    "book_chars": 1159414,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2137,
+    "min": 223,
+    "max": 2783,
+    "too_short": [],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.84,
+    "footnotes_total": 2097,
+    "unparsed_blocks": 0,
+    "per_card_median": 3,
+    "cards_with_calls_but_no_notes": 8,
+    "notes_without_visible_call": 79
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 587,
+    "sample": [
+      "andenas-european-company:p:38",
+      "andenas-european-company:p:39",
+      "andenas-european-company:p:40",
+      "andenas-european-company:p:41",
+      "andenas-european-company:p:42",
+      "andenas-european-company:p:43",
+      "andenas-european-company:p:44",
+      "andenas-european-company:p:45",
+      "andenas-european-company:p:46",
+      "andenas-european-company:p:47"
+    ],
+    "depth_histogram": {
+      "0": 587
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

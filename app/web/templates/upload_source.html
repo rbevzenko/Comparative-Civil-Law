@@ -22,15 +22,17 @@
                value="{{ form.jurisdiction or '' }}" placeholder="FR, DE, CH…" required>
         <datalist id="jurisdiction-suggestions">
           {# Тот же словарь, что и в правилах коннектора (app/mcp/server.py).
-             Англия — UK, а не EN: этим кодом заведены все английские
-             источники. DCFR и COMP к национальной юрисдикции не привязаны:
-             первое — Draft Common Frame of Reference, второе —
-             сравнительно-правовые исследования; только на них разрешено
-             ссылаться при обосновании вывода по чужой юрисдикции. #}
-          <option value="AT"><option value="BE"><option value="UK"><option value="DE">
+             Англия — EN. Раньше её источники были заведены кодом UK, и
+             список предлагал EN: одно с другим расходилось. 2026-08-21
+             всё сведено к EN. «Comparative law» к национальной юрисдикции
+             не привязана: это сравнительно-правовые исследования и
+             наднациональные проекты (DCFR, PECL, Common Core); только на
+             них разрешено ссылаться при обосновании вывода по чужой
+             юрисдикции. #}
+          <option value="AT"><option value="BE"><option value="EN"><option value="DE">
           <option value="CH"><option value="IT"><option value="ES"><option value="NL">
           <option value="GR"><option value="FR">
-          <option value="DCFR"><option value="COMP">
+          <option value="Comparative law">
         </datalist>
       </div>
 

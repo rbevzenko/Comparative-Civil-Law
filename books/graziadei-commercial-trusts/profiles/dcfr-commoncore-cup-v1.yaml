@@ -1,0 +1,46 @@
+id: dcfr-commoncore-cup-v1
+publisher: Cambridge University Press
+jurisdiction: Comparative law
+language: en
+# Mauro Bussani & Vernon Valentine Palmer (eds), Pure Economic Loss in
+# Europe (2003). Серия The Common Core of European Private Law.
+# 639 полос, цифровой PDF, одна колонка.
+#
+# Кегли: 10.0 тело, 9.0 колонтитул С КОЛОНЦИФРОЙ, 8.0 сноски, 7.0 знак
+# сноски в тексте, 6.0 номер сноски в аппарате, 11.0 заголовки.
+#
+# Колонтитул набран строчными: «the liability regimes of europe 151» на
+# нечётной, «12 mauro bussani and vernon valentine palmer» на чётной.
+#
+# Единица — ПОЛОСА, адрес — печатная страница. Книга построена по методу
+# Common Core: общие очерки, затем 20 казусов, по каждому — ответы из
+# полутора десятков правопорядков.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  mode: font_bottom
+  note_size_max: 8.5
+  bottom_band: 0.30
+
+printed_page:
+  # Колонтитул на 33 из 634 — это 0.052.
+  band: [0.09, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+\D'
+    - '[A-Za-z]\s+(\d{1,4})$'
+
+junk:
+  header_band: 0.10
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'

@@ -1,0 +1,32 @@
+id: dcfr-moss-contracts-v1
+publisher: Universitetet i Oslo
+jurisdiction: Comparative law
+language: en
+# Giuditta Cordero Moss, Lectures on Comparative Law of Contracts (2004).
+# 194 полосы. Тело 14.0, сноски и колонцифра — оба кеглем 12.0.
+# Колонцифра стоит отдельной строкой внизу полосы (744 из 792, то есть
+# 0.939) и снимается по индексу ДО того, как аппарат отделяется по кеглю.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  mode: font_bottom
+  note_size_max: 13.0
+  bottom_band: 0.78
+
+printed_page:
+  band: [0.0, 0.07]
+
+junk:
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'

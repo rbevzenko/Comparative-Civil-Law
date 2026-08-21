@@ -1,0 +1,196 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/koziol-basic-questions",
+  "cards": 851,
+  "profile": "dcfr-koziol-basic-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9827,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "p.",
+        "section": null,
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 95,
+        "to": 97,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 97,
+        "to": 99,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 161,
+        "to": 163,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 163,
+        "to": 165,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 249,
+        "to": 251,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 341,
+        "to": 343,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 351,
+        "to": 353,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 353,
+        "to": 355,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 429,
+        "to": 431,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 511,
+        "to": 513,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 513,
+        "to": 515,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 681,
+        "to": 683,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 683,
+        "to": 685,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 839,
+        "to": 841,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 15,
+    "missing_total": 15,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 851
+    }
+  },
+  "coverage": {
+    "share": 0.9995,
+    "covered_chars": 1862906,
+    "book_chars": 1863756,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2152,
+    "min": 197,
+    "max": 4514,
+    "too_short": [],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.88,
+    "footnotes_total": 3225,
+    "unparsed_blocks": 0,
+    "per_card_median": 3,
+    "cards_with_calls_but_no_notes": 5,
+    "notes_without_visible_call": 2861
+  },
+  "dead_pages": {
+    "pages": [
+      44,
+      138,
+      140,
+      204,
+      206,
+      292,
+      384,
+      394,
+      396,
+      472,
+      554,
+      556,
+      724,
+      726,
+      882
+    ],
+    "count": 15
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 1,
+    "sample": [
+      "koziol-basic-questions:p:1"
+    ],
+    "depth_histogram": {
+      "0": 1,
+      "1": 850
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

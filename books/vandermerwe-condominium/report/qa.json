@@ -1,0 +1,109 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/vandermerwe-condominium",
+  "cards": 620,
+  "profile": "dcfr-commoncore-cup-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9936,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "p.",
+        "section": null,
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 77,
+        "to": 79,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 79,
+        "to": 81,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 609,
+        "to": 611,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 4,
+    "missing_total": 4,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 620
+    }
+  },
+  "coverage": {
+    "share": 0.9995,
+    "covered_chars": 1320522,
+    "book_chars": 1321141,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2169,
+    "min": 20,
+    "max": 2940,
+    "too_short": [
+      "vandermerwe-condominium:p:1",
+      "vandermerwe-condominium:p:79"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.73,
+    "footnotes_total": 1341,
+    "unparsed_blocks": 0,
+    "per_card_median": 2.0,
+    "cards_with_calls_but_no_notes": 17,
+    "notes_without_visible_call": 66
+  },
+  "dead_pages": {
+    "pages": [
+      48,
+      124,
+      126,
+      656
+    ],
+    "count": 4
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 117,
+      "2": 503
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

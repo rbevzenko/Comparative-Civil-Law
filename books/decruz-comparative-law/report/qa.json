@@ -1,0 +1,129 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/decruz-comparative-law",
+  "cards": 494,
+  "profile": "dcfr-decruz-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.986,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "p.",
+        "section": null,
+        "from": 31,
+        "to": 33,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 97,
+        "to": 99,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 181,
+        "to": 183,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 241,
+        "to": 243,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 291,
+        "to": 293,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 447,
+        "to": 449,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 497,
+        "to": 499,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 7,
+    "missing_total": 7,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 494
+    }
+  },
+  "coverage": {
+    "share": 0.9996,
+    "covered_chars": 1341252,
+    "book_chars": 1341745,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2788,
+    "min": 422,
+    "max": 3369,
+    "too_short": [],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0.0,
+    "cards_with_calls_but_no_notes": 35,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [
+      53,
+      119,
+      203,
+      263,
+      313,
+      469,
+      519
+    ],
+    "count": 7
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 494
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

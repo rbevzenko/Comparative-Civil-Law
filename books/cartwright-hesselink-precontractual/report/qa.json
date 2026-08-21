@@ -1,0 +1,93 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/cartwright-hesselink-precontractual",
+  "cards": 488,
+  "profile": "dcfr-commoncore-cup-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9959,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "p.",
+        "section": null,
+        "from": 17,
+        "to": 19,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 19,
+        "to": 21,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 2,
+    "missing_total": 2,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 488
+    }
+  },
+  "coverage": {
+    "share": 0.9995,
+    "covered_chars": 1018415,
+    "book_chars": 1018902,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2133,
+    "min": 14,
+    "max": 2896,
+    "too_short": [
+      "cartwright-hesselink-precontractual:p:19"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.89,
+    "footnotes_total": 1554,
+    "unparsed_blocks": 0,
+    "per_card_median": 3.0,
+    "cards_with_calls_but_no_notes": 1,
+    "notes_without_visible_call": 80
+  },
+  "dead_pages": {
+    "pages": [
+      46,
+      48
+    ],
+    "count": 2
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 471,
+      "3": 3,
+      "4": 14
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

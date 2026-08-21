@@ -1,0 +1,113 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/youngs-comparative-law",
+  "cards": 394,
+  "profile": "dcfr-youngs-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9899,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "frg.",
+        "section": null,
+        "from": 55,
+        "to": 57,
+        "missing": 1
+      },
+      {
+        "family": "frg.",
+        "section": null,
+        "from": 59,
+        "to": 61,
+        "missing": 1
+      },
+      {
+        "family": "frg.",
+        "section": null,
+        "from": 145,
+        "to": 147,
+        "missing": 1
+      },
+      {
+        "family": "frg.",
+        "section": null,
+        "from": 423,
+        "to": 425,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 4,
+    "missing_total": 4,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "frg.": 394
+    }
+  },
+  "coverage": {
+    "share": 0.9995,
+    "covered_chars": 806311,
+    "book_chars": 806704,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2008,
+    "min": 220,
+    "max": 4587,
+    "too_short": [],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.88,
+    "footnotes_total": 1112,
+    "unparsed_blocks": 0,
+    "per_card_median": 2.0,
+    "cards_with_calls_but_no_notes": 29,
+    "notes_without_visible_call": 324
+  },
+  "dead_pages": {
+    "pages": [
+      56,
+      60,
+      146,
+      424
+    ],
+    "count": 4
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 6,
+    "sample": [
+      "youngs-comparative-law:frg:45",
+      "youngs-comparative-law:frg:55",
+      "youngs-comparative-law:frg:57",
+      "youngs-comparative-law:frg:281",
+      "youngs-comparative-law:frg:425",
+      "youngs-comparative-law:frg:427"
+    ],
+    "depth_histogram": {
+      "0": 6,
+      "1": 388
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

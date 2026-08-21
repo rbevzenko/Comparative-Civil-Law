@@ -1,0 +1,30 @@
+id: dcfr-andenas-european-company-v1
+publisher: Cambridge University Press
+jurisdiction: Comparative law
+language: en
+# Mads Andenas & Frank Wooldridge, European Comparative Company Law (2009). 648 полос. Тело 10.7, сноски 8.5, колонтитул в ДВЕ строки: колонцифра кеглем 10.0 на 32 и название кеглем 7.0 на 37. Шаблонов колонцифры нет — она стоит отдельной строкой и берётся точным совпадением.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  mode: font_bottom
+  note_size_max: 9.5
+  bottom_band: 0.50
+
+printed_page:
+  band: [0.06, 0.0]
+
+junk:
+  header_band: 0.075
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'

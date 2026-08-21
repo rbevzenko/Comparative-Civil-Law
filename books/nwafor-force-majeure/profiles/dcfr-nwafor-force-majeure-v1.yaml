@@ -1,0 +1,30 @@
+id: dcfr-nwafor-force-majeure-v1
+publisher: Wolf Legal Publishers
+jurisdiction: Comparative law
+language: en
+# Anthony O. Nwafor, Comparative Study of Exemption Clauses, Frustration and Force Majeure (2012). 330 полос. Тело 12.0, сноски 10.0 внизу полосы, колонцифра 11.0 отдельной строкой на 37 из 841.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  mode: font_bottom
+  note_size_max: 10.5
+  bottom_band: 0.80
+
+printed_page:
+  band: [0.06, 0.0]
+
+junk:
+  header_band: 0.055
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'

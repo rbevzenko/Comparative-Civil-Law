@@ -1,0 +1,37 @@
+id: dcfr-wood-security-v1
+publisher: Sweet & Maxwell
+jurisdiction: Comparative law
+language: en
+# Philip R. Wood, Comparative Law of Security Interests and Title Finance,
+# 2nd ed. (2007). 998 полос. СКАН с распознаванием: кегли «плывут»
+# (тело 8.6–9.5), и отделить аппарат по кеглю нельзя.
+#
+# Колонтитул на 12–13 из 638 — это 0.020. Колонцифра стоит в его конце
+# («SECURITY INTERESTS IN NAPOLEONIC JURISDICTIONS 459») либо в начале.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  # Отделить нечем: у скана кегль сносок и тела перекрываются.
+  mode: none
+
+printed_page:
+  band: [0.035, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+\D'
+    - '[A-Za-z]\s+(\d{1,4})$'
+
+junk:
+  header_band: 0.04
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'

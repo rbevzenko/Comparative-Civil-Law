@@ -1,0 +1,29 @@
+id: dcfr-eidenmueller-insolvency-v1
+publisher: ECGI
+jurisdiction: Comparative law
+language: en
+# Horst Eidenmüller, Comparative Corporate Insolvency Law (ECGI Working Paper). 34 полосы, колонцифр нет — единица «frg.». Тело 12.0, сноски 10.0.
+
+units:
+  - type: "frg."
+    id_prefix: "frg"
+    mode: page
+
+address:
+  template: "frg. {number}"
+
+footnotes:
+  mode: font_bottom
+  note_size_max: 10.5
+  bottom_band: 0.45
+
+printed_page:
+  band: 0.0
+
+junk:
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'

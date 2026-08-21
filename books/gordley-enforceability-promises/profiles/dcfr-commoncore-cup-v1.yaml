@@ -1,0 +1,45 @@
+id: dcfr-commoncore-cup-v1
+publisher: Cambridge University Press
+jurisdiction: Comparative law
+language: en
+# James Gordley (ed.), The Enforceability of Promises in European Contract
+# Law (2001). Том серии The Common Core of European Private Law, вёрстка
+# Cambridge — та же, что у Bussani/Palmer.
+#
+# Кегли: 10.0 тело, 9.0 колонтитул С КОЛОНЦИФРОЙ, 8.0 сноски, 6.5 знак
+# сноски в тексте, 5.2 номер сноски в аппарате.
+#
+# Колонтитул набран строчными и стоит на 21 из 605 — выше, чем у
+# Bussani/Palmer, поэтому полосы уже.
+#
+# Единица — ПОЛОСА, адрес — печатная страница.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  mode: font_bottom
+  note_size_max: 8.5
+  bottom_band: 0.30
+
+printed_page:
+  # Колонтитул на 33 из 634 — это 0.052.
+  # Колонтитул на 21 из 605 — это 0.035.
+  band: [0.05, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+\D'
+    - '[A-Za-z]\s+(\d{1,4})$'
+
+junk:
+  header_band: 0.06
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'

@@ -1,0 +1,190 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/dimatteo-comparative-contract",
+  "cards": 452,
+  "profile": "dcfr-elgar-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.972,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "p.",
+        "section": null,
+        "from": 11,
+        "to": 13,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 73,
+        "to": 75,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 75,
+        "to": 77,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 153,
+        "to": 155,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 155,
+        "to": 157,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 227,
+        "to": 229,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 229,
+        "to": 231,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 293,
+        "to": 295,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 295,
+        "to": 297,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 343,
+        "to": 345,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 345,
+        "to": 347,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 423,
+        "to": 425,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 425,
+        "to": 427,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 13,
+    "missing_total": 13,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 452
+    }
+  },
+  "coverage": {
+    "share": 0.9997,
+    "covered_chars": 1357026,
+    "book_chars": 1357477,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 3184,
+    "min": 14,
+    "max": 4255,
+    "too_short": [
+      "dimatteo-comparative-contract:p:11",
+      "dimatteo-comparative-contract:p:75",
+      "dimatteo-comparative-contract:p:155",
+      "dimatteo-comparative-contract:p:229",
+      "dimatteo-comparative-contract:p:295",
+      "dimatteo-comparative-contract:p:345",
+      "dimatteo-comparative-contract:p:425"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.9,
+    "footnotes_total": 2090,
+    "unparsed_blocks": 0,
+    "per_card_median": 4.0,
+    "cards_with_calls_but_no_notes": 0,
+    "notes_without_visible_call": 387
+  },
+  "dead_pages": {
+    "pages": [
+      51,
+      113,
+      115,
+      193,
+      195,
+      267,
+      269,
+      333,
+      335,
+      383,
+      385,
+      463,
+      465
+    ],
+    "count": 13
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 8,
+      "2": 105,
+      "3": 149,
+      "4": 190
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 97.2% < 98%: пропущено номеров 13. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

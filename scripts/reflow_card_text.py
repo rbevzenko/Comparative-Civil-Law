@@ -72,7 +72,20 @@ SPACES = re.compile(r"[   \t]")
 ENUM = re.compile(r"^(?:\(\s?(?:[0-9]{1,3}|[a-z]{1,2}|[ivxlcdm]{1,6})\s?\)|[0-9]{1,3}[.)]\s|[•■□▪–—]\s)")
 
 
+# Управляющие знаки из PDF: у Koziol в каждый узел иерархии затесался \x07
+# («\x07Part\u2002 6 The elements of liability»), а типографские пробелы
+# (en/em/тонкий/неразрывный) в поиске ведут себя не как пробел. Ни то ни
+# другое не видно глазом в выдаче, но ломает и поиск, и сравнение строк.
+CTRL = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
+ODD_SPACE = re.compile(r"[\u00a0\u2000-\u200a\u202f\u205f\u3000]")
+
+
+def clean_chars(s):
+    return ODD_SPACE.sub(" ", CTRL.sub("", s))
+
+
 def reflow(text, suspended, short_ratio=0.6):
+    text = clean_chars(text)
     text = SPACES.sub(" ", text or "")
     lines = [ln.rstrip() for ln in text.split("\n")]
     lines = [ln for ln in lines if ln.strip() or True]

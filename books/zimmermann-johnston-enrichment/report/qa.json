@@ -1,0 +1,225 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/zimmermann-johnston-enrichment",
+  "cards": 719,
+  "profile": "dcfr-zimmermann-johnston-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9769,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "p.",
+        "section": null,
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 33,
+        "to": 35,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 35,
+        "to": 37,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 101,
+        "to": 103,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 157,
+        "to": 159,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 225,
+        "to": 227,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 287,
+        "to": 289,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 325,
+        "to": 327,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 365,
+        "to": 367,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 367,
+        "to": 369,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 431,
+        "to": 433,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 489,
+        "to": 491,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 491,
+        "to": 493,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 567,
+        "to": 569,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 569,
+        "to": 571,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 623,
+        "to": 625,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 625,
+        "to": 627,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 17,
+    "missing_total": 17,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 719
+    }
+  },
+  "coverage": {
+    "share": 0.9995,
+    "covered_chars": 1436452,
+    "book_chars": 1437170,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2075,
+    "min": 9,
+    "max": 3247,
+    "too_short": [
+      "zimmermann-johnston-enrichment:p:1",
+      "zimmermann-johnston-enrichment:p:35",
+      "zimmermann-johnston-enrichment:p:101",
+      "zimmermann-johnston-enrichment:p:157",
+      "zimmermann-johnston-enrichment:p:225",
+      "zimmermann-johnston-enrichment:p:287",
+      "zimmermann-johnston-enrichment:p:325",
+      "zimmermann-johnston-enrichment:p:367",
+      "zimmermann-johnston-enrichment:p:431",
+      "zimmermann-johnston-enrichment:p:491",
+      "zimmermann-johnston-enrichment:p:569",
+      "zimmermann-johnston-enrichment:p:625",
+      "zimmermann-johnston-enrichment:p:730"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.94,
+    "footnotes_total": 2478,
+    "unparsed_blocks": 0,
+    "per_card_median": 3,
+    "cards_with_calls_but_no_notes": 2,
+    "notes_without_visible_call": 228
+  },
+  "dead_pages": {
+    "pages": [
+      46,
+      78,
+      80,
+      146,
+      202,
+      270,
+      332,
+      370,
+      410,
+      412,
+      476,
+      534,
+      536,
+      612,
+      614,
+      668,
+      670
+    ],
+    "count": 17
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 719
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 97.7% < 98%: пропущено номеров 17. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

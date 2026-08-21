@@ -1,0 +1,142 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/pradi-transfer-immoveable",
+  "cards": 210,
+  "profile": "dcfr-pradi-transfer-immoveable-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9677,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "frg.",
+        "section": null,
+        "from": 34,
+        "to": 36,
+        "missing": 1
+      },
+      {
+        "family": "frg.",
+        "section": null,
+        "from": 83,
+        "to": 85,
+        "missing": 1
+      },
+      {
+        "family": "frg.",
+        "section": null,
+        "from": 101,
+        "to": 103,
+        "missing": 1
+      },
+      {
+        "family": "frg.",
+        "section": null,
+        "from": 111,
+        "to": 113,
+        "missing": 1
+      },
+      {
+        "family": "frg.",
+        "section": null,
+        "from": 141,
+        "to": 143,
+        "missing": 1
+      },
+      {
+        "family": "frg.",
+        "section": null,
+        "from": 159,
+        "to": 161,
+        "missing": 1
+      },
+      {
+        "family": "frg.",
+        "section": null,
+        "from": 195,
+        "to": 197,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 7,
+    "missing_total": 7,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "frg.": 210
+    }
+  },
+  "coverage": {
+    "share": 0.9994,
+    "covered_chars": 363830,
+    "book_chars": 364039,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 1818,
+    "min": 159,
+    "max": 2428,
+    "too_short": [],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.66,
+    "footnotes_total": 300,
+    "unparsed_blocks": 0,
+    "per_card_median": 1.0,
+    "cards_with_calls_but_no_notes": 30,
+    "notes_without_visible_call": 137
+  },
+  "dead_pages": {
+    "pages": [
+      35,
+      84,
+      102,
+      112,
+      142,
+      160,
+      196
+    ],
+    "count": 7
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 210,
+    "sample": [
+      "pradi-transfer-immoveable:frg:9",
+      "pradi-transfer-immoveable:frg:10",
+      "pradi-transfer-immoveable:frg:11",
+      "pradi-transfer-immoveable:frg:12",
+      "pradi-transfer-immoveable:frg:13",
+      "pradi-transfer-immoveable:frg:14",
+      "pradi-transfer-immoveable:frg:15",
+      "pradi-transfer-immoveable:frg:16",
+      "pradi-transfer-immoveable:frg:17",
+      "pradi-transfer-immoveable:frg:18"
+    ],
+    "depth_histogram": {
+      "0": 210
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 96.8% < 98%: пропущено номеров 7. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

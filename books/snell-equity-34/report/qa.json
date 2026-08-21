@@ -17,24 +17,24 @@
   },
   "coverage": {
     "share": 0.991,
-    "covered_chars": 2355885,
-    "book_chars": 2377257,
+    "covered_chars": 2354969,
+    "book_chars": 2376341,
     "cards_without_offsets": 0,
     "biggest_holes": [
       {
         "chars": 3681,
-        "from": 767388,
-        "to": 771069
+        "from": 767066,
+        "to": 770747
       },
       {
         "chars": 2191,
-        "from": 854883,
-        "to": 857074
+        "from": 854561,
+        "to": 856752
       }
     ]
   },
   "lengths": {
-    "median": 931,
+    "median": 928,
     "min": 48,
     "max": 7290,
     "too_short": [
@@ -76,8 +76,8 @@
     "cards_without_hierarchy": 0,
     "sample": [],
     "depth_histogram": {
-      "2": 155,
-      "3": 1824
+      "2": 161,
+      "3": 1818
     }
   },
   "internal_refs": {

@@ -1,0 +1,110 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/bussani-palmer-pure-economic-loss",
+  "cards": 554,
+  "profile": "dcfr-commoncore-cup-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9928,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "p.",
+        "section": null,
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 159,
+        "to": 161,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 161,
+        "to": 163,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 521,
+        "to": 523,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 4,
+    "missing_total": 4,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 554
+    }
+  },
+  "coverage": {
+    "share": 0.9995,
+    "covered_chars": 1138675,
+    "book_chars": 1139228,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2116,
+    "min": 37,
+    "max": 3159,
+    "too_short": [
+      "bussani-palmer-pure-economic-loss:p:1",
+      "bussani-palmer-pure-economic-loss:p:161",
+      "bussani-palmer-pure-economic-loss:p:521"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.88,
+    "footnotes_total": 1473,
+    "unparsed_blocks": 0,
+    "per_card_median": 3.0,
+    "cards_with_calls_but_no_notes": 5,
+    "notes_without_visible_call": 154
+  },
+  "dead_pages": {
+    "pages": [
+      52,
+      210,
+      212,
+      572
+    ],
+    "count": 4
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 205,
+      "2": 349
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

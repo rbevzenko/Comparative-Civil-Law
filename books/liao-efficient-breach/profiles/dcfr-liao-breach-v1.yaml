@@ -1,0 +1,39 @@
+id: dcfr-liao-breach-v1
+publisher: Intersentia
+jurisdiction: Comparative law
+language: en
+# Wenliang Liao, The Application of the Theory of Efficient Breach in
+# Contract Law (2015), Intersentia. 358 полос. Скачано с Cambridge Core:
+# внизу каждой полосы плашка «Downloaded from https://www.cambridge.org/
+# core…» кеглем 6.0 — снимается нижней полосой.
+#
+# Кегли: 8.0 тело, 10.0 колонцифра и часть заголовков, 6.0 плашка,
+# 5.8 знак сноски. Колонтитул «Chapter 6» кеглем 8.0 на 53 из 685.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  # Кегль сносок совпадает с кеглем тела (8.0): отделить нечем.
+  mode: none
+
+printed_page:
+  # Колонцифра внизу, кеглем 10.0 на 646 из 685 — это 0.943.
+  band: [0.0, 0.075]
+
+junk:
+  header_band: 0.09
+  # Плашка Cambridge Core внизу каждой полосы.
+  footer_band: 0.95
+  patterns:
+    - 'Downloaded from https://www\.cambridge\.org/core'
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'

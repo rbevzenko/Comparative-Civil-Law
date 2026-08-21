@@ -1,0 +1,33 @@
+id: dcfr-yunchienchang-property-v1
+publisher: Cambridge University Press
+jurisdiction: Comparative law
+language: en
+# Yun-chien Chang, Property Law. Comparative, Empirical, and Economic Analyses (2022). 453 полосы. Тело 10.8, сноски 8.5, колонтитул 10.5 с колонцифрой на 35 из 649.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  mode: font_bottom
+  note_size_max: 9.5
+  bottom_band: 0.45
+
+printed_page:
+  band: [0.065, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+\D'
+    - '[A-Za-z]\s+(\d{1,4})$'
+
+junk:
+  header_band: 0.075
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'

@@ -1,0 +1,37 @@
+id: dcfr-decruz-v1
+publisher: Routledge-Cavendish
+jurisdiction: Comparative law
+language: en
+# Peter de Cruz, Comparative Law in a Changing World, 3rd ed. (2007).
+# 533 полосы, цифровой PDF.
+#
+# Колонтитул вверху — только НАЗВАНИЕ книги или главы, без номера.
+# Колонцифра стоит ВНИЗУ полосы, кеглем 8.2 на 617 из 648 (0.952).
+#
+# Отдельного аппарата сносок нет: кроме колонцифры на полосе один кегль
+# тела (10.0) и заголовки (11.5). Ссылки даны в тексте.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  mode: none
+
+printed_page:
+  # Верхняя полоса отключена: наверху название без номера. Нижняя — 0.06,
+  # колонцифра на 0.952.
+  band: [0.0, 0.06]
+
+junk:
+  header_band: 0.06
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'

@@ -1,0 +1,108 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/hallebeek-third-party",
+  "cards": 158,
+  "profile": "dcfr-hallebeek-third-party-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9753,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "p.",
+        "section": null,
+        "from": 5,
+        "to": 7,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 91,
+        "to": 93,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 113,
+        "to": 115,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 159,
+        "to": 161,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 4,
+    "missing_total": 4,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 158
+    }
+  },
+  "coverage": {
+    "share": 0.9995,
+    "covered_chars": 316430,
+    "book_chars": 316587,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2077,
+    "min": 304,
+    "max": 2742,
+    "too_short": [],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.91,
+    "footnotes_total": 493,
+    "unparsed_blocks": 0,
+    "per_card_median": 3.0,
+    "cards_with_calls_but_no_notes": 8,
+    "notes_without_visible_call": 28
+  },
+  "dead_pages": {
+    "pages": [
+      15,
+      101,
+      123,
+      169
+    ],
+    "count": 4
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 7,
+      "2": 151
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 97.5% < 98%: пропущено номеров 4. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

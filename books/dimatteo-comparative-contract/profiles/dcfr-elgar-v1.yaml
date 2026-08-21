@@ -1,0 +1,44 @@
+id: dcfr-elgar-v1
+publisher: Edward Elgar
+jurisdiction: Comparative law
+language: en
+# Larry A. DiMatteo, Qi Zhou, Séverine Saintier, Keith Rowley (eds),
+# Commercial Contract Law. Transatlantic Perspectives / Comparative
+# Contract Law (2013), Cambridge University Press. 513 полос.
+#
+# Кегли: 10.0 тело И колонтитул, 8.0 сноски, 6.5 знак сноски в тексте,
+# 5.2 номер сноски в аппарате, 12.0 и 18.0 заголовки.
+# Колонтитул на 24 из 697 — это 0.034.
+#
+# Единица — ПОЛОСА, адрес — печатная страница.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  # Кегль сносок 9.0 против 10.0 у тела: разница в один пункт, но выдержана.
+  # Порог по умолчанию (медиана минус 1.5) их бы не взял, поэтому задан явно.
+  mode: font_bottom
+  note_size_max: 9.5
+  bottom_band: 0.45
+
+printed_page:
+  # Колонтитул на 68 из 734 — это 0.093, полоса взята чуть шире.
+  band: [0.045, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+\D'
+    - '\D\s+(\d{1,4})$'
+
+junk:
+  header_band: 0.05
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'

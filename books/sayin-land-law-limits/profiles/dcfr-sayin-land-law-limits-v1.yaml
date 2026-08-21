@@ -1,0 +1,29 @@
+id: dcfr-sayin-land-law-limits-v1
+publisher: SSRN
+jurisdiction: Comparative law
+language: en
+# Yiğit Sayın, Amnon Lehavi, Bertil Emrah Oder, Murat Önok, Domenico Francavilla, Land Law and Limits on the Right to Property. Historical, Comparative and International Analysis (SSRN). Препринт, 50 полос, колонцифр нет.
+
+units:
+  - type: "frg."
+    id_prefix: "frg"
+    mode: page
+
+address:
+  template: "frg. {number}"
+
+footnotes:
+  mode: font_bottom
+  note_size_max: 8.6
+  bottom_band: 0.45
+
+printed_page:
+  band: 0.0
+
+junk:
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'

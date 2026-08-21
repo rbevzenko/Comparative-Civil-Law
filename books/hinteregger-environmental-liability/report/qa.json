@@ -1,0 +1,160 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/hinteregger-environmental-liability",
+  "cards": 644,
+  "profile": "dcfr-commoncore-cup-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9847,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "p.",
+        "section": null,
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 51,
+        "to": 53,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 53,
+        "to": 55,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 63,
+        "to": 65,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 65,
+        "to": 67,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 343,
+        "to": 345,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 345,
+        "to": 347,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 431,
+        "to": 433,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 433,
+        "to": 435,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 577,
+        "to": 579,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 10,
+    "missing_total": 10,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 644
+    }
+  },
+  "coverage": {
+    "share": 0.9995,
+    "covered_chars": 1300738,
+    "book_chars": 1301381,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2030,
+    "min": 26,
+    "max": 2942,
+    "too_short": [
+      "hinteregger-environmental-liability:p:1",
+      "hinteregger-environmental-liability:p:53",
+      "hinteregger-environmental-liability:p:65",
+      "hinteregger-environmental-liability:p:345",
+      "hinteregger-environmental-liability:p:433",
+      "hinteregger-environmental-liability:p:577"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.77,
+    "footnotes_total": 1559,
+    "unparsed_blocks": 0,
+    "per_card_median": 2.0,
+    "cards_with_calls_but_no_notes": 9,
+    "notes_without_visible_call": 111
+  },
+  "dead_pages": {
+    "pages": [
+      70,
+      120,
+      122,
+      132,
+      134,
+      412,
+      414,
+      500,
+      502,
+      646
+    ],
+    "count": 10
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 644
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

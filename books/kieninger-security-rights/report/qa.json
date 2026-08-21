@@ -1,0 +1,96 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/kieninger-security-rights",
+  "cards": 666,
+  "profile": "dcfr-commoncore-cup-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.997,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "p.",
+        "section": null,
+        "from": 113,
+        "to": 115,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 115,
+        "to": 117,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 2,
+    "missing_total": 2,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 666
+    }
+  },
+  "coverage": {
+    "share": 0.9995,
+    "covered_chars": 1376262,
+    "book_chars": 1376927,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2160,
+    "min": 23,
+    "max": 2974,
+    "too_short": [
+      "kieninger-security-rights:p:115",
+      "kieninger-security-rights:p:157"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.73,
+    "footnotes_total": 1550,
+    "unparsed_blocks": 0,
+    "per_card_median": 2.0,
+    "cards_with_calls_but_no_notes": 21,
+    "notes_without_visible_call": 91
+  },
+  "dead_pages": {
+    "pages": [
+      163,
+      165
+    ],
+    "count": 2
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 567,
+      "2": 3,
+      "3": 54,
+      "4": 29,
+      "5": 13
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

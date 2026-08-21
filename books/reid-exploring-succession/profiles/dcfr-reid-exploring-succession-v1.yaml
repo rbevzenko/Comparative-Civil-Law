@@ -1,0 +1,33 @@
+id: dcfr-reid-exploring-succession-v1
+publisher: Edinburgh University Press
+jurisdiction: Comparative law
+language: en
+# Kenneth G. C. Reid, Marius J. de Waal, Reinhard Zimmermann (eds), Exploring the Law of Succession (2007). 279 полос. Тело 10.5, сноски 8.0, колонтитул 9.0 с колонцифрой на 57 из 705.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  mode: font_bottom
+  note_size_max: 9.5
+  bottom_band: 0.45
+
+printed_page:
+  band: [0.095, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+\D'
+    - '[A-Za-z]\s+(\d{1,4})$'
+
+junk:
+  header_band: 0.10
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'
