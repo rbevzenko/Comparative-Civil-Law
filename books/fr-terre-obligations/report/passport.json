@@ -1,0 +1,306 @@
+{
+  "path": "/home/user/fr-pdf/terre-obligations.pdf",
+  "sha256": "67ca16ff8ff049d62d4a8d98562dfd2b2581981909fbf9aeb3ae8b25b09996c4",
+  "pages": 3095,
+  "sampled_pages": [
+    465,
+    523,
+    581,
+    639,
+    697,
+    755,
+    813,
+    871,
+    929,
+    987,
+    1045,
+    1103,
+    1161,
+    1219,
+    1277,
+    1335,
+    1393,
+    1451,
+    1509,
+    1567,
+    1625,
+    1683,
+    1741,
+    1799,
+    1857,
+    1915,
+    1973,
+    2031,
+    2089,
+    2147,
+    2205,
+    2263,
+    2321,
+    2379,
+    2437,
+    2495,
+    2553,
+    2611,
+    2669,
+    2727
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 63,
+    "max_depth": 4,
+    "resolved_pages": 63,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Page de titre",
+        "page": 6,
+        "depth": 0
+      },
+      {
+        "title": "Page de copyright",
+        "page": 8,
+        "depth": 0
+      },
+      {
+        "title": "Sommaire",
+        "page": 9,
+        "depth": 0
+      },
+      {
+        "title": "Abréviations",
+        "page": 12,
+        "depth": 0
+      },
+      {
+        "title": "Préliminaires",
+        "page": 17,
+        "depth": 0
+      },
+      {
+        "title": "Bibliographie",
+        "page": 42,
+        "depth": 0
+      },
+      {
+        "title": "Livre 1 - Les sources des obligations",
+        "page": 45,
+        "depth": 0
+      },
+      {
+        "title": "Titre 1 - Le contrat",
+        "page": 49,
+        "depth": 1
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 356,
+    "with_destination": 356,
+    "per_page": 8.9,
+    "sample": [
+      {
+        "page": 465,
+        "rect": [
+          428,
+          654,
+          436,
+          663
+        ]
+      },
+      {
+        "page": 465,
+        "rect": [
+          510,
+          597,
+          518,
+          606
+        ]
+      },
+      {
+        "page": 465,
+        "rect": [
+          213,
+          407,
+          221,
+          416
+        ]
+      }
+    ]
+  },
+  "text_layer": {
+    "median_chars_per_page": 2245,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 1.0,
+    "offset_mode": -1,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 465,
+        "printed": 39
+      },
+      {
+        "pdf_page": 523,
+        "printed": 257
+      },
+      {
+        "pdf_page": 581,
+        "printed": 580
+      },
+      {
+        "pdf_page": 639,
+        "printed": 638
+      },
+      {
+        "pdf_page": 697,
+        "printed": 696
+      },
+      {
+        "pdf_page": 755,
+        "printed": 754
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "13.5": 60182,
+      "11.5": 26990,
+      "8.1": 324,
+      "6.9": 246,
+      "20.3": 123,
+      "27.0": 94,
+      "16.6": 66,
+      "14.8": 43
+    },
+    "body": 13.5,
+    "candidates_footnote": [
+      6.9,
+      8.1,
+      11.5
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 649,
+    "share_at_page_bottom": 0.14
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      77,
+      100,
+      131
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [
+    {
+      "line": "o",
+      "pages": 53
+    },
+    {
+      "line": "e",
+      "pages": 19
+    },
+    {
+      "line": "er",
+      "pages": 14
+    },
+    {
+      "line": "re",
+      "pages": 14
+    }
+  ],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 128,
+      "monotonic_share": 0.96,
+      "first": [
+        "485",
+        "537",
+        "597",
+        "652",
+        "703"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 21,
+      "monotonic_share": 1.0,
+      "first": [
+        "485",
+        "537",
+        "597",
+        "652",
+        "703"
+      ]
+    },
+    "§ с номером": {
+      "hits": 8,
+      "monotonic_share": 0.29,
+      "first": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "1"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 13921,
+    "suspicious": 1,
+    "share": 0.0001,
+    "sample": [
+      "LGDJ,"
+    ]
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        131.0,
+        535.0
+      ],
+      "even": [
+        131.0,
+        535.0
+      ]
+    },
+    "left": {
+      "hits": 29,
+      "monotonic_share": 0.93,
+      "even_page_share": 0.0,
+      "first": [
+        485,
+        537,
+        597,
+        652,
+        703,
+        769
+      ]
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "FR": 3
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Сноски кликабельны — привязку берём из файла напрямую, без эвристик.",
+      "Маргинальные номера у левого поля: 29 попаданий, монотонность 93%, доля чётных страниц 0% — кандидат на режим margin.",
+      "Типографская пагинация читается, но смещение относительно страниц файла непостоянно (вклейки, вкладки). Хранить обе нумерации, не пересчитывать.",
+      "Повторяющийся мусор (4 шаблонов) — вычистить первым шагом."
+    ]
+  }
+}

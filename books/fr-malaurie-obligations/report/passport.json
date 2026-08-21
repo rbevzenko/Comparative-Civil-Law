@@ -1,0 +1,263 @@
+{
+  "path": "/home/user/fr-pdf/malaurie-obligations.pdf",
+  "sha256": "4adfc5c4defa8ecfb6f3dd0d6ead3b8345e868b23cbac8a8c6442d8e038e4147",
+  "pages": 898,
+  "sampled_pages": [
+    135,
+    151,
+    167,
+    183,
+    199,
+    215,
+    231,
+    247,
+    263,
+    279,
+    295,
+    311,
+    327,
+    343,
+    359,
+    375,
+    391,
+    407,
+    423,
+    439,
+    455,
+    471,
+    487,
+    503,
+    519,
+    535,
+    551,
+    567,
+    583,
+    599,
+    615,
+    631,
+    647,
+    663,
+    679,
+    695,
+    711,
+    727,
+    743,
+    759
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": false
+  },
+  "links": {
+    "annots_on_sample": 34,
+    "with_destination": 34,
+    "per_page": 0.8,
+    "sample": [
+      {
+        "page": 135,
+        "rect": [
+          106,
+          164,
+          115,
+          172
+        ]
+      },
+      {
+        "page": 151,
+        "rect": [
+          106,
+          165,
+          119,
+          173
+        ]
+      },
+      {
+        "page": 215,
+        "rect": [
+          104,
+          128,
+          117,
+          136
+        ]
+      }
+    ]
+  },
+  "text_layer": {
+    "median_chars_per_page": 3464,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.35,
+    "offset_mode": -95,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 135,
+        "printed": 40
+      },
+      {
+        "pdf_page": 151,
+        "printed": 81
+      },
+      {
+        "pdf_page": 167,
+        "printed": 15
+      },
+      {
+        "pdf_page": 183,
+        "printed": null
+      },
+      {
+        "pdf_page": 199,
+        "printed": null
+      },
+      {
+        "pdf_page": 215,
+        "printed": 41
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "8.0": 54399,
+      "10.0": 43275,
+      "8.5": 35686,
+      "5.6": 962,
+      "4.6": 470,
+      "11.0": 146,
+      "14.9": 131,
+      "18.9": 125
+    },
+    "body": 8.0,
+    "candidates_footnote": [
+      4.6,
+      5.6
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 24181,
+    "share_at_page_bottom": 0.61
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      10
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [
+    {
+      "line": "o",
+      "pages": 69
+    },
+    {
+      "line": "Exemplaire personnel de Artem Karapetov M-Logos Legal Institute - karapetovag@gmail.com - ",
+      "pages": 40
+    },
+    {
+      "line": "re o",
+      "pages": 19
+    },
+    {
+      "line": "re",
+      "pages": 17
+    },
+    {
+      "line": "os",
+      "pages": 14
+    }
+  ],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 233,
+      "monotonic_share": 0.84,
+      "first": [
+        "148",
+        "40",
+        "41",
+        "42",
+        "43"
+      ]
+    },
+    "§ с номером": {
+      "hits": 5,
+      "monotonic_share": 0.5,
+      "first": [
+        "2",
+        "5",
+        "2",
+        "3",
+        "1"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 4,
+      "monotonic_share": 0.33,
+      "first": [
+        "2",
+        "2",
+        "2",
+        "3"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 24487,
+    "suspicious": 11,
+    "share": 0.0004,
+    "sample": [
+      "LGDJ",
+      "LGDJ,",
+      "LGDJ,",
+      "LGDJ,",
+      "LGDJ,",
+      "LGDJ,",
+      "SNCF.",
+      "RLDC",
+      "LGDJ,",
+      "LGDJ,",
+      "LGDJ,"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        51.0,
+        397.0
+      ],
+      "even": [
+        51.0,
+        397.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "FR": 1
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Оглавление в файле не зашито — иерархию собирать по печатному оглавлению и колонтитулам; качество поля hierarchy будет ниже.",
+      "Сноски кликабельны — привязку берём из файла напрямую, без эвристик.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы.",
+      "Повторяющийся мусор (5 шаблонов) — вычистить первым шагом."
+    ]
+  }
+}
