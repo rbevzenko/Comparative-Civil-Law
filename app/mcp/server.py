@@ -17,7 +17,7 @@ from app.mcp.embeddings import embed_query
 _settings = get_settings()
 
 # The SDK's DNS-rebinding protection defaults to allowing only
-# localhost/127.0.0.1 Host headers — everything arriving through the Caddy
+# localhost/127.0.0.1 Host headers — everything arriving through the nginx
 # reverse proxy would otherwise get rejected with 421.
 _allowed_hosts = ["127.0.0.1:*", "localhost:*", "[::1]:*"]
 _allowed_origins = ["http://127.0.0.1:*", "http://localhost:*", "http://[::1]:*"]
