@@ -1,12 +1,14 @@
 {
   "book_id": "fr-mainguy-contrats-speciaux",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
+  "authors": [
+    "Daniel Mainguy"
+  ],
+  "title": "Contrats spéciaux",
+  "edition": "9e éd.",
+  "year": 2014,
+  "publisher": "Dalloz",
+  "jurisdiction": "FR",
+  "language": "fr",
   "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "notes": "Серия «Cours Dalloz». Скан со своим распознаванием, качество среднее: 0.7% подозрительных слов («mobiJières», «1O juillet», «l'nrticle»). Год издания снят с титула, где он распознан как «201.lf» — читается как 2014, и это согласуется с девятым изданием. ВНИМАНИЕ: качество распознавания среднее — 0.7% подозрительных слов. Текст пригоден для поиска и чтения, но НЕ для дословного цитирования."
 }

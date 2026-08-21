@@ -1,0 +1,20 @@
+{
+  "number_issues": [
+    {
+      "raw": "231",
+      "action": "repaired_by_neighbours",
+      "to": 131,
+      "expected": 131,
+      "line": 3934,
+      "evidence": "предыдущий 130, следующий 132"
+    }
+  ],
+  "absorbed_units": 0,
+  "sections_found": 0,
+  "toc_entries": 0,
+  "toc_anchored_to_line": 0,
+  "toc_page_only": 0,
+  "pages_without_lines": [],
+  "profile": "scan-mainguy",
+  "method": "digital"
+}
