@@ -1,12 +1,15 @@
 {
   "book_id": "pel-movables-vol3-de-gr-lt-hu",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
+  "authors": [
+    "Wolfgang Faber",
+    "Brigitta Lurger"
+  ],
+  "title": "National Reports on the Transfer of Movables in Europe. Volume 3: Germany, Greece, Lithuania, Hungary",
+  "edition": "1st ed.",
+  "year": 2011,
+  "publisher": "Sellier European Law Publishers",
+  "jurisdiction": "DCFR",
+  "language": "en",
   "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "notes": "Сборник страновых отчётов, серия Principles of European Law. Тело — полосы 15–711; предисловие, оглавление и издательская реклама в конце не берутся."
 }

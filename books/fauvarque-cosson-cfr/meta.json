@@ -1,12 +1,15 @@
 {
   "book_id": "fauvarque-cosson-cfr",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
+  "authors": [
+    "Bénédicte Fauvarque-Cosson",
+    "Denis Mazeaud"
+  ],
+  "title": "European Contract Law: Materials for a Common Frame of Reference. Terminology, Guiding Principles, Model Rules",
+  "edition": "1st ed.",
+  "year": 2008,
+  "publisher": "Sellier European Law Publishers",
+  "jurisdiction": "DCFR",
+  "language": "en",
   "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "notes": "Сборник очерков; единицы цитирования в книге нет, единица — полоса. Тело: полосы 6–648."
 }

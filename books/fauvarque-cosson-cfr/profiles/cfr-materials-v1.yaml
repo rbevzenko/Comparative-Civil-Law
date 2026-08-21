@@ -1,0 +1,39 @@
+id: cfr-materials-v1
+publisher: Sellier European Law Publishers
+jurisdiction: DCFR
+language: en
+# Fauvarque-Cosson / Mazeaud (ред.), European Contract Law: Materials for a
+# Common Frame of Reference. Терминология, руководящие принципы и
+# пересмотренные PECL — работа Association Henri Capitant и Société de
+# législation comparée, легшая в основу CFR.
+#
+# ЕДИНИЦЫ ЦИТИРОВАНИЯ В КНИГЕ НЕТ: части сборника не нумерованы сквозняком.
+# Единица — полоса, адрес «p. 62».
+#
+# ЛОВУШКА как у Аксоя: колонтитул и сноски набраны ОДНИМ кеглем 8.5, а тело
+# 9.5. Колонтитул («Part I: Terminology») снимается полосой по высоте, всё
+# остальное кеглем 8.5 ниже 0.5 высоты — аппарат.
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+address:
+  template: "p. {number}"
+footnotes:
+  mode: font_bottom
+  note_size_max: 8.7
+  bottom_band: 0.5
+printed_page:
+  band: [0.08, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+\D'
+    - '\D\s+(\d{1,4})$'
+junk:
+  header_band: 0.07
+  patterns: []
+statutory:
+  patterns:
+    - '\b§{1,2}\s?\d+[a-z]?\b'
+    - '\bart(?:icle)?s?\.?\s?\d+\b'
+citation:
+  template: "{authors}, {title}, {publisher}, {year}, {address}"

@@ -1,0 +1,37 @@
+id: pel-essays-v1
+publisher: Sellier European Law Publishers
+jurisdiction: DCFR
+language: en
+# Faber/Lurger (ред.), Rules for the Transfer of Movables. Сборник очерков
+# разных авторов при серии Principles of European Law.
+#
+# ЕДИНИЦЫ ЦИТИРОВАНИЯ В КНИГЕ НЕТ: очерки не нумерованы сквозняком,
+# ссылаются на них по странице. Единица — полоса, адрес «p. 77».
+#
+# СНОСКИ НЕ ОТДЕЛЯЮТСЯ ПО КЕГЛЮ, и это осознанное отступление. Очерки
+# набраны разным кеглем: у одних тело 9.5, у других 8.5 — ровно тот кегль,
+# каким у первых набраны сноски. Порог, годный для одного очерка, съел бы
+# тело другого. Аппарат остаётся в тексте карточки; это видно в отчёте и
+# записано в журнале решений.
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+address:
+  template: "p. {number}"
+footnotes:
+  mode: none
+printed_page:
+  band: [0.08, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+\D'
+    - '\D\s+(\d{1,4})$'
+junk:
+  header_band: 0.085
+  patterns: []
+statutory:
+  patterns:
+    - '\b§{1,2}\s?\d+[a-z]?\b'
+    - '\bart(?:icle)?s?\.?\s?\d+\b'
+citation:
+  template: "{authors}, {title}, {publisher}, {year}, {address}"
