@@ -506,3 +506,60 @@ comparative-civil-law_caddy_config`.
 утверждение о действующем праве считается устаревшим, и об этом надо сказать
 прямо, а не пересказывать книгу как действующее право. Год издания у каждого
 источника в корпусе есть, так что правило исполнимо.
+
+### Опись немецкой папки (снята 2026-08-21)
+
+135 файлов, 5.4 ГБ. Ниже то, что видно ДО скачивания, по именам и размерам;
+всё остальное проверяется по самим файлам.
+
+**Побайтные копии (одинаковый размер, разные имена).** Часть переименована
+по-русски, и по имени они выглядят разными книгами:
+
+| | |
+|---|---|
+| Looschelders, Schuldrecht. Allgemeiner Teil | Looschelders_Schuldrecht._Allgemeiner_Teil |
+| **Behm**, Berger, Вещное право | **Brehm**_Berger_Sachenrecht |
+| Stadler, Allgemeiner Teil des BGB | Stadler_Allgemeiner_Teil_des_BGB |
+| Wolf, Вещное право 21 Aufl | Wolf_Sachenrecht_21_Aufl |
+| Staudingers_Kommentar_zum_Burgerlichen_Gesetzbuch | Eckpfeiler_Des_Zivilrechts_Von_Staudingers… |
+| Harke, Allgemeines Schuldrecht | Harke_Allgemeines_Schuldrecht |
+
+Ещё четыре пары различаются на байт-полтора и почти наверняка тоже копии:
+Boemke/Ulrici, Leenen/Häublein, Wieling Sachenrecht, Brox/Walker AT.
+Проверять по sha256, а не по размеру.
+
+**Перекрытие диапазонов §§ внутри одного комментария.** Мюнхенский:
+файл «104-144» покрывает те же параграфы, что пять отдельных (104-113,
+116-119, 120-124, 125-129, 130-144); файл «145-185» — те же, что три
+(145-150, 151-159, 160-185); «985-1011» и «986-1011» — один диапазон в двух
+сканах разного объёма (9 МБ против 93 МБ). Insolvenzordnung: два файла с
+диапазоном §§ 103-128 («Band 3» и «Band 4»), и два файла помечены «Band 1»
+при разных §§ (1-79 и 217-359).
+
+**Что за комментарии в папке.**
+
+* *Münchener Kommentar zum BGB* — файлы «NNN-NNN ГГУ (Мюнхенский
+  комментарий)». Цитируется «MüKoBGB/Автор, N. Aufl. Jahr, § 812 Rn. 45»:
+  единица — Randnummer ВНУТРИ параграфа, поэтому адрес обязан быть
+  составным (§ в address.section), иначе Rn. 45 из § 812 столкнётся с Rn. 45
+  из § 823.
+* *J. von Staudingers Kommentar* — «NNN-NNN BGB Staudinger». Цитируется
+  «Staudinger/Автор (Jahr), § 812 Rn. 45». Адрес так же составной.
+* *Eckpfeiler des Zivilrechts* — однотомная выжимка Штаудингера, отдельное
+  издание со своей нумерацией.
+* Отдельные комментарии: GmbHG (два разных), AktG, HGB, ZPO (девять томов),
+  InsO (девять томов плюс Мюнхенский), Grundbuchrecht (Kuntze), Mietrecht
+  (Abramenko и др., Staudinger Mietrecht, Emmerich/Sonnenschein),
+  Bamberger/Roth, Westermann/Grunewald/Maier-Reimer.
+* Учебники: Brox/Walker, Medicus, Larenz, Larenz/Wolf, Flume, Neuner,
+  Stadler, Leenen, Boemke/Ulrici, Looschelders, Harke, Fikentscher,
+  Emmerich, Oetker/Maultzsch, Oechsler, Lohsse, Baur/Stürner, Wolf,
+  Brehm/Berger, Wieling, Wilhelm, Prütting, Gursky, Meder/Czelk, Hübner,
+  Leipold, Rehberg, Reich/Schmitz, Zerres.
+* Файлы «Vorbemerkungen zu §§ …» — куски комментария, вырезанные отдельно;
+  к какому изданию относятся, устанавливать по самим файлам.
+
+**Про год издания.** Ларенц, Флуме, Медикус (10. Aufl. 2010), Larenz/Wolf —
+написаны ДО реформы обязательственного права 2002 г. или вскоре после неё.
+Их утверждения о действующем праве нельзя подавать как сегодняшние. Это и
+есть повод для правила коннектора из §13.
