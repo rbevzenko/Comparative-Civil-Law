@@ -1,0 +1,60 @@
+id: pecl-kluwer-part3-v1
+publisher: Kluwer Law International
+jurisdiction: DCFR
+language: en
+# Principles of European Contract Law, Part III (ред. Lando, Clive, Prüm,
+# Zimmermann), Kluwer, 2003. Файл распознан владельцем: скан с текстовым
+# слоем поверх растра.
+#
+# ЕДИНИЦА — СТАТЬЯ: «Article 10:205». Так PECL и цитируют.
+#
+# КЕГЛЬ ЗДЕСЬ НЕНАДЁЖЕН. Это распознанный скан: один и тот же заголовок
+# статьи встречается кеглем от 9.2 до 10.3, а буквенный подзаголовок
+# комментария набран МЕЛЬЧЕ тела (9.7 против 10.1). Поэтому колонтитул
+# отделяется от заголовка статьи ПОЛОЖЕНИЕМ, а не кеглем: колонтитул сидит
+# на 0.072 высоты (низ 0.087), заголовок статьи — на 0.111.
+#
+# Колонтитул несёт колонцифру: «Article 10:205: Regime of Solidary Claims 83»
+# на лицевой, «82 Chapter 10» на оборотной.
+#
+# ДИАПАЗОН ПОЛОС: тело комментария 97–280. С 41 по 95 книга печатает текст
+# статей отдельно, без разбора (печатные полосы 4–59), и с 97 начинается
+# комментарий, где нумерация полос идёт заново с 60. Взять обе части значило
+# бы задвоить каждую статью.
+
+units:
+  - type: "Art."
+    id_prefix: "art"
+    mode: flow
+    pattern: '^Article\s*\d+:(\d+):\s+(?=[A-Z])'
+    address_template: "Article {section}:{number}"
+
+address:
+  section:
+    mode: pattern
+    pattern: '^Article\s*(\d+):\d+:\s+(?=[A-Z])'
+    anchor: start
+  template: "Article {section}:{number}"
+
+footnotes:
+  # Аппарат — блоки COMMENT и NOTES внутри статьи, а не подвал полосы.
+  mode: none
+
+printed_page:
+  band: [0.095, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+\D'
+    - '\D\s+(\d{1,4})$'
+
+junk:
+  # Низ колонтитула на 0.087, заголовок статьи начинается с 0.111.
+  header_band: 0.095
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bArt(?:icle)?s?\.?\s?\d+:\d+\b'
+    - '\bCC\s+arts?\.\s?\d+\b'
+
+citation:
+  template: "{authors}, {title}, {publisher}, {year}, {address}"

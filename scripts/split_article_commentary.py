@@ -24,6 +24,15 @@
 
     letters  комментарий — буквенный подзаголовок «F. Approval by …»,
              заметка — номер «21. In POLAND …». Так набраны DCFR и серия PEL.
+    letters-ocr
+             то же, но БЕЗ опоры на кегль. Для распознанных книг: в PECL
+             часть III подзаголовок «A. Release by One Solidary Creditor»
+             набран кеглем 9.7 при теле 10.1 — то есть МЕЛЬЧЕ тела, и это
+             не вёрстка, а погрешность распознавания. Вместо кегля признак
+             такой: строка не кончается точкой. Заголовок точкой не
+             кончается никогда, а ложное срабатывание — кончается: в
+             иллюстрациях стороны названы буквами, и перенос даёт строку
+             «A. C wants to deliver the car at the agreed time.».
     cn       комментарий — «C4.», заметка — «N1.», прямо в начале абзаца.
              Так набран PEICL, и это не наша выдумка: собственный указатель
              книги ссылается ровно так — «Art. 1:101 C6», «Art. 2:202 N1».
@@ -56,14 +65,20 @@ import re
 # Регистр служебного заголовка зависит от тома: главный набирает «COMMENTS»
 # прописными, тома 5–6 — «Comments». Слово должно занимать всю строку:
 # «Comments on paragraph (2)» — это уже текст, а не заголовок блока.
-COMMENTS = re.compile(r"^COMMENTS\s*$|^Comments\s*$", re.M)
+# Единственное и множественное число обе в ходу: DCFR печатает «COMMENTS»,
+# тома 5–6 — «Comments», PECL часть III — «COMMENT». Слово должно занимать
+# всю строку: «Comments on paragraph (2)» — это уже текст, а не заголовок.
+COMMENTS = re.compile(r"^COMMENTS?\s*$|^Comments?\s*$", re.M)
 # «National Notes» — так этот блок назван в томах серии PEL; в DCFR он
 # просто «NOTES». Слово должно занимать всю строку.
-NOTES = re.compile(r"^NOTES\s*$|^(?:National\s+)?Notes\s*$", re.M)
+NOTES = re.compile(r"^NOTES?\s*$|^(?:National\s+)?Notes?\s*$", re.M)
 # Буквенный подзаголовок: одна заглавная, точка, пробел, дальше текст.
 # Строка короткая — это заголовок, а не абзац, начатый с инициала.
 LETTER = re.compile(r"^([A-Z])\.\s+(\S[^\n]{0,90})$", re.M)
 # Стиль PEICL: «C4. Two methods are apparent…», «N1. The full range…».
+# То же, что LETTER, но заголовок обязан не кончаться точкой: для книг,
+# где кегль испорчен распознаванием и отличить заголовок по нему нельзя.
+LETTER_OCR = re.compile(r"^([A-Z])\.\s+(\S[^\n]{0,90}[^.\s])$", re.M)
 CN_COMMENT = re.compile(r"^C(\d{1,3})\.\s", re.M)
 CN_NOTE = re.compile(r"^N(\d{1,3})\.\s", re.M)
 # Нумерованная заметка: число, точка, пробел, дальше содержательный знак.
@@ -146,8 +161,8 @@ def split_card(card, pagemap, starts, headings=None, style="letters"):
     if mc:
         cend = mn.start() if mn else len(text)
         body = text[mc.end():cend]
-        crx = CN_COMMENT if style == "cn" else LETTER
-        cheads = None if style == "cn" else headings
+        crx = {"cn": CN_COMMENT, "letters-ocr": LETTER_OCR}.get(style, LETTER)
+        cheads = None if style in ("cn", "letters-ocr") else headings
         for label, a, b in split_block(body, mc.end(), crx, "Comment", style == "cn", cheads):
             segments.append(("Comment", label, a, b))
     if mn:
@@ -254,7 +269,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--book", required=True)
     ap.add_argument("--dry-run", action="store_true")
-    ap.add_argument("--marker-style", choices=("letters", "cn"), default="letters",
+    ap.add_argument("--marker-style", choices=("letters", "letters-ocr", "cn"), default="letters",
                     help="чем помечены части статьи: буквой (DCFR, PEL) или C/N (PEICL)")
     ap.add_argument("--heading-size", type=float, default=13.5,
                     help="кегль, с которого строка считается подзаголовком комментария")
