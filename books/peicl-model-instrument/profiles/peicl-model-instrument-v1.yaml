@@ -1,0 +1,57 @@
+id: peicl-model-instrument-v1
+publisher: Sellier European Law Publishers
+jurisdiction: DCFR
+language: en
+# Heiss (ред.), Principles of European Insurance Contract Law: A Model
+# Optional Instrument. Материалы венской конференции о PEICL: доклады,
+# отчёты об обсуждении, заключительное слово. Файл распознан владельцем.
+#
+# Это НЕ сам PEICL и не комментарий к нему — те лежат отдельной книгой
+# (peicl-heiss-insurance, 976 полос). Здесь очерки О нём.
+#
+# ЕДИНИЦЫ ЦИТИРОВАНИЯ В КНИГЕ НЕТ: доклады не нумерованы сквозняком.
+# Единица — полоса, адрес «p. 52».
+#
+# КОЛОНЦИФРА ВНИЗУ, В НИЖНЕМ КОЛОНТИТУЛЕ: «52 Felix Wieser» на чётных,
+# «Felix Wieser 53» на нечётных. Паспорт прочитал её лишь на 12% полос
+# потому, что искал наверху; полоса снизу задана явно.
+#
+# Под колонтитулом стоит водяной знак издательства кеглем 14.8 — он крупнее
+# тела и в текст карточки лез бы первой строкой. Снимается шаблоном.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  mode: font_bottom
+  note_size_max: 9.5
+  bottom_band: 0.5
+
+printed_page:
+  # Нижний колонтитул стоит на 0.869 высоты, низ строки на 0.883.
+  band: [0.11, 0.13]
+  patterns:
+    - '^(\d{1,4})\s+\D'
+    - '\D\s+(\d{1,4})$'
+
+junk:
+  # Верхний колонтитул — название доклада, стоит на 0.083, низ на 0.097.
+  header_band: 0.105
+  # Нижний колонтитул снимается ПОСЛЕ чтения колонцифры (см. strip_bands).
+  footer_band: 0.865
+  patterns:
+    - 'sellier\.\s*european law publishers'
+    - '^www\.sellier\.de$'
+
+statutory:
+  patterns:
+    - '\bArt(?:icle)?s?\.?\s?\d+:\d+\b'
+    - '\bDirective\s+\d+/\d+/E[CU]\b'
+
+citation:
+  template: "{authors}, {title}, {publisher}, {year}, {address}"

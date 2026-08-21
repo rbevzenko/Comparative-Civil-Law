@@ -1,0 +1,142 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/peicl-model-instrument",
+  "cards": 142,
+  "profile": "peicl-model-instrument-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.94,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "p.",
+        "section": null,
+        "from": 13,
+        "to": 15,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 23,
+        "to": 25,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 49,
+        "to": 51,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 73,
+        "to": 75,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 101,
+        "to": 111,
+        "missing": 9
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 105,
+        "to": 107,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 107,
+        "to": 109,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 7,
+    "missing_total": 15,
+    "duplicates": [
+      {
+        "family": "p.",
+        "section": null,
+        "number": 111
+      }
+    ],
+    "duplicates_total": 1,
+    "by_family": {
+      "p.": 142
+    }
+  },
+  "coverage": {
+    "share": 0.9995,
+    "covered_chars": 270688,
+    "book_chars": 270829,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2025,
+    "min": 7,
+    "max": 2977,
+    "too_short": [
+      "peicl-model-instrument:p:28",
+      "peicl-model-instrument:p:111"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.4,
+    "footnotes_total": 58,
+    "unparsed_blocks": 44,
+    "per_card_median": 0.0,
+    "cards_with_calls_but_no_notes": 0,
+    "notes_without_visible_call": 58
+  },
+  "dead_pages": {
+    "pages": [
+      22,
+      32,
+      58,
+      82,
+      110,
+      112,
+      114,
+      116
+    ],
+    "count": 8
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 126,
+      "2": 16
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 94.0% < 98%: пропущено номеров 15. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}
