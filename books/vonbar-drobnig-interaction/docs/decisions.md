@@ -3,11 +3,11 @@
 Christian von Bar & Ulrich Drobnig, The Interaction of Contract Law and Tort
 and Property Law in Europe. A Comparative Study, Sellier European Law
 Publishers, 2004. Файл `vonBar_Drobnig_Interaction_of_Contract_Tort_Property_Law_Europe.pdf`,
-574 полосы, цифровой PDF. **Первая книга рубрики Comparative literature.**
+574 полосы, цифровой PDF. **Первая книга рубрики Comparative law.**
 
 | Дата | Вопрос | Решение | Кто | Улики |
 |---|---|---|---|---|
-| 2026-08-20 | Юрисдикция | `Comparative literature` — рубрика наднациональная, к стране не привязана | владелец | указание владельца, правило в коннекторе |
+| 2026-08-20 | Юрисдикция | `Comparative law` — рубрика наднациональная, к стране не привязана | владелец | указание владельца, правило в коннекторе |
 | 2026-08-20 | Тип источника | `textbook`: сервис знает только `commentary` и `textbook`, а это сравнительное исследование. Ближе `textbook` | агент | `SourceType` в `app/api/schemas/source.py` |
 | 2026-08-20 | Границы тела | f35–f503 (стр. книги 2–470). Дальше приложения-указатели: таблицы сокращений, кодексов, дел и литературы | агент | f505 «472 Annexes», f556 «Table of Cases» |
 | 2026-08-20 | В текстовом слое НЕТ пробельных глифов | `extract_text()` выдаёт «Onthe22ndMay2002theEuropeanCommission» сплошняком. Слова восстанавливает `_space_gap` по зазорам между глифами — без правок профиля | агент | f41: было «Onthe22nd», стало «On the 22nd May 2002 the European Commission published a» |

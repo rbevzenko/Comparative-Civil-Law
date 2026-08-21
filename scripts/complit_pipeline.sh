@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Стандартный прогон книги рубрики «Comparative literature», у которой
+# Стандартный прогон книги рубрики «Comparative law», у которой
 # единица цитирования — ПОЛОСА.
 #
 #   scripts/complit_pipeline.sh --book <id> --pdf <файл> --pages 51-608 \
