@@ -1,0 +1,111 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/fr-remy-cabrillac-obligations",
+  "cards": 529,
+  "profile": "dalloz-lgdj-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9906,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "n°",
+        "section": null,
+        "from": 86,
+        "to": 88,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 473,
+        "to": 475,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 496,
+        "to": 500,
+        "missing": 3
+      }
+    ],
+    "gaps_total": 3,
+    "missing_total": 5,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "n°": 529
+    }
+  },
+  "coverage": {
+    "share": 0.9965,
+    "covered_chars": 720891,
+    "book_chars": 723441,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 1032,
+    "min": 75,
+    "max": 29994,
+    "too_short": [
+      "fr-remy-cabrillac-obligations:n:17",
+      "fr-remy-cabrillac-obligations:n:106",
+      "fr-remy-cabrillac-obligations:n:132",
+      "fr-remy-cabrillac-obligations:n:163",
+      "fr-remy-cabrillac-obligations:n:183",
+      "fr-remy-cabrillac-obligations:n:198",
+      "fr-remy-cabrillac-obligations:n:332",
+      "fr-remy-cabrillac-obligations:n:343",
+      "fr-remy-cabrillac-obligations:n:346",
+      "fr-remy-cabrillac-obligations:n:368",
+      "fr-remy-cabrillac-obligations:n:408",
+      "fr-remy-cabrillac-obligations:n:420",
+      "fr-remy-cabrillac-obligations:n:442",
+      "fr-remy-cabrillac-obligations:n:453",
+      "fr-remy-cabrillac-obligations:n:524"
+    ],
+    "too_long": [
+      "fr-remy-cabrillac-obligations:n:534"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.64,
+    "footnotes_total": 1385,
+    "unparsed_blocks": 3,
+    "per_card_median": 1,
+    "cards_with_calls_but_no_notes": 2,
+    "notes_without_visible_call": 1195
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 529
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

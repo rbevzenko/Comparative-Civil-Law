@@ -1,12 +1,15 @@
 {
   "book_id": "fr-remy-cabrillac-obligations",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
+  "authors": [
+    "Rémy Cabrillac"
+  ],
+  "title": "Droit des obligations",
+  "edition": "16e éd.",
+  "year": 2024,
+  "publisher": "Dalloz",
+  "jurisdiction": "FR",
+  "language": "fr",
   "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "notes": "Электронное издание: сноски вынесены на отдельные полосы файла, привязаны по ссылкам-аннотациям (scripts/footnotes_from_links.py).",
+  "service_source_id": "25d678d9-8863-4886-9dbc-f5525d351470"
 }
