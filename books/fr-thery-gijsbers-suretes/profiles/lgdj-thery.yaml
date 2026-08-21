@@ -1,0 +1,46 @@
+id: lgdj-thery
+publisher: LGDJ / Lextenso
+jurisdiction: FR
+language: fr
+# Тело 8.8, сноски 8.0 внизу полосы — разница меньше пункта, поэтому полосу
+# держим на 0.5: блок сносок здесь всегда в нижней трети. Знаки 4.8.
+# Колонцифра в нижнем колонтитуле: «Deuxième partie : Les sûretés réelles 201».
+
+units:
+  - type: "n°"
+    id_prefix: "n"
+    mode: flow
+    pattern: '^(\d{1,4})\s+(?=[A-ZÀÂÄÉÈÊËÎÏÔÖÙÛÜÇŒÆ«“]|[a-z0-9α-ω]\s*[\)°º])'
+
+printed_page:
+  band: [0.0, 0.10]
+  patterns:
+    - '\s(\d{1,4})$'
+
+footnotes:
+  mode: font_bottom
+  body_size: 8.8
+  note_size_max: 8.3
+  bottom_band: 0.5
+
+junk:
+  header_band: 0.11
+  patterns:
+    - 'Exemplaire personnel de '
+address:
+  section:
+    mode: none
+  template: "{unit_type} {number}"
+
+statutory:
+  patterns:
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*(?:\s*(?:et|à|,)\s*\d+(?:-\d+)*)*\s*(?:C\.\s*civ\.|du Code civil)'
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*\s*C\.\s*(?:com|consom|pén|proc\.\s*civ)\.'
+    - 'L\.\s*\d{3}-\d+'
+
+cross_refs:
+  patterns:
+    - '(?:supra|infra)\s*,?\s*n[o°s]*\s*\d+(?:\s*(?:et|à|,)\s*\d+)*'
+
+citation:
+  template: "{authors}, {title}, {edition}, {publisher}, {year}, {address}"
