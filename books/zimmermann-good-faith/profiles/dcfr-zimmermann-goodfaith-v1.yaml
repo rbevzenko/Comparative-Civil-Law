@@ -1,0 +1,42 @@
+id: dcfr-zimmermann-goodfaith-v1
+publisher: Cambridge University Press
+jurisdiction: DCFR
+language: en
+# Reinhard Zimmermann & Simon Whittaker (eds), Good Faith in European
+# Contract Law (2000). Том серии Common Core, но файл — СКАН РАЗВОРОТАМИ:
+# на одном листе 816 на 608 пунктов помещаются ДВЕ книжные страницы
+# («340 GOOD FAITH IN EUROPEAN CONTRACT LAW … CASE 9: UNIFORMITY OF
+# OUTFIT 341»). Лист режется пополам по x=408 (pages_spread.py).
+#
+# Распознавание среднее: «CONTRACT I.AW», «~ASE 9». Для поиска по смыслу
+# годится, для дословной цитаты — нет.
+#
+# Кегли: 10 тело, 8 сноски, 6–7 знаки.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  mode: font_bottom
+  note_size_max: 8.6
+  bottom_band: 0.55
+
+printed_page:
+  band: [0.06, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+\D'
+    - '[A-Za-z]\s+(\d{1,4})$'
+
+junk:
+  header_band: 0.065
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'

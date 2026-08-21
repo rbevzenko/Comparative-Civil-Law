@@ -1,0 +1,336 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/nossek-grundbuch",
+  "cards": 371,
+  "profile": "dcfr-nossek-grundbuch-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.8628,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "p.",
+        "section": null,
+        "from": 214,
+        "to": 217,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 217,
+        "to": 220,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 227,
+        "to": 229,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 230,
+        "to": 232,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 235,
+        "to": 238,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 240,
+        "to": 242,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 249,
+        "to": 251,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 252,
+        "to": 255,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 256,
+        "to": 259,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 262,
+        "to": 264,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 265,
+        "to": 267,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 270,
+        "to": 272,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 275,
+        "to": 277,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 277,
+        "to": 279,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 289,
+        "to": 291,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 292,
+        "to": 295,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 295,
+        "to": 297,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 298,
+        "to": 301,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 305,
+        "to": 308,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 308,
+        "to": 310,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 315,
+        "to": 318,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 320,
+        "to": 322,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 329,
+        "to": 331,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 333,
+        "to": 335,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 339,
+        "to": 342,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 342,
+        "to": 345,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 345,
+        "to": 348,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 350,
+        "to": 354,
+        "missing": 3
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 362,
+        "to": 364,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 364,
+        "to": 366,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 40,
+    "missing_total": 59,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 371
+    }
+  },
+  "coverage": {
+    "share": 0.9995,
+    "covered_chars": 790834,
+    "book_chars": 791204,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2082,
+    "min": 715,
+    "max": 3468,
+    "too_short": [],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.85,
+    "footnotes_total": 2099,
+    "unparsed_blocks": 0,
+    "per_card_median": 6,
+    "cards_with_calls_but_no_notes": 15,
+    "notes_without_visible_call": 1288
+  },
+  "dead_pages": {
+    "pages": [
+      237,
+      238,
+      240,
+      241,
+      250,
+      253,
+      258,
+      259,
+      263,
+      272,
+      275,
+      276,
+      279,
+      280,
+      285,
+      288,
+      293,
+      298,
+      300,
+      312,
+      315,
+      316,
+      318,
+      321,
+      322,
+      328,
+      329,
+      331,
+      338,
+      339,
+      343,
+      352,
+      356,
+      362,
+      363,
+      365,
+      366,
+      368,
+      369,
+      373
+    ],
+    "count": 59
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 371,
+    "sample": [
+      "nossek-grundbuch:p:1",
+      "nossek-grundbuch:p:2",
+      "nossek-grundbuch:p:3",
+      "nossek-grundbuch:p:4",
+      "nossek-grundbuch:p:5",
+      "nossek-grundbuch:p:6",
+      "nossek-grundbuch:p:7",
+      "nossek-grundbuch:p:8",
+      "nossek-grundbuch:p:9",
+      "nossek-grundbuch:p:10"
+    ],
+    "depth_histogram": {
+      "0": 371
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 86.3% < 98%: пропущено номеров 59. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

@@ -1,0 +1,42 @@
+id: dcfr-nossek-grundbuch-v1
+publisher: Mohr Siebeck
+jurisdiction: DCFR
+language: de
+# Vera Nossek, Das Konzept Grundbuch. Eine rechtsvergleichende Untersuchung
+# (2016). 472 полосы, СКАН с распознаванием, и полоса у него крошечная —
+# 263 на 393 пункта. Кегли соответственно мелкие: тело 5.7, сноски 4.8–5.2,
+# колонтитул с колонцифрой на 26–27, то есть на 0.068 высоты.
+#
+# Распознавание среднее: «Grrmdregisterrec/11» вместо
+# «Grundregisterrecht». Для поиска по смыслу этого хватает, для дословной
+# цитаты — нет; в журнале решений это отмечено.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  # Между телом (5.7) и сносками (4.8–5.2) зазор в полпункта — порог
+  # приходится ставить точно.
+  mode: font_bottom
+  note_size_max: 5.45
+  bottom_band: 0.60
+
+printed_page:
+  band: [0.08, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+\D'
+    - '[A-Za-z]\s+(\d{1,4})$'
+
+junk:
+  header_band: 0.085
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'

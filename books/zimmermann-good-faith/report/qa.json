@@ -1,0 +1,125 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/zimmermann-good-faith",
+  "cards": 705,
+  "profile": "dcfr-zimmermann-goodfaith-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9958,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "p.",
+        "section": null,
+        "from": 141,
+        "to": 143,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 143,
+        "to": 145,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 206,
+        "to": 208,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 3,
+    "missing_total": 3,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 705
+    }
+  },
+  "coverage": {
+    "share": 0.9772,
+    "covered_chars": 1465096,
+    "book_chars": 1499351,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 33552,
+        "from": 261699,
+        "to": 295251
+      }
+    ]
+  },
+  "lengths": {
+    "median": 2183,
+    "min": 1,
+    "max": 3066,
+    "too_short": [
+      "zimmermann-good-faith:p:143",
+      "zimmermann-good-faith:p:702"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.4,
+    "footnotes_total": 845,
+    "unparsed_blocks": 0,
+    "per_card_median": 0,
+    "cards_with_calls_but_no_notes": 238,
+    "notes_without_visible_call": 698
+  },
+  "dead_pages": {
+    "pages": [
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95
+    ],
+    "count": 11
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 705,
+    "sample": [
+      "zimmermann-good-faith:p:0",
+      "zimmermann-good-faith:p:1",
+      "zimmermann-good-faith:p:2",
+      "zimmermann-good-faith:p:3",
+      "zimmermann-good-faith:p:4",
+      "zimmermann-good-faith:p:5",
+      "zimmermann-good-faith:p:6",
+      "zimmermann-good-faith:p:7",
+      "zimmermann-good-faith:p:8",
+      "zimmermann-good-faith:p:9"
+    ],
+    "depth_histogram": {
+      "0": 705
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}
