@@ -177,12 +177,17 @@ def split_jobs(lines):
     while i < len(lines):
         ln = lines[i]
         if ZITIER.match(ln["text"]):
+            # Блок ссылки разрывается концом полосы: короткая форма остаётся
+            # внизу, между ними встают адрес печати и колонтитул следующей
+            # полосы, и только потом идёт длинная форма. Поэтому мусорные
+            # строки внутри блока пропускаются, а не обрывают его.
             cite, j = None, i + 1
-            while j < len(lines) and j <= i + 4:
-                m = CITE_LONG.match(lines[j]["text"])
+            while j < len(lines) and j <= i + 6:
+                t = lines[j]["text"]
+                m = CITE_LONG.match(t)
                 if m:
                     cite = m.groupdict()
-                elif not CITE_SHORT.match(lines[j]["text"]):
+                elif not CITE_SHORT.match(t) and not any(rx.search(t) for rx in JUNK):
                     break
                 j += 1
             jobs.append({"lines": cur, "cite": cite})
@@ -236,25 +241,62 @@ def pull_margin_numbers(lines):
     """Снять напечатанные Randnummern с концов строк.
 
     Номер стоит ПОСЛЕДНИМ словом строки и заходит за правый край полосы.
-    Возвращает список (индекс строки, номер) и чистит сами строки.
+    Номер пишется прямо на строку полем `rn`, а сама строка чистится.
+
+    Отдельный случай — номер, восстановленный распознаванием: ему не нашлось
+    строки, и он пришёл строкой из одного числа. Он относится к СЛЕДУЮЩЕЙ
+    строке тела, а сама строка-номер выбрасывается.
     """
     edge = body_edge(lines)
     if edge is None:
-        return []
-    found = []
+        return
+    drop = []
     for k, ln in enumerate(lines):
         words = ln.get("words") or []
         if not words:
             continue
+        if NUM_ONLY.fullmatch(ln["text"]) and ln["x0"] >= edge + 4:
+            nxt = next((lines[j] for j in range(k + 1, len(lines))
+                        if len(lines[j]["text"]) > 20), None)
+            if nxt is not None and nxt.get("rn") is None:
+                nxt["rn"] = int(ln["text"])
+                drop.append(k)
+            continue
         last = max(words, key=lambda w: w["x1"])
-        s = last["text"].strip()
-        if NUM_ONLY.fullmatch(s) and last["x0"] >= edge + 4 and len(ln["text"]) > 40:
-            found.append((k, int(s)))
+        tail = last["text"].strip()
+        if NUM_ONLY.fullmatch(tail) and last["x0"] >= edge + 4 and len(ln["text"]) > 40:
+            ln["rn"] = int(tail)
             keep = [w for w in words if w is not last]
             ln["words"] = keep
             ln["text"] = norm(" ".join(w["text"] for w in keep))
             ln["x1"] = max((w["x1"] for w in keep), default=ln["x1"])
-    return found
+    for k in sorted(drop, reverse=True):
+        del lines[k]
+
+
+def inline_superscripts(lines):
+    """Вернуть оторвавшийся знак сноски в свою строку.
+
+    Верхний индекс приподнят над строкой, и разбиение по высоте выносит его
+    в отдельную строку из одного числа. Принадлежит он СЛЕДУЮЩЕЙ строке — там
+    стоит слово, к которому относится, — и встаёт в неё на своё место по x.
+
+    Делать это можно только ПОСЛЕ отделения аппарата: там номер сноски тоже
+    стоит отдельной строкой из одного числа, и он там на своём месте.
+    """
+    res, pending = [], []
+    for ln in lines:
+        if NUM_ONLY.fullmatch(ln["text"]) and (ln.get("size") or 99) <= 9.0:
+            pending.append(ln)
+            continue
+        if pending:
+            words = sorted((ln.get("words") or []) + [w for m in pending for w in (m.get("words") or [])],
+                           key=lambda w: w["x0"])
+            ln = dict(ln, words=words, text=norm(" ".join(w["text"] for w in words)))
+            pending = []
+        res.append(ln)
+    res.extend(pending)                     # знак в самом конце задания
+    return res
 
 
 def rn_list(s):
@@ -280,7 +322,11 @@ def job_units(job, warn):
     """
     body, notes = split_apparatus(drop_junk(job["lines"]))
     cite = job["cite"]
-    marks = pull_margin_numbers(body)
+    pull_margin_numbers(body)
+    # Номер пишется НА строку, а не отдаётся списком индексов: вклейка знаков
+    # сноски ниже меняет число строк, и любые индексы после неё врут.
+    body = inline_superscripts(body)
+    marks = [(k, ln["rn"]) for k, ln in enumerate(body) if ln.get("rn") is not None]
     want = rn_list(cite["rn"]) if cite and cite.get("rn") else []
 
     if not body:
@@ -325,7 +371,16 @@ def merge_units(units):
         key = (u["section"], u["number"], u.get("upto"))
         if key not in best or len(u["text"]) > len(best[key]["text"]):
             best[key] = u
-    return sorted(best.values(), key=lambda u: (u["par_sort"], u["number"]))
+    # Карточка на диапазон нужна лишь там, где номера поодиночке не нашлись.
+    # Если каждый номер диапазона есть отдельной карточкой, диапазон — просто
+    # обрывок того же текста, и держать его значит показывать одно место
+    # дважды.
+    single = {(u["section"], u["number"]) for u in best.values() if not u.get("upto")}
+    out = [u for u in best.values()
+           if not u.get("upto")
+           or not all((u["section"], n) in single
+                      for n in range(u["number"], u["upto"] + 1))]
+    return sorted(out, key=lambda u: (u["par_sort"], u["number"]))
 
 
 def par_sort_key(par):
@@ -379,6 +434,11 @@ def main():
         bearb.setdefault(par, cite["bearb"].strip())
         units, note_lines = job_units(job, warn)
         notes = P.parse_notes(note_lines, note_lines[0]["pdf_page"] if note_lines else 0)
+        for n in notes:
+            # В аппарате стрелка в конце записи — это кнопка «вернуться к
+            # знаку» из веб-читалки, а не часть текста сноски. В текстовом
+            # слое её нет, она приходит из распознавания контуров.
+            n["text"] = re.sub(r"\s*→\s*$", "", n["text"]).strip()
         for u in units:
             text = "\n".join(ln["text"] for ln in u["lines"]).strip()
             if not text:
@@ -418,7 +478,14 @@ def main():
             "text": u["text"],
             "hierarchy": [f"§ {u['section']}"],
             "footnotes": sorted(mine, key=lambda n: n["number"]),
-            "statutory_refs": [], "cross_refs": [], "contains_also": [],
+            "statutory_refs": [], "cross_refs": [],
+            # Задание печати на диапазон без напечатанных номеров даёт одну
+            # карточку; номера, оставшиеся внутри неё, перечисляются здесь,
+            # иначе они выглядят просто потерянными.
+            "contains_also": [
+                {"external_id": f"{book_id}:rn:{u['section']}/{n}", "unit_type": "Rn.",
+                 "number": n, "reason": "номер не напечатан в распечатке"}
+                for n in range(num + 1, (u.get("upto") or num) + 1)],
             "institute": None, "concept_ids": [],
             "source": {k: meta.get(k) for k in ("authors", "title", "edition", "year", "publisher")},
             "jurisdiction": meta.get("jurisdiction") or a.jurisdiction,

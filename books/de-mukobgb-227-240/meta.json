@@ -1,6 +1,11 @@
 {
   "book_id": "de-mukobgb-227-240",
-  "authors": ["Franz Jürgen Säcker", "Roland Rixecker", "Hartmut Oetker", "Bettina Limperg"],
+  "authors": [
+    "Franz Jürgen Säcker",
+    "Roland Rixecker",
+    "Hartmut Oetker",
+    "Bettina Limperg"
+  ],
   "title": "Münchener Kommentar zum Bürgerlichen Gesetzbuch",
   "edition": "10. Auflage 2025, §§ 227–240",
   "year": 2025,
@@ -8,5 +13,6 @@
   "jurisdiction": "DE",
   "language": "de",
   "isbn": null,
-  "notes": "распечатка beck-online; издание и год взяты из строки Zitiervorschläge самого файла, комментатор — свой у каждого параграфа и подставляется в цитату отдельно"
+  "notes": "распечатка beck-online; издание и год взяты из строки Zitiervorschläge самого файла, комментатор — свой у каждого параграфа и подставляется в цитату отдельно",
+  "pdf_pages_total": 88
 }

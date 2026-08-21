@@ -1,0 +1,87 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-mukobgb-227-240",
+  "cards": 91,
+  "profile": "beck-online-print-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9785,
+    "rows": 14,
+    "gaps": [
+      {
+        "family": "Rn.",
+        "section": "229",
+        "from": 6,
+        "to": 9,
+        "missing": 2
+      }
+    ],
+    "gaps_total": 1,
+    "missing_total": 2,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Rn.": 91
+    }
+  },
+  "coverage": {
+    "share": 0.9994,
+    "covered_chars": 151528,
+    "book_chars": 151618,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 1482,
+    "min": 131,
+    "max": 5235,
+    "too_short": [],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.65,
+    "footnotes_total": 379,
+    "unparsed_blocks": 0,
+    "per_card_median": 3,
+    "cards_with_calls_but_no_notes": 21,
+    "notes_without_visible_call": 355
+  },
+  "dead_pages": {
+    "pages": [
+      9,
+      23,
+      51,
+      55,
+      72
+    ],
+    "count": 5
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 91
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 97.9% < 98%: пропущено номеров 2. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}
