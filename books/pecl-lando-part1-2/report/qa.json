@@ -1,0 +1,334 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/pecl-lando-part1-2",
+  "cards": 899,
+  "profile": "pecl-kluwer-part12-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.4486,
+    "rows": 186,
+    "gaps": [
+      {
+        "family": "Art.",
+        "section": "1",
+        "from": 103,
+        "to": 106,
+        "missing": 2
+      },
+      {
+        "family": "Art.",
+        "section": "1",
+        "from": 106,
+        "to": 301,
+        "missing": 194
+      },
+      {
+        "family": "Art.",
+        "section": "1",
+        "from": 302,
+        "to": 304,
+        "missing": 1
+      },
+      {
+        "family": "Art.",
+        "section": "2",
+        "from": 107,
+        "to": 201,
+        "missing": 93
+      },
+      {
+        "family": "Art.",
+        "section": "2",
+        "from": 211,
+        "to": 301,
+        "missing": 89
+      },
+      {
+        "family": "Note",
+        "section": "Article 2:201",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Comment",
+        "section": "Article 2:205",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Comment",
+        "section": "Article 2:207",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Art.",
+        "section": "3",
+        "from": 102,
+        "to": 201,
+        "missing": 98
+      },
+      {
+        "family": "Art.",
+        "section": "3",
+        "from": 209,
+        "to": 301,
+        "missing": 91
+      },
+      {
+        "family": "Art.",
+        "section": "4",
+        "from": 110,
+        "to": 112,
+        "missing": 1
+      },
+      {
+        "family": "Comment",
+        "section": "Article 4:103",
+        "from": 9,
+        "to": 11,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article 4:103",
+        "from": 7,
+        "to": 9,
+        "missing": 1
+      },
+      {
+        "family": "Comment",
+        "section": "Article 4:107",
+        "from": 5,
+        "to": 7,
+        "missing": 1
+      },
+      {
+        "family": "Comment",
+        "section": "Article 4:117",
+        "from": 2,
+        "to": 4,
+        "missing": 1
+      },
+      {
+        "family": "Art.",
+        "section": "6",
+        "from": 109,
+        "to": 111,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article 6:102",
+        "from": 1,
+        "to": 4,
+        "missing": 2
+      },
+      {
+        "family": "Comment",
+        "section": "Article 6:103",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Comment",
+        "section": "Article 7:109",
+        "from": 4,
+        "to": 6,
+        "missing": 1
+      },
+      {
+        "family": "Art.",
+        "section": "8",
+        "from": 106,
+        "to": 108,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article 8:104",
+        "from": 7,
+        "to": 10,
+        "missing": 2
+      },
+      {
+        "family": "Comment",
+        "section": "Article 8:105",
+        "from": 2,
+        "to": 4,
+        "missing": 1
+      },
+      {
+        "family": "Comment",
+        "section": "Article 8:106",
+        "from": 2,
+        "to": 4,
+        "missing": 1
+      },
+      {
+        "family": "Comment",
+        "section": "Article 8:109",
+        "from": 3,
+        "to": 5,
+        "missing": 1
+      },
+      {
+        "family": "Art.",
+        "section": "9",
+        "from": 103,
+        "to": 201,
+        "missing": 97
+      },
+      {
+        "family": "Art.",
+        "section": "9",
+        "from": 201,
+        "to": 301,
+        "missing": 99
+      },
+      {
+        "family": "Art.",
+        "section": "9",
+        "from": 309,
+        "to": 401,
+        "missing": 91
+      },
+      {
+        "family": "Art.",
+        "section": "9",
+        "from": 401,
+        "to": 501,
+        "missing": 99
+      },
+      {
+        "family": "Comment",
+        "section": "Article 9:301",
+        "from": 2,
+        "to": 4,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article 9:401",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 31,
+    "missing_total": 982,
+    "duplicates": [
+      {
+        "family": "Art.",
+        "section": "2",
+        "number": 105
+      },
+      {
+        "family": "Note",
+        "section": "Article 2:105",
+        "number": 2
+      },
+      {
+        "family": "Note",
+        "section": "Article 2:105",
+        "number": 3
+      },
+      {
+        "family": "Comment",
+        "section": "Article 4:107",
+        "number": 8
+      },
+      {
+        "family": "Comment",
+        "section": "Article 4:107",
+        "number": 8
+      }
+    ],
+    "duplicates_total": 5,
+    "by_family": {
+      "Art.": 121,
+      "Comment": 424,
+      "Note": 354
+    }
+  },
+  "coverage": {
+    "share": 0.9867,
+    "covered_chars": 1178283,
+    "book_chars": 1194189,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 865,
+    "min": 18,
+    "max": 29923,
+    "too_short": [
+      "pecl-lando-part1-2:art:1/301#n4",
+      "pecl-lando-part1-2:art:2/107",
+      "pecl-lando-part1-2:art:2/203",
+      "pecl-lando-part1-2:art:3/101#cx",
+      "pecl-lando-part1-2:art:3/303#cx",
+      "pecl-lando-part1-2:art:4/101",
+      "pecl-lando-part1-2:art:4/112",
+      "pecl-lando-part1-2:art:5/104",
+      "pecl-lando-part1-2:art:5/105",
+      "pecl-lando-part1-2:art:7/112",
+      "pecl-lando-part1-2:art:9/305#nx",
+      "pecl-lando-part1-2:art:9/306#nx",
+      "pecl-lando-part1-2:art:9/307#cD",
+      "pecl-lando-part1-2:art:9/307#nx",
+      "pecl-lando-part1-2:art:9/308#nx"
+    ],
+    "too_long": [
+      "pecl-lando-part1-2:art:1/103#n2",
+      "pecl-lando-part1-2:art:1/106#n4",
+      "pecl-lando-part1-2:art:2/101#n3",
+      "pecl-lando-part1-2:art:6/109#n3"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0,
+    "cards_with_calls_but_no_notes": 163,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "2": 394,
+      "3": 505
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 44.9% < 98%: пропущено номеров 982. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

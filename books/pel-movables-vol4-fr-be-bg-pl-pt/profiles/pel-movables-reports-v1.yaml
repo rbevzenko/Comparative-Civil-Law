@@ -1,0 +1,52 @@
+id: pel-movables-reports-v1
+publisher: Sellier European Law Publishers
+jurisdiction: DCFR
+language: en
+# National Reports on the Transfer of Movables in Europe (ред. Faber/Lurger),
+# шесть томов. Вёрстка у всех одна: тело 9.5, сноски 8.0, колонтитул 8.5.
+#
+# ЕДИНИЦЫ ЦИТИРОВАНИЯ В КНИГЕ НЕТ. Это не комментарий и не свод правил, а
+# сборник страновых отчётов со сквозной нумерацией разделов («7.1. General»),
+# которая перезапускается в каждом отчёте. Ссылаются на такие тома по
+# странице, и единицей взята полоса — как уже сделано в корпусе для книг
+# без собственной нумерации. Адрес честный: «p. 110» — это печатная
+# страница, а не полоса файла.
+#
+# Страна берётся из колонтитула («110 Austria») отдельным шагом
+# hierarchy_from_running_head.py: без неё по карточке не видно, о каком
+# правопорядке речь, а в томе их четыре-шесть.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  # Сноски 8.0 против тела 9.5 — полтора пункта, разделение надёжное.
+  mode: font_bottom
+  note_size_max: 8.6
+  bottom_band: 0.45
+
+printed_page:
+  # Колонцифра живёт в колонтитуле: на чётных «110 Austria», на нечётных
+  # «7. Selling in a chain with direct delivery 109».
+  band: [0.08, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+\D'
+    - '\D\s+(\d{1,4})$'
+
+junk:
+  # Низ колонтитула приходится на 0.074 высоты; полоса берётся с запасом.
+  header_band: 0.08
+  patterns: []
+
+statutory:
+  patterns:
+    - '\b§{1,2}\s?\d+[a-z]?\b'
+    - '\bart(?:icle)?s?\.?\s?\d+\b'
+
+citation:
+  template: "{authors}, {title}, {publisher}, {year}, {address}"

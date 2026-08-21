@@ -1,0 +1,156 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/pel-vonbar-noncontractual-liability",
+  "cards": 1545,
+  "profile": "pel-sellier-article-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.6595,
+    "rows": 100,
+    "gaps": [
+      {
+        "family": "Art.",
+        "section": "2",
+        "from": 101,
+        "to": 201,
+        "missing": 99
+      },
+      {
+        "family": "Art.",
+        "section": "3",
+        "from": 104,
+        "to": 201,
+        "missing": 96
+      },
+      {
+        "family": "Art.",
+        "section": "5",
+        "from": 103,
+        "to": 201,
+        "missing": 97
+      },
+      {
+        "family": "Art.",
+        "section": "5",
+        "from": 203,
+        "to": 301,
+        "missing": 97
+      },
+      {
+        "family": "Art.",
+        "section": "5",
+        "from": 302,
+        "to": 401,
+        "missing": 98
+      },
+      {
+        "family": "Art.",
+        "section": "5",
+        "from": 401,
+        "to": 501,
+        "missing": 99
+      },
+      {
+        "family": "Art.",
+        "section": "6",
+        "from": 106,
+        "to": 201,
+        "missing": 94
+      },
+      {
+        "family": "Art.",
+        "section": "6",
+        "from": 204,
+        "to": 301,
+        "missing": 96
+      }
+    ],
+    "gaps_total": 8,
+    "missing_total": 776,
+    "duplicates": [
+      {
+        "family": "Art.",
+        "section": "4",
+        "number": 101
+      }
+    ],
+    "duplicates_total": 1,
+    "by_family": {
+      "Art.": 58,
+      "Comment": 149,
+      "Note": 1338
+    }
+  },
+  "coverage": {
+    "share": 0.9951,
+    "covered_chars": 2844187,
+    "book_chars": 2858303,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 1376,
+    "min": 10,
+    "max": 21183,
+    "too_short": [
+      "pel-vonbar-noncontractual-liability:art:1/101#nx",
+      "pel-vonbar-noncontractual-liability:art:1/102#nx",
+      "pel-vonbar-noncontractual-liability:art:1/103#nx",
+      "pel-vonbar-noncontractual-liability:art:2/101#nx",
+      "pel-vonbar-noncontractual-liability:art:2/101#n26",
+      "pel-vonbar-noncontractual-liability:art:2/201#nx",
+      "pel-vonbar-noncontractual-liability:art:2/202#nx",
+      "pel-vonbar-noncontractual-liability:art:2/203#nx",
+      "pel-vonbar-noncontractual-liability:art:2/204#nx",
+      "pel-vonbar-noncontractual-liability:art:2/206#nx",
+      "pel-vonbar-noncontractual-liability:art:2/209#nx",
+      "pel-vonbar-noncontractual-liability:art:3/102#nx",
+      "pel-vonbar-noncontractual-liability:art:3/103#nx",
+      "pel-vonbar-noncontractual-liability:art:3/104#nx",
+      "pel-vonbar-noncontractual-liability:art:3/201#nx"
+    ],
+    "too_long": [
+      "pel-vonbar-noncontractual-liability:art:2/211#n13"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0,
+    "cards_with_calls_but_no_notes": 259,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 1545
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 66.0% < 98%: пропущено номеров 776. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

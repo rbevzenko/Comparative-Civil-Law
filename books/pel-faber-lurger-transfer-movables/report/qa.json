@@ -1,0 +1,306 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/pel-faber-lurger-transfer-movables",
+  "cards": 264,
+  "profile": "pel-essays-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.5166,
+    "rows": 2,
+    "gaps": [
+      {
+        "family": "p.",
+        "section": null,
+        "from": 8,
+        "to": 10,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 46,
+        "to": 48,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 57,
+        "to": 60,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 67,
+        "to": 70,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 95,
+        "to": 98,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 122,
+        "to": 124,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 140,
+        "to": 142,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 154,
+        "to": 156,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 159,
+        "to": 162,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 173,
+        "to": 176,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 196,
+        "to": 198,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 215,
+        "to": 218,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 237,
+        "to": 240,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 240,
+        "to": 242,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 242,
+        "to": 244,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 244,
+        "to": 246,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 246,
+        "to": 248,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 248,
+        "to": 250,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 253,
+        "to": 256,
+        "missing": 2
+      },
+      {
+        "family": "frg.",
+        "section": null,
+        "from": 22,
+        "to": 60,
+        "missing": 37
+      },
+      {
+        "family": "frg.",
+        "section": null,
+        "from": 60,
+        "to": 71,
+        "missing": 10
+      },
+      {
+        "family": "frg.",
+        "section": null,
+        "from": 72,
+        "to": 81,
+        "missing": 8
+      },
+      {
+        "family": "frg.",
+        "section": null,
+        "from": 82,
+        "to": 109,
+        "missing": 26
+      },
+      {
+        "family": "frg.",
+        "section": null,
+        "from": 110,
+        "to": 136,
+        "missing": 25
+      },
+      {
+        "family": "frg.",
+        "section": null,
+        "from": 136,
+        "to": 154,
+        "missing": 17
+      },
+      {
+        "family": "frg.",
+        "section": null,
+        "from": 154,
+        "to": 168,
+        "missing": 13
+      },
+      {
+        "family": "frg.",
+        "section": null,
+        "from": 168,
+        "to": 173,
+        "missing": 4
+      },
+      {
+        "family": "frg.",
+        "section": null,
+        "from": 174,
+        "to": 187,
+        "missing": 12
+      },
+      {
+        "family": "frg.",
+        "section": null,
+        "from": 188,
+        "to": 210,
+        "missing": 21
+      },
+      {
+        "family": "frg.",
+        "section": null,
+        "from": 210,
+        "to": 229,
+        "missing": 18
+      }
+    ],
+    "gaps_total": 37,
+    "missing_total": 247,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 237,
+      "frg.": 27
+    }
+  },
+  "coverage": {
+    "share": 0.9996,
+    "covered_chars": 707988,
+    "book_chars": 708251,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2845,
+    "min": 53,
+    "max": 3520,
+    "too_short": [
+      "pel-faber-lurger-transfer-movables:frg:71",
+      "pel-faber-lurger-transfer-movables:frg:81",
+      "pel-faber-lurger-transfer-movables:frg:109",
+      "pel-faber-lurger-transfer-movables:frg:173",
+      "pel-faber-lurger-transfer-movables:frg:187",
+      "pel-faber-lurger-transfer-movables:frg:229",
+      "pel-faber-lurger-transfer-movables:frg:251",
+      "pel-faber-lurger-transfer-movables:frg:267"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0.0,
+    "cards_with_calls_but_no_notes": 218,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 23,
+    "sample": [
+      "pel-faber-lurger-transfer-movables:frg:22",
+      "pel-faber-lurger-transfer-movables:frg:60",
+      "pel-faber-lurger-transfer-movables:frg:71",
+      "pel-faber-lurger-transfer-movables:frg:72",
+      "pel-faber-lurger-transfer-movables:frg:81",
+      "pel-faber-lurger-transfer-movables:frg:82",
+      "pel-faber-lurger-transfer-movables:frg:109",
+      "pel-faber-lurger-transfer-movables:frg:110",
+      "pel-faber-lurger-transfer-movables:frg:136",
+      "pel-faber-lurger-transfer-movables:frg:154"
+    ],
+    "depth_histogram": {
+      "0": 23,
+      "1": 241
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 51.7% < 98%: пропущено номеров 247. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

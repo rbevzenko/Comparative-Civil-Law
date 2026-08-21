@@ -1,0 +1,243 @@
+{
+  "path": "/home/user/dcfr-pdf/pel-movables-vol4-fr-be-bg-pl-pt.pdf",
+  "sha256": "4e0d9410f6f1b43afd05efbd98882bbab832a90b118e3574254720c872eda8ab",
+  "pages": 737,
+  "sampled_pages": [
+    111,
+    124,
+    137,
+    150,
+    163,
+    176,
+    189,
+    202,
+    215,
+    228,
+    241,
+    254,
+    267,
+    280,
+    293,
+    306,
+    319,
+    332,
+    345,
+    358,
+    371,
+    384,
+    397,
+    410,
+    423,
+    436,
+    449,
+    462,
+    475,
+    488,
+    501,
+    514,
+    527,
+    540,
+    553,
+    566,
+    579,
+    592,
+    605,
+    618
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 12,
+    "max_depth": 1,
+    "resolved_pages": 12,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Cover",
+        "page": 1,
+        "depth": 0
+      },
+      {
+        "title": "Preface\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 6,
+        "depth": 0
+      },
+      {
+        "title": "List of Contributors\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 8,
+        "depth": 0
+      },
+      {
+        "title": "Contents\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 10,
+        "depth": 0
+      },
+      {
+        "title": "National Report on the Transfer of Movables in France\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 12,
+        "depth": 0
+      },
+      {
+        "title": "National Report on the Transfer of Movables in Belgium\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 200,
+        "depth": 0
+      },
+      {
+        "title": "National Report on the Transfer of Movables in Bulgaria\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 364,
+        "depth": 0
+      },
+      {
+        "title": "National Report on the Transfer of Movables in Poland\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 478,
+        "depth": 0
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 2519,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.12,
+    "offset_mode": -165,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 111,
+        "printed": null
+      },
+      {
+        "pdf_page": 124,
+        "printed": null
+      },
+      {
+        "pdf_page": 137,
+        "printed": null
+      },
+      {
+        "pdf_page": 150,
+        "printed": null
+      },
+      {
+        "pdf_page": 163,
+        "printed": null
+      },
+      {
+        "pdf_page": 176,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "10.0": 59074,
+      "8.5": 23168,
+      "9.0": 8238,
+      "11.0": 909,
+      "10.5": 770,
+      "6.0": 736,
+      "8.0": 383,
+      "11.5": 188
+    },
+    "body": 10.0,
+    "candidates_footnote": [
+      6.0,
+      8.0
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 1194,
+    "share_at_page_bottom": 0.52
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 2,
+    "left_edges": [
+      75,
+      69,
+      151
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "n° голый номер в начале абзаца": {
+      "hits": 150,
+      "monotonic_share": 0.86,
+      "first": [
+        "100",
+        "638",
+        "639",
+        "640",
+        "641"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 180,
+      "monotonic_share": 0.77,
+      "first": [
+        "100",
+        "638",
+        "639",
+        "640",
+        "641"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 15321,
+    "suspicious": 4,
+    "share": 0.0003,
+    "sample": [
+      "LGDJ",
+      "http:",
+      "DCFR",
+      "DCFR"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        75.0,
+        375.0
+      ],
+      "even": [
+        69.0,
+        370.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "FR": 1,
+    "IT": 13
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Кликабельных сносок нет — привязка по кеглю и положению."
+    ]
+  }
+}

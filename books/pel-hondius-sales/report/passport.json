@@ -1,0 +1,261 @@
+{
+  "path": "/home/user/dcfr-pdf/hondius-ocr.pdf",
+  "sha256": "89d582efadaeae427074a6c5aea78370367439acb66dc0234f2d0e7dbbb41b81",
+  "pages": 525,
+  "sampled_pages": [
+    79,
+    88,
+    97,
+    106,
+    115,
+    124,
+    133,
+    142,
+    151,
+    160,
+    169,
+    178,
+    187,
+    196,
+    205,
+    214,
+    223,
+    232,
+    241,
+    250,
+    259,
+    268,
+    277,
+    286,
+    295,
+    304,
+    313,
+    322,
+    331,
+    340,
+    349,
+    358,
+    367,
+    376,
+    385,
+    394,
+    403,
+    412,
+    421,
+    430
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 11,
+    "max_depth": 1,
+    "resolved_pages": 11,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Frontmatter",
+        "page": 1,
+        "depth": 0
+      },
+      {
+        "title": "Table of Contents",
+        "page": 21,
+        "depth": 0
+      },
+      {
+        "title": "Text of Articles",
+        "page": 41,
+        "depth": 0
+      },
+      {
+        "title": "Principles of European Law on Sales",
+        "page": 139,
+        "depth": 0
+      },
+      {
+        "title": "Chapter 1: Scope of Application & General Provisions",
+        "page": 153,
+        "depth": 0
+      },
+      {
+        "title": "Chapter 2: Obligations of the seller",
+        "page": 199,
+        "depth": 0
+      },
+      {
+        "title": "Chapter 3: Obligations of the buyer",
+        "page": 267,
+        "depth": 0
+      },
+      {
+        "title": "Chapter 4: Remedies",
+        "page": 289,
+        "depth": 0
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 2547,
+    "empty_pages_share": 0.03,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 1.0,
+    "offset_mode": -40,
+    "offset_stable": true,
+    "sample": [
+      {
+        "pdf_page": 79,
+        "printed": 39
+      },
+      {
+        "pdf_page": 88,
+        "printed": 48
+      },
+      {
+        "pdf_page": 97,
+        "printed": 57
+      },
+      {
+        "pdf_page": 106,
+        "printed": 66
+      },
+      {
+        "pdf_page": 115,
+        "printed": 75
+      },
+      {
+        "pdf_page": 124,
+        "printed": 84
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "9.5": 48220,
+      "9.0": 41620,
+      "8.4": 3048,
+      "8.5": 1505,
+      "10.0": 1500,
+      "10.5": 726,
+      "11.0": 278,
+      "8.9": 160
+    },
+    "body": 9.5,
+    "candidates_footnote": []
+  },
+  "footnotes": {
+    "small_font_chars": 9,
+    "share_at_page_bottom": 0.67
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      48,
+      68,
+      70,
+      90
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 23,
+      "monotonic_share": 0.45,
+      "first": [
+        "2",
+        "3",
+        "4",
+        "16",
+        "1"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 2,
+      "monotonic_share": 1.0,
+      "first": [
+        "9",
+        "13"
+      ]
+    },
+    "§ с номером": {
+      "hits": 1,
+      "monotonic_share": 0.0,
+      "first": [
+        "2"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 18535,
+    "suspicious": 11,
+    "share": 0.0006,
+    "sample": [
+      "przy",
+      "wytycznych,",
+      "przyczyny,",
+      "(DCFR)",
+      "DCFR.",
+      "DCFR",
+      "DCFR",
+      "DCFR,",
+      "(BGHZ",
+      "CCGP",
+      "SSGCR"
+    ]
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        70.0,
+        385.0
+      ],
+      "even": [
+        90.0,
+        405.0
+      ]
+    },
+    "left": {
+      "hits": 21,
+      "monotonic_share": 0.9,
+      "even_page_share": 0.9,
+      "first": [
+        48,
+        66,
+        84,
+        102,
+        120,
+        138
+      ]
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "NL": 56
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Кегль сносок не отделяется от основного текста — отделять по положению на полосе.",
+      "Кликабельных сносок нет — привязка по кеглю и положению.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы.",
+      "Маргинальные номера у левого поля: 21 попаданий, монотонность 90%, доля чётных страниц 90% — кандидат на режим margin."
+    ]
+  }
+}

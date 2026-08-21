@@ -1,0 +1,295 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/pel-movables-vol3-de-gr-lt-hu",
+  "cards": 692,
+  "profile": "pel-movables-reports-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.4986,
+    "rows": 2,
+    "gaps": [
+      {
+        "family": "p.",
+        "section": null,
+        "from": 8,
+        "to": 10,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 70,
+        "to": 72,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 121,
+        "to": 123,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 156,
+        "to": 158,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 183,
+        "to": 185,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 190,
+        "to": 192,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 192,
+        "to": 196,
+        "missing": 3
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 200,
+        "to": 202,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 245,
+        "to": 247,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 283,
+        "to": 285,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 314,
+        "to": 316,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 330,
+        "to": 332,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 332,
+        "to": 336,
+        "missing": 3
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 338,
+        "to": 340,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 362,
+        "to": 364,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 387,
+        "to": 389,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 397,
+        "to": 399,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 406,
+        "to": 412,
+        "missing": 5
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 427,
+        "to": 430,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 437,
+        "to": 439,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 502,
+        "to": 504,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 504,
+        "to": 506,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 506,
+        "to": 508,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 508,
+        "to": 510,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 510,
+        "to": 512,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 529,
+        "to": 531,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 604,
+        "to": 606,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 640,
+        "to": 642,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 669,
+        "to": 671,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 690,
+        "to": 692,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 65,
+    "missing_total": 696,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 657,
+      "frg.": 35
+    }
+  },
+  "coverage": {
+    "share": 0.9995,
+    "covered_chars": 1511937,
+    "book_chars": 1512628,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2247,
+    "min": 70,
+    "max": 3157,
+    "too_short": [
+      "pel-movables-vol3-de-gr-lt-hu:frg:204",
+      "pel-movables-vol3-de-gr-lt-hu:frg:344",
+      "pel-movables-vol3-de-gr-lt-hu:frg:420"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.8,
+    "footnotes_total": 620,
+    "unparsed_blocks": 196,
+    "per_card_median": 1.0,
+    "cards_with_calls_but_no_notes": 44,
+    "notes_without_visible_call": 618
+  },
+  "dead_pages": {
+    "pages": [
+      205,
+      345,
+      419,
+      421,
+      439
+    ],
+    "count": 5
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 692
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 49.9% < 98%: пропущено номеров 696. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

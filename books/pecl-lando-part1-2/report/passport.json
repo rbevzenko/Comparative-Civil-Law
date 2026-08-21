@@ -1,0 +1,273 @@
+{
+  "path": "/home/user/dcfr-pdf/pecl-part12.pdf",
+  "sha256": "3ac2e6a45b2c8ed0724d5c9e380293e3934f42b39341a3eb853680a29d44fd89",
+  "pages": 612,
+  "sampled_pages": [
+    92,
+    103,
+    114,
+    125,
+    136,
+    147,
+    158,
+    169,
+    180,
+    191,
+    202,
+    213,
+    224,
+    235,
+    246,
+    257,
+    268,
+    279,
+    290,
+    301,
+    312,
+    323,
+    334,
+    345,
+    356,
+    367,
+    378,
+    389,
+    400,
+    411,
+    422,
+    433,
+    444,
+    455,
+    466,
+    477,
+    488,
+    499,
+    510,
+    521
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 187,
+    "max_depth": 3,
+    "resolved_pages": 187,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Cover",
+        "page": 1,
+        "depth": 0
+      },
+      {
+        "title": "Half Title Page",
+        "page": 2,
+        "depth": 0
+      },
+      {
+        "title": "Title Page",
+        "page": 4,
+        "depth": 0
+      },
+      {
+        "title": "Copyright Page",
+        "page": 5,
+        "depth": 0
+      },
+      {
+        "title": "Table of Contents",
+        "page": 6,
+        "depth": 0
+      },
+      {
+        "title": "Preface",
+        "page": 12,
+        "depth": 0
+      },
+      {
+        "title": "Members of the Commissions of European Contract Law",
+        "page": 18,
+        "depth": 0
+      },
+      {
+        "title": "Introduction",
+        "page": 22,
+        "depth": 0
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 3131,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 1.0
+  },
+  "printed_pages": {
+    "detected_share": 0.0,
+    "offset_mode": null,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 92,
+        "printed": null
+      },
+      {
+        "pdf_page": 103,
+        "printed": null
+      },
+      {
+        "pdf_page": 114,
+        "printed": null
+      },
+      {
+        "pdf_page": 125,
+        "printed": null
+      },
+      {
+        "pdf_page": 136,
+        "printed": null
+      },
+      {
+        "pdf_page": 147,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "7.7": 29714,
+      "9.7": 24498,
+      "7.8": 18619,
+      "9.6": 12406,
+      "7.6": 8906,
+      "9.5": 7926,
+      "7.4": 7287,
+      "9.8": 6384
+    },
+    "body": 7.7,
+    "candidates_footnote": []
+  },
+  "footnotes": {
+    "small_font_chars": 4550,
+    "share_at_page_bottom": 0.76
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      64,
+      58,
+      60,
+      61
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [
+    {
+      "line": "COMMENT",
+      "pages": 13
+    }
+  ],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 50,
+      "monotonic_share": 0.65,
+      "first": [
+        "54",
+        "98",
+        "1",
+        "1997",
+        "2"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 23,
+      "monotonic_share": 0.82,
+      "first": [
+        "54",
+        "98",
+        "1997",
+        "120",
+        "142"
+      ]
+    },
+    "§ с номером": {
+      "hits": 8,
+      "monotonic_share": 0.29,
+      "first": [
+        "1",
+        "1171",
+        "267",
+        "1797",
+        "1416"
+      ]
+    },
+    "para. англ. раздел-пункт": {
+      "hits": 1,
+      "monotonic_share": 0.0,
+      "first": [
+        "378-382"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 20589,
+    "suspicious": 18,
+    "share": 0.0009,
+    "sample": [
+      "PR1X",
+      "Kamp!fmeyer",
+      "Fran9aise,",
+      "(UNC1TRAL)",
+      "BGHZ",
+      "(Kaufat!firage),",
+      "Yl6stalo",
+      "RCJB",
+      "BGHZ",
+      "HGB-RGRK",
+      "K6plagen",
+      "K6plagen"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        60.0,
+        398.0
+      ],
+      "even": [
+        80.0,
+        400.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "NL": 22
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "B?",
+    "problems": [],
+    "notes": [
+      "Под текстом растр на всю полосу, но слой выглядит чистым (0.1% подозрительных слов). Слой всё равно чужой и сделан неизвестно чем; прежде чем идти веткой A, прогнать обе ветки на двух десятках страниц и сравнить.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы.",
+      "Повторяющийся мусор (1 шаблонов) — вычистить первым шагом."
+    ]
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "path": "/home/user/dcfr-pdf/vonbar-ue.pdf",
+  "sha256": "29743ba8da4d8526ceb95085d2cda7faebbd7f38b484f3f9674ccdbc0457dd46",
+  "pages": 653,
+  "sampled_pages": [
+    98,
+    110,
+    122,
+    134,
+    146,
+    158,
+    170,
+    182,
+    194,
+    206,
+    218,
+    230,
+    242,
+    254,
+    266,
+    278,
+    290,
+    302,
+    314,
+    326,
+    338,
+    350,
+    362,
+    374,
+    386,
+    398,
+    410,
+    422,
+    434,
+    446,
+    458,
+    470,
+    482,
+    494,
+    506,
+    518,
+    530,
+    542,
+    554,
+    566
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": false
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 3929,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 1.0
+  },
+  "printed_pages": {
+    "detected_share": 1.0,
+    "offset_mode": -26,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 98,
+        "printed": 72
+      },
+      {
+        "pdf_page": 110,
+        "printed": 84
+      },
+      {
+        "pdf_page": 122,
+        "printed": 96
+      },
+      {
+        "pdf_page": 134,
+        "printed": 108
+      },
+      {
+        "pdf_page": 146,
+        "printed": 120
+      },
+      {
+        "pdf_page": 158,
+        "printed": 250
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "23.2": 20545,
+      "21.8": 19233,
+      "21.6": 17508,
+      "21.4": 13375,
+      "23.0": 12869,
+      "22.7": 9883,
+      "21.5": 7333,
+      "22.0": 6740
+    },
+    "body": 23.2,
+    "candidates_footnote": [
+      8.8,
+      9.3,
+      9.5,
+      18.8,
+      19.3,
+      19.4,
+      20.0,
+      20.1,
+      20.2,
+      20.4,
+      20.5,
+      20.6,
+      20.8,
+      21.0,
+      21.2,
+      21.4,
+      21.5,
+      21.6
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 13816,
+    "share_at_page_bottom": 0.3
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 2,
+    "left_edges": [
+      229,
+      230,
+      179,
+      231
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [
+    {
+      "line": "fldus Pu bltkadoos.-St>Nlct",
+      "pages": 39
+    },
+    {
+      "line": "Prodl.lltlOtlSSUlld: laprimaw - 01.02.2010",
+      "pages": 38
+    },
+    {
+      "line": "($,tllitr) P[ L/Pfl_8_ PEL_Unj_ (nr/ d~ten _)bZfl'[L_Bd_a_ teKt.3cl f1u9u.amt , 40 S.it1n",
+      "pages": 28
+    }
+  ],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 116,
+      "monotonic_share": 0.79,
+      "first": [
+        "12",
+        "13",
+        "4",
+        "5",
+        "6"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 49,
+      "monotonic_share": 0.85,
+      "first": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    "§ с номером": {
+      "hits": 3,
+      "monotonic_share": 0.5,
+      "first": [
+        "812",
+        "268",
+        "1437"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 23248,
+    "suspicious": 655,
+    "share": 0.0282,
+    "sample": [
+      "bltkadoos.-St>Nlct",
+      "_)bZfl'[L_Bd_a_",
+      "f1u9u.amt",
+      "S.it1n",
+      "bltkadoos.-St>Nlct",
+      "_)bZfl'[L_Bd_a_",
+      "f1u9u.amt",
+      "S.it1n",
+      "bltkadoos.-St>Nlct",
+      "_)bZfl'[L_Bd_a_",
+      "f1u9u.amt",
+      "S.it1n"
+    ]
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        287.0,
+        1106.0
+      ],
+      "even": [
+        287.0,
+        1106.0
+      ]
+    },
+    "left": {
+      "hits": 83,
+      "monotonic_share": 0.8,
+      "even_page_share": 1.0,
+      "first": [
+        0,
+        72,
+        84,
+        4,
+        5,
+        6
+      ]
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "NL": 55
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "B",
+    "problems": [],
+    "notes": [
+      "Под текстом растр на всю полосу, а сам слой шумит (2.8% подозрительных слов: bltkadoos.-St>Nlct, _)bZfl'[L_Bd_a_, f1u9u.amt, S.it1n). Это чужой зашитый OCR, а не цифровое издание: ветка B (§5).",
+      "Оглавление в файле не зашито — иерархию собирать по печатному оглавлению и колонтитулам; качество поля hierarchy будет ниже.",
+      "Типографская пагинация читается, но смещение относительно страниц файла непостоянно (вклейки, вкладки). Хранить обе нумерации, не пересчитывать.",
+      "Повторяющийся мусор (3 шаблонов) — вычистить первым шагом."
+    ]
+  }
+}

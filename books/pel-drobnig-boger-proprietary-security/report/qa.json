@@ -1,0 +1,329 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/pel-drobnig-boger-proprietary-security",
+  "cards": 1006,
+  "profile": "pel-sellier-dcfr-numbering-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.4418,
+    "rows": 158,
+    "gaps": [
+      {
+        "family": "Art.",
+        "section": "IX. – 1",
+        "from": 105,
+        "to": 201,
+        "missing": 95
+      },
+      {
+        "family": "Note",
+        "section": "Article IX.–1:101",
+        "from": 3,
+        "to": 6,
+        "missing": 2
+      },
+      {
+        "family": "Note",
+        "section": "Article IX.–1:101",
+        "from": 7,
+        "to": 9,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article IX.–1:101",
+        "from": 13,
+        "to": 15,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article IX.–1:102",
+        "from": 9,
+        "to": 11,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article IX.–1:103",
+        "from": 3,
+        "to": 5,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article IX.–1:103",
+        "from": 16,
+        "to": 18,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article IX.–1:103",
+        "from": 18,
+        "to": 20,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article IX.–1:103",
+        "from": 30,
+        "to": 32,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article IX.–1:103",
+        "from": 46,
+        "to": 48,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article IX.–1:105",
+        "from": 4,
+        "to": 6,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article IX.–1:201",
+        "from": 5,
+        "to": 7,
+        "missing": 1
+      },
+      {
+        "family": "Art.",
+        "section": "IX. – 2",
+        "from": 110,
+        "to": 112,
+        "missing": 1
+      },
+      {
+        "family": "Art.",
+        "section": "IX. – 2",
+        "from": 114,
+        "to": 201,
+        "missing": 86
+      },
+      {
+        "family": "Art.",
+        "section": "IX. – 2",
+        "from": 201,
+        "to": 301,
+        "missing": 99
+      },
+      {
+        "family": "Art.",
+        "section": "IX. – 2",
+        "from": 306,
+        "to": 308,
+        "missing": 1
+      },
+      {
+        "family": "Art.",
+        "section": "IX. – 2",
+        "from": 309,
+        "to": 401,
+        "missing": 91
+      },
+      {
+        "family": "Note",
+        "section": "Article IX.–2:104",
+        "from": 3,
+        "to": 5,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article IX.–2:104",
+        "from": 7,
+        "to": 9,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article IX.–2:104",
+        "from": 9,
+        "to": 12,
+        "missing": 2
+      },
+      {
+        "family": "Note",
+        "section": "Article IX.–2:104",
+        "from": 12,
+        "to": 14,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article IX.–2:107",
+        "from": 2,
+        "to": 4,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article IX.–2:107",
+        "from": 4,
+        "to": 6,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article IX.–2:107",
+        "from": 7,
+        "to": 9,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article IX.–2:107",
+        "from": 9,
+        "to": 11,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article IX.–2:107",
+        "from": 12,
+        "to": 14,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article IX.–2:114",
+        "from": 3,
+        "to": 6,
+        "missing": 2
+      },
+      {
+        "family": "Note",
+        "section": "Article IX.–2:114",
+        "from": 6,
+        "to": 8,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article IX.–2:114",
+        "from": 11,
+        "to": 13,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article IX.–2:114",
+        "from": 13,
+        "to": 15,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 66,
+    "missing_total": 1083,
+    "duplicates": [
+      {
+        "family": "Comment",
+        "section": "Article IX.–6:101",
+        "number": 3
+      },
+      {
+        "family": "Comment",
+        "section": "Article IX.–6:101",
+        "number": 3
+      }
+    ],
+    "duplicates_total": 2,
+    "by_family": {
+      "Art.": 131,
+      "Comment": 377,
+      "Note": 498
+    }
+  },
+  "coverage": {
+    "share": 0.997,
+    "covered_chars": 1854318,
+    "book_chars": 1859812,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 966,
+    "min": 10,
+    "max": 46174,
+    "too_short": [
+      "pel-drobnig-boger-proprietary-security:art:IX. – 1/101#nx",
+      "pel-drobnig-boger-proprietary-security:art:IX. – 1/102#n4",
+      "pel-drobnig-boger-proprietary-security:art:IX. – 1/103#n40",
+      "pel-drobnig-boger-proprietary-security:art:IX. – 1/103#n41",
+      "pel-drobnig-boger-proprietary-security:art:IX. – 1/104#nx",
+      "pel-drobnig-boger-proprietary-security:art:IX. – 1/105#nx",
+      "pel-drobnig-boger-proprietary-security:art:IX. – 2/101#nx",
+      "pel-drobnig-boger-proprietary-security:art:IX. – 2/103#nx",
+      "pel-drobnig-boger-proprietary-security:art:IX. – 2/106#nx",
+      "pel-drobnig-boger-proprietary-security:art:IX. – 2/301#nx",
+      "pel-drobnig-boger-proprietary-security:art:IX. – 2/303",
+      "pel-drobnig-boger-proprietary-security:art:IX. – 2/401#cx",
+      "pel-drobnig-boger-proprietary-security:art:IX. – 3/102#cx",
+      "pel-drobnig-boger-proprietary-security:art:IX. – 3/103#nx",
+      "pel-drobnig-boger-proprietary-security:art:IX.–3/104#nx"
+    ],
+    "too_long": [
+      "pel-drobnig-boger-proprietary-security:art:IX. – 1/102#n5",
+      "pel-drobnig-boger-proprietary-security:art:IX. – 1/103#nx",
+      "pel-drobnig-boger-proprietary-security:art:IX. – 1/201#cx",
+      "pel-drobnig-boger-proprietary-security:art:IX. – 2/108#cC",
+      "pel-drobnig-boger-proprietary-security:art:IX. – 2/109#cB",
+      "pel-drobnig-boger-proprietary-security:art:IX. – 2/201#n2",
+      "pel-drobnig-boger-proprietary-security:art:IX. – 2/301#n14",
+      "pel-drobnig-boger-proprietary-security:art:IX. – 2/302#nx",
+      "pel-drobnig-boger-proprietary-security:art:IX. – 2/306#nx",
+      "pel-drobnig-boger-proprietary-security:art:IX.–2/307#n7",
+      "pel-drobnig-boger-proprietary-security:art:IX. – 3/204#n2",
+      "pel-drobnig-boger-proprietary-security:art:IX. – 3/301#n5",
+      "pel-drobnig-boger-proprietary-security:art:IX. – 3/301#n6",
+      "pel-drobnig-boger-proprietary-security:art:IX. – 3/301#n18",
+      "pel-drobnig-boger-proprietary-security:art:IX. – 3/303#n3"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0.0,
+    "cards_with_calls_but_no_notes": 71,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 1006
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 44.2% < 98%: пропущено номеров 1083. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

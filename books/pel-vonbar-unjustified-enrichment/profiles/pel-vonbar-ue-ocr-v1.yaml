@@ -1,0 +1,67 @@
+id: pel-vonbar-ue-ocr-v1
+publisher: Sellier European Law Publishers
+jurisdiction: DCFR
+language: en
+# Christian von Bar, Stephen Swann, Principles of European Law: Unjustified
+# Enrichment (PEL Unj. Enr.). Файл распознан владельцем.
+#
+# КАЧЕСТВО РАСПОЗНАВАНИЯ ЗДЕСЬ ЗАМЕТНО ХУЖЕ ОСТАЛЬНЫХ ТОМОВ СЕРИИ: 2.8%
+# подозрительных слов против 0.1% у Хондиуса. Систематически бьются
+# сочетания букв: «perfor1nance» вместо performance, «tl1e» вместо the,
+# «compensatio11» вместо compensation, «torr law» вместо tort law. Для
+# поиска по смыслу текст годится, для ДОСЛОВНОЙ цитаты — нет, и это
+# записано в реквизитах источника.
+#
+# НОМЕРА СТАТЕЙ БЬЮТСЯ ТОЖЕ, и это уже не косметика: «Article 2: IOI»
+# вместо 2:101, «Article 4: I OS» вместо 4:105, «Article 6: IO/ ·» вместо
+# 6:101. Ноль читается как O, единица как I, J или дробь, пятёрка как S.
+# По всей книге шаблон единицы находил три заголовка из сотни. Чинит их
+# scripts/fix_ocr_article_numbers.py между разбором и сборкой — правка
+# узкая: только строки, начинающиеся со слова Article, и только если после
+# подстановки выходят ровно три цифры.
+#
+# ДИАПАЗОН ПОЛОС: тело комментария 207–544. До 90 — текст статей на пяти
+# языках (английский, болгарский, французский, венгерский, польский), с 91
+# по 206 — вступительная статья, после 545 — таблицы и указатель.
+#
+# ВВЕРХУ ПОЛОСЫ ТРИ ТЕХНОЛОГИЧЕСКИЕ СТРОКИ вёрстки кеглем 9.5, распознанные
+# в кашу: «fldus Pu bltkadoos.-St>Nlct», «Prodl.lltlOtlSSUlld: laprimaw».
+# Они выше колонтитула, и полоса берётся с запасом, чтобы снять и их.
+
+units:
+  - type: "Art."
+    id_prefix: "art"
+    mode: flow
+    pattern: '^Article\s*\d+:(\d+):\s+(?=[A-Z])'
+    address_template: "Article {section}:{number}"
+
+address:
+  section:
+    mode: pattern
+    pattern: '^Article\s*(\d+):\d+:\s+(?=[A-Z])'
+    anchor: start
+  template: "Article {section}:{number}"
+
+footnotes:
+  mode: none
+
+printed_page:
+  # Колонцифра — голое число внизу, на 0.901 высоты.
+  band: [0.095, 0.10]
+  patterns:
+    - '^(\d{1,4})$'
+
+junk:
+  # 0.095 забирает и служебные строки вёрстки (0.005–0.021), и колонтитул
+  # (0.079–0.090). Тело начинается с 0.116.
+  header_band: 0.095
+  patterns:
+    - 'Prodl|laprimaw|bltkadoos|PEL_Unj'
+
+statutory:
+  patterns:
+    - '\bArt(?:icle)?s?\.?\s?\d+:\d+\b'
+    - '\bCC\s+arts?\.\s?\d+\b'
+
+citation:
+  template: "{authors}, {title}, {publisher}, {year}, {address}"

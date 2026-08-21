@@ -1,0 +1,16 @@
+{
+  "book_id": "pel-vonbar-unjustified-enrichment",
+  "authors": [
+    "Christian von Bar",
+    "Stephen Swann"
+  ],
+  "title": "Principles of European Law: Unjustified Enrichment (PEL Unj. Enr.)",
+  "edition": "1st ed.",
+  "year": 2010,
+  "publisher": "Sellier European Law Publishers",
+  "jurisdiction": "DCFR",
+  "language": "en",
+  "isbn": null,
+  "notes": "Файл распознан владельцем. КАЧЕСТВО РАСПОЗНАВАНИЯ СРЕДНЕЕ: 2.8% подозрительных слов, систематически бьются сочетания букв («perfor1nance», «tl1e», «torr law»). Для поиска по смыслу годится, для дословной цитаты — нет. Номера статей чинились scripts/fix_ocr_article_numbers.py. Тело комментария — полосы 207–544.",
+  "service_source_id": "bac4b936-5332-4ad8-aa3a-a5a514a8a97e"
+}

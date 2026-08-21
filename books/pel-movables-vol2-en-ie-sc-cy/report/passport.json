@@ -1,0 +1,198 @@
+{
+  "path": "/home/user/dcfr-pdf/pel-movables-vol2-en-ie-sc-cy.pdf",
+  "sha256": "15652ae18760aaa6f12d7ab68444942135f2cbedd5993e4402b14c517b93e1de",
+  "pages": 641,
+  "sampled_pages": [
+    97,
+    109,
+    121,
+    133,
+    145,
+    157,
+    169,
+    181,
+    193,
+    205,
+    217,
+    229,
+    241,
+    253,
+    265,
+    277,
+    289,
+    301,
+    313,
+    325,
+    337,
+    349,
+    361,
+    373,
+    385,
+    397,
+    409,
+    421,
+    433,
+    445,
+    457,
+    469,
+    481,
+    493,
+    505,
+    517,
+    529,
+    541,
+    553,
+    565
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": false
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 2667,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.0,
+    "offset_mode": null,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 97,
+        "printed": null
+      },
+      {
+        "pdf_page": 109,
+        "printed": null
+      },
+      {
+        "pdf_page": 121,
+        "printed": null
+      },
+      {
+        "pdf_page": 133,
+        "printed": null
+      },
+      {
+        "pdf_page": 145,
+        "printed": null
+      },
+      {
+        "pdf_page": 157,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "9.5": 73405,
+      "8.0": 15869,
+      "8.5": 7506,
+      "9.0": 1241,
+      "6.0": 948,
+      "10.0": 530,
+      "10.5": 409,
+      "11.0": 302
+    },
+    "body": 9.5,
+    "candidates_footnote": [
+      6.0
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 16528,
+    "share_at_page_bottom": 0.85
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      57
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "n° голый номер в начале абзаца": {
+      "hits": 194,
+      "monotonic_share": 0.81,
+      "first": [
+        "86",
+        "374",
+        "98",
+        "418",
+        "420"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 204,
+      "monotonic_share": 0.79,
+      "first": [
+        "86",
+        "7",
+        "374",
+        "98",
+        "418"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 15787,
+    "suspicious": 7,
+    "share": 0.0004,
+    "sample": [
+      "SCLR",
+      "JLSS",
+      "http://www.scotland.gov.uk/Resource/Doc/47176/0028734.pdf.",
+      "Smyth",
+      "http://www.mcw.gov.cy/mcw/mcw.nsf/dmlshipping_en/dmlshipping_en?OpenDocu",
+      "http://www.shipping.gov.cy/",
+      "http://www.mcw.gov.cy/mcw/mcw.nsf/dmlshipping_en/dmlshipping_en?OpenDocu"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        57.0,
+        354.0
+      ],
+      "even": [
+        57.0,
+        354.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "EN": 1
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Оглавление в файле не зашито — иерархию собирать по печатному оглавлению и колонтитулам; качество поля hierarchy будет ниже.",
+      "Кликабельных сносок нет — привязка по кеглю и положению.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы."
+    ]
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/pecl-lando-part3",
+  "cards": 408,
+  "profile": "pecl-kluwer-part3-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.2886,
+    "rows": 90,
+    "gaps": [
+      {
+        "family": "Art.",
+        "section": "10",
+        "from": 111,
+        "to": 201,
+        "missing": 89
+      },
+      {
+        "family": "Art.",
+        "section": "11",
+        "from": 104,
+        "to": 201,
+        "missing": 96
+      },
+      {
+        "family": "Art.",
+        "section": "11",
+        "from": 204,
+        "to": 301,
+        "missing": 96
+      },
+      {
+        "family": "Art.",
+        "section": "11",
+        "from": 308,
+        "to": 401,
+        "missing": 92
+      },
+      {
+        "family": "Art.",
+        "section": "14",
+        "from": 101,
+        "to": 201,
+        "missing": 99
+      },
+      {
+        "family": "Art.",
+        "section": "14",
+        "from": 203,
+        "to": 301,
+        "missing": 97
+      },
+      {
+        "family": "Art.",
+        "section": "14",
+        "from": 307,
+        "to": 401,
+        "missing": 93
+      },
+      {
+        "family": "Art.",
+        "section": "14",
+        "from": 402,
+        "to": 501,
+        "missing": 98
+      },
+      {
+        "family": "Art.",
+        "section": "14",
+        "from": 503,
+        "to": 601,
+        "missing": 97
+      },
+      {
+        "family": "Comment",
+        "section": "Article 15:101",
+        "from": 2,
+        "to": 4,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 10,
+    "missing_total": 858,
+    "duplicates": [
+      {
+        "family": "Comment",
+        "section": "Article 10:205",
+        "number": 1
+      },
+      {
+        "family": "Comment",
+        "section": "Article 10:205",
+        "number": 2
+      }
+    ],
+    "duplicates_total": 2,
+    "by_family": {
+      "Art.": 67,
+      "Comment": 188,
+      "Note": 153
+    }
+  },
+  "coverage": {
+    "share": 0.9766,
+    "covered_chars": 522411,
+    "book_chars": 534934,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 845,
+    "min": 65,
+    "max": 10330,
+    "too_short": [
+      "pecl-lando-part3:art:11/305#nx",
+      "pecl-lando-part3:art:13/104",
+      "pecl-lando-part3:art:13/106",
+      "pecl-lando-part3:art:13/106#cF",
+      "pecl-lando-part3:art:14/201"
+    ],
+    "too_long": [
+      "pecl-lando-part3:art:11/101#cB"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0.0,
+    "cards_with_calls_but_no_notes": 65,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "2": 111,
+      "3": 297
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 28.9% < 98%: пропущено номеров 858. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

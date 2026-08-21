@@ -1,0 +1,166 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/pel-hondius-sales",
+  "cards": 449,
+  "profile": "pel-sellier-article-hondius-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.3667,
+    "rows": 119,
+    "gaps": [
+      {
+        "family": "Art.",
+        "section": "1",
+        "from": 105,
+        "to": 201,
+        "missing": 95
+      },
+      {
+        "family": "Art.",
+        "section": "2",
+        "from": 1,
+        "to": 101,
+        "missing": 99
+      },
+      {
+        "family": "Art.",
+        "section": "2",
+        "from": 104,
+        "to": 201,
+        "missing": 96
+      },
+      {
+        "family": "Art.",
+        "section": "3",
+        "from": 2,
+        "to": 101,
+        "missing": 98
+      },
+      {
+        "family": "Art.",
+        "section": "3",
+        "from": 104,
+        "to": 201,
+        "missing": 96
+      },
+      {
+        "family": "Art.",
+        "section": "4",
+        "from": 103,
+        "to": 201,
+        "missing": 97
+      },
+      {
+        "family": "Art.",
+        "section": "4",
+        "from": 207,
+        "to": 301,
+        "missing": 93
+      },
+      {
+        "family": "Art.",
+        "section": "4",
+        "from": 103,
+        "to": 303,
+        "missing": 199
+      },
+      {
+        "family": "Art.",
+        "section": "5",
+        "from": 103,
+        "to": 201,
+        "missing": 97
+      },
+      {
+        "family": "Note",
+        "section": "Article 5:102",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 10,
+    "missing_total": 971,
+    "duplicates": [
+      {
+        "family": "Art.",
+        "section": "4",
+        "number": 103
+      },
+      {
+        "family": "Note",
+        "section": "Article 4:103",
+        "number": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article 4:103",
+        "number": 1
+      }
+    ],
+    "duplicates_total": 3,
+    "by_family": {
+      "Art.": 60,
+      "Comment": 245,
+      "Note": 144
+    }
+  },
+  "coverage": {
+    "share": 0.9977,
+    "covered_chars": 817188,
+    "book_chars": 819087,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 1298,
+    "min": 58,
+    "max": 12162,
+    "too_short": [
+      "pel-hondius-sales:art:3/1#n2",
+      "pel-hondius-sales:art:5/201#cD",
+      "pel-hondius-sales:art:5/202#cD"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0,
+    "cards_with_calls_but_no_notes": 5,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 449
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 36.7% < 98%: пропущено номеров 971. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

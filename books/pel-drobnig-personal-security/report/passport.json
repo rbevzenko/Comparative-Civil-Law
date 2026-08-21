@@ -1,0 +1,234 @@
+{
+  "path": "/home/user/dcfr-pdf/pel-drobnig-personal-security.pdf",
+  "sha256": "f0eeb52d2930478a79567858d9ecb39f3b45a4b115a74208ba0b8a3156bb37ed",
+  "pages": 600,
+  "sampled_pages": [
+    91,
+    102,
+    113,
+    124,
+    135,
+    146,
+    157,
+    168,
+    179,
+    190,
+    201,
+    212,
+    223,
+    234,
+    245,
+    256,
+    267,
+    278,
+    289,
+    300,
+    311,
+    322,
+    333,
+    344,
+    355,
+    366,
+    377,
+    388,
+    399,
+    410,
+    421,
+    432,
+    443,
+    454,
+    465,
+    476,
+    487,
+    498,
+    509,
+    520
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": false
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 2668,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 1.0,
+    "offset_mode": -33,
+    "offset_stable": true,
+    "sample": [
+      {
+        "pdf_page": 91,
+        "printed": 58
+      },
+      {
+        "pdf_page": 102,
+        "printed": 69
+      },
+      {
+        "pdf_page": 113,
+        "printed": 80
+      },
+      {
+        "pdf_page": 124,
+        "printed": 91
+      },
+      {
+        "pdf_page": 135,
+        "printed": 102
+      },
+      {
+        "pdf_page": 146,
+        "printed": 113
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "9.0": 53560,
+      "9.5": 31551,
+      "8.5": 9567,
+      "8.4": 3475,
+      "8.0": 1430,
+      "10.5": 873,
+      "10.0": 271,
+      "11.0": 245
+    },
+    "body": 9.0,
+    "candidates_footnote": []
+  },
+  "footnotes": {
+    "small_font_chars": 785,
+    "share_at_page_bottom": 0.19
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 2,
+    "left_edges": [
+      68,
+      48,
+      176,
+      156
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 139,
+      "monotonic_share": 0.82,
+      "first": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "13"
+      ]
+    },
+    "§ с номером": {
+      "hits": 16,
+      "monotonic_share": 0.5,
+      "first": [
+        "307",
+        "7",
+        "10",
+        "765",
+        "1353"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 13,
+      "monotonic_share": 0.5,
+      "first": [
+        "3",
+        "1",
+        "15",
+        "21",
+        "11"
+      ]
+    },
+    "para. англ. раздел-пункт": {
+      "hits": 3,
+      "monotonic_share": 0.0,
+      "first": [
+        "107-109",
+        "313-22",
+        "313-342"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 18866,
+    "suspicious": 20,
+    "share": 0.0011,
+    "sample": [
+      "BCLC",
+      "GmbH",
+      "RPDB,",
+      "BGHZ",
+      "BGHZ",
+      "JLMB",
+      "BBTC",
+      "BBTC",
+      "SCLR",
+      "SCLR",
+      "SCLR",
+      "(DLgs"
+    ]
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        90.0,
+        405.0
+      ],
+      "even": [
+        70.0,
+        385.0
+      ]
+    },
+    "left": {
+      "hits": 29,
+      "monotonic_share": 0.82,
+      "even_page_share": 0.1,
+      "first": [
+        58,
+        80,
+        3,
+        102,
+        124,
+        146
+      ]
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "IT": 1,
+    "NL": 18,
+    "ES": 1
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Оглавление в файле не зашито — иерархию собирать по печатному оглавлению и колонтитулам; качество поля hierarchy будет ниже.",
+      "Кегль сносок не отделяется от основного текста — отделять по положению на полосе.",
+      "Кликабельных сносок нет — привязка по кеглю и положению.",
+      "Маргинальные номера у левого поля: 29 попаданий, монотонность 82%, доля чётных страниц 10% — кандидат на режим margin."
+    ]
+  }
+}

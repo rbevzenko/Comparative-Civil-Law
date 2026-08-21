@@ -1,0 +1,241 @@
+{
+  "path": "/home/user/dcfr-pdf/peicl-ocr.pdf",
+  "sha256": "257fb184a61ca3bccd486b087dee2afd1982da4f8847dfbf79232e1989bc82a8",
+  "pages": 976,
+  "sampled_pages": [
+    147,
+    165,
+    183,
+    201,
+    219,
+    237,
+    255,
+    273,
+    291,
+    309,
+    327,
+    345,
+    363,
+    381,
+    399,
+    417,
+    435,
+    453,
+    471,
+    489,
+    507,
+    525,
+    543,
+    561,
+    579,
+    597,
+    615,
+    633,
+    651,
+    669,
+    687,
+    705,
+    723,
+    741,
+    759,
+    777,
+    795,
+    813,
+    831,
+    849
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 1181,
+    "max_depth": 7,
+    "resolved_pages": 1181,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Preface to the Second Edition\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 5,
+        "depth": 0
+      },
+      {
+        "title": "Preface to the First Edition\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 6,
+        "depth": 0
+      },
+      {
+        "title": "Table of Contents\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 7,
+        "depth": 0
+      },
+      {
+        "title": "Our Sponsors\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 39,
+        "depth": 0
+      },
+      {
+        "title": "Members of the Project Group\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 40,
+        "depth": 0
+      },
+      {
+        "title": "Former Members of the Project Group\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 41,
+        "depth": 0
+      },
+      {
+        "title": "Corresponding Members of the Project Group\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 41,
+        "depth": 0
+      },
+      {
+        "title": "Members of the Drafting Committee\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 41,
+        "depth": 0
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 2905,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 1.0,
+    "offset_mode": -54,
+    "offset_stable": true,
+    "sample": [
+      {
+        "pdf_page": 147,
+        "printed": 93
+      },
+      {
+        "pdf_page": 165,
+        "printed": 111
+      },
+      {
+        "pdf_page": 183,
+        "printed": 129
+      },
+      {
+        "pdf_page": 201,
+        "printed": 147
+      },
+      {
+        "pdf_page": 219,
+        "printed": 165
+      },
+      {
+        "pdf_page": 237,
+        "printed": 183
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "9.0": 65295,
+      "9.5": 33490,
+      "8.0": 4392,
+      "9.2": 2666,
+      "11.0": 946,
+      "10.0": 919,
+      "9.8": 230,
+      "12.0": 217
+    },
+    "body": 9.0,
+    "candidates_footnote": []
+  },
+  "footnotes": {
+    "small_font_chars": 85,
+    "share_at_page_bottom": 0.11
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      48
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "n° голый номер в начале абзаца": {
+      "hits": 9,
+      "monotonic_share": 0.62,
+      "first": [
+        "2",
+        "1",
+        "27",
+        "64",
+        "6"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 9,
+      "monotonic_share": 0.62,
+      "first": [
+        "2",
+        "1",
+        "27",
+        "64",
+        "6"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 15621,
+    "suspicious": 4,
+    "share": 0.0003,
+    "sample": [
+      "byly",
+      "tych",
+      "tych",
+      "przy"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        48.0,
+        390.0
+      ],
+      "even": [
+        48.0,
+        390.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "DE/AT/CH": 1,
+    "IT": 2,
+    "NL": 24,
+    "ES": 2
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Кегль сносок не отделяется от основного текста — отделять по положению на полосе.",
+      "Кликабельных сносок нет — привязка по кеглю и положению."
+    ]
+  }
+}

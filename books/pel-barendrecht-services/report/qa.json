@@ -1,0 +1,102 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/pel-barendrecht-services",
+  "cards": 845,
+  "profile": "pel-sellier-article-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 161,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [
+      {
+        "family": "Art.",
+        "section": "1",
+        "number": 107
+      }
+    ],
+    "duplicates_total": 1,
+    "by_family": {
+      "Art.": 80,
+      "Comment": 630,
+      "Note": 135
+    }
+  },
+  "coverage": {
+    "share": 0.9933,
+    "covered_chars": 2362347,
+    "book_chars": 2378303,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 1562,
+    "min": 31,
+    "max": 48276,
+    "too_short": [
+      "pel-barendrecht-services:art:1/102#cH",
+      "pel-barendrecht-services:art:1/104#cG",
+      "pel-barendrecht-services:art:1/105#cG",
+      "pel-barendrecht-services:art:1/106#cG",
+      "pel-barendrecht-services:art:1/107#cH",
+      "pel-barendrecht-services:art:1/108#cH",
+      "pel-barendrecht-services:art:1/109#cG",
+      "pel-barendrecht-services:art:1/111#cH",
+      "pel-barendrecht-services:art:1/112#cG",
+      "pel-barendrecht-services:art:1/113#cG",
+      "pel-barendrecht-services:art:1/115#cH",
+      "pel-barendrecht-services:art:2/102#cG",
+      "pel-barendrecht-services:art:2/104#cJ",
+      "pel-barendrecht-services:art:2/105#cG",
+      "pel-barendrecht-services:art:2/106#cG"
+    ],
+    "too_long": [
+      "pel-barendrecht-services:art:1/115#n2",
+      "pel-barendrecht-services:art:2/111#n1",
+      "pel-barendrecht-services:art:1/107~2",
+      "pel-barendrecht-services:art:4/113#n3",
+      "pel-barendrecht-services:art:5/108#n1",
+      "pel-barendrecht-services:art:6/109#n1"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0,
+    "cards_with_calls_but_no_notes": 78,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 845
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

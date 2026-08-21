@@ -1,0 +1,289 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/dcfr-vol5-6",
+  "cards": 126,
+  "profile": "dcfr-sellier-vol6-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.045,
+    "rows": 19,
+    "gaps": [
+      {
+        "family": "Art.",
+        "section": "X. –1",
+        "from": 102,
+        "to": 201,
+        "missing": 98
+      },
+      {
+        "family": "Art.",
+        "section": "X. –1",
+        "from": 202,
+        "to": 205,
+        "missing": 2
+      },
+      {
+        "family": "Art.",
+        "section": "X. –1",
+        "from": 206,
+        "to": 301,
+        "missing": 94
+      },
+      {
+        "family": "Art.",
+        "section": "X. –1",
+        "from": 301,
+        "to": 303,
+        "missing": 1
+      },
+      {
+        "family": "Art.",
+        "section": "X. – 2",
+        "from": 103,
+        "to": 201,
+        "missing": 97
+      },
+      {
+        "family": "Art.",
+        "section": "X. – 2",
+        "from": 205,
+        "to": 301,
+        "missing": 95
+      },
+      {
+        "family": "Art.",
+        "section": "X. – 2",
+        "from": 302,
+        "to": 402,
+        "missing": 99
+      },
+      {
+        "family": "Art.",
+        "section": "X.–3",
+        "from": 101,
+        "to": 201,
+        "missing": 99
+      },
+      {
+        "family": "Art.",
+        "section": "X. – 3",
+        "from": 103,
+        "to": 202,
+        "missing": 98
+      },
+      {
+        "family": "Art.",
+        "section": "X. – 4",
+        "from": 105,
+        "to": 201,
+        "missing": 95
+      },
+      {
+        "family": "Art.",
+        "section": "X. – 5",
+        "from": 103,
+        "to": 201,
+        "missing": 97
+      },
+      {
+        "family": "Art.",
+        "section": "X. – 6",
+        "from": 103,
+        "to": 105,
+        "missing": 1
+      },
+      {
+        "family": "Art.",
+        "section": "X. – 6",
+        "from": 110,
+        "to": 201,
+        "missing": 90
+      },
+      {
+        "family": "Art.",
+        "section": "X. – 6",
+        "from": 205,
+        "to": 301,
+        "missing": 95
+      },
+      {
+        "family": "Art.",
+        "section": "X. – 7",
+        "from": 103,
+        "to": 201,
+        "missing": 97
+      },
+      {
+        "family": "Art.",
+        "section": "X. – 7",
+        "from": 203,
+        "to": 301,
+        "missing": 97
+      },
+      {
+        "family": "Art.",
+        "section": "X. – 7",
+        "from": 302,
+        "to": 401,
+        "missing": 98
+      },
+      {
+        "family": "Art.",
+        "section": "X. – 8",
+        "from": 102,
+        "to": 201,
+        "missing": 98
+      },
+      {
+        "family": "Art.",
+        "section": "X. – 8",
+        "from": 202,
+        "to": 301,
+        "missing": 98
+      },
+      {
+        "family": "Art.",
+        "section": "X. – 8",
+        "from": 302,
+        "to": 401,
+        "missing": 98
+      },
+      {
+        "family": "Art.",
+        "section": "X. – 8",
+        "from": 401,
+        "to": 501,
+        "missing": 99
+      },
+      {
+        "family": "Art.",
+        "section": "X. – 8",
+        "from": 504,
+        "to": 601,
+        "missing": 96
+      },
+      {
+        "family": "Art.",
+        "section": "X. – 9",
+        "from": 109,
+        "to": 202,
+        "missing": 92
+      },
+      {
+        "family": "Art.",
+        "section": "X. – 9",
+        "from": 204,
+        "to": 301,
+        "missing": 96
+      },
+      {
+        "family": "Art.",
+        "section": "X. –10",
+        "from": 102,
+        "to": 201,
+        "missing": 98
+      },
+      {
+        "family": "Art.",
+        "section": "X. –10",
+        "from": 201,
+        "to": 203,
+        "missing": 1
+      },
+      {
+        "family": "Art.",
+        "section": "X. –10",
+        "from": 203,
+        "to": 301,
+        "missing": 97
+      },
+      {
+        "family": "Art.",
+        "section": "X. –10",
+        "from": 303,
+        "to": 401,
+        "missing": 97
+      },
+      {
+        "family": "Art.",
+        "section": "X. –10",
+        "from": 401,
+        "to": 501,
+        "missing": 99
+      }
+    ],
+    "gaps_total": 29,
+    "missing_total": 2422,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Art.": 114,
+      "Comment": 12
+    }
+  },
+  "coverage": {
+    "share": 0.9916,
+    "covered_chars": 195267,
+    "book_chars": 196916,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 626,
+    "min": 93,
+    "max": 25703,
+    "too_short": [
+      "dcfr-vol5-6:art:X. –1/303",
+      "dcfr-vol5-6:art:X. – 3/102",
+      "dcfr-vol5-6:art:X. – 6/105"
+    ],
+    "too_long": [
+      "dcfr-vol5-6:art:X. –1/101#cx",
+      "dcfr-vol5-6:art:X. –1/201#cx",
+      "dcfr-vol5-6:art:X. – 1/203#cx",
+      "dcfr-vol5-6:art:X. – 3/102#cx"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0.0,
+    "cards_with_calls_but_no_notes": 3,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "5": 100,
+      "6": 15,
+      "7": 11
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 4.5% < 98%: пропущено номеров 2422. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

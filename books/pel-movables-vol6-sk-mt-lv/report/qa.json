@@ -1,0 +1,301 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/pel-movables-vol6-sk-mt-lv",
+  "cards": 577,
+  "profile": "pel-movables-reports-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.5048,
+    "rows": 2,
+    "gaps": [
+      {
+        "family": "p.",
+        "section": null,
+        "from": 7,
+        "to": 10,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 51,
+        "to": 53,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 98,
+        "to": 100,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 133,
+        "to": 135,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 147,
+        "to": 150,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 156,
+        "to": 162,
+        "missing": 5
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 166,
+        "to": 168,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 184,
+        "to": 186,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 211,
+        "to": 213,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 231,
+        "to": 233,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 247,
+        "to": 250,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 251,
+        "to": 258,
+        "missing": 6
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 261,
+        "to": 264,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 290,
+        "to": 292,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 321,
+        "to": 324,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 331,
+        "to": 333,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 344,
+        "to": 346,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 347,
+        "to": 354,
+        "missing": 6
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 357,
+        "to": 360,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 362,
+        "to": 364,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 390,
+        "to": 392,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 418,
+        "to": 420,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 433,
+        "to": 435,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 447,
+        "to": 454,
+        "missing": 6
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 456,
+        "to": 458,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 459,
+        "to": 462,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 480,
+        "to": 482,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 519,
+        "to": 521,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 544,
+        "to": 550,
+        "missing": 5
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 550,
+        "to": 552,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 63,
+    "missing_total": 566,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 515,
+      "frg.": 62
+    }
+  },
+  "coverage": {
+    "share": 0.9995,
+    "covered_chars": 1170439,
+    "book_chars": 1171015,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2140,
+    "min": 49,
+    "max": 3139,
+    "too_short": [
+      "pel-movables-vol6-sk-mt-lv:frg:19",
+      "pel-movables-vol6-sk-mt-lv:frg:159",
+      "pel-movables-vol6-sk-mt-lv:frg:169",
+      "pel-movables-vol6-sk-mt-lv:frg:171",
+      "pel-movables-vol6-sk-mt-lv:frg:259",
+      "pel-movables-vol6-sk-mt-lv:frg:263",
+      "pel-movables-vol6-sk-mt-lv:frg:265",
+      "pel-movables-vol6-sk-mt-lv:frg:267",
+      "pel-movables-vol6-sk-mt-lv:frg:359",
+      "pel-movables-vol6-sk-mt-lv:frg:361",
+      "pel-movables-vol6-sk-mt-lv:frg:362",
+      "pel-movables-vol6-sk-mt-lv:frg:363",
+      "pel-movables-vol6-sk-mt-lv:frg:369",
+      "pel-movables-vol6-sk-mt-lv:frg:461",
+      "pel-movables-vol6-sk-mt-lv:frg:462"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.78,
+    "footnotes_total": 466,
+    "unparsed_blocks": 129,
+    "per_card_median": 1,
+    "cards_with_calls_but_no_notes": 6,
+    "notes_without_visible_call": 465
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 577
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 50.5% < 98%: пропущено номеров 566. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

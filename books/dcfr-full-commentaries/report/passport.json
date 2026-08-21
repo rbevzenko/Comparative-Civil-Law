@@ -1,0 +1,208 @@
+{
+  "path": "/home/user/dcfr-pdf/dcfr-full-commentaries.pdf",
+  "sha256": "8da9a9093c65d2219964bf74777433979f7d3a9c27d11b44ef0ec6db39fd4484",
+  "pages": 4795,
+  "sampled_pages": [
+    720,
+    809,
+    898,
+    987,
+    1076,
+    1165,
+    1254,
+    1343,
+    1432,
+    1521,
+    1610,
+    1699,
+    1788,
+    1877,
+    1966,
+    2055,
+    2144,
+    2233,
+    2322,
+    2411,
+    2500,
+    2589,
+    2678,
+    2767,
+    2856,
+    2945,
+    3034,
+    3123,
+    3212,
+    3301,
+    3390,
+    3479,
+    3568,
+    3657,
+    3746,
+    3835,
+    3924,
+    4013,
+    4102,
+    4191
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": false
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 3464,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.9,
+    "offset_mode": 0,
+    "offset_stable": true,
+    "sample": [
+      {
+        "pdf_page": 720,
+        "printed": 720
+      },
+      {
+        "pdf_page": 809,
+        "printed": 809
+      },
+      {
+        "pdf_page": 898,
+        "printed": 898
+      },
+      {
+        "pdf_page": 987,
+        "printed": 987
+      },
+      {
+        "pdf_page": 1076,
+        "printed": 1076
+      },
+      {
+        "pdf_page": 1165,
+        "printed": 1165
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "12.0": 133345,
+      "14.0": 1818,
+      "8.0": 50
+    },
+    "body": 12.0,
+    "candidates_footnote": []
+  },
+  "footnotes": {
+    "small_font_chars": 50,
+    "share_at_page_bottom": 0.16
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      71
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 75,
+      "monotonic_share": 0.81,
+      "first": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "4"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 3,
+      "monotonic_share": 0.0,
+      "first": [
+        "1719",
+        "23",
+        "6"
+      ]
+    },
+    "§ с номером": {
+      "hits": 2,
+      "monotonic_share": 0.0,
+      "first": [
+        "633",
+        "1"
+      ]
+    },
+    "para. англ. раздел-пункт": {
+      "hits": 1,
+      "monotonic_share": 0.0,
+      "first": [
+        "522-523"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 21378,
+    "suspicious": 10,
+    "share": 0.0005,
+    "sample": [
+      "JLMB",
+      "BGHZ",
+      "BGHZ",
+      "BBTC",
+      "Hdst.",
+      "StVG)",
+      "StVG,",
+      "StVG",
+      "(StVG",
+      "StVG,"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        106.0,
+        528.0
+      ],
+      "even": [
+        71.0,
+        528.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "NL": 16,
+    "ES": 1
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Оглавление в файле не зашито — иерархию собирать по печатному оглавлению и колонтитулам; качество поля hierarchy будет ниже.",
+      "Кегль сносок не отделяется от основного текста — отделять по положению на полосе.",
+      "Кликабельных сносок нет — привязка по кеглю и положению."
+    ]
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "path": "/home/user/dcfr-pdf/pel-lilleholt-lease-goods.pdf",
+  "sha256": "dea8bfcf3f5d28bfec2c35cee99a0070083ae7c9f1563447b18d7e18a5dc933c",
+  "pages": 406,
+  "sampled_pages": [
+    61,
+    68,
+    75,
+    82,
+    89,
+    96,
+    103,
+    110,
+    117,
+    124,
+    131,
+    138,
+    145,
+    152,
+    159,
+    166,
+    173,
+    180,
+    187,
+    194,
+    201,
+    208,
+    215,
+    222,
+    229,
+    236,
+    243,
+    250,
+    257,
+    264,
+    271,
+    278,
+    285,
+    292,
+    299,
+    306,
+    313,
+    320,
+    327,
+    334
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": false
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 2485,
+    "empty_pages_share": 0.03,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.97,
+    "offset_mode": -39,
+    "offset_stable": true,
+    "sample": [
+      {
+        "pdf_page": 61,
+        "printed": 22
+      },
+      {
+        "pdf_page": 68,
+        "printed": 29
+      },
+      {
+        "pdf_page": 75,
+        "printed": 36
+      },
+      {
+        "pdf_page": 82,
+        "printed": 43
+      },
+      {
+        "pdf_page": 89,
+        "printed": 50
+      },
+      {
+        "pdf_page": 96,
+        "printed": 57
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "9.5": 57733,
+      "9.0": 26769,
+      "8.5": 5841,
+      "10.0": 1882,
+      "8.4": 1355,
+      "11.0": 703,
+      "10.5": 459,
+      "8.9": 165
+    },
+    "body": 9.5,
+    "candidates_footnote": []
+  },
+  "footnotes": {
+    "small_font_chars": 48,
+    "share_at_page_bottom": 0.4
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 2,
+    "left_edges": [
+      48,
+      68,
+      139,
+      119
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 84,
+      "monotonic_share": 0.73,
+      "first": [
+        "3",
+        "4",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 7,
+      "monotonic_share": 0.67,
+      "first": [
+        "4",
+        "1",
+        "15",
+        "24",
+        "1986"
+      ]
+    },
+    "§ с номером": {
+      "hits": 6,
+      "monotonic_share": 0.4,
+      "first": [
+        "1092",
+        "1117",
+        "536",
+        "44",
+        "425"
+      ]
+    },
+    "para. англ. раздел-пункт": {
+      "hits": 1,
+      "monotonic_share": 0.0,
+      "first": [
+        "11–18"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 17985,
+    "suspicious": 8,
+    "share": 0.0004,
+    "sample": [
+      "czynsz",
+      "czynsz",
+      "czynsz",
+      "czynsz",
+      "nych",
+      "BGBl.",
+      "RGBl.",
+      "BGBl."
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        68.0,
+        405.0
+      ],
+      "even": [
+        48.0,
+        385.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "NL": 13
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Оглавление в файле не зашито — иерархию собирать по печатному оглавлению и колонтитулам; качество поля hierarchy будет ниже.",
+      "Кегль сносок не отделяется от основного текста — отделять по положению на полосе.",
+      "Кликабельных сносок нет — привязка по кеглю и положению."
+    ]
+  }
+}

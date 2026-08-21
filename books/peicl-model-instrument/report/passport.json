@@ -1,0 +1,250 @@
+{
+  "path": "/home/user/dcfr-pdf/peicl-model-instrument.pdf",
+  "sha256": "55f3abd1457787bc06413754faedc9f5eb91924ae6dca3b4a2e80638f7c9c33b",
+  "pages": 160,
+  "sampled_pages": [
+    25,
+    28,
+    31,
+    34,
+    37,
+    40,
+    43,
+    46,
+    49,
+    52,
+    55,
+    58,
+    61,
+    64,
+    67,
+    70,
+    73,
+    76,
+    79,
+    82,
+    85,
+    88,
+    91,
+    94,
+    97,
+    100,
+    103,
+    106,
+    109,
+    112,
+    115,
+    118,
+    121,
+    124,
+    127,
+    130,
+    133,
+    136,
+    139,
+    142
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 20,
+    "max_depth": 2,
+    "resolved_pages": 20,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Preface\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 5,
+        "depth": 0
+      },
+      {
+        "title": "Table of Contents\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 7,
+        "depth": 0
+      },
+      {
+        "title": "Part I\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 9,
+        "depth": 0
+      },
+      {
+        "title": "Welcome Address\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 11,
+        "depth": 1
+      },
+      {
+        "title": "Introduction\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 15,
+        "depth": 1
+      },
+      {
+        "title": "Political Perspectives\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 23,
+        "depth": 1
+      },
+      {
+        "title": "Developments at EESC Level\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 33,
+        "depth": 1
+      },
+      {
+        "title": "An Academic View\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 37,
+        "depth": 1
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 2528,
+    "empty_pages_share": 0.07,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.12,
+    "offset_mode": -8,
+    "offset_stable": true,
+    "sample": [
+      {
+        "pdf_page": 25,
+        "printed": null
+      },
+      {
+        "pdf_page": 28,
+        "printed": null
+      },
+      {
+        "pdf_page": 31,
+        "printed": null
+      },
+      {
+        "pdf_page": 34,
+        "printed": null
+      },
+      {
+        "pdf_page": 37,
+        "printed": 29
+      },
+      {
+        "pdf_page": 40,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "10.0": 71016,
+      "9.0": 15164,
+      "14.7": 1960,
+      "9.6": 490,
+      "9.5": 318,
+      "11.0": 296,
+      "11.5": 195,
+      "6.0": 184
+    },
+    "body": 10.0,
+    "candidates_footnote": []
+  },
+  "footnotes": {
+    "small_font_chars": 189,
+    "share_at_page_bottom": 0.14
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      72,
+      78
+    ]
+  },
+  "duplicate_pages": 2,
+  "repeated_lines": [
+    {
+      "line": "© sellier. european law publishers",
+      "pages": 40
+    },
+    {
+      "line": "www.sellier.de",
+      "pages": 40
+    }
+  ],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 78,
+      "monotonic_share": 0.78,
+      "first": [
+        "20",
+        "26",
+        "32",
+        "6",
+        "38"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 60,
+      "monotonic_share": 0.85,
+      "first": [
+        "20",
+        "26",
+        "32",
+        "38",
+        "44"
+      ]
+    },
+    "para. англ. раздел-пункт": {
+      "hits": 1,
+      "monotonic_share": 0.0,
+      "first": [
+        "533-539"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 14033,
+    "suspicious": 0,
+    "share": 0.0,
+    "sample": []
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        72.0,
+        367.0
+      ],
+      "even": [
+        78.0,
+        372.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {},
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Кегль сносок не отделяется от основного текста — отделять по положению на полосе.",
+      "Кликабельных сносок нет — привязка по кеглю и положению.",
+      "Одинаковых страниц в выборке: 2 — проверить, не дубль ли разворота в файле.",
+      "Повторяющийся мусор (2 шаблонов) — вычистить первым шагом."
+    ]
+  }
+}
