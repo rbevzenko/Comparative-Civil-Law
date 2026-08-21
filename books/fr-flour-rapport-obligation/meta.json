@@ -1,12 +1,16 @@
 {
   "book_id": "fr-flour-rapport-obligation",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
-  "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "authors": [
+    "Jacques Flour",
+    "Jean-Luc Aubert",
+    "Éric Savaux"
+  ],
+  "title": "Droit civil. Les obligations. 3. Le rapport d’obligation",
+  "edition": "11e éd.",
+  "year": 2024,
+  "publisher": "Dalloz",
+  "jurisdiction": "FR",
+  "language": "fr",
+  "isbn": "978-2-247-23687-9",
+  "notes": "Электронное издание Dalloz/Sirey (сборка calibre), ISBN numérique 9782247236879. Сноски на отдельных полосах, привязка по ссылкам-аннотациям. Колонцифры у издания нет."
 }

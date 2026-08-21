@@ -1,12 +1,17 @@
 {
   "book_id": "fr-flour-fait-juridique",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
-  "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "authors": [
+    "Jacques Flour",
+    "Jean-Luc Aubert",
+    "Éric Savaux",
+    "Lionel Andreu"
+  ],
+  "title": "Droit civil. Les obligations. 2. Le fait juridique. Responsabilité extracontractuelle",
+  "edition": "16e éd.",
+  "year": 2025,
+  "publisher": "Dalloz",
+  "jurisdiction": "FR",
+  "language": "fr",
+  "isbn": "978-2-247-24552-9",
+  "notes": "Электронное издание Dalloz/Sirey (сборка calibre), ISBN numérique 978-2-247-24552-9; текст актуализирован на середину июля 2025. Сноски на отдельных полосах, привязка по ссылкам-аннотациям. Колонцифры у издания нет."
 }

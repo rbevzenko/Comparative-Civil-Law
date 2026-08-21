@@ -1,12 +1,17 @@
 {
   "book_id": "fr-malaurie-suretes",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
-  "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "authors": [
+    "Laurent Aynès",
+    "Pierre Crocq",
+    "Augustin Aynès"
+  ],
+  "title": "Droit civil. Droit des sûretés",
+  "edition": "13e éd.",
+  "year": 2019,
+  "publisher": "LGDJ",
+  "jurisdiction": "FR",
+  "language": "fr",
+  "isbn": "978-2-275-06327-0",
+  "notes": "Титул: «13e édition», третий автор — «avec le concours d’Augustin Aynès»; оборот титула: © 2019, LGDJ, Lextenso. Тело книги кончается полосой 502, дальше указатели. Именной водяной знак покупателя внизу полосы вычищается как мусор.",
+  "service_source_id": "ae988fb8-f837-4565-ac71-576fe05ff273"
 }

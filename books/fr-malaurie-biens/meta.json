@@ -1,12 +1,17 @@
 {
   "book_id": "fr-malaurie-biens",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
-  "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "authors": [
+    "Philippe Malaurie",
+    "Laurent Aynès",
+    "Maxime Julienne"
+  ],
+  "title": "Droit civil. Droit des biens",
+  "edition": "9e éd.",
+  "year": 2021,
+  "publisher": "LGDJ",
+  "jurisdiction": "FR",
+  "language": "fr",
+  "isbn": "978-2-275-09041-2",
+  "notes": "Титул: «9e édition, à jour au 1er juillet 2021»; оборот титула: © 2021, LGDJ, Lextenso. Тело книги кончается полосой 416, дальше указатели. Именной водяной знак покупателя внизу полосы вычищается как мусор.",
+  "service_source_id": "c4aa17c3-b979-4b1e-8ac1-c479157232d1"
 }
