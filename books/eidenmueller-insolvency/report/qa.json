@@ -1,0 +1,82 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/eidenmueller-insolvency",
+  "cards": 29,
+  "profile": "dcfr-eidenmueller-insolvency-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 1,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "frg.": 29
+    }
+  },
+  "coverage": {
+    "share": 0.9997,
+    "covered_chars": 87153,
+    "book_chars": 87181,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 3235,
+    "min": 742,
+    "max": 4057,
+    "too_short": [],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.97,
+    "footnotes_total": 110,
+    "unparsed_blocks": 0,
+    "per_card_median": 3,
+    "cards_with_calls_but_no_notes": 0,
+    "notes_without_visible_call": 19
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 29,
+    "sample": [
+      "eidenmueller-insolvency:frg:3",
+      "eidenmueller-insolvency:frg:4",
+      "eidenmueller-insolvency:frg:5",
+      "eidenmueller-insolvency:frg:6",
+      "eidenmueller-insolvency:frg:7",
+      "eidenmueller-insolvency:frg:8",
+      "eidenmueller-insolvency:frg:9",
+      "eidenmueller-insolvency:frg:10",
+      "eidenmueller-insolvency:frg:11",
+      "eidenmueller-insolvency:frg:12"
+    ],
+    "depth_histogram": {
+      "0": 29
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

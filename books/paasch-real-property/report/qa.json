@@ -1,0 +1,82 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/paasch-real-property",
+  "cards": 87,
+  "profile": "dcfr-paasch-real-property-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 1,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "frg.": 87
+    }
+  },
+  "coverage": {
+    "share": 0.9994,
+    "covered_chars": 141118,
+    "book_chars": 141204,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 1731,
+    "min": 153,
+    "max": 2299,
+    "too_short": [],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.72,
+    "footnotes_total": 213,
+    "unparsed_blocks": 0,
+    "per_card_median": 2,
+    "cards_with_calls_but_no_notes": 11,
+    "notes_without_visible_call": 42
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 87,
+    "sample": [
+      "paasch-real-property:frg:9",
+      "paasch-real-property:frg:10",
+      "paasch-real-property:frg:11",
+      "paasch-real-property:frg:12",
+      "paasch-real-property:frg:13",
+      "paasch-real-property:frg:14",
+      "paasch-real-property:frg:15",
+      "paasch-real-property:frg:16",
+      "paasch-real-property:frg:17",
+      "paasch-real-property:frg:18"
+    ],
+    "depth_histogram": {
+      "0": 87
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

@@ -1,0 +1,259 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/wudarski-grundbuch",
+  "cards": 723,
+  "profile": "dcfr-wudarski-grundbuch-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9718,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "p.",
+        "section": null,
+        "from": 81,
+        "to": 83,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 127,
+        "to": 129,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 151,
+        "to": 153,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 167,
+        "to": 169,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 169,
+        "to": 171,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 219,
+        "to": 221,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 237,
+        "to": 239,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 283,
+        "to": 285,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 285,
+        "to": 287,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 313,
+        "to": 315,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 369,
+        "to": 371,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 393,
+        "to": 395,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 425,
+        "to": 427,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 427,
+        "to": 429,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 445,
+        "to": 447,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 493,
+        "to": 495,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 549,
+        "to": 551,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 613,
+        "to": 615,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 615,
+        "to": 617,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 673,
+        "to": 675,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 759,
+        "to": 761,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 21,
+    "missing_total": 21,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 723
+    }
+  },
+  "coverage": {
+    "share": 0.9995,
+    "covered_chars": 1593056,
+    "book_chars": 1593778,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2233,
+    "min": 37,
+    "max": 3465,
+    "too_short": [
+      "wudarski-grundbuch:p:169",
+      "wudarski-grundbuch:p:285",
+      "wudarski-grundbuch:p:427",
+      "wudarski-grundbuch:p:615"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.91,
+    "footnotes_total": 3258,
+    "unparsed_blocks": 0,
+    "per_card_median": 4,
+    "cards_with_calls_but_no_notes": 12,
+    "notes_without_visible_call": 258
+  },
+  "dead_pages": {
+    "pages": [
+      83,
+      129,
+      153,
+      169,
+      171,
+      221,
+      239,
+      285,
+      287,
+      315,
+      371,
+      395,
+      427,
+      429,
+      447,
+      495,
+      551,
+      615,
+      617,
+      675,
+      761
+    ],
+    "count": 21
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 723,
+    "sample": [
+      "wudarski-grundbuch:p:24",
+      "wudarski-grundbuch:p:25",
+      "wudarski-grundbuch:p:26",
+      "wudarski-grundbuch:p:27",
+      "wudarski-grundbuch:p:28",
+      "wudarski-grundbuch:p:29",
+      "wudarski-grundbuch:p:30",
+      "wudarski-grundbuch:p:31",
+      "wudarski-grundbuch:p:32",
+      "wudarski-grundbuch:p:33"
+    ],
+    "depth_histogram": {
+      "0": 723
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 97.2% < 98%: пропущено номеров 21. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

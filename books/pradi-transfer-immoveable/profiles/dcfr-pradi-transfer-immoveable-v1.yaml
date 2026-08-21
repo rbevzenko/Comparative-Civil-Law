@@ -1,0 +1,29 @@
+id: dcfr-pradi-transfer-immoveable-v1
+publisher: Università di Trento
+jurisdiction: DCFR
+language: en
+# Andrea Pradi (ed.), Transfer of Immoveable Property in Europe. From Contract to Registration (2012), Trento. 232 полосы, колонцифр нет — единица «frg.». Тело 13.0, сноски 11.0.
+
+units:
+  - type: "frg."
+    id_prefix: "frg"
+    mode: page
+
+address:
+  template: "frg. {number}"
+
+footnotes:
+  mode: font_bottom
+  note_size_max: 11.5
+  bottom_band: 0.45
+
+printed_page:
+  band: 0.0
+
+junk:
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'

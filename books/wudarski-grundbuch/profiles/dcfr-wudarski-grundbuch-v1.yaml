@@ -1,0 +1,33 @@
+id: dcfr-wudarski-grundbuch-v1
+publisher: De Gruyter
+jurisdiction: DCFR
+language: de
+# Arkadiusz Wudarski (Hrsg.), Das Grundbuch im Europa des 21. Jahrhunderts (2016), Duncker & Humblot. 784 полосы. Тело 9.6, сноски 8.5, колонтитул на 42 из 632.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  mode: font_bottom
+  note_size_max: 9.0
+  bottom_band: 0.45
+
+printed_page:
+  band: [0.075, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+\D'
+    - '[A-Za-z]\s+(\d{1,4})$'
+
+junk:
+  header_band: 0.08
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'

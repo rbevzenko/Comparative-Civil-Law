@@ -1,0 +1,29 @@
+id: dcfr-paasch-real-property-v1
+publisher: KTH Stockholm
+jurisdiction: DCFR
+language: en
+# Jesper M. Paasch, Comparative Real Property Rights (2011), KTH. Отчёт, 108 полос, колонцифр нет — единица «frg.». Тело 11.0, сноски 10.0.
+
+units:
+  - type: "frg."
+    id_prefix: "frg"
+    mode: page
+
+address:
+  template: "frg. {number}"
+
+footnotes:
+  mode: font_bottom
+  note_size_max: 10.5
+  bottom_band: 0.45
+
+printed_page:
+  band: 0.0
+
+junk:
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'
