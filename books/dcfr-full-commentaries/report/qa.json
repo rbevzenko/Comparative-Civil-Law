@@ -1,0 +1,382 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/dcfr-full-commentaries",
+  "cards": 12995,
+  "profile": "dcfr-sellier-fulledition-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.6091,
+    "rows": 1366,
+    "gaps": [
+      {
+        "family": "Art.",
+        "section": "II.–3",
+        "from": 109,
+        "to": 201,
+        "missing": 91
+      },
+      {
+        "family": "Art.",
+        "section": "II.–3",
+        "from": 202,
+        "to": 301,
+        "missing": 98
+      },
+      {
+        "family": "Art.",
+        "section": "II.–3",
+        "from": 302,
+        "to": 501,
+        "missing": 198
+      },
+      {
+        "family": "Art.",
+        "section": "II.–4",
+        "from": 105,
+        "to": 201,
+        "missing": 95
+      },
+      {
+        "family": "Art.",
+        "section": "II.–4",
+        "from": 211,
+        "to": 301,
+        "missing": 89
+      },
+      {
+        "family": "Note",
+        "section": "II.–4:102",
+        "from": 7,
+        "to": 9,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "II.–4:105",
+        "from": 3,
+        "to": 5,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "II.–4:204",
+        "from": 10,
+        "to": 12,
+        "missing": 1
+      },
+      {
+        "family": "Art.",
+        "section": "II.–5",
+        "from": 106,
+        "to": 201,
+        "missing": 94
+      },
+      {
+        "family": "Note",
+        "section": "II.–5:103",
+        "from": 13,
+        "to": 15,
+        "missing": 1
+      },
+      {
+        "family": "Art.",
+        "section": "II.–7",
+        "from": 102,
+        "to": 201,
+        "missing": 98
+      },
+      {
+        "family": "Art.",
+        "section": "II.–7",
+        "from": 216,
+        "to": 301,
+        "missing": 84
+      },
+      {
+        "family": "Art.",
+        "section": "II.–8",
+        "from": 107,
+        "to": 201,
+        "missing": 93
+      },
+      {
+        "family": "Note",
+        "section": "II.–8:201",
+        "from": 6,
+        "to": 8,
+        "missing": 1
+      },
+      {
+        "family": "Art.",
+        "section": "II.–9",
+        "from": 109,
+        "to": 201,
+        "missing": 91
+      },
+      {
+        "family": "Art.",
+        "section": "II.–9",
+        "from": 201,
+        "to": 301,
+        "missing": 99
+      },
+      {
+        "family": "Art.",
+        "section": "II.–9",
+        "from": 303,
+        "to": 401,
+        "missing": 97
+      },
+      {
+        "family": "Note",
+        "section": "II.–9:103",
+        "from": 12,
+        "to": 14,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "II.–9:403",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "III.–1:110",
+        "from": 8,
+        "to": 10,
+        "missing": 1
+      },
+      {
+        "family": "Comment",
+        "section": "III.–2:101",
+        "from": 7,
+        "to": 9,
+        "missing": 1
+      },
+      {
+        "family": "Art.",
+        "section": "III.–3",
+        "from": 107,
+        "to": 201,
+        "missing": 93
+      },
+      {
+        "family": "Art.",
+        "section": "III.–3",
+        "from": 205,
+        "to": 301,
+        "missing": 95
+      },
+      {
+        "family": "Art.",
+        "section": "III.–3",
+        "from": 303,
+        "to": 401,
+        "missing": 97
+      },
+      {
+        "family": "Art.",
+        "section": "III.–3",
+        "from": 401,
+        "to": 501,
+        "missing": 99
+      },
+      {
+        "family": "Art.",
+        "section": "III.–3",
+        "from": 514,
+        "to": 601,
+        "missing": 86
+      },
+      {
+        "family": "Art.",
+        "section": "III.–3",
+        "from": 601,
+        "to": 701,
+        "missing": 99
+      },
+      {
+        "family": "Note",
+        "section": "III.–3:702",
+        "from": 2,
+        "to": 4,
+        "missing": 1
+      },
+      {
+        "family": "Comment",
+        "section": "III.–3:705",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Art.",
+        "section": "III.–4",
+        "from": 112,
+        "to": 201,
+        "missing": 88
+      }
+    ],
+    "gaps_total": 112,
+    "missing_total": 7943,
+    "duplicates": [
+      {
+        "family": "Comment",
+        "section": "II.–9:410",
+        "number": 3
+      },
+      {
+        "family": "Comment",
+        "section": "II.–9:410",
+        "number": 3
+      },
+      {
+        "family": "Comment",
+        "section": "IV.A.–2:304",
+        "number": 3
+      },
+      {
+        "family": "Comment",
+        "section": "IV.A.–2:304",
+        "number": 3
+      },
+      {
+        "family": "Art.",
+        "section": "VIII.–4",
+        "number": 102
+      },
+      {
+        "family": "Comment",
+        "section": "VIII.–4:102",
+        "number": 1
+      },
+      {
+        "family": "Comment",
+        "section": "VIII.–4:102",
+        "number": 2
+      },
+      {
+        "family": "Art.",
+        "section": "IX.–6",
+        "number": 102
+      },
+      {
+        "family": "Comment",
+        "section": "IX.–6:101",
+        "number": 3
+      },
+      {
+        "family": "Comment",
+        "section": "IX.–6:101",
+        "number": 3
+      }
+    ],
+    "duplicates_total": 10,
+    "by_family": {
+      "Art.": 874,
+      "Comment": 2931,
+      "Note": 9190
+    }
+  },
+  "coverage": {
+    "share": 0.9986,
+    "covered_chars": 15227393,
+    "book_chars": 15249415,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 739,
+    "min": 7,
+    "max": 129850,
+    "too_short": [
+      "dcfr-full-commentaries:art:I.–1/103#n1",
+      "dcfr-full-commentaries:art:I.–1/105#nx",
+      "dcfr-full-commentaries:art:I.–1/109#nx",
+      "dcfr-full-commentaries:art:I.–1/110#nx",
+      "dcfr-full-commentaries:art:II.–1/101#nx",
+      "dcfr-full-commentaries:art:II.–1/104#nx",
+      "dcfr-full-commentaries:art:II.–1/105#nx",
+      "dcfr-full-commentaries:art:II.–1/105#n9",
+      "dcfr-full-commentaries:art:II.–1/106#nx",
+      "dcfr-full-commentaries:art:II.–1/110#n3",
+      "dcfr-full-commentaries:art:II.–2/101#nx",
+      "dcfr-full-commentaries:art:II.–2/102#nx",
+      "dcfr-full-commentaries:art:II.–2/103#nx",
+      "dcfr-full-commentaries:art:II.–2/104#nx",
+      "dcfr-full-commentaries:art:II.–2/105#nx"
+    ],
+    "too_long": [
+      "dcfr-full-commentaries:art:II.–3/302#n12",
+      "dcfr-full-commentaries:art:IV.A.–1/204#cC",
+      "dcfr-full-commentaries:art:IV.B.–4/101#cA",
+      "dcfr-full-commentaries:art:IV.B.–6/101#cA",
+      "dcfr-full-commentaries:art:IV.C.–2/102#cA",
+      "dcfr-full-commentaries:art:IV.C.–2/102#cD",
+      "dcfr-full-commentaries:art:IV.G.–1/101#cB",
+      "dcfr-full-commentaries:art:IV.G.–1/107#cA",
+      "dcfr-full-commentaries:art:V.–1/101#cB",
+      "dcfr-full-commentaries:art:V.–1/101#cC",
+      "dcfr-full-commentaries:art:V.–1/101#cE",
+      "dcfr-full-commentaries:art:V.–1/101#n24",
+      "dcfr-full-commentaries:art:V.–1/101#n105",
+      "dcfr-full-commentaries:art:V.–1/102#n16",
+      "dcfr-full-commentaries:art:V.–1/103#cB"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0,
+    "cards_with_calls_but_no_notes": 423,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [
+      610
+    ],
+    "count": 1
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 12995,
+    "sample": [
+      "dcfr-full-commentaries:art:I.–1/101",
+      "dcfr-full-commentaries:art:I.–1/101#cx",
+      "dcfr-full-commentaries:art:I.–1/102",
+      "dcfr-full-commentaries:art:I.–1/102#cx",
+      "dcfr-full-commentaries:art:I.–1/103",
+      "dcfr-full-commentaries:art:I.–1/103#cA",
+      "dcfr-full-commentaries:art:I.–1/103#cB",
+      "dcfr-full-commentaries:art:I.–1/103#n1",
+      "dcfr-full-commentaries:art:I.–1/104",
+      "dcfr-full-commentaries:art:I.–1/104#cx"
+    ],
+    "depth_histogram": {
+      "0": 12995
+    }
+  },
+  "internal_refs": {
+    "refs_total": 12789,
+    "unresolved": 0,
+    "resolved_share": 1.0,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 60.9% < 98%: пропущено номеров 7943. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}
