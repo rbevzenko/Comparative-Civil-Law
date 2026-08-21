@@ -1,0 +1,45 @@
+id: digital-page-reboul
+publisher: Dalloz
+jurisdiction: FR
+language: fr
+# Книга БЕЗ сквозной нумерации абзацев и БЕЗ типографской колонцифры:
+# электронное издание, в котором пагинация бумажного не сохранена.
+#
+# Единицей взята полоса файла, и тип единицы назван прямо — «éd. numérique,
+# p.». Это НЕ страница бумажной книги, и выдавать её за страницу нельзя:
+# адрес «éd. numérique, p. 151» читается как «сто пятьдесят первая полоса
+# электронного издания». Ссылка universal_ref ведёт ровно на этот фрагмент,
+# так что проверить его можно, а сослаться на бумажное издание — нет.
+#
+# Иной единицы источник не задаёт: заголовки в нём нумеруются заново внутри
+# каждого раздела, и составной адрес по ним был бы длиннее самого фрагмента.
+
+units:
+  - type: "éd. numérique, p."
+    id_prefix: "e"
+    mode: page
+
+address:
+  section:
+    mode: none
+  template: "{unit_type} {number}"
+
+printed_page:
+  band: [0.0, 0.0]
+
+footnotes:
+  mode: none
+
+junk:
+  patterns: []
+
+statutory:
+  patterns:
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*(?:\s*(?:et|à|,)\s*\d+(?:-\d+)*)*\s*(?:C\.\s*civ\.|du Code civil)'
+    - 'L\.\s*\d{3}-\d+'
+
+cross_refs:
+  patterns: []
+
+citation:
+  template: "{authors}, {title}, {publisher}, {year}, {address}"

@@ -1,0 +1,42 @@
+id: eyrolles-page-unit
+publisher: Eyrolles
+jurisdiction: FR
+language: fr
+# Практическое руководство без сквозной нумерации абзацев: структура задана
+# только заголовками. Единица — типографская страница; она читается из
+# колонтитула («Le cadre juridique de l’acte de construire 137»).
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  section:
+    mode: none
+  template: "{unit_type} {number}"
+
+printed_page:
+  band: [0.12, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+[A-ZÀÂÄÉÈÊËÎÏÔÖÙÛÜÇL]'
+    - '\s(\d{1,4})$'
+
+footnotes:
+  mode: none
+
+junk:
+  patterns: []
+
+statutory:
+  patterns:
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*(?:\s*(?:et|à|,)\s*\d+(?:-\d+)*)*\s*(?:C\.\s*civ\.|du Code civil)'
+    - 'CCH,\s*art\.\s*[LR]\.?\s*\d+(?:-\d+)*'
+    - 'L\.\s*\d{3}-\d+'
+
+cross_refs:
+  patterns:
+    - '(?:supra|infra|voir)\s*,?\s*p\.\s*\d+'
+
+citation:
+  template: "{authors}, {title}, {publisher}, {year}, {address}"

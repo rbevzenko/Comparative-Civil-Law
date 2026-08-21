@@ -1,12 +1,14 @@
 {
   "book_id": "fr-patault-histoire-biens",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
-  "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "authors": [
+    "Anne-Marie Patault"
+  ],
+  "title": "Introduction historique au droit des biens",
+  "edition": "1re éd.",
+  "year": 1989,
+  "publisher": "Presses Universitaires de France",
+  "jurisdiction": "FR",
+  "language": "fr",
+  "isbn": "2-13-042662-X",
+  "notes": "Серия «Droit fondamental». Электронное издание FeniXX (ePub, ISBN 9782130664529, 25 июня 2015 г.) — пагинация бумажного издания в файле НЕ сохранена, поэтому адрес карточки указывает полосу электронного издания, а не страницу книги."
 }

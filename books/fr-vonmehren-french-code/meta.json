@@ -1,12 +1,15 @@
 {
   "book_id": "fr-vonmehren-french-code",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
+  "authors": [
+    "A. N. Yiannopoulos"
+  ],
+  "title": "Usufruct: General Principles — Louisiana and Comparative Law",
+  "edition": null,
+  "year": 1967,
+  "publisher": "Louisiana Law Review, vol. 27, no 3",
+  "jurisdiction": "FR",
+  "language": "en",
   "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "notes": "ВНИМАНИЕ: имя файла (vonmehren-french-code.pdf) не соответствует содержимому. Это статья A. N. Yiannopoulos «Usufruct: General Principles — Louisiana and Comparative Law», Louisiana Law Review, vol. 27, no 3, April 1967, с. 369 и след. Фон Мерена в файле нет. Юрисдикция проставлена FR условно: статья сравнительно-правовая и разбирает узуфрукт по французскому, луизианскому, немецкому и греческому праву; при следующей ревизии её уместнее перенести в рубрику «Comparative law».",
+  "service_source_id": "f7d0f9e0-79e9-4c0f-b0e6-b0e4e17b5bc0"
 }

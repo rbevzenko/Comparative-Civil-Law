@@ -1,12 +1,16 @@
 {
   "book_id": "fr-mestre-mahler-immobilier",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
+  "authors": [
+    "Muriel Mestre-Mahler",
+    "Emmanuel Béal dit Rainaldy",
+    "Nadège Licoine-Hucliez"
+  ],
+  "title": "Droit de l’immobilier 2022. Droit général – Environnement juridique des activités immobilières – Vente – Location – Copropriété",
+  "edition": null,
+  "year": 2022,
+  "publisher": "Dunod",
+  "jurisdiction": "FR",
+  "language": "fr",
   "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "notes": "Электронное издание; пагинация бумажного в файле не сохранена, поэтому адрес карточки указывает полосу электронного издания."
 }
