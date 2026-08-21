@@ -1,0 +1,40 @@
+id: dcfr-aksoy-impossibility-v1
+publisher: Springer
+jurisdiction: DCFR
+language: en
+# Hüseyin Can Aksoy, Impossibility in Modern Private Law. A Comparative
+# Study of German, Swiss and Turkish Laws and the Unification Instruments
+# of Private Law (2014), Springer. 211 полос.
+#
+# ЛОВУШКА: колонтитул и сноски набраны ОДНИМ кеглем 8.5, а тело — 10.0.
+# Колонтитул («IV) Regulation of Impossibility in Swiss and Turkish Laws
+# 83») стоит на 36 из 666 и снимается полосой; всё, что кеглем 8.5 ниже
+# 0.45, — это сноски.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  mode: font_bottom
+  note_size_max: 9.0
+  bottom_band: 0.45
+
+printed_page:
+  band: [0.07, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+\D'
+    - '[A-Za-z]\s+(\d{1,4})$'
+
+junk:
+  header_band: 0.075
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'
