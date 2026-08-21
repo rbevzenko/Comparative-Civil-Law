@@ -1,0 +1,33 @@
+id: dcfr-rupp-grundbuch-register-v1
+publisher: Mohr Siebeck
+jurisdiction: DCFR
+language: de
+# Caroline S. Rupp, Germanisches Grundbuch und romanisches Register (AcP 214, 2014). Журнальная статья, 35 полос. Тело 9.0, сноски 8.0, колонтитул на 61 из 638 с колонцифрой то слева, то справа.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  mode: font_bottom
+  note_size_max: 8.5
+  bottom_band: 0.45
+
+printed_page:
+  band: [0.12, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+\D'
+    - '[A-Za-z]\s+(\d{1,4})$'
+
+junk:
+  header_band: 0.125
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'

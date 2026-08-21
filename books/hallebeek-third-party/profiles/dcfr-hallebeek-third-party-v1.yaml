@@ -1,0 +1,33 @@
+id: dcfr-hallebeek-third-party-v1
+publisher: Brill
+jurisdiction: DCFR
+language: en
+# Jan Hallebeek & Harry Dondorp (eds), Contracts for a Third-Party Beneficiary. A Historical and Comparative Account (2008), Brill. 180 полос. Тело 11.0, сноски 9.0, колонтитул на 54 из 681.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  mode: font_bottom
+  note_size_max: 10.0
+  bottom_band: 0.45
+
+printed_page:
+  band: [0.09, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+\D'
+    - '[A-Za-z]\s+(\d{1,4})$'
+
+junk:
+  header_band: 0.095
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'

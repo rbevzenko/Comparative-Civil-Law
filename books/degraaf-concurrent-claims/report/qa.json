@@ -1,0 +1,82 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/degraaf-concurrent-claims",
+  "cards": 26,
+  "profile": "dcfr-degraaf-concurrent-claims-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 1,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "frg.": 26
+    }
+  },
+  "coverage": {
+    "share": 0.9995,
+    "covered_chars": 51622,
+    "book_chars": 51647,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2058,
+    "min": 1312,
+    "max": 3008,
+    "too_short": [],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.92,
+    "footnotes_total": 129,
+    "unparsed_blocks": 0,
+    "per_card_median": 4.5,
+    "cards_with_calls_but_no_notes": 0,
+    "notes_without_visible_call": 10
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 26,
+    "sample": [
+      "degraaf-concurrent-claims:frg:1",
+      "degraaf-concurrent-claims:frg:2",
+      "degraaf-concurrent-claims:frg:3",
+      "degraaf-concurrent-claims:frg:4",
+      "degraaf-concurrent-claims:frg:5",
+      "degraaf-concurrent-claims:frg:6",
+      "degraaf-concurrent-claims:frg:7",
+      "degraaf-concurrent-claims:frg:8",
+      "degraaf-concurrent-claims:frg:9",
+      "degraaf-concurrent-claims:frg:10"
+    ],
+    "depth_histogram": {
+      "0": 26
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}
