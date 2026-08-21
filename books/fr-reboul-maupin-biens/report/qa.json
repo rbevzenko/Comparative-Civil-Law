@@ -1,0 +1,138 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/fr-reboul-maupin-biens",
+  "cards": 1340,
+  "profile": "digital-page-reboul",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9978,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 76,
+        "to": 78,
+        "missing": 1
+      },
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 307,
+        "to": 309,
+        "missing": 1
+      },
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 1166,
+        "to": 1168,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 3,
+    "missing_total": 3,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "éd. numérique, p.": 1340
+    }
+  },
+  "coverage": {
+    "share": 0.9995,
+    "covered_chars": 2866201,
+    "book_chars": 2867540,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2212,
+    "min": 15,
+    "max": 5155,
+    "too_short": [
+      "fr-reboul-maupin-biens:e:4",
+      "fr-reboul-maupin-biens:e:25",
+      "fr-reboul-maupin-biens:e:30",
+      "fr-reboul-maupin-biens:e:34",
+      "fr-reboul-maupin-biens:e:36",
+      "fr-reboul-maupin-biens:e:38",
+      "fr-reboul-maupin-biens:e:43",
+      "fr-reboul-maupin-biens:e:47",
+      "fr-reboul-maupin-biens:e:73",
+      "fr-reboul-maupin-biens:e:74",
+      "fr-reboul-maupin-biens:e:166",
+      "fr-reboul-maupin-biens:e:174",
+      "fr-reboul-maupin-biens:e:175",
+      "fr-reboul-maupin-biens:e:261",
+      "fr-reboul-maupin-biens:e:262"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0.0,
+    "cards_with_calls_but_no_notes": 183,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [
+      77,
+      308,
+      1167
+    ],
+    "count": 3
+  },
+  "duplicate_pages": {
+    "count": 6,
+    "pages": [
+      {
+        "page": 263,
+        "same_as": 19
+      },
+      {
+        "page": 264,
+        "same_as": 20
+      },
+      {
+        "page": 265,
+        "same_as": 21
+      },
+      {
+        "page": 416,
+        "same_as": 27
+      },
+      {
+        "page": 533,
+        "same_as": 31
+      },
+      {
+        "page": 746,
+        "same_as": 39
+      }
+    ]
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 1340
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

@@ -1,0 +1,46 @@
+id: scan-ourliac
+publisher: Presses Universitaires de France
+jurisdiction: FR
+language: fr
+# Скан с ДВОЙНЫМ текстовым слоем: распознанный текст вшит дважды со сдвигом
+# меньше интерлиньяжа, и в разборе две копии сплетаются посимвольно
+# («118844 HHIISSTOTIOREI RE DDUU DDRROOITI T PPRRIIVVÉÉ»). Разбирать этот
+# файл обычным pages_digital.py нельзя: нужен scripts/pages_digital_dedup.py
+# с допуском 3.0 по обеим осям — он снимает второй слой ДО сборки строк.
+#
+# Тело 7.0–8.1, колонтитул с колонцифрой сверху, сноски мельче тела внизу.
+
+units:
+  - type: "n°"
+    id_prefix: "n"
+    mode: flow
+    pattern: '^(\d{1,4})[\.,;:•·\s()0-9°]{0,4}[—–\-~]+\s*'
+
+address:
+  section:
+    mode: none
+  template: "{unit_type} {number}"
+
+printed_page:
+  band: [0.09, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+[A-ZÀÂÄÉÈÊËÎÏÔÖÙÛÜÇH]'
+    - '\s(\d{1,4})$'
+
+footnotes:
+  mode: position_bottom
+  bottom_band: 0.75
+
+junk:
+  patterns: []
+
+statutory:
+  patterns:
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*(?:\s*(?:et|à|,)\s*\d+(?:-\d+)*)*\s*(?:C\.\s*civ\.|du Code civil)'
+
+cross_refs:
+  patterns:
+    - '(?:supra|infra)\s*,?\s*n[o°s]*\s*\d+'
+
+citation:
+  template: "{authors}, {title}, {publisher}, {year}, {address}"
