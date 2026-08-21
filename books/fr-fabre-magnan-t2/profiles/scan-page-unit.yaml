@@ -22,7 +22,7 @@ address:
   template: "{unit_type} {number}"
 
 printed_page:
-  band: [0.075, 0.0]
+  band: [0.11, 0.0]
   patterns:
     - '^(\d{1,4})\s+[A-ZÀÂÄÉÈÊËÎÏÔÖÙÛÜÇL]'
     - '\s(\d{1,4})$'

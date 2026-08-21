@@ -1,0 +1,191 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/fr-capitant-cause",
+  "cards": 208,
+  "profile": "scan-capitant",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9412,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "n°",
+        "section": null,
+        "from": 5,
+        "to": 8,
+        "missing": 2
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 10,
+        "to": 12,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 12,
+        "to": 14,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 43,
+        "to": 45,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 104,
+        "to": 106,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 112,
+        "to": 114,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 127,
+        "to": 129,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 147,
+        "to": 149,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 160,
+        "to": 162,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 168,
+        "to": 170,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 189,
+        "to": 191,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 191,
+        "to": 193,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 12,
+    "missing_total": 13,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "n°": 208
+    }
+  },
+  "coverage": {
+    "share": 0.957,
+    "covered_chars": 1071880,
+    "book_chars": 1120033,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 12662,
+        "from": 43629,
+        "to": 56291
+      },
+      {
+        "chars": 11876,
+        "from": 64005,
+        "to": 75881
+      }
+    ]
+  },
+  "lengths": {
+    "median": 4552,
+    "min": 341,
+    "max": 18071,
+    "too_short": [],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.1,
+    "footnotes_total": 22,
+    "unparsed_blocks": 0,
+    "per_card_median": 0.0,
+    "cards_with_calls_but_no_notes": 68,
+    "notes_without_visible_call": 22
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 208,
+    "sample": [
+      "fr-capitant-cause:n:1",
+      "fr-capitant-cause:n:2",
+      "fr-capitant-cause:n:3",
+      "fr-capitant-cause:n:4",
+      "fr-capitant-cause:n:5",
+      "fr-capitant-cause:n:8",
+      "fr-capitant-cause:n:9",
+      "fr-capitant-cause:n:10",
+      "fr-capitant-cause:n:12",
+      "fr-capitant-cause:n:14"
+    ],
+    "depth_histogram": {
+      "0": 208
+    }
+  },
+  "internal_refs": {
+    "refs_total": 18,
+    "unresolved": 2,
+    "resolved_share": 0.889,
+    "sample": [
+      {
+        "card": "fr-capitant-cause:n:103",
+        "ref": "infra, n° 105",
+        "missing": 105
+      },
+      {
+        "card": "fr-capitant-cause:n:173",
+        "ref": "supra, n° 44",
+        "missing": 44
+      }
+    ]
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 5
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 94.1% < 98%: пропущено номеров 13. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}
