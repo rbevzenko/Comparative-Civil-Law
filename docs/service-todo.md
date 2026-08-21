@@ -521,14 +521,14 @@ comparative-civil-law_caddy_config`.
 Чтобы правилу было на что опереться, в выдачу фрагмента добавлена строка
 «год издания»: в поле «цитата» год стоит не у всякой книги (Gorlier — без
 года вовсе).
+### Опись немецкой папки (файлы скачаны и вскрыты, 2026-08-21)
 
-### Опись немецкой папки (снята 2026-08-21)
+137 файлов, 5,6 ГБ, **109 410 страниц**. Для сравнения: вся Франция — 31 книга
+и 21 872 карточки. Немецкая папка примерно впятеро больше всего, что уже
+сделано, и одним заходом не берётся.
 
-135 файлов, 5.4 ГБ. Ниже то, что видно ДО скачивания, по именам и размерам;
-всё остальное проверяется по самим файлам.
-
-**Побайтные копии (одинаковый размер, разные имена).** Часть переименована
-по-русски, и по имени они выглядят разными книгами:
+**Побайтные копии — 6 пар, подтверждено sha256.** Часть переименована по-русски,
+и по имени они выглядят разными книгами:
 
 | | |
 |---|---|
@@ -539,42 +539,224 @@ comparative-civil-law_caddy_config`.
 | Staudingers_Kommentar_zum_Burgerlichen_Gesetzbuch | Eckpfeiler_Des_Zivilrechts_Von_Staudingers… |
 | Harke, Allgemeines Schuldrecht | Harke_Allgemeines_Schuldrecht |
 
-Ещё четыре пары различаются на байт-полтора и почти наверняка тоже копии:
-Boemke/Ulrici, Leenen/Häublein, Wieling Sachenrecht, Brox/Walker AT.
-Проверять по sha256, а не по размеру.
+Ещё пять пар не совпадают побайтно, но имеют одинаковое число страниц и
+одинаковый текст на выборке: Boemke/Ulrici (481), Leenen/Häublein (712),
+Brox/Walker AT (451), Fikentscher/Heinemann (1142), Brox/Walker Schuldrecht
+(575). Единственная пара с настоящим расхождением — Wieling Sachenrecht:
+529 против 528 страниц.
 
-**Перекрытие диапазонов §§ внутри одного комментария.** Мюнхенский:
-файл «104-144» покрывает те же параграфы, что пять отдельных (104-113,
-116-119, 120-124, 125-129, 130-144); файл «145-185» — те же, что три
-(145-150, 151-159, 160-185); «985-1011» и «986-1011» — один диапазон в двух
-сканах разного объёма (9 МБ против 93 МБ). Insolvenzordnung: два файла с
-диапазоном §§ 103-128 («Band 3» и «Band 4»), и два файла помечены «Band 1»
-при разных §§ (1-79 и 217-359).
+**Четыре разных типа файла — четыре разных конвейера.** Это главный вывод
+описи: папка неоднородна, и общего профиля у неё быть не может.
 
-**Что за комментарии в папке.**
 
-* *Münchener Kommentar zum BGB* — файлы «NNN-NNN ГГУ (Мюнхенский
-  комментарий)». Цитируется «MüKoBGB/Автор, N. Aufl. Jahr, § 812 Rn. 45»:
-  единица — Randnummer ВНУТРИ параграфа, поэтому адрес обязан быть
-  составным (§ в address.section), иначе Rn. 45 из § 812 столкнётся с Rn. 45
-  из § 823.
-* *J. von Staudingers Kommentar* — «NNN-NNN BGB Staudinger». Цитируется
-  «Staudinger/Автор (Jahr), § 812 Rn. 45». Адрес так же составной.
-* *Eckpfeiler des Zivilrechts* — однотомная выжимка Штаудингера, отдельное
-  издание со своей нумерацией.
-* Отдельные комментарии: GmbHG (два разных), AktG, HGB, ZPO (девять томов),
-  InsO (девять томов плюс Мюнхенский), Grundbuchrecht (Kuntze), Mietrecht
-  (Abramenko и др., Staudinger Mietrecht, Emmerich/Sonnenschein),
-  Bamberger/Roth, Westermann/Grunewald/Maier-Reimer.
-* Учебники: Brox/Walker, Medicus, Larenz, Larenz/Wolf, Flume, Neuner,
-  Stadler, Leenen, Boemke/Ulrici, Looschelders, Harke, Fikentscher,
-  Emmerich, Oetker/Maultzsch, Oechsler, Lohsse, Baur/Stürner, Wolf,
-  Brehm/Berger, Wieling, Wilhelm, Prütting, Gursky, Meder/Czelk, Hübner,
-  Leipold, Rehberg, Reich/Schmitz, Zerres.
-* Файлы «Vorbemerkungen zu §§ …» — куски комментария, вырезанные отдельно;
-  к какому изданию относятся, устанавливать по самим файлам.
+**beck-online (MüKo и др.)** — 26 файл(ов), 12940 стр.
 
-**Про год издания.** Ларенц, Флуме, Медикус (10. Aufl. 2010), Larenz/Wolf —
-написаны ДО реформы обязательственного права 2002 г. или вскоре после неё.
-Их утверждения о действующем праве нельзя подавать как сегодняшние. Это и
-есть повод для правила коннектора из §13.
+| стр. | файл |
+|---:|---|
+| 180 | 104-113 ГГУ (Мюнхенский комментарий).pdf |
+| 1105 | 104-144 ГГУ (Мюнхенский комментарий).pdf |
+| 218 | 116-119 ГГУ (Мюнхенский комментарий)-2.pdf |
+| 137 | 120-124 ГГУ (Мюнхенский комментарий).pdf |
+| 154 | 125-129 ГГУ (Мюнхенский комментарий).pdf |
+| 416 | 130-144 ГГУ (Мюнхенский комментарий).pdf |
+| 171 | 145-150 ГГУ (Мюнхенский комментарий).pdf |
+| 1150 | 145-185 ГГУ (Мюнхенский комментарий).pdf |
+| 163 | 151-159 ГГУ (Мюнхенский комментарий).pdf |
+| 816 | 160-185 ГГУ (Мюнхенский комментарий).pdf |
+| 546 | 186-218 ГГУ (Мюнхенский комментарий).pdf |
+| 88 | 227-240 ГГУ (Мюнхский комментарий).pdf |
+| 1222 | 241-249 ГГУ (Мюнхенский комментарий).pdf |
+| 535 | 250-272 ГГУ (Мюнхенский комментарий).pdf |
+| 863 | 273-292 ГГУ (Мюнхенский комментарий).pdf |
+| 299 | 293-306а ГГУ (Мюнхенский комментарий).pdf |
+| 853 | 307-310 ГГУ (Мюнхенский комментарий)-2.pdf |
+| 299 | 311-312 ГГУ (Мюнхенский комментарий).pdf |
+| 751 | 313-326 ГГУ (Мюнхенский комментарий) 2.pdf |
+| 237 | 327-327p ГГУ (Мюнхенский комментарий).pdf |
+| 169 | 387-397 ГГУ (Мюнхенский комментарий).pdf |
+| 253 | 516-534 ГГУ (Мюнхенский комментарий).pdf |
+| 502 | 985-1011 ГГУ (Мюнхенский комментарий).pdf |
+| 413 | 986-1011 ГГУ (Мюнхенский комментарий).pdf |
+| 1375 | Baur Sturner Sachenrecht 18th edition.pdf |
+| 25 | Vorbemerkung Vor 116.pdf |
+
+**Staudinger онлайн** — 19 файл(ов), 6213 стр.
+
+| стр. | файл |
+|---:|---|
+| 1229 | 104-144 Staudinger.pdf |
+| 523 | 145-185 BGB Staudinger.pdf |
+| 379 | 186-218 BGB Staudinger.pdf |
+| 1556 | 241-254 BGB Staudinger.pdf |
+| 329 | 255-276 BGB Staudinger.pdf |
+| 481 | 277-292 BGB Staudinger.pdf |
+| 332 | 320-326 ГГУ (Штаудингер).pdf |
+| 262 | 387-397 BGB Staudinger.pdf |
+| 415 | 433-443 BGB Staudinger .pdf |
+| 299 | 516-534 BGB Staudinger.pdf |
+| 56 | STAUDINGER_Mietrecht_1.pdf |
+| 81 | STAUDINGER_Mietrecht_2.pdf |
+| 18 | StaudingerKern_2022_BGB_Sache.pdf |
+| 40 | Vorbem zu §§ 116-124 .pdf |
+| 72 | Vorbemerkungen zu §§ 104 ff.pdf |
+| 32 | Vorbemerkungen zu §§ 145-156.pdf |
+| 24 | Vorbemerkungen zu §§ 158-163.pdf |
+| 45 | Vorbemerkungen zu §§ 164-181.pdf |
+| 40 | Vorbemerkungen zu §§ 182-185.pdf |
+
+**Großkommentare der Praxis (ZPO/InsO)** — 8 файл(ов), 8483 стр.
+
+| стр. | файл |
+|---:|---|
+| 782 | Insolvenzordnung Band 2 §§ 35-55.pdf |
+| 916 | Insolvenzordnung Band 4 §§ 103-128 (Giesen, Jacoby).pdf |
+| 915 | Insolvenzordnung Band 8 §§ 286-334 (Foerste, Windel, Preuss).pdf |
+| 1128 | ZPO Kommentar Band 2 §§ 50-127a.pdf |
+| 1300 | ZPO Kommentar Band 3 §§ 128-252.pdf |
+| 1372 | ZPO Kommentar Band 4 §§ 253-299a.pdf |
+| 936 | ZPO Kommentar Band 5 §§ 300-354.pdf |
+| 1134 | ZPO Kommentar Band 7 §§ 511-591.pdf |
+
+**книги (сканы и e-book)** — 84 файл(ов), 81774 стр.
+
+| стр. | файл |
+|---:|---|
+| 2992 | Abramenko, Dickersbach, Lützenkirchen, Mietrecht. Kommentar.pdf |
+| 4444 | Aktiengesetz Kommentar (2020).pdf |
+| 451 | Allgemeiner Teil des BGB (Brox, Walker).pdf |
+| 481 | BGB Allgemeiner Teil (Burkhard Boemke, Bernhard Ulrici (auth.).pdf |
+| 712 | BGB Allgemeiner Teil (Detlef Leenen, Martin Häublein).pdf |
+| 910 | BGB-Schuldrecht Besonderer Teil, eBook.pdf |
+| 1160 | Band I (§§1-240).pdf |
+| 620 | Behm, Berger, Вещное право.pdf |
+| 408 | Bengel_Simmerding_Grundbuch_Grundstueck_Grenze.pdf |
+| 521 | Besonderes Schuldrecht (Jan Dirk Harke (auth.)).pdf |
+| 481 | Boemke_Ulrici_BGB_Allgemeiner_Teil.pdf |
+| 1509 | Bork & Schäfer - GmbHG Kommentar (2015).pdf |
+| 620 | Brehm_Berger_Sachenrecht.pdf |
+| 575 | Brox, Walker, Allgemeines Schuldrecht.pdf |
+| 451 | Brox_Walker_Allgemeiner_Teil_des_BGB.pdf |
+| 575 | Brox_Walker_Allgemeines_Schuldrecht.pdf |
+| 136 | Eckpfeiler (сделка).pdf |
+| 1204 | Eckpfeiler_Des_Zivilrechts_J_Von_Staudingers_Kommentar_Zum_Buergerlichen.pdf |
+| 1204 | Eckpfeiler_Des_Zivilrechts_Von_Staudingers_Kommentar_Zum_BGB.pdf |
+| 529 | Emmerich-Sonnenschein Miete 10 Aufl.pdf |
+| 910 | Emmerich_BGB_Schuldrecht_Besonderer_Teil.pdf |
+| 1142 | Fikentscher,_Heinemann,_Schuldrecht_Allgemeiner_und_Besonderer_Teil.pdf |
+| 1142 | Fikentscher_Heinemann_Schuldrecht.pdf |
+| 999 | Flume, Das Rechtsgeschäft.pdf |
+| 3047 | GESELLSCHAFTSRECHT BGB HGB PARTGG GMBHG AKTG UMWG GENG (Henssler, Strohn).pdf |
+| 436 | Gernhuber, Das Schuldverhaltnis.pdf |
+| 596 | Gernhuber, Die Erfullung und ihre Surrogate.pdf |
+| 2114 | GmbH-Gesetz Kommentar ( etc.).pdf |
+| 212 | Gursky_Sachenrecht.pdf |
+| 2564 | HGB Kommentar (Handelsstand, Handelsgesellschaften).pdf |
+| 447 | Hanns_Prütting_Вещное право_37.Auflage.pdf |
+| 511 | Harke, Allgemeines Schuldrecht.pdf |
+| 511 | Harke_Allgemeines_Schuldrecht.pdf |
+| 632 | Hubner_Allgemeiner_Teil_des_Burgerlichen_Gesetzbuches.pdf |
+| 1500 | Insolvenzordnung Band 1 §§ 1-55.pdf |
+| 908 | Insolvenzordnung Band 3 §§ 103-128 (Giesen, Jacoby).pdf |
+| 370 | Insolvenzordnung Band 5.1 §§ 148-155 (Eckardt, Fehrenbacher).pdf |
+| 1569 | Insolvenzordnung Band 5.2 §§ 156-173 (Eckardt).pdf |
+| 565 | Insolvenzordnung Band 6 §§ 174-216 (Henckel, Gerhardt).pdf |
+| 1368 | Insolvenzordnung Band 7 §§ 217-285.pdf |
+| 944 | Insolvenzordnung Band 9 §§ 335-359.pdf |
+| 3419 | Kommentar zum BGB Band 1 §§ 1-610 (Bamberger, Roth).pdf |
+| 1292 | Kuntze_Grundbuchrecht_Kommentar.pdf |
+| 502 | Larenz - Wolf - Allgemeiner Teil des Burgerlichen Rechts.pdf |
+| 560 | Larenz_Lehrbuch_des_Schuldrechts_II_Besonderer_Teil.pdf |
+| 686 | Larenz_Lehrbuch_des_Schuldrechts_I_Allgemeiner_Teil.pdf |
+| 522 | Leenen_BGB_Allgemeiner_Teil_Rechtsgeschaftslehre.pdf |
+| 712 | Leenen_Haublein_BGB_Allgemeiner_Teil.pdf |
+| 568 | Leipold_BGB_I_Einfuhrung_und_allgemeiner_Teil.pdf |
+| 310 | Lohning - Schuldrecht_ii_besonderer.pdf |
+| 627 | Looschelders, Schuldrecht. Allgemeiner Teil.pdf |
+| 627 | Looschelders_Schuldrecht._Allgemeiner_Teil.pdf |
+| 301 | Meder_Czelk_Grundwissen_Sachenrecht.pdf |
+| 277 | Medicus_D_Allgemeiner_Teil_des_BGB_10_Aufl__2010.pdf |
+| 449 | Medicus_Lorenz_Schuldrecht_I._Allgemeiner_Teil.pdf |
+| 570 | Medicus_Lorenz_Schuldrecht_II._Besonderer_Teil.pdf |
+| 2416 | Münchener Kommentar zur Insolvenzordnung-Band1.§§1-79.pdf |
+| 332 | Münchener Kommentar zur Insolvenzordnung-Band1.§§217-359.pdf |
+| 803 | Neuner - Allgemeiner Teil des Bürgerlichen Rechts (перевод).pdf |
+| 803 | Neuner_Allgemeiner_Teil_des_Burgerlichen_Rechts.pdf |
+| 1166 | Oechsler - Обязательственное право.pdf |
+| 965 | Oetker + Maultzsch - Договорное право - особенная часть (2018, 5 издание).pdf |
+| 340 | Rehberg_BGB_AT.pdf |
+| 475 | Reich_Schmitz_Einfuhrung_in_das_Burgerliche_Recht.pdf |
+| 528 | Sachenrecht (Hans Josef Wieling) - немецкий язык.pdf |
+| 709 | Schuldrecht. Besonderer Teil. 16. Auflage_en.pdf |
+| 570 | Stadler, Allgemeiner Teil des BGB.pdf |
+| 570 | Stadler_Allgemeiner_Teil_des_BGB.pdf |
+| 1204 | Staudingers_Kommentar_zum_Burgerlichen_Gesetzbuch.pdf |
+| 7824 | Westermann, Grunewald, Maier-Reimer - BGB Kommentar (2023).pdf |
+| 20 | Wieling_Die_Grundbucheintragung.pdf |
+| 529 | Wieling_Sachenrecht.pdf |
+| 1113 | Wilhelm, Sachenrecht.pdf |
+| 1540 | Wilhelm_Sachenrecht_7_Aufl..pdf |
+| 10 | Wilsch_The_German_Grundbuchordnung.pdf |
+| 508 | Wolf, Вещное право 21 Aufl.pdf |
+| 508 | Wolf_Sachenrecht_21_Aufl.pdf |
+| 869 | ZPO Kommentar Band 1 Einleitung §§ 1-49.pdf |
+| 1116 | ZPO Kommentar Band 6 §§ 355-510c.pdf |
+| 584 | ZPO Kommentar Band 8 §§ 592-723.pdf |
+| 742 | ZPO Kommentar Band 9 §§ 724-802l.pdf |
+| 619 | Zerres_Burgerliches_Recht.pdf |
+| 449 | Медикус Лоренц - Общая часть обязат права.pdf |
+| 570 | Медикус и Лоренц - Особенная часть обязат права.pdf |
+
+Всего страниц: 109410
+
+
+### Как устроена распечатка beck-online (MüKo)
+
+Файл — не книга, а **склейка заданий печати**. Каждое задание: шапка
+(`BGB § 273 Zurückbehaltungsrecht Krüger Münchener Kommentar zum BGB /
+10. Auflage 2025`), текст, аппарат сносок, строка
+`Zitiervorschläge: MüKoBGB/Krüger, 10. Aufl. 2025, BGB § 273 Rn. 9-12`.
+Отсюда берётся всё, что нужно для ссылки: параграф, комментатор (у каждого §
+свой), издание, год и охваченные Randnummern.
+
+Разметка страницы (A4, 595×842):
+
+| что | признак |
+|---|---|
+| колонтитул | `14/02/2026, 19:33 § 104 Geschäftsunfähigkeit - beck-online`, top 16,5 |
+| водяной знак | `KopievonPeacePalaceLibrary…` без пробелов, top 1,6 |
+| тело | x0 69,9–70,2, кегль 10,5–11,0 |
+| **Randnummer** | последнее слово строки, x0 ≈ 431, x1 = 441,5 — ЗА полосой набора |
+| заголовок | x0 43,7, кегль 12,0 |
+| номер сноски в аппарате | x0 43,7, кегль 8,4 |
+| текст сноски | x0 58,7, кегль 10,5 |
+| колонцифра | ЕЁ НЕТ: это распечатка с экрана, а не книга |
+| подвал | ссылка `https://beck-online…/Print/CurrentDoc?vpath=…` |
+
+Отсюда конвейер: единица — `mode: margin`, side right, `x_range` около
+[425, 450]; параграф — из колонтитула через `address.section.mode: pattern`;
+аппарат отделяется не по высоте, а **по x0**: 55–65 — сноска, ≥68 — тело.
+Кегль 8,4 при x0 ≈ 43,7 — номер сноски, кегль 12,0 при том же x0 — заголовок,
+и путать их нельзя.
+
+Нумерация сносок сквозная **по параграфу**, а не по странице, и сам аппарат
+стоит отдельными страницами в конце задания. Стандартный `attach_notes`
+раздаёт сноски постранично и здесь промахнётся: сноску придётся привязывать
+к карточке по паре (§, номер) — тем же приёмом, что применялся к
+французским электронным изданиям Dalloz.
+
+Колонцифры нет вовсе, поэтому `strip_junk` будет вслепую резать голые числа
+в верхней и нижней полосе — а номер сноски в аппарате как раз голое число и
+стоит вверху страницы. Полосу придётся отключить или сузить.
+
+### Что делать с наложением диапазонов
+
+Файлы названы по диапазонам параграфов, и диапазоны налезают друг на друга:
+`104-144` перекрывает пять отдельных файлов, `145-185` — три, `985-1011` и
+`986-1011` — один и тот же кусок в двух скачиваниях. По имени судить нельзя;
+покрытие снимается со строк `Zitiervorschläge` (скрипт
+`de-pdf/inv/muko_cover.py`).
+
+Решение принято такое: **MüKoBGB 10. Aufl. 2025 — это ОДИН источник**, а не
+двадцать четыре. Файлы — лишь распечатки его частей. Карточка адресуется
+парой (§, Rn), и повторы схлопываются сами: у двух распечаток одного § и
+одного Rn совпадёт `external_id`.
