@@ -1,12 +1,15 @@
 {
   "book_id": "pel-drobnig-boger-proprietary-security",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
+  "authors": [
+    "Ulrich Drobnig",
+    "Ole Böger"
+  ],
+  "title": "Principles of European Law: Proprietary Security in Movable Assets (PEL Prop. Sec.)",
+  "edition": "1st ed.",
+  "year": 2015,
+  "publisher": "Sellier European Law Publishers",
+  "jurisdiction": "DCFR",
+  "language": "en",
   "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "notes": "Серия Principles of European Law, Study Group on a European Civil Code. Берётся только комментарий; переводы текста статей на другие языки в начале тома в корпус не идут."
 }

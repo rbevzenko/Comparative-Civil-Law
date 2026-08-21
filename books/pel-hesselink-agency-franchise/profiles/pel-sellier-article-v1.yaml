@@ -1,0 +1,61 @@
+id: pel-sellier-article-v1
+publisher: Sellier European Law Publishers
+jurisdiction: DCFR
+language: en
+# Серия Principles of European Law (Study Group on a European Civil Code),
+# издательство Sellier. Вёрстка у томов серии одна: текст статьи 9.0,
+# заголовок статьи 11.0, комментарий 9.5, буквенные подзаголовки 10.5,
+# колонтитул 8.5.
+#
+# ЕДИНИЦА — СТАТЬЯ: «Article 1:101». Так серия и цитируется.
+#
+# Колонтитул на лицевой полосе повторяет заголовок статьи слово в слово
+# («Article 1:101: Lease of goods») и отличается только кеглем. Снимается
+# полосой по высоте: иначе он открывал бы ложную статью на каждой полосе.
+#
+# ДИАПАЗОН ПОЛОС ОБЯЗАТЕЛЕН. Перед комментарием том печатает текст статей
+# на десятке языков (каталанский, эстонский, венгерский…). Это переводы
+# одного и того же, и в корпус они не идут: нарежется десять карточек на
+# одну норму, и поиск будет выдавать их вперемешку.
+
+units:
+  - type: "Art."
+    id_prefix: "art"
+    mode: flow
+    pattern: '^Article\s*\d+:(\d+):\s'
+    address_template: "Article {section}:{number}"
+
+address:
+  section:
+    mode: pattern
+    pattern: '^Article\s*(\d+):\d+:\s'
+    anchor: start
+  template: "Article {section}:{number}"
+
+footnotes:
+  # Аппарат — блоки Comments и Notes внутри статьи, тем же кеглем.
+  # Отделяются печатными заголовками, а не подвалом полосы.
+  mode: none
+
+printed_page:
+  band: [0.06, 0.10]
+  patterns:
+    - '^(\d{1,4})$'
+    - '^(\d{1,4})\s+\D'
+    - '\D\s+(\d{1,4})$'
+
+junk:
+  # 0.075, а не 0.06. Полоса меряется по НИЖНЕМУ краю строки: колонтитул
+  # стоит на 0.0525 высоты, но его низ приходится на 0.065, и в полосу
+  # 0.06 он не попадал. Из-за этого каждая лицевая полоса открывала
+  # ложную статью: 118 карточек-статей вместо 36 настоящих.
+  header_band: 0.075
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bArt(?:icle)?\.?\s?\d+:\d+\b'
+    - '\b§\s?\d+[a-z]?\b'
+
+citation:
+  template: "{authors}, {title}, {publisher}, {year}, {address}"

@@ -1,0 +1,208 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/pel-hesselink-agency-franchise",
+  "cards": 610,
+  "profile": "pel-sellier-article-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.4104,
+    "rows": 115,
+    "gaps": [
+      {
+        "family": "Art.",
+        "section": "1",
+        "from": 101,
+        "to": 201,
+        "missing": 99
+      },
+      {
+        "family": "Art.",
+        "section": "1",
+        "from": 204,
+        "to": 301,
+        "missing": 96
+      },
+      {
+        "family": "Art.",
+        "section": "1",
+        "from": 306,
+        "to": 401,
+        "missing": 94
+      },
+      {
+        "family": "Note",
+        "section": "Article 1:101",
+        "from": 2,
+        "to": 4,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article 1:304",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Art.",
+        "section": "2",
+        "from": 101,
+        "to": 201,
+        "missing": 99
+      },
+      {
+        "family": "Art.",
+        "section": "2",
+        "from": 204,
+        "to": 301,
+        "missing": 96
+      },
+      {
+        "family": "Note",
+        "section": "Article 2:203",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article 2:301",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article 2:310",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article 2:312",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Art.",
+        "section": "3",
+        "from": 102,
+        "to": 201,
+        "missing": 98
+      },
+      {
+        "family": "Art.",
+        "section": "3",
+        "from": 207,
+        "to": 301,
+        "missing": 93
+      },
+      {
+        "family": "Art.",
+        "section": "4",
+        "from": 101,
+        "to": 201,
+        "missing": 99
+      },
+      {
+        "family": "Art.",
+        "section": "4",
+        "from": 205,
+        "to": 301,
+        "missing": 95
+      }
+    ],
+    "gaps_total": 15,
+    "missing_total": 875,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Art.": 56,
+      "Comment": 435,
+      "Note": 119
+    }
+  },
+  "coverage": {
+    "share": 0.9913,
+    "covered_chars": 467060,
+    "book_chars": 471171,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 554,
+    "min": 56,
+    "max": 6419,
+    "too_short": [
+      "pel-hesselink-agency-franchise:art:1/204#cH",
+      "pel-hesselink-agency-franchise:art:1/302#n5",
+      "pel-hesselink-agency-franchise:art:1/303#cH",
+      "pel-hesselink-agency-franchise:art:1/306#cH",
+      "pel-hesselink-agency-franchise:art:1/401#cE",
+      "pel-hesselink-agency-franchise:art:1/401#cF",
+      "pel-hesselink-agency-franchise:art:1/402#cC",
+      "pel-hesselink-agency-franchise:art:2/201#cG",
+      "pel-hesselink-agency-franchise:art:2/202#cE",
+      "pel-hesselink-agency-franchise:art:2/203#cF",
+      "pel-hesselink-agency-franchise:art:2/204#cE",
+      "pel-hesselink-agency-franchise:art:2/303#cE",
+      "pel-hesselink-agency-franchise:art:2/306#cE",
+      "pel-hesselink-agency-franchise:art:2/307#cE",
+      "pel-hesselink-agency-franchise:art:2/311#cE"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0.0,
+    "cards_with_calls_but_no_notes": 39,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 610,
+    "sample": [
+      "pel-hesselink-agency-franchise:art:1/101",
+      "pel-hesselink-agency-franchise:art:1/101#cA",
+      "pel-hesselink-agency-franchise:art:1/101#cB",
+      "pel-hesselink-agency-franchise:art:1/101#cC",
+      "pel-hesselink-agency-franchise:art:1/101#cD",
+      "pel-hesselink-agency-franchise:art:1/101#cE",
+      "pel-hesselink-agency-franchise:art:1/101#cF",
+      "pel-hesselink-agency-franchise:art:1/101#cG",
+      "pel-hesselink-agency-franchise:art:1/101#cH",
+      "pel-hesselink-agency-franchise:art:1/101#cI"
+    ],
+    "depth_histogram": {
+      "0": 610
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 41.0% < 98%: пропущено номеров 875. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

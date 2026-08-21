@@ -1,0 +1,102 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/pel-lilleholt-lease-goods",
+  "cards": 433,
+  "profile": "pel-sellier-article-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 78,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Art.": 36,
+      "Comment": 106,
+      "Note": 291
+    }
+  },
+  "coverage": {
+    "share": 0.998,
+    "covered_chars": 557777,
+    "book_chars": 558911,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 781,
+    "min": 10,
+    "max": 10492,
+    "too_short": [
+      "pel-lilleholt-lease-goods:art:1/101#nx",
+      "pel-lilleholt-lease-goods:art:1/102#nx",
+      "pel-lilleholt-lease-goods:art:2/101#nx",
+      "pel-lilleholt-lease-goods:art:2/102#nx",
+      "pel-lilleholt-lease-goods:art:2/103#nx",
+      "pel-lilleholt-lease-goods:art:3/101#nx",
+      "pel-lilleholt-lease-goods:art:3/101#n3",
+      "pel-lilleholt-lease-goods:art:3/102#nx",
+      "pel-lilleholt-lease-goods:art:3/103#nx",
+      "pel-lilleholt-lease-goods:art:3/104#nx",
+      "pel-lilleholt-lease-goods:art:3/105#nx",
+      "pel-lilleholt-lease-goods:art:3/106#nx",
+      "pel-lilleholt-lease-goods:art:3/107#nx",
+      "pel-lilleholt-lease-goods:art:4/101#nx",
+      "pel-lilleholt-lease-goods:art:4/101#n15"
+    ],
+    "too_long": [
+      "pel-lilleholt-lease-goods:art:4/102#cA"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0,
+    "cards_with_calls_but_no_notes": 60,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 433,
+    "sample": [
+      "pel-lilleholt-lease-goods:art:1/101",
+      "pel-lilleholt-lease-goods:art:1/101#cA",
+      "pel-lilleholt-lease-goods:art:1/101#cB",
+      "pel-lilleholt-lease-goods:art:1/101#cC",
+      "pel-lilleholt-lease-goods:art:1/101#cD",
+      "pel-lilleholt-lease-goods:art:1/101#cE",
+      "pel-lilleholt-lease-goods:art:1/101#cF",
+      "pel-lilleholt-lease-goods:art:1/101#cG",
+      "pel-lilleholt-lease-goods:art:1/101#cH",
+      "pel-lilleholt-lease-goods:art:1/101#cI"
+    ],
+    "depth_histogram": {
+      "0": 433
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

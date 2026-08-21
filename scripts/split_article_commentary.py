@@ -41,8 +41,11 @@ import json
 import os
 import re
 
-COMMENTS = re.compile(r"^COMMENTS\s*$", re.M)
-NOTES = re.compile(r"^NOTES\s*$", re.M)
+# Регистр служебного заголовка зависит от тома: главный набирает «COMMENTS»
+# прописными, тома 5–6 — «Comments». Слово должно занимать всю строку:
+# «Comments on paragraph (2)» — это уже текст, а не заголовок блока.
+COMMENTS = re.compile(r"^COMMENTS\s*$|^Comments\s*$", re.M)
+NOTES = re.compile(r"^NOTES\s*$|^Notes\s*$", re.M)
 # Буквенный подзаголовок: одна заглавная, точка, пробел, дальше текст.
 # Строка короткая — это заголовок, а не абзац, начатый с инициала.
 LETTER = re.compile(r"^([A-Z])\.\s+(\S[^\n]{0,90})$", re.M)
