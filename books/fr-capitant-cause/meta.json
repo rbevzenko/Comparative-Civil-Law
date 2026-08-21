@@ -1,12 +1,14 @@
 {
   "book_id": "fr-capitant-cause",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
+  "authors": [
+    "Henri Capitant"
+  ],
+  "title": "De la cause des obligations (Contrats, Engagements unilatéraux, Legs)",
+  "edition": "3e éd.",
+  "year": 1927,
+  "publisher": "Librairie Dalloz",
+  "jurisdiction": "FR",
+  "language": "fr",
   "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "notes": "Скан со СВОИМ распознаванием; качество приличное (0.1% подозрительных слов), но титул и колонтитулы местами склеены («CONTRATSSYNALLAGMATIQUES»). Год третьего издания взят по предисловию: первое вышло в 1923 г. Книга написана ЗАДОЛГО до реформы 2016 г. и излагает право своего времени."
 }

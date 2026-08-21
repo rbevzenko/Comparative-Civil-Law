@@ -1,12 +1,15 @@
 {
   "book_id": "fr-terre-personnes",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
+  "authors": [
+    "François Terré",
+    "Dominique Fenouillet"
+  ],
+  "title": "Droit civil. Les personnes. Personnalité – Incapacité – Protection",
+  "edition": "8e éd.",
+  "year": 2012,
+  "publisher": "Dalloz",
+  "jurisdiction": "FR",
+  "language": "fr",
   "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "notes": "Серия «Précis». Скан со своим распознаванием: тело читается хорошо (0.1% подозрительных слов), а титул и оглавление разобраны плохо («Perso11nalité», «h1ca1Jacité»). Номер издания снят с титула («8e édition 2012»)."
 }

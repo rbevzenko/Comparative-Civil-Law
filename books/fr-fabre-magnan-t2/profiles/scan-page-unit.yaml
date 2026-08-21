@@ -1,0 +1,47 @@
+id: scan-page-unit
+publisher: PUF, «Thémis droit»
+jurisdiction: FR
+language: fr
+# Книга БЕЗ сквозной нумерации абзацев: структура задана только заголовками,
+# и заголовок стоит редко. Единицей взята типографская страница — ровно та,
+# которой книга и цитируется («Fabre-Magnan, Droit des obligations, t. 2,
+# 4e éd., p. 205»).
+#
+# Скан со своим распознаванием, качество приличное (0.1% подозрительных слов).
+# Кегль в слое плавает от строки к строке (9.1–10.3 у одного и того же
+# абзаца), поэтому сноски отделяются по положению, а не по кеглю.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  section:
+    mode: none
+  template: "{unit_type} {number}"
+
+printed_page:
+  band: [0.075, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+[A-ZÀÂÄÉÈÊËÎÏÔÖÙÛÜÇL]'
+    - '\s(\d{1,4})$'
+
+footnotes:
+  mode: position_bottom
+  bottom_band: 0.78
+
+junk:
+  patterns: []
+
+statutory:
+  patterns:
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*(?:\s*(?:et|à|,)\s*\d+(?:-\d+)*)*\s*(?:C\.\s*civ\.|du Code civil)'
+    - 'L\.\s*\d{3}-\d+'
+
+cross_refs:
+  patterns:
+    - '(?:supra|infra)\s*,?\s*(?:p\.|n[o°s]*)\s*\d+'
+
+citation:
+  template: "{authors}, {title}, {edition}, {publisher}, {year}, {address}"
