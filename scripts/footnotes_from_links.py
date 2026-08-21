@@ -54,6 +54,13 @@
 она не объявляется, куда бы ни вела ссылка. У настоящей полосы со сноской
 таких строк нет: там сразу текст примечания.
 
+ПОЛОСА СО СНОСКАМИ БЫВАЕТ НЕ ОДНА СНОСКА. У Реми-Кабрийака на полосу
+приходится ровно одно примечание, у Терре аппарат собран в конец тетради и
+на полосе лежат сноски 1–10 подряд. Поэтому целевая полоса режется по
+строкам вида «N. » в начале и знаку достаётся его номер; режется только
+когда таких начал не меньше двух. Хвост сноски, перенесённый на следующую
+полосу, дописывается к предыдущей.
+
 ЧЕГО СКРИПТ НЕ ДЕЛАЕТ. Не переносит сноску в тело и не удаляет её знак:
 знак остаётся в тексте карточки, как он стоит в книге.
 """
@@ -88,6 +95,18 @@ def link_targets(reader, page_index):
     return out
 
 
+def _release(page):
+    """Освободить память, которую pdfplumber держит за полосой."""
+    try:
+        page.flush_cache()
+    except Exception:
+        pass
+    try:
+        page.get_textmap.cache_clear()
+    except Exception:
+        pass
+
+
 def marker_at(chars, rect, height, pad=1.5):
     """Текст под прямоугольником ссылки — это и есть знак сноски.
 
@@ -115,6 +134,9 @@ def main():
                          "считается телом и в сноски не уходит")
     ap.add_argument("--drop-note-pages", action="store_true",
                     help="убрать полосы-сноски из модели после привязки")
+    ap.add_argument("--note-page-size", type=float,
+                    help="модальный кегль полосы, НЕ ВЫШЕ которого полоса считается "
+                         "аппаратом независимо от объёма текста")
     ap.add_argument("--marker-size-max", type=float,
                     help="кегль, выше которого совпадение знаком сноски не считается; "
                          "по умолчанию считается от кегля тела полосы")
@@ -129,7 +151,27 @@ def main():
     in_model = {p["pdf_page"] for p in pages}
     chars_of = {p["pdf_page"]: sum(len(l["text"]) for l in p["lines"]) for p in pages}
     seed = {p for p, c in chars_of.items() if c >= a.body_min_chars}
-    print(f"полос в модели: {len(in_model)}, опорных полос тела: {len(seed)}")
+
+    # ОБЪЁМА ТЕКСТА МАЛО ТАМ, ГДЕ АППАРАТ ПЛОТНЫЙ. У Реми-Кабрийака на полосе
+    # одно примечание, и порог в 1200 знаков отделяет тело сам. У Терре
+    # аппарат собран по десять сносок на полосу: такая полоса вылезает за
+    # порог и объявляется телом, а вместе с ней тремя четвертями теряется
+    # весь аппарат — опорных полос выходит 2758 из 3095 при 903 настоящих
+    # полосах со сносками.
+    #
+    # Кегль разводит их чисто: у Терре тело набрано 13.5, аппарат — 11.5.
+    # Считается модальный кегль полосы, а не средний: заголовки и врезки
+    # среднее сдвигают, самый частый кегль — нет.
+    by_size = set()
+    if a.note_page_size is not None:
+        for pg in pages:
+            sizes = [round(l["size"], 1) for l in pg["lines"] + (pg.get("note_lines") or [])
+                     if l.get("size")]
+            if sizes and max(set(sizes), key=sizes.count) <= a.note_page_size:
+                by_size.add(pg["pdf_page"])
+        seed -= by_size
+    print(f"полос в модели: {len(in_model)}, опорных полос тела: {len(seed)}"
+          + (f", полос аппарата по кеглю: {len(by_size)}" if by_size else ""))
 
     unit_rx = re.compile(a.unit_marker)
     # Полосы, на которых стоят номера абзацев, — тело. Считается по модели,
@@ -149,8 +191,9 @@ def main():
 
     with pdfplumber.open(a.pdf) as pdf:
         for p in sorted(seed):
-            chars = pdf.pages[p - 1].chars
-            height = pdf.pages[p - 1].height
+            page = pdf.pages[p - 1]
+            chars = page.chars
+            height = page.height
             if a.marker_size_max is not None:
                 cap = a.marker_size_max
             else:
@@ -159,7 +202,7 @@ def main():
                 cap = body_size * 0.92
             small = [c for c in chars if (c.get("size") or 99) <= cap]
             for rect, tgt in link_targets(reader, p - 1):
-                if (tgt + 1) in seed or (tgt + 1) in has_unit:
+                if ((tgt + 1) in seed or (tgt + 1) in has_unit) and (tgt + 1) not in by_size:
                     continue   # цель — тело: перекрёстная ссылка либо битый адрес
                 mark = marker_at(small, rect, height)
                 m = re.search(r"\d{1,4}", mark)
@@ -168,12 +211,52 @@ def main():
                     continue
                 targets.add(tgt)
                 notes_by_page[p].append((int(m.group()), tgt))
+            # Разобранную полосу выбрасываем из памяти сразу. pdfplumber
+            # держит символы каждой открытой полосы до конца работы, и на
+            # трёх тысячах полос Терре процесс убивает ядро по памяти
+            # (exit 137) примерно на двух тысячах.
+            _release(page)
 
         # текст сносок берётся один раз на каждую целевую полосу
+        # ОДНА ПОЛОСА — НЕ ВСЕГДА ОДНА СНОСКА. У Реми-Кабрийака на полосе
+        # ровно одно примечание, и текст полосы можно брать целиком. У Терре
+        # аппарат собран в конец тетради: на полосе 2204 лежат сноски 1–10
+        # подряд. Взять полосу целиком значило бы подшить к каждому знаку
+        # весь десяток.
+        #
+        # Поэтому полоса режется по строкам вида «N. » в начале, и знаку
+        # достаётся его номер. Режем только когда таких начал не меньше двух:
+        # одиночное «1.» бывает и внутри цитаты, а книгу с одной сноской на
+        # полосу это правило не должно трогать.
+        #
+        # Хвост сноски переносится на следующую полосу: там текст идёт до
+        # первого номера. Он дописывается к последней сноске предыдущей
+        # полосы, иначе теряется реквизит решения, ради которого сноска и
+        # нужна.
+        note_start = re.compile(r"^(\d{1,3})\.\s+", re.M)
         text_of = {}
+        split_of = {}
+        prev_key = None
         for tgt in sorted(targets):
-            t = (pdf.pages[tgt].extract_text() or "").strip()
-            text_of[tgt] = re.sub(r"\s*\n\s*", " ", t)
+            page = pdf.pages[tgt]
+            t = (page.extract_text() or "").strip()
+            flat = re.sub(r"\s*\n\s*", " ", t)
+            text_of[tgt] = flat
+            starts = list(note_start.finditer(t))
+            if len(starts) < 2:
+                prev_key = None
+                _release(page)
+                continue
+            head = t[:starts[0].start()].strip()
+            if head and prev_key is not None:
+                split_of[prev_key] += " " + re.sub(r"\s*\n\s*", " ", head)
+            for i, m in enumerate(starts):
+                end = starts[i + 1].start() if i + 1 < len(starts) else len(t)
+                body = t[m.end():end].strip()
+                key = (tgt, int(m.group(1)))
+                split_of[key] = re.sub(r"\s*\n\s*", " ", body)
+                prev_key = key
+            _release(page)
 
     attached = 0
     for pg in pages:
@@ -185,7 +268,7 @@ def main():
             if num in seen:
                 continue
             seen.add(num)
-            txt = text_of.get(tgt, "")
+            txt = split_of.get((tgt, num)) or text_of.get(tgt, "")
             if not txt:
                 bad_number += 1
                 continue

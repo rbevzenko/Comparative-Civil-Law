@@ -1,12 +1,17 @@
 {
   "book_id": "fr-malaurie-obligations",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
-  "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "authors": [
+    "Philippe Malaurie",
+    "Laurent Aynès",
+    "Philippe Stoffel-Munck"
+  ],
+  "title": "Droit civil. Droit des obligations",
+  "edition": "11e éd.",
+  "year": 2020,
+  "publisher": "LGDJ",
+  "jurisdiction": "FR",
+  "language": "fr",
+  "isbn": "978-2-275-07407-8",
+  "notes": "Титул: «11e édition, à jour au 31 juillet 2020»; оборот титула: © 2020, LGDJ, Lextenso. В файле именной водяной знак покупателя внизу каждой полосы — вычищается как мусор, в карточки не попадает.",
+  "service_source_id": "dee80f15-c22c-4f1c-b477-9291fbb7be16"
 }

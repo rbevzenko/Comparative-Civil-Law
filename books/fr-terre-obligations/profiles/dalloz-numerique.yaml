@@ -1,0 +1,53 @@
+id: dalloz-numerique
+publisher: Dalloz (электронное издание, Nord Compo)
+jurisdiction: FR
+language: fr
+# Электронная вёрстка Dalloz: текст перевёрстан под экран, аппарат вынесен на
+# отдельные полосы файла и связан с телом ссылками-аннотациями.
+# Отличия от бумажного профиля dalloz-lgdj-v1:
+#   * сноски НЕ внизу полосы — режим none, привязку делает
+#     scripts/footnotes_from_links.py --note-page-size 11.5;
+#   * колонцифры у книги нет: число внизу полосы — собственная нумерация
+#     электронного издания (3095 полос против примерно 1900 печатных страниц),
+#     и выдавать её за страницу книги нельзя.
+
+units:
+  - type: "n°"
+    id_prefix: "n"
+    mode: flow
+    # «31 Les éléments de la synthèse. Les rédacteurs du Code civil...»
+    # Точки после номера в электронной вёрстке нет.
+    pattern: '^(\d{1,4})\s+(?=[A-ZÀÂÄÉÈÊËÎÏÔÖÙÛÜÇ])'
+
+address:
+  section:
+    mode: none
+  template: "{unit_type} {number}"
+
+printed_page:
+  # Число внизу полосы ЧИТАЕТСЯ, но не хранится. Читается — чтобы строка с
+  # ним была снята с полосы и не попала в текст карточки. Не хранится —
+  # потому что это нумерация файла, а не книги; обнуляет её
+  # scripts/blank_printed_pages.py сразу после разбора.
+  band: [0.0, 0.12]
+
+footnotes:
+  mode: none
+
+junk:
+  patterns:
+    - 'international\.scholarvox\.com'
+    - '^\d{9,}$'
+
+statutory:
+  patterns:
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*(?:\s*(?:et|à|,)\s*\d+(?:-\d+)*)*\s*(?:C\.\s*civ\.|du Code civil)'
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*\s*C\.\s*(?:com|consom|pén|proc\.\s*civ)\.'
+    - 'L\.\s*\d{3}-\d+'
+
+cross_refs:
+  patterns:
+    - '(?:supra|infra)\s*,?\s*n[o°s]*\s*\d+(?:\s*(?:et|à|,)\s*\d+)*'
+
+citation:
+  template: "{authors}, {title}, {edition}, {publisher}, {year}, {address}"

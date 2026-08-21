@@ -1,12 +1,17 @@
 {
   "book_id": "fr-terre-obligations",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
-  "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "authors": [
+    "François Terré",
+    "Philippe Simler",
+    "Yves Lequette",
+    "François Chénedé"
+  ],
+  "title": "Droit civil. Les obligations",
+  "edition": "13e éd.",
+  "year": 2022,
+  "publisher": "Dalloz",
+  "jurisdiction": "FR",
+  "language": "fr",
+  "isbn": "978-2-247-21951-3",
+  "notes": "Электронное издание Dalloz (Nord Compo), ISBN numérique 978-2-247-22158-5. Обложка — растр, номер издания в текстовом слое не встречается; 13e éd. восстановлено по году (2022) и ISBN бумажного издания. Сноски вынесены на отдельные полосы файла и привязаны ссылками-аннотациями."
 }
