@@ -45,7 +45,9 @@ import re
 # прописными, тома 5–6 — «Comments». Слово должно занимать всю строку:
 # «Comments on paragraph (2)» — это уже текст, а не заголовок блока.
 COMMENTS = re.compile(r"^COMMENTS\s*$|^Comments\s*$", re.M)
-NOTES = re.compile(r"^NOTES\s*$|^Notes\s*$", re.M)
+# «National Notes» — так этот блок назван в томах серии PEL; в DCFR он
+# просто «NOTES». Слово должно занимать всю строку.
+NOTES = re.compile(r"^NOTES\s*$|^(?:National\s+)?Notes\s*$", re.M)
 # Буквенный подзаголовок: одна заглавная, точка, пробел, дальше текст.
 # Строка короткая — это заголовок, а не абзац, начатый с инициала.
 LETTER = re.compile(r"^([A-Z])\.\s+(\S[^\n]{0,90})$", re.M)

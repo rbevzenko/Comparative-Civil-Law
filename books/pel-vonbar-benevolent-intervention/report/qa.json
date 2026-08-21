@@ -1,0 +1,91 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/pel-vonbar-benevolent-intervention",
+  "cards": 438,
+  "profile": "pel-sellier-article-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 26,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Art.": 12,
+      "Comment": 41,
+      "Note": 385
+    }
+  },
+  "coverage": {
+    "share": 0.9995,
+    "covered_chars": 729012,
+    "book_chars": 729405,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 980,
+    "min": 29,
+    "max": 26480,
+    "too_short": [
+      "pel-vonbar-benevolent-intervention:art:1/101#nx",
+      "pel-vonbar-benevolent-intervention:art:1/101#n35",
+      "pel-vonbar-benevolent-intervention:art:1/102#nx",
+      "pel-vonbar-benevolent-intervention:art:1/103#nx",
+      "pel-vonbar-benevolent-intervention:art:2/101#nx",
+      "pel-vonbar-benevolent-intervention:art:2/102#nx",
+      "pel-vonbar-benevolent-intervention:art:2/103#nx",
+      "pel-vonbar-benevolent-intervention:art:3/101#nx",
+      "pel-vonbar-benevolent-intervention:art:3/102#nx",
+      "pel-vonbar-benevolent-intervention:art:3/104#nx",
+      "pel-vonbar-benevolent-intervention:art:3/104#n20"
+    ],
+    "too_long": [
+      "pel-vonbar-benevolent-intervention:art:1/101#cC",
+      "pel-vonbar-benevolent-intervention:art:1/101#cE",
+      "pel-vonbar-benevolent-intervention:art:1/102#n16",
+      "pel-vonbar-benevolent-intervention:art:1/103#cB",
+      "pel-vonbar-benevolent-intervention:art:3/106#n11"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0.0,
+    "cards_with_calls_but_no_notes": 55,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 438
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}
