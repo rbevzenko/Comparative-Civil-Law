@@ -1,1 +1,16 @@
-{"book_id":"pradi-transfer-immoveable","authors":["Andrea Pradi"],"title":"Transfer of Immoveable Property in Europe. From Contract to Registration","edition":"1st ed.","year":2012,"publisher":"Università degli Studi di Trento","jurisdiction":"DCFR","language":"en","cite_as":"Pradi (ed.), Transfer of Immoveable Property in Europe (2012)","pdf_pages_total":232,"body_pages_pdf":"9-225","source_type":"monograph"}
+{
+  "book_id": "pradi-transfer-immoveable",
+  "authors": [
+    "Andrea Pradi"
+  ],
+  "title": "Transfer of Immoveable Property in Europe. From Contract to Registration",
+  "edition": "1st ed.",
+  "year": 2012,
+  "publisher": "Università degli Studi di Trento",
+  "jurisdiction": "Comparative literature",
+  "language": "en",
+  "cite_as": "Pradi (ed.), Transfer of Immoveable Property in Europe (2012)",
+  "pdf_pages_total": 232,
+  "body_pages_pdf": "9-225",
+  "source_type": "monograph"
+}

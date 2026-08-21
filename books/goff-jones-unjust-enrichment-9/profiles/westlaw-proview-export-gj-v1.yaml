@@ -1,6 +1,6 @@
 id: westlaw-proview-export-gj-v1
 publisher: Sweet & Maxwell
-jurisdiction: UK
+jurisdiction: EN
 language: en
 # Тот же формат выгрузки Westlaw/ProView, что и у Chitty, но с двумя
 # отличиями, из-за которых профиль отдельный.

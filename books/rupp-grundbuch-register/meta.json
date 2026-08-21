@@ -1,1 +1,16 @@
-{"book_id":"rupp-grundbuch-register","authors":["Caroline S. Rupp"],"title":"Germanisches Grundbuch und romanisches Register. Registerpublizität im deutsch-französisch-italienischen Vergleich","edition":"AcP 214 (2014)","year":2014,"publisher":"Mohr Siebeck","jurisdiction":"DCFR","language":"de","cite_as":"Rupp, Germanisches Grundbuch und romanisches Register, AcP 214 (2014) 567","pdf_pages_total":35,"body_pages_pdf":"1-35","source_type":"monograph"}
+{
+  "book_id": "rupp-grundbuch-register",
+  "authors": [
+    "Caroline S. Rupp"
+  ],
+  "title": "Germanisches Grundbuch und romanisches Register. Registerpublizität im deutsch-französisch-italienischen Vergleich",
+  "edition": "AcP 214 (2014)",
+  "year": 2014,
+  "publisher": "Mohr Siebeck",
+  "jurisdiction": "Comparative literature",
+  "language": "de",
+  "cite_as": "Rupp, Germanisches Grundbuch und romanisches Register, AcP 214 (2014) 567",
+  "pdf_pages_total": 35,
+  "body_pages_pdf": "1-35",
+  "source_type": "monograph"
+}

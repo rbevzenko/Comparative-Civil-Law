@@ -1,11 +1,13 @@
 {
   "book_id": "smits-encyclopedia",
-  "authors": ["Jan M. Smits"],
+  "authors": [
+    "Jan M. Smits"
+  ],
   "title": "Elgar Encyclopedia of Comparative Law",
   "edition": "1st ed.",
   "year": 2006,
   "publisher": "Edward Elgar",
-  "jurisdiction": "DCFR",
+  "jurisdiction": "Comparative literature",
   "language": "en",
   "cite_as": "Smits (ed.), Elgar Encyclopedia of Comparative Law (2006)",
   "pdf_pages_total": 841,

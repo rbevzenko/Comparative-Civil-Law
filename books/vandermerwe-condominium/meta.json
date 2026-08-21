@@ -1,11 +1,13 @@
 {
   "book_id": "vandermerwe-condominium",
-  "authors": ["Cornelius van der Merwe"],
+  "authors": [
+    "Cornelius van der Merwe"
+  ],
   "title": "European Condominium Law",
   "edition": "1st ed.",
   "year": 2015,
   "publisher": "Cambridge University Press",
-  "jurisdiction": "DCFR",
+  "jurisdiction": "Comparative literature",
   "language": "en",
   "cite_as": "Van der Merwe (ed.), European Condominium Law (2015)",
   "pdf_pages_total": 692,

@@ -1,11 +1,13 @@
 {
   "book_id": "vicente-comparative-obligations",
-  "authors": ["Dário Moura Vicente"],
+  "authors": [
+    "Dário Moura Vicente"
+  ],
   "title": "Comparative Law of Obligations",
   "edition": "1st ed.",
   "year": 2021,
   "publisher": "Edward Elgar",
-  "jurisdiction": "DCFR",
+  "jurisdiction": "Comparative literature",
   "language": "en",
   "cite_as": "Moura Vicente, Comparative Law of Obligations (2021)",
   "pdf_pages_total": 494,

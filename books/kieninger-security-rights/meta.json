@@ -1,11 +1,13 @@
 {
   "book_id": "kieninger-security-rights",
-  "authors": ["Eva-Maria Kieninger"],
+  "authors": [
+    "Eva-Maria Kieninger"
+  ],
   "title": "Security Rights in Movable Property in European Private Law",
   "edition": "1st ed.",
   "year": 2004,
   "publisher": "Cambridge University Press",
-  "jurisdiction": "DCFR",
+  "jurisdiction": "Comparative literature",
   "language": "en",
   "cite_as": "Kieninger (ed.), Security Rights in Movable Property in European Private Law (2004)",
   "pdf_pages_total": 826,

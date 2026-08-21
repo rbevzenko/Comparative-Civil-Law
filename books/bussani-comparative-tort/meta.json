@@ -1,11 +1,14 @@
 {
   "book_id": "bussani-comparative-tort",
-  "authors": ["Mauro Bussani", "Anthony J. Sebok"],
+  "authors": [
+    "Mauro Bussani",
+    "Anthony J. Sebok"
+  ],
   "title": "Comparative Tort Law. Global Perspectives",
   "edition": "1st ed.",
   "year": 2015,
   "publisher": "Edward Elgar",
-  "jurisdiction": "DCFR",
+  "jurisdiction": "Comparative literature",
   "language": "en",
   "cite_as": "Bussani/Sebok (eds), Comparative Tort Law. Global Perspectives (2015)",
   "pdf_pages_total": 578,

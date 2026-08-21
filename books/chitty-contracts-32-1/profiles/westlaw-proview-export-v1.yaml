@@ -1,6 +1,6 @@
 id: westlaw-proview-export-v1
 publisher: Sweet & Maxwell
-jurisdiction: UK
+jurisdiction: EN
 language: en
 # Профиль выгрузки Westlaw/ProView, а не типографского PDF. Так свёрстаны
 # Chitty on Contracts 32nd ed. (оба тома) и Goff & Jones on Unjust

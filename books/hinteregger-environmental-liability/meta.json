@@ -1,11 +1,13 @@
 {
   "book_id": "hinteregger-environmental-liability",
-  "authors": ["Monika Hinteregger"],
+  "authors": [
+    "Monika Hinteregger"
+  ],
   "title": "Environmental Liability and Ecological Damage in European Law",
   "edition": "1st ed.",
   "year": 2008,
   "publisher": "Cambridge University Press",
-  "jurisdiction": "DCFR",
+  "jurisdiction": "Comparative literature",
   "language": "en",
   "cite_as": "Hinteregger (ed.), Environmental Liability and Ecological Damage in European Law (2008)",
   "pdf_pages_total": 765,

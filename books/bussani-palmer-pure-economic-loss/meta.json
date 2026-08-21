@@ -1,11 +1,14 @@
 {
   "book_id": "bussani-palmer-pure-economic-loss",
-  "authors": ["Mauro Bussani", "Vernon Valentine Palmer"],
+  "authors": [
+    "Mauro Bussani",
+    "Vernon Valentine Palmer"
+  ],
   "title": "Pure Economic Loss in Europe",
   "edition": "1st ed.",
   "year": 2003,
   "publisher": "Cambridge University Press",
-  "jurisdiction": "DCFR",
+  "jurisdiction": "Comparative literature",
   "language": "en",
   "cite_as": "Bussani/Palmer (eds), Pure Economic Loss in Europe (2003)",
   "pdf_pages_total": 639,

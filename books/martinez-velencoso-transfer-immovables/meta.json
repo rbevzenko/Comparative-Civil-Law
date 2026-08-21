@@ -1,11 +1,15 @@
 {
   "book_id": "martinez-velencoso-transfer-immovables",
-  "authors": ["María Luisa Martínez Velencoso", "Sergio Bailey", "Andrea Pradi"],
+  "authors": [
+    "María Luisa Martínez Velencoso",
+    "Sergio Bailey",
+    "Andrea Pradi"
+  ],
   "title": "Transfer of Immovables in European Private Law",
   "edition": "1st ed.",
   "year": 2017,
   "publisher": "Cambridge University Press",
-  "jurisdiction": "DCFR",
+  "jurisdiction": "Comparative literature",
   "language": "en",
   "cite_as": "Martínez Velencoso/Bailey/Pradi (eds), Transfer of Immovables in European Private Law (2017)",
   "pdf_pages_total": 836,

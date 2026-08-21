@@ -1,11 +1,13 @@
 {
   "book_id": "decruz-comparative-law",
-  "authors": ["Peter de Cruz"],
+  "authors": [
+    "Peter de Cruz"
+  ],
   "title": "Comparative Law in a Changing World",
   "edition": "3rd ed.",
   "year": 2007,
   "publisher": "Routledge-Cavendish",
-  "jurisdiction": "DCFR",
+  "jurisdiction": "Comparative literature",
   "language": "en",
   "cite_as": "de Cruz, Comparative Law in a Changing World, 3rd edn (2007)",
   "pdf_pages_total": 533,

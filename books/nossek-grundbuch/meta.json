@@ -1,1 +1,16 @@
-{"book_id":"nossek-grundbuch","authors":["Vera Nossek"],"title":"Das Konzept Grundbuch. Eine rechtsvergleichende Untersuchung","edition":"1st ed.","year":2016,"publisher":"Mohr Siebeck","jurisdiction":"DCFR","language":"de","cite_as":"Nossek, Das Konzept Grundbuch (2016)","pdf_pages_total":472,"body_pages_pdf":"21-455","source_type":"monograph"}
+{
+  "book_id": "nossek-grundbuch",
+  "authors": [
+    "Vera Nossek"
+  ],
+  "title": "Das Konzept Grundbuch. Eine rechtsvergleichende Untersuchung",
+  "edition": "1st ed.",
+  "year": 2016,
+  "publisher": "Mohr Siebeck",
+  "jurisdiction": "Comparative literature",
+  "language": "de",
+  "cite_as": "Nossek, Das Konzept Grundbuch (2016)",
+  "pdf_pages_total": 472,
+  "body_pages_pdf": "21-455",
+  "source_type": "monograph"
+}

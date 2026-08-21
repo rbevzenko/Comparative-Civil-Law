@@ -1,11 +1,14 @@
 {
   "book_id": "hondius-grigoleit-unexpected",
-  "authors": ["Ewoud Hondius", "Hans Christoph Grigoleit"],
+  "authors": [
+    "Ewoud Hondius",
+    "Hans Christoph Grigoleit"
+  ],
   "title": "Unexpected Circumstances in European Contract Law",
   "edition": "1st ed.",
   "year": 2011,
   "publisher": "Cambridge University Press",
-  "jurisdiction": "DCFR",
+  "jurisdiction": "Comparative literature",
   "language": "en",
   "cite_as": "Hondius/Grigoleit (eds), Unexpected Circumstances in European Contract Law (2011)",
   "pdf_pages_total": 716,

@@ -1,1 +1,16 @@
-{"book_id":"paasch-real-property","authors":["Jesper M. Paasch"],"title":"Comparative Real Property Rights","edition":"1st ed.","year":2011,"publisher":"KTH Royal Institute of Technology","jurisdiction":"DCFR","language":"en","cite_as":"Paasch, Comparative Real Property Rights (2011)","pdf_pages_total":108,"body_pages_pdf":"9-95","source_type":"monograph"}
+{
+  "book_id": "paasch-real-property",
+  "authors": [
+    "Jesper M. Paasch"
+  ],
+  "title": "Comparative Real Property Rights",
+  "edition": "1st ed.",
+  "year": 2011,
+  "publisher": "KTH Royal Institute of Technology",
+  "jurisdiction": "Comparative literature",
+  "language": "en",
+  "cite_as": "Paasch, Comparative Real Property Rights (2011)",
+  "pdf_pages_total": 108,
+  "body_pages_pdf": "9-95",
+  "source_type": "monograph"
+}

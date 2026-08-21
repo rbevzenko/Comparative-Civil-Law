@@ -1,11 +1,15 @@
 {
   "book_id": "graziadei-commercial-trusts",
-  "authors": ["Michele Graziadei", "Ugo Mattei", "Lionel Smith"],
+  "authors": [
+    "Michele Graziadei",
+    "Ugo Mattei",
+    "Lionel Smith"
+  ],
   "title": "Commercial Trusts in European Private Law",
   "edition": "1st ed.",
   "year": 2005,
   "publisher": "Cambridge University Press",
-  "jurisdiction": "DCFR",
+  "jurisdiction": "Comparative literature",
   "language": "en",
   "cite_as": "Graziadei/Mattei/Smith (eds), Commercial Trusts in European Private Law (2005)",
   "pdf_pages_total": 630,

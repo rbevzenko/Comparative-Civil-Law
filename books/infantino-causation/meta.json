@@ -1,11 +1,14 @@
 {
   "book_id": "infantino-causation",
-  "authors": ["Marta Infantino", "Eleni Zervogianni"],
+  "authors": [
+    "Marta Infantino",
+    "Eleni Zervogianni"
+  ],
   "title": "Causation in European Tort Law",
   "edition": "1st ed.",
   "year": 2017,
   "publisher": "Cambridge University Press",
-  "jurisdiction": "DCFR",
+  "jurisdiction": "Comparative literature",
   "language": "en",
   "cite_as": "Infantino/Zervogianni (eds), Causation in European Tort Law (2017)",
   "pdf_pages_total": 788,

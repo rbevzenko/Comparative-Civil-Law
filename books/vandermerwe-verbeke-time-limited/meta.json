@@ -1,11 +1,14 @@
 {
   "book_id": "vandermerwe-verbeke-time-limited",
-  "authors": ["Cornelius van der Merwe", "Alain-Laurent Verbeke"],
+  "authors": [
+    "Cornelius van der Merwe",
+    "Alain-Laurent Verbeke"
+  ],
   "title": "Time Limited Interests in Land",
   "edition": "1st ed.",
   "year": 2012,
   "publisher": "Cambridge University Press",
-  "jurisdiction": "DCFR",
+  "jurisdiction": "Comparative literature",
   "language": "en",
   "cite_as": "Van der Merwe/Verbeke (eds), Time Limited Interests in Land (2012)",
   "pdf_pages_total": 576,

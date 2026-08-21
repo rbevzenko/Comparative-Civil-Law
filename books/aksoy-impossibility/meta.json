@@ -1,1 +1,16 @@
-{"book_id":"aksoy-impossibility","authors":["Hüseyin Can Aksoy"],"title":"Impossibility in Modern Private Law. A Comparative Study of German, Swiss and Turkish Laws and the Unification Instruments of Private Law","edition":"1st ed.","year":2014,"publisher":"Springer","jurisdiction":"DCFR","language":"en","cite_as":"Aksoy, Impossibility in Modern Private Law (2014)","pdf_pages_total":211,"body_pages_pdf":"25-198","source_type":"monograph"}
+{
+  "book_id": "aksoy-impossibility",
+  "authors": [
+    "Hüseyin Can Aksoy"
+  ],
+  "title": "Impossibility in Modern Private Law. A Comparative Study of German, Swiss and Turkish Laws and the Unification Instruments of Private Law",
+  "edition": "1st ed.",
+  "year": 2014,
+  "publisher": "Springer",
+  "jurisdiction": "Comparative literature",
+  "language": "en",
+  "cite_as": "Aksoy, Impossibility in Modern Private Law (2014)",
+  "pdf_pages_total": 211,
+  "body_pages_pdf": "25-198",
+  "source_type": "monograph"
+}
