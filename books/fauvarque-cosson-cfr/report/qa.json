@@ -1,0 +1,145 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/fauvarque-cosson-cfr",
+  "cards": 636,
+  "profile": "cfr-materials-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9891,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "p.",
+        "section": null,
+        "from": 25,
+        "to": 27,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 35,
+        "to": 37,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 451,
+        "to": 453,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 453,
+        "to": 455,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 489,
+        "to": 491,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 603,
+        "to": 605,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 607,
+        "to": 609,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 7,
+    "missing_total": 7,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 636
+    }
+  },
+  "coverage": {
+    "share": 0.9996,
+    "covered_chars": 1579454,
+    "book_chars": 1580089,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2493,
+    "min": 18,
+    "max": 4036,
+    "too_short": [
+      "fauvarque-cosson-cfr:p:35",
+      "fauvarque-cosson-cfr:p:453",
+      "fauvarque-cosson-cfr:p:607"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.87,
+    "footnotes_total": 596,
+    "unparsed_blocks": 242,
+    "per_card_median": 1.0,
+    "cards_with_calls_but_no_notes": 11,
+    "notes_without_visible_call": 592
+  },
+  "dead_pages": {
+    "pages": [
+      26,
+      36,
+      452,
+      454,
+      490,
+      604,
+      608
+    ],
+    "count": 7
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 24,
+    "sample": [
+      "fauvarque-cosson-cfr:p:9",
+      "fauvarque-cosson-cfr:p:11",
+      "fauvarque-cosson-cfr:p:27",
+      "fauvarque-cosson-cfr:p:28",
+      "fauvarque-cosson-cfr:p:29",
+      "fauvarque-cosson-cfr:p:31",
+      "fauvarque-cosson-cfr:p:35",
+      "fauvarque-cosson-cfr:p:37",
+      "fauvarque-cosson-cfr:p:73",
+      "fauvarque-cosson-cfr:p:100"
+    ],
+    "depth_histogram": {
+      "0": 24,
+      "1": 612
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}
