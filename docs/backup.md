@@ -19,7 +19,7 @@
 
 | Файл | Что внутри | Чем восстанавливается |
 | --- | --- | --- |
-| `system.tar.gz` | код приложения, миграции, скрипты, `docker-compose.yml`, `Caddyfile`, `Dockerfile`, скиллы, документация, `.env.example` | распаковать, положить свой `.env`, `docker compose up -d --build` |
+| `system.tar.gz` | код приложения, миграции, скрипты, `docker-compose.yml`, `Dockerfile`, скиллы, документация, `.env.example` | распаковать, положить свой `.env`, `docker compose up -d --build` |
 | `cards.tar.gz` | всё содержимое `books/` из репозитория: `cards.jsonl.gz` каждой книги, `meta.json`, профили нарезки, отчёты о качестве | распаковать в корень; `upload_projection.py` + `upload_corpus.py`, либо `reupload_all.py` разом |
 | `corpus/sources.json`, `corpus/*.jsonl.gz` | выгрузка сервиса по API: источники и чанки со сносками, по файлу на источник | `upload_corpus.py` — эмбеддинги он считает сам |
 | `<имя>.dump` | снятый на хосте `pg_dump` (кладётся флагом `--include-dump`) | `pg_restore` в чистую базу |
