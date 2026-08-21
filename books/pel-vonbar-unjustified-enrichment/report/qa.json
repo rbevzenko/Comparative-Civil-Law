@@ -1,0 +1,318 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/pel-vonbar-unjustified-enrichment",
+  "cards": 421,
+  "profile": "pel-vonbar-ue-ocr-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.8699,
+    "rows": 38,
+    "gaps": [
+      {
+        "family": "Comment",
+        "section": "Article 1:101",
+        "from": 1,
+        "to": 9,
+        "missing": 7
+      },
+      {
+        "family": "Comment",
+        "section": "Article 2:101",
+        "from": 1,
+        "to": 9,
+        "missing": 7
+      },
+      {
+        "family": "Comment",
+        "section": "Article 2:101",
+        "from": 3,
+        "to": 10,
+        "missing": 6
+      },
+      {
+        "family": "Note",
+        "section": "Article 2:101",
+        "from": 34,
+        "to": 36,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article 2:101",
+        "from": 73,
+        "to": 75,
+        "missing": 1
+      },
+      {
+        "family": "Comment",
+        "section": "Article 2:102",
+        "from": 1,
+        "to": 9,
+        "missing": 7
+      },
+      {
+        "family": "Note",
+        "section": "Article 2:103",
+        "from": 21,
+        "to": 23,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article 2:103",
+        "from": 31,
+        "to": 33,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article 2:103",
+        "from": 36,
+        "to": 38,
+        "missing": 1
+      },
+      {
+        "family": "Art.",
+        "section": "4",
+        "from": 104,
+        "to": 106,
+        "missing": 1
+      },
+      {
+        "family": "Comment",
+        "section": "Article 4:101",
+        "from": 1,
+        "to": 9,
+        "missing": 7
+      },
+      {
+        "family": "Note",
+        "section": "Article 4:101",
+        "from": 7,
+        "to": 10,
+        "missing": 2
+      },
+      {
+        "family": "Note",
+        "section": "Article 4:101",
+        "from": 21,
+        "to": 24,
+        "missing": 2
+      },
+      {
+        "family": "Note",
+        "section": "Article 4:101",
+        "from": 24,
+        "to": 26,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article 4:102",
+        "from": 2,
+        "to": 5,
+        "missing": 2
+      },
+      {
+        "family": "Comment",
+        "section": "Article 4:103",
+        "from": 1,
+        "to": 9,
+        "missing": 7
+      },
+      {
+        "family": "Comment",
+        "section": "Article 4:103",
+        "from": 2,
+        "to": 5,
+        "missing": 2
+      },
+      {
+        "family": "Note",
+        "section": "Article 4:103",
+        "from": 4,
+        "to": 7,
+        "missing": 2
+      },
+      {
+        "family": "Comment",
+        "section": "Article 4:104",
+        "from": 1,
+        "to": 9,
+        "missing": 7
+      },
+      {
+        "family": "Comment",
+        "section": "Article 5:101",
+        "from": 1,
+        "to": 9,
+        "missing": 7
+      },
+      {
+        "family": "Comment",
+        "section": "Article 5:102",
+        "from": 1,
+        "to": 9,
+        "missing": 7
+      },
+      {
+        "family": "Note",
+        "section": "Article 5:102",
+        "from": 8,
+        "to": 10,
+        "missing": 1
+      },
+      {
+        "family": "Comment",
+        "section": "Article 6:101",
+        "from": 1,
+        "to": 9,
+        "missing": 7
+      },
+      {
+        "family": "Note",
+        "section": "Article 6:101",
+        "from": 4,
+        "to": 7,
+        "missing": 2
+      },
+      {
+        "family": "Note",
+        "section": "Article 6:101",
+        "from": 11,
+        "to": 13,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article 7:101",
+        "from": 2,
+        "to": 4,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article 7:101",
+        "from": 7,
+        "to": 9,
+        "missing": 1
+      },
+      {
+        "family": "Note",
+        "section": "Article 7:101",
+        "from": 10,
+        "to": 13,
+        "missing": 2
+      },
+      {
+        "family": "Note",
+        "section": "Article 7:101",
+        "from": 16,
+        "to": 19,
+        "missing": 2
+      }
+    ],
+    "gaps_total": 29,
+    "missing_total": 96,
+    "duplicates": [
+      {
+        "family": "Comment",
+        "section": "Article 2:101",
+        "number": 4
+      }
+    ],
+    "duplicates_total": 1,
+    "by_family": {
+      "Art.": 21,
+      "Comment": 61,
+      "Note": 339
+    }
+  },
+  "coverage": {
+    "share": 0.9995,
+    "covered_chars": 1174978,
+    "book_chars": 1175581,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 1609,
+    "min": 10,
+    "max": 84150,
+    "too_short": [
+      "pel-vonbar-unjustified-enrichment:art:1/101#cA",
+      "pel-vonbar-unjustified-enrichment:art:1/101#nx",
+      "pel-vonbar-unjustified-enrichment:art:1/101#n22",
+      "pel-vonbar-unjustified-enrichment:art:1/101#n34",
+      "pel-vonbar-unjustified-enrichment:art:2/101#cA",
+      "pel-vonbar-unjustified-enrichment:art:2/102#cA",
+      "pel-vonbar-unjustified-enrichment:art:2/102#nx",
+      "pel-vonbar-unjustified-enrichment:art:2/103#cx",
+      "pel-vonbar-unjustified-enrichment:art:2/103#nx",
+      "pel-vonbar-unjustified-enrichment:art:3/101#cx",
+      "pel-vonbar-unjustified-enrichment:art:3/101#nx",
+      "pel-vonbar-unjustified-enrichment:art:4/101#cA",
+      "pel-vonbar-unjustified-enrichment:art:4/101#nx",
+      "pel-vonbar-unjustified-enrichment:art:4/103#cA",
+      "pel-vonbar-unjustified-enrichment:art:4/104#cA"
+    ],
+    "too_long": [
+      "pel-vonbar-unjustified-enrichment:art:2/101#cB",
+      "pel-vonbar-unjustified-enrichment:art:3/102",
+      "pel-vonbar-unjustified-enrichment:art:4/101#n30",
+      "pel-vonbar-unjustified-enrichment:art:5/101#cD",
+      "pel-vonbar-unjustified-enrichment:art:7/103#n6"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0,
+    "cards_with_calls_but_no_notes": 238,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 421,
+    "sample": [
+      "pel-vonbar-unjustified-enrichment:art:1/101",
+      "pel-vonbar-unjustified-enrichment:art:1/101#cA",
+      "pel-vonbar-unjustified-enrichment:art:1/101#cI",
+      "pel-vonbar-unjustified-enrichment:art:1/101#cB",
+      "pel-vonbar-unjustified-enrichment:art:1/101#cC",
+      "pel-vonbar-unjustified-enrichment:art:1/101#cD",
+      "pel-vonbar-unjustified-enrichment:art:1/101#nx",
+      "pel-vonbar-unjustified-enrichment:art:1/101#n1",
+      "pel-vonbar-unjustified-enrichment:art:1/101#n2",
+      "pel-vonbar-unjustified-enrichment:art:1/101#n3"
+    ],
+    "depth_histogram": {
+      "0": 421
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 87.0% < 98%: пропущено номеров 96. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}
