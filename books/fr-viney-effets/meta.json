@@ -1,12 +1,16 @@
 {
   "book_id": "fr-viney-effets",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
-  "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "authors": [
+    "Geneviève Viney",
+    "Patrice Jourdain",
+    "Suzanne Carval"
+  ],
+  "title": "Traité de droit civil. Les effets de la responsabilité",
+  "edition": "4e éd.",
+  "year": 2017,
+  "publisher": "LGDJ",
+  "jurisdiction": "FR",
+  "language": "fr",
+  "isbn": "978-2-275-04535-1",
+  "notes": "Серия «Traité de droit civil» под редакцией Жака Жестена. Знак сноски — номер в круглых скобках в строке. Именной водяной знак покупателя вычищается как мусор."
 }

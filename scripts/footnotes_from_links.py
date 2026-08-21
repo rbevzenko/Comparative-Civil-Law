@@ -137,6 +137,9 @@ def main():
     ap.add_argument("--note-page-size", type=float,
                     help="модальный кегль полосы, НЕ ВЫШЕ которого полоса считается "
                          "аппаратом независимо от объёма текста")
+    ap.add_argument("--note-page-size-min", type=float,
+                    help="модальный кегль полосы, НЕ НИЖЕ которого полоса считается "
+                         "аппаратом; нужен там, где аппарат набран КРУПНЕЕ тела")
     ap.add_argument("--marker-size-max", type=float,
                     help="кегль, выше которого совпадение знаком сноски не считается; "
                          "по умолчанию считается от кегля тела полосы")
@@ -162,12 +165,21 @@ def main():
     # Кегль разводит их чисто: у Терре тело набрано 13.5, аппарат — 11.5.
     # Считается модальный кегль полосы, а не средний: заголовки и врезки
     # среднее сдвигают, самый частый кегль — нет.
+    # Кегль аппарата бывает и МЕНЬШЕ тела, и БОЛЬШЕ. У Терре тело 13.5,
+    # аппарат 11.5. У Флура наоборот: тело 14.4, аппарат 23.8 — сборка
+    # calibre вёрстывает полосу с одним примечанием крупным кеглем. Поэтому
+    # порогов два, и работает любой из них.
     by_size = set()
-    if a.note_page_size is not None:
+    if a.note_page_size is not None or a.note_page_size_min is not None:
         for pg in pages:
             sizes = [round(l["size"], 1) for l in pg["lines"] + (pg.get("note_lines") or [])
                      if l.get("size")]
-            if sizes and max(set(sizes), key=sizes.count) <= a.note_page_size:
+            if not sizes:
+                continue
+            modal = max(set(sizes), key=sizes.count)
+            if a.note_page_size is not None and modal <= a.note_page_size:
+                by_size.add(pg["pdf_page"])
+            if a.note_page_size_min is not None and modal >= a.note_page_size_min:
                 by_size.add(pg["pdf_page"])
         seed -= by_size
     print(f"полос в модели: {len(in_model)}, опорных полос тела: {len(seed)}"

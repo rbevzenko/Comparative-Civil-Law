@@ -1,12 +1,15 @@
 {
   "book_id": "fr-simler-suretes",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
-  "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "authors": [
+    "Philippe Simler",
+    "Philippe Delebecque"
+  ],
+  "title": "Droit civil. Les sûretés. La publicité foncière",
+  "edition": "6e éd.",
+  "year": 2012,
+  "publisher": "Dalloz",
+  "jurisdiction": "FR",
+  "language": "fr",
+  "isbn": "978-2-247-11554-9",
+  "notes": "Серия «Précis Dalloz»."
 }

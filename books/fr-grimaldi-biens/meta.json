@@ -1,12 +1,14 @@
 {
   "book_id": "fr-grimaldi-biens",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
-  "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "authors": [
+    "Cyril Grimaldi"
+  ],
+  "title": "Droit des biens",
+  "edition": "3e éd.",
+  "year": 2021,
+  "publisher": "LGDJ",
+  "jurisdiction": "FR",
+  "language": "fr",
+  "isbn": "978-2-275-09089-4",
+  "notes": "Именной водяной знак покупателя внизу каждой полосы — вычищается как мусор."
 }

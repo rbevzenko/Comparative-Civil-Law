@@ -1,12 +1,14 @@
 {
   "book_id": "fr-viney-introduction",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
-  "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "authors": [
+    "Geneviève Viney"
+  ],
+  "title": "Traité de droit civil. Introduction à la responsabilité",
+  "edition": "4e éd.",
+  "year": 2019,
+  "publisher": "LGDJ",
+  "jurisdiction": "FR",
+  "language": "fr",
+  "isbn": "978-2-275-04536-8",
+  "notes": "Серия «Traité de droit civil» под редакцией Жака Жестена. Знак сноски — номер в круглых скобках в строке, не надстрочный. В файле именной водяной знак покупателя внизу каждой полосы — вычищается как мусор."
 }
