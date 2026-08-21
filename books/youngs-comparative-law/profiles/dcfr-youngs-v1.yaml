@@ -1,0 +1,38 @@
+id: dcfr-youngs-v1
+publisher: Routledge-Cavendish
+jurisdiction: DCFR
+language: en
+# Raymond Youngs, English, French and German Comparative Law, 2nd ed.
+# (2007). 442 полосы, СКАН крупного формата: лист 1280 на 1918 пунктов,
+# кегли соответственно крупные — тело 30, сноски 24, колонтитул 30 на 80.
+#
+# Колонцифры НЕТ: внизу полосы вместо неё шум распознавания («B1rd», «l»,
+# «11»). Поэтому единица названа «frg.» — номер полосы файла.
+#
+# Колонтитул несёт только название главы («Human Rights», «Tort»), и он
+# же кладётся в иерархию отдельным шагом.
+
+units:
+  - type: "frg."
+    id_prefix: "frg"
+    mode: page
+
+address:
+  template: "frg. {number}"
+
+footnotes:
+  mode: font_bottom
+  note_size_max: 27.0
+  bottom_band: 0.72
+
+printed_page:
+  band: 0.0
+
+junk:
+  header_band: 0.06
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'
