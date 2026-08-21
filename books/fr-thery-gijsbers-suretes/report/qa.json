@@ -1,0 +1,80 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/fr-thery-gijsbers-suretes",
+  "cards": 708,
+  "profile": "lgdj-thery",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 1,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "n°": 708
+    }
+  },
+  "coverage": {
+    "share": 0.9774,
+    "covered_chars": 1153980,
+    "book_chars": 1180661,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 1245,
+    "min": 115,
+    "max": 20466,
+    "too_short": [
+      "fr-thery-gijsbers-suretes:n:472"
+    ],
+    "too_long": [
+      "fr-thery-gijsbers-suretes:n:83"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.73,
+    "footnotes_total": 1685,
+    "unparsed_blocks": 9,
+    "per_card_median": 2.0,
+    "cards_with_calls_but_no_notes": 30,
+    "notes_without_visible_call": 369
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 16,
+      "2": 17,
+      "3": 46,
+      "4": 76,
+      "5": 271,
+      "6": 282
+    }
+  },
+  "internal_refs": {
+    "refs_total": 2,
+    "unresolved": 0,
+    "resolved_share": 1.0,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

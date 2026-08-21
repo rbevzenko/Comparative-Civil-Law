@@ -1,0 +1,48 @@
+id: dalloz-chantepie-ocr
+publisher: Dalloz
+jurisdiction: FR
+language: fr
+# Файл со СВОИМ распознаванием: кегль в текстовом слое синтетический и
+# скачет (тело то 9.1, то 7.9 на соседних полосах), слова разделены
+# табуляцией, кавычки и апострофы смешаны. Поэтому сноски отделяются ТОЛЬКО
+# по положению — ветка B спецификации, — а не по кеглю.
+# Колонцифра сидит в колонтитуле с обеих сторон разворота.
+
+units:
+  - type: "n°"
+    id_prefix: "n"
+    mode: flow
+    # «400. Présentation. Le contenu licite et certain du contrat...»
+    pattern: '^(\d{1,4})\.\s+(?=[A-ZÀÂÄÉÈÊËÎÏÔÖÙÛÜÇŒÆ«“]|\d|\.{2,}|…|[a-z]\.\s)'
+
+address:
+  section:
+    mode: none
+  template: "{unit_type} {number}"
+
+printed_page:
+  band: [0.075, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+[A-ZÀÂÄÉÈÊËÎÏÔÖÙÛÜÇLl]'
+    - '\s(\d{1,4})$'
+
+footnotes:
+  mode: position_bottom
+  bottom_band: 0.75
+
+junk:
+  patterns:
+    - '^\s*$'
+
+statutory:
+  patterns:
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*(?:\s*(?:et|à|,)\s*\d+(?:-\d+)*)*\s*(?:C\.\s*civ\.|du Code civil)'
+    - 'C\.\s*civ\.,\s*art\.\s*\d+(?:-\d+)*'
+    - 'L\.\s*\d{3}-\d+'
+
+cross_refs:
+  patterns:
+    - '(?:supra|infra)\s*,?\s*n[o°s]*\s*\d+(?:\s*(?:et|à|,)\s*\d+)*'
+
+citation:
+  template: "{authors}, {title}, {edition}, {publisher}, {year}, {address}"

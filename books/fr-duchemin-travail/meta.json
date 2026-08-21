@@ -1,12 +1,14 @@
 {
   "book_id": "fr-duchemin-travail",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
+  "authors": [
+    "Clément Duchemin"
+  ],
+  "title": "L’application du régime général des obligations en droit du travail",
+  "edition": null,
+  "year": 2023,
+  "publisher": "Université Paris-Panthéon-Assas",
+  "jurisdiction": "FR",
+  "language": "fr",
   "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "notes": "Докторская диссертация по частному праву, защищена 28 ноября 2023 г. в Université Paris-Panthéon-Assas, научный руководитель — проф. Patrick Morvan."
 }
