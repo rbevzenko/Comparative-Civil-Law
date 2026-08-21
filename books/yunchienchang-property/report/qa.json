@@ -1,0 +1,179 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/yunchienchang-property",
+  "cards": 347,
+  "profile": "dcfr-yunchienchang-property-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9666,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "p.",
+        "section": null,
+        "from": 21,
+        "to": 23,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 25,
+        "to": 28,
+        "missing": 2
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 35,
+        "to": 37,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 67,
+        "to": 69,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 75,
+        "to": 77,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 121,
+        "to": 123,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 123,
+        "to": 125,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 136,
+        "to": 138,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 257,
+        "to": 259,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 319,
+        "to": 321,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 337,
+        "to": 339,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 11,
+    "missing_total": 12,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 347
+    }
+  },
+  "coverage": {
+    "share": 0.9995,
+    "covered_chars": 702804,
+    "book_chars": 703150,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2160,
+    "min": 17,
+    "max": 2928,
+    "too_short": [
+      "yunchienchang-property:p:21",
+      "yunchienchang-property:p:123",
+      "yunchienchang-property:p:257"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.67,
+    "footnotes_total": 448,
+    "unparsed_blocks": 0,
+    "per_card_median": 1,
+    "cards_with_calls_but_no_notes": 42,
+    "notes_without_visible_call": 50
+  },
+  "dead_pages": {
+    "pages": [
+      49,
+      53,
+      54,
+      63,
+      95,
+      103,
+      149,
+      151,
+      164,
+      285,
+      347,
+      365
+    ],
+    "count": 12
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 347,
+    "sample": [
+      "yunchienchang-property:p:2",
+      "yunchienchang-property:p:3",
+      "yunchienchang-property:p:4",
+      "yunchienchang-property:p:5",
+      "yunchienchang-property:p:6",
+      "yunchienchang-property:p:7",
+      "yunchienchang-property:p:8",
+      "yunchienchang-property:p:9",
+      "yunchienchang-property:p:10",
+      "yunchienchang-property:p:11"
+    ],
+    "depth_histogram": {
+      "0": 347
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 96.7% < 98%: пропущено номеров 12. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

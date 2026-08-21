@@ -1,0 +1,33 @@
+id: dcfr-corporate-boards-v1
+publisher: Cambridge University Press
+jurisdiction: DCFR
+language: en
+# Paul Davies, Klaus J. Hopt, Richard Nowak, Gerard van Solinge (eds), Corporate Boards in Law and Practice. A Comparative Analysis in Europe (2013). 867 полос. Тело 10.0, сноски 9.5 и 8.5, колонтитул 9.0 на 152 из 842 — необычно низко, отсюда широкая полоса.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  mode: font_bottom
+  note_size_max: 9.2
+  bottom_band: 0.45
+
+printed_page:
+  band: [0.20, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+\D'
+    - '[A-Za-z]\s+(\d{1,4})$'
+
+junk:
+  header_band: 0.21
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'
