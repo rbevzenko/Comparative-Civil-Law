@@ -1,0 +1,126 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/fr-gorlier-contrats-speciaux",
+  "cards": 405,
+  "profile": "ellipses-fiches",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9854,
+    "rows": 36,
+    "gaps": [
+      {
+        "family": "n°",
+        "section": "Fiche 10",
+        "from": 2,
+        "to": 4,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": "Fiche 12",
+        "from": 2,
+        "to": 5,
+        "missing": 2
+      },
+      {
+        "family": "n°",
+        "section": "Fiche 14",
+        "from": 4,
+        "to": 6,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": "Fiche 30",
+        "from": 2,
+        "to": 5,
+        "missing": 2
+      }
+    ],
+    "gaps_total": 4,
+    "missing_total": 6,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "n°": 405
+    }
+  },
+  "coverage": {
+    "share": 0.9833,
+    "covered_chars": 570017,
+    "book_chars": 579697,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 701,
+    "min": 24,
+    "max": 18084,
+    "too_short": [
+      "fr-gorlier-contrats-speciaux:n:Fiche 3/13",
+      "fr-gorlier-contrats-speciaux:n:Fiche 3/14",
+      "fr-gorlier-contrats-speciaux:n:Fiche 3/15",
+      "fr-gorlier-contrats-speciaux:n:Fiche 3/16",
+      "fr-gorlier-contrats-speciaux:n:Fiche 5/15",
+      "fr-gorlier-contrats-speciaux:n:Fiche 5/16",
+      "fr-gorlier-contrats-speciaux:n:Fiche 5/17",
+      "fr-gorlier-contrats-speciaux:n:Fiche 5/18",
+      "fr-gorlier-contrats-speciaux:n:Fiche 5/19",
+      "fr-gorlier-contrats-speciaux:n:Fiche 5/20",
+      "fr-gorlier-contrats-speciaux:n:Fiche 7/11",
+      "fr-gorlier-contrats-speciaux:n:Fiche 7/12",
+      "fr-gorlier-contrats-speciaux:n:Fiche 7/13",
+      "fr-gorlier-contrats-speciaux:n:Fiche 7/14",
+      "fr-gorlier-contrats-speciaux:n:Fiche 7/15"
+    ],
+    "too_long": [
+      "fr-gorlier-contrats-speciaux:n:Fiche 1/9",
+      "fr-gorlier-contrats-speciaux:n:Fiche 2/13",
+      "fr-gorlier-contrats-speciaux:n:Fiche 4/16",
+      "fr-gorlier-contrats-speciaux:n:Fiche 12/6",
+      "fr-gorlier-contrats-speciaux:n:Fiche 14/7",
+      "fr-gorlier-contrats-speciaux:n:Fiche 35/4",
+      "fr-gorlier-contrats-speciaux:n:Fiche 36/10"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0,
+    "cards_with_calls_but_no_notes": 23,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "4": 127,
+      "5": 131,
+      "6": 147
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 1
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

@@ -1,12 +1,14 @@
 {
   "book_id": "fr-gorlier-contrats-speciaux",
-  "authors": [],
-  "title": "",
-  "edition": "",
+  "authors": [
+    "Vincent Gorlier"
+  ],
+  "title": "Droit des contrats spéciaux",
+  "edition": null,
   "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
+  "publisher": "Ellipses",
+  "jurisdiction": "FR",
+  "language": "fr",
   "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "notes": "Учебник по «фишам», издательство Ellipses (в файле: «Retrouvez tous les livres de la collection et des extraits sur www.editions-ellipses.fr»). ГОД ИЗДАНИЯ НЕ УСТАНОВЛЕН: ни титула, ни оборота титула в файле нет. Самая поздняя дата в тексте — 2021 г., значит издание не раньше 2021 г. Год оставлен пустым намеренно: выдуманный год хуже отсутствующего. Нумерация абзацев перезапускается внутри каждой фиши, поэтому адрес составной: «Fiche 11, n° 4»."
 }

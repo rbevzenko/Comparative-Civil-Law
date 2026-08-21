@@ -82,6 +82,15 @@ def main():
             head = a.rejoin.format(number=num, section=card.get("section") or "")
             host["text"] = f"{host['text']}\n{head}{card['text']}".strip()
             host["page_end"] = max(host.get("page_end") or 0, card.get("page_end") or 0) or host.get("page_end")
+            # Офсеты в book.txt тоже надо продлить, иначе покрытие в отчёте
+            # считает съеденный кусок непокрытым. У Горлье при 314 склейках
+            # покрытие показывало 0.73 при настоящих 0.98.
+            for key in ("printed_page_end", "char_end"):
+                if card.get(key) is not None:
+                    host[key] = max(host.get(key) or 0, card[key])
+            for key in ("footnotes", "statutory_refs", "cross_refs"):
+                if card.get(key):
+                    host[key] = (host.get(key) or []) + card[key]
             dropped.append(card)
             continue
         kept.append(card)
