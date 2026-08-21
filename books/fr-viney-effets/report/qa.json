@@ -1,0 +1,107 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/fr-viney-effets",
+  "cards": 634,
+  "profile": "lgdj-traite-ghestin",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9969,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "n°",
+        "section": null,
+        "from": 277,
+        "to": 280,
+        "missing": 2
+      }
+    ],
+    "gaps_total": 1,
+    "missing_total": 2,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "n°": 634
+    }
+  },
+  "coverage": {
+    "share": 0.9916,
+    "covered_chars": 1992022,
+    "book_chars": 2008882,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 2461,
+        "from": 7609,
+        "to": 10070
+      },
+      {
+        "chars": 2121,
+        "from": 200786,
+        "to": 202907
+      },
+      {
+        "chars": 1295,
+        "from": 1944770,
+        "to": 1946065
+      },
+      {
+        "chars": 1114,
+        "from": 1636513,
+        "to": 1637627
+      },
+      {
+        "chars": 716,
+        "from": 1867838,
+        "to": 1868554
+      }
+    ]
+  },
+  "lengths": {
+    "median": 2388,
+    "min": 215,
+    "max": 17578,
+    "too_short": [],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.94,
+    "footnotes_total": 4412,
+    "unparsed_blocks": 38,
+    "per_card_median": 5.0,
+    "cards_with_calls_but_no_notes": 0,
+    "notes_without_visible_call": 4285
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 40,
+      "2": 150,
+      "3": 444
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}
