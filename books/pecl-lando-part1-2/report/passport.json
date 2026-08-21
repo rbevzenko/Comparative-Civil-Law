@@ -1,0 +1,105 @@
+{
+  "path": "/home/user/dcfr-pdf/pecl-lando-part1-2.pdf",
+  "sha256": "d92abe3332c36aaf5336d22854447b61a9d2870fe392fb94e85399c0895aac0a",
+  "pages": 509,
+  "sampled_pages": [
+    77,
+    86,
+    95,
+    104,
+    113,
+    122,
+    131,
+    140,
+    149,
+    158,
+    167,
+    176,
+    185,
+    194,
+    203,
+    212,
+    221,
+    230,
+    239,
+    248,
+    257,
+    266,
+    275,
+    284,
+    293,
+    302,
+    311,
+    320,
+    329,
+    338,
+    347,
+    356,
+    365,
+    374,
+    383,
+    392,
+    401,
+    410,
+    419,
+    428
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": false
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 0,
+    "empty_pages_share": 1.0,
+    "median_image_coverage": 1.0
+  },
+  "printed_pages": {
+    "detected_share": 0.0,
+    "offset_mode": null,
+    "offset_stable": false,
+    "sample": []
+  },
+  "font_sizes": {
+    "histogram": {},
+    "body": null,
+    "candidates_footnote": []
+  },
+  "footnotes": {
+    "small_font_chars": 0,
+    "share_at_page_bottom": 0.0
+  },
+  "columns": {
+    "guess": null,
+    "left_edges": []
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {},
+  "text_noise": {
+    "words": 0,
+    "suspicious": 0,
+    "share": 0.0,
+    "sample": []
+  },
+  "margin_numbers": {
+    "found": false
+  },
+  "statutory": {},
+  "verdict": {
+    "state": "пригоден с оговорками",
+    "branch": "B",
+    "problems": [
+      "Ни один паттерн единицы цитирования не сработал. Либо книга без сквозной нумерации (режим heading), либо паттерн нестандартный — смотреть глазами."
+    ],
+    "notes": [
+      "Текстового слоя практически нет — скан. Ветка B (ocr.py).",
+      "Оглавление в файле не зашито — иерархию собирать по печатному оглавлению и колонтитулам; качество поля hierarchy будет ниже."
+    ]
+  }
+}

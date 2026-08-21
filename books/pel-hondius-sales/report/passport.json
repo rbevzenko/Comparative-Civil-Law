@@ -1,0 +1,105 @@
+{
+  "path": "/home/user/dcfr-pdf/pel-hondius-sales.pdf",
+  "sha256": "4217384c5113776533a3d0cea8333ed50f099af44403d36d7d3312aafdf353a8",
+  "pages": 426,
+  "sampled_pages": [
+    64,
+    72,
+    80,
+    88,
+    96,
+    104,
+    112,
+    120,
+    128,
+    136,
+    144,
+    152,
+    160,
+    168,
+    176,
+    184,
+    192,
+    200,
+    208,
+    216,
+    224,
+    232,
+    240,
+    248,
+    256,
+    264,
+    272,
+    280,
+    288,
+    296,
+    304,
+    312,
+    320,
+    328,
+    336,
+    344,
+    352,
+    360,
+    368,
+    376
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": false
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 0,
+    "empty_pages_share": 1.0,
+    "median_image_coverage": 1.0
+  },
+  "printed_pages": {
+    "detected_share": 0.0,
+    "offset_mode": null,
+    "offset_stable": false,
+    "sample": []
+  },
+  "font_sizes": {
+    "histogram": {},
+    "body": null,
+    "candidates_footnote": []
+  },
+  "footnotes": {
+    "small_font_chars": 0,
+    "share_at_page_bottom": 0.0
+  },
+  "columns": {
+    "guess": null,
+    "left_edges": []
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {},
+  "text_noise": {
+    "words": 0,
+    "suspicious": 0,
+    "share": 0.0,
+    "sample": []
+  },
+  "margin_numbers": {
+    "found": false
+  },
+  "statutory": {},
+  "verdict": {
+    "state": "пригоден с оговорками",
+    "branch": "B",
+    "problems": [
+      "Ни один паттерн единицы цитирования не сработал. Либо книга без сквозной нумерации (режим heading), либо паттерн нестандартный — смотреть глазами."
+    ],
+    "notes": [
+      "Текстового слоя практически нет — скан. Ветка B (ocr.py).",
+      "Оглавление в файле не зашито — иерархию собирать по печатному оглавлению и колонтитулам; качество поля hierarchy будет ниже."
+    ]
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "path": "/home/user/dcfr-pdf/dcfr-vol5-6.pdf",
+  "sha256": "7913dc02d10dd2f25dc197f7adb691632188cacf5dfbf2b2cba95c146b839c56",
+  "pages": 2392,
+  "sampled_pages": [
+    359,
+    403,
+    447,
+    491,
+    535,
+    579,
+    623,
+    667,
+    711,
+    755,
+    799,
+    843,
+    887,
+    931,
+    975,
+    1019,
+    1063,
+    1107,
+    1151,
+    1195,
+    1239,
+    1283,
+    1327,
+    1371,
+    1415,
+    1459,
+    1503,
+    1547,
+    1591,
+    1635,
+    1679,
+    1723,
+    1767,
+    1811,
+    1855,
+    1899,
+    1943,
+    1987,
+    2031,
+    2075
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 1350,
+    "max_depth": 8,
+    "resolved_pages": 1350,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "098_Vol_5_DCFR_FE_I-XII_4205-5388",
+        "page": 1,
+        "depth": 0
+      },
+      {
+        "title": "Acquisition and loss of ownership of goods",
+        "page": 13,
+        "depth": 1
+      },
+      {
+        "title": "Chapter 1: General provisions",
+        "page": 13,
+        "depth": 2
+      },
+      {
+        "title": "Section 1: Scope of application and relation to other provisions",
+        "page": 13,
+        "depth": 3
+      },
+      {
+        "title": "VIII.-1:101: Scope of application",
+        "page": 13,
+        "depth": 4
+      },
+      {
+        "title": "Comments",
+        "page": 14,
+        "depth": 5
+      },
+      {
+        "title": "A. General",
+        "page": 14,
+        "depth": 6
+      },
+      {
+        "title": "B. Scope of Book VIII in general (paragraph (1))",
+        "page": 14,
+        "depth": 6
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 2953,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 1.0,
+    "offset_mode": 4192,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 359,
+        "printed": 4551
+      },
+      {
+        "pdf_page": 403,
+        "printed": 4595
+      },
+      {
+        "pdf_page": 447,
+        "printed": 4639
+      },
+      {
+        "pdf_page": 491,
+        "printed": 4683
+      },
+      {
+        "pdf_page": 535,
+        "printed": 4727
+      },
+      {
+        "pdf_page": 579,
+        "printed": 4771
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "9.0": 56573,
+      "9.5": 31047,
+      "8.5": 13214,
+      "3.5": 4360,
+      "8.0": 3019,
+      "8.4": 989,
+      "7.5": 981,
+      "10.5": 598
+    },
+    "body": 9.0,
+    "candidates_footnote": [
+      3.5
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 4429,
+    "share_at_page_bottom": 0.0
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 2,
+    "left_edges": [
+      46,
+      152,
+      140
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [
+    {
+      "line": "fidus Publikations-Service",
+      "pages": 40
+    },
+    {
+      "line": "{Sellier}DCFR/DCFR_FE_2009/daten_3b2/Volume_5_DCFR_FE_Text.3d Insgesamt 1184 Seiten 3. AK",
+      "pages": 20
+    },
+    {
+      "line": "{Sellier}DCFR/DCFR_FE_2009/daten_3b2/Volume_6_DCFR_FE_Text.3d Insgesamt 1132 Seiten 3. AK",
+      "pages": 20
+    }
+  ],
+  "units": {
+    "§ с номером": {
+      "hits": 74,
+      "monotonic_share": 0.73,
+      "first": [
+        "870",
+        "398",
+        "101",
+        "109",
+        "110"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 55,
+      "monotonic_share": 0.76,
+      "first": [
+        "25",
+        "22",
+        "87",
+        "88",
+        "31"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 8,
+      "monotonic_share": 0.29,
+      "first": [
+        "30",
+        "25",
+        "15",
+        "22",
+        "18"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 20726,
+    "suspicious": 74,
+    "share": 0.0036,
+    "sample": [
+      "{Sellier}DCFR/DCFR_FE_2009/daten_3b2/Volume_5_DCFR_FE_Text.3d",
+      "{Sellier}DCFR/DCFR_FE_2009/daten_3b2/Volume_5_DCFR_FE_Text.3d",
+      "{Sellier}DCFR/DCFR_FE_2009/daten_3b2/Volume_5_DCFR_FE_Text.3d",
+      "(ZPPSL",
+      "{Sellier}DCFR/DCFR_FE_2009/daten_3b2/Volume_5_DCFR_FE_Text.3d",
+      "{Sellier}DCFR/DCFR_FE_2009/daten_3b2/Volume_5_DCFR_FE_Text.3d",
+      "{Sellier}DCFR/DCFR_FE_2009/daten_3b2/Volume_5_DCFR_FE_Text.3d",
+      "{Sellier}DCFR/DCFR_FE_2009/daten_3b2/Volume_5_DCFR_FE_Text.3d",
+      "{Sellier}DCFR/DCFR_FE_2009/daten_3b2/Volume_5_DCFR_FE_Text.3d",
+      "{Sellier}DCFR/DCFR_FE_2009/daten_3b2/Volume_5_DCFR_FE_Text.3d",
+      "{Sellier}DCFR/DCFR_FE_2009/daten_3b2/Volume_5_DCFR_FE_Text.3d",
+      "{Sellier}DCFR/DCFR_FE_2009/daten_3b2/Volume_5_DCFR_FE_Text.3d"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        69.0,
+        407.0
+      ],
+      "even": [
+        69.0,
+        407.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "NL": 22
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Кликабельных сносок нет — привязка по кеглю и положению.",
+      "Типографская пагинация читается, но смещение относительно страниц файла непостоянно (вклейки, вкладки). Хранить обе нумерации, не пересчитывать.",
+      "Повторяющийся мусор (3 шаблонов) — вычистить первым шагом."
+    ]
+  }
+}

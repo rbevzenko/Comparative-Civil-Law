@@ -1,0 +1,213 @@
+{
+  "path": "/home/user/dcfr-pdf/pel-movables-vol1-at-ee-it-si.pdf",
+  "sha256": "f16ff23b010c4ff1aa09736b1bac9cdbaa21efec2d3a6046d696bc5ae6c81d93",
+  "pages": 649,
+  "sampled_pages": [
+    98,
+    110,
+    122,
+    134,
+    146,
+    158,
+    170,
+    182,
+    194,
+    206,
+    218,
+    230,
+    242,
+    254,
+    266,
+    278,
+    290,
+    302,
+    314,
+    326,
+    338,
+    350,
+    362,
+    374,
+    386,
+    398,
+    410,
+    422,
+    434,
+    446,
+    458,
+    470,
+    482,
+    494,
+    506,
+    518,
+    530,
+    542,
+    554,
+    566
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": false
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 3036,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.1,
+    "offset_mode": -85,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 98,
+        "printed": 13
+      },
+      {
+        "pdf_page": 110,
+        "printed": null
+      },
+      {
+        "pdf_page": 122,
+        "printed": null
+      },
+      {
+        "pdf_page": 134,
+        "printed": null
+      },
+      {
+        "pdf_page": 146,
+        "printed": 3
+      },
+      {
+        "pdf_page": 158,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "9.5": 80500,
+      "8.0": 24219,
+      "8.5": 4801,
+      "6.0": 662,
+      "10.0": 645,
+      "10.6": 452,
+      "9.0": 217,
+      "11.5": 147
+    },
+    "body": 9.5,
+    "candidates_footnote": [
+      6.0
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 849,
+    "share_at_page_bottom": 0.41
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      48
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "n° голый номер в начале абзаца": {
+      "hits": 115,
+      "monotonic_share": 0.96,
+      "first": [
+        "362",
+        "363",
+        "364",
+        "365",
+        "366"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 159,
+      "monotonic_share": 0.77,
+      "first": [
+        "5",
+        "362",
+        "363",
+        "364",
+        "365"
+      ]
+    },
+    "§ с номером": {
+      "hits": 15,
+      "monotonic_share": 0.71,
+      "first": [
+        "367",
+        "371",
+        "371",
+        "331",
+        "415"
+      ]
+    },
+    "para. англ. раздел-пункт": {
+      "hits": 1,
+      "monotonic_share": 0.0,
+      "first": [
+        "32-43"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 17412,
+    "suspicious": 4,
+    "share": 0.0002,
+    "sample": [
+      "BGBl",
+      "BlgNR",
+      "(BGBl",
+      "KSchG;"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        48.0,
+        345.0
+      ],
+      "even": [
+        48.0,
+        345.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "DE/AT/CH": 23,
+    "IT": 24
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Оглавление в файле не зашито — иерархию собирать по печатному оглавлению и колонтитулам; качество поля hierarchy будет ниже.",
+      "Кликабельных сносок нет — привязка по кеглю и положению."
+    ]
+  }
+}

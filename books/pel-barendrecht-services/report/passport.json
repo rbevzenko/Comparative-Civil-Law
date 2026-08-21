@@ -1,0 +1,244 @@
+{
+  "path": "/home/user/dcfr-pdf/pel-barendrecht-services.pdf",
+  "sha256": "31664b0625e2ae0f16590187b87f84e741ba7941368416513ee2136d62931020",
+  "pages": 1094,
+  "sampled_pages": [
+    165,
+    185,
+    205,
+    225,
+    245,
+    265,
+    285,
+    305,
+    325,
+    345,
+    365,
+    385,
+    405,
+    425,
+    445,
+    465,
+    485,
+    505,
+    525,
+    545,
+    565,
+    585,
+    605,
+    625,
+    645,
+    665,
+    685,
+    705,
+    725,
+    745,
+    765,
+    785,
+    805,
+    825,
+    845,
+    865,
+    885,
+    905,
+    925,
+    945
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 12,
+    "max_depth": 1,
+    "resolved_pages": 12,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Frontmatter",
+        "page": 1,
+        "depth": 0
+      },
+      {
+        "title": "Table of Contents",
+        "page": 19,
+        "depth": 0
+      },
+      {
+        "title": "Text of Articles",
+        "page": 61,
+        "depth": 0
+      },
+      {
+        "title": "Principles of European Law on Service Contracts",
+        "page": 185,
+        "depth": 0
+      },
+      {
+        "title": "Chapter 1: General Provisions",
+        "page": 191,
+        "depth": 0
+      },
+      {
+        "title": "Chapter 2: Construction",
+        "page": 369,
+        "depth": 0
+      },
+      {
+        "title": "Chapter 3: Processing",
+        "page": 461,
+        "depth": 0
+      },
+      {
+        "title": "Chapter 4: Storage",
+        "page": 555,
+        "depth": 0
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 2698,
+    "empty_pages_share": 0.03,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.97,
+    "offset_mode": -60,
+    "offset_stable": true,
+    "sample": [
+      {
+        "pdf_page": 165,
+        "printed": 105
+      },
+      {
+        "pdf_page": 185,
+        "printed": null
+      },
+      {
+        "pdf_page": 205,
+        "printed": 145
+      },
+      {
+        "pdf_page": 225,
+        "printed": 165
+      },
+      {
+        "pdf_page": 245,
+        "printed": 185
+      },
+      {
+        "pdf_page": 265,
+        "printed": 205
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "9.0": 53069,
+      "9.5": 48501,
+      "8.4": 2327,
+      "8.5": 1488,
+      "10.5": 760,
+      "8.9": 581,
+      "10.0": 155,
+      "12.5": 111
+    },
+    "body": 9.0,
+    "candidates_footnote": []
+  },
+  "footnotes": {
+    "small_font_chars": 4,
+    "share_at_page_bottom": 0.0
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      69,
+      91
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 14,
+      "monotonic_share": 0.38,
+      "first": [
+        "1",
+        "2",
+        "1",
+        "1",
+        "1"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 4,
+      "monotonic_share": 0.33,
+      "first": [
+        "643",
+        "30",
+        "112",
+        "13"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 20508,
+    "suspicious": 8,
+    "share": 0.0004,
+    "sample": [
+      "Lynch",
+      "(KTjL)",
+      "KTjL",
+      "BGHZ",
+      "KTjL",
+      "KTjL",
+      "CHRM,",
+      "CHRB"
+    ]
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        91.0,
+        407.0
+      ],
+      "even": [
+        91.0,
+        407.0
+      ]
+    },
+    "left": {
+      "hits": 1,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": [
+        1
+      ]
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "NL": 35
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Кегль сносок не отделяется от основного текста — отделять по положению на полосе.",
+      "Кликабельных сносок нет — привязка по кеглю и положению."
+    ]
+  }
+}

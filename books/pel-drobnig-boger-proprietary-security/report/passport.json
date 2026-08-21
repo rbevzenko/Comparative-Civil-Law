@@ -1,0 +1,277 @@
+{
+  "path": "/home/user/dcfr-pdf/pel-drobnig-boger-proprietary-security.pdf",
+  "sha256": "3167b39e63b09fd9cb6035a9cc8dc37d67e1fe1954b35d1b1d14701cd3918bf0",
+  "pages": 800,
+  "sampled_pages": [
+    121,
+    136,
+    151,
+    166,
+    181,
+    196,
+    211,
+    226,
+    241,
+    256,
+    271,
+    286,
+    301,
+    316,
+    331,
+    346,
+    361,
+    376,
+    391,
+    406,
+    421,
+    436,
+    451,
+    466,
+    481,
+    496,
+    511,
+    526,
+    541,
+    556,
+    571,
+    586,
+    601,
+    616,
+    631,
+    646,
+    661,
+    676,
+    691,
+    706
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 17,
+    "max_depth": 1,
+    "resolved_pages": 17,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "10.1515_9783866539105 - титульны",
+        "page": 1,
+        "depth": 0
+      },
+      {
+        "title": "10.1515_9783866539105 - оглавление",
+        "page": 7,
+        "depth": 0
+      },
+      {
+        "title": "10.1515_9783866539105 - подробное оглавление",
+        "page": 43,
+        "depth": 0
+      },
+      {
+        "title": "Страница 2 и далее",
+        "page": 49,
+        "depth": 0
+      },
+      {
+        "title": "10.1515_9783866539105 - предисловие 2",
+        "page": 86,
+        "depth": 0
+      },
+      {
+        "title": "10.1515_9783866539105 - предисловие",
+        "page": 89,
+        "depth": 0
+      },
+      {
+        "title": "10.1515_9783866539105 - текст принципов",
+        "page": 92,
+        "depth": 0
+      },
+      {
+        "title": "10.1515_9783866539105.205",
+        "page": 129,
+        "depth": 0
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 3051,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.97,
+    "offset_mode": 76,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 121,
+        "printed": 32
+      },
+      {
+        "pdf_page": 136,
+        "printed": 212
+      },
+      {
+        "pdf_page": 151,
+        "printed": 227
+      },
+      {
+        "pdf_page": 166,
+        "printed": 242
+      },
+      {
+        "pdf_page": 181,
+        "printed": 8
+      },
+      {
+        "pdf_page": 196,
+        "printed": 272
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "8.0": 71480,
+      "9.5": 32946,
+      "9.2": 5886,
+      "9.0": 2715,
+      "8.5": 1694,
+      "10.0": 794,
+      "7.8": 582,
+      "11.5": 210
+    },
+    "body": 8.0,
+    "candidates_footnote": []
+  },
+  "footnotes": {
+    "small_font_chars": 6,
+    "share_at_page_bottom": 0.33
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 2,
+    "left_edges": [
+      48,
+      65,
+      51,
+      150
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [
+    {
+      "line": "© sellier european law publishers",
+      "pages": 40
+    },
+    {
+      "line": "www.sellier.de",
+      "pages": 40
+    }
+  ],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 72,
+      "monotonic_share": 0.68,
+      "first": [
+        "14",
+        "27",
+        "28",
+        "29",
+        "31"
+      ]
+    },
+    "§ с номером": {
+      "hits": 7,
+      "monotonic_share": 0.5,
+      "first": [
+        "363",
+        "648",
+        "5",
+        "297a",
+        "305"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 8,
+      "monotonic_share": 0.43,
+      "first": [
+        "8",
+        "9",
+        "1978",
+        "1971",
+        "3"
+      ]
+    },
+    "para. англ. раздел-пункт": {
+      "hits": 2,
+      "monotonic_share": 0.0,
+      "first": [
+        "201–421",
+        "398–401"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 21907,
+    "suspicious": 7,
+    "share": 0.0003,
+    "sample": [
+      "BBTC",
+      "BBTC",
+      "DCFR,",
+      "BGHZ",
+      "DCFR",
+      "BGHZ",
+      "DCFR."
+    ]
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        62.0,
+        388.0
+      ],
+      "even": [
+        65.0,
+        405.0
+      ]
+    },
+    "left": {
+      "hits": 2,
+      "monotonic_share": 1.0,
+      "even_page_share": 0.0,
+      "first": [
+        8,
+        9
+      ]
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "NL": 1
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Кегль сносок не отделяется от основного текста — отделять по положению на полосе.",
+      "Кликабельных сносок нет — привязка по кеглю и положению.",
+      "Типографская пагинация читается, но смещение относительно страниц файла непостоянно (вклейки, вкладки). Хранить обе нумерации, не пересчитывать.",
+      "Повторяющийся мусор (2 шаблонов) — вычистить первым шагом."
+    ]
+  }
+}

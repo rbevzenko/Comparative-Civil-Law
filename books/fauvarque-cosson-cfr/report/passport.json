@@ -1,0 +1,214 @@
+{
+  "path": "/home/user/dcfr-pdf/fauvarque-cosson-cfr.pdf",
+  "sha256": "487381dc309bb60ed71a75b60cfad2bd95e136cd6f9819bdf8455be0d129c8ad",
+  "pages": 648,
+  "sampled_pages": [
+    98,
+    110,
+    122,
+    134,
+    146,
+    158,
+    170,
+    182,
+    194,
+    206,
+    218,
+    230,
+    242,
+    254,
+    266,
+    278,
+    290,
+    302,
+    314,
+    326,
+    338,
+    350,
+    362,
+    374,
+    386,
+    398,
+    410,
+    422,
+    434,
+    446,
+    458,
+    470,
+    482,
+    494,
+    506,
+    518,
+    530,
+    542,
+    554,
+    566
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": false
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 3085,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.97,
+    "offset_mode": -34,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 98,
+        "printed": 64
+      },
+      {
+        "pdf_page": 110,
+        "printed": 37
+      },
+      {
+        "pdf_page": 122,
+        "printed": 88
+      },
+      {
+        "pdf_page": 134,
+        "printed": null
+      },
+      {
+        "pdf_page": 146,
+        "printed": 27
+      },
+      {
+        "pdf_page": 158,
+        "printed": 124
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "9.5": 73953,
+      "8.5": 39041,
+      "8.0": 2133,
+      "5.4": 422,
+      "9.2": 420,
+      "6.0": 413,
+      "8.9": 360,
+      "10.0": 348
+    },
+    "body": 9.5,
+    "candidates_footnote": [
+      5.4,
+      6.0
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 2157,
+    "share_at_page_bottom": 0.56
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      68
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [
+    {
+      "line": "Part I: Terminology",
+      "pages": 30
+    }
+  ],
+  "units": {
+    "n° голый номер в начале абзаца": {
+      "hits": 155,
+      "monotonic_share": 0.92,
+      "first": [
+        "27",
+        "84",
+        "85",
+        "86",
+        "87"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 177,
+      "monotonic_share": 0.86,
+      "first": [
+        "27",
+        "84",
+        "85",
+        "86",
+        "87"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 22630,
+    "suspicious": 14,
+    "share": 0.0006,
+    "sample": [
+      "LGDJ,",
+      "RLDC.2006",
+      "RLDC",
+      "http://www.courdecassation.fr/jurispru",
+      "e_pleniere_22/arrets_travaux_preparatoires_23/assemblee_pleniere_24/avis_9475.html).",
+      "LGDJ,",
+      "LGDJ,",
+      "LGDJ",
+      "BGHZ",
+      "GmbH",
+      "GmbH",
+      "LGDJ"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        68.0,
+        405.0
+      ],
+      "even": [
+        68.0,
+        405.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "DE/AT/CH": 1,
+    "FR": 1,
+    "IT": 3,
+    "NL": 1,
+    "ES": 1
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Оглавление в файле не зашито — иерархию собирать по печатному оглавлению и колонтитулам; качество поля hierarchy будет ниже.",
+      "Кликабельных сносок нет — привязка по кеглю и положению.",
+      "Типографская пагинация читается, но смещение относительно страниц файла непостоянно (вклейки, вкладки). Хранить обе нумерации, не пересчитывать.",
+      "Повторяющийся мусор (1 шаблонов) — вычистить первым шагом."
+    ]
+  }
+}

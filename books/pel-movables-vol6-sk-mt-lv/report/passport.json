@@ -1,0 +1,264 @@
+{
+  "path": "/home/user/dcfr-pdf/pel-movables-vol6-sk-mt-lv.pdf",
+  "sha256": "3994f2c7daa6c358e55c6ddfaeb66093f362e9bf3a35429d77b309caebe26bd2",
+  "pages": 599,
+  "sampled_pages": [
+    90,
+    101,
+    112,
+    123,
+    134,
+    145,
+    156,
+    167,
+    178,
+    189,
+    200,
+    211,
+    222,
+    233,
+    244,
+    255,
+    266,
+    277,
+    288,
+    299,
+    310,
+    321,
+    332,
+    343,
+    354,
+    365,
+    376,
+    387,
+    398,
+    409,
+    420,
+    431,
+    442,
+    453,
+    464,
+    475,
+    486,
+    497,
+    508,
+    519
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 11,
+    "max_depth": 1,
+    "resolved_pages": 11,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Cover",
+        "page": 1,
+        "depth": 0
+      },
+      {
+        "title": "Preface\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 6,
+        "depth": 0
+      },
+      {
+        "title": "List of Contributors\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 8,
+        "depth": 0
+      },
+      {
+        "title": "Contents\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 10,
+        "depth": 0
+      },
+      {
+        "title": "National Report on the Transfer of Ownership of Movables in The Netherlands\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 12,
+        "depth": 0
+      },
+      {
+        "title": "National Report on the Transfer of Movables in Switzerland\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 170,
+        "depth": 0
+      },
+      {
+        "title": "National Report on the Transfer of Movables in the Czech Republic\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 266,
+        "depth": 0
+      },
+      {
+        "title": "National Report on the Transfer of Movables in Slovakia\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 362,
+        "depth": 0
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 2542,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.17,
+    "offset_mode": 1,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 90,
+        "printed": null
+      },
+      {
+        "pdf_page": 101,
+        "printed": null
+      },
+      {
+        "pdf_page": 112,
+        "printed": null
+      },
+      {
+        "pdf_page": 123,
+        "printed": null
+      },
+      {
+        "pdf_page": 134,
+        "printed": null
+      },
+      {
+        "pdf_page": 145,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "10.0": 74451,
+      "8.5": 9818,
+      "9.0": 5111,
+      "9.3": 1321,
+      "11.0": 785,
+      "10.5": 579,
+      "6.0": 548,
+      "11.5": 309
+    },
+    "body": 10.0,
+    "candidates_footnote": [
+      6.0
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 640,
+    "share_at_page_bottom": 0.52
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      75,
+      69
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [
+    {
+      "line": "© sellier. european law publishers",
+      "pages": 40
+    },
+    {
+      "line": "www.sellier.de",
+      "pages": 40
+    }
+  ],
+  "units": {
+    "n° голый номер в начале абзаца": {
+      "hits": 123,
+      "monotonic_share": 0.84,
+      "first": [
+        "165",
+        "166",
+        "167",
+        "90",
+        "198"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 158,
+      "monotonic_share": 0.74,
+      "first": [
+        "5",
+        "165",
+        "166",
+        "167",
+        "90"
+      ]
+    },
+    "§ с номером": {
+      "hits": 3,
+      "monotonic_share": 0.5,
+      "first": [
+        "10",
+        "3",
+        "135"
+      ]
+    },
+    "para. англ. раздел-пункт": {
+      "hits": 1,
+      "monotonic_share": 0.0,
+      "first": [
+        "500-504"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 15235,
+    "suspicious": 2,
+    "share": 0.0001,
+    "sample": [
+      "http:",
+      "http:"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        75.0,
+        375.0
+      ],
+      "even": [
+        69.0,
+        369.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "NL": 27
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Кликабельных сносок нет — привязка по кеглю и положению.",
+      "Повторяющийся мусор (2 шаблонов) — вычистить первым шагом."
+    ]
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "path": "/home/user/dcfr-pdf/pel-faber-lurger-transfer-movables.pdf",
+  "sha256": "3cea31704040888fd9e51d76015636c0e0fb8ee1f0a8a49b67ee89154469bba2",
+  "pages": 281,
+  "sampled_pages": [
+    43,
+    48,
+    53,
+    58,
+    63,
+    68,
+    73,
+    78,
+    83,
+    88,
+    93,
+    98,
+    103,
+    108,
+    113,
+    118,
+    123,
+    128,
+    133,
+    138,
+    143,
+    148,
+    153,
+    158,
+    163,
+    168,
+    173,
+    178,
+    183,
+    188,
+    193,
+    198,
+    203,
+    208,
+    213,
+    218,
+    223,
+    228,
+    233,
+    238
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": false
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 3034,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.0,
+    "offset_mode": null,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 43,
+        "printed": null
+      },
+      {
+        "pdf_page": 48,
+        "printed": null
+      },
+      {
+        "pdf_page": 53,
+        "printed": null
+      },
+      {
+        "pdf_page": 58,
+        "printed": null
+      },
+      {
+        "pdf_page": 63,
+        "printed": null
+      },
+      {
+        "pdf_page": 68,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "9.5": 74061,
+      "8.1": 30749,
+      "6.0": 2755,
+      "8.5": 1264,
+      "11.1": 651,
+      "10.6": 436,
+      "14.1": 119,
+      "4.0": 67
+    },
+    "body": 9.5,
+    "candidates_footnote": [
+      6.0
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 2779,
+    "share_at_page_bottom": 0.86
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      10
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 158,
+      "monotonic_share": 0.79,
+      "first": [
+        "30",
+        "35",
+        "36",
+        "79",
+        "80"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 129,
+      "monotonic_share": 0.82,
+      "first": [
+        "30",
+        "79",
+        "80",
+        "81",
+        "101"
+      ]
+    },
+    "§ с номером": {
+      "hits": 4,
+      "monotonic_share": 0.33,
+      "first": [
+        "1050",
+        "321",
+        "854",
+        "43"
+      ]
+    },
+    "para. англ. раздел-пункт": {
+      "hits": 3,
+      "monotonic_share": 0.0,
+      "first": [
+        "1987-88",
+        "2002-03",
+        "1-028"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 16775,
+    "suspicious": 5,
+    "share": 0.0003,
+    "sample": [
+      "http://www.europainstitut.hu/pdf/beg17-2/smid.pdf,",
+      "(TvRg)",
+      "http://www.uni-graz.at/bre1www/tom/page",
+      "19/page20/page20.html,",
+      "LGDJ"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        57.0,
+        355.0
+      ],
+      "even": [
+        48.0,
+        346.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "DE/AT/CH": 12,
+    "NL": 1,
+    "ES": 3
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Оглавление в файле не зашито — иерархию собирать по печатному оглавлению и колонтитулам; качество поля hierarchy будет ниже.",
+      "Кликабельных сносок нет — привязка по кеглю и положению.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы."
+    ]
+  }
+}

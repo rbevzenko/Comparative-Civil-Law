@@ -1,0 +1,250 @@
+{
+  "path": "/home/user/dcfr-pdf/dcfr-outline.pdf",
+  "sha256": "91c54045b0eea1571726057aa09c445857af83e9abde8f4cfe7d10c6e16e47dc",
+  "pages": 648,
+  "sampled_pages": [
+    98,
+    110,
+    122,
+    134,
+    146,
+    158,
+    170,
+    182,
+    194,
+    206,
+    218,
+    230,
+    242,
+    254,
+    266,
+    278,
+    290,
+    302,
+    314,
+    326,
+    338,
+    350,
+    362,
+    374,
+    386,
+    398,
+    410,
+    422,
+    434,
+    446,
+    458,
+    470,
+    482,
+    494,
+    506,
+    518,
+    530,
+    542,
+    554,
+    566
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 1645,
+    "max_depth": 7,
+    "resolved_pages": 1645,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Introduction",
+        "page": 5,
+        "depth": 0
+      },
+      {
+        "title": "General",
+        "page": 7,
+        "depth": 1
+      },
+      {
+        "title": "DCFR and CFR distinguished",
+        "page": 7,
+        "depth": 2
+      },
+      {
+        "title": "Revision of the interim outline edition",
+        "page": 8,
+        "depth": 2
+      },
+      {
+        "title": "Paperback and hardcover editions of the final DCFR",
+        "page": 9,
+        "depth": 2
+      },
+      {
+        "title": "An academic, not a politically authorised text",
+        "page": 10,
+        "depth": 2
+      },
+      {
+        "title": "About this outline edition",
+        "page": 10,
+        "depth": 2
+      },
+      {
+        "title": "The purposes of the DCFR",
+        "page": 11,
+        "depth": 1
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 1510,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 1.0,
+    "offset_mode": -4,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 98,
+        "printed": 114
+      },
+      {
+        "pdf_page": 110,
+        "printed": 106
+      },
+      {
+        "pdf_page": 122,
+        "printed": 118
+      },
+      {
+        "pdf_page": 134,
+        "printed": 130
+      },
+      {
+        "pdf_page": 146,
+        "printed": 142
+      },
+      {
+        "pdf_page": 158,
+        "printed": 154
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "9.2": 50837,
+      "10.0": 3218,
+      "8.0": 1334,
+      "8.5": 869,
+      "11.0": 831,
+      "8.7": 300,
+      "7.5": 222,
+      "8.2": 185
+    },
+    "body": 9.2,
+    "candidates_footnote": [
+      7.5
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 30,
+    "share_at_page_bottom": 0.5
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      57,
+      56,
+      67
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 7,
+      "monotonic_share": 1.0,
+      "first": [
+        "54",
+        "55",
+        "114",
+        "115",
+        "116"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 5,
+      "monotonic_share": 1.0,
+      "first": [
+        "114",
+        "115",
+        "116",
+        "117",
+        "118"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 11182,
+    "suspicious": 6,
+    "share": 0.0005,
+    "sample": [
+      "DCFR.",
+      "DCFR",
+      "DCFR",
+      "DCFR",
+      "DCFR",
+      "DCFR"
+    ]
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        71.0,
+        311.0
+      ],
+      "even": [
+        71.0,
+        311.0
+      ]
+    },
+    "left": {
+      "hits": 46,
+      "monotonic_share": 0.98,
+      "even_page_share": 1.0,
+      "first": [
+        54,
+        114,
+        115,
+        116,
+        117,
+        118
+      ]
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {},
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Кликабельных сносок нет — привязка по кеглю и положению.",
+      "Маргинальные номера у левого поля: 46 попаданий, монотонность 98%, доля чётных страниц 100% — кандидат на режим margin.",
+      "Типографская пагинация читается, но смещение относительно страниц файла непостоянно (вклейки, вкладки). Хранить обе нумерации, не пересчитывать."
+    ]
+  }
+}

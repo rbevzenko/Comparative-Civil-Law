@@ -1,0 +1,260 @@
+{
+  "path": "/home/user/dcfr-pdf/pel-movables-vol3-de-gr-lt-hu.pdf",
+  "sha256": "37fd2c248c7239470f1c92cc79a3b84c540d264cd12d7cb6fe71e4a71f30a511",
+  "pages": 713,
+  "sampled_pages": [
+    107,
+    120,
+    133,
+    146,
+    159,
+    172,
+    185,
+    198,
+    211,
+    224,
+    237,
+    250,
+    263,
+    276,
+    289,
+    302,
+    315,
+    328,
+    341,
+    354,
+    367,
+    380,
+    393,
+    406,
+    419,
+    432,
+    445,
+    458,
+    471,
+    484,
+    497,
+    510,
+    523,
+    536,
+    549,
+    562,
+    575,
+    588,
+    601,
+    614
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 11,
+    "max_depth": 1,
+    "resolved_pages": 11,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Cover",
+        "page": 1,
+        "depth": 0
+      },
+      {
+        "title": "Contents\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 10,
+        "depth": 0
+      },
+      {
+        "title": "Preface\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 6,
+        "depth": 0
+      },
+      {
+        "title": "List of Contributors\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 8,
+        "depth": 0
+      },
+      {
+        "title": "National Report on the Transfer of Movables in Germany\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 12,
+        "depth": 0
+      },
+      {
+        "title": "National Report on the Transfer of Movables in Greece\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 204,
+        "depth": 0
+      },
+      {
+        "title": "National Report on the Transfer of Movables in Lithuania\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 344,
+        "depth": 0
+      },
+      {
+        "title": "National Report on the Transfer of Movables in Hungary\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "page": 420,
+        "depth": 0
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 2487,
+    "empty_pages_share": 0.03,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.08,
+    "offset_mode": -347,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 107,
+        "printed": null
+      },
+      {
+        "pdf_page": 120,
+        "printed": null
+      },
+      {
+        "pdf_page": 133,
+        "printed": null
+      },
+      {
+        "pdf_page": 146,
+        "printed": null
+      },
+      {
+        "pdf_page": 159,
+        "printed": null
+      },
+      {
+        "pdf_page": 172,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "10.0": 77904,
+      "8.5": 11150,
+      "9.0": 4111,
+      "11.0": 892,
+      "6.0": 611,
+      "10.5": 591,
+      "11.5": 365,
+      "14.0": 29
+    },
+    "body": 10.0,
+    "candidates_footnote": [
+      6.0
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 644,
+    "share_at_page_bottom": 0.46
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      69,
+      75
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "n° голый номер в начале абзаца": {
+      "hits": 114,
+      "monotonic_share": 0.85,
+      "first": [
+        "96",
+        "376",
+        "377",
+        "419",
+        "420"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 151,
+      "monotonic_share": 0.73,
+      "first": [
+        "96",
+        "376",
+        "377",
+        "6",
+        "419"
+      ]
+    },
+    "§ с номером": {
+      "hits": 9,
+      "monotonic_share": 0.25,
+      "first": [
+        "135",
+        "946",
+        "934",
+        "449",
+        "932"
+      ]
+    },
+    "para. англ. раздел-пункт": {
+      "hits": 2,
+      "monotonic_share": 0.0,
+      "first": [
+        "573-648",
+        "186-202"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 15248,
+    "suspicious": 5,
+    "share": 0.0003,
+    "sample": [
+      "BGHZ",
+      "BGHZ",
+      "BGHZ",
+      "BGHZ",
+      "BGHZ"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        75.0,
+        375.0
+      ],
+      "even": [
+        69.0,
+        370.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "ES": 1
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Кликабельных сносок нет — привязка по кеглю и положению."
+    ]
+  }
+}

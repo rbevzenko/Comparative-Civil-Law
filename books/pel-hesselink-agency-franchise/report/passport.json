@@ -1,0 +1,203 @@
+{
+  "path": "/home/user/dcfr-pdf/pel-hesselink-agency-franchise.pdf",
+  "sha256": "0f8908350a1df069c93f2a4287138106cc28e2fe93f6a90e157cbf379affc497",
+  "pages": 414,
+  "sampled_pages": [
+    63,
+    70,
+    77,
+    84,
+    91,
+    98,
+    105,
+    112,
+    119,
+    126,
+    133,
+    140,
+    147,
+    154,
+    161,
+    168,
+    175,
+    182,
+    189,
+    196,
+    203,
+    210,
+    217,
+    224,
+    231,
+    238,
+    245,
+    252,
+    259,
+    266,
+    273,
+    280,
+    287,
+    294,
+    301,
+    308,
+    315,
+    322,
+    329,
+    336
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": false
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 2149,
+    "empty_pages_share": 0.05,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.97,
+    "offset_mode": -43,
+    "offset_stable": true,
+    "sample": [
+      {
+        "pdf_page": 63,
+        "printed": 20
+      },
+      {
+        "pdf_page": 70,
+        "printed": 27
+      },
+      {
+        "pdf_page": 77,
+        "printed": 34
+      },
+      {
+        "pdf_page": 84,
+        "printed": 41
+      },
+      {
+        "pdf_page": 91,
+        "printed": 48
+      },
+      {
+        "pdf_page": 98,
+        "printed": 55
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "9.5": 57634,
+      "9.0": 15893,
+      "10.0": 1860,
+      "8.4": 1626,
+      "10.5": 1515,
+      "8.5": 1249,
+      "11.0": 640,
+      "8.9": 226
+    },
+    "body": 9.5,
+    "candidates_footnote": []
+  },
+  "footnotes": {
+    "small_font_chars": 2,
+    "share_at_page_bottom": 0.5
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      89,
+      69
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 23,
+      "monotonic_share": 0.59,
+      "first": [
+        "2",
+        "1",
+        "2",
+        "3",
+        "3"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 3,
+      "monotonic_share": 0.0,
+      "first": [
+        "2",
+        "1",
+        "1"
+      ]
+    },
+    "§ с номером": {
+      "hits": 2,
+      "monotonic_share": 0.0,
+      "first": [
+        "86b",
+        "86b"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 14446,
+    "suspicious": 4,
+    "share": 0.0003,
+    "sample": [
+      "przyj˛ecia",
+      "przyj˛eciu",
+      "przy",
+      "kt(cid:14)rych"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        89.0,
+        427.0
+      ],
+      "even": [
+        69.0,
+        407.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "DE/AT/CH": 2,
+    "IT": 5,
+    "NL": 50,
+    "ES": 5
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Оглавление в файле не зашито — иерархию собирать по печатному оглавлению и колонтитулам; качество поля hierarchy будет ниже.",
+      "Кегль сносок не отделяется от основного текста — отделять по положению на полосе.",
+      "Кликабельных сносок нет — привязка по кеглю и положению."
+    ]
+  }
+}
