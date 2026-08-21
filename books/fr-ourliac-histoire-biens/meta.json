@@ -1,12 +1,16 @@
 {
   "book_id": "fr-ourliac-histoire-biens",
-  "authors": [],
-  "title": "",
-  "edition": "",
-  "year": null,
-  "publisher": "",
-  "jurisdiction": "",
-  "language": "",
+  "authors": [
+    "Paul Ourliac",
+    "Jehan de Malafosse"
+  ],
+  "title": "Histoire du droit privé. 2. Les biens",
+  "edition": "2e éd. mise à jour",
+  "year": 1971,
+  "publisher": "Presses Universitaires de France",
+  "jurisdiction": "FR",
+  "language": "fr",
   "isbn": null,
-  "notes": "откуда взяты выходные данные: титул, оборот титула, слова человека"
+  "notes": "Серия «Thémis», под ред. Мориса Дюверже. Оборот титула: «1re édition: 1er trimestre 1961; 2e édition mise à jour: 2e trimestre 1971». ВНИМАНИЕ: в файле ДВОЙНОЙ текстовый слой — распознанный текст вшит дважды со сдвигом меньше интерлиньяжа. Второй слой снят scripts/pages_digital_dedup.py; после чистки доля подозрительных слов 0.4%, но остатки удвоения в латинских цитатах и библиографических строках сохраняются. Текст пригоден для поиска, НЕ для дословного цитирования.",
+  "service_source_id": "aeb6d1a3-7e4b-4939-88ac-573aba0586c8"
 }
