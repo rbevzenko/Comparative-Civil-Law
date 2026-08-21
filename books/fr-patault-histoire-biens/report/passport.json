@@ -1,0 +1,265 @@
+{
+  "path": "/home/user/fr-pdf/patault-histoire-biens.pdf",
+  "sha256": "475f8012cad7b919f7842963e522395bb04e0393880e879f0e5f6d4b423328bd",
+  "pages": 476,
+  "sampled_pages": [
+    72,
+    80,
+    88,
+    96,
+    104,
+    112,
+    120,
+    128,
+    136,
+    144,
+    152,
+    160,
+    168,
+    176,
+    184,
+    192,
+    200,
+    208,
+    216,
+    224,
+    232,
+    240,
+    248,
+    256,
+    264,
+    272,
+    280,
+    288,
+    296,
+    304,
+    312,
+    320,
+    328,
+    336,
+    344,
+    352,
+    360,
+    368,
+    376,
+    384
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 175,
+    "max_depth": 5,
+    "resolved_pages": 175,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Présentation",
+        "page": 2,
+        "depth": 0
+      },
+      {
+        "title": "Page de titre",
+        "page": 3,
+        "depth": 0
+      },
+      {
+        "title": "Sommaire",
+        "page": 4,
+        "depth": 0
+      },
+      {
+        "title": "TABLEAU DES ABRÉVIATIONS",
+        "page": 15,
+        "depth": 0
+      },
+      {
+        "title": "Avant-propos",
+        "page": 17,
+        "depth": 0
+      },
+      {
+        "title": "PREMIÈRE PARTIE - L’IMMEUBLE : LES PROPRIÉTÉS SIMULTANÉES DU DROIT COUTUMIER",
+        "page": 18,
+        "depth": 0
+      },
+      {
+        "title": "En préliminaire - Nos deux cultures juridiques de la propriété foncière",
+        "page": 19,
+        "depth": 1
+      },
+      {
+        "title": "Chapitre 1 - Le concept médiéval de l’appropriation foncière : la saisine",
+        "page": 22,
+        "depth": 1
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 15,
+    "with_destination": 15,
+    "per_page": 0.4,
+    "sample": [
+      {
+        "page": 88,
+        "rect": [
+          160,
+          539,
+          174,
+          554
+        ]
+      },
+      {
+        "page": 96,
+        "rect": [
+          449,
+          554,
+          463,
+          569
+        ]
+      },
+      {
+        "page": 128,
+        "rect": [
+          274,
+          561,
+          287,
+          576
+        ]
+      }
+    ]
+  },
+  "text_layer": {
+    "median_chars_per_page": 2027,
+    "empty_pages_share": 0.1,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.0,
+    "offset_mode": null,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 72,
+        "printed": null
+      },
+      {
+        "pdf_page": 80,
+        "printed": null
+      },
+      {
+        "pdf_page": 88,
+        "printed": null
+      },
+      {
+        "pdf_page": 96,
+        "printed": null
+      },
+      {
+        "pdf_page": 104,
+        "printed": null
+      },
+      {
+        "pdf_page": 112,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "15.0": 67587,
+      "19.4": 555,
+      "12.5": 144,
+      "30.0": 3
+    },
+    "body": 15.0,
+    "candidates_footnote": []
+  },
+  "footnotes": {
+    "small_font_chars": 144,
+    "share_at_page_bottom": 0.22
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      77,
+      106,
+      76
+    ]
+  },
+  "duplicate_pages": 2,
+  "repeated_lines": [],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 26,
+      "monotonic_share": 1.0,
+      "first": [
+        "29",
+        "42",
+        "47",
+        "48",
+        "60"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 25,
+      "monotonic_share": 1.0,
+      "first": [
+        "42",
+        "47",
+        "48",
+        "60",
+        "85"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 10523,
+    "suspicious": 2,
+    "share": 0.0002,
+    "sample": [
+      "MSHDB,",
+      "MSHDB,"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        77.0,
+        535.0
+      ],
+      "even": [
+        77.0,
+        535.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "FR": 1,
+    "IT": 2,
+    "ES": 2
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Кегль сносок не отделяется от основного текста — отделять по положению на полосе.",
+      "Сноски кликабельны — привязку берём из файла напрямую, без эвристик.",
+      "Одинаковых страниц в выборке: 2 — проверить, не дубль ли разворота в файле."
+    ]
+  }
+}

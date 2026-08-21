@@ -1,0 +1,270 @@
+{
+  "path": "/home/user/fr-pdf/gorlier-contrats-speciaux.pdf",
+  "sha256": "3daf27864a4293428b348402cb47a93b98ca47edaf2b96c94789956e2a099062",
+  "pages": 421,
+  "sampled_pages": [
+    64,
+    71,
+    78,
+    85,
+    92,
+    99,
+    106,
+    113,
+    120,
+    127,
+    134,
+    141,
+    148,
+    155,
+    162,
+    169,
+    176,
+    183,
+    190,
+    197,
+    204,
+    211,
+    218,
+    225,
+    232,
+    239,
+    246,
+    253,
+    260,
+    267,
+    274,
+    281,
+    288,
+    295,
+    302,
+    309,
+    316,
+    323,
+    330,
+    337
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 354,
+    "max_depth": 6,
+    "resolved_pages": 354,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Page de titre",
+        "page": 2,
+        "depth": 0
+      },
+      {
+        "title": "Page de copyright",
+        "page": 4,
+        "depth": 0
+      },
+      {
+        "title": "Introduction/Préface",
+        "page": 5,
+        "depth": 0
+      },
+      {
+        "title": "I Objet de l’ouvrage : le Droit des contrats spéciaux",
+        "page": 5,
+        "depth": 1
+      },
+      {
+        "title": "II Objectifs de l’ouvrage",
+        "page": 5,
+        "depth": 1
+      },
+      {
+        "title": "III Plan de l’ouvrage",
+        "page": 6,
+        "depth": 1
+      },
+      {
+        "title": "Sommaire",
+        "page": 8,
+        "depth": 0
+      },
+      {
+        "title": "Fiche 1 – Que sont les contrats spéciaux ?",
+        "page": 10,
+        "depth": 1
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 75,
+    "with_destination": 75,
+    "per_page": 1.9,
+    "sample": [
+      {
+        "page": 64,
+        "rect": [
+          131,
+          509,
+          137,
+          522
+        ]
+      },
+      {
+        "page": 64,
+        "rect": [
+          289,
+          427,
+          295,
+          440
+        ]
+      },
+      {
+        "page": 64,
+        "rect": [
+          77,
+          256,
+          83,
+          269
+        ]
+      }
+    ]
+  },
+  "text_layer": {
+    "median_chars_per_page": 1326,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.0,
+    "offset_mode": null,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 64,
+        "printed": null
+      },
+      {
+        "pdf_page": 71,
+        "printed": null
+      },
+      {
+        "pdf_page": 78,
+        "printed": null
+      },
+      {
+        "pdf_page": 85,
+        "printed": null
+      },
+      {
+        "pdf_page": 92,
+        "printed": null
+      },
+      {
+        "pdf_page": 99,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "15.0": 45850,
+      "11.3": 4241,
+      "13.1": 2734,
+      "16.9": 672,
+      "18.7": 290,
+      "20.6": 282,
+      "22.5": 238,
+      "11.2": 1
+    },
+    "body": 15.0,
+    "candidates_footnote": [
+      11.3,
+      13.1
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 3471,
+    "share_at_page_bottom": 0.33
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      77,
+      79,
+      103,
+      81
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 115,
+      "monotonic_share": 0.72,
+      "first": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 42,
+      "monotonic_share": 0.71,
+      "first": [
+        "4",
+        "5",
+        "1",
+        "2",
+        "3"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 8712,
+    "suspicious": 3,
+    "share": 0.0003,
+    "sample": [
+      "LGDJ.",
+      "LGDJ,",
+      "LGDJ,"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        77.0,
+        535.0
+      ],
+      "even": [
+        77.0,
+        535.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "FR": 23
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Сноски кликабельны — привязку берём из файла напрямую, без эвристик."
+    ]
+  }
+}

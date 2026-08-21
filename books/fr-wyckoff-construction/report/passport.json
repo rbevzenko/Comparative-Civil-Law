@@ -1,0 +1,253 @@
+{
+  "path": "/home/user/fr-pdf/wyckoff-construction.pdf",
+  "sha256": "3daa710f96124cccd8528b43c29696cb400bdf91c54ee6ef986dadc4be991b63",
+  "pages": 432,
+  "sampled_pages": [
+    65,
+    73,
+    81,
+    89,
+    97,
+    105,
+    113,
+    121,
+    129,
+    137,
+    145,
+    153,
+    161,
+    169,
+    177,
+    185,
+    193,
+    201,
+    209,
+    217,
+    225,
+    233,
+    241,
+    249,
+    257,
+    265,
+    273,
+    281,
+    289,
+    297,
+    305,
+    313,
+    321,
+    329,
+    337,
+    345,
+    353,
+    361,
+    369,
+    377
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 260,
+    "max_depth": 4,
+    "resolved_pages": 260,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "TABLE DES MATIÈRES",
+        "page": 6,
+        "depth": 0
+      },
+      {
+        "title": "Partie 1 - LES INTERVENANTS À L’ACTE DE CONSTRUIRE",
+        "page": 15,
+        "depth": 0
+      },
+      {
+        "title": "1 - LES MAÎTRES D’OUVRAGE",
+        "page": 17,
+        "depth": 1
+      },
+      {
+        "title": "1. Introduction",
+        "page": 17,
+        "depth": 2
+      },
+      {
+        "title": "1.1. Les trois grandes catégories de maîtres d’ouvrage",
+        "page": 19,
+        "depth": 3
+      },
+      {
+        "title": "1.2. Les fonctions des maîtres d’ouvrage",
+        "page": 22,
+        "depth": 3
+      },
+      {
+        "title": "1.3. Le vocabulaire européen : pouvoir adjudicateur (PA) et entité adjudicatrice (EA)",
+        "page": 24,
+        "depth": 3
+      },
+      {
+        "title": "2. La maîtrise d’ouvrage déléguée (MOD)",
+        "page": 26,
+        "depth": 2
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 1,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 2426,
+    "empty_pages_share": 0.03,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.0,
+    "offset_mode": null,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 65,
+        "printed": null
+      },
+      {
+        "pdf_page": 73,
+        "printed": null
+      },
+      {
+        "pdf_page": 81,
+        "printed": null
+      },
+      {
+        "pdf_page": 89,
+        "printed": null
+      },
+      {
+        "pdf_page": 97,
+        "printed": null
+      },
+      {
+        "pdf_page": 105,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "10.0": 92489,
+      "12.0": 1102,
+      "14.0": 273,
+      "8.0": 263,
+      "22.0": 52,
+      "9.0": 25,
+      "7.0": 23,
+      "26.0": 12
+    },
+    "body": 10.0,
+    "candidates_footnote": [
+      8.0
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 286,
+    "share_at_page_bottom": 0.01
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      157,
+      121
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 35,
+      "monotonic_share": 0.53,
+      "first": [
+        "1",
+        "2",
+        "1",
+        "3",
+        "3"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 2,
+      "monotonic_share": 1.0,
+      "first": [
+        "5",
+        "10"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 14439,
+    "suspicious": 19,
+    "share": 0.0013,
+    "sample": [
+      "PPSPS",
+      "PPSPS",
+      "PPSPS",
+      "PPSPS",
+      "PPSPS",
+      "CHSCT",
+      "CHSCT",
+      "(FNTP).",
+      "(CGCT,",
+      "CGCT).",
+      "CGCT).",
+      "CG3P)"
+    ]
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        157.0,
+        476.0
+      ],
+      "even": [
+        157.0,
+        476.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 37,
+      "monotonic_share": 1.0,
+      "even_page_share": 0.0,
+      "first": [
+        51,
+        59,
+        67,
+        75,
+        83,
+        91
+      ]
+    }
+  },
+  "statutory": {
+    "FR": 3
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Кликабельных сносок нет — привязка по кеглю и положению.",
+      "Маргинальные номера у правого поля: 37 попаданий, монотонность 100%, доля чётных страниц 0% — кандидат на режим margin."
+    ]
+  }
+}

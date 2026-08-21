@@ -1,0 +1,280 @@
+{
+  "path": "/home/user/fr-pdf/simler-suretes.pdf",
+  "sha256": "828def0b64c2441d9aea24c02c802a78e179158e6c68d1cba3aebe91d8ea47c1",
+  "pages": 864,
+  "sampled_pages": [
+    130,
+    146,
+    162,
+    178,
+    194,
+    210,
+    226,
+    242,
+    258,
+    274,
+    290,
+    306,
+    322,
+    338,
+    354,
+    370,
+    386,
+    402,
+    418,
+    434,
+    450,
+    466,
+    482,
+    498,
+    514,
+    530,
+    546,
+    562,
+    578,
+    594,
+    610,
+    626,
+    642,
+    658,
+    674,
+    690,
+    706,
+    722,
+    738,
+    754
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 183,
+    "max_depth": 9,
+    "resolved_pages": 183,
+    "section_nodes": 57,
+    "sample": [
+      {
+        "title": "SOMMAIRE",
+        "page": 7,
+        "depth": 0
+      },
+      {
+        "title": "TABLE DES MATIÈRES",
+        "page": 857,
+        "depth": 0
+      },
+      {
+        "title": "PRÉLIMINAIRES",
+        "page": 11,
+        "depth": 1
+      },
+      {
+        "title": "PREMIÈRE PARTIE LES SÛRETÉS",
+        "page": 13,
+        "depth": 1
+      },
+      {
+        "title": "INTRODUCTION THÉORIE GÉNÉRALE\rET CLASSIFICATION DES SÛRETÉS",
+        "page": 15,
+        "depth": 2
+      },
+      {
+        "title": "§ 1. Fonctions",
+        "page": 16,
+        "depth": 3
+      },
+      {
+        "title": "§ 2. Évolution",
+        "page": 17,
+        "depth": 3
+      },
+      {
+        "title": "§ 3. Classification",
+        "page": 20,
+        "depth": 3
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 3460,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.07,
+    "offset_mode": -273,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 130,
+        "printed": null
+      },
+      {
+        "pdf_page": 146,
+        "printed": null
+      },
+      {
+        "pdf_page": 162,
+        "printed": null
+      },
+      {
+        "pdf_page": 178,
+        "printed": null
+      },
+      {
+        "pdf_page": 194,
+        "printed": null
+      },
+      {
+        "pdf_page": 210,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "9.8": 77155,
+      "7.8": 54599,
+      "8.8": 3171,
+      "11.0": 1454,
+      "7.0": 1018,
+      "9.7": 576,
+      "4.7": 277,
+      "8.7": 161
+    },
+    "body": 9.8,
+    "candidates_footnote": [
+      4.7,
+      7.0,
+      7.8
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 32007,
+    "share_at_page_bottom": 0.86
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      17,
+      40,
+      18,
+      5
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [
+    {
+      "line": "o",
+      "pages": 143
+    },
+    {
+      "line": "1",
+      "pages": 35
+    },
+    {
+      "line": "2",
+      "pages": 34
+    },
+    {
+      "line": "3",
+      "pages": 29
+    },
+    {
+      "line": "4",
+      "pages": 23
+    },
+    {
+      "line": "o o",
+      "pages": 23
+    }
+  ],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 220,
+      "monotonic_share": 0.81,
+      "first": [
+        "120",
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 64,
+      "monotonic_share": 0.71,
+      "first": [
+        "120",
+        "136",
+        "148",
+        "152",
+        "168"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 22011,
+    "suspicious": 4,
+    "share": 0.0002,
+    "sample": [
+      "LGDJ,",
+      "LGDJ,",
+      "LGDJ,",
+      "LGDJ,"
+    ]
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        40.0,
+        354.0
+      ],
+      "even": [
+        40.0,
+        354.0
+      ]
+    },
+    "left": {
+      "hits": 39,
+      "monotonic_share": 1.0,
+      "even_page_share": 1.0,
+      "first": [
+        132,
+        148,
+        168,
+        169,
+        182,
+        203
+      ]
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "FR": 3
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "В оглавлении 57 узлов с номером параграфа: адрес единицы, скорее всего, составной (§ NNN + номер), это влияет на id.",
+      "Кликабельных сносок нет — привязка по кеглю и положению.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы.",
+      "Маргинальные номера у левого поля: 39 попаданий, монотонность 100%, доля чётных страниц 100% — кандидат на режим margin.",
+      "Повторяющийся мусор (6 шаблонов) — вычистить первым шагом."
+    ]
+  }
+}

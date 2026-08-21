@@ -1,0 +1,251 @@
+{
+  "path": "/home/user/fr-pdf/chantepie-latina.pdf",
+  "sha256": "fc57c3df43bd427ca89edea114779e45a78249d8daa585df374e4c07e5d68b33",
+  "pages": 1300,
+  "sampled_pages": [
+    196,
+    220,
+    244,
+    268,
+    292,
+    316,
+    340,
+    364,
+    388,
+    412,
+    436,
+    460,
+    484,
+    508,
+    532,
+    556,
+    580,
+    604,
+    628,
+    652,
+    676,
+    700,
+    724,
+    748,
+    772,
+    796,
+    820,
+    844,
+    868,
+    892,
+    916,
+    940,
+    964,
+    988,
+    1012,
+    1036,
+    1060,
+    1084,
+    1108,
+    1132
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 7,
+    "max_depth": 1,
+    "resolved_pages": 7,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "1",
+        "page": 1,
+        "depth": 0
+      },
+      {
+        "title": "2",
+        "page": 202,
+        "depth": 0
+      },
+      {
+        "title": "3",
+        "page": 402,
+        "depth": 0
+      },
+      {
+        "title": "4",
+        "page": 603,
+        "depth": 0
+      },
+      {
+        "title": "5",
+        "page": 803,
+        "depth": 0
+      },
+      {
+        "title": "6",
+        "page": 1005,
+        "depth": 0
+      },
+      {
+        "title": "7",
+        "page": 1205,
+        "depth": 0
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 2919,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.0,
+    "offset_mode": null,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 196,
+        "printed": null
+      },
+      {
+        "pdf_page": 220,
+        "printed": null
+      },
+      {
+        "pdf_page": 244,
+        "printed": null
+      },
+      {
+        "pdf_page": 268,
+        "printed": null
+      },
+      {
+        "pdf_page": 292,
+        "printed": null
+      },
+      {
+        "pdf_page": 316,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "9.1": 72678,
+      "5.5": 25456,
+      "7.9": 13693,
+      "6.0": 1745,
+      "8.4": 708,
+      "10.1": 230,
+      "9.6": 202,
+      "25.0": 181
+    },
+    "body": 9.1,
+    "candidates_footnote": [
+      5.5,
+      6.0
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 27375,
+    "share_at_page_bottom": 0.96
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      35,
+      34,
+      36,
+      25
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "n° голый номер в начале абзаца": {
+      "hits": 198,
+      "monotonic_share": 0.85,
+      "first": [
+        "196",
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 232,
+      "monotonic_share": 0.79,
+      "first": [
+        "196",
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "§ с номером": {
+      "hits": 1,
+      "monotonic_share": 0.0,
+      "first": [
+        "2"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 17464,
+    "suspicious": 7,
+    "share": 0.0004,
+    "sample": [
+      "LGDJ,",
+      "LGDJ,",
+      "LGDJ,",
+      "LGDJ,",
+      "LGDJ,",
+      "LGDJ,",
+      "LGDJ,"
+    ]
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        44.0,
+        349.0
+      ],
+      "even": [
+        44.0,
+        349.0
+      ]
+    },
+    "left": {
+      "hits": 1,
+      "monotonic_share": 0.0,
+      "even_page_share": 1.0,
+      "first": [
+        5
+      ]
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "FR": 5
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Кликабельных сносок нет — привязка по кеглю и положению.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы."
+    ]
+  }
+}

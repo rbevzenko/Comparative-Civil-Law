@@ -1,0 +1,257 @@
+{
+  "path": "/home/user/fr-pdf/duchemin-travail.pdf",
+  "sha256": "eafbe926978ec50de7f9c6e7fe2aca63dbb0e6558be4ef195a833587a33c97a1",
+  "pages": 754,
+  "sampled_pages": [
+    114,
+    128,
+    142,
+    156,
+    170,
+    184,
+    198,
+    212,
+    226,
+    240,
+    254,
+    268,
+    282,
+    296,
+    310,
+    324,
+    338,
+    352,
+    366,
+    380,
+    394,
+    408,
+    422,
+    436,
+    450,
+    464,
+    478,
+    492,
+    506,
+    520,
+    534,
+    548,
+    562,
+    576,
+    590,
+    604,
+    618,
+    632,
+    646,
+    660
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 252,
+    "max_depth": 3,
+    "resolved_pages": 252,
+    "section_nodes": 32,
+    "sample": [
+      {
+        "title": "Sommaire",
+        "page": 11,
+        "depth": 0
+      },
+      {
+        "title": "Introduction",
+        "page": 13,
+        "depth": 0
+      },
+      {
+        "title": "Partie 1 : L’application du régime général des obligations altérée par le droit du travail",
+        "page": 41,
+        "depth": 0
+      },
+      {
+        "title": "Titre 1 : Le régime général des obligations contenu",
+        "page": 42,
+        "depth": 1
+      },
+      {
+        "title": "Chapitre 1 : L’application filtrée : les régimes spéciaux des créances salariales",
+        "page": 44,
+        "depth": 2
+      },
+      {
+        "title": "Section 1 : Les opérations sur obligations absorbées par la cession des rémunérations",
+        "page": 47,
+        "depth": 2
+      },
+      {
+        "title": "§1 : L’identification de la cession des rémunérations",
+        "page": 47,
+        "depth": 2
+      },
+      {
+        "title": "I - Le domaine de la cession des rémunérations",
+        "page": 47,
+        "depth": 2
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 2919,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 1.0,
+    "offset_mode": -12,
+    "offset_stable": true,
+    "sample": [
+      {
+        "pdf_page": 114,
+        "printed": 102
+      },
+      {
+        "pdf_page": 128,
+        "printed": 116
+      },
+      {
+        "pdf_page": 142,
+        "printed": 130
+      },
+      {
+        "pdf_page": 156,
+        "printed": 144
+      },
+      {
+        "pdf_page": 170,
+        "printed": 158
+      },
+      {
+        "pdf_page": 184,
+        "printed": 172
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "12.0": 60424,
+      "10.0": 49119,
+      "6.0": 2080,
+      "6.7": 599,
+      "8.0": 553
+    },
+    "body": 12.0,
+    "candidates_footnote": [
+      6.0,
+      6.7,
+      8.0,
+      10.0
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 18338,
+    "share_at_page_bottom": 0.84
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      99
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [
+    {
+      "line": "DUCHEMIN Clément | Thèse de doctorat | Novembre 2023",
+      "pages": 40
+    }
+  ],
+  "units": {
+    "n° голый номер в начале абзаца": {
+      "hits": 145,
+      "monotonic_share": 1.0,
+      "first": [
+        "522",
+        "523",
+        "524",
+        "525",
+        "592"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 178,
+      "monotonic_share": 0.86,
+      "first": [
+        "68",
+        "522",
+        "523",
+        "524",
+        "525"
+      ]
+    },
+    "para. англ. раздел-пункт": {
+      "hits": 3,
+      "monotonic_share": 0.0,
+      "first": [
+        "89-42",
+        "72-40",
+        "17-12"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 16894,
+    "suspicious": 5,
+    "share": 0.0003,
+    "sample": [
+      "LGDJ,",
+      "LGDJ,",
+      "LGDJ,",
+      "LGDJ,",
+      "LGDJ,"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        99.0,
+        542.0
+      ],
+      "even": [
+        99.0,
+        542.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "FR": 22
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "В оглавлении 32 узлов с номером параграфа: адрес единицы, скорее всего, составной (§ NNN + номер), это влияет на id.",
+      "Кликабельных сносок нет — привязка по кеглю и положению.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы.",
+      "Повторяющийся мусор (1 шаблонов) — вычистить первым шагом."
+    ]
+  }
+}

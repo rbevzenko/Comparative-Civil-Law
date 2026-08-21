@@ -1,0 +1,313 @@
+{
+  "path": "/home/user/fr-pdf/malaurie-biens.pdf",
+  "sha256": "86a900f1c6c5e70311255e8ca1f223df10a4b8c08fd2af0d88a7b6993eee5f18",
+  "pages": 450,
+  "sampled_pages": [
+    68,
+    76,
+    84,
+    92,
+    100,
+    108,
+    116,
+    124,
+    132,
+    140,
+    148,
+    156,
+    164,
+    172,
+    180,
+    188,
+    196,
+    204,
+    212,
+    220,
+    228,
+    236,
+    244,
+    252,
+    260,
+    268,
+    276,
+    284,
+    292,
+    300,
+    308,
+    316,
+    324,
+    332,
+    340,
+    348,
+    356,
+    364,
+    372,
+    380
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 40,
+    "max_depth": 4,
+    "resolved_pages": 38,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Sommaire",
+        "page": 5,
+        "depth": 0
+      },
+      {
+        "title": "Principales abréviations",
+        "page": 7,
+        "depth": 0
+      },
+      {
+        "title": "Bibliographie générale",
+        "page": 11,
+        "depth": 0
+      },
+      {
+        "title": "Premières vues sur les biens",
+        "page": 13,
+        "depth": 0
+      },
+      {
+        "title": "Livre I. - LES RICHESSES",
+        "page": 41,
+        "depth": 0
+      },
+      {
+        "title": "Titre I. - MEUBLES ET IMMEUBLES ET DISTINCTIONS SECONDAIRES",
+        "page": 43,
+        "depth": 1
+      },
+      {
+        "title": "Chapitre I. - MEUBLES ET IMMEUBLES",
+        "page": 45,
+        "depth": 2
+      },
+      {
+        "title": "Chapitre II. - DISTINCTIONS SECONDAIRES",
+        "page": 63,
+        "depth": 2
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 55,
+    "with_destination": 55,
+    "per_page": 1.4,
+    "sample": [
+      {
+        "page": 68,
+        "rect": [
+          140,
+          137,
+          149,
+          145
+        ]
+      },
+      {
+        "page": 76,
+        "rect": [
+          136,
+          231,
+          149,
+          239
+        ]
+      },
+      {
+        "page": 84,
+        "rect": [
+          136,
+          192,
+          149,
+          200
+        ]
+      }
+    ]
+  },
+  "text_layer": {
+    "median_chars_per_page": 3579,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.17,
+    "offset_mode": -70,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 68,
+        "printed": null
+      },
+      {
+        "pdf_page": 76,
+        "printed": null
+      },
+      {
+        "pdf_page": 84,
+        "printed": 14
+      },
+      {
+        "pdf_page": 92,
+        "printed": null
+      },
+      {
+        "pdf_page": 100,
+        "printed": null
+      },
+      {
+        "pdf_page": 108,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "8.0": 59756,
+      "10.0": 34686,
+      "8.5": 34000,
+      "5.6": 735,
+      "4.6": 665,
+      "11.0": 186,
+      "13.0": 121,
+      "8.4": 116
+    },
+    "body": 8.0,
+    "candidates_footnote": [
+      4.6,
+      5.6
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 11703,
+    "share_at_page_bottom": 0.51
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      38
+    ]
+  },
+  "duplicate_pages": 3,
+  "repeated_lines": [
+    {
+      "line": "o",
+      "pages": 76
+    },
+    {
+      "line": "Exemplaire personnel de ROMAN BEVZENKO - rbevzenko@gmail.com - Diffusion interdite.",
+      "pages": 40
+    },
+    {
+      "line": "e o",
+      "pages": 38
+    },
+    {
+      "line": "e",
+      "pages": 36
+    },
+    {
+      "line": "re",
+      "pages": 18
+    },
+    {
+      "line": "re o",
+      "pages": 18
+    }
+  ],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 285,
+      "monotonic_share": 0.85,
+      "first": [
+        "68",
+        "91",
+        "2",
+        "24",
+        "25"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 40,
+      "monotonic_share": 0.9,
+      "first": [
+        "68",
+        "2",
+        "76",
+        "84",
+        "1"
+      ]
+    },
+    "§ с номером": {
+      "hits": 8,
+      "monotonic_share": 0.14,
+      "first": [
+        "2",
+        "1",
+        "2",
+        "2",
+        "2"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 24333,
+    "suspicious": 11,
+    "share": 0.0005,
+    "sample": [
+      "(CGPPP)",
+      "(CGPPP,",
+      "BRGM,",
+      "CGPPP,",
+      "RTDF",
+      "RLDC",
+      "LGDJ,",
+      "Dalloz-LGDJ,",
+      "LGDJ,",
+      "Dalloz/LGDJ,",
+      "LGDJ"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        85.0,
+        431.0
+      ],
+      "even": [
+        85.0,
+        431.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "FR": 4
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Сноски кликабельны — привязку берём из файла напрямую, без эвристик.",
+      "Одинаковых страниц в выборке: 3 — проверить, не дубль ли разворота в файле.",
+      "Повторяющийся мусор (6 шаблонов) — вычистить первым шагом."
+    ]
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "path": "/home/user/fr-pdf/mainguy-contrats-speciaux.pdf",
+  "sha256": "10123e2111fdeb6649b6b14c036a75cf3bc47e8d56e9decdd96b82ccceeb5a14",
+  "pages": 633,
+  "sampled_pages": [
+    95,
+    106,
+    117,
+    128,
+    139,
+    150,
+    161,
+    172,
+    183,
+    194,
+    205,
+    216,
+    227,
+    238,
+    249,
+    260,
+    271,
+    282,
+    293,
+    304,
+    315,
+    326,
+    337,
+    348,
+    359,
+    370,
+    381,
+    392,
+    403,
+    414,
+    425,
+    436,
+    447,
+    458,
+    469,
+    480,
+    491,
+    502,
+    513,
+    524
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": false
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 2317,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 1.0
+  },
+  "printed_pages": {
+    "detected_share": 0.03,
+    "offset_mode": -413,
+    "offset_stable": true,
+    "sample": [
+      {
+        "pdf_page": 95,
+        "printed": null
+      },
+      {
+        "pdf_page": 106,
+        "printed": null
+      },
+      {
+        "pdf_page": 117,
+        "printed": null
+      },
+      {
+        "pdf_page": 128,
+        "printed": null
+      },
+      {
+        "pdf_page": 139,
+        "printed": null
+      },
+      {
+        "pdf_page": 150,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "15.4": 22574,
+      "15.2": 12368,
+      "15.3": 7362,
+      "14.9": 6218,
+      "14.2": 5954,
+      "10.5": 4907,
+      "14.0": 3548,
+      "14.3": 3447
+    },
+    "body": 15.4,
+    "candidates_footnote": [
+      7.8,
+      8.3,
+      9.4,
+      9.5,
+      9.8,
+      9.9,
+      10.0,
+      10.1,
+      10.2,
+      10.3,
+      10.4,
+      10.5,
+      10.6,
+      10.7,
+      10.8,
+      10.9,
+      11.0,
+      11.5,
+      11.7,
+      11.8,
+      12.6,
+      12.8,
+      13.0,
+      13.4,
+      13.5,
+      13.6,
+      13.8
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 20007,
+    "share_at_page_bottom": 0.8
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 2,
+    "left_edges": [
+      63,
+      75,
+      76,
+      186
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [
+    {
+      "line": "1",
+      "pages": 34
+    },
+    {
+      "line": "•",
+      "pages": 22
+    },
+    {
+      "line": "2",
+      "pages": 17
+    }
+  ],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 119,
+      "monotonic_share": 0.65,
+      "first": [
+        "94",
+        "2",
+        "90",
+        "1",
+        "3"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 55,
+      "monotonic_share": 0.78,
+      "first": [
+        "94",
+        "90",
+        "1",
+        "103",
+        "116"
+      ]
+    },
+    "§ с номером": {
+      "hits": 3,
+      "monotonic_share": 0.5,
+      "first": [
+        "2",
+        "3",
+        "1"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 14668,
+    "suspicious": 109,
+    "share": 0.0074,
+    "sample": [
+      "Vtntc",
+      "administral!V('",
+      "ftvr:",
+      "Mt'strt'",
+      "LGDJ,",
+      "itltenumot1al,",
+      "ttrms",
+      "R1D",
+      "Mtstrt.",
+      "lïntc-n5ité",
+      "d1fft~ndfr",
+      "vtntt"
+    ]
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        96.0,
+        517.0
+      ],
+      "even": [
+        108.0,
+        529.0
+      ]
+    },
+    "left": {
+      "hits": 61,
+      "monotonic_share": 0.77,
+      "even_page_share": 0.43,
+      "first": [
+        94,
+        90,
+        1,
+        2,
+        103,
+        116
+      ]
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "FR": 18
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "B?",
+    "problems": [],
+    "notes": [
+      "Под текстом растр на всю полосу, но слой выглядит чистым (0.7% подозрительных слов). Слой всё равно чужой и сделан неизвестно чем; прежде чем идти веткой A, прогнать обе ветки на двух десятках страниц и сравнить.",
+      "Оглавление в файле не зашито — иерархию собирать по печатному оглавлению и колонтитулам; качество поля hierarchy будет ниже.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы.",
+      "Повторяющийся мусор (3 шаблонов) — вычистить первым шагом."
+    ]
+  }
+}

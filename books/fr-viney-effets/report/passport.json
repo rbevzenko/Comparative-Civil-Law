@@ -1,0 +1,304 @@
+{
+  "path": "/home/user/fr-pdf/viney-effets.pdf",
+  "sha256": "36d6673d42fb26a58938f9c00cbe2e89b7788476816e27b0baa564107dc30159",
+  "pages": 874,
+  "sampled_pages": [
+    132,
+    148,
+    164,
+    180,
+    196,
+    212,
+    228,
+    244,
+    260,
+    276,
+    292,
+    308,
+    324,
+    340,
+    356,
+    372,
+    388,
+    404,
+    420,
+    436,
+    452,
+    468,
+    484,
+    500,
+    516,
+    532,
+    548,
+    564,
+    580,
+    596,
+    612,
+    628,
+    644,
+    660,
+    676,
+    692,
+    708,
+    724,
+    740,
+    756
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 21,
+    "max_depth": 3,
+    "resolved_pages": 21,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Sommaire",
+        "page": 5,
+        "depth": 0
+      },
+      {
+        "title": "INTRODUCTION. TENDANCES GÉNÉRALES",
+        "page": 7,
+        "depth": 0
+      },
+      {
+        "title": "Titre I. - Les condamnations à exécuter ou à réparer en nature",
+        "page": 51,
+        "depth": 0
+      },
+      {
+        "title": "Chapitre 1. - La condamnation à exécuter en nature l'obligation méconnue",
+        "page": 55,
+        "depth": 1
+      },
+      {
+        "title": "Chapitre 2. - La réparation en nature du dommage",
+        "page": 85,
+        "depth": 1
+      },
+      {
+        "title": "Titre II. - Les dommages et intérêts",
+        "page": 143,
+        "depth": 0
+      },
+      {
+        "title": "Sous-titre I. - L'évaluation judiciaire des dommages et intérêts",
+        "page": 151,
+        "depth": 1
+      },
+      {
+        "title": "Chapitre 1. - Les principes généraux qui dominent l'évaluation judiciaire des dommages et intérêts",
+        "page": 153,
+        "depth": 2
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 30,
+    "with_destination": 30,
+    "per_page": 0.8,
+    "sample": [
+      {
+        "page": 148,
+        "rect": [
+          110,
+          103,
+          122,
+          111
+        ]
+      },
+      {
+        "page": 260,
+        "rect": [
+          247,
+          148,
+          259,
+          155
+        ]
+      },
+      {
+        "page": 276,
+        "rect": [
+          114,
+          212,
+          126,
+          219
+        ]
+      }
+    ]
+  },
+  "text_layer": {
+    "median_chars_per_page": 3082,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.0,
+    "offset_mode": null,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 132,
+        "printed": null
+      },
+      {
+        "pdf_page": 148,
+        "printed": null
+      },
+      {
+        "pdf_page": 164,
+        "printed": null
+      },
+      {
+        "pdf_page": 180,
+        "printed": null
+      },
+      {
+        "pdf_page": 196,
+        "printed": null
+      },
+      {
+        "pdf_page": 212,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "11.0": 66246,
+      "8.0": 34333,
+      "9.5": 13285,
+      "10.0": 4422,
+      "5.6": 1796,
+      "4.6": 502,
+      "6.6": 5
+    },
+    "body": 11.0,
+    "candidates_footnote": [
+      4.6,
+      5.6,
+      8.0
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 32737,
+    "share_at_page_bottom": 0.79
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      10
+    ]
+  },
+  "duplicate_pages": 1,
+  "repeated_lines": [
+    {
+      "line": "o",
+      "pages": 71
+    },
+    {
+      "line": "Exemplaire personnel de Samir Kasumov – kasumov_samir@mail.ru - Diffusion interdite",
+      "pages": 40
+    },
+    {
+      "line": "os",
+      "pages": 37
+    },
+    {
+      "line": "e",
+      "pages": 31
+    },
+    {
+      "line": "re",
+      "pages": 17
+    },
+    {
+      "line": "e o",
+      "pages": 16
+    }
+  ],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 307,
+      "monotonic_share": 0.81,
+      "first": [
+        "132",
+        "1",
+        "2",
+        "291",
+        "292"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 38,
+      "monotonic_share": 1.0,
+      "first": [
+        "132",
+        "148",
+        "164",
+        "180",
+        "196"
+      ]
+    },
+    "§ с номером": {
+      "hits": 4,
+      "monotonic_share": 0.0,
+      "first": [
+        "2",
+        "2",
+        "2",
+        "1"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 22650,
+    "suspicious": 2,
+    "share": 0.0001,
+    "sample": [
+      "LGDJ,",
+      "RLDC"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        50.0,
+        404.0
+      ],
+      "even": [
+        50.0,
+        404.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "FR": 8
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Сноски кликабельны — привязку берём из файла напрямую, без эвристик.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы.",
+      "Одинаковых страниц в выборке: 1 — проверить, не дубль ли разворота в файле.",
+      "Повторяющийся мусор (6 шаблонов) — вычистить первым шагом."
+    ]
+  }
+}

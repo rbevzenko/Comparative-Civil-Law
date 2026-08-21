@@ -1,0 +1,251 @@
+{
+  "path": "/home/user/fr-pdf/flour-rapport-obligation.pdf",
+  "sha256": "b2e4d8b3ecae7a081fdd81244e0764a3b1343b2e29cfc85904e8f8e20e617adc",
+  "pages": 3091,
+  "sampled_pages": [
+    464,
+    521,
+    578,
+    635,
+    692,
+    749,
+    806,
+    863,
+    920,
+    977,
+    1034,
+    1091,
+    1148,
+    1205,
+    1262,
+    1319,
+    1376,
+    1433,
+    1490,
+    1547,
+    1604,
+    1661,
+    1718,
+    1775,
+    1832,
+    1889,
+    1946,
+    2003,
+    2060,
+    2117,
+    2174,
+    2231,
+    2288,
+    2345,
+    2402,
+    2459,
+    2516,
+    2573,
+    2630,
+    2687
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 56,
+    "max_depth": 1,
+    "resolved_pages": 56,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Couverture",
+        "page": 2,
+        "depth": 0
+      },
+      {
+        "title": "Mode d'emploi",
+        "page": 9,
+        "depth": 0
+      },
+      {
+        "title": "Table des matières",
+        "page": 10,
+        "depth": 0
+      },
+      {
+        "title": "Principales abréviations",
+        "page": 19,
+        "depth": 0
+      },
+      {
+        "title": "Ouvrages cités par le seul nom de l’auteur ou des auteurs",
+        "page": 23,
+        "depth": 0
+      },
+      {
+        "title": "Avant-propos à la première édition",
+        "page": 25,
+        "depth": 0
+      },
+      {
+        "title": "Avant-propos à la dixième édition",
+        "page": 26,
+        "depth": 0
+      },
+      {
+        "title": "Livre second. Le rapport d’obligation",
+        "page": 28,
+        "depth": 0
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 37,
+    "with_destination": 37,
+    "per_page": 0.9,
+    "sample": [
+      {
+        "page": 464,
+        "rect": [
+          72,
+          530,
+          540,
+          694
+        ]
+      },
+      {
+        "page": 521,
+        "rect": [
+          72,
+          80,
+          540,
+          718
+        ]
+      },
+      {
+        "page": 578,
+        "rect": [
+          72,
+          445,
+          540,
+          694
+        ]
+      }
+    ]
+  },
+  "text_layer": {
+    "median_chars_per_page": 261,
+    "empty_pages_share": 0.15,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.0,
+    "offset_mode": null,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 464,
+        "printed": null
+      },
+      {
+        "pdf_page": 521,
+        "printed": null
+      },
+      {
+        "pdf_page": 578,
+        "printed": null
+      },
+      {
+        "pdf_page": 635,
+        "printed": null
+      },
+      {
+        "pdf_page": 692,
+        "printed": null
+      },
+      {
+        "pdf_page": 749,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "23.8": 13006,
+      "8.6": 47
+    },
+    "body": 23.8,
+    "candidates_footnote": []
+  },
+  "footnotes": {
+    "small_font_chars": 47,
+    "share_at_page_bottom": 0.0
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      72
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [
+    {
+      "line": "o",
+      "pages": 14
+    }
+  ],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 3,
+      "monotonic_share": 0.5,
+      "first": [
+        "2008",
+        "310",
+        "417"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 2126,
+    "suspicious": 2,
+    "share": 0.0009,
+    "sample": [
+      "LGDJ,",
+      "RDBB"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        72.0,
+        540.0
+      ],
+      "even": [
+        72.0,
+        540.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "FR": 2
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Кегль сносок не отделяется от основного текста — отделять по положению на полосе.",
+      "Сноски кликабельны — привязку берём из файла напрямую, без эвристик.",
+      "Повторяющийся мусор (1 шаблонов) — вычистить первым шагом."
+    ]
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "path": "/home/user/fr-pdf/grimaldi-biens.pdf",
+  "sha256": "46f623c9506e957bdaf8ba88b44efcc199135de140f9aed710b18d34aa1303f2",
+  "pages": 746,
+  "sampled_pages": [
+    112,
+    126,
+    140,
+    154,
+    168,
+    182,
+    196,
+    210,
+    224,
+    238,
+    252,
+    266,
+    280,
+    294,
+    308,
+    322,
+    336,
+    350,
+    364,
+    378,
+    392,
+    406,
+    420,
+    434,
+    448,
+    462,
+    476,
+    490,
+    504,
+    518,
+    532,
+    546,
+    560,
+    574,
+    588,
+    602,
+    616,
+    630,
+    644,
+    658
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 54,
+    "max_depth": 5,
+    "resolved_pages": 54,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Sommaire",
+        "page": 5,
+        "depth": 0
+      },
+      {
+        "title": "Liste des abréviations",
+        "page": 11,
+        "depth": 0
+      },
+      {
+        "title": "Bibliographie",
+        "page": 13,
+        "depth": 0
+      },
+      {
+        "title": "Introduction",
+        "page": 15,
+        "depth": 0
+      },
+      {
+        "title": "Partie 1 - Les biens",
+        "page": 63,
+        "depth": 0
+      },
+      {
+        "title": "Sous-partie 1 - L'identification des biens",
+        "page": 67,
+        "depth": 1
+      },
+      {
+        "title": "Titre 1 - Les classifications des biens",
+        "page": 69,
+        "depth": 2
+      },
+      {
+        "title": "Sous-titre 1 - Les classifications naturelles",
+        "page": 71,
+        "depth": 3
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 23,
+    "with_destination": 23,
+    "per_page": 0.6,
+    "sample": [
+      {
+        "page": 140,
+        "rect": [
+          291,
+          234,
+          301,
+          241
+        ]
+      },
+      {
+        "page": 140,
+        "rect": [
+          299,
+          69,
+          306,
+          76
+        ]
+      },
+      {
+        "page": 154,
+        "rect": [
+          128,
+          69,
+          139,
+          76
+        ]
+      }
+    ]
+  },
+  "text_layer": {
+    "median_chars_per_page": 3404,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.95,
+    "offset_mode": 0,
+    "offset_stable": true,
+    "sample": [
+      {
+        "pdf_page": 112,
+        "printed": null
+      },
+      {
+        "pdf_page": 126,
+        "printed": 126
+      },
+      {
+        "pdf_page": 140,
+        "printed": 140
+      },
+      {
+        "pdf_page": 154,
+        "printed": 154
+      },
+      {
+        "pdf_page": 168,
+        "printed": 168
+      },
+      {
+        "pdf_page": 182,
+        "printed": 182
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "7.0": 70268,
+      "9.7": 46054,
+      "8.0": 5512,
+      "10.0": 3493,
+      "8.5": 2089,
+      "9.0": 551,
+      "5.5": 467,
+      "4.9": 345
+    },
+    "body": 7.0,
+    "candidates_footnote": [
+      4.9
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 15173,
+    "share_at_page_bottom": 0.73
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      67
+    ]
+  },
+  "duplicate_pages": 1,
+  "repeated_lines": [
+    {
+      "line": "e",
+      "pages": 56
+    },
+    {
+      "line": "Exemplaire personnel de ROMAN BEVZENKO - rbevzenko@gmail.com - Diffusion interdite.",
+      "pages": 40
+    },
+    {
+      "line": "DROIT DES BIENS",
+      "pages": 38
+    },
+    {
+      "line": "re",
+      "pages": 19
+    }
+  ],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 247,
+      "monotonic_share": 0.86,
+      "first": [
+        "90",
+        "5",
+        "6",
+        "7",
+        "6"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 1,
+      "monotonic_share": 0.0,
+      "first": [
+        "1"
+      ]
+    },
+    "§ с номером": {
+      "hits": 2,
+      "monotonic_share": 0.0,
+      "first": [
+        "1",
+        "1"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 24139,
+    "suspicious": 2,
+    "share": 0.0001,
+    "sample": [
+      "Gmbh",
+      "LGDJ,"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        79.0,
+        397.0
+      ],
+      "even": [
+        79.0,
+        397.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "FR": 98,
+    "IT": 14
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Сноски кликабельны — привязку берём из файла напрямую, без эвристик.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы.",
+      "Одинаковых страниц в выборке: 1 — проверить, не дубль ли разворота в файле.",
+      "Повторяющийся мусор (4 шаблонов) — вычистить первым шагом."
+    ]
+  }
+}

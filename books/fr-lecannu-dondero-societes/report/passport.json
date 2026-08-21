@@ -1,0 +1,319 @@
+{
+  "path": "/home/user/fr-pdf/lecannu-dondero-societes.pdf",
+  "sha256": "e01bf659a3c869ac2642b0976e4d2b17cc7c0d8ee4fd241f34aec769231b39f3",
+  "pages": 1178,
+  "sampled_pages": [
+    177,
+    199,
+    221,
+    243,
+    265,
+    287,
+    309,
+    331,
+    353,
+    375,
+    397,
+    419,
+    441,
+    463,
+    485,
+    507,
+    529,
+    551,
+    573,
+    595,
+    617,
+    639,
+    661,
+    683,
+    705,
+    727,
+    749,
+    771,
+    793,
+    815,
+    837,
+    859,
+    881,
+    903,
+    925,
+    947,
+    969,
+    991,
+    1013,
+    1035
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 547,
+    "max_depth": 8,
+    "resolved_pages": 547,
+    "section_nodes": 193,
+    "sample": [
+      {
+        "title": "Préface",
+        "page": 5,
+        "depth": 0
+      },
+      {
+        "title": "Sommaire",
+        "page": 7,
+        "depth": 0
+      },
+      {
+        "title": "Abréviations",
+        "page": 27,
+        "depth": 0
+      },
+      {
+        "title": "Bibliographie",
+        "page": 33,
+        "depth": 0
+      },
+      {
+        "title": "Introduction générale",
+        "page": 35,
+        "depth": 0
+      },
+      {
+        "title": "Section 1 - Présentation des principales formes de société",
+        "page": 36,
+        "depth": 0
+      },
+      {
+        "title": "Sous-section 1 - Distinction fondée sur le risque couru par le ou les associés",
+        "page": 37,
+        "depth": 1
+      },
+      {
+        "title": "§ 1 - Les sociétés à risques illimités",
+        "page": 37,
+        "depth": 2
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 10,
+    "with_destination": 10,
+    "per_page": 0.2,
+    "sample": [
+      {
+        "page": 243,
+        "rect": [
+          320,
+          300,
+          335,
+          310
+        ]
+      },
+      {
+        "page": 287,
+        "rect": [
+          118,
+          277,
+          130,
+          285
+        ]
+      },
+      {
+        "page": 331,
+        "rect": [
+          67,
+          364,
+          81,
+          374
+        ]
+      }
+    ]
+  },
+  "text_layer": {
+    "median_chars_per_page": 3234,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.25,
+    "offset_mode": -161,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 177,
+        "printed": 16
+      },
+      {
+        "pdf_page": 199,
+        "printed": 23
+      },
+      {
+        "pdf_page": 221,
+        "printed": null
+      },
+      {
+        "pdf_page": 243,
+        "printed": null
+      },
+      {
+        "pdf_page": 265,
+        "printed": null
+      },
+      {
+        "pdf_page": 287,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "9.8": 75570,
+      "8.0": 32612,
+      "10.0": 3156,
+      "9.0": 2655,
+      "8.3": 1997,
+      "5.6": 641,
+      "12.0": 384,
+      "5.5": 361
+    },
+    "body": 9.8,
+    "candidates_footnote": [
+      5.5,
+      5.6,
+      8.0
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 25971,
+    "share_at_page_bottom": 0.82
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      10
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [
+    {
+      "line": "■",
+      "pages": 118
+    },
+    {
+      "line": "o",
+      "pages": 70
+    },
+    {
+      "line": "Exemplaire personnel de UST SARL – etheocledk@gmail.com - Diffusion interdite",
+      "pages": 40
+    },
+    {
+      "line": "o o",
+      "pages": 14
+    }
+  ],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 205,
+      "monotonic_share": 0.82,
+      "first": [
+        "211",
+        "16",
+        "17",
+        "18",
+        "19"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 63,
+      "monotonic_share": 1.0,
+      "first": [
+        "211",
+        "279",
+        "280",
+        "309",
+        "310"
+      ]
+    },
+    "§ с номером": {
+      "hits": 9,
+      "monotonic_share": 0.25,
+      "first": [
+        "2",
+        "1",
+        "1",
+        "1",
+        "1"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 21978,
+    "suspicious": 7,
+    "share": 0.0003,
+    "sample": [
+      "LGDJ,",
+      "RTDF",
+      "RTDF",
+      "LGDJ,",
+      "CNPF",
+      "LGDJ,",
+      "LGDJ,"
+    ]
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        57.0,
+        397.0
+      ],
+      "even": [
+        57.0,
+        397.0
+      ]
+    },
+    "left": {
+      "hits": 63,
+      "monotonic_share": 1.0,
+      "even_page_share": 0.0,
+      "first": [
+        211,
+        279,
+        280,
+        309,
+        310,
+        351
+      ]
+    },
+    "right": {
+      "hits": 40,
+      "monotonic_share": 1.0,
+      "even_page_share": 0.0,
+      "first": [
+        177,
+        199,
+        221,
+        243,
+        265,
+        287
+      ]
+    }
+  },
+  "statutory": {
+    "FR": 6
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "В оглавлении 193 узлов с номером параграфа: адрес единицы, скорее всего, составной (§ NNN + номер), это влияет на id.",
+      "Сноски кликабельны — привязку берём из файла напрямую, без эвристик.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы.",
+      "Маргинальные номера у левого поля: 63 попаданий, монотонность 100%, доля чётных страниц 0% — кандидат на режим margin.",
+      "Маргинальные номера у правого поля: 40 попаданий, монотонность 100%, доля чётных страниц 0% — кандидат на режим margin.",
+      "Повторяющийся мусор (4 шаблонов) — вычистить первым шагом."
+    ]
+  }
+}
