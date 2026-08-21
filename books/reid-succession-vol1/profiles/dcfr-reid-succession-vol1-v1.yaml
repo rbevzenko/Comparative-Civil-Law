@@ -1,0 +1,33 @@
+id: dcfr-reid-succession-vol1-v1
+publisher: Oxford University Press
+jurisdiction: DCFR
+language: en
+# K. G. C. Reid, M. J. de Waal, R. Zimmermann (eds), Comparative Succession Law. Volume I: Testamentary Formalities (2011). 523 полосы. Тело 9.9, сноски 7.9, колонтитул на 46 из 656.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  template: "p. {number}"
+
+footnotes:
+  mode: font_bottom
+  note_size_max: 9.0
+  bottom_band: 0.45
+
+printed_page:
+  band: [0.085, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+\D'
+    - '[A-Za-z]\s+(\d{1,4})$'
+
+junk:
+  header_band: 0.09
+  patterns: []
+
+statutory:
+  patterns:
+    - '\bart(?:icle)?s?\.?\s?\d+[:\d]*\b'
+    - '\b§{1,2}\s?\d+[a-z]?\b'
