@@ -1,0 +1,110 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/fr-flour-fait-juridique",
+  "cards": 520,
+  "profile": "dalloz-sirey-flour",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9981,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "n°",
+        "section": null,
+        "from": 134,
+        "to": 136,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 1,
+    "missing_total": 1,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "n°": 520
+    }
+  },
+  "coverage": {
+    "share": 0.9784,
+    "covered_chars": 2034192,
+    "book_chars": 2079042,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 5211,
+        "from": 1783580,
+        "to": 1788791
+      },
+      {
+        "chars": 3446,
+        "from": 1319926,
+        "to": 1323372
+      },
+      {
+        "chars": 2721,
+        "from": 1562502,
+        "to": 1565223
+      },
+      {
+        "chars": 1821,
+        "from": 1223638,
+        "to": 1225459
+      },
+      {
+        "chars": 1234,
+        "from": 1126592,
+        "to": 1127826
+      },
+      {
+        "chars": 947,
+        "from": 525032,
+        "to": 525979
+      }
+    ]
+  },
+  "lengths": {
+    "median": 3395,
+    "min": 633,
+    "max": 19129,
+    "too_short": [],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.98,
+    "footnotes_total": 4778,
+    "unparsed_blocks": 0,
+    "per_card_median": 8.0,
+    "cards_with_calls_but_no_notes": 0,
+    "notes_without_visible_call": 4778
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 520
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}
