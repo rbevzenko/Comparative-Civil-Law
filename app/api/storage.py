@@ -43,3 +43,18 @@ def generate_presigned_url(object_key: str) -> str:
         Params={"Bucket": settings.s3_bucket_name, "Key": object_key},
         ExpiresIn=settings.s3_presigned_url_expiry_seconds,
     )
+
+
+def delete_pdf(object_key: str) -> None:
+    """Убрать файл источника из хранилища.
+
+    Ошибку хранилища глушим намеренно: запись в базе уже удалена, и падать
+    из-за осиротевшего объекта в бакете нельзя — источник тогда останется
+    наполовину удалённым. Осиротевший файл никому не виден: ссылка на него
+    выдаётся только по записи источника.
+    """
+    settings = get_settings()
+    try:
+        get_s3_client().delete_object(Bucket=settings.s3_bucket_name, Key=object_key)
+    except Exception:  # noqa: BLE001 — см. пояснение выше
+        pass

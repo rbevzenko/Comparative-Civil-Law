@@ -12,7 +12,7 @@ from app.api.security import require_api_token
 from app.api.services.sources import InvalidSourceUpload
 from app.api.services.sources import create_source as create_source_record
 from app.api.services.sources import update_source as update_source_record
-from app.api.storage import generate_presigned_url
+from app.api.storage import delete_pdf, generate_presigned_url
 
 router = APIRouter(prefix="/sources", tags=["sources"], dependencies=[Depends(require_api_token)])
 
@@ -102,3 +102,30 @@ async def update_source(
         return await update_source_record(db, source, changes)
     except InvalidSourceUpload as exc:
         raise HTTPException(status_code=status.HTTP_422_UNPROCESSABLE_ENTITY, detail=str(exc)) from exc
+
+
+@router.delete("/{source_id}", status_code=status.HTTP_204_NO_CONTENT)
+async def delete_source(
+    source_id: uuid.UUID,
+    db: Annotated[AsyncSession, Depends(get_db)],
+) -> None:
+    """Удалить источник вместе со всеми его фрагментами и сносками.
+
+    Нужно там, где источник заведён по ошибке: файл оказался не той книгой,
+    нарезка пошла не по той единице, книга загружена дважды. Иначе такой
+    источник остаётся в корпусе навсегда и продолжает выдаваться в поиске.
+
+    Фрагменты и сноски уходят каскадом — он объявлен и в модели
+    (`cascade="all, delete-orphan"`), и во внешнем ключе (`ondelete="CASCADE"`),
+    так что удалять их отдельным запросом не нужно.
+
+    Операция необратима: восстановить источник можно только повторной
+    загрузкой из локальных карточек.
+    """
+    source = await db.get(Source, source_id)
+    if source is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Source not found")
+    object_key = source.pdf_object_key
+    await db.delete(source)
+    await db.commit()
+    delete_pdf(object_key)
