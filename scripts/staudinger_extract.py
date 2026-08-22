@@ -75,6 +75,10 @@ JUNK = [
     re.compile(r"^samson-[a-z0-9]+", re.I),
     re.compile(r"^\d{2}[./]\d{2}[./]\d{4},\s*\d{2}:\d{2}"),
     re.compile(r"^©\s*Otto Schmidt"),
+    # Подвал печатной формы платформы: «https://juris.de/r3/print/document 5/90».
+    # Он стоит на каждой полосе и без чистки оседал в 4 255 карточках из 15 330.
+    re.compile(r"^https?://\S+\s+\d+/\d+$"),
+    re.compile(r"^https?://juris\.de"),
     LABEL,
 ]
 
