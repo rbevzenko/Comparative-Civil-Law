@@ -1,85 +1,107 @@
 {
   "book": "/home/user/Comparative-Civil-Law/books/de-inso-jaeger-7",
-  "cards": 3585,
+  "cards": 3589,
   "profile": "degruyter-grosskommentar-v1",
   "method": "digital",
   "continuity": {
-    "share": 0.9432,
-    "rows": 92,
+    "share": 0.8806,
+    "rows": 91,
     "gaps": [
       {
         "family": "Rdn.",
-        "section": "270",
-        "from": 43,
-        "to": 45,
+        "section": "254",
+        "from": 1,
+        "to": 290,
+        "missing": 288
+      },
+      {
+        "family": "Rdn.",
+        "section": "272",
+        "from": 17,
+        "to": 19,
         "missing": 1
       },
       {
         "family": "Rdn.",
         "section": "285",
         "from": 15,
-        "to": 228,
-        "missing": 212
+        "to": 270,
+        "missing": 254
       },
       {
         "family": "Rdn.",
         "section": "285",
         "from": 228,
-        "to": 233,
-        "missing": 4
+        "to": 266,
+        "missing": 37
       }
     ],
-    "gaps_total": 3,
-    "missing_total": 217,
+    "gaps_total": 4,
+    "missing_total": 580,
     "duplicates": [],
     "duplicates_total": 0,
     "by_family": {
       "Vorspann": 270,
-      "Rdn.": 3315
+      "Rdn.": 3319
     }
   },
   "coverage": {
-    "share": 0.9869,
-    "covered_chars": 3382096,
-    "book_chars": 3426871,
+    "share": 0.986,
+    "covered_chars": 3378668,
+    "book_chars": 3426691,
     "cards_without_offsets": 0,
     "biggest_holes": [
       {
         "chars": 4876,
-        "from": 3415986,
-        "to": 3420862
+        "from": 3415806,
+        "to": 3420682
+      },
+      {
+        "chars": 1121,
+        "from": 1973963,
+        "to": 1975084
       },
       {
         "chars": 1094,
-        "from": 1770531,
-        "to": 1771625
+        "from": 1770471,
+        "to": 1771565
       },
       {
         "chars": 1075,
-        "from": 2054668,
-        "to": 2055743
+        "from": 2054599,
+        "to": 2055674
       },
       {
-        "chars": 1048,
-        "from": 1974102,
-        "to": 1975150
+        "chars": 1059,
+        "from": 2132617,
+        "to": 2133676
+      },
+      {
+        "chars": 918,
+        "from": 2367692,
+        "to": 2368610
       },
       {
         "chars": 912,
-        "from": 799237,
-        "to": 800149
+        "from": 799177,
+        "to": 800089
       },
       {
-        "chars": 619,
-        "from": 3036906,
-        "to": 3037525
+        "chars": 898,
+        "from": 3036488,
+        "to": 3037386
+      },
+      {
+        "chars": 570,
+        "from": 3203800,
+        "to": 3204370
       }
     ]
   },
   "lengths": {
     "median": 888,
     "min": 35,
-    "max": 12972,
+    "max": 10600,
     "too_short": [
       "de-inso-jaeger-7:rdn:235/72",
       "de-inso-jaeger-7:rdn:235/73",
@@ -97,17 +119,15 @@
       "de-inso-jaeger-7:rdn:270b/5",
       "de-inso-jaeger-7:rdn:270b/43"
     ],
-    "too_long": [
-      "de-inso-jaeger-7:rdn:285/15"
-    ]
+    "too_long": []
   },
   "footnotes": {
     "cards_with_footnotes_share": 0.61,
-    "footnotes_total": 4457,
+    "footnotes_total": 4454,
     "unparsed_blocks": 0,
     "per_card_median": 1,
     "cards_with_calls_but_no_notes": 728,
-    "notes_without_visible_call": 1054
+    "notes_without_visible_call": 1051
   },
   "dead_pages": {
     "pages": [
@@ -127,8 +147,8 @@
     "cards_without_hierarchy": 0,
     "sample": [],
     "depth_histogram": {
-      "1": 3583,
-      "2": 2
+      "1": 3584,
+      "2": 5
     }
   },
   "internal_refs": {
@@ -143,10 +163,10 @@
     "number_repairs": [],
     "number_guesses": [],
     "number_unreadable": [],
-    "issues_total": 2
+    "issues_total": 3
   },
-  "absorbed_units": 0,
+  "absorbed_units": 1,
   "stops": [
-    "Непрерывность нумерации 94.3% < 98%: пропущено номеров 217. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+    "Непрерывность нумерации 88.1% < 98%: пропущено номеров 580. Паттерн местами не сработал, и эти куски книги в корпус не попали."
   ]
 }

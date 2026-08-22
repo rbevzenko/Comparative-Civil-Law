@@ -1,6 +1,14 @@
 {
   "number_issues": [
     {
+      "raw": "30",
+      "action": "repaired_by_neighbours",
+      "to": 33,
+      "expected": 33,
+      "line": 29347,
+      "evidence": "предыдущий 32, следующий 34"
+    },
+    {
       "raw": "22",
       "action": "repaired_by_neighbours",
       "to": 24,

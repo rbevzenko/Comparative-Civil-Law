@@ -1,23 +1,23 @@
 # Отчёт о качестве: de-zpo-steinjonas-5
 
-Карточек: 2603 (Rdn. — 2603), профиль `degruyter-grosskommentar-v1`, способ `digital`
+Карточек: 2689 (Vorspann — 30, Rdn. — 2659), профиль `degruyter-grosskommentar-v1`, способ `digital`
 
 | Метрика | Значение | Порог |
 |---|---|---|
-| Непрерывность нумерации | 92.0% (рядов: 62) | ≥ 98% |
-| Покрытие текста книги | 97.5% | ≥ 90% |
+| Непрерывность нумерации | 93.0% (рядов: 62) | ≥ 98% |
+| Покрытие текста книги | 97.8% | ≥ 90% |
 | Карточек, перенесённых из другого прогона | 0 | — |
-| Пропусков в нумерации | 76 (номеров: 1417) | — |
+| Пропусков в нумерации | 78 (номеров: 1982) | — |
 | Дублей номеров | 0 | — |
-| Длина карточки, медиана | 682 символов | — |
-| Карточек со сносками | 81% (всего сносок 7407) | — |
+| Длина карточки, медиана | 666 символов | — |
+| Карточек со сносками | 80% (всего сносок 7413) | — |
 | Блоков сносок без читаемых номеров | 0 | — |
 | Мёртвых страниц | 2 | — |
 | Одинаковых страниц | 0 | — |
 | Карточек без иерархии | 0 | — |
-| Внутренние отсылки разрешаются | 58.6% (63 из 152 не нашлись) | — |
+| Внутренние отсылки разрешаются | 59.2% (62 из 152 не нашлись) | — |
 | Слабых страниц OCR | 0 | — |
-| Спорных номеров | 1 | — |
+| Спорных номеров | 2 | — |
 | Поглощённых единиц (contains_also) | 0 | — |
 
 ## Пропуски в нумерации
@@ -47,28 +47,28 @@
 
 ## Крупнейшие незакрытые куски текста
 
-- 2089 символов, офсеты 2309145–2311234 в book.txt
-- 2033 символов, офсеты 36465–38498 в book.txt
-- 1884 символов, офсеты 1781980–1783864 в book.txt
-- 1724 символов, офсеты 32179–33903 в book.txt
-- 1683 символов, офсеты 2503383–2505066 в book.txt
-- 1585 символов, офсеты 1776988–1778573 в book.txt
-- 1540 символов, офсеты 1774542–1776082 в book.txt
-- 1439 символов, офсеты 38583–40022 в book.txt
-- 1369 символов, офсеты 1822272–1823641 в book.txt
-- 1359 символов, офсеты 34190–35549 в book.txt
+- 2089 символов, офсеты 2308994–2311083 в book.txt
+- 2033 символов, офсеты 36404–38437 в book.txt
+- 1884 символов, офсеты 1781845–1783729 в book.txt
+- 1740 символов, офсеты 2343291–2345031 в book.txt
+- 1724 символов, офсеты 32118–33842 в book.txt
+- 1585 символов, офсеты 1776853–1778438 в book.txt
+- 1540 символов, офсеты 1774407–1775947 в book.txt
+- 1439 символов, офсеты 38522–39961 в book.txt
+- 1369 символов, офсеты 1822134–1823503 в book.txt
+- 1359 символов, офсеты 34129–35488 в book.txt
 
 Обычно это разделы с другой вёрсткой: указатели, таблицы, приложения. Либо отсечь их диапазоном страниц, либо расширить профиль.
 
 ## Подозрительно длинные карточки
-de-zpo-steinjonas-5:rdn:322/184, de-zpo-steinjonas-5:rdn:328/67, de-zpo-steinjonas-5:rdn:328/151, de-zpo-steinjonas-5:rdn:328/37
+de-zpo-steinjonas-5:rdn:328/67, de-zpo-steinjonas-5:rdn:328/151, de-zpo-steinjonas-5:rdn:328/37
 Длинная карточка почти всегда означает, что следующий номер не распознан и две единицы слиплись.
 
 ## Подозрительно короткие карточки
-de-zpo-steinjonas-5:rdn:300/1, de-zpo-steinjonas-5:rdn:301/45, de-zpo-steinjonas-5:rdn:302/25, de-zpo-steinjonas-5:rdn:304/77, de-zpo-steinjonas-5:rdn:305a/29, de-zpo-steinjonas-5:rdn:307/42, de-zpo-steinjonas-5:rdn:309/12, de-zpo-steinjonas-5:rdn:315/30, de-zpo-steinjonas-5:rdn:317/27, de-zpo-steinjonas-5:rdn:323/49, de-zpo-steinjonas-5:rdn:323/55, de-zpo-steinjonas-5:rdn:323/84, de-zpo-steinjonas-5:rdn:328/9, de-zpo-steinjonas-5:rdn:328/82, de-zpo-steinjonas-5:rdn:328/120
+de-zpo-steinjonas-5:rdn:72, de-zpo-steinjonas-5:rdn:159, de-zpo-steinjonas-5:rdn:441, de-zpo-steinjonas-5:rdn:450, de-zpo-steinjonas-5:rdn:496, de-zpo-steinjonas-5:rdn:503, de-zpo-steinjonas-5:rdn:674, de-zpo-steinjonas-5:rdn:707, de-zpo-steinjonas-5:rdn:805, de-zpo-steinjonas-5:rdn:1987, de-zpo-steinjonas-5:rdn:2000, de-zpo-steinjonas-5:rdn:300/1, de-zpo-steinjonas-5:rdn:301/45, de-zpo-steinjonas-5:rdn:302/25, de-zpo-steinjonas-5:rdn:304/77
 
 ## Страницы, не попавшие ни в одну карточку
-839, 916
+839, 907
 
 ## Неразрешённые внутренние отсылки
 
@@ -95,144 +95,151 @@ de-zpo-steinjonas-5:rdn:300/1, de-zpo-steinjonas-5:rdn:301/45, de-zpo-steinjonas
 
 ## Случайные карточки для глазной проверки
 
-### de-zpo-steinjonas-5:rdn:321a/25
-*Stein/Jonas/Rensen, ZPO, 23. Aufl., § 321a Rdn. 25*
-Адрес: § 321a Rdn. 25 | иерархия: § 321a | стр. файла 278–279, книги 248–249
+### de-zpo-steinjonas-5:rdn:321/37
+*Stein/Jonas/Rensen, ZPO, 23. Aufl., § 321 Rdn. 37*
+Адрес: § 321 Rdn. 37 | иерархия: § 321 | стр. файла 266–266, книги 236–236
 Нормы: — | отсылки: —
 
-Mittels eines Verzichts i.S.d. § 515 kann die Zulässigkeit der Anhörungsrüge nicht hergestellt
-werden.94 Eine ursprünglich mangels Unanfechtbarkeit unzulässige Anhörungsrüge wird auch
-nicht zulässig, weil die angefochtene Entscheidung durch Ablauf einer Rechtmittelfrist formell
-rechtskräftig geworden ist.95 Zwar stehen weder der Wortlaut des § 321a noch die mehr oder
-weniger abweichenden Rechtsbehelfsfristen einer Zulassung der Anhörungsrüge nach Ablauf der
-Rechtsmittelfrist entgegen. Jedoch hat hier zu keiner Zeit die der Einführung des § 321a zugrundeliegende Regelungslücke bestanden. Dementsprechend bedarf es einer teleologischen Reduktion.
-Die Anhörungsrüge ist schließlich unstatthaft, sofern eine Nichtzulassungsbeschwerde möglich
-ist,96 wobei der Gesetzgeber von der Rechtsprechung des Bundesgerichtshofs zu dem Zulassungsgrund § 543 Abs. 2 Nr. 297 ausgeht.98
+Weil für das Verhältnis von Erst- und Ergänzungsurteil dasselbe gilt wie für das Verhältnis
+von Teil- und Schlussurteil,82 darf das Gericht im Rahmen des Ergänzungsurteils nicht von seiner
+Entscheidung im Ersturteil abweichen.83
+6. Kosten
 
-> [94] HK-ZPO/Saenger Rdn. 4; anders Schnabl AnwBl. 2008, 188.
-> [95] Stein/Jonas/Althammer Rdn. 21; anders Kettinger Jura 2007, 164; Schnabl NJ 2007, 289 sowie AnwBl. 2008, 188; Zöller/ Feskorn Rdn. 5.
-> [96] BGH NJW 2005, 680 zu § 321a a.F.
+> [82] RG JR 1927, 687; OLG Karlsruhe, Beschluss vom 7. Februar 2022 – 6 W 39/21, juris Rdn. 7; Furtner Das Urteil im Zivilprozess, 5. Aufl. S. 468; Musielak/Voit/Musielak Rdn. 12.
+> [83] Musielak/Voit/Musielak Rdn. 12.
 
-### de-zpo-steinjonas-5:rdn:331/52
-*Stein/Jonas/Büscher, ZPO, 23. Aufl., § 331 Rdn. 52*
-Адрес: § 331 Rdn. 52 | иерархия: § 331 | стр. файла 718–719, книги 688–689
-Нормы: §§ 91 | отсылки: —
-
-Ein Versäumnisurteil im schriftlichen Vorverfahren setzt voraus, (1) dass das Gericht keinen frühen
-ersten Termin zur mündlichen Verhandlung bestimmt, sondern das schriftliche Vorverfahren angeordnet hat, § 276, (2) der Beklagte mit der Zustellung der Klage aufgefordert worden ist, wenn er sich
-gegen die Klage verteidigen will, dies binnen einer Notfrist von zwei Wochen nach Zustellung der
-Klageschrift dem Gericht schriftlich anzuzeigen, § 276 Abs. 1 Satz 1, (3) der Beklagte über die Folgen
-einer Versäumung der ihm nach § 276 Abs. 1 Satz 1 gesetzten Frist und im Anwaltsprozess über die
-Notwendigkeit, die Erklärung der Verteidigungsbereitschaft durch einen Rechtsanwalt abzugeben,
-einschließlich der Rechtsfolgen aus §§ 91 und 708 Nr. 2 belehrt worden ist, (4) der Kläger einen Antrag auf Erlass eines Versäumnisurteils gestellt hat und (5) die Anzeige der Verteidigungsbereitschaft
-nicht rech…
-
-
-### de-zpo-steinjonas-5:rdn:328/201
-*Stein/Jonas/Schütze, ZPO, 23. Aufl., § 328 Rdn. 201*
-Адрес: § 328 Rdn. 201 | иерархия: § 328 | стр. файла 656–656, книги 626–626
+### de-zpo-steinjonas-5:rdn:330/21
+*Stein/Jonas/Büscher, ZPO, 23. Aufl., § 330 Rdn. 21*
+Адрес: § 330 Rdn. 21 | иерархия: § 330 | стр. файла 708–708, книги 678–678
 Нормы: — | отсылки: —
 
-Das Übereinkommen801 ist am 30.9.1975 in Kraft getreten.802 Es ist später mehrfach geändert
-worden und regelt in Art. 13d die Wirkungserstreckung ausländischer Zivilurteile im Rahmen
-des Geltungsbereichs der Konvention.
-i) Internationales Übereinkommen über die zivilrechtliche Haftung für
-Ölverschmutzungsschäden vom 29.11.1969.
+Ist eine Partei säumig, entsteht neben der 1,3-fachen Verfahrensgebühr nach Nummer 3100 VV
+RVG eine 0,5-fache Terminsgebühr nach Nummer 3105 VV RVG. Die 0,5-fache Terminsgebühr entsteht auch, wenn das Gericht bei Säumnis lediglich eine Entscheidung zur Prozess-, Verfahrens-
+oder Sachleitung von Amts wegen trifft (Nummer 3105 Abs. 1 Nr. 1 VV RVG) oder im schriftlichen
+Vorverfahren eine Säumnisentscheidung gemäß § 331 Abs. 3 ergeht (Nummer 3105 Abs. 1 Nr. 2
+VV RVG). Sind beide Parteien anwesend oder vertreten und verhandelt eine Partei nicht (§ 333),
+fällt nach Nummer 3105 Abs. 2 VV RVG eine volle Terminsgebühr nach Nummer 3104 VV RVG in
+Höhe einer 1,2-fachen Gebühr an.
 
-> [801] BGBl 1975 II 957.
-> [802] BGBl 1976 II 308.
 
-### de-zpo-steinjonas-5:rdn:328/139
-*Stein/Jonas/Schütze, ZPO, 23. Aufl., § 328 Rdn. 139*
-Адрес: § 328 Rdn. 139 | иерархия: § 328 | стр. файла 589–590, книги 559–560
+### de-zpo-steinjonas-5:rdn:328/140
+*Stein/Jonas/Schütze, ZPO, 23. Aufl., § 328 Rdn. 140*
+Адрес: § 328 Rdn. 140 | иерархия: § 328 | стр. файла 590–590, книги 560–560
+Нормы: § 328 ZPO | отсылки: —
+
+Die durch die erststaatliches Exequatururteil auf den Erststaat erstreckten Urteilwirkungen eines
+drittstaatlichen Urteils können durch die Anerkennung auf den Zweitstaat (weiter)erstreckt werden,366 soweit die erststaatliche Entscheidung nicht anerkennungsfähig ist und die zweitstaatliche
+Entscheidung die Erfordernisse des § 328 ZPO erfüllt, wobei der Mangel der internationalen Zuständigkeit des Erstgerichts und ein Verstoß gegen den ordre public der erststaatlichen Entscheidung über § 328 Abs. 1 Nr. 1 und 4 ZPO im deutschen Exequaturverfahren zu berücksichtigen
+sind.367 Obwohl der BGH eben diese Ansicht zunächst bis 2009 (vgl. Rd. 137) für den Bereich der
+Schiedsgerichtsbarkeit in zwei Entscheidungen vertreten hatte,368 indem er dem Gläubiger eines
+im Erststaat für vollstreckbar erklärten Schiedsspruch bei Geltung der merger-Lehre die Möglichkeit eingeräumt hat, das Exequatururteil ans…
+
+> [366] Vgl. Baumbach/Lauterbach/Hartmann/Anders/Gehle/Schmidt, § 328 Rdn. 11; Schütze ZZP 77 (1964) S. 287ff.
+> [367] Vgl. Schütze FS Spellenberg, S. 511ff.
+> [368] Vgl. BGH RIW 1984, 557 mit Anm. Dielmann und Anm. Schütze ebenda, 734ff.; BGH RIW 1984, 644 mit Anm. Mezger; dazu insbesondere Dolinar Vollstreckung aus einem ausländischen, einen Schiedsspruch bestät
+
+### de-zpo-steinjonas-5:rdn:328/84
+*Stein/Jonas/Schütze, ZPO, 23. Aufl., § 328 Rdn. 84*
+Адрес: § 328 Rdn. 84 | иерархия: § 328 | стр. файла 576–576, книги 546–546
+Нормы: § 328 ZPO | отсылки: dazu Rdn. 94
+
+In der Literatur wird diskutiert, ob das deutsche Recht von einem Grundsatz der Anerkennung
+ausgeht276 oder ob § 328 ZPO die Regel der grundsätzlichen Nichtanerkennung statuiert277 und die
+dort normierten Erfordernisse negativ umschriebene Voraussetzungen darstellen. Es ist jedoch im
+Hinblick auf die prozessualen Folgen bedenklich, aus dem Gesetzeswortlaut einen Grundsatz herleiten zu wollen oder gar eine Vermutung der Anerkennung aufzustellen. Das Wesen von Tatsachen- oder Rechtsvermutungen ist es, dass das Vermutete nicht mehr geprüft oder bewiesen werden muss. Das ist aber bei der Anerkennung der Fall – unabhängig von der Frage, dass es eine
+Beweislastverteilung für den Fall eines non liquet geben muss, vgl. dazu Rdn. 94. Erst wenn die
+teils positiv, teils negativ umschriebenen Erfordernisse vorliegen und keine Versagungsgründe
+entgegenstehen, erfolgt die Erstreckung der Wirkungen der…
+
+> [276] Vgl. Habscheid Zur Anerkennung klagabweisender ausländischer Eheurteile, FamRZ 1973, 431f.; Kohlrausch Kann ein in Abwesenheit des Angeklagten ergangenes Adhäsionsurteil des Zürcherischen Schwurgerich
+> [277] Vgl. Fischer Die Anerkennung ausländischer Urteile in Deutschland, ZAkDR 1935, 230ff. (233); Förster/Kann ZPO, 3. Aufl., § 328 Anm. 1; Goldschmidt Zivilprozessrecht, 2. Aufl. S. 74; Hellwig Lehrbuch d
+> [278] Vgl. Schütze Die Anerkennung und Vollstreckung ausländischer Zivilurteile in der Bundesrepublik Deutschland als verfahrensrechtliches Problem, Diss. Bonn 1960, S. 25 ff.; Zöller/Geimer § 328 Rdn, 273.
+
+### de-zpo-steinjonas-5:rdn:348/36
+*Stein/Jonas/Büscher, ZPO, 23. Aufl., § 348 Rdn. 36*
+Адрес: § 348 Rdn. 36 | иерархия: § 348 | стр. файла 859–860, книги 829–830
+Нормы: § 72a GVG | отсылки: —
+
+Das Präsidium des Gerichts ist bei der Entscheidung frei, ob es, von den Katalogmaterien
+nach § 72a GVG abgesehen, für die die Einrichtung von Spezialkammern obligatorisch ist,58 für
+ein Sachgebiet, einzelne oder alle Sachgebiete des Abs. 1 Satz 2 Nr. 2 Buchst. d), f), g), i), j) und k)
+eine Spezialzuständigkeit einer oder mehrerer Kammern schafft oder ob es spezielle Zuständigkeiten für einen Teil eines der angegebenen Sachgebiete begründet.59 Abs. 1 Satz 2 Nr. 2 beschränkt
+das Präsidium bei der Aufstellung des Geschäftsverteilungsplans nicht.60 Das Präsidium kann deshalb für bestimmte, bei einem Gericht aufgrund örtlicher Besonderheiten häufig anfallende Spezialmaterien eine besondere Zuständigkeit begründen. So konzentrieren sich Streitigkeiten auf dem
+Gebiet des gewerblichen Rechtsschutzes, des Urheberrechts oder des Transportrechts schwerpunktmäßig auf eine überschaubare Zahl von Ge…
+
+> [58] § 72a GVG Rdn. 11; Zöller/Lückemann § 72a GVG Rdn. 1; MünchKomm/Pabst § 72a GVG Rdn. 1.
+> [59] Prütting/Gehrlein/Schmaltz § 348 Rdn. 5.
+> [60] Thomas/Putzo/Seiler § 348 Rdn. 3; Zöller/Greger § 348 Rdn. 7.
+
+### de-zpo-steinjonas-5:rdn:343/8
+*Stein/Jonas/Büscher, ZPO, 23. Aufl., § 343 Rdn. 8*
+Адрес: § 343 Rdn. 8 | иерархия: § 343 | стр. файла 813–813, книги 783–783
+Нормы: § 281 ZPO, § 17a Abs. 2 GVG | отсылки: —
+
+Das Gericht ist nach zulässigem Einspruch bei der Entscheidung aufgrund mündlicher Verhandlung nicht an die vorausgegangene, dem Versäumnisurteil zugrundeliegende Bewertung gebunden. Es kann die Sache in jedem Punkt neu beurteilen. Es kann bei einem Versäumnisurteil gegen
+den Beklagten – anders als zunächst geschehen – die Zulässigkeit oder die Schlüssigkeit der Klage
+verneinen oder eine Verweisung an ein anderes Gericht gemäß § 281 ZPO oder an ein Gericht
+eines anderen Rechtswegs nach § 17a Abs. 2 GVG aussprechen, obwohl es zunächst – konkludent –
+seine Zuständigkeit oder die Zulässigkeit des zu ihm beschrittenen Rechtswegs bejaht hat.10 Eine
+Klageänderung ist nach den allgemeinen Grundsätzen möglich. Der Kläger kann nach einem Einspruch gegen ein Versäumnisurteil die Klage erweitern (§ 264 Nr. 2 Fall 1) oder eine objektive oder
+subjektive Klagehäufung vornehmen oder die Klage ganz oder…
+
+> [10] OLG Köln VersR 1992, 901.
+> [11] Stein/Jonas/Bartels § 343 Rdn. 1; Prütting/Gehrlein/Göbel § 343 Rdn. 4; Kapsa Das Verbot der reformatio in peius im Zivilprozess, 1976, 81 ff.
+
+### de-zpo-steinjonas-5:rdn:348/38
+*Stein/Jonas/Büscher, ZPO, 23. Aufl., § 348 Rdn. 38*
+Адрес: § 348 Rdn. 38 | иерархия: § 348 | стр. файла 860–860, книги 830–830
 Нормы: — | отсылки: —
 
-Der BGH hat nun unter Berücksichtigung der harschen Kritik des Schrifttums364 eine Kehrtwendung vollzogen und hält an der bisherigen Rechtsprechung nicht mehr fest. In einem Urteil
-vom 2.7.2009 hat der BGH entschieden, dass ein Doppelexequatur von Schiedssprüchen auch dann
-unzulässig ist, wenn das Recht des Exequatururteils (im entschiedenen Fall das Recht Kaliforniens)
-der doctrine of merger folgt.365
-10. Exequatururteile
-Schrifttum
-Glenn Exequatur sur exequatur (Doppelexequatur) in Europe and North America, in: Basedow u.a. (Hrsg.), Aufbruch
-nach Europa, 75 Jahre Max-Planck-Institut für Privatrecht (2001) S. 705ff.; Hay Recognition of a Recognition Judgment
-Within the European Union: „Double Exequatur“ and the Public Policy Barrier, FS Várady (2009) S. 143ff.; Hay Recognition of a Recognition Judgments within the European Union, EuLegForum 2009, 61ff.; Kegel Exequatur sur exequatur
-ne …
+Die Zuweisung aller oder nahezu aller Spezialmaterien des Abs. 1 Satz 2 Nr. 2 an alle oder fast
+alle Kammern des Gerichts ist als Umgehung der Bestimmung unzulässig.62 Existiert nur eine
+Zivilkammer am Gericht, kann von Abs. 1 Satz 2 Nr. 2 kein Gebrauch gemacht werden.
 
-> [364] Vgl. Dolinar FS Schütze, 187, 204; Geimer IZPR, Rdn. 3107; Schwab/Walter Schiedsgerichtsbarkeit, Kap. 30, Rdn. 15; Schütze Urteilsanmerkung, RIW 1984, 734 ff.; Zöller/Geimer § 1061, Rdn. 8 f.
-> [365] Vgl. BGH NJW 2009, 2826; dazu Geimer IPRax 2010, 346f.; Plassmeier SchiedsVZ 2010, 82 ff.; Schütze RIW 2009,
+> [62] Zöller/Greger § 348 Rdn. 7.
 
-### de-zpo-steinjonas-5:rdn:348/94
-*Stein/Jonas/Büscher, ZPO, 23. Aufl., § 348 Rdn. 94*
-Адрес: § 348 Rdn. 94 | иерархия: § 348 | стр. файла 873–873, книги 843–843
+### de-zpo-steinjonas-5:rdn:323/39
+*Stein/Jonas/Büscher, ZPO, 23. Aufl., § 323 Rdn. 39*
+Адрес: § 323 Rdn. 39 | иерархия: § 323 | стр. файла 448–449, книги 418–419
 Нормы: — | отсылки: —
 
-Auf einen übereinstimmenden Antrag der Parteien muss der Einzelrichter die Sache der Kammer
-zur Entscheidung vorlegen, ob die Voraussetzungen des Abs. 3 Satz 1 Nr. 1 oder 2 gegeben sind.
-Anlass für die Übernahme der Sache durch die Kammer geben ausschließlich die Nr. 1 und 2
-angeführten Gründe. Die Parteien können durch einen übereinstimmenden Antrag nur den Einzelrichter zur Vorlage an die Kammer veranlassen, § 348 Abs. 3 Satz 2.149 Dagegen ist der Tatbestand des Abs. 3 Satz 1 Nr. 3 kein Grund für die Zivilkammer, die Sache in die Kammerzuständigkeit zu übernehmen.150
+f) Bereicherungsklage. Veränderungen, die wegen der stets wandelbaren Verhältnisse Einfluss
+auf die zukünftig fällig werdenden wiederkehrenden Leistungen haben, müssen mit der Abänderungsklage geltend gemacht werden.108 Solange dies nicht geschehen ist, ist der Titel des Ausgangsverfahrens oder derjenige eines nachfolgenden Abänderungsverfahrens Rechtsgrund für die Leistung i.S. von § 812 Abs. 1 Satz 1 Fall 1 BGB.109 Anders als bei einer Einwendung, die mit der
+Vollstreckungsabwehrklage gelten zu machen ist und bei der nach erfolgter Beitreibung der Forderung im Wege der Zwangsvollstreckung ein Übergang von der Vollstreckungsabwehrklage zur
+materiell-rechtlichen Bereicherungsklage möglich ist,110 scheidet ein entsprechendes Vorgehen im
+Rahmen der Abänderungsklage aus.111
+4. Rechtsnatur der Abänderungsklage, Klageantrag und Streitgegenstand
 
-> [149] Stein/Jonas/Bartels § 348 Rdn. 45.
-> [150] MünchKomm/Stackmann § 348 Rdn. 23; Stein/Jonas/Bartels § 348 Rdn. 45; Musielak/Voit/Wittschier § 348a Rdn. 18; eindeutig auch Beschlussempfehlung und Bericht des Rechtsausschusses, BT-Drucks. 14/6036,
+> [108] BGHZ 70, 151, 156 = NJW 1978, 753; NJW 1986, 2047.
+> [109] BGH NJW-RR 1991, 1154, 1155.
+> [110] BGHZ 83, 278, 280 = NJW 1982, 1147.
 
-### de-zpo-steinjonas-5:rdn:345/14
-*Stein/Jonas/Büscher, ZPO, 23. Aufl., § 345 Rdn. 14*
-Адрес: § 345 Rdn. 14 | иерархия: § 345 | стр. файла 828–828, книги 798–798
+### de-zpo-steinjonas-5:rdn:348/56
+*Stein/Jonas/Büscher, ZPO, 23. Aufl., § 348 Rdn. 56*
+Адрес: § 348 Rdn. 56 | иерархия: § 348 | стр. файла 864–864, книги 834–834
 Нормы: — | отсылки: —
 
-Der Erlass eines technisch zweiten Versäumnisurteils setzt ein existentes erstes Versäumnisurteil
-gegen dieselbe Partei über denselben Streitgegenstand voraus.
+Unterfällt die Tätigkeit Buchst. d, kommt es nicht darauf an, in welcher Rechtsform die Berufsangehörigen ihre Tätigkeit erbringen (als einzelner Berufsangehöriger, als Gesellschafter einer
+Sozietät, in einer Partnerschaftsgesellschaft, GmbH, AG) und ob eine Berufszulassung besteht
+oder diese widerrufen ist.
 
 
-### de-zpo-steinjonas-5:rdn:348/96
-*Stein/Jonas/Büscher, ZPO, 23. Aufl., § 348 Rdn. 96*
-Адрес: § 348 Rdn. 96 | иерархия: § 348 | стр. файла 874–874, книги 844–844
-Нормы: §§ 253 | отсылки: —
-
-Die Angabe der Parteien, dass einer Übertragung auf den Einzelrichter Gründe entgegenstehen, §§ 253 Abs. 3 Nr. 3, 277 Abs. 1 Satz 2, reicht nicht. Sie kann auch nicht als konkludenter
-Antrag ausgelegt werden.154 Die Parteien brauchen ihre Anträge nicht zu begründen. Die Partei
-kann einen Antrag bis zur Vorlage an die Kammer zurücknehmen.155
-
-> [154] Hannich/Meyer-Seitz/Engers §§ 348, 348a Rdn. 48.
-> [155] Stein/Jonas/Bartels § 348 Rdn. 45.
-
-### de-zpo-steinjonas-5:rdn:323/82
-*Stein/Jonas/Büscher, ZPO, 23. Aufl., § 323 Rdn. 82*
-Адрес: § 323 Rdn. 82 | иерархия: § 323 | стр. файла 460–461, книги 430–431
+### de-zpo-steinjonas-5:rdn:313/22
+*Stein/Jonas/Rensen, ZPO, 23. Aufl., § 313 Rdn. 22*
+Адрес: § 313 Rdn. 22 | иерархия: § 313 | стр. файла 184–185, книги 154–155
 Нормы: — | отсылки: —
 
-Ist im Erstprozess das Gericht davon ausgegangen, die Erwerbsunfähigkeit des Klägers sei
-Folge eines Unfalls und macht der Beklagte in dem von ihm eingeleiteten Abänderungsverfahren
-geltend, die Erwerbsunfähigkeit sei vielmehr Folge einer erst später bekannt gewordenen, bereits
-zum Zeitpunkt des Unfalls vorgelegenen Erkrankung, hat sich die Tatsachengrundlage nicht geändert. Ist im Erstprozess über einen Rentenanspruch der Zurechnungszusammenhang zwischen
-dem Unfallereignis und einer Verletzungsfolge vom Gericht verkannt, können bessere Erkenntnisse über den Ursachenzusammenhang nur mit Rechtsmitteln gegen die Erstentscheidung nicht
-aber mit der Abänderungsklage geltend gemacht werden.230 Dagegen kann der Beklagte des Erstprozesses mit der Abänderungsklage geltend machen, die Unfallfolgen seien abgeklungen und das
-beim Kläger noch vorhandene, die Erwerbsunfähigkeit auslösende Krankheitsb…
+Neben der gem. § 313 Abs. 3 gebotenen Kürze und der angestrebten Herstellung von Rechtsfrieden ist zu berücksichtigen, dass die Parteien nach h.M. einen in Art. 103 Abs. 1 GG und Art. 6 Abs. 1
+EMRK verankerten Anspruch nicht nur darauf haben, dass das Gericht ihr Vorbringen, soweit es erheblich ist, erwägt, sondern auch darauf, über die für die Entscheidung maßgebenden Erwägungen
+rechtlicher und tatsächlicher Art unterrichtet zu werden.119 Daraus ergibt sich zwar nicht, dass sich
+das Gericht in den Entscheidungsgründen auch mit unerheblichem Vorbringen der Parteien auseinander setzen muss. Das Gericht muss aber auf den Kern des tatsächlichen Vorbringens der Parteien eingehen, sofern dieses eine für die Entscheidung erhebliche Frage betrifft. Fehlt es hieran
+in den Entscheidungsgründen, ist daraus zu schließen, dass das Gericht sich mit dem betreffenden
+Vorbringen bei der Fällung der Ents…
 
-> [230] BGH VersR 1981, 280.
-> [231] RGZ 129, 316, 320.
-> [232] BGH VersR 1980, 975 = NJW 1980, 2754; NJW 1988, 2300, 2301.
-
-### de-zpo-steinjonas-5:rdn:348a/6
-*Stein/Jonas/Büscher, ZPO, 23. Aufl., § 348a Rdn. 6*
-Адрес: § 348a Rdn. 6 | иерархия: § 348a | стр. файла 879–879, книги 849–849
-Нормы: — | отсылки: —
-
-Von der Entscheidung und der Übertragung nach § 348a Abs. 1 ist ein Proberichter im Sinne
-von § 348 Abs. 1 Satz 2 Nr. 1 nicht ausgeschlossen.12 Auf ihn ist der Rechtsstreit nach § 348a Abs. 1
-zu übertragen, wenn die negativ formulierten Tatbestände des § 348a Abs. 1 Nr. 1 bis 3 erfüllt sind.
-
-> [12] Stein/Jonas/Bartels § 348a Rdn. 2.
-
-### de-zpo-steinjonas-5:rdn:313a/17
-*Stein/Jonas/Rensen, ZPO, 23. Aufl., § 313a Rdn. 17*
-Адрес: § 313a Rdn. 17 | иерархия: § 313a | стр. файла 195–195, книги 165–165
-Нормы: — | отсылки: —
-
-Weil § 313a dem erkennenden Gericht ein Ermessen einräumt, ist es unschädlich, wenn das Urteil
-in vollständiger Form abgefasst wird, obwohl § 313a eine abgekürzte Fassung erlaubt hätte.47
-
-> [47] Musielak/Voit/Musielak Rdn. 8; Stein/Jonas/Althammer Rdn. 14.
+> [119] BVerfGE 54, 86, 91f.; EGMR NJW 1999, 2429; OLG Saarbrücken FamRZ 1993, 1098, 1099; Lüke Begründungszwang und Verfassung (1987), S. 111 f.; Gottwald ZZP 98 (1985), 113, 114 f.
+> [120] BVerfG NJW 1994, 2279; NJW-RR 1995, 1033, 1034; BGH NJW-RR 1997, 688, 689; Kischel Die Begründung (2003), S. 381ff. Ausnahmen gelten für unanfechtbare Entscheidungen, vgl. BVerGE 71, 122, 135 f.; 81, 
+> [121] BGH NJW-RR 1988, 524.
 
 ## СТОП: выгружать нельзя
 
-- Непрерывность нумерации 92.0% < 98%: пропущено номеров 1417. Паттерн местами не сработал, и эти куски книги в корпус не попали.
+- Непрерывность нумерации 93.0% < 98%: пропущено номеров 1982. Паттерн местами не сработал, и эти куски книги в корпус не попали.

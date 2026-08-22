@@ -202,9 +202,9 @@
     ]
   },
   "lengths": {
-    "median": 1130,
+    "median": 1122,
     "min": 45,
-    "max": 9806,
+    "max": 9730,
     "too_short": [
       "de-inso-jaeger-2:rdn:543",
       "de-inso-jaeger-2:rdn:35/212",
@@ -223,7 +223,7 @@
     "unparsed_blocks": 0,
     "per_card_median": 2,
     "cards_with_calls_but_no_notes": 58,
-    "notes_without_visible_call": 550
+    "notes_without_visible_call": 547
   },
   "dead_pages": {
     "pages": [

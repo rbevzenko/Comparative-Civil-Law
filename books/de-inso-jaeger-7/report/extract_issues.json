@@ -15,9 +15,17 @@
       "expected": 47,
       "line": 25972,
       "evidence": "предыдущий 46, следующий 48"
+    },
+    {
+      "raw": "17",
+      "action": "repaired_by_neighbours",
+      "to": 18,
+      "expected": 18,
+      "line": 40478,
+      "evidence": "предыдущий 17, следующий 19"
     }
   ],
-  "absorbed_units": 0,
+  "absorbed_units": 1,
   "sections_found": 91,
   "toc_entries": 0,
   "toc_anchored_to_line": 0,

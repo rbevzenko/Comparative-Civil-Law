@@ -1,6 +1,15 @@
 {
-  "number_issues": [],
-  "absorbed_units": 0,
+  "number_issues": [
+    {
+      "raw": "27",
+      "action": "repaired_by_neighbours",
+      "to": 21,
+      "expected": 21,
+      "line": 38487,
+      "evidence": "предыдущий 20, следующий 22"
+    }
+  ],
+  "absorbed_units": 1,
   "sections_found": 132,
   "toc_entries": 0,
   "toc_anchored_to_line": 0,

@@ -1,46 +1,69 @@
 # Отчёт о качестве: de-zpo-steinjonas-1
 
-Карточек: 2498 (Rdn. — 2498), профиль `degruyter-grosskommentar-v1`, способ `digital`
+Карточек: 2467 (Rdn. — 2467), профиль `degruyter-grosskommentar-v1`, способ `digital`
 
 | Метрика | Значение | Порог |
 |---|---|---|
-| Непрерывность нумерации | 95.7% (рядов: 56) | ≥ 98% |
-| Покрытие текста книги | 99.1% | ≥ 90% |
+| Непрерывность нумерации | 96.6% (рядов: 56) | ≥ 98% |
+| Покрытие текста книги | 98.4% | ≥ 90% |
 | Карточек, перенесённых из другого прогона | 0 | — |
-| Пропусков в нумерации | 4 (номеров: 33) | — |
-| Дублей номеров | 30 | — |
-| Длина карточки, медиана | 646 символов | — |
-| Карточек со сносками | 49% (всего сносок 5312) | — |
+| Пропусков в нумерации | 16 (номеров: 30) | — |
+| Дублей номеров | 0 | — |
+| Длина карточки, медиана | 649 символов | — |
+| Карточек со сносками | 49% (всего сносок 5295) | — |
 | Блоков сносок без читаемых номеров | 0 | — |
-| Мёртвых страниц | 6 | — |
+| Мёртвых страниц | 7 | — |
 | Одинаковых страниц | 0 | — |
 | Карточек без иерархии | 0 | — |
-| Внутренние отсылки разрешаются | 98.3% (5 из 292 не нашлись) | — |
+| Внутренние отсылки разрешаются | 98.3% (5 из 290 не нашлись) | — |
 | Слабых страниц OCR | 0 | — |
 | Спорных номеров | 0 | — |
 | Поглощённых единиц (contains_also) | 0 | — |
 
 ## Пропуски в нумерации
 
+- Rdn., раздел Einleitung: 3 → 5 (нет 1)
 - Rdn., раздел 6: 42 → 45 (нет 2)
+- Rdn., раздел 11: 5 → 7 (нет 1)
+- Rdn., раздел 11: 7 → 15 (нет 7)
+- Rdn., раздел 11: 4 → 6 (нет 1)
+- Rdn., раздел 11: 6 → 8 (нет 1)
+- Rdn., раздел 11: 14 → 16 (нет 1)
 - Rdn., раздел 15: 12 → 18 (нет 5)
 - Rdn., раздел 32b: 51 → 53 (нет 1)
-- Rdn., раздел 49: 7 → 33 (нет 25)
+- Rdn., раздел 40: 1 → 3 (нет 1)
+- Rdn., раздел 40: 5 → 7 (нет 1)
+- Rdn., раздел 40: 7 → 9 (нет 1)
+- Rdn., раздел 40: 10 → 12 (нет 1)
+- Rdn., раздел 40: 2 → 6 (нет 3)
+- Rdn., раздел 40: 6 → 8 (нет 1)
+- Rdn., раздел 40: 8 → 11 (нет 2)
 
 Дыра в нумерации — это либо не сработавший паттерн, либо действительно отсутствующий в книге номер. Различать глазами по странице разрыва.
 
-## Дубли номеров
-1, 2, 3, 4, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 1
+## Крупнейшие незакрытые куски текста
+
+- 2366 символов, офсеты 400877–403243 в book.txt
+- 2287 символов, офсеты 1899228–1901515 в book.txt
+- 1517 символов, офсеты 24884–26401 в book.txt
+- 1307 символов, офсеты 397393–398700 в book.txt
+- 1248 символов, офсеты 1905166–1906414 в book.txt
+- 985 символов, офсеты 1891858–1892843 в book.txt
+- 817 символов, офсеты 1890196–1891013 в book.txt
+- 704 символов, офсеты 1902763–1903467 в book.txt
+- 624 символов, офсеты 417327–417951 в book.txt
+
+Обычно это разделы с другой вёрсткой: указатели, таблицы, приложения. Либо отсечь их диапазоном страниц, либо расширить профиль.
 
 ## Подозрительно длинные карточки
-de-zpo-steinjonas-1:rdn:32b/84, de-zpo-steinjonas-1:rdn:49/33
+de-zpo-steinjonas-1:rdn:32b/84, de-zpo-steinjonas-1:rdn:49/7
 Длинная карточка почти всегда означает, что следующий номер не распознан и две единицы слиплись.
 
 ## Подозрительно короткие карточки
-de-zpo-steinjonas-1:rdn:Einleitung/1, de-zpo-steinjonas-1:rdn:1/35, de-zpo-steinjonas-1:rdn:3/23, de-zpo-steinjonas-1:rdn:3/31, de-zpo-steinjonas-1:rdn:3/37, de-zpo-steinjonas-1:rdn:3/40, de-zpo-steinjonas-1:rdn:3/52, de-zpo-steinjonas-1:rdn:3/58, de-zpo-steinjonas-1:rdn:3/65, de-zpo-steinjonas-1:rdn:3/66, de-zpo-steinjonas-1:rdn:3/67, de-zpo-steinjonas-1:rdn:3/68, de-zpo-steinjonas-1:rdn:3/70, de-zpo-steinjonas-1:rdn:3/73, de-zpo-steinjonas-1:rdn:3/74
+de-zpo-steinjonas-1:rdn:1/35, de-zpo-steinjonas-1:rdn:3/23, de-zpo-steinjonas-1:rdn:3/31, de-zpo-steinjonas-1:rdn:3/37, de-zpo-steinjonas-1:rdn:3/40, de-zpo-steinjonas-1:rdn:3/52, de-zpo-steinjonas-1:rdn:3/58, de-zpo-steinjonas-1:rdn:3/65, de-zpo-steinjonas-1:rdn:3/66, de-zpo-steinjonas-1:rdn:3/67, de-zpo-steinjonas-1:rdn:3/68, de-zpo-steinjonas-1:rdn:3/70, de-zpo-steinjonas-1:rdn:3/73, de-zpo-steinjonas-1:rdn:3/74, de-zpo-steinjonas-1:rdn:3/75
 
 ## Страницы, не попавшие ни в одну карточку
-175, 176, 274, 453, 501, 620
+175, 176, 180, 274, 453, 501, 620
 
 ## Неразрешённые внутренние отсылки
 
@@ -52,160 +75,147 @@ de-zpo-steinjonas-1:rdn:Einleitung/1, de-zpo-steinjonas-1:rdn:1/35, de-zpo-stein
 
 ## Случайные карточки для глазной проверки
 
-### de-zpo-steinjonas-1:rdn:15/12
-*Stein/Jonas/Smid/Hartmann, ZPO, 23. Aufl., § 15 Rdn. 12*
-Адрес: § 15 Rdn. 12 | иерархия: § 15 | стр. файла 236–238, книги 192–193
+### de-zpo-steinjonas-1:rdn:17/2
+*Stein/Jonas/Smid/Hartmann, ZPO, 23. Aufl., § 17 Rdn. 2*
+Адрес: § 17 Rdn. 2 | иерархия: § 17 | стр. файла 246–246, книги 200–200
+Нормы: — | отсылки: § 22 Rdn. 17
+
+1. Besondere, nicht ausschließliche Gerichtsstände. Der Kläger hat beim Vorliegen der entsprechenden Voraussetzungen nach § 35 die Wahl, die juristische Person
+nicht vor ihrem allgemeinen Gerichtsstand an ihrem Sitz nach § 17, sondern vor dem
+besonderen Gerichtsstand der Niederlassung gemäß § 21 zu verklagen; weiter kommen
+die weiteren besonderen Gerichtsstände, namentlich der Vertragsgerichtsstand (§ 29)
+und der Deliktsgerichtsstand (§ 32) in Betracht. Klagen der juristischen Person gegen ihre
+Mitglieder können nach der Verweisung in § 22 auf § 17 statt vor deren allgemeinen
+Wohnsitz- oder Sitzgerichtsstand vor dem Gerichtsstand der juristischen Person erhoben
+werden; gleiches gilt für Klagen der Mitglieder gegeneinander (§ 22 Rdn. 17).
+
+
+### de-zpo-steinjonas-1:rdn:34/6
+*Stein/Jonas/Smid/Hartmann, ZPO, 23. Aufl., § 34 Rdn. 6*
+Адрес: § 34 Rdn. 6 | иерархия: § 34 | стр. файла 604–604, книги 538–538
+Нормы: §§ 78ff | отсылки: —
+
+1. Prozessbevollmächtigte. Kläger i.S.d. Vorschrift sind Prozessbevollmächtigte
+(§§ 78ff.), auch wenn die Vollmacht nicht rechtzeitig beigebracht wurde (§ 89), dagegen
+nicht im Falle einer auftragslosen Geschäftsführung des § 89; sonst aber auch für Unterbevollmächtigte, mögen sie auch nur in der mündlichen Verhandlung mitwirken und mögen
+sie Rechtsanwälte sein oder nicht; und selbst, wenn ihnen gemäß § 157 das mündliche
+Verhandeln untersagt worden ist oder sie nach dem RDG nicht tätig werden dürfen.
+
+
+### de-zpo-steinjonas-1:rdn:32b/50
+*Stein/Jonas/Reuschle, ZPO, 23. Aufl., § 32b Rdn. 50*
+Адрес: § 32b Rdn. 50 | иерархия: § 32b | стр. файла 520–520, книги 457–457
 Нормы: — | отсылки: —
 
-§ 15 begründet zugleich die örtliche und die internationale Zuständigkeit des deutschen Wohnsitzgerichts, was auf die Doppelfunktionalität der Gerichtsstands-Vorschriften zurückzuführen ist. Sie greift auch unter der Voraussetzung dass die Personen, die
-von der Vorschrift erfasst sind, in einem anderen Mitgliedstaat der Union, also im Gel_____
-tungsbereich der EuGVVO einen Wohnsitz begründet haben. Die ganz herrschende Meinung geht davon aus, dass § 15 auch für die Zwecke der Anwendbarkeit der EuGVVO im
-Sinne einer prozessualen Wohnsitzfiktion zu interpretieren sei, da der Gesetzgeber durch
-die Neufassung der Vorschrift im Zuge der Gerichtsstands Novelle eine sachliche Ände44
-rung nicht beabsichtigt hat. Andernfalls könnte ein extraterritorialer Deutscher auch
-an seinem Wohnsitz nach Art. 2 Abs. 1, 59 Abs. 1 EuGVVO (Art. 4, 62 EuGVVO n.F.) aufgrund seiner Gerichtsfreiheit nicht verklagt …
+Werden von einem Gesellschafter der Zielgesellschaft Schadenersatzansprüche gegen einen Bieter aus § 12 Abs. 1, Abs. 6 WpÜG geltend gemacht, ist die Klage am Sitz der
+Zielgesellschaft zu erheben.
+4. Zuständigkeit gemäß § 32b Abs. 1 Nr. 2 ZPO
 
-> [1] Bürgerlich-rechtliche Voraus- § 16 durch den Kläger und Bestreiten setzung der Wohnsitz- durch den Beklagten | 8 losigkeit | 2 2. Ermittlungsobliegenheiten des
-> [1] Inländischer Aufenthalt | 5 1. EuGVVO | 11
-> [1] Kropholler Handbuch des Internationalen Zivilverfahrensrechts I, Kap. III Rdn. 274.
 
-### de-zpo-steinjonas-1:rdn:33/115
-*Stein/Jonas/Smid/Hartmann, ZPO, 23. Aufl., § 33 Rdn. 115*
-Адрес: § 33 Rdn. 115 | иерархия: § 33 | стр. файла 598–598, книги 533–533
+### de-zpo-steinjonas-1:rdn:32a/17
+*Stein/Jonas/Smid/Hartmann, ZPO, 23. Aufl., § 32a Rdn. 17*
+Адрес: § 32a Rdn. 17 | иерархия: § 32a | стр. файла 500–500, книги 438–438
 Нормы: — | отсылки: —
 
-b) Bei einer isolierten Drittwiderklage gegen den Zedenten der Klageforderung, mit
-der die Feststellung begehrt wird, dass ihm keine Ansprüche zustehen, kommt dagegen
-die Bestimmung eines gemeinsam zuständigen Gerichts entsprechend § 36 Abs. 1 Nr. 3 in
-290
-Betracht. Soweit nach der Rechtsprechung des BGH eine isolierte Drittwiderklage zulässig ist, hierfür aber beim Gericht der Klage keine Zuständigkeit begründet ist, kann
-vom übergeordneten Gericht in entsprechender Anwendung des § 36 Abs. 1 Nr. 3 ein ge291
-meinsam zuständiges Gericht bestimmt werden.
+§ 6 Abs. 1 UmweltHG normiert insoweit eine Erleichterung der Darlegungslast des
+Klägers als dieser lediglich dazutun hat, dass nach den Gegebenheiten des Einzelfalles
+die Anlage geeignet ist, den entstandenen Schaden zu verursachen. Weist dagegen der
+Inhaber nach, dass die Anlage im Normalbetrieb gearbeitet hat und bestimmungsgemäß
+betrieben wurde und, findet die Ursachenvermutung nach § 6 Abs. 2 S. 1 UmweltHG keine Anwendung. Legt der in Anspruch genommene Inhaber dar und stellt unter Beweis,
+dass nach den Umständen des Einzelfalles eine Alternativursache für den eingetretenen
+Schaden in Betracht kommt, ist die Ursachenvermutung nach § 7 UmweltHG ebenfalls
+ausgeschlossen.
+VI. Anlagenbegriff
 
-> [290] OLG München BauR 2010, 1644; OLG München NJW 2009, 2609; Vorlagebeschluss wegen Abweichung von BGH NJW 1992, 982.
-> [291] BGH Urt. v. 18.6.2008 – V ZR 114/07 = BGH BeckRS 2008, 15043; BGH Beschl. v. 24.6.2008 – X ARZ 69/08; vgl. auch OLG München NJW 2009, 2609 (LS).
 
-### de-zpo-steinjonas-1:rdn:32b/31
-*Stein/Jonas/Reuschle, ZPO, 23. Aufl., § 32b Rdn. 31*
-Адрес: § 32b Rdn. 31 | иерархия: § 32b | стр. файла 515–515, книги 452–452
-Нормы: — | отсылки: —
+### de-zpo-steinjonas-1:rdn:49/1
+*Stein/Jonas/Gerken, ZPO, 23. Aufl., § 49 Rdn. 1*
+Адрес: § 49 Rdn. 1 | иерархия: § 49 | стр. файла 837–838, книги 758–759
+Нормы: § 153 GVG, § 190 GVG, § 155 GVG, §§ 724ff, §§ 163, §§ 41ff, §§ 41 | отсылки: § 41 Rdn. 7
 
-b) Bezug zu einer falschen, irreführenden oder unterlassenen öffentlichen Kapitalmarktinformation. In den beiden ersten Anwendungsfällen ist erforderlich, dass
-das Bestehen des Schadensersatzanspruchs zumindest auch von einer falschen, irreführenden oder unterlassenen öffentlichen Kapitalmarktinformation abhängt. Auch hierbei
-handelt es sich um eine doppeltrelevante Tatsache, so dass schlüssiger Vortrag des Klägers ausreichend, aber auch erforderlich für die Bejahung der örtlichen Zuständigkeit
-70
-ist.
-
-> [70] LG Dortmund 31.10.2012, Az. 21 O 219/11.
-
-### de-zpo-steinjonas-1:rdn:32/102
-*Stein/Jonas/Smid/Hartmann, ZPO, 23. Aufl., § 32 Rdn. 102*
-Адрес: § 32 Rdn. 102 | иерархия: § 32 | стр. файла 493–495, книги 432–433
-Нормы: § 826 BGB | отсылки: —
-
-Gemäß Art. 40 Abs. 1 Satz 1 EGBGB unterliegen Ansprüche aus unerlaubter Handlung grundsätzlich dem Recht des Staates, in dem der Ersatzpflichtige gehandelt hat. Der
-Verletzte kann jedoch verlangen, dass anstelle dieses Rechts das Recht des Staates angewandt wird, in dem der Erfolg eingetreten ist (Art. 40 Abs. 1 Satz 2 EGBGB). Als Erfolg_____
-sort i.S.d. Art. 40 Abs. 1 S. 2 EGBGB ist dabei der Ort anzusehen, an dem die Rechtsgutsverletzung, d.h. die tatbestandsmäßige Deliktsvollendung, eingetreten ist. Dies ist beim
-Tatbestand des § 826 BGB der Ort, an dem der Vermögensschaden eingetreten ist, d.h.
-290
-der Lageort des Vermögens.
-
-> [1] Regelungsgehalt | 1 Gerichtsstände | 5
-> [1] Ausschluss der Delikts- 5. Kritik der Regelung | 8 zuständigkeit des Erfolgs- III. Subjektiver Geltungsbereich | 9 ortes | 3 1. Kläger | 9
-> [2] Verfahrenskonzentration | 2 4. Ausschluss von Gerichtsstand- II. Ausschließlichkeit des Gerichts- vereinbarungen; Kein rügeloses standes | 3 Einlassen | 6
-
-### de-zpo-steinjonas-1:rdn:46/20
-*Stein/Jonas/Gerken, ZPO, 23. Aufl., § 46 Rdn. 20*
-Адрес: § 46 Rdn. 20 | иерархия: § 46 | стр. файла 825–826, книги 748–749
-Нормы: — | отсылки: —
-
-Streitig ist, wie Wert des Beschwerdegegenstands zu bemessen ist. Die überwiegende und zutreffende Ansicht bemisst den Wert nach der Hauptsache. Das Ablehnungsgesuch wird gestellt, weil die Partei eine unsachliche Behandlung der Sache und
-damit eine falsche Entscheidung befürchtet. Demgemäß entspricht das Interesse an der
-Zwischenentscheidung über die Befangenheit dem Streitwert der Hauptsache.
+Die Urkundsbeamten, mit denen die Geschäftsstellen zu besetzen sind (§ 153 GVG)
+sind selbständige Organe der Rechtspflege. Sie erledigen ihre Aufgaben eigenständig
+(z.B. bei der Protokollierung von Erklärungen gemäß § 129a – s. dort Rdn. 4, bei der Erteilung eines Rechtskraft- oder Notfristzeugnisses – § 706 oder bei der Erteilung der Vollstreckungsklausel – §§ 724ff), gemeinsam mit dem Richter (§§ 163, 164) oder sie unterstützen den Richter bei seiner Tätigkeit (etwa in ihrer Funktion als Dolmetscher gemäß
+§ 190 GVG). § 49 gewährleistet auch in diesem Bereich die Unparteilichkeit der handelnden
 _____
-§ 47
-Unaufschiebbare Amtshandlungen
-§ 47 Abschnitt 1. Gerichte Erstes Buch – Allgemeine Vorschriften https://doi.org/10.1515/9783110436921-060 Gerken
-(1) Ein abgelehnter Richter hat vor Erledigung des Ablehnungsgesuchs nur solche Handlungen vorzunehmen, die keinen Aufschub gestatten.
-(2) Wird ein Richter während der Verhandlung abgelehnt und würde die Entscheidung über die Ablehnung eine Vertagung der Verhandlung erfordern, so
-kann der Termin unter Mitwirkung des abgelehnten Richters fortges…
+Amtsträger und sichert damit ein justizförmiges Verfahren. Maßgeblich für das Ablehnungsrecht ist allein die konkrete Tätigkeit und nicht die Ausbildung. Handelt ein Rechtspfleger oder Referendar als Urkundsbeamter, gilt § 49 daher ebenfalls. Die Vorschrift erfasst jede Tätigkeit in der Fun…
 
-> [1] Gegenstand | 5 III. Fortsetzung des Termins
-> [1] OLG Frankfurt NJW 1998, 1238 (zum Strafprozess).
-> [2] Auswirkungen | 6 gemäß Abs. 2 | 10 1 2 3 4
+> [2] BVerfG NJW-RR 2005, 365; BGH NJW-RR 2005, 149 = MDR 2005, 169.
+> [3] OLG Koblenz MDR 1985, 257.
+> [4] OLG Dresden OLGRspr. Bd. 23 (1911), 159.
 
-### de-zpo-steinjonas-1:rdn:39/19
-*Stein/Jonas/Smid/Hartmann, ZPO, 23. Aufl., § 39 Rdn. 19*
-Адрес: § 39 Rdn. 19 | иерархия: § 39 | стр. файла 733–733, книги 662–662
+### de-zpo-steinjonas-1:rdn:40/1
+*Stein/Jonas/Smid/Hartmann, ZPO, 23. Aufl., § 40 Rdn. 1*
+Адрес: § 40 Rdn. 1 | иерархия: § 40 | стр. файла 738–739, книги 666–667
 Нормы: — | отсылки: —
 
-Ein mündliches Verhandeln i.S.d. § 39 ist schon dann gegeben, wenn die Parteien
-und das Gericht zu Streitgegenstand erörtern. Durch das mündliche Verhandeln, ohne
-die Unzuständigkeit des angerufenen Gerichts zur rügen, wird gemäß § 39 S. 1 die Zuständigkeit des angerufenen Gerichts des ersten Rechtszuges begründet. Eine rügelose
-Verhandlung zur Sache vor dem unzuständigen Gericht hindert eine Verweisung an das
-zuständige Gericht nicht, wenn es an der nach § 504 erforderlichen Belehrung des Beklagten über die Unzuständigkeit des angerufenen Gerichts gefehlt hat. Erfolgt der Hinweis nach § 504 erst nach mündlicher Verhandlung, wird die Sperre des § 39 S. 2 erst von
-diesem Zeitpunkt an aufgehoben und das sachlich unzuständige Gericht erst durch rügelose Verhandlung des Beklagten in der nächsten mündlichen Verhandlung zuständig.
-Ein vor der mündlichen Verhandlung erklärter Verzicht des Bekla…
+In dem gesetzlichen Regel-Ausnahmeverhältnis des grundsätzlichen Verbots bzw.
+der im Allgemeinen durch das Gericht aus Gesetz ausgesprochenen Unwirksamkeit von
+Vereinbarungen der Parteien, die sich auf das Prozessrechtsverhältnis beziehen, normiert § 40 die Fälle, in denen nach § 38 zugelassene Gerichtsstandsvereinbarungen
+gleichwohl rechtliche Wirkung nicht entfalten können. § 40 Abs. 1 hat dabei im Wesentlichen den Schutz der Waffengleichheit der Parteien zum Ziel. Diese Vorschrift regelt
+nämlich, dass sich die Vereinbarung auf ein bestimmtes Rechtsverhältnis beziehen
+muss. Ist dies nicht der Fall, ist nämlich das Rechtsverhältnis nicht bestimmt, auf das
+sich die Vereinbarung bezieht, wird im Allgemeinen das aus ihm entspringende Rechtsstaatlichkeitsprinzip nicht hinreichend abgeleitet werden können, womit es namentlich
+für den Beklagten nicht erkennbar ist, wann mit der Gerichtsstands…
 
-> [34] OLG Koblenz, Beschl. v. 18.3.2015 – 13 UF 825/14, NJW-RR 2015, 1482, mit Verweis auf OLG Celle IPRspr 2008 Nr. 127, 431.
-> [35] OLG Koblenz, Beschl. v. 18.3.2015 – 13 UF 825/14, NJW-RR 2015, 1482, Orientierungssatz Nr. 2.
-> [36] OLG Hamm, Beschl. v. 29.5.2017 – 32 Sa 26/17, NJOZ 2018, 1181.
+> [1] BGBl. I S. 188.
+> [2] OLG München WM 1989, 602, 604.
 
-### de-zpo-steinjonas-1:rdn:47/2
-*Stein/Jonas/Gerken, ZPO, 23. Aufl., § 47 Rdn. 2*
-Адрес: § 47 Rdn. 2 | иерархия: § 47 | стр. файла 826–826, книги 749–749
-Нормы: — | отсылки: —
+### de-zpo-steinjonas-1:rdn:49/3
+*Stein/Jonas/Gerken, ZPO, 23. Aufl., § 49 Rdn. 3*
+Адрес: § 49 Rdn. 3 | иерархия: § 49 | стр. файла 838–838, книги 759–759
+Нормы: §§ 348ff | отсылки: —
 
-Die Pflicht des Richters, mit weiteren Prozesshandlungen abzuwarten, setzt ein mit
-der Anbringung des Ablehnungsgesuchs bzw. mit der Anzeige des Richters gemäß § 48
-von einem Verhältnis, das seine Ablehnung rechtfertigen könnte. Die Gestattung weiterer Handlungen in § 47 Abs. 1 und Abs. 2 betrifft beide Fälle, auch wenn in beiden Absätzen der Vorschrift jeweils nur von der Ablehnung die Rede ist. Amtshandlungen, die der
-Richter davor vorgenommen hat, werden durch das Gesuch nicht berührt. Sie bleiben
-wirksam, auch wenn das Gesuch später Erfolg hat. Dies gilt nach Ansicht des BGH auch
-für Entscheidungen, die zwar abgesetzt, aber mangels Zustellung oder Verkündung noch
-nicht existent geworden sind.
-
-
-### de-zpo-steinjonas-1:rdn:28/2
-*Stein/Jonas/Smid/Hartmann, ZPO, 23. Aufl., § 28 Rdn. 2*
-Адрес: § 28 Rdn. 2 | иерархия: § 28 | стр. файла 373–373, книги 319–319
-Нормы: § 1967 BGB, § 171 BGB, § 315 InsO, §§ 1960f | отсылки: —
-
-1. Nachlassverbindlichkeiten. Die in § 28 bezeichneten Nachlassverbindlichkeiten
-sind die Erblasserschulden, die nach § 1967 BGB vom Erblasser herrührend von den Erben zu tragen sind. Hierzu sind die dinglichen Ansprüche zu zählen, was sich aus § 171
-BGB ergibt. Weiter fallen unter die Nachlassverbindlichkeiten die Erbfallschulden und
-Nachlasserbenschulden, die den Erben als solchen als Verbindlichkeiten treffen. Hierzu
-zählen die Verbindlichkeiten aus einer Nachlassverwaltung oder die Kosten des Nachlassinsolvenzverfahrens gemäß § 315 InsO. Im Falle der Ausschlagung der Erbschaft
-gehören darüber hinaus diejenigen Verbindlichkeiten zu den Nachlassverbindlichkeiten,
-die aus Verwaltungshandlungen des Erben herrühren. Dies gilt auch für Handlungen
-eines vermeintlichen Erben, des Nachlasspfleger oder Testamentsvollstreckers nach den
-§§ 1960f., 2197ff. BGB.
-
-> [3] Musielak/Voit/Heinrich § 28 Rdn. 4; vgl. auch 3. Vorauflage/Hausmann § 28 Rdn. 6.
-> [4] RGZ 62, 38; 90, 91.
-> [5] 6 7 8 9 10 11
-
-### de-zpo-steinjonas-1:rdn:48/6
-*Stein/Jonas/Gerken, ZPO, 23. Aufl., § 48 Rdn. 6*
-Адрес: § 48 Rdn. 6 | иерархия: § 48 | стр. файла 834–834, книги 756–756
-Нормы: — | отсылки: —
-
-Die Mitteilungspflicht setzt ein, sobald dem Richter die Gründe bekannt werden, die
-zu seiner Ausschließung führen bzw. seine Ablehnung rechtfertigen können. Sie endet,
-wenn eine Ablehnung wegen Besorgnis der Befangenheit durch die Parteien verfahrensrechtlich nicht mehr in Betracht kommt. Umstände, die dem Richter erst danach
-bekannt werden, braucht er daher nicht mehr anzuzeigen. Die zeitliche Grenze des § 43
-greift nur insoweit ein, als den Parteien die anzeigepflichtigen Tatsachen bereits bekannt
-waren.
+Zuständig für die Entscheidung über das Ablehnungsgesuch ist das Gericht, bei dem
+der Urkundsbeamte beschäftigt ist, und zwar der Richter bzw. Spruchkörper, dem der
+Urkundsbeamte nach dem internen Geschäftsverteilungsplan für Verwaltungsangelegenheiten zugeordnet ist. Abweichend von § 45 entscheidet während des Verfahrens
+gemäß Halbs. 2 das Gericht, vor dem verhandelt wird, ggf. also auch der Einzelrichter
+(§§ 348ff). Der Ablehnungsantrag kann vor demselben Urkundsbeamten zu Protokoll
+erklärt werden. § 47 greift erst ein, wenn das Ablehnungsgesuch dem Gericht vorliegt.
+Selbstablehnung nach § 48 ist möglich. Das Ablehnungsgesuch kann dadurch erledigt
+werden, dass der Urkundsbeamte von der Geschäftsleitung ausgetauscht wird. Eine
+förmliche Entscheidung über das Ablehnungsgesuch ist dann nicht mehr nötig.
+III. Mitwirkung eines ausgeschlossenen Urkundsbeamten
 
 
-### de-zpo-steinjonas-1:rdn:6/18
-*Stein/Jonas/Reuschle, ZPO, 23. Aufl., § 6 Rdn. 18*
-Адрес: § 6 Rdn. 18 | иерархия: § 6 | стр. файла 153–153, книги 119–119
-Нормы: — | отсылки: —
+### de-zpo-steinjonas-1:rdn:29/6
+*Stein/Jonas/Smid/Hartmann, ZPO, 23. Aufl., § 29 Rdn. 6*
+Адрес: § 29 Rdn. 6 | иерархия: § 29 | стр. файла 380–380, книги 326–326
+Нормы: § 633 Abs. 1 BGB, § 433 Abs. 2 BGB, § 631 Abs. 1 BGB | отсылки: —
 
-2. Forderungen. Geht es um die Sicherstellung einer Forderung oder um ein Pfandrecht für sie, so wird auf die Sicherung als solche abgestellt (§ 6 Abs. 1 S. 1), wenn ihr
-Wert nicht geringer ist als der Gegenstand, an dem sie besteht (§ 6 Abs. 1 S. 2).
+a) § 29 stellt nicht auf den Erfüllungsort des Vertrages ab. Der Wortlaut der Vorschrift
+handelt von der Erfüllung der „streitigen Verpflichtung“. Insbesondere kommt es daher
+nicht auf den Ort an dem der Schuldner der „vertragscharakteristischen Leistung“ des
+Vertrages zu erfüllen hat. Liegt ein Kaufvertrag vor, ist daher nicht auf die Pflichten des
+Verkäufers, liegt ein Werkvertrag vor, nicht auf die Pflichten des Werkunternehmers abzustellen, auch wenn die mangelfreie Übereignung der Sache (§ 433 Abs. 1 S. 2 BGB) und
+die mangelfreie Erbringung des Werkes (§ 633 Abs. 1 BGB) für die jeweiligen Verträge vertragstypisch sind – nicht dagegen die Zahlungspflicht des Käufers (§ 433 Abs. 2 BGB) oder
+des Bestellers (§ 631 Abs. 1 BGB). Der Erfüllungsort für die Pflichten einer jeder der beiden
+Vertragsparteien ist nämlich nicht zwingend einheitlich zu bestimmen. Bei der Begründung des Gerichtsst…
+
+> [18] Zum Begriff des gesetzlichen Erfüllungsortes MünchKomm/Patzina § 29 Rdn. 19ff.
+> [19] Zum Bauvertrag Hahn NZBau 2006, 555.
+> [20] RGZ 10, 350, 352; Stein/Jonas/Roth § 29 Rdn. 20.
+
+### de-zpo-steinjonas-1:rdn:6/22
+*Stein/Jonas/Reuschle, ZPO, 23. Aufl., § 6 Rdn. 22*
+Адрес: § 6 Rdn. 22 | иерархия: § 6 | стр. файла 154–154, книги 120–120
+Нормы: §§ 50 InsO, §§ 50 | отсылки: —
+
+Auf den Klageantrag kommt es dabei nicht an. Er kann auf Bestellung einer Sicherheit oder auf ihre Herausgabe nach Erlöschen des gesicherten Rechts oder auf Löschung
+von Grundpfandrechten, auf vorzugsweise Befriedigung nach § 805, auf abgesonderte
+Befriedigung im Insolvenzverfahren (vgl. §§ 50 InsO) oder auf Aufrechterhaltung einer
+Pfändung gegen den Insolvenzverwalter gerichtet sein.
+
+
+### de-zpo-steinjonas-1:rdn:22/9
+*Stein/Jonas/Smid/Hartmann, ZPO, 23. Aufl., § 22 Rdn. 9*
+Адрес: § 22 Rdn. 9 | иерархия: § 22 | стр. файла 307–307, книги 258–258
+Нормы: §§ 705ff | отсылки: —
+
+b) Mitglieder der juristischen Personen und der Gesamtpersonen können physische
+und juristische Personen sein, auch andere Gesamtpersonen und nichtrechtsfähige Vereine und BGB-Gesellschaften nach §§ 705ff. BGB. Es kommt nicht darauf an, ob der Beklagte nicht selbst, sondern vermittels eines Treuhänders in das Handelsregister als Gesellschafter eingetragen ist.
 
 
 ## СТОП: выгружать нельзя
 
-- Непрерывность нумерации 95.7% < 98%: пропущено номеров 33. Паттерн местами не сработал, и эти куски книги в корпус не попали.
+- Непрерывность нумерации 96.6% < 98%: пропущено номеров 30. Паттерн местами не сработал, и эти куски книги в корпус не попали.

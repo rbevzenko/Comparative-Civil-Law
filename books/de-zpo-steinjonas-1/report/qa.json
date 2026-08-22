@@ -1,18 +1,60 @@
 {
   "book": "/home/user/Comparative-Civil-Law/books/de-zpo-steinjonas-1",
-  "cards": 2498,
+  "cards": 2467,
   "profile": "degruyter-grosskommentar-v1",
   "method": "digital",
   "continuity": {
-    "share": 0.9566,
+    "share": 0.9659,
     "rows": 56,
     "gaps": [
+      {
+        "family": "Rdn.",
+        "section": "Einleitung",
+        "from": 3,
+        "to": 5,
+        "missing": 1
+      },
       {
         "family": "Rdn.",
         "section": "6",
         "from": 42,
         "to": 45,
         "missing": 2
+      },
+      {
+        "family": "Rdn.",
+        "section": "11",
+        "from": 5,
+        "to": 7,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "11",
+        "from": 7,
+        "to": 15,
+        "missing": 7
+      },
+      {
+        "family": "Rdn.",
+        "section": "11",
+        "from": 4,
+        "to": 6,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "11",
+        "from": 6,
+        "to": 8,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "11",
+        "from": 14,
+        "to": 16,
+        "missing": 1
       },
       {
         "family": "Rdn.",
@@ -30,134 +72,120 @@
       },
       {
         "family": "Rdn.",
-        "section": "49",
-        "from": 7,
-        "to": 33,
-        "missing": 25
-      }
-    ],
-    "gaps_total": 4,
-    "missing_total": 33,
-    "duplicates": [
-      {
-        "family": "Rdn.",
-        "section": "Einleitung",
-        "number": 1
-      },
-      {
-        "family": "Rdn.",
-        "section": "Einleitung",
-        "number": 2
-      },
-      {
-        "family": "Rdn.",
-        "section": "Einleitung",
-        "number": 3
-      },
-      {
-        "family": "Rdn.",
-        "section": "Einleitung",
-        "number": 4
-      },
-      {
-        "family": "Rdn.",
-        "section": "11",
-        "number": 1
-      },
-      {
-        "family": "Rdn.",
-        "section": "11",
-        "number": 2
-      },
-      {
-        "family": "Rdn.",
-        "section": "11",
-        "number": 3
-      },
-      {
-        "family": "Rdn.",
-        "section": "11",
-        "number": 4
-      },
-      {
-        "family": "Rdn.",
-        "section": "11",
-        "number": 5
-      },
-      {
-        "family": "Rdn.",
-        "section": "11",
-        "number": 6
-      },
-      {
-        "family": "Rdn.",
-        "section": "11",
-        "number": 7
-      },
-      {
-        "family": "Rdn.",
-        "section": "11",
-        "number": 8
-      },
-      {
-        "family": "Rdn.",
-        "section": "11",
-        "number": 9
-      },
-      {
-        "family": "Rdn.",
-        "section": "11",
-        "number": 10
-      },
-      {
-        "family": "Rdn.",
-        "section": "11",
-        "number": 11
-      },
-      {
-        "family": "Rdn.",
-        "section": "11",
-        "number": 12
-      },
-      {
-        "family": "Rdn.",
-        "section": "11",
-        "number": 13
-      },
-      {
-        "family": "Rdn.",
-        "section": "11",
-        "number": 14
-      },
-      {
-        "family": "Rdn.",
-        "section": "11",
-        "number": 15
+        "section": "40",
+        "from": 1,
+        "to": 3,
+        "missing": 1
       },
       {
         "family": "Rdn.",
         "section": "40",
-        "number": 1
+        "from": 5,
+        "to": 7,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "40",
+        "from": 7,
+        "to": 9,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "40",
+        "from": 10,
+        "to": 12,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "40",
+        "from": 2,
+        "to": 6,
+        "missing": 3
+      },
+      {
+        "family": "Rdn.",
+        "section": "40",
+        "from": 6,
+        "to": 8,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "40",
+        "from": 8,
+        "to": 11,
+        "missing": 2
       }
     ],
-    "duplicates_total": 30,
+    "gaps_total": 16,
+    "missing_total": 30,
+    "duplicates": [],
+    "duplicates_total": 0,
     "by_family": {
-      "Rdn.": 2498
+      "Rdn.": 2467
     }
   },
   "coverage": {
-    "share": 0.9909,
-    "covered_chars": 2131425,
+    "share": 0.984,
+    "covered_chars": 2116598,
     "book_chars": 2151084,
     "cards_without_offsets": 0,
-    "biggest_holes": []
+    "biggest_holes": [
+      {
+        "chars": 2366,
+        "from": 400877,
+        "to": 403243
+      },
+      {
+        "chars": 2287,
+        "from": 1899228,
+        "to": 1901515
+      },
+      {
+        "chars": 1517,
+        "from": 24884,
+        "to": 26401
+      },
+      {
+        "chars": 1307,
+        "from": 397393,
+        "to": 398700
+      },
+      {
+        "chars": 1248,
+        "from": 1905166,
+        "to": 1906414
+      },
+      {
+        "chars": 985,
+        "from": 1891858,
+        "to": 1892843
+      },
+      {
+        "chars": 817,
+        "from": 1890196,
+        "to": 1891013
+      },
+      {
+        "chars": 704,
+        "from": 1902763,
+        "to": 1903467
+      },
+      {
+        "chars": 624,
+        "from": 417327,
+        "to": 417951
+      }
+    ]
   },
   "lengths": {
-    "median": 646,
+    "median": 649,
     "min": 21,
-    "max": 16540,
+    "max": 21004,
     "too_short": [
-      "de-zpo-steinjonas-1:rdn:Einleitung/1",
       "de-zpo-steinjonas-1:rdn:1/35",
       "de-zpo-steinjonas-1:rdn:3/23",
       "de-zpo-steinjonas-1:rdn:3/31",
@@ -171,31 +199,33 @@
       "de-zpo-steinjonas-1:rdn:3/68",
       "de-zpo-steinjonas-1:rdn:3/70",
       "de-zpo-steinjonas-1:rdn:3/73",
-      "de-zpo-steinjonas-1:rdn:3/74"
+      "de-zpo-steinjonas-1:rdn:3/74",
+      "de-zpo-steinjonas-1:rdn:3/75"
     ],
     "too_long": [
       "de-zpo-steinjonas-1:rdn:32b/84",
-      "de-zpo-steinjonas-1:rdn:49/33"
+      "de-zpo-steinjonas-1:rdn:49/7"
     ]
   },
   "footnotes": {
     "cards_with_footnotes_share": 0.49,
-    "footnotes_total": 5312,
+    "footnotes_total": 5295,
     "unparsed_blocks": 0,
-    "per_card_median": 0.0,
-    "cards_with_calls_but_no_notes": 85,
-    "notes_without_visible_call": 4569
+    "per_card_median": 0,
+    "cards_with_calls_but_no_notes": 83,
+    "notes_without_visible_call": 4557
   },
   "dead_pages": {
     "pages": [
       175,
       176,
+      180,
       274,
       453,
       501,
       620
     ],
-    "count": 6
+    "count": 7
   },
   "duplicate_pages": {
     "count": 0,
@@ -205,11 +235,11 @@
     "cards_without_hierarchy": 0,
     "sample": [],
     "depth_histogram": {
-      "1": 2498
+      "1": 2467
     }
   },
   "internal_refs": {
-    "refs_total": 292,
+    "refs_total": 290,
     "unresolved": 5,
     "resolved_share": 0.983,
     "sample": [
@@ -250,6 +280,6 @@
   },
   "absorbed_units": 0,
   "stops": [
-    "Непрерывность нумерации 95.7% < 98%: пропущено номеров 33. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+    "Непрерывность нумерации 96.6% < 98%: пропущено номеров 30. Паттерн местами не сработал, и эти куски книги в корпус не попали."
   ]
 }

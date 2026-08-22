@@ -7,6 +7,30 @@
       "expected": 32,
       "line": 8019,
       "evidence": "предыдущий 31, следующий 33"
+    },
+    {
+      "raw": "25",
+      "action": "repaired_by_neighbours",
+      "to": 24,
+      "expected": 24,
+      "line": 19115,
+      "evidence": "предыдущий 23, следующий 25"
+    },
+    {
+      "raw": "14",
+      "action": "repaired_by_neighbours",
+      "to": 15,
+      "expected": 15,
+      "line": 15279,
+      "evidence": "предыдущий 14, следующий 16"
+    },
+    {
+      "raw": "4",
+      "action": "repaired_by_neighbours",
+      "to": 2,
+      "expected": 2,
+      "line": 25038,
+      "evidence": "предыдущий 1, следующий 3"
     }
   ],
   "absorbed_units": 0,

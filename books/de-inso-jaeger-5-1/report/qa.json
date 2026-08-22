@@ -227,67 +227,67 @@
     }
   },
   "coverage": {
-    "share": 0.8543,
-    "covered_chars": 835461,
-    "book_chars": 977941,
+    "share": 0.8521,
+    "covered_chars": 833262,
+    "book_chars": 977894,
     "cards_without_offsets": 0,
     "biggest_holes": [
       {
         "chars": 8930,
-        "from": 375270,
-        "to": 384200
+        "from": 375267,
+        "to": 384197
       },
       {
         "chars": 8433,
-        "from": 456968,
-        "to": 465401
+        "from": 456965,
+        "to": 465398
       },
       {
         "chars": 7046,
-        "from": 420716,
-        "to": 427762
+        "from": 420713,
+        "to": 427759
+      },
+      {
+        "chars": 4960,
+        "from": 344558,
+        "to": 349518
       },
       {
         "chars": 4940,
-        "from": 434854,
-        "to": 439794
+        "from": 434851,
+        "to": 439791
       },
       {
         "chars": 4933,
-        "from": 413530,
-        "to": 418463
+        "from": 413527,
+        "to": 418460
       },
       {
         "chars": 4865,
-        "from": 368074,
-        "to": 372939
+        "from": 368071,
+        "to": 372936
       },
       {
         "chars": 4751,
-        "from": 448228,
-        "to": 452979
+        "from": 448225,
+        "to": 452976
       },
       {
         "chars": 4731,
-        "from": 429363,
-        "to": 434094
+        "from": 429360,
+        "to": 434091
       },
       {
         "chars": 4556,
-        "from": 360510,
-        "to": 365066
-      },
-      {
-        "chars": 4086,
-        "from": 397650,
-        "to": 401736
+        "from": 360507,
+        "to": 365063
       }
     ]
   },
   "lengths": {
     "median": 1037,
     "min": 91,
-    "max": 18010,
+    "max": 17291,
     "too_short": [
       "de-inso-jaeger-5-1:rdn:152/9",
       "de-inso-jaeger-5-1:rdn:153/28"
@@ -298,14 +298,15 @@
   },
   "footnotes": {
     "cards_with_footnotes_share": 0.67,
-    "footnotes_total": 911,
+    "footnotes_total": 908,
     "unparsed_blocks": 0,
     "per_card_median": 1,
-    "cards_with_calls_but_no_notes": 131,
-    "notes_without_visible_call": 128
+    "cards_with_calls_but_no_notes": 130,
+    "notes_without_visible_call": 127
   },
   "dead_pages": {
     "pages": [
+      159,
       167,
       170,
       171,
@@ -319,7 +320,7 @@
       201,
       203
     ],
-    "count": 12
+    "count": 13
   },
   "duplicate_pages": {
     "count": 0,
@@ -329,7 +330,8 @@
     "cards_without_hierarchy": 0,
     "sample": [],
     "depth_histogram": {
-      "3": 414,
+      "2": 1,
+      "3": 413,
       "4": 263
     }
   },
@@ -347,8 +349,8 @@
     "number_unreadable": [],
     "issues_total": 0
   },
-  "absorbed_units": 0,
+  "absorbed_units": 1,
   "stops": [
-    "Покрытие текста 85.4% < 90%: часть книги не попала ни в одну карточку."
+    "Покрытие текста 85.2% < 90%: часть книги не попала ни в одну карточку."
   ]
 }

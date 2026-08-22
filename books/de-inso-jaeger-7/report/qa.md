@@ -1,47 +1,47 @@
 # Отчёт о качестве: de-inso-jaeger-7
 
-Карточек: 3585 (Vorspann — 270, Rdn. — 3315), профиль `degruyter-grosskommentar-v1`, способ `digital`
+Карточек: 3589 (Vorspann — 270, Rdn. — 3319), профиль `degruyter-grosskommentar-v1`, способ `digital`
 
 | Метрика | Значение | Порог |
 |---|---|---|
-| Непрерывность нумерации | 94.3% (рядов: 92) | ≥ 98% |
-| Покрытие текста книги | 98.7% | ≥ 90% |
+| Непрерывность нумерации | 88.1% (рядов: 91) | ≥ 98% |
+| Покрытие текста книги | 98.6% | ≥ 90% |
 | Карточек, перенесённых из другого прогона | 0 | — |
-| Пропусков в нумерации | 3 (номеров: 217) | — |
+| Пропусков в нумерации | 4 (номеров: 580) | — |
 | Дублей номеров | 0 | — |
 | Длина карточки, медиана | 888 символов | — |
-| Карточек со сносками | 61% (всего сносок 4457) | — |
+| Карточек со сносками | 61% (всего сносок 4454) | — |
 | Блоков сносок без читаемых номеров | 0 | — |
 | Мёртвых страниц | 5 | — |
 | Одинаковых страниц | 0 | — |
 | Карточек без иерархии | 0 | — |
 | Внутренние отсылки разрешаются | — (0 из 0 не нашлись) | — |
 | Слабых страниц OCR | 0 | — |
-| Спорных номеров | 2 | — |
-| Поглощённых единиц (contains_also) | 0 | — |
+| Спорных номеров | 3 | — |
+| Поглощённых единиц (contains_also) | 1 | — |
 
 ## Пропуски в нумерации
 
-- Rdn., раздел 270: 43 → 45 (нет 1)
-- Rdn., раздел 285: 15 → 228 (нет 212)
-- Rdn., раздел 285: 228 → 233 (нет 4)
+- Rdn., раздел 254: 1 → 290 (нет 288)
+- Rdn., раздел 272: 17 → 19 (нет 1)
+- Rdn., раздел 285: 15 → 270 (нет 254)
+- Rdn., раздел 285: 228 → 266 (нет 37)
 
 Дыра в нумерации — это либо не сработавший паттерн, либо действительно отсутствующий в книге номер. Различать глазами по странице разрыва.
 
 ## Крупнейшие незакрытые куски текста
 
-- 4876 символов, офсеты 3415986–3420862 в book.txt
-- 1094 символов, офсеты 1770531–1771625 в book.txt
-- 1075 символов, офсеты 2054668–2055743 в book.txt
-- 1048 символов, офсеты 1974102–1975150 в book.txt
-- 912 символов, офсеты 799237–800149 в book.txt
-- 619 символов, офсеты 3036906–3037525 в book.txt
+- 4876 символов, офсеты 3415806–3420682 в book.txt
+- 1121 символов, офсеты 1973963–1975084 в book.txt
+- 1094 символов, офсеты 1770471–1771565 в book.txt
+- 1075 символов, офсеты 2054599–2055674 в book.txt
+- 1059 символов, офсеты 2132617–2133676 в book.txt
+- 918 символов, офсеты 2367692–2368610 в book.txt
+- 912 символов, офсеты 799177–800089 в book.txt
+- 898 символов, офсеты 3036488–3037386 в book.txt
+- 570 символов, офсеты 3203800–3204370 в book.txt
 
 Обычно это разделы с другой вёрсткой: указатели, таблицы, приложения. Либо отсечь их диапазоном страниц, либо расширить профиль.
-
-## Подозрительно длинные карточки
-de-inso-jaeger-7:rdn:285/15
-Длинная карточка почти всегда означает, что следующий номер не распознан и две единицы слиплись.
 
 ## Подозрительно короткие карточки
 de-inso-jaeger-7:rdn:235/72, de-inso-jaeger-7:rdn:235/73, de-inso-jaeger-7:rdn:237/9, de-inso-jaeger-7:rdn:238a/11, de-inso-jaeger-7:rdn:253/32, de-inso-jaeger-7:rdn:255/40, de-inso-jaeger-7:rdn:266/7, de-inso-jaeger-7:rdn:269c/31, de-inso-jaeger-7:rdn:270/61, de-inso-jaeger-7:rdn:270a/4, de-inso-jaeger-7:rdn:270a/9, de-inso-jaeger-7:rdn:270a/13, de-inso-jaeger-7:rdn:270a/28, de-inso-jaeger-7:rdn:270b/5, de-inso-jaeger-7:rdn:270b/43
@@ -120,48 +120,47 @@ sein. Deshalb erscheint die Regelung jedenfalls zur Klarstellung sinnvoll.72
 2. Kein Bestreiten oder andere Sonderfälle
 
 
-### de-inso-jaeger-7:rdn:258/31
-*Jaeger/Piekenbrock, InsO, § 258 Rdn. 31*
-Адрес: § 258 Rdn. 31 | иерархия: § 258 | стр. файла 967–967, книги 929–929
+### de-inso-jaeger-7:rdn:258/30
+*Jaeger/Piekenbrock, InsO, § 258 Rdn. 30*
+Адрес: § 258 Rdn. 30 | иерархия: § 258 | стр. файла 966–967, книги 928–929
 Нормы: — | отсылки: —
 
-Diese Streitfrage hat sich auch durch die Veröffentlichung im Internet (§ 9 I) nicht erledigt, weil das Insolvenzgericht die Veröffentlichung nicht selbst vornehmen kann, sondern nur die Daten an das Justizministerium des Landes Nordrhein-Westfalen als zuständige Stelle übermittelt.94 Sie ist zur Reduktion der Arbeitsbelastung der Gerichte im Sinne
-der Begründung des Regierungsentwurfs zu entscheiden. Das Gericht genügt seiner Pflicht
-aus § 258 III S 2, wenn es den Beteiligten mitteilt, dass es die Daten zur Veröffentlichung
-übermittelt hat, und sie auf § 9 I S 3 hinweist. Dann ist es den Beteiligten ohne weiteres zuzumuten, selbst zu prüfen, wann der Beschluss unter www.insolvenzbekanntmachungen.de veröffentlicht worden ist. Das Gericht handelt aber auch dann pflichtgemäß, wenn
-es die Beteiligten erst unmittelbar nach der Veröffentlichung vom konkreten Zeitpunkt unterrichtet, zu dem die…
+b) Vorankündigung des Wirksamwerdens der Aufhebung. Seit der Insolvenzrechtsreform ist für die Aufhebung des Insolvenzverfahrens nach der Bestätigung des Insolvenzplans und die Einstellung des Verfahrens (§ 215 I S 2) eine Vorankündigung an den Schuldner, den Insolvenzverwalter und ggf die Mitglieder des Gläubigerausschusses vorgeschrieben
+(§ 258 III 2). Dadurch sollen sich diese Beteiligten auf die für sie jeweils einschlägigen Wirkungen der Aufhebung (§ 259 I) einstellen können.90 Nicht ganz eindeutig ist, wann das
+Gericht die besagten Personen zu unterrichten hat. Der Regierungsentwurf ging davon
+aus, dass sich das Gericht auf die Mitteilung, die Veröffentlichung veranlasst zu haben,
+und den Hinweis auf § 9 I S 3 beschränken könne.91 Daraus ist im Schrifttum abgeleitet
+Aufhebung des Insolvenzverfahrens § 258
+worden, dass die Unterrichtung vor der Veröffentlichung zu erfolgen hat.92 Di…
 
-> [94] § 2 I Nr 1 der Insolvenz-Internet-Bekannt- Schilken § 31 Rn 8; MünchKomm/Schmahl/ machungs-VO. Busch InsO3 § 31 Rn 26; aA Ahrens/Gehr-
-> [95] So Braun/Braun/Frank InsO7 § 258 Rn 10; lein/Ringstmeier/Sander InsO3 § 31 Rn 4. Haarmeyer/Wutzke/Förster/Wenzel InsO2 98 Vgl § 58 I 2 GNotKG bzw für den Verein § 258 Rn 7; HambK/Thies InsO6 § 258 Vor
+> [92] So Uhlenbruck/Lüer/Streit InsO14 § 258 96 Begr zu RegE § 38, BT-Drucks 12/2443 Rn 15. S 120.
+> [93] Beth ZInsO 2015, 2017, 2019. 97 HK/Rüntz/Laroche InsO9 § 31 Rn 5; Jaeger/
 
-### de-inso-jaeger-7:rdn:255/18
-*Jaeger/Piekenbrock, InsO, § 255 Rdn. 18*
-Адрес: § 255 Rdn. 18 | иерархия: § 255 | стр. файла 902–902, книги 864–864
-Нормы: — | отсылки: —
+### de-inso-jaeger-7:rdn:255/17
+*Jaeger/Piekenbrock, InsO, § 255 Rdn. 17*
+Адрес: § 255 Rdn. 17 | иерархия: § 255 | стр. файла 902–902, книги 864–864
+Нормы: §§ 77 | отсылки: —
 
-Durch die aus § 9 I Hs 2 VglO tradierte Formulierung, dass der Schuldner „eine fällige
-Verbindlichkeit nicht bezahlt“, suggeriert § 255 I S 2, dass es sich bei dem Rückstand um
-einen Zahlungsrückstand und damit bei der „Erfüllung des Plans“ um eine Geldforderung
-handeln muss. Diese Vorstellung, die auch noch in den Materialien zu § 255 zum Ausdruck
-kommt,55 war für das Vergleichsrecht im Wesentlichen richtig, weil alle Forderungen in
-Geldforderungen umzurechnen waren (§ 34 VglO) und auf diese Vergleichsforderungen
-eine einheitliche Quote zu zahlen war.56 Dagegen ist es im Insolvenzplan trotz der Umrechnung (§ 45) durchaus möglich, dass der Schuldner als Beteiligter – jedenfalls mit seiner Zustimmung (§ 247 I) – im Insolvenzplan zu bestimmten anderen Leistungen verpflichtet
-wird (vgl Rn 13). Wenn der Schuldner eine solche Verpflichtung gegenüber einem Insolvenzgläubiger eingeht und dann n…
+Der Rückstand muss gegenüber einem Gläubiger bestehen, dessen Forderung nach
+Grund und Höhe weder vom Schuldner noch vom Insolvenzverwalter bestritten worden ist
+(vgl dazu im Einzelnen § 256 Rn 10 ff). Ist die Forderung dagegen bestritten oder gar nicht
+angemeldet worden, ist § 256 unmittelbar bzw analog anwendbar (vgl § 256 Rn 15), so
+dass es entweder – bei bestrittenen Forderungen – einer Entscheidung über das Stimmrecht
+(§§ 77 II 2, 256 I 1) oder – bei bestrittenen oder gar nicht angemeldeten Forderungen – einer nachträglichen vorläufigen Feststellung bedarf (§ 256 I 2).
 
-> [55] Vgl Begr zu RegE § 302, BT-Drucks 12/2443 ten genügen, wobei es sich jedoch nicht um S 213: „Zahlungsrückstand“ und „Mangel Zahlungspflichten handeln muss. Aus- an Zahlungsmitteln“. schließlich nur fü
-> [56] Allerdings hat schon Bley/Mohrbutter VglO4 gen HK/Haas InsO9 § 255 Rn 5; Kübler/ § 9 Rn 11 lit b) darauf hingewiesen, dass sich Schultze HRI2 § 46 Rn 169. die Pflichtverletzung auch auf Nebenpflich- 5
-> [57] So ausdrücklich für Lieferungen und Leis- Rn 10: § 286 II BGB findet keine Anwen- tungen, die der Schuldner nach dem Insol- dung. venzplan zu erbringen hat, Uhlenbruck/Lüer/ 60 Begriff nach Bley/Mohrb
 
-### de-inso-jaeger-7:rdn:258/33
-*Jaeger/Piekenbrock, InsO, § 258 Rdn. 33*
-Адрес: § 258 Rdn. 33 | иерархия: § 258 | стр. файла 967–968, книги 929–930
-Нормы: — | отсылки: —
+### de-inso-jaeger-7:rdn:258/32
+*Jaeger/Piekenbrock, InsO, § 258 Rdn. 32*
+Адрес: § 258 Rdn. 32 | иерархия: § 258 | стр. файла 967–967, книги 929–929
+Нормы: §§ 258, §§ 2 | отсылки: —
 
-Die Eintragung erfolgt jeweils gebührenfrei.98 Sie ist auch dann vorzunehmen, wenn
-im gestaltenden Teil des Insolvenzplans die Überwachung (§ 260) vorgesehen ist, die aber
-ihrerseits einzutragen ist (§ 267 Rn 11). Insoweit unterscheidet sich das heutige Recht wesentlich von § 98 III S 3 VglO. Danach wurde die Aufhebung „erst nach der Beendigung
-der Überwachung in die öffentlichen Register eingetragen.“
-§ 258 Sechster Teil. Insolvenzplan
+c) Registereintragungen. Schließlich ist auch bei der Aufhebung des Insolvenzverfahrens nach § 258 I die Registerpublizität zu wahren (§§ 258 III 3, 200 II 2, 31, 32, 33). So
+ist die Aufhebung des Insolvenzverfahrens ggf ins Handelsregister (§ 32 I 2 Nr 4 HGB),
+ins Genossenschaftsregister (§ 102 I 2 Nr 4), ins Partnerschaftsregister (§§ 2 II Hs 1
+PartGG, 32 I 2 Nr 4 HGB) oder ins Vereinsregister (§ 75 I 2 Nr 4 BGB) einzutragen. Zu
+diesem Zweck hat die Geschäftsstelle des Insolvenzgerichts bei einem Insolvenzverfahren
+über das Vermögen einer in ein deutsches Register eingetragenen Handelsgesellschaft, Genossenschaft, Partnerschaft oder eines eingetragenen Vereins dem zuständigen Registergericht den Beschluss zu übermitteln, durch den das Insolvenzverfahren aufgehoben worden ist (§§ 258 III 3, 200 II 2, 31). Auch wenn § 31, auf den hier verwiesen wird, jeweils
+von einer „Ausfertigung“ des …
 
 
 ### de-inso-jaeger-7:rdn:230/12
@@ -178,20 +177,20 @@ contr, vgl Rn 14), zum anderen die Schriftlic…
 
 > [24] Restriktiver zunächst MünchKomm/Eiden- 85, 89. müller InsO3 § 230 Rn 19 (Schuldner) bzw 25 Ausführlich MünchKomm/Eidenmüller Rn 66 (Gläubiger) bzw Rn 96 (Dritter): nur InsO3 § 230 Rn 14; dazu vgl auch
 
-### de-inso-jaeger-7:rdn:259/14
-*Jaeger/Piekenbrock, InsO, § 259 Rdn. 14*
-Адрес: § 259 Rdn. 14 | иерархия: § 259 | стр. файла 974–975, книги 936–937
-Нормы: § 985 BGB, §§ 258 | отсылки: —
+### de-inso-jaeger-7:rdn:259/13
+*Jaeger/Piekenbrock, InsO, § 259 Rdn. 13*
+Адрес: § 259 Rdn. 13 | иерархия: § 259 | стр. файла 974–974, книги 936–936
+Нормы: §§ 228 | отсылки: —
 
-Als Kehrseite zu § 148 hat der Insolvenzverwalter die (ehemalige) Masse wieder an den
-Schuldner herauszugeben (§ 985 BGB), damit dieser auch wieder den (unmittelbaren) Besitz zurückerlangt. Da es sich insoweit um die tatsächliche Sachherrschaft handelt (§ 854 I
-BGB), kann diese Wirkung nicht allein mit der Aufhebung des Insolvenzverfahrens eintreten.29 Die Herausgabepflicht erfasst die gesamte Masse iSv § 35 I, auch soweit die Vermögenswerte erst im Insolvenzverfahren entstanden sind und vom Schuldner nicht nach § 148
-herausgegeben wurden. Das bedeutet nicht nur, dass der Insolvenzverwalter den Besitz an
-Sachen an den Schuldner (zurück)übertragen, sondern auch, dass er bspw bei der Umschreibung von Konten auf den Schuldner mitwirken muss.30 Auch die (zumeist elektronische) Buchführung muss der Insolvenzverwalter dem Schuldner (wieder) zugänglich machen.31 Darüber hinaus folgt aus dem Gru…
+Im gestaltenden Teil des Plans kann außerdem vereinbart werden, dass eine Forderung
+mit der rechtskräftigen Bestätigung an den bisherigen Insolvenzverwalter als Treuhänder
+abgetreten wird (§§ 228, 254 I, 254a I).26 Über diese Forderung kann der Schuldner daher
+auch nach Aufhebung des Insolvenzverfahrens nicht verfügen.27 Vielmehr liegt die Verfügungs- und Prozessführungsbefugnis dann beim bisherigen Insolvenzverwalter persönlich
+und nicht als Partei kraft Amtes.28 Wird die Planüberwachung dagegen einem „gewillkürten Sachwalter“ übertragen (§ 261 Rn 25 ff), kann diesem weder eine eigene, die Verfügungsbefugnis des Schuldners verdrängende Verfügungsbefugnis noch ein Zustimmungsvorbehalt (§ 263) zuerkannt werden.
 
-> [29] K Schmidt/Spliedt InsO19 § 259 Rn 2. ger ZInsO 2009, 1321; abl de lege ferenda
-> [30] Uhlenbruck/Lüer/Streit InsO14 § 259 Rn 5. Stapper ZInsO 2009, 2361, 2365. Ausführ-
-> [31] Graf-Schlicker/Kebekus/Wehler InsO4 § 259 lich zum Problem und zu Lösungsansätzen Rn 2; Leonhardt/Smid/Zeuner/Rattunde Brünkmans/Thole/Brünkmans Hdb InsPlan InsO3 § 259 Rn 4; Uhlenbruck/Lüer/Streit § 
+> [26] BGHZ 175, 86 Rn 10; Brünkmans/Thole/ Rn 8; BeckOK/Freund InsO10 § 259 Rn 2; Dellit Hdb InsPlan § 24 Rn 44; HambK/ FK/Jaffé InsO9 § 259 Rn 7; Kübler/Prütting/ Thies InsO6 § 259 Rn 9; K Schmidt/Spliedt 
+> [27] Vgl BGH ZIP 1992, 1152, 1153. zum Zwangsvergleich entsprechend schon
+> [28] BGHZ 175, 86 Rn 11, 12; FK/Jaffé InsO9 BGHZ 83, 102, 104. AA Haarmeyer/Wutz- § 259 Rn 13; K Schmidt/Spliedt InsO19 § 259 ke/Förster/Wenzel InsO2 § 259 Rn 11 ff; Rn 8. Hingerl ZInsO 2007, 870; Schulte-
 
 ### de-inso-jaeger-7:rdn:220/52
 *Jaeger/Münch, InsO, § 220 Rdn. 52*
@@ -207,4 +206,4 @@ Kenntnis der üblichen Fachterminologie verfügt.66
 
 ## СТОП: выгружать нельзя
 
-- Непрерывность нумерации 94.3% < 98%: пропущено номеров 217. Паттерн местами не сработал, и эти куски книги в корпус не попали.
+- Непрерывность нумерации 88.1% < 98%: пропущено номеров 580. Паттерн местами не сработал, и эти куски книги в корпус не попали.

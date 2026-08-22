@@ -1,62 +1,62 @@
 # Отчёт о качестве: de-zpo-steinjonas-2
 
-Карточек: 2891 (Vorspann — 21, Rdn. — 2870), профиль `degruyter-grosskommentar-v1`, способ `digital`
+Карточек: 2964 (Vorspann — 38, Rdn. — 2926), профиль `degruyter-grosskommentar-v1`, способ `digital`
 
 | Метрика | Значение | Порог |
 |---|---|---|
-| Непрерывность нумерации | 58.7% (рядов: 85) | ≥ 98% |
-| Покрытие текста книги | 97.8% | ≥ 90% |
+| Непрерывность нумерации | 95.4% (рядов: 84) | ≥ 98% |
+| Покрытие текста книги | 97.5% | ≥ 90% |
 | Карточек, перенесённых из другого прогона | 0 | — |
-| Пропусков в нумерации | 86 (номеров: 3254) | — |
+| Пропусков в нумерации | 78 (номеров: 2364) | — |
 | Дублей номеров | 0 | — |
-| Длина карточки, медиана | 705 символов | — |
-| Карточек со сносками | 78% (всего сносок 7336) | — |
+| Длина карточки, медиана | 682 символов | — |
+| Карточек со сносками | 77% (всего сносок 7334) | — |
 | Блоков сносок без читаемых номеров | 0 | — |
-| Мёртвых страниц | 6 | — |
+| Мёртвых страниц | 4 | — |
 | Одинаковых страниц | 0 | — |
 | Карточек без иерархии | 0 | — |
 | Внутренние отсылки разрешаются | 95.3% (13 из 279 не нашлись) | — |
 | Слабых страниц OCR | 0 | — |
 | Спорных номеров | 0 | — |
-| Поглощённых единиц (contains_also) | 0 | — |
+| Поглощённых единиц (contains_also) | 4 | — |
 
 ## Пропуски в нумерации
 
-- Vorspann: 99 → 117 (нет 17)
-- Vorspann: 117 → 121 (нет 3)
-- Vorspann: 121 → 136 (нет 14)
-- Vorspann: 136 → 140 (нет 3)
-- Vorspann: 140 → 148 (нет 7)
-- Vorspann: 148 → 301 (нет 152)
-- Vorspann: 301 → 484 (нет 182)
-- Vorspann: 484 → 938 (нет 453)
-- Vorspann: 938 → 941 (нет 2)
-- Vorspann: 941 → 945 (нет 3)
-- Vorspann: 945 → 949 (нет 3)
-- Vorspann: 949 → 966 (нет 16)
-- Vorspann: 966 → 977 (нет 10)
-- Vorspann: 977 → 1035 (нет 57)
-- Vorspann: 1035 → 2002 (нет 966)
-- Vorspann: 1994 → 1998 (нет 3)
-- Vorspann: 1948 → 1991 (нет 42)
 - Rdn., раздел 50: 1 → 6 (нет 4)
 - Rdn., раздел 50: 6 → 10 (нет 3)
 - Rdn., раздел 50: 13 → 16 (нет 2)
+- Rdn., раздел 50: 25 → 27 (нет 1)
+- Rdn., раздел 50: 28 → 30 (нет 1)
+- Rdn., раздел 50: 30 → 32 (нет 1)
+- Rdn., раздел 50: 32 → 35 (нет 2)
+- Rdn., раздел 50: 44 → 46 (нет 1)
+- Rdn., раздел 50: 50 → 52 (нет 1)
+- Rdn., раздел 50: 55 → 57 (нет 1)
+- Rdn., раздел 50: 26 → 138 (нет 111)
+- Rdn., раздел 50: 5 → 7 (нет 1)
+- Rdn., раздел 50: 9 → 14 (нет 4)
+- Rdn., раздел 50: 15 → 29 (нет 13)
+- Rdn., раздел 50: 29 → 31 (нет 1)
+- Rdn., раздел 50: 31 → 33 (нет 1)
+- Rdn., раздел 50: 34 → 45 (нет 10)
+- Rdn., раздел 50: 45 → 51 (нет 5)
+- Rdn., раздел 50: 51 → 56 (нет 4)
+- Rdn., раздел 63: 2 → 4 (нет 1)
 
 Дыра в нумерации — это либо не сработавший паттерн, либо действительно отсутствующий в книге номер. Различать глазами по странице разрыва.
 
 ## Крупнейшие незакрытые куски текста
 
-- 7931 символов, офсеты 233423–241354 в book.txt
-- 4790 символов, офсеты 246468–251258 в book.txt
-- 3120 символов, офсеты 23478–26598 в book.txt
-- 3032 символов, офсеты 228545–231577 в book.txt
-- 2377 символов, офсеты 256773–259150 в book.txt
-- 2151 символов, офсеты 252635–254786 в book.txt
-- 1353 символов, офсеты 67300–68653 в book.txt
-- 1347 символов, офсеты 1779388–1780735 в book.txt
-- 1310 символов, офсеты 27983–29293 в book.txt
-- 1244 символов, офсеты 75265–76509 в book.txt
+- 7931 символов, офсеты 233329–241260 в book.txt
+- 4790 символов, офсеты 246374–251164 в book.txt
+- 3120 символов, офсеты 23387–26507 в book.txt
+- 3032 символов, офсеты 228451–231483 в book.txt
+- 2377 символов, офсеты 256679–259056 в book.txt
+- 2151 символов, офсеты 252541–254692 в book.txt
+- 1640 символов, офсеты 20313–21953 в book.txt
+- 1353 символов, офсеты 67209–68562 в book.txt
+- 1347 символов, офсеты 1779217–1780564 в book.txt
+- 1310 символов, офсеты 27892–29202 в book.txt
 
 Обычно это разделы с другой вёрсткой: указатели, таблицы, приложения. Либо отсечь их диапазоном страниц, либо расширить профиль.
 
@@ -65,10 +65,10 @@ de-zpo-steinjonas-2:rdn:66/14, de-zpo-steinjonas-2:rdn:66/63, de-zpo-steinjonas-
 Длинная карточка почти всегда означает, что следующий номер не распознан и две единицы слиплись.
 
 ## Подозрительно короткие карточки
-de-zpo-steinjonas-2:rdn:99, de-zpo-steinjonas-2:rdn:117, de-zpo-steinjonas-2:rdn:136, de-zpo-steinjonas-2:rdn:140, de-zpo-steinjonas-2:rdn:938, de-zpo-steinjonas-2:rdn:941, de-zpo-steinjonas-2:rdn:945, de-zpo-steinjonas-2:rdn:949, de-zpo-steinjonas-2:rdn:966, de-zpo-steinjonas-2:rdn:50/68, de-zpo-steinjonas-2:rdn:50/77, de-zpo-steinjonas-2:rdn:50/79, de-zpo-steinjonas-2:rdn:50/82, de-zpo-steinjonas-2:rdn:50/85, de-zpo-steinjonas-2:rdn:50/105
+de-zpo-steinjonas-2:rdn:99, de-zpo-steinjonas-2:rdn:117, de-zpo-steinjonas-2:rdn:136, de-zpo-steinjonas-2:rdn:140, de-zpo-steinjonas-2:rdn:731, de-zpo-steinjonas-2:rdn:774, de-zpo-steinjonas-2:rdn:820, de-zpo-steinjonas-2:rdn:821, de-zpo-steinjonas-2:rdn:823, de-zpo-steinjonas-2:rdn:859, de-zpo-steinjonas-2:rdn:883, de-zpo-steinjonas-2:rdn:938, de-zpo-steinjonas-2:rdn:941, de-zpo-steinjonas-2:rdn:945, de-zpo-steinjonas-2:rdn:949
 
 ## Страницы, не попавшие ни в одну карточку
-120, 121, 125, 659, 1092, 1104
+120, 121, 125, 659
 
 ## Неразрешённые внутренние отсылки
 
@@ -88,165 +88,141 @@ de-zpo-steinjonas-2:rdn:99, de-zpo-steinjonas-2:rdn:117, de-zpo-steinjonas-2:rdn
 
 ## Случайные карточки для глазной проверки
 
-### de-zpo-steinjonas-2:rdn:68/124
-*Stein/Jonas/Mansel, ZPO, 23. Aufl., § 68 Rdn. 124*
-Адрес: § 68 Rdn. 124 | иерархия: § 68 | стр. файла 447–447, книги 415–415
+### de-zpo-steinjonas-2:rdn:68/93
+*Stein/Jonas/Mansel, ZPO, 23. Aufl., § 68 Rdn. 93*
+Адрес: § 68 Rdn. 93 | иерархия: § 68 | стр. файла 431–431, книги 399–399
 Нормы: — | отсылки: —
 
-(1) Begrenzte Erstentscheidung (Teilklage, -urteil, Aufrechnung). Hat das Ersturteil nur
-über einen Teil einer Forderung entschieden (infolge Klage auf Teilforderung oder durch Teilurteil gemäß § 301 Abs. 1 S. 1 Alt. 2), so begrenzt sich die Interventionswirkung auf diesen Teil.391
-Soweit Gegenstand des Folgeprozesses der überschießende Teil der Forderung ist,392 besteht
-somit keine Bindung. Die h.M. ist a.A.393 Nach ihr tritt die Interventionswirkung umfassend
-ein. Die h.M. ist abzulehnen, u.a.394 auch deshalb, weil dem Dritten im Einzelfall im Vorprozess
-infolge der Teilentscheidung das rechtliche Gehör beschnitten worden sein kann, etwa durch
-einen verkürzten Instanzenzug.395
-Die Interventionswirkung hinsichtlich der Feststellungen zu einer Gegenforderung, mit der
-im Vorprozess aufgerechnet wurde, bezieht sich aus den gleichen Gründen nur auf den durch
-die Aufrechnung erloschenen Teil…
+b) Regeleinschränkungen des objektiven Umfangs der Interventionswirkung. Urteilserkenntnis und Urteilsgrundlagen sind in ihrer Interventionswirkung regelmäßig verschiedenen
+Einschränkungen unterworfen, ohne dass der Dritte eine Einrede gemäß § 68 Hs 2 erhoben haben muss. Nur Feststellungen in der Sache, nicht die zu Sachurteilsvoraussetzungen, können
+Interventionswirkung erlangen (Rdn. 95). Entscheidend ist weiter, dass die sachbezogenen Feststellungen tragend für das Ersturteil (Rdn. 96 ff.) sowie interessenparallel sind (Rdn. 117 ff.). Bei
+in Mehrfachbegründungen getroffenen Feststellungen muss der Dritte im Vorprozess insoweit
+zusätzlich die Möglichkeit zur Wahrnehmung seines Anspruchs auf rechtliches Gehör besessen
+haben (Rdn. 102, 104, 106). Schließlich müssen die Feststellungen auch streitgegenstandsbezogen sein (Rdn. 123 ff.).
 
-> [391] KG JW 1918, 56f.; Erstauflage Anm. A I a 3 (offen: 2. Aufl.); MünchKomm/Schultes Rdn. 17 m. Fn. 41; BeckOK ZPO/Dressler Rdn. 13.1; Blomeyer I § 113 II 3; Rosenberg/Schwab14 § 47 IV 6 b;Häsemeyer ZZP 8
-> [392] Zur näheren Konkretisierung s. Häsemeyer ZZP 84 (1971) 179, 201.
-> [393] RG Gruchot 64, 362, 363f.; RG JW 1935, 3539; RG JW 1936, 1966; BGH NJW 1969, 1480 = ZZP 83 (1970) 220 m. Anm. Wieser („jedenfalls für den Fall […], dass im Vorprozess der weitaus größere Teil der Ford
+> [280] S. hierzu Eibner S. 119ff.; Schwanecke S. 78 ff.; K.-P. Martens ZZP 85 (1972) 77, 94f.; Zöller/Althammer Rdn. 10; s. auch 2. Aufl. Anm. A I 2; Wieser ZZP 79 (1966) 246, 248; ferner RG HRR 1935, 1332.
+> [1332] (obiter dictum); E. Schäfer S. 44 Fn. 1. 282 Schwanecke S. 79, 83; zustimmend Eibner S. 122; im Ergebnis auch Zöller/Althammer Rdn. 10. 283 Vertiefte Erörterungen geben u.a. vor allem E. Schäfer S. 79
 
-### de-zpo-steinjonas-2:rdn:91a/14
-*Stein/Jonas/Smid/Hartmann, ZPO, 23. Aufl., § 91a Rdn. 14*
-Адрес: § 91a Rdn. 14 | иерархия: § 91a | стр. файла 810–810, книги 778–778
-Нормы: §§ 91 | отсылки: —
-
-a) Inhalt. Entscheidungsgrundlage im Rahmen des § 91a Abs. 1 S. 1 ist der Stand des Verfahrens
-im Zeitpunkt, da die übereinstimmende Erledigung wirksam geworden ist. Im Falle, dass die
-Erledigungserklärungen schriftlich erfolgen, ist dies der Zeitpunkt des Eingangs der zustimmenden Erledigungserklärung. Ist die letztgenannte Erklärung mit neuem Tatsachenvortrag verbunden, ist dem Gegner lediglich, aber auch unbedingt Gelegenheit zu geben, sich hierzu zu erklären (arg ex § 283). Haben die Parteien den Rechtsstreit übereinstimmend für erledigt erklärt, so
-hat das Gericht daher über die Kosten des Rechtsstreits aufgrund des bisherigen Sach- und
-Streitstandes nach billigem Ermessen durch Beschluss zu entscheiden. Die Ausübung des Ermessens richtet sich nach den allgemeinen kostenrechtlichen Bestimmungen der ZPO,40 allerdings kann das Gericht auch die Umstände und Motive berücksichtigen, die …
-
-> [40] OLG Düsseldorf FamRZ 1982, 431; OLG Zweibrücken NJW 1986, 939.
-> [41] OLG Köln FamRZ 2007, 66; OLG Bamberg FamRZ 1984, 303; OLG Düsseldorf OLGZ 1985, 74; OLG Frankfurt NJW- RR 1989, 571; OLG Hamm NJW-RR 1986, 1121; OLG Nürnberg NJW-RR 1987, 695; OLG Karlsruhe ZiP 1989, 
-> [42] BGH MDR 2015, 51.
-
-### de-zpo-steinjonas-2:rdn:90/5
-*Stein/Jonas/Smid/Hartmann, ZPO, 23. Aufl., § 90 Rdn. 5*
-Адрес: § 90 Rdn. 5 | иерархия: § 90 → Vorbemerkung Vor § 91 | стр. файла 758–758, книги 726–726
-Нормы: §§ 75 | отсылки: —
-
-Kostentrennung ordnen an: §§ 75, 94–97, 100 Abs. 3, 101, 238 Abs. 4, 281 Abs. 3 S. 2, 344.
-In der Regel handelt es sich um Kosten, die durch das prozessual fehlerhafte Verhalten einer
-Partei unnötig entstanden sind und ihr deshalb unabhängig vom Prozessausgang zuzuordnen
-sind, oder um Kosten, die in Zusammenhang mit der Beteiligung Dritter entstanden sind.
-
-
-### de-zpo-steinjonas-2:rdn:86/3
-*Stein/Jonas/Smid/Hartmann, ZPO, 23. Aufl., § 86 Rdn. 3*
-Адрес: § 86 Rdn. 3 | иерархия: § 86 | стр. файла 743–743, книги 711–711
+### de-zpo-steinjonas-2:rdn:91/187
+*Stein/Jonas/Smid/Hartmann, ZPO, 23. Aufl., § 91 Rdn. 187*
+Адрес: § 91 Rdn. 187 | иерархия: § 91 | стр. файла 801–801, книги 769–769
 Нормы: — | отсылки: —
 
-Die Partei kann die Vollmacht jederzeit (auch schlüssig) widerrufen. Die Wirkung des Widerrufs
-gegenüber Gericht und Gegner beurteilt sich nach § 87.
-3. Wegfall des Kausalverhältnisses
+Urlaub der Partei zur Terminswahrnehmung: Einer Partei, die zur notwendigen Wahrnehmung von Terminen (hier: Gerichts- und Ortstermine) bezahlten Urlaub genommen hat,
+steht kein Anspruch auf Verdienstausfallentschädigung nach § 91 Abs. 1 Satz 2 i.V.m. § 22 JVEG,
+sondern nur ein Anspruch auf Zeitversäumnisentschädigung gemäß § 20 JVEG zu.
 
-> [3] Wegfall des Kausalverhältnisses 4 gesetzlichen Vertretung 10
 
-### de-zpo-steinjonas-2:rdn:111/1
-*Stein/Jonas/Schütze, ZPO, 23. Aufl., § 111 Rdn. 1*
-Адрес: § 111 Rdn. 1 | иерархия: § 111 | стр. файла 970–970, книги 938–938
+### de-zpo-steinjonas-2:rdn:87/4
+*Stein/Jonas/Smid/Hartmann, ZPO, 23. Aufl., § 87 Rdn. 4*
+Адрес: § 87 Rdn. 4 | иерархия: § 87 | стр. файла 747–748, книги 715–716
 Нормы: — | отсылки: —
 
-Das Verlangen nach Kostensicherheit ist im landgerichtlichen Verfahren der ersten Instanz vor
-Verhandlung zur Hauptsache zu stellen (§ 282 Abs. 3 S. 1).1 Nur wenn der Beklagte glaubhaft
-macht (§ 294), dass er die Einrede ohne sein Verschulden nicht früher erheben konnte (§ 296
-Abs. 3), bleibt sie erhalten,2 und zwar auch noch in der Berufungs-3 und der Revisionsinstanz.4
-Ist eine Frist für die Klageerwiderung gesetzt (§ 275 Abs. 1 S. 1), so ist die Einrede bis zum Ablauf
-dieser Frist zu erheben (§ 282 Abs. 3 S. 2).
-2. Amtsgerichtliches Verfahren
+Im Anwaltsprozess genügt die Mitteilung des Widerrufs der Vollmacht nicht, es muss sich
+zudem ein neuer Anwalt bestellen. Die bloße Bestellungsanzeige des neuen Bevollmächtigten
+ersetzt i.d.R. nicht die Anzeige des Widerrufs.9 Wegen § 176 muss der neue Anwalt namentlich
+bezeichnet werden.10 Die Kündigung des Prozessvertretungsvertrages wird daher im Anwaltsprozess gemäß § 87 Abs. 1 erst gegenüber dem Gericht und dem Prozessgegner rechtlich wirksam, wenn die Bestellung einer anderen zur Prozessvertretung befugten Person angezeigt wird.
+Bis zu diesem Zeitpunkt ist der Prozessbevollmächtigte im Außenverhältnis berechtigt und verpflichtet, den Antragsteller im Beschwerdeverfahren zu vertreten.11
 
-> [4] Vgl. BGH NJW 1953, 864.
+> [9] BGH NJW 1980, 2309; a.A. BSG NJW 1990, 600.
+> [10] BGH VersR 1985, 1185.
+> [11] BVerwG NJW 2013, 711.
 
-### de-zpo-steinjonas-2:rdn:107/2
-*Stein/Jonas/Smid/Hartmann, ZPO, 23. Aufl., § 107 Rdn. 2*
-Адрес: § 107 Rdn. 2 | иерархия: § 107 → Vorbemerkung Vor § 108 | стр. файла 922–924, книги 890–892
-Нормы: §§ 67, §§ 108, §§ 711, §§ 75 | отсылки: —
-
-Auch außerhalb der ZPO finden sich Anwendungsfälle. So kann das Gericht dem Zwangs-
-oder Insolvenzverwalter aufgeben, für die Erfüllung seiner Pflichten Sicherheit zu leisten, vgl.
-u. a. § 153 Abs. 2 ZVG.4 Ein weiterer Fall der prozessualen Sicherheitsleistung ist die Bietersicherheit in der Zwangsversteigerung, §§ 67–69 ZVG. Die genannten Vorschriften enthalten jedoch
-Spezialregelungen, die § 108 verdrängen. Im Einzelfall bleibt lediglich für § 109 ein Anwendungsbereich.
-Soweit die ZPO die Möglichkeit vorsieht, den Streitgegenstand oder einen Verwertungserlös
-zu hinterlegen, so handelt es sich in der Regel ebenfalls um eine prozessuale Sicherheit, die
-nach §§ 108, 109 zu behandeln ist, §§ 711, 712, 720, 805 Abs. 4, 815 Abs. 2, 827 Abs. 2, 839, 885
-Abs. 4, 930 Abs. 3. Eine Erfüllungswirkung tritt nicht ein. Eine Ausnahme bilden der Gläubigerprätendentenstreit und die mehrfache Pfändung v…
-
-> [4] Vgl. bzgl. der Sicherheitsleistung des Konkursverwalters und der Frage der Sicherheitsleistung des Insolvenzver- walters als Aufsichtsmaßnahme: Rechel Teil F VII. (S. 353) m.w.N.
-> [5] A.A. Stein/Jonas/Muthorst Vor § 108 Rdn. 3 (für §§ 853f.); Baumbach/Lauterbach/Hartmann Übers § 108 Rdn. 4 (für § 75 und §§ 853f.); MünchKomm/Schulz § 108 Rdn. 4 (für §§ 853 f.).
-> [1] Regelungsgehalt 1 c) Form 30
-
-### de-zpo-steinjonas-2:rdn:111/3
-*Stein/Jonas/Schütze, ZPO, 23. Aufl., § 111 Rdn. 3*
-Адрес: § 111 Rdn. 3 | иерархия: § 111 | стр. файла 970–971, книги 938–939
+### de-zpo-steinjonas-2:rdn:84/3
+*Stein/Jonas/Smid/Hartmann, ZPO, 23. Aufl., § 84 Rdn. 3*
+Адрес: § 84 Rdn. 3 | иерархия: § 84 | стр. файла 734–734, книги 702–702
 Нормы: — | отсылки: —
 
-Auf die Einrede kann verzichtet werden. Dieser Verzicht wirkt für das gesamte Verfahren, soweit
-er nicht beschränkt wird, was zulässig ist.5 Der Widerruf des Verzichts ist entsprechend § 290
-zulässig.6 Wenn auf die Einrede verzichtet worden ist, dann muss sie – später erhoben – zurückgewiesen werden.7 Der Verzicht auf die Einrede schließt ihre Erhebung gegenüber einem erweiterten Klagantrag nicht aus.8
-II. Ausnahmen
+Handlungen von Gericht oder Gegner können gegenüber jedem der Prozessbevollmächtigten vorgenommen werden. Insbesondere genügt eine Zustellung an einen der Bevollmächtigten;4 bei mehreren Zustellungen ist für den Beginn einer Frist die erste Zustellung maßgeblich.5
 
-> [5] A.A. MünchKomm/Schulz § 111 Rdn. 7; Stein/Jonas/Muthorst § 111 Rdn. 5 die einen auf die Instanz beschränkten Verzicht für unzulässig halten.
-> [6] Auf die Zustimmung des Gegners kommt es nicht an; a.A. BGH BB 1953, 516.
-> [7] Vgl. RGZ 155, 239; Zöller/Herget § 111 Rdn. 1.
+> [4] BGH MDR 1986, 582; BVerwG NJW 1984, 2115.
+> [5] BVerwG NJW 1984, 2115; BVerwG NJW 1998, 3582; OLG Koblenz VersR 2000, 1039; OVG Bremen NVwZ-RR 2017, 167.
 
-### de-zpo-steinjonas-2:rdn:75/22
-*Stein/Jonas/Mansel, ZPO, 23. Aufl., § 75 Rdn. 22*
-Адрес: § 75 Rdn. 22 | иерархия: § 75 | стр. файла 635–636, книги 603–604
-Нормы: § 985 BGB, § 372 BGB | отсылки: —
+### de-zpo-steinjonas-2:rdn:110/35
+*Stein/Jonas/Schütze, ZPO, 23. Aufl., § 110 Rdn. 35*
+Адрес: § 110 Rdn. 35 | иерархия: § 110 | стр. файла 957–957, книги 925–925
+Нормы: — | отсылки: —
 
-a) Inhaltliche Forderungsidentität. Der Zweitprätendent muss in seiner Eintrittserklärung
-(Rdn. 27) dieselbe Forderung des Erstprätendenten gegen den Schuldner für sich in Anspruch
-nehmen. Das Merkmal ist im Grundsatz entsprechend dem parallelen Begriff der Inanspruchnahme bei § 64 (§ 64, 26–31) auszulegen, ist aber nach der hier vertretenen Ansicht enger. Erforderlich ist eine objektive, d.h. von der Person des Gläubigers losgelöste, Identität der Forderung
-von Erst- und Zweitprätendenten.41 Dabei müssen sich die Forderungen beider Prätendenten
-nicht nur wie bei § 64 gegenseitig ausschließen (§ 64, 27ff.), sondern denselben Rechtsgrund
-betreffen. So kann der Erstprätendent nicht etwa einen possessorischen Anspruch auf Wiedererstattung erheben, der Zweitprätendent aber die Herausgabe nach § 985 BGB verlangen.42 Denn
-nur dann, wenn sich die Forderung jedes Prätendenten auf dieselbe Schuld…
+Die zu leistende Sicherheit ist nach den außergerichtlichen Kosten des Streithelfers zu bemessen, ohne dass die von ihm möglicherweise zu begleichenden Rechtsmittelkosten zu berücksichtigen sind.
 
-> [41] RGZ 34, 400, 403; OLG Karlsruhe OLGRspr. 13, 87; OLG Hamburg OLG Rspr. 37, 94; OLG Naumburg JW 1931,
-> [42] S. OLG Hamburg SeuffArch 45, 357, 358.
-> [43] MünchKomm/Fetzer BGB (2012) § 372 BGB Rdn. 11.
 
-### de-zpo-steinjonas-2:rdn:112/10
-*Stein/Jonas/Schütze, ZPO, 23. Aufl., § 112 Rdn. 10*
-Адрес: § 112 Rdn. 10 | иерархия: § 112 | стр. файла 975–976, книги 943–944
-Нормы: — | отсылки: § 111 Rdn. 7
+### de-zpo-steinjonas-2:rdn:104/40
+*Stein/Jonas/Smid/Hartmann, ZPO, 23. Aufl., § 104 Rdn. 40*
+Адрес: § 104 Rdn. 40 | иерархия: § 104 | стр. файла 910–910, книги 878–878
+Нормы: — | отсылки: —
 
-Stellt sich heraus, dass die Sicherheit zu niedrig bemessen ist oder verändert sie ihren Wert, so
-kann der Beklagte die Erhöhung nachträglich fordern (Abs. 3), muss dies aber rechtzeitig tun
-(§ 111 Rdn. 7), wenn auch möglicherweise noch in der Revisionsinstanz.16 Die Erhöhung muss
-erfolgen, wenn der Betrag von vornherein zu niedrig bemessen war oder für eine neue Instanz
-nicht ausreicht,17 z. B. wenn der Kläger die Klage durch Neuberechnung einer Schadensersatzforderung erweitert.18 Allerdings werden unverhältnismäßige Abweichungen in der Regel nicht
-beachtet.19 Als unverhältnismäßig sind Abweichungen anzusehen, die 20 % der festgelegten
-Sicherheit nicht übersteigen. Die Verpflichtung zur Erhöhung der Sicherheit entfällt, wenn ein
-zur Deckung ausreichender Teil des Anspruchs unstreitig ist.
+Bis zur Entscheidung des Beschwerdegerichts ist die unselbständige Anschlusserinnerung
+(§ 11 Abs. 2 Satz 4 RPflG; § 567 Abs. 3) zulässig,113 ohne dass eine Beschwer oder das Erreichen
+des Beschwerdewertes erforderlich wäre.114
+3. Beschwer
 
-> [16] Vgl. BGH NJW 1962, 345.
-> [17] Vgl. dazu OLG Frankfurt/Main NJW 1980, 2032 (Privatklageverfahren).
-> [18] Vgl. OLG Stuttgart AWD 1971, 85 mit Anm. Bauer.
+> [113] KG Rpfl. 1973, 221; OLG Koblenz MDR 1976, 584; OLG München NJW 1971, 763; a.A. LG Hannover Nds Rpfl. 1970, 94.
+> [114] OLG Hamburg JurBüro 1979, 769.
 
-### de-zpo-steinjonas-2:rdn:66/36
-*Stein/Jonas/Mansel, ZPO, 23. Aufl., § 66 Rdn. 36*
-Адрес: § 66 Rdn. 36 | иерархия: § 66 | стр. файла 291–291, книги 259–259
-Нормы: § 2286 BGB, §§ 2287f | отсылки: —
+### de-zpo-steinjonas-2:rdn:110/37
+*Stein/Jonas/Schütze, ZPO, 23. Aufl., § 110 Rdn. 37*
+Адрес: § 110 Rdn. 37 | иерархия: § 110 | стр. файла 957–957, книги 925–925
+Нормы: — | отсылки: —
 
-bb) Gegenwärtiges Interesse. Das rechtliche Interesse muss gegenwärtig sein, denn eine
-nur vage und ungewisse Rechtsbetroffenheit des Dritten könnte die mit der Nebenintervention für
-die Gegenpartei verbundenen Nachteile in der Prozessführung nicht rechtfertigen.188 Gegenwärtig
-ist die Rechtsposition, wenn sie entweder bereits besteht oder in ihrem Entstehen allein von dem
-Ausgang des Vorprozesses abhängt. (Zum Beurteilungszeitpunkt s. Rdn. 86.) Daher ist z.B. ein
-Dritter, welcher der gesetzliche, testamentarisch eingesetzte oder der durch Erbvertrag bestimmte
-Erbe der Hauptpartei wäre, träte der Erbfall sogleich ein, in einem Prozess der Hauptpartei über
-einen zum potentiellen Nachlass gehörenden Gegenstand nicht interventionsberechtigt.189 Denn
-selbst der Vertragserbe, der gemäß § 2289 Abs. 1 S. 2 BGB eine rechtlich begründete Erwartung
-auf sein Erbrecht hegen kann, hat wegen § 2286 BG…
+Die Verpflichtung zur Stellung der Ausländersicherheit ist allein an den gewöhnlichen Aufenthalt des Klägers geknüpft. Die Staatsangehörigkeit ist unerheblich.
+1. Gewöhnlicher Aufenthalt des Klägers außerhalb des EU- oder EWR Raums
 
-> [188] Zustimmend BGH NJW 2016, 1018, 1019 Rdn. 22.
-> [189] OLG Braunschweig SeuffArch 37, 351, 352 (zum Vertragserben, obiter dictum); E. Schäfer S. 24; Stahl S. 43; Walsmann S. 129; a.A. Wieser S. 82, dort weitere Nachweise zum Streitstand; im Ergebnis auch 
-> [190] Palandt/Weidlich BGB (2016) § 2286 BGB Rdn. 1, § 1922 BGB Rdn. 3.
+
+### de-zpo-steinjonas-2:rdn:74/33
+*Stein/Jonas/Mansel, ZPO, 23. Aufl., § 74 Rdn. 33*
+Адрес: § 74 Rdn. 33 | иерархия: § 74 | стр. файла 621–621, книги 589–589
+Нормы: §§ 72 f | отсылки: —
+
+bb) Modifikation des § 68 Hs 2 Alt. 1. (S. dazu näher § 68, 157) Nach seinem Wortlaut ist
+§ 74 Abs. 3 auf alle Fälle des § 74 anzuwenden, daher auch auf den durch § 74 Abs. 1 geregelten
+Beitrittsfall. Da § 74 Abs. 3 lediglich die Interventionswirkung betrifft, ist er erst im Folgeprozess
+zu prüfen. Zum Regelungsgehalt des § 74 Abs. 3 s. Rdn. 5. Die Modifikation des § 68 durch § 74
+Abs. 3 setzt voraus, dass (1) die Streitverkündung i. S. v. §§ 72 f. wirksam ist und dass (2) der
+Streitverkündungsempfänger im Vorprozess im Zeitpunkt des Wirksamwerdens der Streitverkündung (§ 73 S. 3, s. § 73, 18) nicht bereits wirksam Streithelfer des Streitverkünders ist (sonst
+gilt Rdn. 34). § 74 Abs. 3 bestimmt, dass dann, wenn im Rahmen des § 68 auf den Zeitpunkt
+des Beitritts abzustellen ist, stattdessen der Moment heranzuziehen ist, in welchem nach der
+Streitverkündung der Beitritt frühestens möglich …
+
+> [72] Zu den Besonderheiten im Zusammenhang mit Rechtsmittelfristen s. Schilken FS Matsumoto S. 807, 819f.
+
+### de-zpo-steinjonas-2:rdn:110/55
+*Stein/Jonas/Schütze, ZPO, 23. Aufl., § 110 Rdn. 55*
+Адрес: § 110 Rdn. 55 | иерархия: § 110 | стр. файла 962–962, книги 930–930
+Нормы: — | отсылки: —
+
+– „Die Angehörigen des einen vertragsschließenden Teiles sollen in dem Gebiete des anderen
+Teiles, auf das das Abkommen Anwendung findet, völlig gleiche Behandlung hinsichtlich
+des Armenrechts und der Schuldhaft genießen und sollen, sofern sie in dem genannten
+Gebiet ihren Wohnsitz haben, nicht verpflichtet sein, Sicherheit für Kosten irgendwelcher
+Art in denjenigen Fällen zu leisten, wo ein Angehöriger des anderen vertragsschließenden
+Teiles davon befreit ist.“
+– Das Abkommen galt zunächst im Verhältnis zu England und Wales und wurde später auf
+eine Vielzahl von Staaten und Gebieten ausgedehnt. Da die Befreiung von der Verpflichtung
+zur Stellung einer Prozesskostensicherheit den Wohnsitz in Deutschland voraussetzt,105
+geht die Befreiung ins Leere, da Kläger mit Wohnsitz in Deutschland ohnehin nach der
+Neufassung von § 110 Abs. 1 nicht prozesskostensicherheitspflichtig sind.
+h) Art. 15 d…
+
+> [105] Vgl. dazu am Beispiel Anguilla BGH NJW-RR 2005, 148.
+> [106] Vgl. dazu OLG Düsseldorf NJW 1973, 2165; die Geltung ist allerdings deshalb zweifelhaft, weil die türkischen Gerichte trotz des Rechtshilfeabkommens von deutschen Klägern offenbar Sicherheitsleistung 
+
+### de-zpo-steinjonas-2:rdn:66/11
+*Stein/Jonas/Mansel, ZPO, 23. Aufl., § 66 Rdn. 11*
+Адрес: § 66 Rdn. 11 | иерархия: § 66 | стр. файла 272–273, книги 240–241
+Нормы: — | отсылки: —
+
+Das Recht zum Beitritt hat ein Dritter, wenn die Voraussetzungen des § 66 erfüllt sind (Rdn. 12
+bis 73). Diese sind keine (besonderen) Prozessvoraussetzungen, sondern im Hinblick auf die
+Unterstützungsbefugnisse des Streithelfers gemäß § 67 (§ 67, 6ff.) besondere Prozesshandlungsvoraussetzungen. Ein Mitglied des Gerichts des Erstverfahrens und ein von diesem Gericht in
+diesem Verfahren ernannter Sachverständiger sind nach § 72 Abs. 2 S. 1 in dem Verfahren, in
+welchem sie ihr Amt ausüben, nicht Dritter im Sinne des § 72; ihnen kann daher in diesem
+Verfahren nicht der Streit verkündet werden (s. dazu § 72, 32ff.). Aus diesem Grund könnten sie
+auch nicht in diesem Verfahren als Nebenintervenienten beitreten. Eine dennoch von ihnen
+abgegebene Beitrittserklärung wäre unwirksam und wird analog § 72 Abs. 2 S. 2 nicht zugestellt
+(s. dazu § 70, 19).
+1. Anhängigkeit eines interventionsfähigen Rech…
+
 
 ## СТОП: выгружать нельзя
 
-- Непрерывность нумерации 58.7% < 98%: пропущено номеров 3254. Паттерн местами не сработал, и эти куски книги в корпус не попали.
+- Непрерывность нумерации 95.4% < 98%: пропущено номеров 2364. Паттерн местами не сработал, и эти куски книги в корпус не попали.

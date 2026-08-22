@@ -9,7 +9,7 @@
 | Карточек, перенесённых из другого прогона | 0 | — |
 | Пропусков в нумерации | 18 (номеров: 282) | — |
 | Дублей номеров | 0 | — |
-| Длина карточки, медиана | 1130 символов | — |
+| Длина карточки, медиана | 1122 символов | — |
 | Карточек со сносками | 82% (всего сносок 4748) | — |
 | Блоков сносок без читаемых номеров | 0 | — |
 | Мёртвых страниц | 15 | — |
@@ -76,16 +76,14 @@ de-inso-jaeger-2:rdn:543, de-inso-jaeger-2:rdn:35/212, de-inso-jaeger-2:rdn:55/1
 Адрес: § 38 Rdn. 43 | иерархия: § 38 | стр. файла 190–191, книги 162–163
 Нормы: — | отсылки: —
 
-2. Betragen jedoch bei gleichem Stand der Aktiven (400 000 A) und des Rückzahlungsgesamt-
-betrags (350 000 A) die alten Schulden 950 000 A und die neuen nur 50 000 A, so steht fest, dass
+2. Betragen jedoch bei gleichem Stand der Aktiven (400 000 A) und des Rückzahlungsgesamtbetrags (350 000 A) die alten Schulden 950 000 A und die neuen nur 50 000 A, so steht fest, dass
 die alten Gläubiger keine volle Deckung erhalten können, auch nicht durch Erhöhung ihrer Quote
 zu Lasten der Rückzahlungsansprüche der Aktionäre. Die Bedingung für die Berücksichtigung der
 Rückzahlungsansprüche ist ausgefallen. Nach § 225 II AktG darf an die Aktionäre nichts geleistet
 werden. Sie scheiden bei der Verteilung aus. Der Verwertungserlös wird zu einheitlichen Quoten
 an die alten und neuen Gläubiger verteilt. Die alten erhalten insgesamt 380 000 A, die neuen
 20 000 A, das sind jeweils 40 %. Die Annahme Jaegers,123 in diesem Fall werde der rechnerisch auf
-die Rückzahlungsansprüche entfallende Betrag von 105 000 A zugunsten der alten Konkursgläubi-
-ger frei, ist nicht zutreffend; die rechnerisch…
+die Rückzahlungsansprüche entfallende Betrag von 105 000 A zugunsten der alten Konkursgläubiger frei, ist nicht zutreffend; die rechnerische Be…
 
 > [123] Jaeger KO §§ 207, 208 Rn 20.
 
@@ -107,8 +105,7 @@ Leistung be- bzw umgerechnet werden.27
 Адрес: § 41 Rdn. 1 | иерархия: § 41 | стр. файла 379–379, книги 351–351
 Нормы: — | отсылки: —
 
-§ 41 entspricht § 65 KO und § 30 VglO und ist nur redaktionell, nicht aber der Sache nach verän-
-dert. Rechtsprechung und Literatur zur Konkursordnung und zur Vergleichsordnung sind deshalb
+§ 41 entspricht § 65 KO und § 30 VglO und ist nur redaktionell, nicht aber der Sache nach verändert. Rechtsprechung und Literatur zur Konkursordnung und zur Vergleichsordnung sind deshalb
 uneingeschränkt anwendbar.
 II. Fälligkeit gegenüber der Insolvenzmasse (Abs 1)
 1. Zweck von § 41 Abs 1
@@ -120,15 +117,10 @@ II. Fälligkeit gegenüber der Insolvenzmasse (Abs 1)
 Нормы: — | отсылки: —
 
 e) § 2 Abs. 1 Nr. 5 COVInsAG. Ergänzt werden die Regelungen durch § 2 Abs. 1 Nr. 5 COVInsAG,
-wonach bis zum 31. März 2022 erfolgte Zahlungen auf Forderungen aufgrund von bis zum 28. Feb-
-ruar 2021 gewährten Stundungen als nicht gläubigerbenachteiligend gelten, sofern über das Ver-
-mögen der Gesellschaft ein Insolvenzverfahren bis zum Ablauf des 18. Februar 2021 noch nicht
-eröffnet worden ist. Hatte also der Gesellschafter ab dem 1.10.2020 eine Leistung an seine Gesell-
-schaft erbracht, dann ist eine Rückzahlung nicht gläubigerbenachteiligend, wenn der Gesellschaf-
-ter seine Forderung bis zum 28. Februar 2021 gestundet hat. Ein Insolvenzantrag darf bis zum
-18. Februar 2021 nicht gestellt worden sein. Es werden nur bis zum 31. März 2022 geleistete Zahlun-
-gen akzeptiert. Im Gegensatz zu § 2 I Nr 2 COVInsAG sind Darlehen nicht erfasst, sondern es
-muss ab dem 1.10.2020 ein Austauschvertrag v…
+wonach bis zum 31. März 2022 erfolgte Zahlungen auf Forderungen aufgrund von bis zum 28. Februar 2021 gewährten Stundungen als nicht gläubigerbenachteiligend gelten, sofern über das Vermögen der Gesellschaft ein Insolvenzverfahren bis zum Ablauf des 18. Februar 2021 noch nicht
+eröffnet worden ist. Hatte also der Gesellschafter ab dem 1.10.2020 eine Leistung an seine Gesellschaft erbracht, dann ist eine Rückzahlung nicht gläubigerbenachteiligend, wenn der Gesellschafter seine Forderung bis zum 28. Februar 2021 gestundet hat. Ein Insolvenzantrag darf bis zum
+18. Februar 2021 nicht gestellt worden sein. Es werden nur bis zum 31. März 2022 geleistete Zahlungen akzeptiert. Im Gegensatz zu § 2 I Nr 2 COVInsAG sind Darlehen nicht erfasst, sondern es
+muss ab dem 1.10.2020 ein Austauschvertrag vollzogen u…
 
 
 ### de-inso-jaeger-2:rdn:49/13
@@ -149,16 +141,12 @@ Aufrechterhaltung der treuhänderischen Nutzung des Schiffes (§ 165 II S 3 ZVG)
 Адрес: § 48 Rdn. 15 | иерархия: § 48 | стр. файла 542–542, книги 514–514
 Нормы: — | отсылки: —
 
-Letztlich ist eine Lösung des Problems der Logik der Aussonderungskraft obligatorischer He-
-rausgabeansprüche entsprechend aus den Interessen des Eigentümers heraus zu entwickeln. Wie
-beim Herausgabeanspruch hat der Eigentümer grundsätzlich ein Interesse daran, dass die Kondikti-
-on zügig durchgesetzt wird und dass dies zweckmäßigerweise durch den obligatorisch Herausgabe-
-berechtigten bewerkstelligt wird. Anders als bei der Herausgabe ist aber nicht ersichtlich, warum
-der obligatorisch Herausgabeberechtigte Leistung an sich selbst verlangen können soll. Bei der He-
-rausgabe ist zumindest denkbar, dass ein Recht zum Besitz gegenüber dem Eigentümer besteht
+Letztlich ist eine Lösung des Problems der Logik der Aussonderungskraft obligatorischer Herausgabeansprüche entsprechend aus den Interessen des Eigentümers heraus zu entwickeln. Wie
+beim Herausgabeanspruch hat der Eigentümer grundsätzlich ein Interesse daran, dass die Kondiktion zügig durchgesetzt wird und dass dies zweckmäßigerweise durch den obligatorisch Herausgabeberechtigten bewerkstelligt wird. Anders als bei der Herausgabe ist aber nicht ersichtlich, warum
+der obligatorisch Herausgabeberechtigte Leistung an sich selbst verlangen können soll. Bei der Herausgabe ist zumindest denkbar, dass ein Recht zum Besitz gegenüber dem Eigentümer besteht
 (§ 986 I S 2 BGB). Bei der Abschöpfung des Substanzwerts ist aber regelmäßig ausgeschlossen, dass
 dieser dem obligatorisch Herausgabeberechtigten gegenüber dem Eigentümer vollumfänglich oder
-auch nur vorübergehend zusteht. Das Ersatzaus…
+auch nur vorübergehend zusteht. Das Ersatzaussonderun…
 
 > [48] Rn 5; Kuhn Ersatzaussonderungsrecht und Drittwider- spruchsklage (2008), S 107f; K Schmidt/Thole InsO19 § 48 Rn 13; dagegen Jaeger/Henckel InsO1 § 48 Rn 14. 48 Picker FS Schröder (2013), S 517, 542 po
 
@@ -167,8 +155,7 @@ auch nur vorübergehend zusteht. Das Ersatzaus…
 Адрес: § 49 Rdn. 14 | иерархия: § 49 | стр. файла 577–577, книги 16–16
 Нормы: — | отсылки: —
 
-An zweiter Rangstelle werden die Kosten der Feststellung beweglicher mithaftender Gegen-
-stände berücksichtigt (§ 162 mit § 10 I Nr 1a ZVG), also des Zubehörs, auf das sich nach § 31
+An zweiter Rangstelle werden die Kosten der Feststellung beweglicher mithaftender Gegenstände berücksichtigt (§ 162 mit § 10 I Nr 1a ZVG), also des Zubehörs, auf das sich nach § 31
 SchiffRG die Schiffshypothek erstreckt.
 
 
@@ -177,16 +164,14 @@ SchiffRG die Schiffshypothek erstreckt.
 Адрес: § 39 Rdn. 56 | иерархия: § 39 | стр. файла 293–293, книги 265–265
 Нормы: § 134 InsO | отсылки: —
 
-b) Spenden, Stiftungsausstattung, Sponsoring. Spendenzusagen (bzw wiederaufgelebte An-
-sprüche nach Anfechtung der Spendenleistung) sind wie Gewinnzusagen unter § 39 Abs. 1 S. 1 Nr. 4
+b) Spenden, Stiftungsausstattung, Sponsoring. Spendenzusagen (bzw wiederaufgelebte Ansprüche nach Anfechtung der Spendenleistung) sind wie Gewinnzusagen unter § 39 Abs. 1 S. 1 Nr. 4
 InsO zu fassen.149 Spenden sind freigiebige Leistungen, für welche der Spender keine Gegenleistung
 erwartet.150 Unentgeltlich ist auch die Ausstattungszusage an eine Stiftung, denn nach Zuwendung
 des Vermögens ist es dem Stifter entzogen und dient nur noch dem Stiftungszweck.151 Mögen bei einer
 Familienstiftung auch jährlich Erträge an den Stifter bzw dessen Angehörige fließen, kann anders als
-eine Gesellschaft die Stiftung nicht liquidiert und das Vermögen ausgekehrt oder die Stiftung veräu-
-ßert werden. Hingegen sind versprochene Sponsorleistungen nicht unentgeltlich. Beim Sponsoring
+eine Gesellschaft die Stiftung nicht liquidiert und das Vermögen ausgekehrt oder die Stiftung veräußert werden. Hingegen sind versprochene Sponsorleistungen nicht unentgeltlich. Beim Sponsoring
 stellt ein Sponsor der anderen Partei Geld, Sachzuwendungen oder Dienstleistungen zur Verfügung,
-damit der Gesponserte eine…
+damit der Gesponserte eine Akt…
 
 > [149] MünchKomm/Ehricke/Behme InsO § 39 Rn 32.
 > [150] Schaub Sponsoring und andere Verträge zur Erfüllung überindividueller Zwecke (2008), S 116.
@@ -198,15 +183,12 @@ damit der Gesponserte eine…
 Нормы: §§ 171a, §§ 55 | отсылки: —
 
 Der Rang der Absonderungsrechte an Luftfahrzeugen, die in der Luftfahrzeugrolle oder dem
-Register für Pfandrechte an Luftfahrzeugen eingetragen sind, wird durch §§ 171a S 1, 10 ZVG be-
-stimmt mit folgenden Besonderheiten: An die Stelle der Nr 1 des § 10 I ZVG treten die Auslagen
-des betreibenden Gläubigers zur Vorbereitung, Einleitung oder Aufrechterhaltung der treuhände-
-rischen Nutzung des Luftfahrzeugs (§ 171c III S 3 ZVG). § 10 I Nr 1a ist anwendbar, da das Zube-
-hör des Luftfahrzeugs zum Haftungsverband gehört (§§ 55 I, 20 II ZVG, § 31 I S 1 LuftRG). Zu den
+Register für Pfandrechte an Luftfahrzeugen eingetragen sind, wird durch §§ 171a S 1, 10 ZVG bestimmt mit folgenden Besonderheiten: An die Stelle der Nr 1 des § 10 I ZVG treten die Auslagen
+des betreibenden Gläubigers zur Vorbereitung, Einleitung oder Aufrechterhaltung der treuhänderischen Nutzung des Luftfahrzeugs (§ 171c III S 3 ZVG). § 10 I Nr 1a ist anwendbar, da das Zubehör des Luftfahrzeugs zum Haftungsverband gehört (§§ 55 I, 20 II ZVG, § 31 I S 1 LuftRG). Zu den
 Rechten des § 10 I Nr 4 ZVG zählen die nach ausländischen Rechten mit Vorrang ausgestatteten
 dinglichen Rechte wegen Bergungsentschädigung und notwendigen Erhaltungsaufwendungen
 (§ 75 LuftRG). Diese Rechte sind den Registerpfandrechten (§ 1 LuftRG) gleichgestellt, gehen jedoch
-allen anderen Rechten an dem Luftfahrzeug im Range vo…
+allen anderen Rechten an dem Luftfahrzeug im Range vor. Bes…
 
 
 ### de-inso-jaeger-2:rdn:36/24
@@ -216,14 +198,10 @@ allen anderen Rechten an dem Luftfahrzeug im Range vo…
 
 Die Wirkungen des P-Kontos sind im neu gefassten 4. Abschnitt des 8. Buchs der ZPO in den
 §§ 899–910 ZPO geregelt worden. Pfändungsfrei ist bei Guthaben auf einem Pfändungsschutzkonto
-des Schuldners gem § 899 I ZPO der aufgerundete monatliche Freibetrag nach § 850c I, IV ZPO (sog So-
-ckelbetrag). Dieser Sockelbetrag wird dem Schuldner automatisch zur Sicherung seines Existenzmini-
-mums gewährt. Ohne Bedeutung ist dabei, auf welchen Gutschriften das geschützte Guthaben beruht.
-Der Pfändungsschutz knüpft nicht an die Art der Einkünfte an.79 Der nicht verbrauchte pfändungs-
-freie Betrag des P-Kontos wird bis zu drei Monate übertragen (§ 899 II S 1 ZPO). Verfügungen sind je-
-weils mit dem Guthaben zu verrechnen, das zuerst dem P-Konto gutgeschrieben wurde (§ 899 II S 2
+des Schuldners gem § 899 I ZPO der aufgerundete monatliche Freibetrag nach § 850c I, IV ZPO (sog Sockelbetrag). Dieser Sockelbetrag wird dem Schuldner automatisch zur Sicherung seines Existenzminimums gewährt. Ohne Bedeutung ist dabei, auf welchen Gutschriften das geschützte Guthaben beruht.
+Der Pfändungsschutz knüpft nicht an die Art der Einkünfte an.79 Der nicht verbrauchte pfändungsfreie Betrag des P-Kontos wird bis zu drei Monate übertragen (§ 899 II S 1 ZPO). Verfügungen sind jeweils mit dem Guthaben zu verrechnen, das zuerst dem P-Konto gutgeschrieben wurde (§ 899 II S 2
 ZPO).80 Kreditinstitute können bei negativem Saldo eines P-Kontos eine Gutschrift nicht verrechnen
-und die Einzahlung zum ei…
+und die Einzahlung zum eigenen Ko…
 
 > [79] BGHZ 191, 270 Rn 7 = NJW 2012, 79; OLG Dresden NZI 2021, 1086, 1087.
 > [80] So schon vor Inkraftreten des PkoFoG BGHZ 216, 184 Rn 29 f = NJW 2018, 299.
