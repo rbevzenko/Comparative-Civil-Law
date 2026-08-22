@@ -82,6 +82,10 @@ def main():
     ap.add_argument("--foot-band", type=float, default=0.09)
     ap.add_argument("--address", default="{section} Rdn. {number}")
     ap.add_argument("--citation", required=True)
+    ap.add_argument("--head-bearb-pattern",
+                    help="комментатор стоит не в подвале, а в самом колонтитуле: "
+                         "«2. Abschnitt. Eintragungen in das Grundbuch (Ertl) § 22». "
+                         "Если задан, подвал не читается вовсе")
     ap.add_argument("--only-missing", action="store_true",
                     help="параграф ставить только там, где его нет: обычно он уже\n                          снят по заголовку в теле, а колонтитул — запасной путь")
     ap.add_argument("--dry-run", action="store_true")
@@ -95,6 +99,7 @@ def main():
     pages = sorted({c["page_start"] for c in cards} | {c["page_end"] for c in cards})
 
     head_rx, foot_rx = re.compile(a.head_pattern), re.compile(a.foot_pattern)
+    hb_rx = re.compile(a.head_bearb_pattern) if a.head_bearb_pattern else None
     sec_by_page, who_by_page = {}, {}
     with pdfplumber.open(a.pdf) as pdf:
         for pno in pages:
@@ -107,6 +112,12 @@ def main():
                 if not t:
                     continue
                 if ln["top"] <= h * a.head_band:
+                    if hb_rx is not None:
+                        mb = hb_rx.search(t)
+                        if mb:
+                            name = next((g for g in mb.groups() if g), "").strip()
+                            if name:
+                                who_by_page[pno] = name if "/" in name else _surname(name)
                     m = head_rx.search(t)
                     if m:
                         # Групп в образце может быть несколько: у тома есть и
@@ -114,7 +125,7 @@ def main():
                         val = next((g for g in m.groups() if g), None)
                         if val:
                             sec_by_page[pno] = val
-                elif ln["bottom"] >= h * (1 - a.foot_band):
+                elif hb_rx is None and ln["bottom"] >= h * (1 - a.foot_band):
                     m = foot_rx.match(t)
                     if m:
                         # В подвале стоит полное имя («Diederich Eckardt»), а в
