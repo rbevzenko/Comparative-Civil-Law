@@ -50,7 +50,12 @@ def main():
     ap.add_argument("--book", required=True)
     ap.add_argument("--pdf", required=True)
     ap.add_argument("--head-pattern", default=r"§\s*(\d+[a-zä]?)")
-    ap.add_argument("--foot-pattern", default=r"^([A-ZÄÖÜ][A-Za-zÄÖÜäöüß/.\-]+(?:\s[A-ZÄÖÜ][A-Za-zÄÖÜäöüß/.\-]+)?)\s+\d{1,4}$")
+    # Подвал полосы читается с обеих сторон: на нечётной «Assmann 271», на
+    # чётной «271 Assmann». Пока стоял только первый образец, фамилия
+    # находилась ровно на половине полос.
+    ap.add_argument("--foot-pattern",
+                    default=r"^(?:(?P<a>[A-ZÄÖÜ][A-Za-zÄÖÜäöüß/.\-]+(?:\s[A-ZÄÖÜ][A-Za-zÄÖÜäöüß/.\-]+)?)\s+\d{1,4}"
+                            r"|\d{1,4}\s+(?P<b>[A-ZÄÖÜ][A-Za-zÄÖÜäöüß/.\-]+(?:\s[A-ZÄÖÜ][A-Za-zÄÖÜäöüß/.\-]+)?))$")
     ap.add_argument("--head-band", type=float, default=0.06)
     ap.add_argument("--foot-band", type=float, default=0.09)
     ap.add_argument("--address", default="{section} Rdn. {number}")
@@ -94,7 +99,8 @@ def main():
                         # ссылке принята фамилия: «Jaeger/Eckardt». Пару фамилий
                         # через косую («Prütting/Gebauer») трогать нельзя — это
                         # два комментатора, а не имя и фамилия.
-                        name = m.group(1).strip()
+                        name = (m.groupdict().get("a") or m.groupdict().get("b")
+                                or m.group(1) or "").strip()
                         who_by_page[pno] = name if "/" in name else name.split()[-1]
             page.flush_cache()
             page.get_textmap.cache_clear()
