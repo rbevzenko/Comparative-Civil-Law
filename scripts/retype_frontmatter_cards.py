@@ -55,8 +55,16 @@ def main():
         loose = 0
         if a.sectionless_type:
             for c in cards:
-                if not c.get("section") and c.get("unit_type") != a.sectionless_type:
+                if not c.get("section") and c.get("number") is not None:
+                    # Номер у такой карточки не просто чужой, а выдуманный:
+                    # в предисловии тома за Randnummer принято случайное число
+                    # («2019» при ряде до 564). Оставить его — значит держать в
+                    # корпусе несуществующий адрес и ронять непрерывность тома.
+                    # Поэтому номер снимается совсем, а текст остаётся.
                     c["unit"] = c["unit_type"] = a.sectionless_type
+                    c["number"] = None
+                    c["unit_number"] = ""
+                    c["address"] = a.sectionless_type
                     loose += 1
         if (n or loose) and not a.dry_run:
             P.write_jsonl(path, cards)
