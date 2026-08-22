@@ -1,0 +1,121 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-mukobgb-250-272",
+  "cards": 831,
+  "profile": "beck-online-print-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 24,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Rn.": 831
+    }
+  },
+  "coverage": {
+    "share": 0.999,
+    "covered_chars": 855647,
+    "book_chars": 856477,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 900,
+    "min": 79,
+    "max": 9840,
+    "too_short": [
+      "de-mukobgb-250-272:rn:256/13",
+      "de-mukobgb-250-272:rn:257/12",
+      "de-mukobgb-250-272:rn:264/15",
+      "de-mukobgb-250-272:rn:266/12",
+      "de-mukobgb-250-272:rn:267/8",
+      "de-mukobgb-250-272:rn:270/6",
+      "de-mukobgb-250-272:rn:271/16",
+      "de-mukobgb-250-272:rn:272/10"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.89,
+    "footnotes_total": 3151,
+    "unparsed_blocks": 0,
+    "per_card_median": 3,
+    "cards_with_calls_but_no_notes": 0,
+    "notes_without_visible_call": 2398
+  },
+  "dead_pages": {
+    "pages": [
+      9,
+      19,
+      20,
+      28,
+      29,
+      33,
+      34,
+      45,
+      46,
+      47,
+      58,
+      72,
+      93,
+      99,
+      105,
+      106,
+      116,
+      117,
+      124,
+      134,
+      137,
+      142,
+      143,
+      148,
+      149,
+      150,
+      151,
+      152,
+      155,
+      157,
+      159,
+      161,
+      167,
+      185,
+      191,
+      199,
+      201,
+      204,
+      207,
+      214
+    ],
+    "count": 83
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 831
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

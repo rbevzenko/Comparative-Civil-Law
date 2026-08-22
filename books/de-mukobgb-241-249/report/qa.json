@@ -1,0 +1,138 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-mukobgb-241-249",
+  "cards": 1768,
+  "profile": "beck-online-print-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9795,
+    "rows": 8,
+    "gaps": [
+      {
+        "family": "Rn.",
+        "section": "242",
+        "from": 580,
+        "to": 613,
+        "missing": 32
+      },
+      {
+        "family": "Rn.",
+        "section": "242",
+        "from": 613,
+        "to": 619,
+        "missing": 5
+      }
+    ],
+    "gaps_total": 2,
+    "missing_total": 37,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Rn.": 1768
+    }
+  },
+  "coverage": {
+    "share": 0.9991,
+    "covered_chars": 1933422,
+    "book_chars": 1935189,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 934,
+    "min": 56,
+    "max": 41831,
+    "too_short": [
+      "de-mukobgb-241-249:rn:242/90",
+      "de-mukobgb-241-249:rn:242/97",
+      "de-mukobgb-241-249:rn:242/183"
+    ],
+    "too_long": [
+      "de-mukobgb-241-249:rn:242/0",
+      "de-mukobgb-241-249:rn:244/0",
+      "de-mukobgb-241-249:rn:246/0",
+      "de-mukobgb-241-249:rn:249/0"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.53,
+    "footnotes_total": 3420,
+    "unparsed_blocks": 0,
+    "per_card_median": 1.0,
+    "cards_with_calls_but_no_notes": 26,
+    "notes_without_visible_call": 2180
+  },
+  "dead_pages": {
+    "pages": [
+      8,
+      9,
+      10,
+      12,
+      16,
+      21,
+      25,
+      28,
+      32,
+      36,
+      44,
+      49,
+      50,
+      51,
+      52,
+      53,
+      57,
+      62,
+      65,
+      67,
+      71,
+      79,
+      83,
+      94,
+      96,
+      104,
+      108,
+      112,
+      116,
+      129,
+      131,
+      135,
+      136,
+      140,
+      143,
+      153,
+      155,
+      157,
+      173,
+      175
+    ],
+    "count": 318
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 1768
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 98.0% < 98%: пропущено номеров 37. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

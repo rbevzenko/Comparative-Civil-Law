@@ -9,8 +9,8 @@
 | Карточек, перенесённых из другого прогона | 0 | — |
 | Пропусков в нумерации | 1 (номеров: 2) | — |
 | Дублей номеров | 0 | — |
-| Длина карточки, медиана | 1482 символов | — |
-| Карточек со сносками | 65% (всего сносок 379) | — |
+| Длина карточки, медиана | 1434 символов | — |
+| Карточек со сносками | 91% (всего сносок 493) | — |
 | Блоков сносок без читаемых номеров | 0 | — |
 | Мёртвых страниц | 5 | — |
 | Одинаковых страниц | 0 | — |
@@ -52,7 +52,7 @@ voraussetzt.179 Daher tritt zB keine Haftung ein, wenn sich der Verteidiger
 Grunde Abwehrmaßnahmen ergriff, die objektiv nicht erforderlich
 waren.180 Die Haftung kan…
 
-> [178] RG JW 1911, 578 Nr. 16, 578 f.; WarnR 1928 Nr. 75; aA Kuchinke FS Krause, 1990, 327 (335). →
+> [178] RG JW 1911, 578 Nr. 16, 578 f.; WarnR 1928 Nr. 75; aA Kuchinke FS Krause, 1990, 327 (335).
 > [179] RG WarnR 1928 Nr. 75; BGH NJW 1976, 41 (42).
 > [180] RGZ 84, 306 (308); 88, 118 (120).
 
@@ -76,6 +76,9 @@ für befugt gehalten hat. Die Ersatzpflicht ist bei Tatsachenirrtümern und
 Rechtsirrtümern gleichermaßen begründet.6 Der Handelnde mag etwa
 unzutreffenderweise…
 
+> [3] Prot. I 244.
+> [4] So aber BeckOK BGB/Dennhardt, 70. Ed. 1.5.2024, Rn. 1; Grüneberg/Ellenberger Rn. 1; wohl auch BGH NJW 1977, 1818 (1819).
+> [5] Larenz JuS 1965, 373 (375); Neuner BGB AT § 21 Rn. 79; Erman/Wagner Rn. 2; Staudinger/Repgen, 2019, Rn. 4; Soergel/C. Mayer Rn. 4.
 
 ### de-mukobgb-227-240:rn:229/6-8
 *MüKoBGB/Grothe, 10. Aufl. 2025, BGB § 229 Rn. 6-8*
@@ -122,9 +125,9 @@ vorgesetzten Organs nicht rechtzeitig herbeigeführt werden kann. 33 Ist
 jedoch die Weigerung berechtigt, besteht kein Selbsthilferecht, es sei denn,
 dass die Weigerung auf …
 
-> [29] BeckOGK/Rövekamp, 1.6.2024, Rn. 27; Staudinger/Repgen, 2019, Rn. 17. →
-> [30] RGZ 146, 182 (186) = BeckRS 1934, 100390; OLG Brandenburg NJW 1998, 1717. →
-> [31] Staudinger/Repgen, 2019, Rn. 18. →
+> [29] BeckOGK/Rövekamp, 1.6.2024, Rn. 27; Staudinger/Repgen, 2019, Rn. 17.
+> [30] RGZ 146, 182 (186) = BeckRS 1934, 100390; OLG Brandenburg NJW 1998, 1717.
+> [31] Staudinger/Repgen, 2019, Rn. 18.
 
 ### de-mukobgb-227-240:rn:234/3
 *MüKoBGB/Grothe, 10. Aufl. 2025, BGB § 234 Rn. 3*
@@ -135,11 +138,13 @@ Abs. 3 trägt mit der Begrenzung der Sicherheit auf drei Viertel des
 Kurswertes dem mit Wertpapieren stets verbundenen Kursrisiko
 Rechnung. Im Falle eines Kursrückgangs gelangt § 240 zum Zuge. Abs. 3
 ist analog anwendbar auf die Verpfändung von Wertpapieren (→ § 232 Rn.
-Kopie von Peace Palace Library , abgerufen am 14.08.2026 07:10 - Quelle: beck-online DIE DATENBANK
 4) und die Hinterlegung von Zahlungsmitteln einer Fremdwährung ohne
 feste Parität zur Sicherungswährung (→ § 232 Rn. 3; → § 233 Rn. 2).
 IV. Reform
 
+> [2] Grüneberg/Ellenberger Rn. 1; Staudinger/Repgen, 2019, Rn. 1; Erman/Schmidt-Räntsch Rn. 1; Neumiller BayZ 1905, 357 (359).
+> [3] LG Berlin ZMR 1997, 421 (422).
+> [4] OLG Bamberg SeuffA 70 Nr. 68; Soergel/C. Mayer Rn. 6; Staudinger/Wiegand, 2019, § 1296 Rn. 5; vgl. auch RGZ 72, 264 (265); Erman/Schmidt-Räntsch Rn. 3; Staudinger/Repgen, 2019, Rn. 3.
 
 ### de-mukobgb-227-240:rn:232/11
 *MüKoBGB/Grothe, 10. Aufl. 2025, BGB § 232 Rn. 11*
@@ -173,8 +178,8 @@ Abwendung einer Lebensgefahr ist immer nach § 228 gerechtfertigt, mag
 der entstandene Sachschaden au…
 
 > [47] Zur Verhältnismäßigkeit bei Defensiv- und Aggressivnotstand s. Pawlik Jura 2002, 26 (27). 1
-> [48] Soergel/C. Mayer Rn. 18. →
-> [49] RG JW 1926, 1145 f.; KG JW 1935, 2982; Soergel/C. Mayer Rn. 18; Staudinger/Repgen, 2019, Rn. 31; Erman/Wagner Rn. 7; Schreiber Jura 1997, 29 (31). →
+> [48] Soergel/C. Mayer Rn. 18.
+> [49] RG JW 1926, 1145 f.; KG JW 1935, 2982; Soergel/C. Mayer Rn. 18; Staudinger/Repgen, 2019, Rn. 31; Erman/Wagner Rn. 7; Schreiber Jura 1997, 29 (31).
 
 ### de-mukobgb-227-240:rn:234/4
 *MüKoBGB/Grothe, 10. Aufl. 2025, BGB § 234 Rn. 4*
@@ -194,8 +199,10 @@ Hindernissen gegenüber zu gewährleisten.7 Nach der Neufassung des §
 seinerseits die Ermächtigung zum Erlass einer Rechtsverordnung enthält,
 in der die sicherungstauglichen Wertpapiere gattungsmäßig benannt
 sind.8
-1 RGZ 124, 217 (219) = BeckRS 1929, 100241; BeckOK BGB/Dennhardt, 70…
 
+> [1] RGZ 124, 217 (219) = BeckRS 1929, 100241; BeckOK BGB/Dennhardt, 70. Ed. 1.5.2024, Rn.
+> [4] OLG Bamberg SeuffA 70 Nr. 68; Soergel/C. Mayer Rn. 6; Staudinger/Wiegand, 2019, § 1296 Rn. 5; vgl. auch RGZ 72, 264 (265); Erman/Schmidt-Räntsch Rn. 3; Staudinger/Repgen, 2019, Rn. 3.
+> [5] BR-Drs. 564/20.
 
 ### de-mukobgb-227-240:rn:227/17
 *MüKoBGB/Grothe, 10. Aufl. 2025, BGB § 227 Rn. 17*
@@ -219,7 +226,7 @@ Richtigerweise betrifft Art. 2 EMRK jedoch allein das Verhältnis zwischen
 Bür…
 
 > [125] RGSt 55, 82 (85 f.); BGH NJW 1956, 920 Nr. 21; 1976, 41 (42); NStZ 1996, 29; RGRK- BGB/Johannsen Rn. 5; Erman/Wagner Rn. 12; Hübner BGB AT § 27 I 1b; Staudinger/Repgen, 2019, Rn. 66; LK-StGB/Rönnau/Ho
-> [126] So aber OLG Hamburg NJW 1968, 662 (663), allerdings m. zutr. Ergebnis. →
+> [126] So aber OLG Hamburg NJW 1968, 662 (663), allerdings m. zutr. Ergebnis.
 > [127] BGH JR 1990, 378 (379) = NStZ 1989, 474; Kühl StrafR AT § 7 Rn. 116.
 
 ### de-mukobgb-227-240:rn:228/3
@@ -243,7 +250,7 @@ fehlendem Verschulden 13 i…
 
 > [12] OLG Frankfurt NStZ 2001, 149 (150).
 > [13] Vgl. Staudinger/Caspers, 2014, § 276 Rn. 47.
-> [16] So zB von OLG Hamm NJW 1976, 721 (722); zum Streitstand im Strafrecht s. Schönke/Schröder/Sternberg-Lieben StGB Vor §§ 32 ff. Rn. 115 ff. →
+> [16] So zB von OLG Hamm NJW 1976, 721 (722); zum Streitstand im Strafrecht s. Schönke/Schröder/Sternberg-Lieben StGB Vor §§ 32 ff. Rn. 115 ff.
 
 ## СТОП: выгружать нельзя
 

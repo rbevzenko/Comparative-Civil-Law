@@ -1,17 +1,17 @@
 {
-  "book": "/home/user/Comparative-Civil-Law/books/de-mukobgb-227-240",
-  "cards": 91,
+  "book": "/home/user/Comparative-Civil-Law/books/de-mukobgb-186-218",
+  "cards": 604,
   "profile": "beck-online-print-v1",
   "method": "digital",
   "continuity": {
-    "share": 0.9785,
-    "rows": 14,
+    "share": 0.9967,
+    "rows": 34,
     "gaps": [
       {
         "family": "Rn.",
-        "section": "229",
-        "from": 6,
-        "to": 9,
+        "section": "204a",
+        "from": 23,
+        "to": 26,
         "missing": 2
       }
     ],
@@ -20,40 +20,77 @@
     "duplicates": [],
     "duplicates_total": 0,
     "by_family": {
-      "Rn.": 91
+      "Rn.": 604
     }
   },
   "coverage": {
     "share": 0.9994,
-    "covered_chars": 143926,
-    "book_chars": 144016,
+    "covered_chars": 990561,
+    "book_chars": 991164,
     "cards_without_offsets": 0,
     "biggest_holes": []
   },
   "lengths": {
-    "median": 1434,
-    "min": 131,
-    "max": 5200,
+    "median": 1421,
+    "min": 177,
+    "max": 18027,
     "too_short": [],
-    "too_long": []
+    "too_long": [
+      "de-mukobgb-186-218:rn:194/0"
+    ]
   },
   "footnotes": {
-    "cards_with_footnotes_share": 0.91,
-    "footnotes_total": 493,
+    "cards_with_footnotes_share": 0.88,
+    "footnotes_total": 3307,
     "unparsed_blocks": 0,
-    "per_card_median": 5,
+    "per_card_median": 5.0,
     "cards_with_calls_but_no_notes": 0,
-    "notes_without_visible_call": 393
+    "notes_without_visible_call": 2513
   },
   "dead_pages": {
     "pages": [
-      9,
-      23,
-      51,
+      11,
+      15,
+      43,
       55,
-      72
+      59,
+      63,
+      97,
+      101,
+      102,
+      103,
+      107,
+      112,
+      129,
+      138,
+      181,
+      211,
+      212,
+      213,
+      223,
+      224,
+      225,
+      229,
+      283,
+      298,
+      299,
+      306,
+      312,
+      313,
+      314,
+      317,
+      325,
+      331,
+      332,
+      338,
+      345,
+      348,
+      352,
+      374,
+      391,
+      416
     ],
-    "count": 5
+    "count": 50
   },
   "duplicate_pages": {
     "count": 0,
@@ -63,7 +100,7 @@
     "cards_without_hierarchy": 0,
     "sample": [],
     "depth_histogram": {
-      "1": 91
+      "1": 604
     }
   },
   "internal_refs": {
@@ -81,7 +118,5 @@
     "issues_total": 0
   },
   "absorbed_units": 0,
-  "stops": [
-    "Непрерывность нумерации 97.9% < 98%: пропущено номеров 2. Паттерн местами не сработал, и эти куски книги в корпус не попали."
-  ]
+  "stops": []
 }

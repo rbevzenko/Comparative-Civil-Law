@@ -1,0 +1,166 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-mukobgb-104-144",
+  "cards": 1764,
+  "profile": "beck-online-print-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9949,
+    "rows": 44,
+    "gaps": [
+      {
+        "family": "Rn.",
+        "section": "107",
+        "from": 87,
+        "to": 89,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "Vor 116",
+        "from": 12,
+        "to": 14,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "119",
+        "from": 10,
+        "to": 12,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "119",
+        "from": 85,
+        "to": 91,
+        "missing": 5
+      },
+      {
+        "family": "Rn.",
+        "section": "119",
+        "from": 124,
+        "to": 126,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 5,
+    "missing_total": 9,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Rn.": 1764
+    }
+  },
+  "coverage": {
+    "share": 0.999,
+    "covered_chars": 1836792,
+    "book_chars": 1838555,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 852,
+    "min": 39,
+    "max": 10299,
+    "too_short": [
+      "de-mukobgb-104-144:rn:107/67",
+      "de-mukobgb-104-144:rn:107/69",
+      "de-mukobgb-104-144:rn:107/70",
+      "de-mukobgb-104-144:rn:107/71",
+      "de-mukobgb-104-144:rn:107/80",
+      "de-mukobgb-104-144:rn:107/83",
+      "de-mukobgb-104-144:rn:107/85",
+      "de-mukobgb-104-144:rn:108/14",
+      "de-mukobgb-104-144:rn:110/17",
+      "de-mukobgb-104-144:rn:119/34",
+      "de-mukobgb-104-144:rn:119/124",
+      "de-mukobgb-104-144:rn:123/13",
+      "de-mukobgb-104-144:rn:123/54",
+      "de-mukobgb-104-144:rn:123/115",
+      "de-mukobgb-104-144:rn:123/138"
+    ],
+    "too_long": [
+      "de-mukobgb-104-144:rn:138/0"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.83,
+    "footnotes_total": 5985,
+    "unparsed_blocks": 0,
+    "per_card_median": 3.0,
+    "cards_with_calls_but_no_notes": 1,
+    "notes_without_visible_call": 4732
+  },
+  "dead_pages": {
+    "pages": [
+      10,
+      40,
+      87,
+      88,
+      112,
+      190,
+      191,
+      193,
+      197,
+      231,
+      239,
+      247,
+      248,
+      249,
+      266,
+      270,
+      277,
+      278,
+      284,
+      296,
+      306,
+      307,
+      308,
+      309,
+      310,
+      311,
+      312,
+      318,
+      324,
+      328,
+      341,
+      344,
+      352,
+      374,
+      375,
+      376,
+      377,
+      378,
+      379,
+      380
+    ],
+    "count": 168
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 1764
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

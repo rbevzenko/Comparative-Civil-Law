@@ -1,0 +1,180 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-mukobgb-293-306a",
+  "cards": 436,
+  "profile": "beck-online-print-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9499,
+    "rows": 19,
+    "gaps": [
+      {
+        "family": "Rn.",
+        "section": "Vor 305",
+        "from": 31,
+        "to": 33,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "Vor 305",
+        "from": 37,
+        "to": 45,
+        "missing": 7
+      },
+      {
+        "family": "Rn.",
+        "section": "Vor 305",
+        "from": 49,
+        "to": 55,
+        "missing": 5
+      },
+      {
+        "family": "Rn.",
+        "section": "305",
+        "from": 10,
+        "to": 12,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "305",
+        "from": 60,
+        "to": 62,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "305",
+        "from": 84,
+        "to": 87,
+        "missing": 2
+      },
+      {
+        "family": "Rn.",
+        "section": "305c",
+        "from": 16,
+        "to": 18,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "305c",
+        "from": 47,
+        "to": 50,
+        "missing": 2
+      },
+      {
+        "family": "Rn.",
+        "section": "306",
+        "from": 40,
+        "to": 44,
+        "missing": 3
+      }
+    ],
+    "gaps_total": 9,
+    "missing_total": 23,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Rn.": 436
+    }
+  },
+  "coverage": {
+    "share": 0.9992,
+    "covered_chars": 555634,
+    "book_chars": 556069,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 1139,
+    "min": 89,
+    "max": 8981,
+    "too_short": [
+      "de-mukobgb-293-306a:rn:303/4",
+      "de-mukobgb-293-306a:rn:304/4",
+      "de-mukobgb-293-306a:rn:Vor 305/35",
+      "de-mukobgb-293-306a:rn:306/40-43"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.89,
+    "footnotes_total": 1406,
+    "unparsed_blocks": 0,
+    "per_card_median": 3.0,
+    "cards_with_calls_but_no_notes": 1,
+    "notes_without_visible_call": 1245
+  },
+  "dead_pages": {
+    "pages": [
+      25,
+      65,
+      66,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      81,
+      82,
+      83,
+      84,
+      85,
+      94,
+      97,
+      100,
+      101,
+      106,
+      124,
+      130,
+      143,
+      151,
+      152,
+      160,
+      177,
+      200,
+      211,
+      216,
+      227,
+      233,
+      253,
+      278,
+      279,
+      280,
+      287
+    ],
+    "count": 37
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 436
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 95.0% < 98%: пропущено номеров 23. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}
