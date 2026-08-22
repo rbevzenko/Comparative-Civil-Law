@@ -1,0 +1,408 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-aktg-schmidt-lutter",
+  "cards": 11418,
+  "profile": "ottoschmidt-kommentar-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9926,
+    "rows": 365,
+    "gaps": [
+      {
+        "family": "Rz.",
+        "section": "1",
+        "from": 5,
+        "to": 7,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "1",
+        "from": 7,
+        "to": 12,
+        "missing": 4
+      },
+      {
+        "family": "Rz.",
+        "section": "1",
+        "from": 13,
+        "to": 17,
+        "missing": 3
+      },
+      {
+        "family": "Rz.",
+        "section": "1",
+        "from": 18,
+        "to": 22,
+        "missing": 3
+      },
+      {
+        "family": "Rz.",
+        "section": "1",
+        "from": 22,
+        "to": 24,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "1",
+        "from": 24,
+        "to": 27,
+        "missing": 2
+      },
+      {
+        "family": "Rz.",
+        "section": "1",
+        "from": 28,
+        "to": 30,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "1",
+        "from": 1,
+        "to": 6,
+        "missing": 4
+      },
+      {
+        "family": "Rz.",
+        "section": "1",
+        "from": 6,
+        "to": 8,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "1",
+        "from": 11,
+        "to": 14,
+        "missing": 2
+      },
+      {
+        "family": "Rz.",
+        "section": "1",
+        "from": 16,
+        "to": 19,
+        "missing": 2
+      },
+      {
+        "family": "Rz.",
+        "section": "1",
+        "from": 21,
+        "to": 23,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "1",
+        "from": 23,
+        "to": 25,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "1",
+        "from": 26,
+        "to": 29,
+        "missing": 2
+      },
+      {
+        "family": "Rz.",
+        "section": "2",
+        "from": 4,
+        "to": 6,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "2",
+        "from": 8,
+        "to": 11,
+        "missing": 2
+      },
+      {
+        "family": "Rz.",
+        "section": "2",
+        "from": 11,
+        "to": 13,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "2",
+        "from": 3,
+        "to": 5,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "2",
+        "from": 5,
+        "to": 9,
+        "missing": 3
+      },
+      {
+        "family": "Rz.",
+        "section": "2",
+        "from": 10,
+        "to": 12,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "2",
+        "from": 12,
+        "to": 14,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "3",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "3",
+        "from": 2,
+        "to": 7,
+        "missing": 4
+      },
+      {
+        "family": "Rz.",
+        "section": "4",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "4",
+        "from": 3,
+        "to": 5,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "4",
+        "from": 5,
+        "to": 7,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "4",
+        "from": 7,
+        "to": 9,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "4",
+        "from": 9,
+        "to": 11,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "4",
+        "from": 11,
+        "to": 17,
+        "missing": 5
+      },
+      {
+        "family": "Rz.",
+        "section": "4",
+        "from": 18,
+        "to": 22,
+        "missing": 3
+      }
+    ],
+    "gaps_total": 239,
+    "missing_total": 971,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Vorspann": 100,
+      "Rz.": 11318
+    }
+  },
+  "coverage": {
+    "share": 0.9694,
+    "covered_chars": 11212247,
+    "book_chars": 11566429,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 17761,
+        "from": 11546318,
+        "to": 11564079
+      },
+      {
+        "chars": 7783,
+        "from": 6820309,
+        "to": 6828092
+      },
+      {
+        "chars": 5049,
+        "from": 11005421,
+        "to": 11010470
+      },
+      {
+        "chars": 4889,
+        "from": 1177531,
+        "to": 1182420
+      },
+      {
+        "chars": 4155,
+        "from": 11320610,
+        "to": 11324765
+      },
+      {
+        "chars": 4055,
+        "from": 11509131,
+        "to": 11513186
+      },
+      {
+        "chars": 3881,
+        "from": 801319,
+        "to": 805200
+      },
+      {
+        "chars": 3855,
+        "from": 11540067,
+        "to": 11543922
+      },
+      {
+        "chars": 3793,
+        "from": 767861,
+        "to": 771654
+      },
+      {
+        "chars": 3555,
+        "from": 1188522,
+        "to": 1192077
+      }
+    ]
+  },
+  "lengths": {
+    "median": 774,
+    "min": 27,
+    "max": 29282,
+    "too_short": [
+      "de-aktg-schmidt-lutter:rz:2011",
+      "de-aktg-schmidt-lutter:rz:4/47",
+      "de-aktg-schmidt-lutter:rz:8/25",
+      "de-aktg-schmidt-lutter:rz:10/50",
+      "de-aktg-schmidt-lutter:rz:16/24",
+      "de-aktg-schmidt-lutter:rz:33/26",
+      "de-aktg-schmidt-lutter:rz:27/65",
+      "de-aktg-schmidt-lutter:rz:54/29",
+      "de-aktg-schmidt-lutter:rz:57/56",
+      "de-aktg-schmidt-lutter:rz:67a/69",
+      "de-aktg-schmidt-lutter:rz:71a/19",
+      "de-aktg-schmidt-lutter:rz:103/15",
+      "de-aktg-schmidt-lutter:rz:111c/62",
+      "de-aktg-schmidt-lutter:rz:117/12",
+      "de-aktg-schmidt-lutter:rz:122/42"
+    ],
+    "too_long": [
+      "de-aktg-schmidt-lutter:rz:2020",
+      "de-aktg-schmidt-lutter:rz:15a/12",
+      "de-aktg-schmidt-lutter:rz:118/63",
+      "de-aktg-schmidt-lutter:rz:311/116"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.82,
+    "footnotes_total": 31287,
+    "unparsed_blocks": 0,
+    "per_card_median": 2.0,
+    "cards_with_calls_but_no_notes": 155,
+    "notes_without_visible_call": 28017
+  },
+  "dead_pages": {
+    "pages": [
+      78,
+      466,
+      2626,
+      2627,
+      4300,
+      4372,
+      4373,
+      4375,
+      4382,
+      4383,
+      4387,
+      4388,
+      4394,
+      4395,
+      4396,
+      4404,
+      4405,
+      4407,
+      4408,
+      4409,
+      4410,
+      4411,
+      4416,
+      4417,
+      4418,
+      4419,
+      4420,
+      4421,
+      4422,
+      4423,
+      4424,
+      4425,
+      4426,
+      4427,
+      4428,
+      4429,
+      4430,
+      4431,
+      4432,
+      4433
+    ],
+    "count": 48
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 100,
+    "sample": [
+      "de-aktg-schmidt-lutter:rz:94",
+      "de-aktg-schmidt-lutter:rz:161",
+      "de-aktg-schmidt-lutter:rz:220",
+      "de-aktg-schmidt-lutter:rz:2017",
+      "de-aktg-schmidt-lutter:rz:2019",
+      "de-aktg-schmidt-lutter:rz:2011",
+      "de-aktg-schmidt-lutter:rz:2008",
+      "de-aktg-schmidt-lutter:rz:1997",
+      "de-aktg-schmidt-lutter:rz:2006",
+      "de-aktg-schmidt-lutter:rz:2020"
+    ],
+    "depth_histogram": {
+      "0": 100,
+      "1": 11318
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 2
+  },
+  "absorbed_units": 3,
+  "stops": []
+}

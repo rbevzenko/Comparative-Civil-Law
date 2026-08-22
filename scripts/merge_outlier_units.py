@@ -48,7 +48,10 @@ def main():
         if not os.path.exists(path):
             continue
         cards = P.read_jsonl(path)
-        order = sorted(range(len(cards)), key=lambda i: (cards[i]["section"],
+        # Параграфа может не быть вовсе: у комментария к AktG во вступлении
+        # тома номера Rz. идут без параграфа, и сортировка по None падала,
+        # обрывая конвейер на предпоследнем шаге.
+        order = sorted(range(len(cards)), key=lambda i: (cards[i].get("section") or "",
                                                          cards[i].get("char_start") or 0))
         # Самозванец опознаётся не по одному скачку, а по одиночеству.
         # У § 242 после Rn. 580 идут 700–704 — это настоящие номера, просто
@@ -61,7 +64,11 @@ def main():
         # --max-step.
         by_sec = defaultdict(list)
         for i in order:
-            by_sec[cards[i]["section"]].append(i)
+            # Карточка без номера — вступление тома, перетипированное в
+            # «Vorspann»: ряда она не образует и в сравнение номеров не идёт.
+            if cards[i].get("number") is None:
+                continue
+            by_sec[cards[i].get("section") or ""].append(i)
         drop = set()
         for sec, idxs in by_sec.items():
             runs = []
