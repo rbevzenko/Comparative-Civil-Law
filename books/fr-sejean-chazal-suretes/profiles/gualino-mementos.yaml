@@ -1,0 +1,47 @@
+id: gualino-mementos
+publisher: Gualino / Lextenso, серия Mémentos
+jurisdiction: FR
+language: fr
+# Тело 10.5, сноски 8.5 внизу полосы после черты «——», знаки 6.0.
+# Колонцифра в ВЕРХНЕМ колонтитуле с обеих сторон разворота.
+
+units:
+  - type: "n°"
+    id_prefix: "n"
+    mode: flow
+    # «188. L’article 2322 du Code civil se contente de consacrer...»
+    pattern: '^(\d{1,4})\.\s+(?=[A-ZÀÂÄÉÈÊËÎÏÔÖÙÛÜÇŒÆ«“]|\d|\.{2,}|…|[a-z]\.\s)'
+
+printed_page:
+  band: [0.08, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+[A-ZÀÂÄÉÈÊËÎÏÔÖÙÛÜÇM]'
+    - '\s(\d{1,4})$'
+
+footnotes:
+  mode: font_bottom
+  body_size: 10.5
+  note_size_max: 9.0
+  bottom_band: 0.25
+
+junk:
+  patterns:
+    - 'Exemplaire personnel de '
+    - '^—+$'
+address:
+  section:
+    mode: none
+  template: "{unit_type} {number}"
+
+statutory:
+  patterns:
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*(?:\s*(?:et|à|,)\s*\d+(?:-\d+)*)*\s*(?:C\.\s*civ\.|du Code civil)'
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*\s*C\.\s*(?:com|consom|pén|proc\.\s*civ)\.'
+    - 'L\.\s*\d{3}-\d+'
+
+cross_refs:
+  patterns:
+    - '(?:supra|infra)\s*,?\s*n[o°s]*\s*\d+(?:\s*(?:et|à|,)\s*\d+)*'
+
+citation:
+  template: "{authors}, {title}, {edition}, {publisher}, {year}, {address}"

@@ -1,0 +1,52 @@
+id: scan-capitant
+publisher: Dalloz (переиздание 1927 г.)
+jurisdiction: FR
+language: fr
+# Скан со СВОИМ распознаванием, качество приличное (0.1% подозрительных слов).
+# Кегль в слое один на всю полосу — 10.0 и у тела, и у сносок, — поэтому
+# сноски отделяются только по положению.
+
+units:
+  - type: "n°"
+    id_prefix: "n"
+    mode: flow
+    # «94. — Vente de la chose d’autrui. — La vente do la...»
+    # Между номером и тире распознавание оставляет мусор: «7..—», «26. •—»,
+    # «33. :—», «37, —», «65 (2). —». Поэтому после номера допускается до
+    # шести знаков препинания, скобок и цифр — и только потом тире.
+    # Тире обязательно. Без него — то есть по одной заглавной справа —
+    # паттерн ловит вдвое больше строк, чем в книге единиц: 408 против 201,
+    # и это реквизиты решений, ссылки и куски сносок. Единственная известная
+    # потеря от строгости — «105. 2° Erreur en matière de transaction. — La»,
+    # где тире стоит после заголовка; одна единица из 221.
+    pattern: '^(\d{1,4})[\.,;:•·\s()0-9°]{0,6}[—–\-~]+\s*'
+
+address:
+  section:
+    mode: none
+  template: "{unit_type} {number}"
+
+printed_page:
+  band: [0.07, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+[A-ZÀÂÄÉÈÊËÎÏÔÖÙÛÜÇ]'
+    - '\s(\d{1,4})$'
+
+footnotes:
+  mode: position_bottom
+  bottom_band: 0.78
+
+junk:
+  patterns: []
+
+statutory:
+  patterns:
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*(?:\s*(?:et|à|,)\s*\d+(?:-\d+)*)*\s*(?:C\.\s*civ\.|du Code civil)'
+    - 'L\.\s*\d{3}-\d+'
+
+cross_refs:
+  patterns:
+    - '(?:supra|infra)\s*,?\s*n[o°s]*\s*\d+(?:\s*(?:et|à|,)\s*\d+)*'
+
+citation:
+  template: "{authors}, {title}, {publisher}, {year}, {address}"

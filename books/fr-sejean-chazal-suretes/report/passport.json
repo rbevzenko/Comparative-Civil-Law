@@ -1,0 +1,270 @@
+{
+  "path": "/home/user/fr-pdf/sejean-chazal-suretes.pdf",
+  "sha256": "8db425987d4b5d37b71ff857d627fd5b939e2e48e765b1637752692d094c4be9",
+  "pages": 236,
+  "sampled_pages": [
+    36,
+    40,
+    44,
+    48,
+    52,
+    56,
+    60,
+    64,
+    68,
+    72,
+    76,
+    80,
+    84,
+    88,
+    92,
+    96,
+    100,
+    104,
+    108,
+    112,
+    116,
+    120,
+    124,
+    128,
+    132,
+    136,
+    140,
+    144,
+    148,
+    152,
+    156,
+    160,
+    164,
+    168,
+    172,
+    176,
+    180,
+    184,
+    188,
+    192
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 19,
+    "max_depth": 2,
+    "resolved_pages": 19,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Présentation",
+        "page": 5,
+        "depth": 0
+      },
+      {
+        "title": "Plan de cours",
+        "page": 7,
+        "depth": 0
+      },
+      {
+        "title": "Introduction",
+        "page": 15,
+        "depth": 0
+      },
+      {
+        "title": "Partie 1 - Les sûretés personnelles",
+        "page": 27,
+        "depth": 0
+      },
+      {
+        "title": "Chapitre 1 - Le cautionnement",
+        "page": 31,
+        "depth": 1
+      },
+      {
+        "title": "Chapitre 2 - Les sûretés personnelles non accessoires",
+        "page": 79,
+        "depth": 1
+      },
+      {
+        "title": "Partie 2 - Les sûretés réelles",
+        "page": 99,
+        "depth": 0
+      },
+      {
+        "title": "Chapitre 3 - Les sûretés réelles pour autrui",
+        "page": 103,
+        "depth": 1
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 1,
+    "with_destination": 1,
+    "per_page": 0.0,
+    "sample": [
+      {
+        "page": 112,
+        "rect": [
+          63,
+          176,
+          80,
+          186
+        ]
+      }
+    ]
+  },
+  "text_layer": {
+    "median_chars_per_page": 2890,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.05,
+    "offset_mode": 39,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 36,
+        "printed": null
+      },
+      {
+        "pdf_page": 40,
+        "printed": null
+      },
+      {
+        "pdf_page": 44,
+        "printed": null
+      },
+      {
+        "pdf_page": 48,
+        "printed": null
+      },
+      {
+        "pdf_page": 52,
+        "printed": null
+      },
+      {
+        "pdf_page": 56,
+        "printed": 95
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "10.5": 89106,
+      "8.5": 11760,
+      "10.0": 3280,
+      "11.0": 2903,
+      "9.0": 1109,
+      "12.5": 300,
+      "6.0": 192,
+      "6.3": 135
+    },
+    "body": 10.5,
+    "candidates_footnote": [
+      8.5
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 13287,
+    "share_at_page_bottom": 0.85
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      10
+    ]
+  },
+  "duplicate_pages": 1,
+  "repeated_lines": [
+    {
+      "line": "Exemplaire personnel de ROMAN BEVZENKO – rbevzenko@gmail.com - Diffusion interdite",
+      "pages": 40
+    },
+    {
+      "line": "——",
+      "pages": 33
+    },
+    {
+      "line": "re",
+      "pages": 28
+    },
+    {
+      "line": "er",
+      "pages": 20
+    }
+  ],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 259,
+      "monotonic_share": 0.76,
+      "first": [
+        "36",
+        "41",
+        "2",
+        "42",
+        "43"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 38,
+      "monotonic_share": 1.0,
+      "first": [
+        "36",
+        "40",
+        "44",
+        "48",
+        "52"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 19750,
+    "suspicious": 5,
+    "share": 0.0003,
+    "sample": [
+      "RLDC",
+      "RLDC",
+      "RLDC",
+      "RLDC",
+      "LGDJ,"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        51.0,
+        437.0
+      ],
+      "even": [
+        51.0,
+        437.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "FR": 19
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Сноски кликабельны — привязку берём из файла напрямую, без эвристик.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы.",
+      "Одинаковых страниц в выборке: 1 — проверить, не дубль ли разворота в файле.",
+      "Повторяющийся мусор (4 шаблонов) — вычистить первым шагом."
+    ]
+  }
+}

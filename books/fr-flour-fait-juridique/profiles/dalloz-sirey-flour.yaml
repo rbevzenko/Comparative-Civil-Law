@@ -1,0 +1,52 @@
+id: dalloz-sirey-flour
+publisher: Dalloz / Sirey Université
+jurisdiction: FR
+language: fr
+# Электронная вёрстка Dalloz в сборке calibre, серия Sirey Université.
+# Тело 14.4, заголовки разделов 16.6, знак сноски 5.8.
+#
+# Аппарат вынесен на ОТДЕЛЬНЫЕ полосы файла — по одному примечанию на полосу.
+# Полосы эти набраны кеглем 23.8, то есть КРУПНЕЕ тела, и отделять их по
+# кеглю нельзя: ключ --note-page-size здесь только навредит. Отделяет их
+# порог по объёму текста (--body-min-chars): на полосе аппарата лежит одна
+# сноска, на полосе тела — три тысячи знаков.
+#
+# Колонцифры у издания нет вовсе.
+
+units:
+  - type: "n°"
+    id_prefix: "n"
+    mode: flow
+    # «320. Point de départ. Principes généraux. Computer le délai consiste...»
+    # Точка после номера обязательна: без неё паттерн ловит годы и номера
+    # статей, которых в книге тысячи.
+    pattern: '^(\d{1,4})\.\s+(?=[A-ZÀÂÄÉÈÊËÎÏÔÖÙÛÜÇŒÆ«“]|[a-z0-9α-ω]\s*\)|\d\s*[°º]|\.{2,}|…)'
+
+address:
+  section:
+    mode: none
+  template: "{unit_type} {number}"
+
+printed_page:
+  band: [0.0, 0.0]
+
+footnotes:
+  mode: none
+
+junk:
+  patterns:
+    - 'international\.scholarvox\.com'
+    - '^\d{9,}$'
+
+statutory:
+  patterns:
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*(?:\s*(?:et|à|,)\s*\d+(?:-\d+)*)*\s*(?:C\.\s*civ\.|du Code civil)'
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*\s*C\.\s*(?:com|consom|pén|proc\.\s*civ)\.'
+    - 'L\.\s*\d{3}-\d+'
+
+cross_refs:
+  patterns:
+    - '(?:supra|infra|v\.\s*ss)\s*,?\s*n[o°s]*\s*\d+(?:\s*(?:et|à|,)\s*\d+)*'
+
+citation:
+  template: "{authors}, {title}, {edition}, {publisher}, {year}, {address}"

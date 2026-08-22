@@ -1,0 +1,61 @@
+{
+  "number_issues": [
+    {
+      "raw": "61",
+      "action": "repaired_by_neighbours",
+      "to": 51,
+      "expected": 51,
+      "line": 4008,
+      "evidence": "предыдущий 50, следующий 52"
+    },
+    {
+      "raw": "66",
+      "action": "repaired_by_neighbours",
+      "to": 56,
+      "expected": 56,
+      "line": 4372,
+      "evidence": "предыдущий 55, следующий 57"
+    },
+    {
+      "raw": "69",
+      "action": "repaired_by_neighbours",
+      "to": 59,
+      "expected": 59,
+      "line": 4548,
+      "evidence": "предыдущий 58, следующий 60"
+    },
+    {
+      "raw": "126",
+      "action": "repaired_by_neighbours",
+      "to": 125,
+      "expected": 125,
+      "line": 9891,
+      "evidence": "предыдущий 124, следующий 126"
+    },
+    {
+      "raw": "165",
+      "action": "repaired_by_neighbours",
+      "to": 155,
+      "expected": 155,
+      "line": 12844,
+      "evidence": "предыдущий 154, следующий 156"
+    }
+  ],
+  "absorbed_units": 0,
+  "sections_found": 0,
+  "toc_entries": 0,
+  "toc_anchored_to_line": 0,
+  "toc_page_only": 0,
+  "pages_without_lines": [
+    3,
+    7,
+    19,
+    501,
+    511,
+    512,
+    513,
+    514
+  ],
+  "profile": "scan-capitant",
+  "method": "digital"
+}

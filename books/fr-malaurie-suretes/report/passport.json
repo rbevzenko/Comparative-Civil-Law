@@ -1,0 +1,272 @@
+{
+  "path": "/home/user/fr-pdf/malaurie-suretes.pdf",
+  "sha256": "599a8d9a836df002944fd678aaadf219b6c5654459419521b7add4ea61897b6a",
+  "pages": 530,
+  "sampled_pages": [
+    80,
+    89,
+    98,
+    107,
+    116,
+    125,
+    134,
+    143,
+    152,
+    161,
+    170,
+    179,
+    188,
+    197,
+    206,
+    215,
+    224,
+    233,
+    242,
+    251,
+    260,
+    269,
+    278,
+    287,
+    296,
+    305,
+    314,
+    323,
+    332,
+    341,
+    350,
+    359,
+    368,
+    377,
+    386,
+    395,
+    404,
+    413,
+    422,
+    431
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": false
+  },
+  "links": {
+    "annots_on_sample": 41,
+    "with_destination": 41,
+    "per_page": 1.0,
+    "sample": [
+      {
+        "page": 134,
+        "rect": [
+          263,
+          74,
+          276,
+          82
+        ]
+      },
+      {
+        "page": 134,
+        "rect": [
+          112,
+          64,
+          125,
+          72
+        ]
+      },
+      {
+        "page": 134,
+        "rect": [
+          387,
+          55,
+          400,
+          63
+        ]
+      }
+    ]
+  },
+  "text_layer": {
+    "median_chars_per_page": 3566,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.4,
+    "offset_mode": -62,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 80,
+        "printed": 146
+      },
+      {
+        "pdf_page": 89,
+        "printed": null
+      },
+      {
+        "pdf_page": 98,
+        "printed": null
+      },
+      {
+        "pdf_page": 107,
+        "printed": 45
+      },
+      {
+        "pdf_page": 116,
+        "printed": null
+      },
+      {
+        "pdf_page": 125,
+        "printed": 130
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "8.0": 66681,
+      "10.0": 48341,
+      "8.5": 24534,
+      "5.6": 956,
+      "4.6": 465,
+      "11.0": 293,
+      "7.5": 198,
+      "13.0": 125
+    },
+    "body": 8.0,
+    "candidates_footnote": [
+      4.6,
+      5.6
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 19790,
+    "share_at_page_bottom": 0.72
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      10
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [
+    {
+      "line": "o",
+      "pages": 118
+    },
+    {
+      "line": "Exemplaire personnel de Veronika Velichko - velichko.ver@gmail.com - Diffusion interdite.",
+      "pages": 40
+    },
+    {
+      "line": "o o",
+      "pages": 17
+    },
+    {
+      "line": "e",
+      "pages": 15
+    },
+    {
+      "line": "re o",
+      "pages": 14
+    }
+  ],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 228,
+      "monotonic_share": 0.85,
+      "first": [
+        "80",
+        "145",
+        "146",
+        "147",
+        "148"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 19,
+      "monotonic_share": 1.0,
+      "first": [
+        "80",
+        "116",
+        "134",
+        "152",
+        "170"
+      ]
+    },
+    "§ с номером": {
+      "hits": 6,
+      "monotonic_share": 0.0,
+      "first": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "1"
+      ]
+    },
+    "para. англ. раздел-пункт": {
+      "hits": 1,
+      "monotonic_share": 0.0,
+      "first": [
+        "454-459"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 26675,
+    "suspicious": 22,
+    "share": 0.0008,
+    "sample": [
+      "RLDC",
+      "RLDC",
+      "RLDC",
+      "RLDC",
+      "RLDC",
+      "RLDC",
+      "JCPG,",
+      "LGDJ,",
+      "LGDJ,",
+      "(http://www.uncitral.",
+      "(http://daccess-ods.un.org/access.nsf/Get?",
+      "RLDC"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        51.0,
+        397.0
+      ],
+      "even": [
+        57.0,
+        402.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "FR": 13
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Оглавление в файле не зашито — иерархию собирать по печатному оглавлению и колонтитулам; качество поля hierarchy будет ниже.",
+      "Сноски кликабельны — привязку берём из файла напрямую, без эвристик.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы.",
+      "Повторяющийся мусор (5 шаблонов) — вычистить первым шагом."
+    ]
+  }
+}

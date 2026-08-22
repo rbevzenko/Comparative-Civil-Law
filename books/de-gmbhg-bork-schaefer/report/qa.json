@@ -1,0 +1,393 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-gmbhg-bork-schaefer",
+  "cards": 3407,
+  "profile": "rws-kommentar-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9816,
+    "rows": 109,
+    "gaps": [
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 5,
+        "to": 7,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 9,
+        "to": 11,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 11,
+        "to": 15,
+        "missing": 3
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 15,
+        "to": 19,
+        "missing": 3
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 19,
+        "to": 22,
+        "missing": 2
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 25,
+        "to": 27,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 27,
+        "to": 30,
+        "missing": 2
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 34,
+        "to": 36,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 38,
+        "to": 40,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 40,
+        "to": 42,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 42,
+        "to": 44,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 45,
+        "to": 47,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 48,
+        "to": 50,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 50,
+        "to": 52,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 52,
+        "to": 55,
+        "missing": 2
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 56,
+        "to": 58,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 1,
+        "to": 6,
+        "missing": 4
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 6,
+        "to": 10,
+        "missing": 3
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 10,
+        "to": 12,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 14,
+        "to": 16,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 18,
+        "to": 20,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 21,
+        "to": 26,
+        "missing": 4
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 26,
+        "to": 28,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 29,
+        "to": 35,
+        "missing": 5
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 35,
+        "to": 39,
+        "missing": 3
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 39,
+        "to": 41,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 41,
+        "to": 43,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 43,
+        "to": 46,
+        "missing": 2
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 46,
+        "to": 49,
+        "missing": 2
+      },
+      {
+        "family": "Rn.",
+        "section": "13",
+        "from": 49,
+        "to": 51,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 74,
+    "missing_total": 213,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Vorspann": 38,
+      "Rn.": 3369
+    }
+  },
+  "coverage": {
+    "share": 0.9649,
+    "covered_chars": 3061982,
+    "book_chars": 3173337,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 8866,
+        "from": 1088272,
+        "to": 1097138
+      },
+      {
+        "chars": 5445,
+        "from": 1103324,
+        "to": 1108769
+      },
+      {
+        "chars": 5364,
+        "from": 1126560,
+        "to": 1131924
+      },
+      {
+        "chars": 4015,
+        "from": 1079999,
+        "to": 1084014
+      },
+      {
+        "chars": 3693,
+        "from": 1110202,
+        "to": 1113895
+      },
+      {
+        "chars": 3441,
+        "from": 739268,
+        "to": 742709
+      },
+      {
+        "chars": 3048,
+        "from": 1328304,
+        "to": 1331352
+      },
+      {
+        "chars": 3045,
+        "from": 1340706,
+        "to": 1343751
+      },
+      {
+        "chars": 2935,
+        "from": 1084631,
+        "to": 1087566
+      },
+      {
+        "chars": 2907,
+        "from": 1098196,
+        "to": 1101103
+      }
+    ]
+  },
+  "lengths": {
+    "median": 693,
+    "min": 45,
+    "max": 122583,
+    "too_short": [
+      "de-gmbhg-bork-schaefer:rn:29",
+      "de-gmbhg-bork-schaefer:rn:8/10",
+      "de-gmbhg-bork-schaefer:rn:8/20",
+      "de-gmbhg-bork-schaefer:rn:8/21",
+      "de-gmbhg-bork-schaefer:rn:8/53",
+      "de-gmbhg-bork-schaefer:rn:9a/2",
+      "de-gmbhg-bork-schaefer:rn:9a/3",
+      "de-gmbhg-bork-schaefer:rn:9b/4",
+      "de-gmbhg-bork-schaefer:rn:9c/4",
+      "de-gmbhg-bork-schaefer:rn:10/29",
+      "de-gmbhg-bork-schaefer:rn:16/57",
+      "de-gmbhg-bork-schaefer:rn:19/33",
+      "de-gmbhg-bork-schaefer:rn:48/10",
+      "de-gmbhg-bork-schaefer:rn:52/15",
+      "de-gmbhg-bork-schaefer:rn:52/41"
+    ],
+    "too_long": [
+      "de-gmbhg-bork-schaefer:rn:1/41",
+      "de-gmbhg-bork-schaefer:rn:5/36",
+      "de-gmbhg-bork-schaefer:rn:10/31",
+      "de-gmbhg-bork-schaefer:rn:18/16",
+      "de-gmbhg-bork-schaefer:rn:30/193",
+      "de-gmbhg-bork-schaefer:rn:42a/25",
+      "de-gmbhg-bork-schaefer:rn:46/38",
+      "de-gmbhg-bork-schaefer:rn:51b/13",
+      "de-gmbhg-bork-schaefer:rn:62/10",
+      "de-gmbhg-bork-schaefer:rn:85/14"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.76,
+    "footnotes_total": 7380,
+    "unparsed_blocks": 0,
+    "per_card_median": 2,
+    "cards_with_calls_but_no_notes": 10,
+    "notes_without_visible_call": 7186
+  },
+  "dead_pages": {
+    "pages": [
+      230,
+      236,
+      425,
+      464,
+      514,
+      518,
+      519,
+      520,
+      521,
+      525,
+      526,
+      536,
+      537,
+      583,
+      633,
+      1146,
+      1194,
+      1279,
+      1451
+    ],
+    "count": 19
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 38,
+    "sample": [
+      "de-gmbhg-bork-schaefer:rn:299",
+      "de-gmbhg-bork-schaefer:rn:1367",
+      "de-gmbhg-bork-schaefer:rn:1",
+      "de-gmbhg-bork-schaefer:rn:2",
+      "de-gmbhg-bork-schaefer:rn:3",
+      "de-gmbhg-bork-schaefer:rn:4",
+      "de-gmbhg-bork-schaefer:rn:5",
+      "de-gmbhg-bork-schaefer:rn:6",
+      "de-gmbhg-bork-schaefer:rn:7",
+      "de-gmbhg-bork-schaefer:rn:8"
+    ],
+    "depth_histogram": {
+      "0": 38,
+      "1": 3369
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

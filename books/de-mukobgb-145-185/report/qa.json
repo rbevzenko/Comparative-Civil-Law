@@ -1,0 +1,168 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-mukobgb-145-185",
+  "cards": 1734,
+  "profile": "beck-online-print-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9931,
+    "rows": 41,
+    "gaps": [
+      {
+        "family": "Rn.",
+        "section": "151",
+        "from": 5,
+        "to": 7,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "155",
+        "from": 2,
+        "to": 4,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "155",
+        "from": 5,
+        "to": 10,
+        "missing": 4
+      },
+      {
+        "family": "Rn.",
+        "section": "158",
+        "from": 2,
+        "to": 5,
+        "missing": 2
+      },
+      {
+        "family": "Rn.",
+        "section": "158",
+        "from": 6,
+        "to": 9,
+        "missing": 2
+      },
+      {
+        "family": "Rn.",
+        "section": "158",
+        "from": 23,
+        "to": 25,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "158",
+        "from": 62,
+        "to": 64,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 7,
+    "missing_total": 12,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Rn.": 1734
+    }
+  },
+  "coverage": {
+    "share": 0.9991,
+    "covered_chars": 2024542,
+    "book_chars": 2026275,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 1048,
+    "min": 65,
+    "max": 20263,
+    "too_short": [
+      "de-mukobgb-145-185:rn:151/7",
+      "de-mukobgb-145-185:rn:167/101"
+    ],
+    "too_long": [
+      "de-mukobgb-145-185:rn:Vor 145/0",
+      "de-mukobgb-145-185:rn:164/0"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.91,
+    "footnotes_total": 6697,
+    "unparsed_blocks": 0,
+    "per_card_median": 3.0,
+    "cards_with_calls_but_no_notes": 0,
+    "notes_without_visible_call": 5636
+  },
+  "dead_pages": {
+    "pages": [
+      9,
+      13,
+      28,
+      33,
+      38,
+      42,
+      47,
+      48,
+      61,
+      62,
+      77,
+      88,
+      92,
+      95,
+      98,
+      131,
+      133,
+      137,
+      148,
+      169,
+      177,
+      186,
+      187,
+      199,
+      203,
+      233,
+      245,
+      252,
+      256,
+      258,
+      274,
+      290,
+      291,
+      313,
+      320,
+      328,
+      350,
+      355,
+      389,
+      392
+    ],
+    "count": 156
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 1734
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

@@ -1,0 +1,35 @@
+{
+  "number_issues": [
+    {
+      "raw": "64",
+      "action": "repaired_by_neighbours",
+      "to": 65,
+      "expected": 65,
+      "line": 5033,
+      "evidence": "предыдущий 64, следующий 66"
+    },
+    {
+      "raw": "71",
+      "action": "repaired_by_neighbours",
+      "to": 70,
+      "expected": 70,
+      "line": 5039,
+      "evidence": "предыдущий 69, следующий 71"
+    }
+  ],
+  "absorbed_units": 12,
+  "sections_found": 53,
+  "toc_entries": 0,
+  "toc_anchored_to_line": 0,
+  "toc_page_only": 0,
+  "pages_without_lines": [
+    2,
+    6,
+    10,
+    30,
+    1472,
+    1500
+  ],
+  "profile": "degruyter-grosskommentar-v1",
+  "method": "digital"
+}

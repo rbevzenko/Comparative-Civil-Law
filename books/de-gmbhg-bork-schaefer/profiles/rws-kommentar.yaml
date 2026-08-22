@@ -1,0 +1,49 @@
+id: rws-kommentar-v1
+publisher: RWS
+jurisdiction: DE
+language: de
+# Полоса 362.9×561.4, тело с x0 41.1 кеглем 7.99, номер Rn. висит на ВНЕШНЕМ
+# поле (справа на нечётной, слева на чётной) тем же кеглем, аппарат сносок
+# кеглем 7.00 с номером вида «13)», внизу «Florian Jacoby 789» — комментатор
+# и колонцифра. Колонтитул набран тем же кеглем 7.00, что аппарат: отделяется
+# только полосой сверху.
+
+units:
+  - type: "Rn."
+    id_prefix: "rn"
+    mode: margin
+
+margin:
+  scope: page
+  pad: 0.0
+
+footnotes:
+  mode: font_bottom
+  bottom_band: 0.30
+  note_size_max: 7.5
+
+printed_page:
+  # Нижнее окно узкое: между низом последней сноски (0.908 высоты) и подписью
+  # полосы (0.944). Шире — и сноска «30) Lutter/Hommelhoff …» попадёт в разбор.
+  band: [0.0, 0.07]
+  max_chars: 40
+  patterns:
+    - '^[A-ZÄÖÜ][A-Za-zÄÖÜäöüß/.\- ]{2,30}\s(\d{1,4})$'
+    - '^(\d{1,4})\s[A-ZÄÖÜ][A-Za-zÄÖÜäöüß/.\- ]{2,30}$'
+
+junk:
+  header_band: 0.065
+  patterns:
+    - '\.\s\.\s\.\s\.'
+
+address:
+  section:
+    # Заголовок — ОТДЕЛЬНАЯ строка «§ 37» кеглем 9.01 при теле 7.99; название
+    # параграфа идёт следующей строкой. Поэтому образец без названия.
+    mode: pattern
+    pattern: '^§\s?(\d+[a-zä]?)\s*$'
+    min_size: 8.5
+    anchor: start
+
+citation:
+  template: "{cite_prefix} {address}"

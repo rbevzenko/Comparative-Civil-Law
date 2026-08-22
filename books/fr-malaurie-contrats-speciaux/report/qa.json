@@ -1,0 +1,298 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/fr-malaurie-contrats-speciaux",
+  "cards": 781,
+  "profile": "lgdj-malaurie",
+  "method": "digital",
+  "continuity": {
+    "share": 0.6154,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "n°",
+        "section": null,
+        "from": 30,
+        "to": 32,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 54,
+        "to": 59,
+        "missing": 4
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 91,
+        "to": 98,
+        "missing": 6
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 195,
+        "to": 200,
+        "missing": 4
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 234,
+        "to": 250,
+        "missing": 15
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 254,
+        "to": 270,
+        "missing": 15
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 272,
+        "to": 280,
+        "missing": 7
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 288,
+        "to": 299,
+        "missing": 10
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 336,
+        "to": 349,
+        "missing": 12
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 367,
+        "to": 378,
+        "missing": 10
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 404,
+        "to": 409,
+        "missing": 4
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 421,
+        "to": 428,
+        "missing": 6
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 438,
+        "to": 499,
+        "missing": 60
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 513,
+        "to": 520,
+        "missing": 6
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 527,
+        "to": 530,
+        "missing": 2
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 541,
+        "to": 546,
+        "missing": 4
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 585,
+        "to": 598,
+        "missing": 12
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 608,
+        "to": 615,
+        "missing": 6
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 624,
+        "to": 635,
+        "missing": 10
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 653,
+        "to": 665,
+        "missing": 11
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 675,
+        "to": 680,
+        "missing": 4
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 703,
+        "to": 708,
+        "missing": 4
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 718,
+        "to": 738,
+        "missing": 19
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 760,
+        "to": 765,
+        "missing": 4
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 772,
+        "to": 780,
+        "missing": 7
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 781,
+        "to": 800,
+        "missing": 18
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 843,
+        "to": 845,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 853,
+        "to": 859,
+        "missing": 5
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 870,
+        "to": 874,
+        "missing": 3
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 893,
+        "to": 900,
+        "missing": 6
+      }
+    ],
+    "gaps_total": 41,
+    "missing_total": 488,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "n°": 781
+    }
+  },
+  "coverage": {
+    "share": 0.971,
+    "covered_chars": 1271831,
+    "book_chars": 1309846,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 2434,
+        "from": 704329,
+        "to": 706763
+      },
+      {
+        "chars": 1457,
+        "from": 103227,
+        "to": 104684
+      }
+    ]
+  },
+  "lengths": {
+    "median": 1424,
+    "min": 140,
+    "max": 6596,
+    "too_short": [],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.9,
+    "footnotes_total": 3652,
+    "unparsed_blocks": 2,
+    "per_card_median": 3,
+    "cards_with_calls_but_no_notes": 17,
+    "notes_without_visible_call": 513
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "2": 92,
+      "3": 126,
+      "4": 333,
+      "5": 230
+    }
+  },
+  "internal_refs": {
+    "refs_total": 1,
+    "unresolved": 0,
+    "resolved_share": 1.0,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 61.5% < 98%: пропущено номеров 488. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

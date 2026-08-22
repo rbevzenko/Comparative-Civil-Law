@@ -1,0 +1,197 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/fr-malaurie-suretes",
+  "cards": 458,
+  "profile": "lgdj-malaurie",
+  "method": "digital",
+  "continuity": {
+    "share": 0.5668,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "n°",
+        "section": null,
+        "from": 23,
+        "to": 100,
+        "missing": 76
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 111,
+        "to": 120,
+        "missing": 8
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 177,
+        "to": 200,
+        "missing": 22
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 304,
+        "to": 319,
+        "missing": 14
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 325,
+        "to": 330,
+        "missing": 4
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 347,
+        "to": 360,
+        "missing": 12
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 361,
+        "to": 400,
+        "missing": 38
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 417,
+        "to": 430,
+        "missing": 12
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 453,
+        "to": 460,
+        "missing": 6
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 468,
+        "to": 498,
+        "missing": 29
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 541,
+        "to": 600,
+        "missing": 58
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 611,
+        "to": 630,
+        "missing": 18
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 658,
+        "to": 661,
+        "missing": 2
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 713,
+        "to": 750,
+        "missing": 36
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 751,
+        "to": 761,
+        "missing": 9
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 793,
+        "to": 800,
+        "missing": 6
+      }
+    ],
+    "gaps_total": 16,
+    "missing_total": 350,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "n°": 458
+    }
+  },
+  "coverage": {
+    "share": 0.9784,
+    "covered_chars": 1094467,
+    "book_chars": 1118625,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 1926,
+    "min": 266,
+    "max": 15986,
+    "too_short": [],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.91,
+    "footnotes_total": 2331,
+    "unparsed_blocks": 3,
+    "per_card_median": 4.0,
+    "cards_with_calls_but_no_notes": 4,
+    "notes_without_visible_call": 455
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 458,
+    "sample": [
+      "fr-malaurie-suretes:n:1",
+      "fr-malaurie-suretes:n:2",
+      "fr-malaurie-suretes:n:3",
+      "fr-malaurie-suretes:n:4",
+      "fr-malaurie-suretes:n:5",
+      "fr-malaurie-suretes:n:6",
+      "fr-malaurie-suretes:n:7",
+      "fr-malaurie-suretes:n:8",
+      "fr-malaurie-suretes:n:9",
+      "fr-malaurie-suretes:n:10"
+    ],
+    "depth_histogram": {
+      "0": 458
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 56.7% < 98%: пропущено номеров 350. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

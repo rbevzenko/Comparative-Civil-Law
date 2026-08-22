@@ -1,0 +1,44 @@
+id: these-duchemin
+publisher: диссертация, Université Paris-Panthéon-Assas
+jurisdiction: FR
+language: fr
+# Докторская диссертация, ноябрь 2023. Тело 12.0, сноски 10.0 внизу полосы,
+# колонтитул сверху 6.0 («DUCHEMIN Clément | Thèse de doctorat | Novembre
+# 2023»), колонцифра отдельной строкой внизу полосы кеглем 12.0.
+
+units:
+  - type: "n°"
+    id_prefix: "n"
+    mode: flow
+    # «144. Nouvelles interactions. La réforme du droit des contrats...»
+    pattern: '^(\d{1,4})\.\s+(?=[A-ZÀÂÄÉÈÊËÎÏÔÖÙÛÜÇŒÆ«“]|\d|\.{2,}|…|[a-z]\.\s)'
+
+address:
+  section:
+    mode: none
+  template: "{unit_type} {number}"
+
+printed_page:
+  band: [0.0, 0.10]
+
+footnotes:
+  mode: font_bottom
+  body_size: 12.0
+  note_size_max: 10.4
+  bottom_band: 0.25
+
+junk:
+  header_band: 0.09
+
+statutory:
+  patterns:
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*(?:\s*(?:et|à|,)\s*\d+(?:-\d+)*)*\s*(?:C\.\s*civ\.|du Code civil)'
+    - 'art(?:icle)?s?\.?\s*L\.?\s*\d+(?:-\d+)*\s*(?:du\s+)?C\.\s*trav\.'
+    - 'L\.\s*\d{3,4}-\d+'
+
+cross_refs:
+  patterns:
+    - '(?:supra|infra)\s*,?\s*n[o°s]*\s*\d+(?:\s*(?:et|à|,)\s*\d+)*'
+
+citation:
+  template: "{authors}, {title}, {publisher}, {year}, {address}"

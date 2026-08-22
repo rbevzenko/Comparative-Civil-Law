@@ -1,0 +1,434 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-zpo-steinjonas-7",
+  "cards": 3212,
+  "profile": "degruyter-grosskommentar-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.8642,
+    "rows": 81,
+    "gaps": [
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 3,
+        "to": 5,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 7,
+        "to": 11,
+        "missing": 3
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 13,
+        "to": 15,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 19,
+        "to": 23,
+        "missing": 3
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 23,
+        "to": 25,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 25,
+        "to": 28,
+        "missing": 2
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 29,
+        "to": 32,
+        "missing": 2
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 35,
+        "to": 37,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 37,
+        "to": 39,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 40,
+        "to": 43,
+        "missing": 2
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 47,
+        "to": 49,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 49,
+        "to": 51,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 53,
+        "to": 55,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 55,
+        "to": 59,
+        "missing": 3
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 59,
+        "to": 65,
+        "missing": 5
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 65,
+        "to": 67,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 67,
+        "to": 69,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 69,
+        "to": 74,
+        "missing": 4
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 77,
+        "to": 83,
+        "missing": 5
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 83,
+        "to": 85,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 85,
+        "to": 87,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 91,
+        "to": 93,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 94,
+        "to": 97,
+        "missing": 2
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 97,
+        "to": 99,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 1,
+        "to": 4,
+        "missing": 2
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 4,
+        "to": 8,
+        "missing": 3
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 10,
+        "to": 14,
+        "missing": 3
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 14,
+        "to": 20,
+        "missing": 5
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 22,
+        "to": 24,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "511",
+        "from": 24,
+        "to": 26,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 123,
+    "missing_total": 4318,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Vorspann": 29,
+      "Rdn.": 3183
+    }
+  },
+  "coverage": {
+    "share": 0.9618,
+    "covered_chars": 2852592,
+    "book_chars": 2965946,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 5367,
+        "from": 2730138,
+        "to": 2735505
+      },
+      {
+        "chars": 4794,
+        "from": 157032,
+        "to": 161826
+      },
+      {
+        "chars": 3322,
+        "from": 2736296,
+        "to": 2739618
+      },
+      {
+        "chars": 3031,
+        "from": 213005,
+        "to": 216036
+      },
+      {
+        "chars": 3025,
+        "from": 106846,
+        "to": 109871
+      },
+      {
+        "chars": 2648,
+        "from": 89615,
+        "to": 92263
+      },
+      {
+        "chars": 2441,
+        "from": 98952,
+        "to": 101393
+      },
+      {
+        "chars": 2283,
+        "from": 142846,
+        "to": 145129
+      },
+      {
+        "chars": 2228,
+        "from": 2161959,
+        "to": 2164187
+      },
+      {
+        "chars": 2222,
+        "from": 174913,
+        "to": 177135
+      }
+    ]
+  },
+  "lengths": {
+    "median": 713,
+    "min": 39,
+    "max": 7844,
+    "too_short": [
+      "de-zpo-steinjonas-7:rdn:248",
+      "de-zpo-steinjonas-7:rdn:367",
+      "de-zpo-steinjonas-7:rdn:389",
+      "de-zpo-steinjonas-7:rdn:403",
+      "de-zpo-steinjonas-7:rdn:767",
+      "de-zpo-steinjonas-7:rdn:778",
+      "de-zpo-steinjonas-7:rdn:819",
+      "de-zpo-steinjonas-7:rdn:855",
+      "de-zpo-steinjonas-7:rdn:906",
+      "de-zpo-steinjonas-7:rdn:923",
+      "de-zpo-steinjonas-7:rdn:1967",
+      "de-zpo-steinjonas-7:rdn:1991",
+      "de-zpo-steinjonas-7:rdn:521/5",
+      "de-zpo-steinjonas-7:rdn:522/4",
+      "de-zpo-steinjonas-7:rdn:522/65"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.76,
+    "footnotes_total": 8225,
+    "unparsed_blocks": 0,
+    "per_card_median": 2.0,
+    "cards_with_calls_but_no_notes": 148,
+    "notes_without_visible_call": 788
+  },
+  "dead_pages": {
+    "pages": [
+      72,
+      81,
+      1015,
+      1112
+    ],
+    "count": 4
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 2957,
+      "2": 255
+    }
+  },
+  "internal_refs": {
+    "refs_total": 1226,
+    "unresolved": 415,
+    "resolved_share": 0.662,
+    "sample": [
+      {
+        "card": "de-zpo-steinjonas-7:rdn:511/6",
+        "ref": "§ 520 Rdn. 66",
+        "missing": 520
+      },
+      {
+        "card": "de-zpo-steinjonas-7:rdn:511/6",
+        "ref": "§ 515 Rdn. 9",
+        "missing": 515
+      },
+      {
+        "card": "de-zpo-steinjonas-7:rdn:511/25",
+        "ref": "§ 512 Rdn. 16",
+        "missing": 512
+      },
+      {
+        "card": "de-zpo-steinjonas-7:rdn:511/33",
+        "ref": "§ 517 Rdn. 18",
+        "missing": 517
+      },
+      {
+        "card": "de-zpo-steinjonas-7:rdn:511/53",
+        "ref": "§ 517 Rdn. 18",
+        "missing": 517
+      },
+      {
+        "card": "de-zpo-steinjonas-7:rdn:511/69",
+        "ref": "§ 519 Rdn. 14",
+        "missing": 519
+      },
+      {
+        "card": "de-zpo-steinjonas-7:rdn:511/74",
+        "ref": "§ 519 Rdn. 67",
+        "missing": 519
+      },
+      {
+        "card": "de-zpo-steinjonas-7:rdn:511/76",
+        "ref": "§ 519 Rdn. 28",
+        "missing": 519
+      },
+      {
+        "card": "de-zpo-steinjonas-7:rdn:511/76",
+        "ref": "§ 519 Rdn. 29",
+        "missing": 519
+      },
+      {
+        "card": "de-zpo-steinjonas-7:rdn:511/87",
+        "ref": "§ 519 Rdn. 12",
+        "missing": 519
+      },
+      {
+        "card": "de-zpo-steinjonas-7:rdn:511/8",
+        "ref": "§ 240 Rdn. 16",
+        "missing": 240
+      },
+      {
+        "card": "de-zpo-steinjonas-7:rdn:511/38",
+        "ref": "§ 524 Rdn. 7",
+        "missing": 524
+      },
+      {
+        "card": "de-zpo-steinjonas-7:rdn:511/57",
+        "ref": "§ 515 Rdn. 34",
+        "missing": 515
+      },
+      {
+        "card": "de-zpo-steinjonas-7:rdn:511/60",
+        "ref": "§ 515 Rdn. 11",
+        "missing": 515
+      },
+      {
+        "card": "de-zpo-steinjonas-7:rdn:511/126",
+        "ref": "§ 517 Rdn. 17",
+        "missing": 517
+      }
+    ]
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 1
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 86.4% < 98%: пропущено номеров 4318. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "number_issues": [
+    {
+      "raw": "2113",
+      "action": "repaired_by_neighbours",
+      "to": 2114,
+      "expected": 2114,
+      "line": 391,
+      "evidence": "предыдущий 2113, следующий 2115"
+    },
+    {
+      "raw": "2773",
+      "action": "repaired_by_neighbours",
+      "to": 2772,
+      "expected": 2772,
+      "line": 440,
+      "evidence": "предыдущий 2771, следующий 2773"
+    },
+    {
+      "raw": "6986",
+      "action": "repaired_by_neighbours",
+      "to": 6985,
+      "expected": 6985,
+      "line": 734,
+      "evidence": "предыдущий 6984, следующий 6986"
+    },
+    {
+      "raw": "7359",
+      "action": "repaired_by_neighbours",
+      "to": 7358,
+      "expected": 7358,
+      "line": 782,
+      "evidence": "предыдущий 7357, следующий 7359"
+    },
+    {
+      "raw": "7433",
+      "action": "repaired_by_neighbours",
+      "to": 7434,
+      "expected": 7434,
+      "line": 817,
+      "evidence": "предыдущий 7433, следующий 7435"
+    },
+    {
+      "raw": "7435",
+      "action": "repaired_by_neighbours",
+      "to": 7436,
+      "expected": 7436,
+      "line": 819,
+      "evidence": "предыдущий 7435, следующий 7437"
+    },
+    {
+      "raw": "75",
+      "action": "repaired_by_neighbours",
+      "to": 74,
+      "expected": 74,
+      "line": 440840,
+      "evidence": "предыдущий 73, следующий 75"
+    },
+    {
+      "raw": "135",
+      "action": "repaired_by_neighbours",
+      "to": 134,
+      "expected": 134,
+      "line": 67807,
+      "evidence": "предыдущий 133, следующий 135"
+    },
+    {
+      "raw": "52",
+      "action": "repaired_by_neighbours",
+      "to": 51,
+      "expected": 51,
+      "line": 78831,
+      "evidence": "предыдущий 50, следующий 52"
+    },
+    {
+      "raw": "140",
+      "action": "repaired_by_neighbours",
+      "to": 141,
+      "expected": 141,
+      "line": 80301,
+      "evidence": "предыдущий 140, следующий 142"
+    },
+    {
+      "raw": "188",
+      "action": "repaired_by_neighbours",
+      "to": 187,
+      "expected": 187,
+      "line": 152931,
+      "evidence": "предыдущий 186, следующий 188"
+    },
+    {
+      "raw": "242",
+      "action": "repaired_by_neighbours",
+      "to": 243,
+      "expected": 243,
+      "line": 174696,
+      "evidence": "предыдущий 242, следующий 244"
+    },
+    {
+      "raw": "95",
+      "action": "repaired_by_neighbours",
+      "to": 96,
+      "expected": 96,
+      "line": 178830,
+      "evidence": "предыдущий 95, следующий 97"
+    },
+    {
+      "raw": "100",
+      "action": "repaired_by_neighbours",
+      "to": 101,
+      "expected": 101,
+      "line": 232693,
+      "evidence": "предыдущий 100, следующий 102"
+    }
+  ],
+  "absorbed_units": 4,
+  "sections_found": 2651,
+  "toc_entries": 0,
+  "toc_anchored_to_line": 0,
+  "toc_page_only": 0,
+  "pages_without_lines": [
+    1,
+    8,
+    26,
+    4320,
+    4928,
+    5398,
+    5623,
+    6914,
+    7058,
+    7208,
+    7412,
+    7462,
+    7478,
+    7490,
+    7698,
+    7824
+  ],
+  "profile": "erman-bgb-17-v1",
+  "method": "digital"
+}

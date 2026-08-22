@@ -1,0 +1,406 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-inso-jaeger-9",
+  "cards": 2420,
+  "profile": "degruyter-grosskommentar-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.8322,
+    "rows": 51,
+    "gaps": [
+      {
+        "family": "Rdn.",
+        "section": "337",
+        "from": 3,
+        "to": 8,
+        "missing": 4
+      },
+      {
+        "family": "Rdn.",
+        "section": "337",
+        "from": 7,
+        "to": 9,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "341",
+        "from": 26,
+        "to": 30,
+        "missing": 3
+      },
+      {
+        "family": "Rdn.",
+        "section": "341",
+        "from": 25,
+        "to": 27,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "341",
+        "from": 29,
+        "to": 31,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "343",
+        "from": 1,
+        "to": 335,
+        "missing": 333
+      },
+      {
+        "family": "Rdn.",
+        "section": "353",
+        "from": 2,
+        "to": 4,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "353",
+        "from": 4,
+        "to": 7,
+        "missing": 2
+      },
+      {
+        "family": "Rdn.",
+        "section": "353",
+        "from": 7,
+        "to": 11,
+        "missing": 3
+      },
+      {
+        "family": "Rdn.",
+        "section": "353",
+        "from": 11,
+        "to": 18,
+        "missing": 6
+      },
+      {
+        "family": "Rdn.",
+        "section": "353",
+        "from": 18,
+        "to": 20,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "353",
+        "from": 20,
+        "to": 28,
+        "missing": 7
+      },
+      {
+        "family": "Rdn.",
+        "section": "353",
+        "from": 28,
+        "to": 31,
+        "missing": 2
+      },
+      {
+        "family": "Rdn.",
+        "section": "353",
+        "from": 31,
+        "to": 33,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "353",
+        "from": 33,
+        "to": 38,
+        "missing": 4
+      },
+      {
+        "family": "Rdn.",
+        "section": "353",
+        "from": 38,
+        "to": 42,
+        "missing": 3
+      },
+      {
+        "family": "Rdn.",
+        "section": "353",
+        "from": 43,
+        "to": 45,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "353",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "353",
+        "from": 3,
+        "to": 5,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "353",
+        "from": 6,
+        "to": 8,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "353",
+        "from": 10,
+        "to": 12,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "353",
+        "from": 17,
+        "to": 19,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "353",
+        "from": 19,
+        "to": 21,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "353",
+        "from": 27,
+        "to": 29,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "353",
+        "from": 30,
+        "to": 32,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "353",
+        "from": 32,
+        "to": 34,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "353",
+        "from": 37,
+        "to": 39,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "353",
+        "from": 41,
+        "to": 44,
+        "missing": 2
+      },
+      {
+        "family": "Rdn.",
+        "section": "353",
+        "from": 44,
+        "to": 46,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "359",
+        "from": 5,
+        "to": 7,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 231,
+    "missing_total": 1821,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Vorspann": 164,
+      "Rdn.": 2256
+    }
+  },
+  "coverage": {
+    "share": 0.8054,
+    "covered_chars": 1541123,
+    "book_chars": 1913421,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 22299,
+        "from": 1851480,
+        "to": 1873779
+      },
+      {
+        "chars": 10199,
+        "from": 1835857,
+        "to": 1846056
+      },
+      {
+        "chars": 9452,
+        "from": 1806685,
+        "to": 1816137
+      },
+      {
+        "chars": 8584,
+        "from": 1881694,
+        "to": 1890278
+      },
+      {
+        "chars": 8047,
+        "from": 1769475,
+        "to": 1777522
+      },
+      {
+        "chars": 7568,
+        "from": 995343,
+        "to": 1002911
+      },
+      {
+        "chars": 6371,
+        "from": 1818615,
+        "to": 1824986
+      },
+      {
+        "chars": 6313,
+        "from": 987183,
+        "to": 993496
+      },
+      {
+        "chars": 6247,
+        "from": 1316767,
+        "to": 1323014
+      },
+      {
+        "chars": 6054,
+        "from": 1761964,
+        "to": 1768018
+      }
+    ]
+  },
+  "lengths": {
+    "median": 564,
+    "min": 29,
+    "max": 3769,
+    "too_short": [
+      "de-inso-jaeger-9:rdn:338/3",
+      "de-inso-jaeger-9:rdn:338/9",
+      "de-inso-jaeger-9:rdn:338/10",
+      "de-inso-jaeger-9:rdn:339/3",
+      "de-inso-jaeger-9:rdn:339/10",
+      "de-inso-jaeger-9:rdn:339/11",
+      "de-inso-jaeger-9:rdn:339/12",
+      "de-inso-jaeger-9:rdn:340/3",
+      "de-inso-jaeger-9:rdn:340/41",
+      "de-inso-jaeger-9:rdn:342/24",
+      "de-inso-jaeger-9:rdn:342/42",
+      "de-inso-jaeger-9:rdn:344/14",
+      "de-inso-jaeger-9:rdn:345/7",
+      "de-inso-jaeger-9:rdn:345/17",
+      "de-inso-jaeger-9:rdn:345/20"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.52,
+    "footnotes_total": 2591,
+    "unparsed_blocks": 0,
+    "per_card_median": 1.0,
+    "cards_with_calls_but_no_notes": 622,
+    "notes_without_visible_call": 656
+  },
+  "dead_pages": {
+    "pages": [
+      479,
+      480,
+      482,
+      483,
+      484,
+      485,
+      543,
+      562,
+      630,
+      631,
+      671,
+      686,
+      718,
+      724,
+      730,
+      839,
+      840,
+      841,
+      843,
+      844,
+      845,
+      846,
+      850,
+      853,
+      854,
+      857,
+      862,
+      865,
+      866,
+      867,
+      868,
+      869,
+      872,
+      873,
+      881,
+      882,
+      883,
+      884,
+      885,
+      886
+    ],
+    "count": 63
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 164,
+    "sample": [
+      "de-inso-jaeger-9:rdn:1",
+      "de-inso-jaeger-9:rdn:2",
+      "de-inso-jaeger-9:rdn:3",
+      "de-inso-jaeger-9:rdn:4",
+      "de-inso-jaeger-9:rdn:5",
+      "de-inso-jaeger-9:rdn:6",
+      "de-inso-jaeger-9:rdn:7",
+      "de-inso-jaeger-9:rdn:8",
+      "de-inso-jaeger-9:rdn:9",
+      "de-inso-jaeger-9:rdn:10"
+    ],
+    "depth_histogram": {
+      "0": 164,
+      "1": 2256
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 4
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 83.2% < 98%: пропущено номеров 1821. Паттерн местами не сработал, и эти куски книги в корпус не попали.",
+    "Покрытие текста 80.5% < 90%: часть книги не попала ни в одну карточку."
+  ]
+}

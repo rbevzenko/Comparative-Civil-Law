@@ -1,59 +1,20 @@
-"""Печать, которая не убивает процесс при обрыве трубы.
+"""Заглушка модуля, которого нет в поставке скилла.
 
-    import _safeprint; _safeprint.install()
+Пять скриптов скилла (inline_superscripts, drop_junk_lines, rebuild_notes,
+respace_caps, section_from_hierarchy) начинаются с `import _safeprint`, но
+самого файла в synced/complaw-corpus/scripts нет — на этой машине они падают
+с ModuleNotFoundError ещё до разбора аргументов.
 
-Скрипты нарезки печатают отчёт о сделанном, а файл пишут в конце. Если вывод
-уходит в `| head`, труба закрывается на первых строках, Python поднимает
-BrokenPipeError — и процесс умирает ДО записи файла, напечатав при этом
-правдоподобный отчёт. На живом прогоне так дважды терялся разбор сносок
-целой книги: в журнале «сносок стало 19156», а в work/pages.jsonl прежние.
-
-install() подменяет stdout на обёртку, которая молча проглатывает обрыв, и
-гасит поток на выходе, чтобы интерпретатор не ругался на финальном flush.
+Судя по имени и по тому, что вызывается сразу после импорта, модуль чинит
+вывод в консоль с не-UTF-8 кодировкой. Здесь ровно это и делается. Скрипты
+запускаются с PYTHONPATH на этот каталог.
 """
-
-import atexit
-import os
-import sys
-
-
-class _Sink:
-    def __init__(self, stream):
-        self._s = stream
-        self._dead = False
-
-    def write(self, data):
-        if self._dead:
-            return len(data)
-        try:
-            return self._s.write(data)
-        except (BrokenPipeError, ValueError):
-            self._dead = True
-            return len(data)
-
-    def flush(self):
-        if self._dead:
-            return
-        try:
-            self._s.flush()
-        except (BrokenPipeError, ValueError):
-            self._dead = True
-
-    def __getattr__(self, name):
-        return getattr(self._s, name)
 
 
 def install():
-    sys.stdout = _Sink(sys.stdout)
-
-    def _hush():
+    import sys
+    for stream in (sys.stdout, sys.stderr):
         try:
-            sys.stdout.flush()
-        except Exception:
+            stream.reconfigure(encoding="utf-8", errors="replace")
+        except (AttributeError, ValueError):
             pass
-        try:
-            os.dup2(os.open(os.devnull, os.O_WRONLY), 1)
-        except Exception:
-            pass
-
-    atexit.register(_hush)

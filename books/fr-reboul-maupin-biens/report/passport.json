@@ -1,0 +1,280 @@
+{
+  "path": "/home/user/fr-pdf/reboul-maupin-biens.pdf",
+  "sha256": "4f434dca234cb07643e64e2e508164feefef20726bea267017f28bbbd8c05cfd",
+  "pages": 1346,
+  "sampled_pages": [
+    202,
+    227,
+    252,
+    277,
+    302,
+    327,
+    352,
+    377,
+    402,
+    427,
+    452,
+    477,
+    502,
+    527,
+    552,
+    577,
+    602,
+    627,
+    652,
+    677,
+    702,
+    727,
+    752,
+    777,
+    802,
+    827,
+    852,
+    877,
+    902,
+    927,
+    952,
+    977,
+    1002,
+    1027,
+    1052,
+    1077,
+    1102,
+    1127,
+    1152,
+    1177
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 34,
+    "max_depth": 1,
+    "resolved_pages": 34,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Couverture",
+        "page": 2,
+        "depth": 0
+      },
+      {
+        "title": "Mode d’emploi",
+        "page": 8,
+        "depth": 0
+      },
+      {
+        "title": "Présentation",
+        "page": 11,
+        "depth": 0
+      },
+      {
+        "title": "Table des matières",
+        "page": 12,
+        "depth": 0
+      },
+      {
+        "title": "Principales abréviations",
+        "page": 60,
+        "depth": 0
+      },
+      {
+        "title": "Table des Quiz",
+        "page": 62,
+        "depth": 0
+      },
+      {
+        "title": "Introduction",
+        "page": 64,
+        "depth": 0
+      },
+      {
+        "title": "Chapitre 1 - Présentation générale du droit des biens",
+        "page": 73,
+        "depth": 0
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 40,
+    "with_destination": 40,
+    "per_page": 1.0,
+    "sample": [
+      {
+        "page": 202,
+        "rect": [
+          136,
+          427,
+          178,
+          444
+        ]
+      },
+      {
+        "page": 302,
+        "rect": [
+          82,
+          425,
+          134,
+          442
+        ]
+      },
+      {
+        "page": 302,
+        "rect": [
+          77,
+          362,
+          122,
+          395
+        ]
+      }
+    ]
+  },
+  "text_layer": {
+    "median_chars_per_page": 2247,
+    "empty_pages_share": 0.03,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.0,
+    "offset_mode": null,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 202,
+        "printed": null
+      },
+      {
+        "pdf_page": 227,
+        "printed": null
+      },
+      {
+        "pdf_page": 252,
+        "printed": null
+      },
+      {
+        "pdf_page": 277,
+        "printed": null
+      },
+      {
+        "pdf_page": 302,
+        "printed": null
+      },
+      {
+        "pdf_page": 327,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "15.0": 57326,
+      "11.2": 26470,
+      "10.3": 4188,
+      "8.7": 2300,
+      "30.0": 353,
+      "25.0": 214,
+      "16.9": 74,
+      "21.2": 64
+    },
+    "body": 15.0,
+    "candidates_footnote": [
+      8.7,
+      10.3,
+      11.2
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 1155,
+    "share_at_page_bottom": 0.74
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 2,
+    "left_edges": [
+      77,
+      98,
+      83,
+      287
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 12,
+      "monotonic_share": 0.82,
+      "first": [
+        "1",
+        "2000",
+        "1",
+        "11",
+        "12"
+      ]
+    },
+    "§ с номером": {
+      "hits": 4,
+      "monotonic_share": 0.67,
+      "first": [
+        "1",
+        "2",
+        "2",
+        "3"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 14409,
+    "suspicious": 4,
+    "share": 0.0003,
+    "sample": [
+      "LGDJ,",
+      "LGDJ,",
+      "(RLDC",
+      "LGDJ,"
+    ]
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        77.0,
+        489.0
+      ],
+      "even": [
+        77.0,
+        489.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 27,
+      "monotonic_share": 0.96,
+      "even_page_share": 0.52,
+      "first": [
+        84,
+        85,
+        161,
+        162,
+        231,
+        232
+      ]
+    }
+  },
+  "statutory": {
+    "FR": 24
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Сноски кликабельны — привязку берём из файла напрямую, без эвристик.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы.",
+      "Маргинальные номера у правого поля: 27 попаданий, монотонность 96%, доля чётных страниц 52% — кандидат на режим margin."
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+id: scan-mainguy
+publisher: Dalloz, «Cours Dalloz»
+jurisdiction: FR
+language: fr
+# Скан со своим распознаванием, качество среднее: 0.7% подозрительных слов —
+# худшее среди французских книг после Урлиака. Тело 14.3–15.4, сноски
+# 9.3–11.4 внизу полосы, колонтитул 11.1–11.9 с колонцифрой.
+#
+# Порога по кеглю у строки с номером единицы нет: заголовок набран тем же
+# кеглем, что тело («276 Approvisionnement et spéculation. Les ventes...»).
+
+units:
+  - type: "n°"
+    id_prefix: "n"
+    mode: flow
+    pattern: '^(\d{1,4})\s+(?=[A-ZÀÂÄÉÈÊËÎÏÔÖÙÛÜÇŒÆ«“]|\d\s*[°º]|[a-z]\s*\))'
+
+address:
+  section:
+    mode: none
+  template: "{unit_type} {number}"
+
+printed_page:
+  band: [0.06, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+[A-ZÀÂÄÉÈÊËÎÏÔÖÙÛÜÇL]'
+    - '\s(\d{1,4})$'
+
+footnotes:
+  mode: font_bottom
+  body_size: 14.3
+  note_size_max: 12.0
+  bottom_band: 0.35
+
+junk:
+  patterns: []
+
+statutory:
+  patterns:
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*(?:\s*(?:et|à|,)\s*\d+(?:-\d+)*)*\s*(?:C\.\s*civ\.|du Code civil)'
+    - 'L\.\s*\d{3}-\d+'
+
+cross_refs:
+  patterns:
+    - '(?:supra|infra)\s*,?\s*n[o°s]*\s*\d+(?:\s*(?:et|à|,)\s*\d+)*'
+
+citation:
+  template: "{authors}, {title}, {edition}, {publisher}, {year}, {address}"

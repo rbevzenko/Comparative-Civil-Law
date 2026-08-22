@@ -1,0 +1,350 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/fr-mainguy-contrats-speciaux",
+  "cards": 594,
+  "profile": "scan-mainguy",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9167,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "n°",
+        "section": null,
+        "from": 4,
+        "to": 6,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 10,
+        "to": 12,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 21,
+        "to": 23,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 37,
+        "to": 39,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 56,
+        "to": 58,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 64,
+        "to": 66,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 72,
+        "to": 74,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 76,
+        "to": 78,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 91,
+        "to": 93,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 101,
+        "to": 103,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 105,
+        "to": 108,
+        "missing": 2
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 108,
+        "to": 110,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 111,
+        "to": 113,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 120,
+        "to": 122,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 123,
+        "to": 125,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 127,
+        "to": 129,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 151,
+        "to": 153,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 171,
+        "to": 173,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 180,
+        "to": 182,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 188,
+        "to": 190,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 199,
+        "to": 201,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 202,
+        "to": 204,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 207,
+        "to": 209,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 210,
+        "to": 213,
+        "missing": 2
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 215,
+        "to": 219,
+        "missing": 3
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 221,
+        "to": 224,
+        "missing": 2
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 225,
+        "to": 227,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 228,
+        "to": 230,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 231,
+        "to": 233,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 249,
+        "to": 251,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 46,
+    "missing_total": 54,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "n°": 594
+    }
+  },
+  "coverage": {
+    "share": 0.9197,
+    "covered_chars": 1023748,
+    "book_chars": 1113128,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 6739,
+        "from": 479968,
+        "to": 486707
+      },
+      {
+        "chars": 5467,
+        "from": 378186,
+        "to": 383653
+      },
+      {
+        "chars": 4825,
+        "from": 678498,
+        "to": 683323
+      },
+      {
+        "chars": 4449,
+        "from": 61344,
+        "to": 65793
+      },
+      {
+        "chars": 3933,
+        "from": 455590,
+        "to": 459523
+      },
+      {
+        "chars": 3844,
+        "from": 969626,
+        "to": 973470
+      },
+      {
+        "chars": 3405,
+        "from": 349964,
+        "to": 353369
+      },
+      {
+        "chars": 2797,
+        "from": 498944,
+        "to": 501741
+      },
+      {
+        "chars": 2688,
+        "from": 951573,
+        "to": 954261
+      },
+      {
+        "chars": 2506,
+        "from": 1002898,
+        "to": 1005404
+      }
+    ]
+  },
+  "lengths": {
+    "median": 1537,
+    "min": 109,
+    "max": 26896,
+    "too_short": [
+      "fr-mainguy-contrats-speciaux:n:451"
+    ],
+    "too_long": [
+      "fr-mainguy-contrats-speciaux:n:648"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.69,
+    "footnotes_total": 1248,
+    "unparsed_blocks": 50,
+    "per_card_median": 1.0,
+    "cards_with_calls_but_no_notes": 10,
+    "notes_without_visible_call": 841
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 594,
+    "sample": [
+      "fr-mainguy-contrats-speciaux:n:1",
+      "fr-mainguy-contrats-speciaux:n:2",
+      "fr-mainguy-contrats-speciaux:n:3",
+      "fr-mainguy-contrats-speciaux:n:4",
+      "fr-mainguy-contrats-speciaux:n:6",
+      "fr-mainguy-contrats-speciaux:n:7",
+      "fr-mainguy-contrats-speciaux:n:8",
+      "fr-mainguy-contrats-speciaux:n:9",
+      "fr-mainguy-contrats-speciaux:n:10",
+      "fr-mainguy-contrats-speciaux:n:12"
+    ],
+    "depth_histogram": {
+      "0": 594
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 1
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 91.7% < 98%: пропущено номеров 54. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-mukobgb-986-1011",
+  "cards": 1248,
+  "profile": "beck-online-print-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9858,
+    "rows": 26,
+    "gaps": [
+      {
+        "family": "Rn.",
+        "section": "986",
+        "from": 11,
+        "to": 13,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "987",
+        "from": 43,
+        "to": 45,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "987",
+        "from": 50,
+        "to": 52,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "987",
+        "from": 91,
+        "to": 93,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "990",
+        "from": 4,
+        "to": 6,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "993",
+        "from": 8,
+        "to": 10,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "994",
+        "from": 51,
+        "to": 53,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "999",
+        "from": 8,
+        "to": 10,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "1001",
+        "from": 19,
+        "to": 21,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "1004",
+        "from": 290,
+        "to": 292,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "1004",
+        "from": 294,
+        "to": 296,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "1006",
+        "from": 4,
+        "to": 6,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "1008",
+        "from": 45,
+        "to": 47,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "1008",
+        "from": 58,
+        "to": 60,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "1008",
+        "from": 92,
+        "to": 94,
+        "missing": 1
+      },
+      {
+        "family": "Rn.",
+        "section": "1010",
+        "from": 5,
+        "to": 9,
+        "missing": 3
+      }
+    ],
+    "gaps_total": 16,
+    "missing_total": 18,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Rn.": 1248
+    }
+  },
+  "coverage": {
+    "share": 0.9987,
+    "covered_chars": 946215,
+    "book_chars": 947462,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 635,
+    "min": 60,
+    "max": 13374,
+    "too_short": [
+      "de-mukobgb-986-1011:rn:986/13",
+      "de-mukobgb-986-1011:rn:986/14",
+      "de-mukobgb-986-1011:rn:986/16",
+      "de-mukobgb-986-1011:rn:986/22",
+      "de-mukobgb-986-1011:rn:987/57",
+      "de-mukobgb-986-1011:rn:987/96",
+      "de-mukobgb-986-1011:rn:987/100",
+      "de-mukobgb-986-1011:rn:988/16",
+      "de-mukobgb-986-1011:rn:990/18",
+      "de-mukobgb-986-1011:rn:991/13",
+      "de-mukobgb-986-1011:rn:993/11",
+      "de-mukobgb-986-1011:rn:1001/6",
+      "de-mukobgb-986-1011:rn:1004/200",
+      "de-mukobgb-986-1011:rn:1004/259",
+      "de-mukobgb-986-1011:rn:1004/269"
+    ],
+    "too_long": [
+      "de-mukobgb-986-1011:rn:987/0",
+      "de-mukobgb-986-1011:rn:1004/0"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.35,
+    "footnotes_total": 1054,
+    "unparsed_blocks": 0,
+    "per_card_median": 0.0,
+    "cards_with_calls_but_no_notes": 8,
+    "notes_without_visible_call": 964
+  },
+  "dead_pages": {
+    "pages": [
+      4,
+      12,
+      15,
+      17,
+      66,
+      120,
+      139,
+      367
+    ],
+    "count": 8
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 1248
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

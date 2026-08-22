@@ -1,0 +1,43 @@
+id: lalrev-page-unit
+publisher: Louisiana Law Review
+jurisdiction: FR
+language: en
+# Журнальная статья. Сквозной нумерации абзацев нет, единица — страница
+# журнала. Колонцифра стоит ВНИЗУ полосы в квадратных скобках: «[369]».
+# Полоса поиска только нижняя: сверху идёт колонтитул без номера
+# («LOUISIANA LAW REVIEW [Vol. XXVII»), и с верхней полосой из него
+# приезжает номер тома.
+
+units:
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  section:
+    mode: none
+  template: "{unit_type} {number}"
+
+printed_page:
+  band: [0.0, 0.15]
+
+footnotes:
+  mode: font_bottom
+  body_size: 10.0
+  note_size_max: 8.5
+  bottom_band: 0.4
+
+junk:
+  patterns:
+    - 'digitalcommons\.law\.lsu\.edu'
+
+statutory:
+  patterns:
+    - 'B\.?G\.?B\.?\s*§+\s*\d+'
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*\s*(?:C\.\s*civ\.|of the Civil Code)'
+
+cross_refs:
+  patterns: []
+
+citation:
+  template: "{authors}, {title}, {publisher}, {year}, {address}"

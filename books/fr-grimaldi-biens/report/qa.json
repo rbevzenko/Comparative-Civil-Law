@@ -1,0 +1,108 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/fr-grimaldi-biens",
+  "cards": 779,
+  "profile": "lgdj-grimaldi",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 1,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "n°": 779
+    }
+  },
+  "coverage": {
+    "share": 0.9762,
+    "covered_chars": 1106321,
+    "book_chars": 1133302,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 2963,
+        "from": 213049,
+        "to": 216012
+      },
+      {
+        "chars": 926,
+        "from": 67182,
+        "to": 68108
+      }
+    ]
+  },
+  "lengths": {
+    "median": 1011,
+    "min": 91,
+    "max": 17961,
+    "too_short": [
+      "fr-grimaldi-biens:n:7",
+      "fr-grimaldi-biens:n:101",
+      "fr-grimaldi-biens:n:313",
+      "fr-grimaldi-biens:n:351",
+      "fr-grimaldi-biens:n:405",
+      "fr-grimaldi-biens:n:432",
+      "fr-grimaldi-biens:n:465",
+      "fr-grimaldi-biens:n:476",
+      "fr-grimaldi-biens:n:477",
+      "fr-grimaldi-biens:n:531",
+      "fr-grimaldi-biens:n:548",
+      "fr-grimaldi-biens:n:604",
+      "fr-grimaldi-biens:n:639",
+      "fr-grimaldi-biens:n:736"
+    ],
+    "too_long": [
+      "fr-grimaldi-biens:n:496",
+      "fr-grimaldi-biens:n:779"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.8,
+    "footnotes_total": 3894,
+    "unparsed_blocks": 6,
+    "per_card_median": 3,
+    "cards_with_calls_but_no_notes": 8,
+    "notes_without_visible_call": 630
+  },
+  "dead_pages": {
+    "pages": [
+      64,
+      284,
+      712
+    ],
+    "count": 3
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 54,
+      "2": 16,
+      "3": 28,
+      "4": 607,
+      "5": 74
+    }
+  },
+  "internal_refs": {
+    "refs_total": 1,
+    "unresolved": 0,
+    "resolved_share": 1.0,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

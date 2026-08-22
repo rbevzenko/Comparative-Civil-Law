@@ -1,0 +1,410 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-gbo-kuntze",
+  "cards": 2907,
+  "profile": "degruyter-guttentag-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.8254,
+    "rows": 120,
+    "gaps": [
+      {
+        "family": "Rdn.",
+        "section": "883",
+        "from": 17,
+        "to": 23,
+        "missing": 5
+      },
+      {
+        "family": "Rdn.",
+        "section": "883",
+        "from": 26,
+        "to": 30,
+        "missing": 3
+      },
+      {
+        "family": "Rdn.",
+        "section": "899",
+        "from": 3,
+        "to": 14,
+        "missing": 10
+      },
+      {
+        "family": "Rdn.",
+        "section": "899",
+        "from": 9,
+        "to": 16,
+        "missing": 6
+      },
+      {
+        "family": "Rdn.",
+        "section": "899",
+        "from": 16,
+        "to": 19,
+        "missing": 2
+      },
+      {
+        "family": "Rdn.",
+        "section": "899",
+        "from": 19,
+        "to": 24,
+        "missing": 4
+      },
+      {
+        "family": "Rdn.",
+        "section": "899",
+        "from": 25,
+        "to": 31,
+        "missing": 5
+      },
+      {
+        "family": "Rdn.",
+        "section": "899",
+        "from": 21,
+        "to": 27,
+        "missing": 5
+      },
+      {
+        "family": "Rdn.",
+        "section": "899",
+        "from": 27,
+        "to": 37,
+        "missing": 9
+      },
+      {
+        "family": "Rdn.",
+        "section": "899",
+        "from": 5,
+        "to": 15,
+        "missing": 9
+      },
+      {
+        "family": "Rdn.",
+        "section": "899",
+        "from": 15,
+        "to": 26,
+        "missing": 10
+      },
+      {
+        "family": "Rdn.",
+        "section": "899",
+        "from": 26,
+        "to": 29,
+        "missing": 2
+      },
+      {
+        "family": "Rdn.",
+        "section": "899",
+        "from": 29,
+        "to": 38,
+        "missing": 8
+      },
+      {
+        "family": "Rdn.",
+        "section": "899",
+        "from": 39,
+        "to": 46,
+        "missing": 6
+      },
+      {
+        "family": "Rdn.",
+        "section": "899",
+        "from": 1,
+        "to": 11,
+        "missing": 9
+      },
+      {
+        "family": "Rdn.",
+        "section": "899",
+        "from": 11,
+        "to": 22,
+        "missing": 10
+      },
+      {
+        "family": "Rdn.",
+        "section": "899",
+        "from": 23,
+        "to": 28,
+        "missing": 4
+      },
+      {
+        "family": "Rdn.",
+        "section": "899",
+        "from": 28,
+        "to": 30,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "899",
+        "from": 30,
+        "to": 34,
+        "missing": 3
+      },
+      {
+        "family": "Rdn.",
+        "section": "899",
+        "from": 36,
+        "to": 41,
+        "missing": 4
+      },
+      {
+        "family": "Rdn.",
+        "section": "899",
+        "from": 45,
+        "to": 48,
+        "missing": 2
+      },
+      {
+        "family": "Rdn.",
+        "section": "899",
+        "from": 51,
+        "to": 55,
+        "missing": 3
+      },
+      {
+        "family": "Rdn.",
+        "section": "899",
+        "from": 57,
+        "to": 61,
+        "missing": 3
+      },
+      {
+        "family": "Rdn.",
+        "section": "899",
+        "from": 2,
+        "to": 12,
+        "missing": 9
+      },
+      {
+        "family": "Rdn.",
+        "section": "899",
+        "from": 6,
+        "to": 10,
+        "missing": 3
+      },
+      {
+        "family": "Rdn.",
+        "section": "899",
+        "from": 8,
+        "to": 17,
+        "missing": 8
+      },
+      {
+        "family": "Rdn.",
+        "section": "899",
+        "from": 7,
+        "to": 13,
+        "missing": 5
+      },
+      {
+        "family": "Rdn.",
+        "section": "1",
+        "from": 2,
+        "to": 4,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "1",
+        "from": 5,
+        "to": 9,
+        "missing": 3
+      },
+      {
+        "family": "Rdn.",
+        "section": "1",
+        "from": 1,
+        "to": 7,
+        "missing": 5
+      }
+    ],
+    "gaps_total": 229,
+    "missing_total": 4591,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Vorspann": 308,
+      "Rdn.": 2599
+    }
+  },
+  "coverage": {
+    "share": 0.8414,
+    "covered_chars": 2666558,
+    "book_chars": 3169043,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 15518,
+        "from": 393213,
+        "to": 408731
+      },
+      {
+        "chars": 12386,
+        "from": 428089,
+        "to": 440475
+      },
+      {
+        "chars": 10526,
+        "from": 3044821,
+        "to": 3055347
+      },
+      {
+        "chars": 8257,
+        "from": 3127817,
+        "to": 3136074
+      },
+      {
+        "chars": 7646,
+        "from": 657592,
+        "to": 665238
+      },
+      {
+        "chars": 7340,
+        "from": 601918,
+        "to": 609258
+      },
+      {
+        "chars": 6971,
+        "from": 671510,
+        "to": 678481
+      },
+      {
+        "chars": 6440,
+        "from": 575614,
+        "to": 582054
+      },
+      {
+        "chars": 5489,
+        "from": 623126,
+        "to": 628615
+      },
+      {
+        "chars": 5171,
+        "from": 613313,
+        "to": 618484
+      }
+    ]
+  },
+  "lengths": {
+    "median": 589,
+    "min": 10,
+    "max": 157168,
+    "too_short": [
+      "de-gbo-kuntze:rdn:305",
+      "de-gbo-kuntze:rdn:312",
+      "de-gbo-kuntze:rdn:323",
+      "de-gbo-kuntze:rdn:327",
+      "de-gbo-kuntze:rdn:335",
+      "de-gbo-kuntze:rdn:342",
+      "de-gbo-kuntze:rdn:354",
+      "de-gbo-kuntze:rdn:356",
+      "de-gbo-kuntze:rdn:360",
+      "de-gbo-kuntze:rdn:364",
+      "de-gbo-kuntze:rdn:367",
+      "de-gbo-kuntze:rdn:376",
+      "de-gbo-kuntze:rdn:396",
+      "de-gbo-kuntze:rdn:400",
+      "de-gbo-kuntze:rdn:411"
+    ],
+    "too_long": [
+      "de-gbo-kuntze:rdn:20",
+      "de-gbo-kuntze:rdn:2",
+      "de-gbo-kuntze:rdn:4"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0,
+    "cards_with_calls_but_no_notes": 150,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [
+      28,
+      29,
+      31,
+      126,
+      130,
+      134,
+      154,
+      158,
+      164,
+      168,
+      169,
+      170,
+      171,
+      172,
+      182,
+      183,
+      184,
+      216,
+      224,
+      239,
+      240,
+      251,
+      252,
+      256,
+      260,
+      264,
+      266,
+      274,
+      279,
+      280,
+      312,
+      674,
+      740,
+      863,
+      1086,
+      1102,
+      1105,
+      1215,
+      1239,
+      1240
+    ],
+    "count": 48
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 307,
+    "sample": [
+      "de-gbo-kuntze:rdn:91",
+      "de-gbo-kuntze:rdn:305",
+      "de-gbo-kuntze:rdn:312",
+      "de-gbo-kuntze:rdn:323",
+      "de-gbo-kuntze:rdn:327",
+      "de-gbo-kuntze:rdn:335",
+      "de-gbo-kuntze:rdn:342",
+      "de-gbo-kuntze:rdn:354",
+      "de-gbo-kuntze:rdn:356",
+      "de-gbo-kuntze:rdn:360"
+    ],
+    "depth_histogram": {
+      "0": 307,
+      "1": 2600
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 9
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 82.5% < 98%: пропущено номеров 4591. Паттерн местами не сработал, и эти куски книги в корпус не попали.",
+    "Покрытие текста 84.1% < 90%: часть книги не попала ни в одну карточку."
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/fr-terre-obligations",
+  "cards": 1931,
+  "profile": "dalloz-numerique",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9995,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "n°",
+        "section": null,
+        "from": 319,
+        "to": 321,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 1,
+    "missing_total": 1,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "n°": 1931
+    }
+  },
+  "coverage": {
+    "share": 0.9853,
+    "covered_chars": 4424124,
+    "book_chars": 4490292,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 8839,
+        "from": 3262228,
+        "to": 3271067
+      },
+      {
+        "chars": 6211,
+        "from": 3081010,
+        "to": 3087221
+      },
+      {
+        "chars": 6019,
+        "from": 765415,
+        "to": 771434
+      },
+      {
+        "chars": 3677,
+        "from": 3256077,
+        "to": 3259754
+      },
+      {
+        "chars": 3143,
+        "from": 3683404,
+        "to": 3686547
+      },
+      {
+        "chars": 3068,
+        "from": 762068,
+        "to": 765136
+      },
+      {
+        "chars": 3063,
+        "from": 627516,
+        "to": 630579
+      },
+      {
+        "chars": 2938,
+        "from": 2376328,
+        "to": 2379266
+      },
+      {
+        "chars": 2238,
+        "from": 3271781,
+        "to": 3274019
+      },
+      {
+        "chars": 2160,
+        "from": 2334655,
+        "to": 2336815
+      }
+    ]
+  },
+  "lengths": {
+    "median": 1957,
+    "min": 60,
+    "max": 14660,
+    "too_short": [
+      "fr-terre-obligations:n:163",
+      "fr-terre-obligations:n:169",
+      "fr-terre-obligations:n:182",
+      "fr-terre-obligations:n:664",
+      "fr-terre-obligations:n:1153",
+      "fr-terre-obligations:n:1392"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.79,
+    "footnotes_total": 8144,
+    "unparsed_blocks": 0,
+    "per_card_median": 3,
+    "cards_with_calls_but_no_notes": 23,
+    "notes_without_visible_call": 2338
+  },
+  "dead_pages": {
+    "pages": [
+      693,
+      1333,
+      1426,
+      1700,
+      2057
+    ],
+    "count": 5
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 26,
+      "2": 146,
+      "3": 581,
+      "4": 1178
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

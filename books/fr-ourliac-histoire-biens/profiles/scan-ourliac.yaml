@@ -1,0 +1,50 @@
+id: scan-ourliac
+publisher: Presses Universitaires de France
+jurisdiction: FR
+language: fr
+# Скан с ДВОЙНЫМ текстовым слоем: распознанный текст вшит дважды со сдвигом
+# меньше интерлиньяжа, и в разборе две копии сплетаются посимвольно
+# («118844 HHIISSTOTIOREI RE DDUU DDRROOITI T PPRRIIVVÉÉ»). Разбирать этот
+# файл обычным pages_digital.py нельзя: нужен scripts/pages_digital_dedup.py
+# с допуском 3.0 по обеим осям — он снимает второй слой ДО сборки строк.
+#
+# Тело 7.0–8.1, колонтитул с колонцифрой сверху, сноски мельче тела внизу.
+
+units:
+  # Единица — типографская страница, а не номер абзаца. Сквозная нумерация
+  # в книге есть, но после двойного слоя строка с номером повреждена почти
+  # всюду: паттерн находил 42 единицы на 455 полос, и половина из них —
+  # обломки библиографии. Колонцифра, наоборот, читается на 388 полосах из
+  # 455 и достраивается по постоянному смещению.
+  - type: "p."
+    id_prefix: "p"
+    mode: page
+
+address:
+  section:
+    mode: none
+  template: "{unit_type} {number}"
+
+printed_page:
+  band: [0.09, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+[A-ZÀÂÄÉÈÊËÎÏÔÖÙÛÜÇH]'
+    - '\s(\d{1,4})$'
+
+footnotes:
+  mode: position_bottom
+  bottom_band: 0.75
+
+junk:
+  patterns: []
+
+statutory:
+  patterns:
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*(?:\s*(?:et|à|,)\s*\d+(?:-\d+)*)*\s*(?:C\.\s*civ\.|du Code civil)'
+
+cross_refs:
+  patterns:
+    - '(?:supra|infra)\s*,?\s*n[o°s]*\s*\d+'
+
+citation:
+  template: "{authors}, {title}, {publisher}, {year}, {address}"

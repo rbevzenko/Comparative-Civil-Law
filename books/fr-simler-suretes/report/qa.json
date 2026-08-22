@@ -1,0 +1,129 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/fr-simler-suretes",
+  "cards": 935,
+  "profile": "dalloz-precis-simler",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 1,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "n°": 935
+    }
+  },
+  "coverage": {
+    "share": 0.9833,
+    "covered_chars": 1676978,
+    "book_chars": 1705493,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 3553,
+        "from": 927444,
+        "to": 930997
+      },
+      {
+        "chars": 2829,
+        "from": 467859,
+        "to": 470688
+      },
+      {
+        "chars": 2405,
+        "from": 214615,
+        "to": 217020
+      },
+      {
+        "chars": 1759,
+        "from": 1488102,
+        "to": 1489861
+      },
+      {
+        "chars": 1651,
+        "from": 1017102,
+        "to": 1018753
+      },
+      {
+        "chars": 1386,
+        "from": 1518091,
+        "to": 1519477
+      },
+      {
+        "chars": 1374,
+        "from": 826177,
+        "to": 827551
+      },
+      {
+        "chars": 1325,
+        "from": 950144,
+        "to": 951469
+      },
+      {
+        "chars": 1286,
+        "from": 730136,
+        "to": 731422
+      },
+      {
+        "chars": 885,
+        "from": 657787,
+        "to": 658672
+      }
+    ]
+  },
+  "lengths": {
+    "median": 1604,
+    "min": 157,
+    "max": 12366,
+    "too_short": [],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.79,
+    "footnotes_total": 3995,
+    "unparsed_blocks": 11,
+    "per_card_median": 3,
+    "cards_with_calls_but_no_notes": 85,
+    "notes_without_visible_call": 363
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "2": 1,
+      "3": 14,
+      "4": 36,
+      "5": 119,
+      "6": 130,
+      "7": 385,
+      "8": 227,
+      "9": 23
+    }
+  },
+  "internal_refs": {
+    "refs_total": 639,
+    "unresolved": 0,
+    "resolved_share": 1.0,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

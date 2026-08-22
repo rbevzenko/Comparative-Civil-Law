@@ -1,0 +1,73 @@
+id: dalloz-numerique-calibre
+publisher: Dalloz (электронное издание, Nord Compo)
+jurisdiction: FR
+language: fr
+# Электронная вёрстка Dalloz в сборке calibre: тело 15.0, аппарат 11.2,
+# знак сноски 6.2, по одному примечанию на полосу.
+# Отличия от бумажного профиля dalloz-lgdj-v1:
+#   * сноски НЕ внизу полосы — режим none, привязку делает
+#     scripts/footnotes_from_links.py --note-page-size 11.5;
+#   * колонцифры у книги нет вовсе, полоса поиска нулевая.
+
+units:
+  - type: "n°"
+    id_prefix: "n"
+    mode: flow
+    # «31 Les éléments de la synthèse. Les rédacteurs du Code civil...»
+    # Точки после номера в электронной вёрстке нет.
+    #
+    # Справа от номера не всегда заглавная: у Терре каждый третий пункт
+    # начинается строчной рубрикой — «22 a) La philosophie individualiste»,
+    # «25 1) La liberté contractuelle». С требованием заглавной терялось 580
+    # номеров из 1932.
+    #
+    # Рубрика распознаётся ПО СКОБКЕ, а не по строчной букве как таковой:
+    # без скобки в паттерн полезли бы даты, которых в этой книге тысячи —
+    # «25 mai 1999 relative à certains aspects de la vente...».
+    #
+    # Перед скобкой допускается пробел: надстрочный знак градуса в «1º)»
+    # при разборе теряется и остаётся «1 )». Буква бывает и греческой:
+    # рубрики четвёртого уровня у Терре — α), β), γ).
+    # В класс заглавных добавлены Œ и Æ (их нет в диапазоне A-Z) и кавычка-
+    # ёлочка: заголовки-адагии набраны в кавычках — «570 « Quod nullum
+    # est… »». Многоточие — для заголовков, продолжающих предыдущий.
+    # «8 Les défaillances de la maîtrise ◊ Dans un certain nombre de...»
+    # Заголовок отделён от текста ромбом ◊, но ромб часто уезжает на
+    # следующую строку, поэтому опора не на него, а на заглавную справа.
+    # Даты этим отсекаются сами: «18 août 1870», «23 juillet 1987» —
+    # месяц со строчной.
+    # Рубрика справа от номера бывает какая угодно: «22 1 Par la personne»,
+    # «105 a) Existence de la propriété privée», «46 3° Frontières de la
+    # notion de bien». Без них терялось 154 номера из 957.
+    pattern: '^(\d{1,4})\s+(?=[A-ZÀÂÄÉÈÊËÎÏÔÖÙÛÜÇŒÆ«“]|[a-z0-9α-ω]\s*\)|\d\s*[°º]|\d\s+[A-ZÀÉ])'
+
+address:
+  section:
+    mode: none
+  template: "{unit_type} {number}"
+
+printed_page:
+  # Колонцифры в файле нет: ни внизу полосы, ни в колонтитуле. Французская
+  # книга цитируется по номеру пункта, и без страницы адрес полон.
+  band: [0.0, 0.0]
+
+footnotes:
+  mode: none
+
+junk:
+  patterns:
+    - 'international\.scholarvox\.com'
+    - '^\d{9,}$'
+
+statutory:
+  patterns:
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*(?:\s*(?:et|à|,)\s*\d+(?:-\d+)*)*\s*(?:C\.\s*civ\.|du Code civil)'
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*\s*C\.\s*(?:com|consom|pén|proc\.\s*civ)\.'
+    - 'L\.\s*\d{3}-\d+'
+
+cross_refs:
+  patterns:
+    - '(?:supra|infra)\s*,?\s*n[o°s]*\s*\d+(?:\s*(?:et|à|,)\s*\d+)*'
+
+citation:
+  template: "{authors}, {title}, {edition}, {publisher}, {year}, {address}"

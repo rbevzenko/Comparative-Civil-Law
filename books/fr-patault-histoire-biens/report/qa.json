@@ -1,0 +1,286 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/fr-patault-histoire-biens",
+  "cards": 451,
+  "profile": "digital-page-patault",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9495,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 18,
+        "to": 20,
+        "missing": 1
+      },
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 21,
+        "to": 23,
+        "missing": 1
+      },
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 48,
+        "to": 50,
+        "missing": 1
+      },
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 54,
+        "to": 56,
+        "missing": 1
+      },
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 75,
+        "to": 77,
+        "missing": 1
+      },
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 111,
+        "to": 113,
+        "missing": 1
+      },
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 128,
+        "to": 130,
+        "missing": 1
+      },
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 141,
+        "to": 143,
+        "missing": 1
+      },
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 154,
+        "to": 156,
+        "missing": 1
+      },
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 159,
+        "to": 161,
+        "missing": 1
+      },
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 181,
+        "to": 183,
+        "missing": 1
+      },
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 188,
+        "to": 190,
+        "missing": 1
+      },
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 217,
+        "to": 219,
+        "missing": 1
+      },
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 247,
+        "to": 249,
+        "missing": 1
+      },
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 271,
+        "to": 273,
+        "missing": 1
+      },
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 293,
+        "to": 295,
+        "missing": 1
+      },
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 299,
+        "to": 301,
+        "missing": 1
+      },
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 329,
+        "to": 331,
+        "missing": 1
+      },
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 341,
+        "to": 343,
+        "missing": 1
+      },
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 355,
+        "to": 357,
+        "missing": 1
+      },
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 373,
+        "to": 375,
+        "missing": 1
+      },
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 378,
+        "to": 380,
+        "missing": 1
+      },
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 393,
+        "to": 395,
+        "missing": 1
+      },
+      {
+        "family": "éd. numérique, p.",
+        "section": null,
+        "from": 412,
+        "to": 414,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 24,
+    "missing_total": 24,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "éd. numérique, p.": 451
+    }
+  },
+  "coverage": {
+    "share": 0.9994,
+    "covered_chars": 763610,
+    "book_chars": 764060,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2007,
+    "min": 32,
+    "max": 2440,
+    "too_short": [
+      "fr-patault-histoire-biens:e:16",
+      "fr-patault-histoire-biens:e:18",
+      "fr-patault-histoire-biens:e:23",
+      "fr-patault-histoire-biens:e:65",
+      "fr-patault-histoire-biens:e:113",
+      "fr-patault-histoire-biens:e:149",
+      "fr-patault-histoire-biens:e:190",
+      "fr-patault-histoire-biens:e:249",
+      "fr-patault-histoire-biens:e:295",
+      "fr-patault-histoire-biens:e:329",
+      "fr-patault-histoire-biens:e:380",
+      "fr-patault-histoire-biens:e:395",
+      "fr-patault-histoire-biens:e:439",
+      "fr-patault-histoire-biens:e:453"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0,
+    "cards_with_calls_but_no_notes": 25,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [
+      19,
+      22,
+      49,
+      55,
+      76,
+      112,
+      129,
+      142,
+      155,
+      160,
+      182,
+      189,
+      218,
+      248,
+      272,
+      294,
+      300,
+      330,
+      342,
+      356,
+      374,
+      379,
+      394,
+      413
+    ],
+    "count": 24
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 72,
+      "2": 13,
+      "3": 161,
+      "4": 188,
+      "5": 17
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 95.0% < 98%: пропущено номеров 24. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

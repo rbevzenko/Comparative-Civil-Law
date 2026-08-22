@@ -1,0 +1,42 @@
+id: degruyter-guttentag-v1
+publisher: de Gruyter
+jurisdiction: DE
+language: de
+# Sammlung Guttentag, 1979: распознанный скан. Полоса 439.4×652.1, тело кеглем
+# 8.0–8.2 — аппарата сносок нет вовсе, ссылки идут прямо в тексте. Номер Rdn.
+# висит слева на 66.5 при теле с 78. Колонцифра стоит отдельной строкой внизу
+# («679»), а комментатор — в САМОМ колонтитуле в скобках:
+# «2. Abschnitt. Eintragungen in das Grundbuch (Ertl) § 22».
+
+units:
+  - type: "Rdn."
+    id_prefix: "rdn"
+    mode: margin
+
+margin:
+  scope: page
+  pad: 0.0
+
+footnotes:
+  mode: none
+
+printed_page:
+  band: [0.0, 0.14]
+  max_chars: 20
+
+junk:
+  header_band: 0.135
+  patterns:
+    # Übersicht в начале параграфа набрана в две колонки тем же кеглем, что
+    # тело, и её номера читаются как номера Rdn: у § 29 это давало тринадцать
+    # столкновений адреса. Отличает её только отбивка точками.
+    - '\.\s\.\s\.\s\.'
+
+address:
+  section:
+    # Заголовка параграфа отдельной строкой в теле нет: параграф берётся
+    # только из колонтитула (section_from_page_head.py).
+    mode: none
+
+citation:
+  template: "{cite_prefix} {address}"

@@ -1,0 +1,56 @@
+id: ottoschmidt-kommentar-v1
+publisher: Otto Schmidt
+jurisdiction: DE
+language: de
+# Издательская линейка Otto Schmidt: K. Schmidt/Lutter к AktG, Röhricht к HGB,
+# Lutter/Hommelhoff к GmbHG. Полоса 595×842, тело с x0 114.8 кеглем 9.0, номер
+# Rz. висит слева на 102.5, аппарат внизу кеглем 8.0 с номером первым словом,
+# в самом низу «868 | von Nussbaum» — колонцифра и комментатор. Колонтитул
+# «§ 67c Rz. 5 | Rechtsverhältnisse …» несёт и параграф, и первый номер полосы.
+
+units:
+  - type: "Rz."
+    id_prefix: "rz"
+    mode: margin
+
+margin:
+  scope: page
+  pad: 0.0
+
+footnotes:
+  mode: font_bottom
+  bottom_band: 0.30
+  note_size_max: 8.0
+
+printed_page:
+  band: [0.0, 0.17]
+  max_chars: 40
+  patterns:
+    - '^(\d{1,4})\s*\|'
+    - '\|\s*(\d{1,4})$'
+    - '^[A-ZÄÖÜ][A-Za-zÄÖÜäöüß/.\- ]{2,30}\s(\d{1,4})$'
+    - '^(\d{1,4})\s[A-ZÄÖÜ][A-Za-zÄÖÜäöüß/.\- ]{2,30}$'
+
+junk:
+  header_band: 0.17
+  patterns:
+    - '^WMTP GmbH gedruckt'
+    - '^Werk: '
+    # Inhaltsübersicht в начале каждого параграфа набрана кеглем 7.72 — мельче
+    # сносок (7.97) — и стоит в нижней полосе, поэтому попадала в аппарат
+    # сносок. Это оглавление, а не цитируемый текст: снимаем по отбивке
+    # точками.
+    - '\.\s\.\s\.\s\.'
+
+address:
+  section:
+    # Заголовок параграфа идёт кеглем 13.2 при теле 8.97 — только по кеглю
+    # он и отличается от сотен ссылок «§ 823 Abs. 2 BGB …», начинающих строку.
+    mode: pattern
+    pattern: '^§\s?(\d+[a-zä]?)\s+[A-ZÄÖÜ]'
+    min_size: 11.0
+    anchor: start
+
+citation:
+  # Комментатор подставляется позже section_from_page_head.py.
+  template: "{cite_prefix} {address}"

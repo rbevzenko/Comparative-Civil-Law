@@ -1,0 +1,434 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/fr-terre-personnes",
+  "cards": 890,
+  "profile": "scan-terre-personnes",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9478,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "n°",
+        "section": null,
+        "from": 20,
+        "to": 22,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 34,
+        "to": 38,
+        "missing": 3
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 72,
+        "to": 74,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 82,
+        "to": 84,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 86,
+        "to": 89,
+        "missing": 2
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 194,
+        "to": 196,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 225,
+        "to": 228,
+        "missing": 2
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 229,
+        "to": 232,
+        "missing": 2
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 237,
+        "to": 240,
+        "missing": 2
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 243,
+        "to": 245,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 259,
+        "to": 261,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 269,
+        "to": 271,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 275,
+        "to": 277,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 277,
+        "to": 279,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 287,
+        "to": 290,
+        "missing": 2
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 340,
+        "to": 343,
+        "missing": 2
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 356,
+        "to": 358,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 370,
+        "to": 372,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 390,
+        "to": 392,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 406,
+        "to": 408,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 416,
+        "to": 419,
+        "missing": 2
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 429,
+        "to": 431,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 445,
+        "to": 447,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 484,
+        "to": 487,
+        "missing": 2
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 551,
+        "to": 553,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 554,
+        "to": 556,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 591,
+        "to": 593,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 631,
+        "to": 634,
+        "missing": 2
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 654,
+        "to": 656,
+        "missing": 1
+      },
+      {
+        "family": "n°",
+        "section": null,
+        "from": 668,
+        "to": 670,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 38,
+    "missing_total": 49,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "n°": 890
+    }
+  },
+  "coverage": {
+    "share": 0.9679,
+    "covered_chars": 2065464,
+    "book_chars": 2133889,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 9110,
+        "from": 1409584,
+        "to": 1418694
+      },
+      {
+        "chars": 4840,
+        "from": 1545160,
+        "to": 1550000
+      },
+      {
+        "chars": 3542,
+        "from": 736891,
+        "to": 740433
+      },
+      {
+        "chars": 3157,
+        "from": 1846648,
+        "to": 1849805
+      },
+      {
+        "chars": 2754,
+        "from": 1554418,
+        "to": 1557172
+      },
+      {
+        "chars": 2228,
+        "from": 863034,
+        "to": 865262
+      },
+      {
+        "chars": 2211,
+        "from": 1867691,
+        "to": 1869902
+      },
+      {
+        "chars": 2035,
+        "from": 465083,
+        "to": 467118
+      },
+      {
+        "chars": 2013,
+        "from": 246313,
+        "to": 248326
+      },
+      {
+        "chars": 1996,
+        "from": 221481,
+        "to": 223477
+      }
+    ]
+  },
+  "lengths": {
+    "median": 1880,
+    "min": 72,
+    "max": 25250,
+    "too_short": [
+      "fr-terre-personnes:n:164",
+      "fr-terre-personnes:n:183",
+      "fr-terre-personnes:n:222",
+      "fr-terre-personnes:n:757"
+    ],
+    "too_long": [
+      "fr-terre-personnes:n:939"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.69,
+    "footnotes_total": 3727,
+    "unparsed_blocks": 9,
+    "per_card_median": 2.0,
+    "cards_with_calls_but_no_notes": 4,
+    "notes_without_visible_call": 2046
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 1,
+    "pages": [
+      {
+        "page": 798,
+        "same_as": 797
+      }
+    ]
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 890,
+    "sample": [
+      "fr-terre-personnes:n:1",
+      "fr-terre-personnes:n:2",
+      "fr-terre-personnes:n:3",
+      "fr-terre-personnes:n:4",
+      "fr-terre-personnes:n:5",
+      "fr-terre-personnes:n:6",
+      "fr-terre-personnes:n:7",
+      "fr-terre-personnes:n:8",
+      "fr-terre-personnes:n:9",
+      "fr-terre-personnes:n:10"
+    ],
+    "depth_histogram": {
+      "0": 890
+    }
+  },
+  "internal_refs": {
+    "refs_total": 873,
+    "unresolved": 42,
+    "resolved_share": 0.952,
+    "sample": [
+      {
+        "card": "fr-terre-personnes:n:27",
+        "ref": "infra, n° 87",
+        "missing": 87
+      },
+      {
+        "card": "fr-terre-personnes:n:30",
+        "ref": "infra, n° 230",
+        "missing": 230
+      },
+      {
+        "card": "fr-terre-personnes:n:34",
+        "ref": "infra, n° 1107",
+        "missing": 1107
+      },
+      {
+        "card": "fr-terre-personnes:n:39",
+        "ref": "infra, n° 230",
+        "missing": 230
+      },
+      {
+        "card": "fr-terre-personnes:n:52",
+        "ref": "infra, n°1109",
+        "missing": 1109
+      },
+      {
+        "card": "fr-terre-personnes:n:68",
+        "ref": "infra, n° 87",
+        "missing": 87
+      },
+      {
+        "card": "fr-terre-personnes:n:209",
+        "ref": "infra, n° 1095",
+        "missing": 1095
+      },
+      {
+        "card": "fr-terre-personnes:n:285",
+        "ref": "supra, n° 260",
+        "missing": 260
+      },
+      {
+        "card": "fr-terre-personnes:n:338",
+        "ref": "infra, n° 341",
+        "missing": 341
+      },
+      {
+        "card": "fr-terre-personnes:n:363",
+        "ref": "supra, n° 357",
+        "missing": 357
+      },
+      {
+        "card": "fr-terre-personnes:n:406",
+        "ref": "infra, n° 486",
+        "missing": 486
+      },
+      {
+        "card": "fr-terre-personnes:n:408",
+        "ref": "supra, n° 407",
+        "missing": 407
+      },
+      {
+        "card": "fr-terre-personnes:n:409",
+        "ref": "supra, n° 407",
+        "missing": 407
+      },
+      {
+        "card": "fr-terre-personnes:n:427",
+        "ref": "infra, n° 446 et 451",
+        "missing": 446
+      },
+      {
+        "card": "fr-terre-personnes:n:434",
+        "ref": "supra, n° 407",
+        "missing": 407
+      }
+    ]
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 94.8% < 98%: пропущено номеров 49. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

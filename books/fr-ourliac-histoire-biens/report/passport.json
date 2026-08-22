@@ -1,0 +1,245 @@
+{
+  "path": "/home/user/fr-pdf/ourliac-histoire-biens.pdf",
+  "sha256": "941a034e6cb5d57995256e6fa37f162669cf26aefc76279e31eac44a1e1bb0a4",
+  "pages": 455,
+  "sampled_pages": [
+    69,
+    77,
+    85,
+    93,
+    101,
+    109,
+    117,
+    125,
+    133,
+    141,
+    149,
+    157,
+    165,
+    173,
+    181,
+    189,
+    197,
+    205,
+    213,
+    221,
+    229,
+    237,
+    245,
+    253,
+    261,
+    269,
+    277,
+    285,
+    293,
+    301,
+    309,
+    317,
+    325,
+    333,
+    341,
+    349,
+    357,
+    365,
+    373,
+    381
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 3,
+    "max_depth": 1,
+    "resolved_pages": 3,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Ourliac vol. 2",
+        "page": 1,
+        "depth": 0
+      },
+      {
+        "title": "FRoutput1",
+        "page": 361,
+        "depth": 0
+      },
+      {
+        "title": "FRoutput",
+        "page": 392,
+        "depth": 0
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 4653,
+    "empty_pages_share": 0.03,
+    "median_image_coverage": 1.0
+  },
+  "printed_pages": {
+    "detected_share": 0.08,
+    "offset_mode": 1,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 69,
+        "printed": null
+      },
+      {
+        "pdf_page": 77,
+        "printed": null
+      },
+      {
+        "pdf_page": 85,
+        "printed": null
+      },
+      {
+        "pdf_page": 93,
+        "printed": null
+      },
+      {
+        "pdf_page": 101,
+        "printed": null
+      },
+      {
+        "pdf_page": 109,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "9.0": 61592,
+      "9.4": 30758,
+      "9.6": 23200,
+      "7.0": 16372,
+      "7.9": 9367,
+      "8.0": 8142,
+      "9.3": 6263,
+      "7.1": 4056
+    },
+    "body": 9.0,
+    "candidates_footnote": [
+      5.0,
+      5.7,
+      7.0,
+      7.1,
+      7.2,
+      7.4
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 3486,
+    "share_at_page_bottom": 0.27
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      42,
+      40,
+      41,
+      39
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "n° голый номер в начале абзаца": {
+      "hits": 8,
+      "monotonic_share": 0.86,
+      "first": [
+        "7700",
+        "8866",
+        "174",
+        "246",
+        "262"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 11,
+      "monotonic_share": 0.7,
+      "first": [
+        "7700",
+        "8866",
+        "174",
+        "246",
+        "262"
+      ]
+    },
+    "§ с номером": {
+      "hits": 2,
+      "monotonic_share": 0.0,
+      "first": [
+        "44",
+        "33"
+      ]
+    },
+    "para. англ. раздел-пункт": {
+      "hits": 1,
+      "monotonic_share": 0.0,
+      "first": [
+        "251-294"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 16203,
+    "suspicious": 122,
+    "share": 0.0075,
+    "sample": [
+      "ssqq..))..",
+      "XXXX",
+      "RRDD,",
+      "ssqq..",
+      "ssqq.",
+      "ssqq..",
+      "pprr..",
+      "RRHHDD,",
+      "CCff..",
+      "ssqq..,,",
+      "((ccff..",
+      "ssqq..,,"
+    ]
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        42.0,
+        327.0
+      ],
+      "even": [
+        42.0,
+        327.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 1,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": [
+        1
+      ]
+    }
+  },
+  "statutory": {},
+  "verdict": {
+    "state": "пригоден",
+    "branch": "B?",
+    "problems": [],
+    "notes": [
+      "Под текстом растр на всю полосу, но слой выглядит чистым (0.8% подозрительных слов). Слой всё равно чужой и сделан неизвестно чем; прежде чем идти веткой A, прогнать обе ветки на двух десятках страниц и сравнить."
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-staudinger-433-443",
+  "cards": 1480,
+  "profile": "staudinger-online-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9673,
+    "rows": 18,
+    "gaps": [
+      {
+        "family": "Rn",
+        "section": "433",
+        "from": 36,
+        "to": 38,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "434",
+        "from": 45,
+        "to": 95,
+        "missing": 49
+      }
+    ],
+    "gaps_total": 2,
+    "missing_total": 50,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Vorspann": 9,
+      "Rn": 1471
+    }
+  },
+  "coverage": {
+    "share": 0.9991,
+    "covered_chars": 1736010,
+    "book_chars": 1737489,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 893,
+    "min": 28,
+    "max": 84164,
+    "too_short": [
+      "de-staudinger-433-443:rn:433/0",
+      "de-staudinger-433-443:rn:433/117",
+      "de-staudinger-433-443:rn:433/231",
+      "de-staudinger-433-443:rn:434/0",
+      "de-staudinger-433-443:rn:434/334",
+      "de-staudinger-433-443:rn:434/351",
+      "de-staudinger-433-443:rn:435/0",
+      "de-staudinger-433-443:rn:435/52",
+      "de-staudinger-433-443:rn:437/0",
+      "de-staudinger-433-443:rn:437/167",
+      "de-staudinger-433-443:rn:437/210",
+      "de-staudinger-433-443:rn:438/0",
+      "de-staudinger-433-443:rn:438/57",
+      "de-staudinger-433-443:rn:440/0",
+      "de-staudinger-433-443:rn:441/0"
+    ],
+    "too_long": [
+      "de-staudinger-433-443:rn:434/45"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0.0,
+    "cards_with_calls_but_no_notes": 523,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 1480
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 96.7% < 98%: пропущено номеров 50. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

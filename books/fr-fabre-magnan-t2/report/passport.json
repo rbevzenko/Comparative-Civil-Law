@@ -1,0 +1,218 @@
+{
+  "path": "/home/user/fr-pdf/fabre-magnan-t2.pdf",
+  "sha256": "d08ec3dba17ef46813f2d93852198ef6c31e185c82922fbd1cc3428d70471fb2",
+  "pages": 546,
+  "sampled_pages": [
+    82,
+    92,
+    102,
+    112,
+    122,
+    132,
+    142,
+    152,
+    162,
+    172,
+    182,
+    192,
+    202,
+    212,
+    222,
+    232,
+    242,
+    252,
+    262,
+    272,
+    282,
+    292,
+    302,
+    312,
+    322,
+    332,
+    342,
+    352,
+    362,
+    372,
+    382,
+    392,
+    402,
+    412,
+    422,
+    432,
+    442,
+    452,
+    462,
+    472
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": false
+  },
+  "links": {
+    "annots_on_sample": 0,
+    "with_destination": 0,
+    "per_page": 0.0,
+    "sample": []
+  },
+  "text_layer": {
+    "median_chars_per_page": 3073,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 1.0
+  },
+  "printed_pages": {
+    "detected_share": 0.0,
+    "offset_mode": null,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 82,
+        "printed": null
+      },
+      {
+        "pdf_page": 92,
+        "printed": null
+      },
+      {
+        "pdf_page": 102,
+        "printed": null
+      },
+      {
+        "pdf_page": 112,
+        "printed": null
+      },
+      {
+        "pdf_page": 122,
+        "printed": null
+      },
+      {
+        "pdf_page": 132,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "9.9": 27482,
+      "8.2": 18443,
+      "7.4": 10715,
+      "9.7": 9071,
+      "10.1": 8315,
+      "8.0": 8165,
+      "7.2": 7185,
+      "7.6": 7133
+    },
+    "body": 9.9,
+    "candidates_footnote": [
+      6.6,
+      6.8,
+      7.0,
+      7.2,
+      7.4,
+      7.6,
+      7.8,
+      8.0,
+      8.2
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 25563,
+    "share_at_page_bottom": 0.72
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      34,
+      36,
+      35,
+      33
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 108,
+      "monotonic_share": 0.73,
+      "first": [
+        "68",
+        "1",
+        "2",
+        "3",
+        "78"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 37,
+      "monotonic_share": 1.0,
+      "first": [
+        "68",
+        "78",
+        "98",
+        "108",
+        "118"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 19119,
+    "suspicious": 29,
+    "share": 0.0015,
+    "sample": [
+      "RLDC",
+      "RDSS",
+      "f-r0iss",
+      "r0g52tVns4e",
+      "phrm",
+      "{zæo1tS",
+      "LGDJ,",
+      "RDSS",
+      "RDSS",
+      "LGDJ,",
+      "JCPG",
+      "RLDC,"
+    ]
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        37.0,
+        358.0
+      ],
+      "even": [
+        37.0,
+        358.0
+      ]
+    },
+    "left": {
+      "hits": 1,
+      "monotonic_share": 0.0,
+      "even_page_share": 1.0,
+      "first": [
+        1
+      ]
+    },
+    "right": {
+      "hits": 1,
+      "monotonic_share": 0.0,
+      "even_page_share": 1.0,
+      "first": [
+        3
+      ]
+    }
+  },
+  "statutory": {
+    "FR": 8
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "B?",
+    "problems": [],
+    "notes": [
+      "Под текстом растр на всю полосу, но слой выглядит чистым (0.1% подозрительных слов). Слой всё равно чужой и сделан неизвестно чем; прежде чем идти веткой A, прогнать обе ветки на двух десятках страниц и сравнить.",
+      "Оглавление в файле не зашито — иерархию собирать по печатному оглавлению и колонтитулам; качество поля hierarchy будет ниже.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы."
+    ]
+  }
+}

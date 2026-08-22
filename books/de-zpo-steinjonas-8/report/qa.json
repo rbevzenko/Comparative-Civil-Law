@@ -1,0 +1,396 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-zpo-steinjonas-8",
+  "cards": 1438,
+  "profile": "degruyter-grosskommentar-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9993,
+    "rows": 54,
+    "gaps": [
+      {
+        "family": "Rdn.",
+        "section": "592",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "592",
+        "from": 5,
+        "to": 7,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "592",
+        "from": 8,
+        "to": 11,
+        "missing": 2
+      },
+      {
+        "family": "Rdn.",
+        "section": "592",
+        "from": 11,
+        "to": 14,
+        "missing": 2
+      },
+      {
+        "family": "Rdn.",
+        "section": "592",
+        "from": 2,
+        "to": 6,
+        "missing": 3
+      },
+      {
+        "family": "Rdn.",
+        "section": "592",
+        "from": 6,
+        "to": 9,
+        "missing": 2
+      },
+      {
+        "family": "Rdn.",
+        "section": "592",
+        "from": 10,
+        "to": 12,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "592",
+        "from": 13,
+        "to": 16,
+        "missing": 2
+      },
+      {
+        "family": "Rdn.",
+        "section": "688",
+        "from": 8,
+        "to": 10,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "703d",
+        "from": 4,
+        "to": 6,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "703d",
+        "from": 6,
+        "to": 8,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "703d",
+        "from": 3,
+        "to": 5,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "703d",
+        "from": 5,
+        "to": 7,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "703d",
+        "from": 7,
+        "to": 9,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "707",
+        "from": 6,
+        "to": 8,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "707",
+        "from": 10,
+        "to": 12,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "707",
+        "from": 15,
+        "to": 22,
+        "missing": 6
+      },
+      {
+        "family": "Rdn.",
+        "section": "707",
+        "from": 5,
+        "to": 7,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "707",
+        "from": 7,
+        "to": 11,
+        "missing": 3
+      },
+      {
+        "family": "Rdn.",
+        "section": "707",
+        "from": 11,
+        "to": 16,
+        "missing": 4
+      },
+      {
+        "family": "Rdn.",
+        "section": "708",
+        "from": 7,
+        "to": 11,
+        "missing": 3
+      },
+      {
+        "family": "Rdn.",
+        "section": "708",
+        "from": 6,
+        "to": 8,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "708",
+        "from": 10,
+        "to": 12,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 23,
+    "missing_total": 41,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Vorspann": 19,
+      "Rdn.": 1419
+    }
+  },
+  "coverage": {
+    "share": 0.971,
+    "covered_chars": 1302860,
+    "book_chars": 1341773,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 5415,
+        "from": 977142,
+        "to": 982557
+      },
+      {
+        "chars": 4788,
+        "from": 959453,
+        "to": 964241
+      },
+      {
+        "chars": 2839,
+        "from": 1008951,
+        "to": 1011790
+      },
+      {
+        "chars": 2310,
+        "from": 1004766,
+        "to": 1007076
+      },
+      {
+        "chars": 1846,
+        "from": 792035,
+        "to": 793881
+      },
+      {
+        "chars": 1628,
+        "from": 22805,
+        "to": 24433
+      },
+      {
+        "chars": 1563,
+        "from": 30470,
+        "to": 32033
+      },
+      {
+        "chars": 1518,
+        "from": 971032,
+        "to": 972550
+      },
+      {
+        "chars": 1255,
+        "from": 794798,
+        "to": 796053
+      },
+      {
+        "chars": 1243,
+        "from": 32715,
+        "to": 33958
+      }
+    ]
+  },
+  "lengths": {
+    "median": 757,
+    "min": 47,
+    "max": 12536,
+    "too_short": [
+      "de-zpo-steinjonas-8:rdn:199",
+      "de-zpo-steinjonas-8:rdn:237",
+      "de-zpo-steinjonas-8:rdn:273",
+      "de-zpo-steinjonas-8:rdn:315",
+      "de-zpo-steinjonas-8:rdn:318",
+      "de-zpo-steinjonas-8:rdn:319",
+      "de-zpo-steinjonas-8:rdn:391",
+      "de-zpo-steinjonas-8:rdn:416",
+      "de-zpo-steinjonas-8:rdn:422",
+      "de-zpo-steinjonas-8:rdn:449",
+      "de-zpo-steinjonas-8:rdn:474",
+      "de-zpo-steinjonas-8:rdn:478",
+      "de-zpo-steinjonas-8:rdn:595/20",
+      "de-zpo-steinjonas-8:rdn:597/23",
+      "de-zpo-steinjonas-8:rdn:597/32"
+    ],
+    "too_long": [
+      "de-zpo-steinjonas-8:rdn:483",
+      "de-zpo-steinjonas-8:rdn:721/45"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.59,
+    "footnotes_total": 4076,
+    "unparsed_blocks": 0,
+    "per_card_median": 1.0,
+    "cards_with_calls_but_no_notes": 88,
+    "notes_without_visible_call": 3481
+  },
+  "dead_pages": {
+    "pages": [
+      426,
+      438
+    ],
+    "count": 2
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 19,
+    "sample": [
+      "de-zpo-steinjonas-8:rdn:131",
+      "de-zpo-steinjonas-8:rdn:199",
+      "de-zpo-steinjonas-8:rdn:208",
+      "de-zpo-steinjonas-8:rdn:237",
+      "de-zpo-steinjonas-8:rdn:273",
+      "de-zpo-steinjonas-8:rdn:308",
+      "de-zpo-steinjonas-8:rdn:315",
+      "de-zpo-steinjonas-8:rdn:318",
+      "de-zpo-steinjonas-8:rdn:319",
+      "de-zpo-steinjonas-8:rdn:324"
+    ],
+    "depth_histogram": {
+      "0": 19,
+      "2": 1297,
+      "3": 122
+    }
+  },
+  "internal_refs": {
+    "refs_total": 273,
+    "unresolved": 119,
+    "resolved_share": 0.564,
+    "sample": [
+      {
+        "card": "de-zpo-steinjonas-8:rdn:592/39",
+        "ref": "§ 595 Rdn. 30",
+        "missing": 595
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:595/20",
+        "ref": "§ 596 Rdn. 24",
+        "missing": 596
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:598/4",
+        "ref": "§ 597 Rdn. 10",
+        "missing": 597
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:598/4",
+        "ref": "§ 597 Rdn. 12",
+        "missing": 597
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:599/2",
+        "ref": "§ 597 Rdn. 16",
+        "missing": 597
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:602/2",
+        "ref": "§ 597 Rdn. 25",
+        "missing": 597
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:602/7",
+        "ref": "§ 592 Rdn. 37",
+        "missing": 592
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:602/9",
+        "ref": "§ 596 Rdn. 22",
+        "missing": 596
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:602/10",
+        "ref": "§ 596 Rdn. 22",
+        "missing": 596
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:602/11",
+        "ref": "§ 600 Rdn. 21",
+        "missing": 600
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:604/1",
+        "ref": "§ 602 Rdn. 10",
+        "missing": 602
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:693/6",
+        "ref": "§ 688 Rdn. 31",
+        "missing": 688
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:693/7",
+        "ref": "§ 699 Rdn. 34",
+        "missing": 699
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:693/7",
+        "ref": "§ 688 Rdn. 23",
+        "missing": 688
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:694/3",
+        "ref": "§ 703a Rdn. 6",
+        "missing": 703
+      }
+    ]
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

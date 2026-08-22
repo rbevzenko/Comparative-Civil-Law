@@ -1,0 +1,53 @@
+id: dalloz-precis-simler
+publisher: Dalloz, «Précis»
+jurisdiction: FR
+language: fr
+# Тело 9.8, сноски 7.8 внизу полосы, знаки 4.7/5.8, колонтитул 7.0.
+# Кегль колонтитула НИЖЕ кегля сноски, поэтому нижнюю полосу опускать нельзя:
+# иначе колонтитул уедет в сноски. Он снимается отдельно, вместе с чтением
+# колонцифры, которая в нём и сидит.
+
+units:
+  - type: "n°"
+    id_prefix: "n"
+    mode: flow
+    # «211 1° Parties à l’instance ◊ Les textes ne distinguant pas...»
+    # Точки после номера в этом Précis нет, а справа чаще всего цифровая
+    # рубрика «1°», «2°». Заголовок отделён от текста ромбом, но ромб в
+    # шрифте не размечен и читается как «(cid:154)», поэтому опора на него
+    # не годится.
+    pattern: '^(\d{1,4})\s+(?=[A-ZÀÂÄÉÈÊËÎÏÔÖÙÛÜÇŒÆ«“]|[a-z0-9α-ω]\s*[\)°º]|\.{2,}|…)'
+
+address:
+  section:
+    mode: none
+  template: "{unit_type} {number}"
+
+printed_page:
+  band: [0.07, 0.0]
+  patterns:
+    - '^(\d{1,4})\s+[A-ZÀÂÄÉÈÊËÎÏÔÖÙÛÜÇ]'
+    - '\s(\d{1,4})$'
+
+footnotes:
+  mode: font_bottom
+  body_size: 9.8
+  note_size_max: 8.3
+  bottom_band: 0.25
+
+junk:
+  patterns:
+    - 'Exemplaire personnel de '
+
+statutory:
+  patterns:
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*(?:\s*(?:et|à|,)\s*\d+(?:-\d+)*)*\s*(?:C\.\s*civ\.|du Code civil)'
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*\s*C\.\s*(?:com|consom|pén|proc\.\s*civ)\.'
+    - 'L\.\s*\d{3}-\d+'
+
+cross_refs:
+  patterns:
+    - '(?:supra|infra)\s*,?\s*n[o°s]*\s*\d+(?:\s*(?:et|à|,)\s*\d+)*'
+
+citation:
+  template: "{authors}, {title}, {edition}, {publisher}, {year}, {address}"

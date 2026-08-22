@@ -1,0 +1,402 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-staudinger-104-144",
+  "cards": 2842,
+  "profile": "staudinger-online-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9951,
+    "rows": 58,
+    "gaps": [
+      {
+        "family": "Rn",
+        "section": "122",
+        "from": 2,
+        "to": 5,
+        "missing": 2
+      },
+      {
+        "family": "Rn",
+        "section": "122",
+        "from": 5,
+        "to": 10,
+        "missing": 4
+      },
+      {
+        "family": "Rn",
+        "section": "122",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "122",
+        "from": 4,
+        "to": 6,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "133",
+        "from": 8,
+        "to": 11,
+        "missing": 2
+      },
+      {
+        "family": "Rn",
+        "section": "133",
+        "from": 12,
+        "to": 21,
+        "missing": 8
+      },
+      {
+        "family": "Rn",
+        "section": "133",
+        "from": 22,
+        "to": 36,
+        "missing": 13
+      },
+      {
+        "family": "Rn",
+        "section": "133",
+        "from": 36,
+        "to": 41,
+        "missing": 4
+      },
+      {
+        "family": "Rn",
+        "section": "133",
+        "from": 42,
+        "to": 51,
+        "missing": 8
+      },
+      {
+        "family": "Rn",
+        "section": "133",
+        "from": 51,
+        "to": 56,
+        "missing": 4
+      },
+      {
+        "family": "Rn",
+        "section": "133",
+        "from": 56,
+        "to": 64,
+        "missing": 7
+      },
+      {
+        "family": "Rn",
+        "section": "133",
+        "from": 64,
+        "to": 73,
+        "missing": 8
+      },
+      {
+        "family": "Rn",
+        "section": "133",
+        "from": 73,
+        "to": 75,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "133",
+        "from": 75,
+        "to": 77,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "133",
+        "from": 77,
+        "to": 85,
+        "missing": 7
+      },
+      {
+        "family": "Rn",
+        "section": "133",
+        "from": 7,
+        "to": 9,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "133",
+        "from": 10,
+        "to": 13,
+        "missing": 2
+      },
+      {
+        "family": "Rn",
+        "section": "133",
+        "from": 20,
+        "to": 23,
+        "missing": 2
+      },
+      {
+        "family": "Rn",
+        "section": "133",
+        "from": 35,
+        "to": 37,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "133",
+        "from": 40,
+        "to": 43,
+        "missing": 2
+      },
+      {
+        "family": "Rn",
+        "section": "133",
+        "from": 50,
+        "to": 52,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "133",
+        "from": 55,
+        "to": 57,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "133",
+        "from": 63,
+        "to": 65,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "133",
+        "from": 72,
+        "to": 74,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "133",
+        "from": 74,
+        "to": 76,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "133",
+        "from": 76,
+        "to": 78,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "134",
+        "from": 291,
+        "to": 295,
+        "missing": 3
+      },
+      {
+        "family": "Rn",
+        "section": "134",
+        "from": 297,
+        "to": 300,
+        "missing": 2
+      },
+      {
+        "family": "Rn",
+        "section": "134",
+        "from": 332,
+        "to": 334,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "134",
+        "from": 334,
+        "to": 336,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 34,
+    "missing_total": 99,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Vorspann": 29,
+      "Rn": 2813
+    }
+  },
+  "coverage": {
+    "share": 0.95,
+    "covered_chars": 5211586,
+    "book_chars": 5485717,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 126689,
+        "from": 5219890,
+        "to": 5346579
+      },
+      {
+        "chars": 17500,
+        "from": 1621410,
+        "to": 1638910
+      },
+      {
+        "chars": 16772,
+        "from": 1650795,
+        "to": 1667567
+      },
+      {
+        "chars": 16056,
+        "from": 1681787,
+        "to": 1697843
+      },
+      {
+        "chars": 14460,
+        "from": 1602370,
+        "to": 1616830
+      },
+      {
+        "chars": 9932,
+        "from": 1725745,
+        "to": 1735677
+      },
+      {
+        "chars": 9022,
+        "from": 1699579,
+        "to": 1708601
+      },
+      {
+        "chars": 6111,
+        "from": 1673662,
+        "to": 1679773
+      },
+      {
+        "chars": 5096,
+        "from": 2103821,
+        "to": 2108917
+      },
+      {
+        "chars": 5049,
+        "from": 1641437,
+        "to": 1646486
+      }
+    ]
+  },
+  "lengths": {
+    "median": 1342,
+    "min": 21,
+    "max": 78509,
+    "too_short": [
+      "de-staudinger-104-144:rn:107/48",
+      "de-staudinger-104-144:rn:134/311",
+      "de-staudinger-104-144:rn:134/315",
+      "de-staudinger-104-144:rn:134/319",
+      "de-staudinger-104-144:rn:134/348",
+      "de-staudinger-104-144:rn:134/398",
+      "de-staudinger-104-144:rn:134/402",
+      "de-staudinger-104-144:rn:134/445",
+      "de-staudinger-104-144:rn:134/464",
+      "de-staudinger-104-144:rn:134/465",
+      "de-staudinger-104-144:rn:134/466",
+      "de-staudinger-104-144:rn:134/467",
+      "de-staudinger-104-144:rn:138/257",
+      "de-staudinger-104-144:rn:138/380"
+    ],
+    "too_long": [
+      "de-staudinger-104-144:rn:107/0",
+      "de-staudinger-104-144:rn:122/0",
+      "de-staudinger-104-144:rn:122/9",
+      "de-staudinger-104-144:rn:130/106",
+      "de-staudinger-104-144:rn:133/118",
+      "de-staudinger-104-144:rn:134/0",
+      "de-staudinger-104-144:rn:134/291",
+      "de-staudinger-104-144:rn:134/413",
+      "de-staudinger-104-144:rn:135/0",
+      "de-staudinger-104-144:rn:138/0",
+      "de-staudinger-104-144:rn:139/0"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0.0,
+    "cards_with_calls_but_no_notes": 206,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [
+      375,
+      376,
+      379,
+      380,
+      381,
+      385,
+      386,
+      387,
+      392,
+      393,
+      395,
+      401,
+      1160,
+      1161,
+      1162,
+      1163,
+      1164,
+      1165,
+      1166,
+      1167,
+      1168,
+      1169,
+      1170,
+      1171,
+      1172,
+      1173,
+      1174,
+      1175,
+      1176,
+      1177,
+      1178,
+      1179,
+      1180,
+      1181,
+      1182,
+      1183,
+      1184,
+      1185,
+      1186,
+      1187
+    ],
+    "count": 40
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 2842
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

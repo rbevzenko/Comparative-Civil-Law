@@ -1,0 +1,242 @@
+{
+  "path": "/home/user/fr-pdf/flour-fait-juridique.pdf",
+  "sha256": "be3e7a575db38702638858693e398a3ce5acbfe817d4ac438b2dadb50908f555",
+  "pages": 5765,
+  "sampled_pages": [
+    865,
+    973,
+    1081,
+    1189,
+    1297,
+    1405,
+    1513,
+    1621,
+    1729,
+    1837,
+    1945,
+    2053,
+    2161,
+    2269,
+    2377,
+    2485,
+    2593,
+    2701,
+    2809,
+    2917,
+    3025,
+    3133,
+    3241,
+    3349,
+    3457,
+    3565,
+    3673,
+    3781,
+    3889,
+    3997,
+    4105,
+    4213,
+    4321,
+    4429,
+    4537,
+    4645,
+    4753,
+    4861,
+    4969,
+    5077
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 23,
+    "max_depth": 1,
+    "resolved_pages": 23,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Couverture",
+        "page": 2,
+        "depth": 0
+      },
+      {
+        "title": "Mode d'emploi",
+        "page": 14,
+        "depth": 0
+      },
+      {
+        "title": "Table des matières",
+        "page": 15,
+        "depth": 0
+      },
+      {
+        "title": "Principales abréviations",
+        "page": 23,
+        "depth": 0
+      },
+      {
+        "title": "Ouvrages cités par le seul nom de l’auteur ou des auteurs",
+        "page": 27,
+        "depth": 0
+      },
+      {
+        "title": "Avant-propos de la première édition",
+        "page": 29,
+        "depth": 0
+      },
+      {
+        "title": "Avant-propos de la quinzième édition",
+        "page": 30,
+        "depth": 0
+      },
+      {
+        "title": "- Les faits juridiques",
+        "page": 32,
+        "depth": 0
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 39,
+    "with_destination": 39,
+    "per_page": 1.0,
+    "sample": [
+      {
+        "page": 865,
+        "rect": [
+          72,
+          502,
+          540,
+          694
+        ]
+      },
+      {
+        "page": 973,
+        "rect": [
+          72,
+          586,
+          540,
+          694
+        ]
+      },
+      {
+        "page": 1081,
+        "rect": [
+          72,
+          80,
+          540,
+          694
+        ]
+      }
+    ]
+  },
+  "text_layer": {
+    "median_chars_per_page": 157,
+    "empty_pages_share": 0.15,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.0,
+    "offset_mode": null,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 865,
+        "printed": null
+      },
+      {
+        "pdf_page": 973,
+        "printed": null
+      },
+      {
+        "pdf_page": 1081,
+        "printed": null
+      },
+      {
+        "pdf_page": 1189,
+        "printed": null
+      },
+      {
+        "pdf_page": 1297,
+        "printed": null
+      },
+      {
+        "pdf_page": 1405,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "23.8": 11178,
+      "8.6": 42
+    },
+    "body": 23.8,
+    "candidates_footnote": []
+  },
+  "footnotes": {
+    "small_font_chars": 42,
+    "share_at_page_bottom": 0.0
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      72
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [
+    {
+      "line": "e",
+      "pages": 16
+    }
+  ],
+  "units": {},
+  "text_noise": {
+    "words": 1855,
+    "suspicious": 1,
+    "share": 0.0005,
+    "sample": [
+      "RLDC,"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        72.0,
+        540.0
+      ],
+      "even": [
+        72.0,
+        540.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "FR": 1
+  },
+  "verdict": {
+    "state": "пригоден с оговорками",
+    "branch": "B",
+    "problems": [
+      "Ни один паттерн единицы цитирования не сработал. Либо книга без сквозной нумерации (режим heading), либо паттерн нестандартный — смотреть глазами."
+    ],
+    "notes": [
+      "Текстового слоя практически нет — скан. Ветка B (ocr.py).",
+      "Сноски кликабельны — привязку берём из файла напрямую, без эвристик.",
+      "Повторяющийся мусор (1 шаблонов) — вычистить первым шагом."
+    ]
+  }
+}

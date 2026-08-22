@@ -1,0 +1,86 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/fr-terre-biens",
+  "cards": 957,
+  "profile": "dalloz-numerique-calibre",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 1,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "n°": 957
+    }
+  },
+  "coverage": {
+    "share": 0.9918,
+    "covered_chars": 1786212,
+    "book_chars": 1800914,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 636,
+        "from": 1760824,
+        "to": 1761460
+      },
+      {
+        "chars": 582,
+        "from": 1167464,
+        "to": 1168046
+      }
+    ]
+  },
+  "lengths": {
+    "median": 1641,
+    "min": 90,
+    "max": 7386,
+    "too_short": [
+      "fr-terre-biens:n:247",
+      "fr-terre-biens:n:366",
+      "fr-terre-biens:n:449"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.78,
+    "footnotes_total": 3017,
+    "unparsed_blocks": 0,
+    "per_card_median": 2,
+    "cards_with_calls_but_no_notes": 0,
+    "notes_without_visible_call": 2474
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 957
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

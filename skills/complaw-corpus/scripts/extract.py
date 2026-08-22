@@ -194,6 +194,13 @@ def section_map(index, prof, outline_sections):
 
     cur, out, found = None, [], []
     rx = re.compile(cfg["pattern"]) if cfg.get("pattern") else None
+    # Заголовок параграфа набран крупнее тела, и у комментариев это
+    # единственный надёжный признак. У K. Schmidt/Lutter к AktG заголовок
+    # «§ 67c Übermittlung von Informationen …» идёт кеглем 13.2 при теле 8.97,
+    # а ссылок вида «§ 823 Abs. 2 BGB in Betracht kommt», начинающих строку,
+    # в томе сотни: без кегля образец переключал параграф на каждой такой
+    # ссылке и раскидывал Rz. по чужим адресам («§ 3 Rz. 33» вместо § 67d).
+    min_size = cfg.get("min_size")
     by_page = {}
     if mode == "outline":
         by_page = {e["page"]: e["section"] for e in outline_sections}
@@ -203,6 +210,9 @@ def section_map(index, prof, outline_sections):
             if ln["pdf_page"] in by_page:
                 cur = by_page[ln["pdf_page"]]
         elif rx is not None:
+            if min_size is not None and (ln.get("size") or 0) < float(min_size):
+                out.append(cur)
+                continue
             m = rx.match(ln["text"]) if cfg.get("anchor", "start") == "start" else rx.search(ln["text"])
             if m:
                 cur = m.group(1)

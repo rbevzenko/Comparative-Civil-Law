@@ -1,0 +1,303 @@
+{
+  "path": "/home/user/fr-pdf/malaurie-contrats-speciaux.pdf",
+  "sha256": "7ca09adcf91b29a33f1d90a69e1a2db71bc6b13bfdd17f7f22af2506c35e8610",
+  "pages": 750,
+  "sampled_pages": [
+    113,
+    127,
+    141,
+    155,
+    169,
+    183,
+    197,
+    211,
+    225,
+    239,
+    253,
+    267,
+    281,
+    295,
+    309,
+    323,
+    337,
+    351,
+    365,
+    379,
+    393,
+    407,
+    421,
+    435,
+    449,
+    463,
+    477,
+    491,
+    505,
+    519,
+    533,
+    547,
+    561,
+    575,
+    589,
+    603,
+    617,
+    631,
+    645,
+    659
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 109,
+    "max_depth": 5,
+    "resolved_pages": 106,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Sommaire",
+        "page": 5,
+        "depth": 0
+      },
+      {
+        "title": "Principales abréviations",
+        "page": 9,
+        "depth": 0
+      },
+      {
+        "title": "Bibliographie générale",
+        "page": 13,
+        "depth": 0
+      },
+      {
+        "title": "Premières vues sur les contrats spéciaux",
+        "page": 15,
+        "depth": 0
+      },
+      {
+        "title": "Outline placeholder",
+        "page": null,
+        "depth": 1
+      },
+      {
+        "title": "Outline placeholder",
+        "page": null,
+        "depth": 2
+      },
+      {
+        "title": "Outline placeholder",
+        "page": null,
+        "depth": 3
+      },
+      {
+        "title": "Chapitre I. - Notion, sources et domaine",
+        "page": 17,
+        "depth": 4
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 43,
+    "with_destination": 43,
+    "per_page": 1.1,
+    "sample": [
+      {
+        "page": 155,
+        "rect": [
+          231,
+          201,
+          249,
+          209
+        ]
+      },
+      {
+        "page": 211,
+        "rect": [
+          201,
+          111,
+          214,
+          119
+        ]
+      },
+      {
+        "page": 211,
+        "rect": [
+          396,
+          111,
+          409,
+          119
+        ]
+      }
+    ]
+  },
+  "text_layer": {
+    "median_chars_per_page": 3385,
+    "empty_pages_share": 0.03,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.23,
+    "offset_mode": -228,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 113,
+        "printed": null
+      },
+      {
+        "pdf_page": 127,
+        "printed": null
+      },
+      {
+        "pdf_page": 141,
+        "printed": null
+      },
+      {
+        "pdf_page": 155,
+        "printed": null
+      },
+      {
+        "pdf_page": 169,
+        "printed": null
+      },
+      {
+        "pdf_page": 183,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "8.0": 54485,
+      "10.0": 34835,
+      "8.5": 31673,
+      "5.6": 594,
+      "4.6": 573,
+      "14.9": 290,
+      "13.0": 192,
+      "11.0": 174
+    },
+    "body": 8.0,
+    "candidates_footnote": [
+      4.6,
+      5.6
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 14402,
+    "share_at_page_bottom": 0.47
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      79
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [
+    {
+      "line": "o",
+      "pages": 104
+    },
+    {
+      "line": "re o",
+      "pages": 38
+    },
+    {
+      "line": "e o",
+      "pages": 28
+    },
+    {
+      "line": "e",
+      "pages": 23
+    },
+    {
+      "line": "re",
+      "pages": 14
+    }
+  ],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 240,
+      "monotonic_share": 0.85,
+      "first": [
+        "147",
+        "2",
+        "165",
+        "24",
+        "25"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 3,
+      "monotonic_share": 0.5,
+      "first": [
+        "3",
+        "2",
+        "3"
+      ]
+    },
+    "§ с номером": {
+      "hits": 10,
+      "monotonic_share": 0.22,
+      "first": [
+        "1",
+        "1",
+        "1",
+        "2",
+        "2"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 23092,
+    "suspicious": 8,
+    "share": 0.0003,
+    "sample": [
+      "LGDJ,",
+      "LGDJ,",
+      "LGDJ,",
+      "LGDJ,",
+      "LGDJ,",
+      "LGDJ,",
+      "LGDJ,",
+      "LGDJ,"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        79.0,
+        425.0
+      ],
+      "even": [
+        79.0,
+        425.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {
+    "FR": 5
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Сноски кликабельны — привязку берём из файла напрямую, без эвристик.",
+      "Повторяющийся мусор (5 шаблонов) — вычистить первым шагом."
+    ]
+  }
+}

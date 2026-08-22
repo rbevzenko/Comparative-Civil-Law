@@ -1,0 +1,261 @@
+{
+  "path": "/home/user/fr-pdf/terre-biens.pdf",
+  "sha256": "bad700e00df2be08f0ec99822254dd46a2e30db5d2f6d4c4a58cc380e6fdca96",
+  "pages": 3937,
+  "sampled_pages": [
+    591,
+    664,
+    737,
+    810,
+    883,
+    956,
+    1029,
+    1102,
+    1175,
+    1248,
+    1321,
+    1394,
+    1467,
+    1540,
+    1613,
+    1686,
+    1759,
+    1832,
+    1905,
+    1978,
+    2051,
+    2124,
+    2197,
+    2270,
+    2343,
+    2416,
+    2489,
+    2562,
+    2635,
+    2708,
+    2781,
+    2854,
+    2927,
+    3000,
+    3073,
+    3146,
+    3219,
+    3292,
+    3365,
+    3438
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 28,
+    "max_depth": 1,
+    "resolved_pages": 28,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "COUVERTURE",
+        "page": 2,
+        "depth": 0
+      },
+      {
+        "title": "MODE D'EMPLOI",
+        "page": 7,
+        "depth": 0
+      },
+      {
+        "title": "TABLE DES MATIÈRES",
+        "page": 8,
+        "depth": 0
+      },
+      {
+        "title": "ABRÉVIATIONS",
+        "page": 18,
+        "depth": 0
+      },
+      {
+        "title": "BIBLIOGRAPHIE",
+        "page": 20,
+        "depth": 0
+      },
+      {
+        "title": "PRÉLIMINAIRES",
+        "page": 21,
+        "depth": 0
+      },
+      {
+        "title": "CHAPITRE 1 - LA PROPRIÉTÉ : NOTION, ATTRIBUTS, CARACTÈRES",
+        "page": 124,
+        "depth": 0
+      },
+      {
+        "title": "CHAPITRE 2 - LA POSSESSION : NOTION ET RÔLE",
+        "page": 197,
+        "depth": 0
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 117,
+    "with_destination": 117,
+    "per_page": 2.9,
+    "sample": [
+      {
+        "page": 591,
+        "rect": [
+          230,
+          658,
+          242,
+          665
+        ]
+      },
+      {
+        "page": 591,
+        "rect": [
+          220,
+          624,
+          233,
+          631
+        ]
+      },
+      {
+        "page": 591,
+        "rect": [
+          394,
+          446,
+          406,
+          453
+        ]
+      }
+    ]
+  },
+  "text_layer": {
+    "median_chars_per_page": 319,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.05,
+    "offset_mode": 48,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 591,
+        "printed": 639
+      },
+      {
+        "pdf_page": 664,
+        "printed": null
+      },
+      {
+        "pdf_page": 737,
+        "printed": null
+      },
+      {
+        "pdf_page": 810,
+        "printed": 2815
+      },
+      {
+        "pdf_page": 883,
+        "printed": null
+      },
+      {
+        "pdf_page": 956,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "11.2": 15717,
+      "15.0": 7825,
+      "16.9": 386,
+      "6.2": 75
+    },
+    "body": 11.2,
+    "candidates_footnote": []
+  },
+  "footnotes": {
+    "small_font_chars": 75,
+    "share_at_page_bottom": 0.16
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      77,
+      127
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "n° голый номер в начале абзаца": {
+      "hits": 6,
+      "monotonic_share": 1.0,
+      "first": [
+        "638",
+        "711",
+        "712",
+        "798",
+        "898"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 6,
+      "monotonic_share": 1.0,
+      "first": [
+        "638",
+        "711",
+        "712",
+        "798",
+        "898"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 3925,
+    "suspicious": 0,
+    "share": 0.0,
+    "sample": []
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        127.0,
+        535.0
+      ],
+      "even": [
+        77.0,
+        535.0
+      ]
+    },
+    "left": {
+      "hits": 4,
+      "monotonic_share": 1.0,
+      "even_page_share": 0.0,
+      "first": [
+        638,
+        639,
+        797,
+        798
+      ]
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {},
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "Кегль сносок не отделяется от основного текста — отделять по положению на полосе.",
+      "Сноски кликабельны — привязку берём из файла напрямую, без эвристик."
+    ]
+  }
+}

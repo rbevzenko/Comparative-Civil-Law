@@ -1,0 +1,154 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/fr-ourliac-histoire-biens",
+  "cards": 440,
+  "profile": "scan-ourliac",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9843,
+    "rows": 1,
+    "gaps": [
+      {
+        "family": "p.",
+        "section": null,
+        "from": 11,
+        "to": 13,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 13,
+        "to": 15,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 71,
+        "to": 73,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 213,
+        "to": 215,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 400,
+        "to": 402,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 448,
+        "to": 450,
+        "missing": 1
+      },
+      {
+        "family": "p.",
+        "section": null,
+        "from": 450,
+        "to": 452,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 7,
+    "missing_total": 7,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "p.": 440
+    }
+  },
+  "coverage": {
+    "share": 0.9996,
+    "covered_chars": 1054408,
+    "book_chars": 1054847,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 2346,
+    "min": 37,
+    "max": 3765,
+    "too_short": [
+      "fr-ourliac-histoire-biens:p:213",
+      "fr-ourliac-histoire-biens:p:400",
+      "fr-ourliac-histoire-biens:p:450"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.13,
+    "footnotes_total": 62,
+    "unparsed_blocks": 5,
+    "per_card_median": 0.0,
+    "cards_with_calls_but_no_notes": 32,
+    "notes_without_visible_call": 60
+  },
+  "dead_pages": {
+    "pages": [
+      11,
+      13,
+      71,
+      213,
+      400,
+      448,
+      450
+    ],
+    "count": 7
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 440
+    }
+  },
+  "internal_refs": {
+    "refs_total": 36,
+    "unresolved": 4,
+    "resolved_share": 0.889,
+    "sample": [
+      {
+        "card": "fr-ourliac-histoire-biens:p:45",
+        "ref": "infra, n° 2",
+        "missing": 2
+      },
+      {
+        "card": "fr-ourliac-histoire-biens:p:58",
+        "ref": "infra, n° 880",
+        "missing": 880
+      },
+      {
+        "card": "fr-ourliac-histoire-biens:p:234",
+        "ref": "supra, n° 5",
+        "missing": 5
+      },
+      {
+        "card": "fr-ourliac-histoire-biens:p:433",
+        "ref": "supra, n° 72",
+        "missing": 72
+      }
+    ]
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

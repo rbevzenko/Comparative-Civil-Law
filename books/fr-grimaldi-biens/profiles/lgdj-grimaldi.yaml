@@ -1,0 +1,46 @@
+id: lgdj-grimaldi
+publisher: LGDJ / Lextenso
+jurisdiction: FR
+language: fr
+# Тело 9.7, «petits caractères» 8.0, сноски 7.0 внизу полосы, знаки 4.0/5.5.
+# Колонцифра стоит ОТДЕЛЬНОЙ строкой внизу полосы (кегль 10.0), колонтитул
+# сверху идёт без номера — его снимает header_band.
+
+units:
+  - type: "n°"
+    id_prefix: "n"
+    mode: flow
+    pattern: '^(\d{1,4})\.\s+(?=[A-ZÀÂÄÉÈÊËÎÏÔÖÙÛÜÇŒÆ«“]|\d|\.{2,}|…|[a-z]\.\s)'
+
+address:
+  section:
+    mode: none
+  template: "{unit_type} {number}"
+
+printed_page:
+  # Полоса поиска только нижняя: колонцифра там, а сверху колонтитул без номера.
+  band: [0.0, 0.12]
+
+footnotes:
+  mode: font_bottom
+  body_size: 9.7
+  note_size_max: 7.3
+  bottom_band: 0.25
+
+junk:
+  header_band: 0.105
+  patterns:
+    - 'Exemplaire personnel de '
+
+statutory:
+  patterns:
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*(?:\s*(?:et|à|,)\s*\d+(?:-\d+)*)*\s*(?:C\.\s*civ\.|du Code civil)'
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*\s*C\.\s*(?:com|consom|pén|proc\.\s*civ)\.'
+    - 'L\.\s*\d{3}-\d+'
+
+cross_refs:
+  patterns:
+    - '(?:supra|infra)\s*,?\s*n[o°s]*\s*\d+(?:\s*(?:et|à|,)\s*\d+)*'
+
+citation:
+  template: "{authors}, {title}, {edition}, {publisher}, {year}, {address}"

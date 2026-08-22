@@ -427,3 +427,562 @@ comparative-civil-law_caddy_config`.
    Enrichment), 1726 полос. Нужен OCR, и время прогона надо посчитать до
    запуска, а не после.
 
+
+## 12. Франция (FR): что выяснилось на первых книгах
+
+Рубрика FR заведена, в правилах коннектора она уже есть. Ниже — то, что
+стоило крови и пригодится на следующих томах.
+
+**Французские книги бывают трёх вёрсток, и профиль у каждой свой.**
+
+*Бумажная (LGDJ, Малори).* Тело 10.0, «petits caractères» 8.5, сноски 8.0
+внизу полосы, знаки надстрочные 4.7/5.6. Кегль сноски и кегль мелкого
+шрифта различаются на полпункта — этого хватает, но полосу `bottom_band`
+надо опускать почти до нуля и полагаться на кегль: блок сносок начинается
+где угодно, хоть на трети высоты. Колонцифра сидит в колонтитуле.
+
+*Электронная Dalloz, вёрстка Nord Compo (Терре, «Обязательства»).* Тело
+13.5, аппарат 11.5 на ОТДЕЛЬНЫХ полосах, по десять сносок на полосу, связь
+через ссылки-аннотации. Полосы аппарата перемежаются с телом, диапазоном не
+отсекаются, и отделяются по модальному кеглю полосы.
+
+*Электронная Dalloz, сборка calibre (Реми-Кабрийак, Терре «Les biens»,
+Флур).* Тело 15.0 или 14.4, по ОДНОМУ примечанию на полосу. У Флура полосы
+аппарата набраны кеглем 23.8 — КРУПНЕЕ тела, и отделять их по кеглю нельзя;
+там работает порог по объёму текста.
+
+**Три грабли, на которые наступали по очереди.**
+
+1. Паттерн номера пункта нельзя писать как «цифры, пробел, заглавная». У
+   Малори каждый шестой пункт начинается цифровой рубрикой («130. 1º)»), у
+   Терре — строчной со скобкой («22 a)», «176 α)»), встречаются Œ,
+   кавычка-ёлочка и многоточие. Каждый недосмотр стоит от 250 до 580
+   потерянных номеров.
+2. Разрядность номера. У Малори по обязательствам максимум 947 и четвёртая
+   цифра ловит годы; у него же по специальным договорам максимум 1269, и
+   трёхзначный паттерн обрывает книгу на n° 999 одной карточкой в 144 тысячи
+   знаков. Смотреть последний номер книги ДО прогона.
+3. Дыры в нумерации бывают печатными. Малори по обеспечительным сделкам и по специальным
+   договорам сам печатает «24-99. réservés.»: 350 и 488 номеров из книги
+   изъяты автором. Непрерывность падает до 0.56, и выгружать приходится
+   через `--force`. Проверка простая и обязательная: собрать из текста все
+   диапазоны «N-M. réservés» и убедиться, что каждая дыра попадает в них.
+
+**Хвост книги обрезать до нарезки.** Указатели, таблица соответствия статей
+и оглавление иначе целиком уезжают в последнюю карточку.
+
+**Колонцифра электронного издания — не страница книги.** У Терре внизу
+полосы стоит число, но это нумерация файла: 3095 полос против примерно 1900
+печатных страниц. Хранить её нельзя; читать — нужно, иначе строка попадёт в
+текст. Для этого есть `scripts/blank_printed_pages.py`.
+
+## 13. Германия: что сделать после Франции (поставлено пользователем 2026-08-21)
+
+Папка: `1iGOsfAOtBluz1zV-4u43XBCipVLO8XSV`. Пользователь предупреждает, что она
+самая сложная, и просит:
+
+1. **Проверить папку на повторы** до начала работы — одна и та же книга может
+   лежать в двух видах (том целиком и отдельные части, скан и цифровая копия).
+2. **Разобраться с комментариями к ГГУ.** Их будет много, и они разные:
+   Staudinger, MüKo, Soergel, Palandt/Grüneberg, BeckOK, Erman. У каждого своя
+   единица цитирования и свой способ ссылки; прежде чем резать, установить,
+   что это за комментарий и как на него принято ссылаться.
+3. **Учесть, что часть литературы написана ДО реформы обязательственного права**
+   (Schuldrechtsmodernisierung, 2002). Такие книги комментируют старую редакцию
+   ГГУ, и выдавать их за действующее право нельзя.
+
+### Правило коннектора — СДЕЛАНО (п. 6 инструкции, коммит d707241)
+
+Пользователь формулирует его так и требует, чтобы оно работало НЕ ТОЛЬКО для
+Германии, а для всех юрисдикций:
+
+* знание модели о **норме**, привязанное к году редакции нормы, имеет приоритет
+  перед доктринальным текстом;
+* знание модели о **судебной практике**, когда дата судебного акта известна
+  точно, имеет приоритет над всем остальным — над догмой, комментарием,
+  учебником.
+
+То есть: если источник корпуса издан до реформы или до поворотного решения, его
+утверждение о действующем праве считается устаревшим, и об этом надо сказать
+прямо, а не пересказывать книгу как действующее право. Год издания у каждого
+источника в корпусе есть, так что правило исполнимо.
+
+Написано раньше срока — заодно с деплоем эндпойнта `DELETE /sources/{id}`,
+чтобы не гонять деплой дважды. Формулировка легла в п. 6 инструкции
+`app/mcp/server.py`. Два уточнения, которых в постановке не было, но без
+которых правило опасно:
+
+* приоритет включается только от ТВЁРДОГО знания с датой; при неуверенности
+  опорой остаётся корпус. Иначе правило превращается в разрешение возражать
+  книге по памяти;
+* запрет п. 2 сочинять текст нормы, номер дела и дату акта не отменяется
+  ничем — приоритет даёт право поправить источник, а не выдумать основание.
+
+Чтобы правилу было на что опереться, в выдачу фрагмента добавлена строка
+«год издания»: в поле «цитата» год стоит не у всякой книги (Gorlier — без
+года вовсе).
+### Опись немецкой папки (файлы скачаны и вскрыты, 2026-08-21)
+
+137 файлов, 5,6 ГБ, **109 410 страниц**. Для сравнения: вся Франция — 31 книга
+и 21 872 карточки. Немецкая папка примерно впятеро больше всего, что уже
+сделано, и одним заходом не берётся.
+
+**Побайтные копии — 6 пар, подтверждено sha256.** Часть переименована по-русски,
+и по имени они выглядят разными книгами:
+
+| | |
+|---|---|
+| Looschelders, Schuldrecht. Allgemeiner Teil | Looschelders_Schuldrecht._Allgemeiner_Teil |
+| **Behm**, Berger, Вещное право | **Brehm**_Berger_Sachenrecht |
+| Stadler, Allgemeiner Teil des BGB | Stadler_Allgemeiner_Teil_des_BGB |
+| Wolf, Вещное право 21 Aufl | Wolf_Sachenrecht_21_Aufl |
+| Staudingers_Kommentar_zum_Burgerlichen_Gesetzbuch | Eckpfeiler_Des_Zivilrechts_Von_Staudingers… |
+| Harke, Allgemeines Schuldrecht | Harke_Allgemeines_Schuldrecht |
+
+Ещё пять пар не совпадают побайтно, но имеют одинаковое число страниц и
+одинаковый текст на выборке: Boemke/Ulrici (481), Leenen/Häublein (712),
+Brox/Walker AT (451), Fikentscher/Heinemann (1142), Brox/Walker Schuldrecht
+(575). Единственная пара с настоящим расхождением — Wieling Sachenrecht:
+529 против 528 страниц.
+
+**Четыре разных типа файла — четыре разных конвейера.** Это главный вывод
+описи: папка неоднородна, и общего профиля у неё быть не может.
+
+
+**beck-online (MüKo и др.)** — 26 файл(ов), 12940 стр.
+
+| стр. | файл |
+|---:|---|
+| 180 | 104-113 ГГУ (Мюнхенский комментарий).pdf |
+| 1105 | 104-144 ГГУ (Мюнхенский комментарий).pdf |
+| 218 | 116-119 ГГУ (Мюнхенский комментарий)-2.pdf |
+| 137 | 120-124 ГГУ (Мюнхенский комментарий).pdf |
+| 154 | 125-129 ГГУ (Мюнхенский комментарий).pdf |
+| 416 | 130-144 ГГУ (Мюнхенский комментарий).pdf |
+| 171 | 145-150 ГГУ (Мюнхенский комментарий).pdf |
+| 1150 | 145-185 ГГУ (Мюнхенский комментарий).pdf |
+| 163 | 151-159 ГГУ (Мюнхенский комментарий).pdf |
+| 816 | 160-185 ГГУ (Мюнхенский комментарий).pdf |
+| 546 | 186-218 ГГУ (Мюнхенский комментарий).pdf |
+| 88 | 227-240 ГГУ (Мюнхский комментарий).pdf |
+| 1222 | 241-249 ГГУ (Мюнхенский комментарий).pdf |
+| 535 | 250-272 ГГУ (Мюнхенский комментарий).pdf |
+| 863 | 273-292 ГГУ (Мюнхенский комментарий).pdf |
+| 299 | 293-306а ГГУ (Мюнхенский комментарий).pdf |
+| 853 | 307-310 ГГУ (Мюнхенский комментарий)-2.pdf |
+| 299 | 311-312 ГГУ (Мюнхенский комментарий).pdf |
+| 751 | 313-326 ГГУ (Мюнхенский комментарий) 2.pdf |
+| 237 | 327-327p ГГУ (Мюнхенский комментарий).pdf |
+| 169 | 387-397 ГГУ (Мюнхенский комментарий).pdf |
+| 253 | 516-534 ГГУ (Мюнхенский комментарий).pdf |
+| 502 | 985-1011 ГГУ (Мюнхенский комментарий).pdf |
+| 413 | 986-1011 ГГУ (Мюнхенский комментарий).pdf |
+| 1375 | Baur Sturner Sachenrecht 18th edition.pdf |
+| 25 | Vorbemerkung Vor 116.pdf |
+
+**Staudinger онлайн** — 19 файл(ов), 6213 стр.
+
+| стр. | файл |
+|---:|---|
+| 1229 | 104-144 Staudinger.pdf |
+| 523 | 145-185 BGB Staudinger.pdf |
+| 379 | 186-218 BGB Staudinger.pdf |
+| 1556 | 241-254 BGB Staudinger.pdf |
+| 329 | 255-276 BGB Staudinger.pdf |
+| 481 | 277-292 BGB Staudinger.pdf |
+| 332 | 320-326 ГГУ (Штаудингер).pdf |
+| 262 | 387-397 BGB Staudinger.pdf |
+| 415 | 433-443 BGB Staudinger .pdf |
+| 299 | 516-534 BGB Staudinger.pdf |
+| 56 | STAUDINGER_Mietrecht_1.pdf |
+| 81 | STAUDINGER_Mietrecht_2.pdf |
+| 18 | StaudingerKern_2022_BGB_Sache.pdf |
+| 40 | Vorbem zu §§ 116-124 .pdf |
+| 72 | Vorbemerkungen zu §§ 104 ff.pdf |
+| 32 | Vorbemerkungen zu §§ 145-156.pdf |
+| 24 | Vorbemerkungen zu §§ 158-163.pdf |
+| 45 | Vorbemerkungen zu §§ 164-181.pdf |
+| 40 | Vorbemerkungen zu §§ 182-185.pdf |
+
+**Großkommentare der Praxis (ZPO/InsO)** — 8 файл(ов), 8483 стр.
+
+| стр. | файл |
+|---:|---|
+| 782 | Insolvenzordnung Band 2 §§ 35-55.pdf |
+| 916 | Insolvenzordnung Band 4 §§ 103-128 (Giesen, Jacoby).pdf |
+| 915 | Insolvenzordnung Band 8 §§ 286-334 (Foerste, Windel, Preuss).pdf |
+| 1128 | ZPO Kommentar Band 2 §§ 50-127a.pdf |
+| 1300 | ZPO Kommentar Band 3 §§ 128-252.pdf |
+| 1372 | ZPO Kommentar Band 4 §§ 253-299a.pdf |
+| 936 | ZPO Kommentar Band 5 §§ 300-354.pdf |
+| 1134 | ZPO Kommentar Band 7 §§ 511-591.pdf |
+
+**книги (сканы и e-book)** — 84 файл(ов), 81774 стр.
+
+| стр. | файл |
+|---:|---|
+| 2992 | Abramenko, Dickersbach, Lützenkirchen, Mietrecht. Kommentar.pdf |
+| 4444 | Aktiengesetz Kommentar (2020).pdf |
+| 451 | Allgemeiner Teil des BGB (Brox, Walker).pdf |
+| 481 | BGB Allgemeiner Teil (Burkhard Boemke, Bernhard Ulrici (auth.).pdf |
+| 712 | BGB Allgemeiner Teil (Detlef Leenen, Martin Häublein).pdf |
+| 910 | BGB-Schuldrecht Besonderer Teil, eBook.pdf |
+| 1160 | Band I (§§1-240).pdf |
+| 620 | Behm, Berger, Вещное право.pdf |
+| 408 | Bengel_Simmerding_Grundbuch_Grundstueck_Grenze.pdf |
+| 521 | Besonderes Schuldrecht (Jan Dirk Harke (auth.)).pdf |
+| 481 | Boemke_Ulrici_BGB_Allgemeiner_Teil.pdf |
+| 1509 | Bork & Schäfer - GmbHG Kommentar (2015).pdf |
+| 620 | Brehm_Berger_Sachenrecht.pdf |
+| 575 | Brox, Walker, Allgemeines Schuldrecht.pdf |
+| 451 | Brox_Walker_Allgemeiner_Teil_des_BGB.pdf |
+| 575 | Brox_Walker_Allgemeines_Schuldrecht.pdf |
+| 136 | Eckpfeiler (сделка).pdf |
+| 1204 | Eckpfeiler_Des_Zivilrechts_J_Von_Staudingers_Kommentar_Zum_Buergerlichen.pdf |
+| 1204 | Eckpfeiler_Des_Zivilrechts_Von_Staudingers_Kommentar_Zum_BGB.pdf |
+| 529 | Emmerich-Sonnenschein Miete 10 Aufl.pdf |
+| 910 | Emmerich_BGB_Schuldrecht_Besonderer_Teil.pdf |
+| 1142 | Fikentscher,_Heinemann,_Schuldrecht_Allgemeiner_und_Besonderer_Teil.pdf |
+| 1142 | Fikentscher_Heinemann_Schuldrecht.pdf |
+| 999 | Flume, Das Rechtsgeschäft.pdf |
+| 3047 | GESELLSCHAFTSRECHT BGB HGB PARTGG GMBHG AKTG UMWG GENG (Henssler, Strohn).pdf |
+| 436 | Gernhuber, Das Schuldverhaltnis.pdf |
+| 596 | Gernhuber, Die Erfullung und ihre Surrogate.pdf |
+| 2114 | GmbH-Gesetz Kommentar ( etc.).pdf |
+| 212 | Gursky_Sachenrecht.pdf |
+| 2564 | HGB Kommentar (Handelsstand, Handelsgesellschaften).pdf |
+| 447 | Hanns_Prütting_Вещное право_37.Auflage.pdf |
+| 511 | Harke, Allgemeines Schuldrecht.pdf |
+| 511 | Harke_Allgemeines_Schuldrecht.pdf |
+| 632 | Hubner_Allgemeiner_Teil_des_Burgerlichen_Gesetzbuches.pdf |
+| 1500 | Insolvenzordnung Band 1 §§ 1-55.pdf |
+| 908 | Insolvenzordnung Band 3 §§ 103-128 (Giesen, Jacoby).pdf |
+| 370 | Insolvenzordnung Band 5.1 §§ 148-155 (Eckardt, Fehrenbacher).pdf |
+| 1569 | Insolvenzordnung Band 5.2 §§ 156-173 (Eckardt).pdf |
+| 565 | Insolvenzordnung Band 6 §§ 174-216 (Henckel, Gerhardt).pdf |
+| 1368 | Insolvenzordnung Band 7 §§ 217-285.pdf |
+| 944 | Insolvenzordnung Band 9 §§ 335-359.pdf |
+| 3419 | Kommentar zum BGB Band 1 §§ 1-610 (Bamberger, Roth).pdf |
+| 1292 | Kuntze_Grundbuchrecht_Kommentar.pdf |
+| 502 | Larenz - Wolf - Allgemeiner Teil des Burgerlichen Rechts.pdf |
+| 560 | Larenz_Lehrbuch_des_Schuldrechts_II_Besonderer_Teil.pdf |
+| 686 | Larenz_Lehrbuch_des_Schuldrechts_I_Allgemeiner_Teil.pdf |
+| 522 | Leenen_BGB_Allgemeiner_Teil_Rechtsgeschaftslehre.pdf |
+| 712 | Leenen_Haublein_BGB_Allgemeiner_Teil.pdf |
+| 568 | Leipold_BGB_I_Einfuhrung_und_allgemeiner_Teil.pdf |
+| 310 | Lohning - Schuldrecht_ii_besonderer.pdf |
+| 627 | Looschelders, Schuldrecht. Allgemeiner Teil.pdf |
+| 627 | Looschelders_Schuldrecht._Allgemeiner_Teil.pdf |
+| 301 | Meder_Czelk_Grundwissen_Sachenrecht.pdf |
+| 277 | Medicus_D_Allgemeiner_Teil_des_BGB_10_Aufl__2010.pdf |
+| 449 | Medicus_Lorenz_Schuldrecht_I._Allgemeiner_Teil.pdf |
+| 570 | Medicus_Lorenz_Schuldrecht_II._Besonderer_Teil.pdf |
+| 2416 | Münchener Kommentar zur Insolvenzordnung-Band1.§§1-79.pdf |
+| 332 | Münchener Kommentar zur Insolvenzordnung-Band1.§§217-359.pdf |
+| 803 | Neuner - Allgemeiner Teil des Bürgerlichen Rechts (перевод).pdf |
+| 803 | Neuner_Allgemeiner_Teil_des_Burgerlichen_Rechts.pdf |
+| 1166 | Oechsler - Обязательственное право.pdf |
+| 965 | Oetker + Maultzsch - Договорное право - особенная часть (2018, 5 издание).pdf |
+| 340 | Rehberg_BGB_AT.pdf |
+| 475 | Reich_Schmitz_Einfuhrung_in_das_Burgerliche_Recht.pdf |
+| 528 | Sachenrecht (Hans Josef Wieling) - немецкий язык.pdf |
+| 709 | Schuldrecht. Besonderer Teil. 16. Auflage_en.pdf |
+| 570 | Stadler, Allgemeiner Teil des BGB.pdf |
+| 570 | Stadler_Allgemeiner_Teil_des_BGB.pdf |
+| 1204 | Staudingers_Kommentar_zum_Burgerlichen_Gesetzbuch.pdf |
+| 7824 | Westermann, Grunewald, Maier-Reimer - BGB Kommentar (2023).pdf |
+| 20 | Wieling_Die_Grundbucheintragung.pdf |
+| 529 | Wieling_Sachenrecht.pdf |
+| 1113 | Wilhelm, Sachenrecht.pdf |
+| 1540 | Wilhelm_Sachenrecht_7_Aufl..pdf |
+| 10 | Wilsch_The_German_Grundbuchordnung.pdf |
+| 508 | Wolf, Вещное право 21 Aufl.pdf |
+| 508 | Wolf_Sachenrecht_21_Aufl.pdf |
+| 869 | ZPO Kommentar Band 1 Einleitung §§ 1-49.pdf |
+| 1116 | ZPO Kommentar Band 6 §§ 355-510c.pdf |
+| 584 | ZPO Kommentar Band 8 §§ 592-723.pdf |
+| 742 | ZPO Kommentar Band 9 §§ 724-802l.pdf |
+| 619 | Zerres_Burgerliches_Recht.pdf |
+| 449 | Медикус Лоренц - Общая часть обязат права.pdf |
+| 570 | Медикус и Лоренц - Особенная часть обязат права.pdf |
+
+Всего страниц: 109410
+
+
+### Как устроена распечатка beck-online (MüKo)
+
+Файл — не книга, а **склейка заданий печати**. Каждое задание: шапка
+(`BGB § 273 Zurückbehaltungsrecht Krüger Münchener Kommentar zum BGB /
+10. Auflage 2025`), текст, аппарат сносок, строка
+`Zitiervorschläge: MüKoBGB/Krüger, 10. Aufl. 2025, BGB § 273 Rn. 9-12`.
+Отсюда берётся всё, что нужно для ссылки: параграф, комментатор (у каждого §
+свой), издание, год и охваченные Randnummern.
+
+Разметка страницы (A4, 595×842):
+
+| что | признак |
+|---|---|
+| колонтитул | `14/02/2026, 19:33 § 104 Geschäftsunfähigkeit - beck-online`, top 16,5 |
+| водяной знак | `KopievonPeacePalaceLibrary…` без пробелов, top 1,6 |
+| тело | x0 69,9–70,2, кегль 10,5–11,0 |
+| **Randnummer** | последнее слово строки, x0 ≈ 431, x1 = 441,5 — ЗА полосой набора |
+| заголовок | x0 43,7, кегль 12,0 |
+| номер сноски в аппарате | x0 43,7, кегль 8,4 |
+| текст сноски | x0 58,7, кегль 10,5 |
+| колонцифра | ЕЁ НЕТ: это распечатка с экрана, а не книга |
+| подвал | ссылка `https://beck-online…/Print/CurrentDoc?vpath=…` |
+
+Отсюда конвейер: единица — `mode: margin`, side right, `x_range` около
+[425, 450]; параграф — из колонтитула через `address.section.mode: pattern`;
+аппарат отделяется не по высоте, а **по x0**: 55–65 — сноска, ≥68 — тело.
+Кегль 8,4 при x0 ≈ 43,7 — номер сноски, кегль 12,0 при том же x0 — заголовок,
+и путать их нельзя.
+
+Нумерация сносок сквозная **по параграфу**, а не по странице, и сам аппарат
+стоит отдельными страницами в конце задания. Стандартный `attach_notes`
+раздаёт сноски постранично и здесь промахнётся: сноску придётся привязывать
+к карточке по паре (§, номер) — тем же приёмом, что применялся к
+французским электронным изданиям Dalloz.
+
+Колонцифры нет вовсе, поэтому `strip_junk` будет вслепую резать голые числа
+в верхней и нижней полосе — а номер сноски в аппарате как раз голое число и
+стоит вверху страницы. Полосу придётся отключить или сузить.
+
+### Что делать с наложением диапазонов
+
+Файлы названы по диапазонам параграфов, и диапазоны налезают друг на друга:
+`104-144` перекрывает пять отдельных файлов, `145-185` — три, `985-1011` и
+`986-1011` — один и тот же кусок в двух скачиваниях. По имени судить нельзя;
+покрытие снимается со строк `Zitiervorschläge` (скрипт
+`de-pdf/inv/muko_cover.py`).
+
+Решение принято такое: **MüKoBGB 10. Aufl. 2025 — это ОДИН источник**, а не
+двадцать четыре. Файлы — лишь распечатки его частей. Карточка адресуется
+парой (§, Rn), и повторы схлопываются сами: у двух распечаток одного § и
+одного Rn совпадёт `external_id`.
+
+### Карта немецкой папки: четыре конвейера
+
+Проверено по самим файлам, а не по именам.
+
+**1. Распечатки beck-online** (26 файлов, 12 940 стр.: весь МюКо, Baur/Stürner).
+Штатной веткой не берутся — своё в `scripts/beck_extract.py`. Отдельная беда:
+полужирный текст, Randnummern и часть заголовков нарисованы контурами и в
+текстовом слое отсутствуют; их возвращает `scripts/fill_outline_gaps.py`
+(распознавание полосы целиком плюс сверка со словами текстового слоя).
+
+**2. Онлайн-Staudinger** (19 файлов). Платформа другая (samson/Otto Schmidt),
+и устройство другое: заголовок задания стоит В НАЧАЛЕ, а не в конце
+(`Werk: Staudinger, BGB / Autor: Bieder/ Gursky / Werksstand: Neubearbeitung
+2022 / Zitiervorschlag: Staudinger/ Bieder/ Gursky (2022) BGB § 387`), сносок
+нет вовсе — Staudinger даёт ссылки прямо в тексте, — а Randnummer стоит
+ПЕРВЫМ словом абзаца на левом поле (x0 ≈ 31 при полосе с 65,7).
+**Контурного текста здесь нет**: все дыры в координатах — это висячий номер,
+отточие оглавления и колонтитул. Проверено на двух файлах, 4 271 длинная
+строка. Значит, распознавание не нужно, и это экономит часы.
+
+**3. Großkommentare der Praxis** (18 томов ZPO Stein/Jonas и InsO Jaeger,
+около 18 000 стр.). Обычная книжная вёрстка De Gruyter: Randnummer на внешнем
+поле, колонтитул `§ 4 | Erstes Buch – Allgemeine Vorschriften`, аппарат внизу
+полосы после линейки. Берётся ШТАТНЫМ конвейером с профилем издательства.
+
+**4. Учебники и монографии** (сканы и e-book). Штатный конвейер, профиль на
+издательскую линейку — как во Франции.
+
+### Известный дефект французской части: переносы
+
+Слово, разорванное переносом в конце строки, осталось в карточках как есть:
+у Капитана в тексте стоит «clas-\nsification», «pécu-\nniaire», «dési-\ngner».
+Для полнотекстового поиска это два разных слова, и ни по одному из них
+карточка не найдётся. Немецкую часть собираем уже со склейкой
+(`join_hyphens` в `scripts/beck_extract.py`).
+
+Чинится без перенарезки: текст правится прямо в `output/cards.jsonl`, а
+POST карточек — upsert по `external_id`, так что перезаливка обновит строки,
+а не удвоит их. Стоимость — пересчёт эмбеддингов примерно 22 000 фрагментов,
+это доли доллара.
+
+Но правило склейки для французского НЕ то же, что для немецкого, и это
+главная причина, почему пока не сделано. По-немецки дефис в конце строки
+почти всегда перенос, исключения наперечёт (знак пропуска перед союзом,
+составное сокращение вроде «BGB-RGRK»). По-французски настоящих дефисов
+много и они в самых частых словах: «celui-ci», «peut-il», «au-delà»,
+«sous-traitant», «porte-fort», «vis-à-vis». Склеить «celui-\nci» в «celuici»
+хуже, чем оставить перенос: сейчас текст хотя бы верен источнику.
+
+Значит, нужен список приставок («sous», «non», «quasi», «contre», «avant»,
+«demi», «ex», «vice», «entre», «hors») и энклитик («ci», «là», «même», «il»,
+«elle», «on», «ce», «lui»), и проверка на выборке ДО перезаливки.
+
+### Семь немецких файлов без текстового слоя — только скан
+
+Плотность текста меряна `pdftotext` по ТРЁМ выборкам: десятая доля от начала,
+середина и четыре пятых, по двадцать полос в каждой, берётся лучшая из трёх.
+Первый замер брал одни страницы 60–90 и ошибся на двух книгах: у Вилша и у
+Вилинга там оказалась вклейка, а слой в них есть.
+
+| стр. | файл |
+|---:|---|
+| 3419 | Kommentar zum BGB Band 1 §§ 1-610 (Bamberger, Roth) |
+| 3047 | GESELLSCHAFTSRECHT (Henssler, Strohn) |
+| 529 | Emmerich-Sonnenschein, Miete, 10. Aufl. |
+| 502 | Larenz/Wolf, Allgemeiner Teil des Bürgerlichen Rechts |
+| 447 | Prütting, Sachenrecht, 37. Aufl. |
+| 332 | Münchener Kommentar zur InsO, Band 1 §§ 217-359 |
+| 277 | Medicus, Allgemeiner Teil des BGB, 10. Aufl. 2010 |
+
+Итого 8 553 страницы, из них 6 466 приходятся на два тома.
+
+**Распознавание этих книг НЕ начинаем** (решение пользователя от 2026-08-22):
+он попробует найти их в текстовом виде и передать заново. Список выше — то,
+что надо искать.
+
+### Два тома Егера, которые не даются с наскока
+
+**Band 1 (§§ 1-55, первое издание, 1500 полос)** — непрерывность 0.52 при
+покрытии 0.85, и ни одна из правок, поднявших остальные восемнадцать томов,
+на нём не сработала. Что установлено: кегль тела 7.2 против 9.0 у соседей,
+поля у́же, и с нулевым запасом номеров находится на треть больше (2324 против
+1705) — но половина новых оказывается повтором уже найденного адреса, то есть
+параграф на этих полосах определён неверно. Колонтитул на них читается
+(«§ 4d Erster Teil»), а § 2 растянут на 87 полос с двумя разрывами. Похоже,
+внутри тома номера Randnummer перезапускаются не там, где меняется
+колонтитул. Разбираться отдельно и с глазами на самой книге.
+
+**Band 5.2 (§§ 156-173, 1569 полос)** — не печатная полоса, а перевёрстанная
+электронная копия: колонцифры нет вовсе, номер стоит ОТДЕЛЬНОЙ строкой кеглем
+16.9 при теле 15.0. Профиль под него написан
+(`books/de-inso-jaeger-5-2/profiles/degruyter-reflow.yaml`, `mode: flow`).
+Причина, по которой том сначала дал 55 карточек на 1569 полосах, оказалась не
+в профиле: `extract.py` падал на отсутствующем в meta.json `{bearbeiter}` и
+молча оставлял старые карточки. После правки — 2107 карточек, непрерывность
+0.9149; **том загружен** (`6e593f4e-85bd-413a-aad4-ee65483608d5`).
+
+Не загружен только Band 1. Остальные восемнадцать томов загружены.
+
+## 14. Линейка Otto Schmidt и повторы в немецкой папке (2026-08-22)
+
+### Четыре комментария Otto Schmidt
+
+Один издательский макет, но три файла из четырёх — не книги, а **Druckdatei**:
+начало координат полосы смещено вверх, и колонтитул стоит на ОТРИЦАТЕЛЬНОМ
+`top`. Доли полос в профиле поэтому тоже отрицательные — положительная доля
+сняла бы вместе с колонтитулом четверть текста.
+
+| книга | полоса | колонтитул | подпись полосы | профиль |
+|---|---|---|---|---|
+| K. Schmidt/Lutter, AktG, 4. Aufl. 2020 (4444 с.) | 595×842 | 130.3 (0.155) | `von Nussbaum \| 865` на 0.850 | `ottoschmidt-kommentar.yaml` |
+| Lützenkirchen, Mietrecht, 3. Aufl. 2021 (2992 с.) | та же | та же | `1458 \| Lützenkirchen` | тот же профиль без правок |
+| Röhricht/GvW/Haas, HGB, 5. Aufl. 2019 (2564 с.) | 482×680 | **-31.5** | `1172 Haas` на 0.819 | `ottoschmidt-hgb.yaml` |
+| Lutter/Hommelhoff, GmbHG, 21. Aufl. 2023 (2114 с.) | 431×598 | **-93.8** | `Kleindiek \| 1025` на 0.696 | `ottoschmidt-gmbhg.yaml` |
+
+Общее для всех: тело 9.0–9.25, аппарат сносок на кегль меньше с номером первым
+словом (нужен `rebuild_notes.py`), Inhaltsübersicht в начале параграфа набрана
+ещё мельче и снимается по отбивке точками — иначе она целиком ложится в
+аппарат сносок. Заголовок параграфа отличается от ссылки «§ 823 Abs. 2 BGB …»
+в начале строки ТОЛЬКО кеглем: отсюда `address.section.min_size`.
+
+У GmbHG нижнее окно колонцифры узкое — между низом последней сноски (408.5) и
+подписью полосы (425.2): шире, и короткая сноска «45 Ebenso Bayer» прочитается
+как номер страницы.
+
+### Повторы в папке (проверка, которую просил пользователь)
+
+Совпадают ПОЛНОСТЬЮ (размер и объём) — брать один файл из пары:
+
+| стр. | файлы |
+|---:|---|
+| 1204 | `Staudingers_Kommentar_zum_Burgerlichen_Gesetzbuch` = `Eckpfeiler_Des_Zivilrechts_Von_Staudingers_Kommentar_Zum_BGB` |
+| 627 | `Looschelders, Schuldrecht. Allgemeiner Teil` = `Looschelders_Schuldrecht._Allgemeiner_Teil` |
+| 620 | `Behm, Berger, Вещное право` = `Brehm_Berger_Sachenrecht` |
+| 570 | `Stadler, Allgemeiner Teil des BGB` = `Stadler_Allgemeiner_Teil_des_BGB` |
+| 511 | `Harke_Allgemeines_Schuldrecht` = `Harke, Allgemeines Schuldrecht` |
+| 508 | `Wolf_Sachenrecht_21_Aufl` = `Wolf, Вещное право 21 Aufl` |
+
+Совпадают по объёму при разном размере — та же книга в другой копии
+(проверено по титулам и первым полосам): Eckpfeiler (третий файл, 1204),
+Fikentscher/Heinemann (1142), Emmerich BGB-Schuldrecht BT (910), Neuner (803),
+Leenen/Häublein (712), Brox/Walker Allgemeines Schuldrecht (575),
+Medicus/Lorenz Schuldrecht II (570), Boemke/Ulrici (481), Brox/Walker AT (451),
+Medicus/Lorenz Schuldrecht I (449).
+
+Русские названия обманывают: `Behm, Berger, Вещное право`,
+`Wolf, Вещное право 21 Aufl`, `Медикус Лоренц - Общая часть обязат права`,
+`Медикус и Лоренц - Особенная часть обязат права` — это НЕМЕЦКИЕ книги, просто
+переименованные файлы. По-русски в них ничего нет.
+
+Совпадение объёма ещё не повтор: `Wilhelm, Sachenrecht` (1113) и
+`Wilhelm_Sachenrecht_7_Aufl` (1540) — разные издания, брать оба.
+
+### Разбор длинной книги упирался в память, а не в правила
+
+`pages_digital.py` держал разобранные объекты каждой полосы в `pdf.pages` до
+конца книги. Erman (7824 полосы) дважды был убит OOM-killer на 1300-й, дойдя
+до 14 ГБ, причём в журнал не попадало ничего: SIGKILL трассировки не оставляет,
+а `| tail -1` съедал и последнюю строку. Полоса сбрасывается сразу после
+разбора (`page.flush_cache()`), 900 полос теперь укладываются в 160 МБ.
+
+Второе, что мешало: кэши растров занимали 16 ГБ при 4.8 ГБ свободного диска.
+`books/*/cache/` воспроизводим и в `.gitignore` — чистится без сожалений.
+
+### Разведка сорока учебников (2026-08-22)
+
+Скрипт `de-pdf/inv/classify_textbooks.py` читает три полосы из середины каждой
+книги и сообщает полосу, кегль тела и число чисел, вынесенных за край набора.
+Текстовый слой есть у ВСЕХ сорока. Столбец «поля» — сколько номеров на полях
+нашлось на трёх полосах: 8 и больше значит, что книга режется по Randnummer,
+0–4 — что номеров нет и резать придётся по параграфу или полосе.
+
+| стр. | полоса | кегль | поля | книга |
+|---:|---|---|---:|---|
+| 570 | 453.6×680.4 | 10.46 | 15 | Medicus_Lorenz_Schuldrecht_II._Besonderer_Teil |
+| 627 | 453.5×680.3 | 8.53 | 15 | Looschelders, Schuldrecht. Allgemeiner Teil |
+| 632 | 481.9×680.4 | 10.2 | 14 | Hubner_Allgemeiner_Teil_des_Burgerlichen_Gesetzbuches |
+| 803 | 453.0×680.0 | 8.04 | 12 | Neuner - Allgemeiner Teil des Bürgerlichen Rechts (перевод) |
+| 521 | 439.4×666.1 | 9.0 | 11 | Besonderes Schuldrecht (Jan Dirk Harke (auth.)) |
+| 449 | 453.5×680.3 | 10.46 | 10 | Medicus_Lorenz_Schuldrecht_I._Allgemeiner_Teil |
+| 568 | 401.8×620.0 | 8.17 | 10 | Leipold_BGB_I_Einfuhrung_und_allgemeiner_Teil |
+| 522 | 439.0×652.0 | 9.48 | 9 | Leenen_BGB_Allgemeiner_Teil_Rechtsgeschaftslehre |
+| 451 | 453.5×680.3 | 9.6 | 8 | Allgemeiner Teil des BGB (Brox, Walker) |
+| 712 | 439.4×652.0 | 9.46 | 8 | BGB Allgemeiner Teil (Detlef Leenen, Martin Häublein) |
+| 481 | 439.4×666.1 | 9.96 | 8 | BGB Allgemeiner Teil (Burkhard Boemke, Bernhard Ulrici (auth.) |
+| 1375 | 595.0×841.9 | 9.76 | 7 | Baur Sturner Sachenrecht 18th edition |
+| 408 | 439.4×652.1 | 9.0 | 6 | Bengel_Simmerding_Grundbuch_Grundstueck_Grenze |
+| 528 | 439.4×666.1 | 9.84 | 6 | Sachenrecht (Hans Josef Wieling) - немецкий язык |
+| 529 | 439.4×666.1 | 9.84 | 6 | Wieling_Sachenrecht |
+| 620 | 439.4×657.6 | 9.75 | 6 | Brehm_Berger_Sachenrecht |
+| 965 | 439.4×666.1 | 10.0 | 5 | Oetker + Maultzsch - Договорное право - особенная часть (2018, 5 издание) |
+| 570 | 368.5×555.7 | 8.53 | 5 | Stadler, Allgemeiner Teil des BGB |
+| 575 | 365.7×555.7 | 8.53 | 5 | Brox, Walker, Allgemeines Schuldrecht |
+| 511 | 439.4×666.1 | 9.96 | 4 | Harke, Allgemeines Schuldrecht |
+| 709 | 408.0×656.0 | 8.5 | 4 | Schuldrecht. Besonderer Teil. 16. Auflage_en |
+| 910 | 612.0×792.0 | 14.4 | 4 | BGB-Schuldrecht Besonderer Teil, eBook |
+| 1113 | 481.9×680.3 | 9.4 | 4 | Wilhelm, Sachenrecht |
+| 1142 | 482.0×680.0 | 7.98 | 3 | Fikentscher,_Heinemann,_Schuldrecht_Allgemeiner_und_Besonderer_Teil |
+| 475 | 482.0×692.0 | 7.1 | 3 | Reich_Schmitz_Einfuhrung_in_das_Burgerliche_Recht |
+| 1166 | 496.0×714.0 | 9.75 | 3 | Oechsler - Обязательственное право |
+| 508 | 327.4×523.8 | 7.97 | 2 | Wolf_Sachenrecht_21_Aufl |
+| 212 | 420.0×631.2 | 9.36 | 2 | Gursky_Sachenrecht |
+| 686 | 418.4×657.3 | 10.81 | 2 | Larenz_Lehrbuch_des_Schuldrechts_I_Allgemeiner_Teil |
+| 619 | 439.4×666.1 | 10.0 | 1 | Zerres_Burgerliches_Recht |
+| 1540 | 482.0×680.0 | 7.98 | 1 | Wilhelm_Sachenrecht_7_Aufl. |
+| 560 | 406.4×643.4 | 9.16 | 0 | Larenz_Lehrbuch_des_Schuldrechts_II_Besonderer_Teil |
+| 10 | 595.3×841.9 | 10.0 | 0 | Wilsch_The_German_Grundbuchordnung |
+| 310 | 612.0×792.0 | 15.0 | 0 | Lohning - Schuldrecht_ii_besonderer |
+| 301 | 595.2×842.0 | 10.4 | 0 | Meder_Czelk_Grundwissen_Sachenrecht |
+| 20 | 468.0×728.0 | 9.0 | 0 | Wieling_Die_Grundbucheintragung |
+| 999 | 439.4×666.1 | 9.2 | 0 | Flume, Das Rechtsgeschäft |
+| 340 | 439.4×637.9 | 10.02 | 0 | Rehberg_BGB_AT |
+| 436 | 846.5×601.9 | 9.3 | 0 | Gernhuber, Das Schuldverhaltnis |
+| 596 | 261.1×429.1 | 6.7 | 0 | Gernhuber, Die Erfullung und ihre Surrogate |
+
+Три книги выпадают из ряда и требуют отдельной подготовки:
+
+* `Gernhuber, Das Schuldverhaltnis` — полоса 846.5×601.9, то есть РАЗВОРОТ
+  в альбомной ориентации: две полосы книги на одной полосе файла, их надо
+  разрезать до разбора;
+* `Gernhuber, Die Erfüllung und ihre Surrogate` — полоса 261×429 при кегле
+  5.5–6.7: файл обрезан по набору, полей нет вовсе;
+* `BGB-Schuldrecht Besonderer Teil, eBook` и `Löhning, Schuldrecht II` —
+  перевёрстанные электронные копии (612×792, кегль 14–15), печатной
+  колонцифры в них нет.

@@ -1,0 +1,50 @@
+id: ellipses-fiches
+publisher: Ellipses (учебник по «фишам»)
+jurisdiction: FR
+language: fr
+# Учебник, разбитый на «фиши»: «Fiche 11 – Les critères de qualification du
+# contrat de bail». Нумерация абзацев ПЕРЕЗАПУСКАЕТСЯ внутри каждой фиши —
+# после «4. durée du bail» следующая фиша снова начинается с «1.». Поэтому
+# адрес составной: «Fiche 11, n° 4». Без первой половины адрес не только
+# бесполезен, но и сталкивается с чужим при перезапуске нумерации.
+#
+# Колонцифры в файле нет вовсе (электронное издание), так что фиша —
+# единственная опора.
+
+units:
+  - type: "n°"
+    id_prefix: "n"
+    mode: flow
+    pattern: '^(\d{1,3})\.\s+(?=[A-ZÀÂÄÉÈÊËÎÏÔÖÙÛÜÇŒÆ«“]|\d|[a-z]\.\s)'
+    use_section: true
+
+address:
+  section:
+    mode: pattern
+    # Заголовок фиши набран кеглем 22.5 и переносится на две строки; для
+    # адреса берётся только «Fiche NN».
+    pattern: '^(Fiche\s+\d{1,3})\b'
+    anchor: start
+  template: "{section}, {unit_type} {number}"
+
+printed_page:
+  band: [0.0, 0.0]
+
+footnotes:
+  mode: none
+
+junk:
+  patterns: []
+
+statutory:
+  patterns:
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*(?:\s*(?:et|à|,)\s*\d+(?:-\d+)*)*\s*(?:C\.\s*civ\.|du Code civil)'
+    - 'L\.\s*\d{3}-\d+'
+
+cross_refs:
+  patterns:
+    - '(?:supra|infra)\s*,?\s*(?:fiche|n[o°s]*)\s*\d+'
+
+citation:
+  # Года в шаблоне нет: он не установлен, а «None» в сноске недопустимо.
+  template: "{authors}, {title}, {publisher}, {address}"

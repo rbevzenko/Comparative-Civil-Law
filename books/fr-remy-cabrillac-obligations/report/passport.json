@@ -1,0 +1,261 @@
+{
+  "path": "/home/user/fr-pdf/remy-cabrillac-obligations.pdf",
+  "sha256": "7545efc7f7ea8c276acb63301fc6e84c6c31f65cdd8d1d23f2497f8e76ba18a1",
+  "pages": 1840,
+  "sampled_pages": [
+    277,
+    311,
+    345,
+    379,
+    413,
+    447,
+    481,
+    515,
+    549,
+    583,
+    617,
+    651,
+    685,
+    719,
+    753,
+    787,
+    821,
+    855,
+    889,
+    923,
+    957,
+    991,
+    1025,
+    1059,
+    1093,
+    1127,
+    1161,
+    1195,
+    1229,
+    1263,
+    1297,
+    1331,
+    1365,
+    1399,
+    1433,
+    1467,
+    1501,
+    1535,
+    1569,
+    1603
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 47,
+    "max_depth": 1,
+    "resolved_pages": 47,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Table des matières",
+        "page": 7,
+        "depth": 0
+      },
+      {
+        "title": "Abréviations",
+        "page": 18,
+        "depth": 0
+      },
+      {
+        "title": "Introduction",
+        "page": 22,
+        "depth": 0
+      },
+      {
+        "title": "Première partie. Les sources des obligations",
+        "page": 32,
+        "depth": 0
+      },
+      {
+        "title": "Livre premier. Les actes juridiques",
+        "page": 33,
+        "depth": 0
+      },
+      {
+        "title": "Titre 1. Le contrat",
+        "page": 34,
+        "depth": 0
+      },
+      {
+        "title": "Chapitre préliminaire. La notion de contrat",
+        "page": 35,
+        "depth": 0
+      },
+      {
+        "title": "Sous-titre 1. Formation du contrat",
+        "page": 59,
+        "depth": 0
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 47,
+    "with_destination": 47,
+    "per_page": 1.2,
+    "sample": [
+      {
+        "page": 277,
+        "rect": [
+          285,
+          467,
+          308,
+          478
+        ]
+      },
+      {
+        "page": 277,
+        "rect": [
+          465,
+          398,
+          488,
+          409
+        ]
+      },
+      {
+        "page": 277,
+        "rect": [
+          276,
+          311,
+          299,
+          322
+        ]
+      }
+    ]
+  },
+  "text_layer": {
+    "median_chars_per_page": 131,
+    "empty_pages_share": 0.15,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.0,
+    "offset_mode": null,
+    "offset_stable": false,
+    "sample": [
+      {
+        "pdf_page": 277,
+        "printed": null
+      },
+      {
+        "pdf_page": 311,
+        "printed": null
+      },
+      {
+        "pdf_page": 345,
+        "printed": null
+      },
+      {
+        "pdf_page": 379,
+        "printed": null
+      },
+      {
+        "pdf_page": 413,
+        "printed": null
+      },
+      {
+        "pdf_page": 447,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "15.0": 12922,
+      "11.2": 56
+    },
+    "body": 15.0,
+    "candidates_footnote": []
+  },
+  "footnotes": {
+    "small_font_chars": 56,
+    "share_at_page_bottom": 0.2
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      123,
+      82
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "n° голый номер в начале абзаца": {
+      "hits": 4,
+      "monotonic_share": 1.0,
+      "first": [
+        "403",
+        "458",
+        "459",
+        "531"
+      ]
+    },
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 4,
+      "monotonic_share": 0.67,
+      "first": [
+        "458",
+        "2",
+        "531",
+        "2009"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 2123,
+    "suspicious": 3,
+    "share": 0.0014,
+    "sample": [
+      "LGDJ,",
+      "LGDJ,",
+      "LGDJ,"
+    ]
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        123.0,
+        535.0
+      ],
+      "even": [
+        123.0,
+        535.0
+      ]
+    },
+    "left": {
+      "hits": 4,
+      "monotonic_share": 1.0,
+      "even_page_share": 0.0,
+      "first": [
+        403,
+        458,
+        459,
+        531
+      ]
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {},
+  "verdict": {
+    "state": "пригоден",
+    "branch": "B",
+    "problems": [],
+    "notes": [
+      "Текстового слоя практически нет — скан. Ветка B (ocr.py).",
+      "Сноски кликабельны — привязку берём из файла напрямую, без эвристик."
+    ]
+  }
+}

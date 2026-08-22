@@ -1,0 +1,35 @@
+{
+  "number_issues": [
+    {
+      "raw": "22",
+      "action": "repaired_by_neighbours",
+      "to": 26,
+      "expected": 26,
+      "line": 58402,
+      "evidence": "предыдущий 25, следующий 27"
+    },
+    {
+      "raw": "41",
+      "action": "repaired_by_neighbours",
+      "to": 40,
+      "expected": 40,
+      "line": 58847,
+      "evidence": "предыдущий 39, следующий 41"
+    }
+  ],
+  "absorbed_units": 0,
+  "sections_found": 135,
+  "toc_entries": 0,
+  "toc_anchored_to_line": 0,
+  "toc_page_only": 0,
+  "pages_without_lines": [
+    2,
+    8,
+    14,
+    52,
+    448,
+    936
+  ],
+  "profile": "ottoschmidt-gmbhg-v1",
+  "method": "digital"
+}

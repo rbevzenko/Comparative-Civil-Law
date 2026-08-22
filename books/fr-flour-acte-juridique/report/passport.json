@@ -1,0 +1,251 @@
+{
+  "path": "/home/user/fr-pdf/flour-acte-juridique.pdf",
+  "sha256": "43cdb3cfdb0fda926fbab78d96a3043aa8c94c203ea79f43fae2890264eb7bec",
+  "pages": 7844,
+  "sampled_pages": [
+    1177,
+    1324,
+    1471,
+    1618,
+    1765,
+    1912,
+    2059,
+    2206,
+    2353,
+    2500,
+    2647,
+    2794,
+    2941,
+    3088,
+    3235,
+    3382,
+    3529,
+    3676,
+    3823,
+    3970,
+    4117,
+    4264,
+    4411,
+    4558,
+    4705,
+    4852,
+    4999,
+    5146,
+    5293,
+    5440,
+    5587,
+    5734,
+    5881,
+    6028,
+    6175,
+    6322,
+    6469,
+    6616,
+    6763,
+    6910
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 32,
+    "max_depth": 1,
+    "resolved_pages": 32,
+    "section_nodes": 0,
+    "sample": [
+      {
+        "title": "Couverture",
+        "page": 2,
+        "depth": 0
+      },
+      {
+        "title": "Mode d'emploi",
+        "page": 8,
+        "depth": 0
+      },
+      {
+        "title": "Table des matières",
+        "page": 9,
+        "depth": 0
+      },
+      {
+        "title": "Principales abréviations",
+        "page": 21,
+        "depth": 0
+      },
+      {
+        "title": "Ouvrages cités par le seul nom de l’auteur ou des auteurs",
+        "page": 25,
+        "depth": 0
+      },
+      {
+        "title": "Avant-propos à la dix-septième édition",
+        "page": 27,
+        "depth": 0
+      },
+      {
+        "title": "Préambule. L’obligation, élément du patrimoine",
+        "page": 28,
+        "depth": 0
+      },
+      {
+        "title": "Chapitre préliminaire - Introduction à l’étude des obligations",
+        "page": 56,
+        "depth": 0
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 52,
+    "with_destination": 52,
+    "per_page": 1.3,
+    "sample": [
+      {
+        "page": 1177,
+        "rect": [
+          72,
+          714,
+          84,
+          720
+        ]
+      },
+      {
+        "page": 1177,
+        "rect": [
+          211,
+          699,
+          222,
+          705
+        ]
+      },
+      {
+        "page": 1177,
+        "rect": [
+          342,
+          684,
+          353,
+          690
+        ]
+      }
+    ]
+  },
+  "text_layer": {
+    "median_chars_per_page": 129,
+    "empty_pages_share": 0.23,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.03,
+    "offset_mode": 5266,
+    "offset_stable": true,
+    "sample": [
+      {
+        "pdf_page": 1177,
+        "printed": 6443
+      },
+      {
+        "pdf_page": 1324,
+        "printed": null
+      },
+      {
+        "pdf_page": 1471,
+        "printed": null
+      },
+      {
+        "pdf_page": 1618,
+        "printed": null
+      },
+      {
+        "pdf_page": 1765,
+        "printed": null
+      },
+      {
+        "pdf_page": 1912,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "23.8": 8344,
+      "14.4": 3049,
+      "5.8": 68,
+      "8.6": 23,
+      "20.2": 9,
+      "10.8": 3
+    },
+    "body": 23.8,
+    "candidates_footnote": [
+      14.4
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 103,
+    "share_at_page_bottom": 0.09
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      72
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 2,
+      "monotonic_share": 1.0,
+      "first": [
+        "1025",
+        "1971"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 1848,
+    "suspicious": 5,
+    "share": 0.0027,
+    "sample": [
+      "LGDJ,",
+      "LGDJ,",
+      "LGDJ,",
+      "LGDJ,",
+      "LGDJ,"
+    ]
+  },
+  "margin_numbers": {
+    "found": false,
+    "body_band": {
+      "odd": [
+        72.0,
+        540.0
+      ],
+      "even": [
+        72.0,
+        540.0
+      ]
+    },
+    "left": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    },
+    "right": {
+      "hits": 0,
+      "monotonic_share": 0.0,
+      "even_page_share": 0.0,
+      "first": []
+    }
+  },
+  "statutory": {},
+  "verdict": {
+    "state": "пригоден",
+    "branch": "B",
+    "problems": [],
+    "notes": [
+      "Текстового слоя практически нет — скан. Ветка B (ocr.py).",
+      "Сноски кликабельны — привязку берём из файла напрямую, без эвристик."
+    ]
+  }
+}

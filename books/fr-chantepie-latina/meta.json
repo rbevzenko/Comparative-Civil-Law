@@ -1,0 +1,16 @@
+{
+  "book_id": "fr-chantepie-latina",
+  "authors": [
+    "Gaël Chantepie",
+    "Mathias Latina"
+  ],
+  "title": "Le nouveau droit des obligations",
+  "edition": "3e éd.",
+  "year": 2023,
+  "publisher": "Dalloz",
+  "jurisdiction": "FR",
+  "language": "fr",
+  "isbn": null,
+  "notes": "В файле СВОЙ текстовый слой распознавания: кегль синтетический и скачет между полосами, слова разделены табуляцией, кавычки и апострофы смешаны. Сноски отделяются по положению, не по кеглю.",
+  "service_source_id": "0871f741-4e56-43cd-afc7-f6f71882318b"
+}

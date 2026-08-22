@@ -1,0 +1,47 @@
+id: lgdj-lecannu
+publisher: LGDJ / Lextenso
+jurisdiction: FR
+language: fr
+# Тело 9.8, сноски 8.0 внизу полосы, знаки 4.7/5.8, колонтитул сверху 9.0
+# без номера, колонцифра в НИЖНЕМ колонтитуле: «Première partie : Droit
+# commun des sociétés 401».
+
+units:
+  - type: "n°"
+    id_prefix: "n"
+    mode: flow
+    # «510 Double sens de la représentation. – ...», точки после номера нет.
+    pattern: '^(\d{1,4})\s+(?=[A-ZÀÂÄÉÈÊËÎÏÔÖÙÛÜÇŒÆ«“]|[a-z0-9α-ω]\s*[\)°º])'
+
+printed_page:
+  band: [0.0, 0.09]
+  patterns:
+    - '\s(\d{1,4})$'
+
+footnotes:
+  mode: font_bottom
+  body_size: 9.8
+  note_size_max: 8.4
+  bottom_band: 0.25
+
+junk:
+  header_band: 0.075
+  patterns:
+    - 'Exemplaire personnel de '
+address:
+  section:
+    mode: none
+  template: "{unit_type} {number}"
+
+statutory:
+  patterns:
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*(?:\s*(?:et|à|,)\s*\d+(?:-\d+)*)*\s*(?:C\.\s*civ\.|du Code civil)'
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*\s*C\.\s*(?:com|consom|pén|proc\.\s*civ)\.'
+    - 'L\.\s*\d{3}-\d+'
+
+cross_refs:
+  patterns:
+    - '(?:supra|infra)\s*,?\s*n[o°s]*\s*\d+(?:\s*(?:et|à|,)\s*\d+)*'
+
+citation:
+  template: "{authors}, {title}, {edition}, {publisher}, {year}, {address}"

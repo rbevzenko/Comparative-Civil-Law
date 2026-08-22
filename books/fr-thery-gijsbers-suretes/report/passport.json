@@ -1,0 +1,325 @@
+{
+  "path": "/home/user/fr-pdf/thery-gijsbers-suretes.pdf",
+  "sha256": "cd932110693a036b2b727194df1dd198c4b0b86fe844617581c6490d3cd67e95",
+  "pages": 516,
+  "sampled_pages": [
+    78,
+    87,
+    96,
+    105,
+    114,
+    123,
+    132,
+    141,
+    150,
+    159,
+    168,
+    177,
+    186,
+    195,
+    204,
+    213,
+    222,
+    231,
+    240,
+    249,
+    258,
+    267,
+    276,
+    285,
+    294,
+    303,
+    312,
+    321,
+    330,
+    339,
+    348,
+    357,
+    366,
+    375,
+    384,
+    393,
+    402,
+    411,
+    420,
+    429
+  ],
+  "schema_version": 2,
+  "outline": {
+    "present": true,
+    "entries": 186,
+    "max_depth": 6,
+    "resolved_pages": 186,
+    "section_nodes": 97,
+    "sample": [
+      {
+        "title": "Sommaire",
+        "page": 5,
+        "depth": 0
+      },
+      {
+        "title": "Principales abréviations",
+        "page": 11,
+        "depth": 0
+      },
+      {
+        "title": "Introduction",
+        "page": 13,
+        "depth": 0
+      },
+      {
+        "title": "Partie 1 - Les sûretés personnelles",
+        "page": 25,
+        "depth": 0
+      },
+      {
+        "title": "Titre 1 - Le cautionnement",
+        "page": 29,
+        "depth": 1
+      },
+      {
+        "title": "Chapitre 1 - Le contrat de cautionnement",
+        "page": 35,
+        "depth": 2
+      },
+      {
+        "title": "Section 1 - Le consentement de la caution",
+        "page": 35,
+        "depth": 3
+      },
+      {
+        "title": "§ 1 - Le consentement doit être certain",
+        "page": 36,
+        "depth": 4
+      }
+    ]
+  },
+  "links": {
+    "annots_on_sample": 25,
+    "with_destination": 25,
+    "per_page": 0.6,
+    "sample": [
+      {
+        "page": 87,
+        "rect": [
+          135,
+          77,
+          147,
+          85
+        ]
+      },
+      {
+        "page": 96,
+        "rect": [
+          195,
+          132,
+          203,
+          140
+        ]
+      },
+      {
+        "page": 96,
+        "rect": [
+          147,
+          86,
+          155,
+          94
+        ]
+      }
+    ]
+  },
+  "text_layer": {
+    "median_chars_per_page": 3073,
+    "empty_pages_share": 0.0,
+    "median_image_coverage": 0.0
+  },
+  "printed_pages": {
+    "detected_share": 0.47,
+    "offset_mode": 0,
+    "offset_stable": true,
+    "sample": [
+      {
+        "pdf_page": 78,
+        "printed": 78
+      },
+      {
+        "pdf_page": 87,
+        "printed": null
+      },
+      {
+        "pdf_page": 96,
+        "printed": 96
+      },
+      {
+        "pdf_page": 105,
+        "printed": null
+      },
+      {
+        "pdf_page": 114,
+        "printed": 114
+      },
+      {
+        "pdf_page": 123,
+        "printed": null
+      }
+    ]
+  },
+  "font_sizes": {
+    "histogram": {
+      "10.3": 67683,
+      "8.0": 31411,
+      "8.8": 8385,
+      "10.0": 3320,
+      "9.0": 1458,
+      "5.6": 746,
+      "12.0": 538,
+      "5.8": 295
+    },
+    "body": 10.3,
+    "candidates_footnote": [
+      5.6,
+      5.8,
+      8.0
+    ]
+  },
+  "footnotes": {
+    "small_font_chars": 24177,
+    "share_at_page_bottom": 0.74
+  },
+  "columns": {
+    "guess": 1,
+    "per_page_max": 1,
+    "left_edges": [
+      60,
+      67,
+      65
+    ]
+  },
+  "duplicate_pages": 0,
+  "repeated_lines": [
+    {
+      "line": "■",
+      "pages": 86
+    },
+    {
+      "line": "Exemplaire personnel de ROMAN BEVZENKO - rbevzenko@gmail.com - Diffusion interdite.",
+      "pages": 40
+    },
+    {
+      "line": "DROIT DES SÛRETÉS",
+      "pages": 19
+    },
+    {
+      "line": "e",
+      "pages": 15
+    }
+  ],
+  "units": {
+    "Rz/Rn. номер в потоке текста": {
+      "hits": 178,
+      "monotonic_share": 0.8,
+      "first": [
+        "74",
+        "14",
+        "15",
+        "16",
+        "17"
+      ]
+    },
+    "n° голый номер в начале абзаца": {
+      "hits": 60,
+      "monotonic_share": 1.0,
+      "first": [
+        "74",
+        "95",
+        "96",
+        "112",
+        "136"
+      ]
+    },
+    "§ с номером": {
+      "hits": 9,
+      "monotonic_share": 0.25,
+      "first": [
+        "3",
+        "1",
+        "1",
+        "1",
+        "1"
+      ]
+    },
+    "para. англ. раздел-пункт": {
+      "hits": 1,
+      "monotonic_share": 0.0,
+      "first": [
+        "2-06"
+      ]
+    }
+  },
+  "text_noise": {
+    "words": 20969,
+    "suspicious": 5,
+    "share": 0.0002,
+    "sample": [
+      "RLDC,",
+      "LGDJ,",
+      "LGDJ,",
+      "LGDJ,",
+      "RDBB"
+    ]
+  },
+  "margin_numbers": {
+    "found": true,
+    "body_band": {
+      "odd": [
+        85.0,
+        425.0
+      ],
+      "even": [
+        85.0,
+        425.0
+      ]
+    },
+    "left": {
+      "hits": 60,
+      "monotonic_share": 1.0,
+      "even_page_share": 0.48,
+      "first": [
+        74,
+        95,
+        96,
+        112,
+        136,
+        137
+      ]
+    },
+    "right": {
+      "hits": 20,
+      "monotonic_share": 1.0,
+      "even_page_share": 0.0,
+      "first": [
+        87,
+        105,
+        123,
+        141,
+        159,
+        177
+      ]
+    }
+  },
+  "statutory": {
+    "FR": 10
+  },
+  "verdict": {
+    "state": "пригоден",
+    "branch": "A",
+    "problems": [],
+    "notes": [
+      "В оглавлении 97 узлов с номером параграфа: адрес единицы, скорее всего, составной (§ NNN + номер), это влияет на id.",
+      "Сноски кликабельны — привязку берём из файла напрямую, без эвристик.",
+      "Сноски постраничные внизу полосы: собирать ДО нарезки на единицы.",
+      "Маргинальные номера у левого поля: 60 попаданий, монотонность 100%, доля чётных страниц 48% — кандидат на режим margin.",
+      "Повторяющийся мусор (4 шаблонов) — вычистить первым шагом."
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-staudinger-241-254",
+  "cards": 4534,
+  "profile": "staudinger-online-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 68,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Vorspann": 34,
+      "Rn": 4500
+    }
+  },
+  "coverage": {
+    "share": 0.9994,
+    "covered_chars": 6983932,
+    "book_chars": 6988465,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 1077,
+    "min": 14,
+    "max": 422088,
+    "too_short": [
+      "de-staudinger-241-254:rn:241/23",
+      "de-staudinger-241-254:rn:286/0",
+      "de-staudinger-241-254:rn:286/127",
+      "de-staudinger-241-254:rn:276/85",
+      "de-staudinger-241-254:rn:276/87",
+      "de-staudinger-241-254:rn:276/88",
+      "de-staudinger-241-254:rn:276/92",
+      "de-staudinger-241-254:rn:269/62",
+      "de-staudinger-241-254:rn:242/83"
+    ],
+    "too_long": [
+      "de-staudinger-241-254:rn:241/0",
+      "de-staudinger-241-254:rn:278/0",
+      "de-staudinger-241-254:rn:280/0",
+      "de-staudinger-241-254:rn:280/141",
+      "de-staudinger-241-254:rn:281/0",
+      "de-staudinger-241-254:rn:281/208",
+      "de-staudinger-241-254:rn:276/0",
+      "de-staudinger-241-254:rn:275/0",
+      "de-staudinger-241-254:rn:273/0",
+      "de-staudinger-241-254:rn:242/0",
+      "de-staudinger-241-254:rn:244/0",
+      "de-staudinger-241-254:rn:246/0",
+      "de-staudinger-241-254:rn:246/57",
+      "de-staudinger-241-254:rn:249/0",
+      "de-staudinger-241-254:rn:254/0"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0.0,
+    "cards_with_calls_but_no_notes": 191,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 4534
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

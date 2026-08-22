@@ -1,0 +1,132 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-mukobgb-307-310",
+  "cards": 964,
+  "profile": "beck-online-print-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9969,
+    "rows": 31,
+    "gaps": [
+      {
+        "family": "Rn.",
+        "section": "308",
+        "from": 13,
+        "to": 16,
+        "missing": 2
+      },
+      {
+        "family": "Rn.",
+        "section": "308",
+        "from": 20,
+        "to": 22,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 2,
+    "missing_total": 3,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Rn.": 964
+    }
+  },
+  "coverage": {
+    "share": 0.9994,
+    "covered_chars": 1564769,
+    "book_chars": 1565732,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 1368,
+    "min": 67,
+    "max": 62412,
+    "too_short": [
+      "de-mukobgb-307-310:rn:309 Abs. 3/8",
+      "de-mukobgb-307-310:rn:309/11"
+    ],
+    "too_long": [
+      "de-mukobgb-307-310:rn:309 Abs. 2/0"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.9,
+    "footnotes_total": 4282,
+    "unparsed_blocks": 0,
+    "per_card_median": 3.0,
+    "cards_with_calls_but_no_notes": 0,
+    "notes_without_visible_call": 3052
+  },
+  "dead_pages": {
+    "pages": [
+      15,
+      31,
+      45,
+      48,
+      55,
+      56,
+      57,
+      67,
+      82,
+      83,
+      87,
+      92,
+      93,
+      97,
+      116,
+      125,
+      148,
+      151,
+      162,
+      163,
+      164,
+      165,
+      173,
+      174,
+      175,
+      176,
+      181,
+      182,
+      183,
+      186,
+      187,
+      188,
+      189,
+      192,
+      193,
+      195,
+      199,
+      200,
+      201,
+      202
+    ],
+    "count": 157
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 964
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

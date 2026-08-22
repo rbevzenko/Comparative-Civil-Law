@@ -1,0 +1,404 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-miete-luetzenkirchen",
+  "cards": 10520,
+  "profile": "ottoschmidt-kommentar-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.958,
+    "rows": 116,
+    "gaps": [
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 3,
+        "to": 6,
+        "missing": 2
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 6,
+        "to": 11,
+        "missing": 4
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 11,
+        "to": 15,
+        "missing": 3
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 17,
+        "to": 21,
+        "missing": 3
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 22,
+        "to": 24,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 24,
+        "to": 29,
+        "missing": 4
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 32,
+        "to": 42,
+        "missing": 9
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 42,
+        "to": 46,
+        "missing": 3
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 46,
+        "to": 49,
+        "missing": 2
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 49,
+        "to": 53,
+        "missing": 3
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 55,
+        "to": 57,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 58,
+        "to": 60,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 60,
+        "to": 63,
+        "missing": 2
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 64,
+        "to": 66,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 67,
+        "to": 75,
+        "missing": 7
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 77,
+        "to": 80,
+        "missing": 2
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 82,
+        "to": 89,
+        "missing": 6
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 90,
+        "to": 98,
+        "missing": 7
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 101,
+        "to": 103,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 103,
+        "to": 106,
+        "missing": 2
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 107,
+        "to": 109,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 112,
+        "to": 114,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 122,
+        "to": 124,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 127,
+        "to": 131,
+        "missing": 3
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 131,
+        "to": 134,
+        "missing": 2
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 135,
+        "to": 137,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 146,
+        "to": 148,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 157,
+        "to": 159,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 161,
+        "to": 163,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "535",
+        "from": 163,
+        "to": 165,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 349,
+    "missing_total": 2397,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Vorspann": 19,
+      "Rz.": 10501
+    }
+  },
+  "coverage": {
+    "share": 0.9588,
+    "covered_chars": 8256133,
+    "book_chars": 8611038,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 12599,
+        "from": 1133194,
+        "to": 1145793
+      },
+      {
+        "chars": 5245,
+        "from": 63693,
+        "to": 68938
+      },
+      {
+        "chars": 4439,
+        "from": 168423,
+        "to": 172862
+      },
+      {
+        "chars": 4187,
+        "from": 2867746,
+        "to": 2871933
+      },
+      {
+        "chars": 3731,
+        "from": 36879,
+        "to": 40610
+      },
+      {
+        "chars": 3513,
+        "from": 2536387,
+        "to": 2539900
+      },
+      {
+        "chars": 3412,
+        "from": 2792552,
+        "to": 2795964
+      },
+      {
+        "chars": 3283,
+        "from": 2688095,
+        "to": 2691378
+      },
+      {
+        "chars": 3254,
+        "from": 183881,
+        "to": 187135
+      },
+      {
+        "chars": 3252,
+        "from": 8121234,
+        "to": 8124486
+      }
+    ]
+  },
+  "lengths": {
+    "median": 604,
+    "min": 7,
+    "max": 12509,
+    "too_short": [
+      "de-miete-luetzenkirchen:rz:2011",
+      "de-miete-luetzenkirchen:rz:2013",
+      "de-miete-luetzenkirchen:rz:2001",
+      "de-miete-luetzenkirchen:rz:2017",
+      "de-miete-luetzenkirchen:rz:2007",
+      "de-miete-luetzenkirchen:rz:2014",
+      "de-miete-luetzenkirchen:rz:2008",
+      "de-miete-luetzenkirchen:rz:2010",
+      "de-miete-luetzenkirchen:rz:535/207",
+      "de-miete-luetzenkirchen:rz:535/211",
+      "de-miete-luetzenkirchen:rz:535/213",
+      "de-miete-luetzenkirchen:rz:535/217",
+      "de-miete-luetzenkirchen:rz:535/218",
+      "de-miete-luetzenkirchen:rz:535/220",
+      "de-miete-luetzenkirchen:rz:535/230"
+    ],
+    "too_long": [
+      "de-miete-luetzenkirchen:rz:535/71",
+      "de-miete-luetzenkirchen:rz:535/72",
+      "de-miete-luetzenkirchen:rz:535/74",
+      "de-miete-luetzenkirchen:rz:535/162",
+      "de-miete-luetzenkirchen:rz:535/445",
+      "de-miete-luetzenkirchen:rz:535/556",
+      "de-miete-luetzenkirchen:rz:536/136",
+      "de-miete-luetzenkirchen:rz:557/41",
+      "de-miete-luetzenkirchen:rz:558b/48",
+      "de-miete-luetzenkirchen:rz:559/61",
+      "de-miete-luetzenkirchen:rz:574/65"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.73,
+    "footnotes_total": 21404,
+    "unparsed_blocks": 0,
+    "per_card_median": 1.0,
+    "cards_with_calls_but_no_notes": 55,
+    "notes_without_visible_call": 20001
+  },
+  "dead_pages": {
+    "pages": [
+      72,
+      121,
+      377,
+      378,
+      379,
+      380,
+      381,
+      382,
+      635,
+      795,
+      890,
+      914,
+      938,
+      989,
+      1006,
+      1096,
+      1916,
+      1924,
+      2022,
+      2841,
+      2898,
+      2907,
+      2908,
+      2942,
+      2955,
+      2964,
+      2990
+    ],
+    "count": 27
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 19,
+    "sample": [
+      "de-miete-luetzenkirchen:rz:2011",
+      "de-miete-luetzenkirchen:rz:1995",
+      "de-miete-luetzenkirchen:rz:2013",
+      "de-miete-luetzenkirchen:rz:2001",
+      "de-miete-luetzenkirchen:rz:2018",
+      "de-miete-luetzenkirchen:rz:2017",
+      "de-miete-luetzenkirchen:rz:2007",
+      "de-miete-luetzenkirchen:rz:1998",
+      "de-miete-luetzenkirchen:rz:2005",
+      "de-miete-luetzenkirchen:rz:2014"
+    ],
+    "depth_histogram": {
+      "0": 19,
+      "1": 10501
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 2
+  },
+  "absorbed_units": 1,
+  "stops": [
+    "Непрерывность нумерации 95.8% < 98%: пропущено номеров 2397. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

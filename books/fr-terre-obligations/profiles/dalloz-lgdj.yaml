@@ -1,0 +1,47 @@
+id: dalloz-lgdj-v1
+publisher: Dalloz / LGDJ
+jurisdiction: FR
+language: fr
+# Собран по разбору Terré, Simler, Lequette, Chénedé, Les obligations, 13e éd.
+# Перед применением к другой книге того же издательства прогнать diagnose.py
+# и сверить кегли и паттерн: цифровые линейки у издательства разные.
+# id профиля сохранён из первого поколения скилла: карточки уже нарезанных
+# книг ссылаются на него, и менять его задним числом нельзя.
+
+units:
+  - type: "n°"
+    id_prefix: "n"
+    mode: flow
+    # Номер пункта в начале абзаца, следом — заглавная буква подзаголовка.
+    # Опора на контекст справа обязательна: голое ^(\d+) поймает колонцифры,
+    # годы и номера статей.
+    pattern: '^(\d{1,4})\s+(?=[A-ZÀÂÄÉÈÊËÎÏÔÖÙÛÜÇ])'
+
+address:
+  section:
+    mode: none             # французская традиция составного адреса не знает
+  template: "{unit_type} {number}"
+
+footnotes:
+  mode: font_bottom        # font_bottom | position_bottom | links | endnotes | none
+  body_size: 13.5
+  note_size_max: 9.0
+  bottom_band: 0.70        # доля высоты полосы, ниже которой начинается блок сносок
+
+junk:
+  patterns:
+    - 'international\.scholarvox\.com'
+    - '^\d{9,}$'
+
+statutory:
+  patterns:
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*(?:\s*(?:et|à|,)\s*\d+(?:-\d+)*)*\s*(?:C\.\s*civ\.|du Code civil)'
+    - 'art(?:icle)?s?\.?\s*\d+(?:-\d+)*\s*C\.\s*(?:com|consom|pén|proc\.\s*civ)\.'
+    - 'L\.\s*\d{3}-\d+'
+
+cross_refs:
+  patterns:
+    - '(?:supra|infra)\s+n[o°s]*\s*\d+(?:\s*(?:et|à|,)\s*\d+)*'
+
+citation:
+  template: "{authors}, {title}, {edition}, {publisher}, {year}, {address}"
