@@ -81,13 +81,36 @@ CITE_SHORT = re.compile(r"^[A-Za-zÄÖÜäöü]+/[^,]{1,60}\s+[A-ZÄÖÜ][A-Za-z
 
 JUNK = [
     re.compile(r"-\s*beck-online\s*$"),
-    re.compile(r"^Kopie\s?von\s?PeacePalace", re.I),
+    # Водяной знак библиотеки приходит в двух видах — со сжатыми пробелами
+    # («KopievonPeacePalaceLibrary») и с обычными. Пропустить второй значило
+    # потерять и границу задания: строка «Zitiervorschläge» на этих полосах
+    # разорвана концом полосы, а водяной знак стоит ровно в разрыве.
+    re.compile(r"Kopie\s*von\s*Peace\s*Palace", re.I),
+    re.compile(r"beck-online\s*DIE\s*DATENBANK", re.I),
     re.compile(r"Verlag\s*C\.H\.Beck\s*GmbH"),
     re.compile(r"^©\s"),
     re.compile(r"^https?://"),
     re.compile(r"Text-und-Data-Mining"),
-    re.compile(r"^Münchener$|^Kommentar zum BGB$|^\d{1,2}\.\s*Auflage\s*\d{4}$"),
+    re.compile(r"^\d+\s*von\s*\d+\s"),
 ]
+
+# Шапка задания печати. Она приходит то тремя строками в две колонки
+# («BGB § 104 Spickhoff Münchener / Geschäftsunfähigkeit Kommentar zum BGB /
+# 10. Auflage 2025»), то одной склеенной («BGB § 241 Pflichten aus dem
+# Bachmann Münchener Kommentar zum Rn. 3, 4»). Общее у них — слово
+# «Münchener» и номер издания.
+HEAD_LINE = [
+    re.compile(r"M[üu]nchener"),
+    re.compile(r"^Kommentar zum BGB$"),
+    re.compile(r"^\d{1,2}\.\s*Auflage\s*\d{4}$"),
+]
+# Хвост шапки, перенесённый на следующую строку: короткая строка,
+# заканчивающаяся названием кодекса. Снимается ТОЛЬКО сразу за строкой шапки —
+# сама по себе такая строка бывает и концом абзаца («… gilt § 242 BGB»).
+HEAD_TAIL = re.compile(r"^.{0,50}\s(BGB|EGBGB|HGB)$")
+# Номер сноски первым словом строки. Проверять это по СЛОВАМ нельзя: на части
+# полос межсловные пробелы у́же порога, и вся строка приходит одним словом.
+HANG = re.compile(r"^(\d{1,3})\s+(\S.*)$")
 
 NUM_ONLY = re.compile(r"\d{1,4}")
 
@@ -239,7 +262,18 @@ def split_jobs(lines):
 
 
 def drop_junk(lines):
-    return [ln for ln in lines if not any(rx.search(ln["text"]) for rx in JUNK)]
+    out, prev_head = [], False
+    for ln in lines:
+        t = ln["text"]
+        if any(rx.search(t) for rx in JUNK):
+            continue
+        head = any(rx.search(t) for rx in HEAD_LINE)
+        if head or (prev_head and HEAD_TAIL.match(t)):
+            prev_head = True
+            continue
+        prev_head = False
+        out.append(ln)
+    return out
 
 
 def split_apparatus(lines):
@@ -249,19 +283,67 @@ def split_apparatus(lines):
     строка с отступом. Отступ обязателен: без него под правило попадает
     верхний индекс, оторвавшийся от своей строки в теле.
     """
+    left, size = body_left(lines), body_size(lines)
     anchors = []
     for k, ln in enumerate(lines):
-        if not NUM_ONLY.fullmatch(ln["text"]):
+        # Вид первый: номер сноски вынесен отдельной строкой мелким кеглем,
+        # текст сноски идёт следующей строкой с отступом.
+        if NUM_ONLY.fullmatch(ln["text"]) and (ln.get("size") or 99) <= 9.0:
+            nxt = lines[k + 1] if k + 1 < len(lines) else None
+            if nxt is not None and nxt["x0"] >= ln["x0"] + 8 and (nxt.get("size") or 0) >= 9.5:
+                anchors.append(k)
             continue
-        if (ln.get("size") or 99) > 9.0:
+        # Вид второй: номер стоит ПЕРВЫМ словом строки, левее полосы набора,
+        # и весь аппарат набран кеглем мельче тела. Так свёрстаны короткие
+        # распечатки: у § 241 тело идёт с x0 96.4 кеглем 12.0, а аппарат — с
+        # 70.2 кеглем 11.0. Без этого правила аппарат целиком остаётся в
+        # тексте карточки, и сносок у неё не оказывается вовсе: у § 241 так
+        # вышло 260 карточек и ни одной сноски.
+        if left is None or size is None:
             continue
-        nxt = lines[k + 1] if k + 1 < len(lines) else None
-        if nxt is not None and nxt["x0"] >= ln["x0"] + 8 and (nxt.get("size") or 0) >= 9.5:
+        if not HANG.match(ln["text"]):
+            continue
+        if ln["x0"] <= left - 8 and (ln.get("size") or 99) <= size - 0.5:
             anchors.append(k)
     if not anchors:
         return lines, []
     start = anchors[0]
     return lines[:start], lines[start:]
+
+
+def unhang_notes(note_lines, left):
+    """Развесить номера сносок, стоящие первым словом строки.
+
+    `P.parse_notes` умеет два вида: «12. Текст» и голое число отдельной
+    строкой. Третий вид — «12 Текст», где номер просто первое слово, — он не
+    узнаёт, и весь аппарат уходит в одну безымянную сноску. Здесь такая
+    строка разрезается на две: число и остаток. Признак — тот же висячий
+    отступ, по которому аппарат и опознан.
+    """
+    if left is None:
+        return note_lines
+    out = []
+    for ln in note_lines:
+        m = HANG.match(ln["text"])
+        if m and ln["x0"] <= left - 8:
+            out.append(dict(ln, text=m.group(1)))
+            out.append(dict(ln, text=m.group(2)))
+        else:
+            out.append(ln)
+    return out
+
+
+def body_left(lines):
+    """Левый край полосы набора — по длинным строкам без висячего номера."""
+    lefts = [ln["x0"] for ln in lines
+             if len(ln["text"]) > 40 and not HANG.match(ln["text"])]
+    return statistics.median(lefts) if len(lefts) >= 4 else None
+
+
+def body_size(lines):
+    """Кегль тела — по длинным строкам. Аппарат набран мельче."""
+    sizes = [ln["size"] for ln in lines if len(ln["text"]) > 40 and ln.get("size")]
+    return statistics.median(sizes) if len(sizes) >= 4 else None
 
 
 def body_edge(lines):
@@ -357,7 +439,9 @@ def job_units(job, warn):
     напечатанных номеров даёт одну карточку на весь диапазон. Последнее —
     потеря дробности, и она считается.
     """
-    body, notes = split_apparatus(drop_junk(job["lines"]))
+    clean = drop_junk(job["lines"])
+    body, notes = split_apparatus(clean)
+    notes = unhang_notes(notes, body_left(clean))
     cite = job["cite"]
     pull_margin_numbers(body)
     # Номер пишется НА строку, а не отдаётся списком индексов: вклейка знаков
