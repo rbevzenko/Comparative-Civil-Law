@@ -74,15 +74,26 @@ def main():
             runs = []
             for i in idxs:
                 n = cards[i]["number"]
-                if runs and n - cards[runs[-1][-1]]["number"] <= 10:
+                # Шаг должен быть ПОЛОЖИТЕЛЬНЫМ: без этого условия падающая
+                # последовательность самозванцев склеивалась в одну длинную
+                # цепочку и проходила проверку на одиночество. У Lützenkirchen
+                # к § 536 таблица снижения платы дала подряд 6357, 5370, 2383,
+                # 2384 — цепочку из четырёх, и все четыре уцелели, растянув
+                # ожидаемый ряд параграфа с 386 номеров до 6357.
+                prev = cards[runs[-1][-1]]["number"] if runs else None
+                if prev is not None and 0 <= n - prev <= 10:
                     runs[-1].append(i)
                 else:
                     runs.append([i])
+            # Точка отсчёта — последняя УЦЕЛЕВШАЯ цепочка, а не предыдущая:
+            # иначе выброшенный самозванец сам становится мерой для следующего
+            # и прикрывает его.
+            kept = runs[0]
             for k in range(1, len(runs)):
                 run = runs[k]
-                prev_last = cards[runs[k - 1][-1]]["number"]
+                prev_last = cards[kept[-1]]["number"]
                 if len(run) <= 2 and cards[run[0]]["number"] > prev_last + a.max_step:
-                    host = runs[k - 1][-1]
+                    host = kept[-1]
                     for i in run:
                         h, c = cards[host], cards[i]
                         h["text"] = h["text"] + "\n" + c["text"]
@@ -92,6 +103,8 @@ def main():
                         drop.add(i)
                         print(f'  {os.path.basename(book)}: § {sec} Rn. {c["number"]} '
                               f'→ влит в Rn. {h["number"]}')
+                else:
+                    kept = run
         if not drop:
             continue
         total += len(drop)

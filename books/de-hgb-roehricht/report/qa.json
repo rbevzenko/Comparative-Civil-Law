@@ -1,0 +1,415 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-hgb-roehricht",
+  "cards": 6676,
+  "profile": "ottoschmidt-hgb-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9735,
+    "rows": 248,
+    "gaps": [
+      {
+        "family": "Rz.",
+        "section": "5",
+        "from": 4,
+        "to": 8,
+        "missing": 3
+      },
+      {
+        "family": "Rz.",
+        "section": "5",
+        "from": 9,
+        "to": 12,
+        "missing": 2
+      },
+      {
+        "family": "Rz.",
+        "section": "5",
+        "from": 14,
+        "to": 21,
+        "missing": 6
+      },
+      {
+        "family": "Rz.",
+        "section": "5",
+        "from": 22,
+        "to": 27,
+        "missing": 4
+      },
+      {
+        "family": "Rz.",
+        "section": "5",
+        "from": 30,
+        "to": 38,
+        "missing": 7
+      },
+      {
+        "family": "Rz.",
+        "section": "5",
+        "from": 1,
+        "to": 5,
+        "missing": 3
+      },
+      {
+        "family": "Rz.",
+        "section": "5",
+        "from": 7,
+        "to": 10,
+        "missing": 2
+      },
+      {
+        "family": "Rz.",
+        "section": "5",
+        "from": 11,
+        "to": 15,
+        "missing": 3
+      },
+      {
+        "family": "Rz.",
+        "section": "5",
+        "from": 20,
+        "to": 23,
+        "missing": 2
+      },
+      {
+        "family": "Rz.",
+        "section": "5",
+        "from": 26,
+        "to": 31,
+        "missing": 4
+      },
+      {
+        "family": "Rz.",
+        "section": "5",
+        "from": 37,
+        "to": 39,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "8",
+        "from": 42,
+        "to": 44,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "12",
+        "from": 2,
+        "to": 4,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "12",
+        "from": 4,
+        "to": 6,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "12",
+        "from": 7,
+        "to": 9,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "12",
+        "from": 3,
+        "to": 5,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "12",
+        "from": 5,
+        "to": 8,
+        "missing": 2
+      },
+      {
+        "family": "Rz.",
+        "section": "19",
+        "from": 3,
+        "to": 33,
+        "missing": 29
+      },
+      {
+        "family": "Rz.",
+        "section": "19",
+        "from": 50,
+        "to": 54,
+        "missing": 3
+      },
+      {
+        "family": "Rz.",
+        "section": "24",
+        "from": 2,
+        "to": 6,
+        "missing": 3
+      },
+      {
+        "family": "Rz.",
+        "section": "26",
+        "from": 2,
+        "to": 9,
+        "missing": 6
+      },
+      {
+        "family": "Rz.",
+        "section": "37a",
+        "from": 1,
+        "to": 4,
+        "missing": 2
+      },
+      {
+        "family": "Rz.",
+        "section": "37a",
+        "from": 4,
+        "to": 6,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "37a",
+        "from": 10,
+        "to": 13,
+        "missing": 2
+      },
+      {
+        "family": "Rz.",
+        "section": "37a",
+        "from": 13,
+        "to": 15,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "37a",
+        "from": 16,
+        "to": 18,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "37a",
+        "from": 18,
+        "to": 20,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "37a",
+        "from": 20,
+        "to": 22,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "37a",
+        "from": 3,
+        "to": 5,
+        "missing": 1
+      },
+      {
+        "family": "Rz.",
+        "section": "37a",
+        "from": 5,
+        "to": 11,
+        "missing": 5
+      }
+    ],
+    "gaps_total": 292,
+    "missing_total": 1579,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Vorspann": 63,
+      "Rz.": 6613
+    }
+  },
+  "coverage": {
+    "share": 0.8528,
+    "covered_chars": 6441330,
+    "book_chars": 7553277,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 55338,
+        "from": 5509951,
+        "to": 5565289
+      },
+      {
+        "chars": 47863,
+        "from": 7188688,
+        "to": 7236551
+      },
+      {
+        "chars": 32511,
+        "from": 6852037,
+        "to": 6884548
+      },
+      {
+        "chars": 27309,
+        "from": 7111342,
+        "to": 7138651
+      },
+      {
+        "chars": 27298,
+        "from": 7488594,
+        "to": 7515892
+      },
+      {
+        "chars": 23061,
+        "from": 6915162,
+        "to": 6938223
+      },
+      {
+        "chars": 22728,
+        "from": 6694946,
+        "to": 6717674
+      },
+      {
+        "chars": 22126,
+        "from": 6752610,
+        "to": 6774736
+      },
+      {
+        "chars": 21441,
+        "from": 5955399,
+        "to": 5976840
+      },
+      {
+        "chars": 21110,
+        "from": 6519595,
+        "to": 6540705
+      }
+    ]
+  },
+  "lengths": {
+    "median": 685,
+    "min": 24,
+    "max": 29233,
+    "too_short": [
+      "de-hgb-roehricht:rz:1/40",
+      "de-hgb-roehricht:rz:12/17",
+      "de-hgb-roehricht:rz:13d/8",
+      "de-hgb-roehricht:rz:13d/16",
+      "de-hgb-roehricht:rz:13e/8",
+      "de-hgb-roehricht:rz:13f/11",
+      "de-hgb-roehricht:rz:13g/2",
+      "de-hgb-roehricht:rz:13g/8",
+      "de-hgb-roehricht:rz:13g/11",
+      "de-hgb-roehricht:rz:19/50",
+      "de-hgb-roehricht:rz:22/23",
+      "de-hgb-roehricht:rz:26/2",
+      "de-hgb-roehricht:rz:26/15",
+      "de-hgb-roehricht:rz:29/7",
+      "de-hgb-roehricht:rz:48/7"
+    ],
+    "too_long": [
+      "de-hgb-roehricht:rz:2019",
+      "de-hgb-roehricht:rz:105/33",
+      "de-hgb-roehricht:rz:109/15",
+      "de-hgb-roehricht:rz:119/12",
+      "de-hgb-roehricht:rz:406/17",
+      "de-hgb-roehricht:rz:406/109",
+      "de-hgb-roehricht:rz:406/5",
+      "de-hgb-roehricht:rz:406/42"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.7,
+    "footnotes_total": 15014,
+    "unparsed_blocks": 0,
+    "per_card_median": 1.0,
+    "cards_with_calls_but_no_notes": 125,
+    "notes_without_visible_call": 12538
+  },
+  "dead_pages": {
+    "pages": [
+      141,
+      767,
+      770,
+      771,
+      1882,
+      1883,
+      1889,
+      1890,
+      1891,
+      1892,
+      1894,
+      1895,
+      1896,
+      1897,
+      1898,
+      1899,
+      1900,
+      1901,
+      1902,
+      1903,
+      1904,
+      1905,
+      1906,
+      1907,
+      1908,
+      1909,
+      1910,
+      1911,
+      1912,
+      1917,
+      1956,
+      1957,
+      1961,
+      1962,
+      1972,
+      1978,
+      1981,
+      1990,
+      1991,
+      1994
+    ],
+    "count": 193
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 63,
+    "sample": [
+      "de-hgb-roehricht:rz:2015",
+      "de-hgb-roehricht:rz:1975",
+      "de-hgb-roehricht:rz:2013",
+      "de-hgb-roehricht:rz:2019",
+      "de-hgb-roehricht:rz:1",
+      "de-hgb-roehricht:rz:2",
+      "de-hgb-roehricht:rz:3",
+      "de-hgb-roehricht:rz:4",
+      "de-hgb-roehricht:rz:5",
+      "de-hgb-roehricht:rz:6"
+    ],
+    "depth_histogram": {
+      "0": 63,
+      "1": 6613
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 1,
+  "stops": [
+    "Непрерывность нумерации 97.4% < 98%: пропущено номеров 1579. Паттерн местами не сработал, и эти куски книги в корпус не попали.",
+    "Покрытие текста 85.3% < 90%: часть книги не попала ни в одну карточку."
+  ]
+}

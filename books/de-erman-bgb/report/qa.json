@@ -1,0 +1,410 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-erman-bgb",
+  "cards": 33909,
+  "profile": "erman-bgb-17-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9722,
+    "rows": 2476,
+    "gaps": [
+      {
+        "family": "Rn",
+        "section": "1",
+        "from": 1,
+        "to": 6,
+        "missing": 4
+      },
+      {
+        "family": "Rn",
+        "section": "1",
+        "from": 2,
+        "to": 5,
+        "missing": 2
+      },
+      {
+        "family": "Rn",
+        "section": "1",
+        "from": 3,
+        "to": 10,
+        "missing": 6
+      },
+      {
+        "family": "Rn",
+        "section": "1",
+        "from": 10,
+        "to": 12,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "1",
+        "from": 12,
+        "to": 14,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "1",
+        "from": 9,
+        "to": 11,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "1",
+        "from": 11,
+        "to": 13,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "7",
+        "from": 7,
+        "to": 12,
+        "missing": 4
+      },
+      {
+        "family": "Rn",
+        "section": "7",
+        "from": 10,
+        "to": 13,
+        "missing": 2
+      },
+      {
+        "family": "Rn",
+        "section": "7",
+        "from": 6,
+        "to": 8,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "7",
+        "from": 8,
+        "to": 11,
+        "missing": 2
+      },
+      {
+        "family": "Rn",
+        "section": "11",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "11",
+        "from": 6,
+        "to": 8,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "11",
+        "from": 2,
+        "to": 7,
+        "missing": 4
+      },
+      {
+        "family": "Rn",
+        "section": "11",
+        "from": 7,
+        "to": 10,
+        "missing": 2
+      },
+      {
+        "family": "Rn",
+        "section": "12",
+        "from": 10,
+        "to": 12,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "12",
+        "from": 12,
+        "to": 14,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "12",
+        "from": 15,
+        "to": 17,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "12",
+        "from": 17,
+        "to": 19,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "12",
+        "from": 19,
+        "to": 22,
+        "missing": 2
+      },
+      {
+        "family": "Rn",
+        "section": "12",
+        "from": 23,
+        "to": 26,
+        "missing": 2
+      },
+      {
+        "family": "Rn",
+        "section": "12",
+        "from": 31,
+        "to": 33,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "12",
+        "from": 6,
+        "to": 8,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "12",
+        "from": 8,
+        "to": 11,
+        "missing": 2
+      },
+      {
+        "family": "Rn",
+        "section": "12",
+        "from": 11,
+        "to": 16,
+        "missing": 4
+      },
+      {
+        "family": "Rn",
+        "section": "12",
+        "from": 16,
+        "to": 18,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "12",
+        "from": 18,
+        "to": 20,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "12",
+        "from": 21,
+        "to": 24,
+        "missing": 2
+      },
+      {
+        "family": "Rn",
+        "section": "12",
+        "from": 25,
+        "to": 32,
+        "missing": 6
+      },
+      {
+        "family": "Rn",
+        "section": "12",
+        "from": 32,
+        "to": 35,
+        "missing": 2
+      }
+    ],
+    "gaps_total": 804,
+    "missing_total": 1803,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Vorspann": 283,
+      "Rn": 33626
+    }
+  },
+  "coverage": {
+    "share": 0.9002,
+    "covered_chars": 43180521,
+    "book_chars": 47968908,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 319757,
+        "from": 45750078,
+        "to": 46069835
+      },
+      {
+        "chars": 286890,
+        "from": 46666330,
+        "to": 46953220
+      },
+      {
+        "chars": 148398,
+        "from": 47021889,
+        "to": 47170287
+      },
+      {
+        "chars": 122313,
+        "from": 45231007,
+        "to": 45353320
+      },
+      {
+        "chars": 92023,
+        "from": 45444619,
+        "to": 45536642
+      },
+      {
+        "chars": 91006,
+        "from": 43190458,
+        "to": 43281464
+      },
+      {
+        "chars": 84178,
+        "from": 45356694,
+        "to": 45440872
+      },
+      {
+        "chars": 83670,
+        "from": 45116861,
+        "to": 45200531
+      },
+      {
+        "chars": 74053,
+        "from": 44973971,
+        "to": 45048024
+      },
+      {
+        "chars": 70708,
+        "from": 45675944,
+        "to": 45746652
+      }
+    ]
+  },
+  "lengths": {
+    "median": 949,
+    "min": 17,
+    "max": 733119,
+    "too_short": [
+      "de-erman-bgb:rn:1476",
+      "de-erman-bgb:rn:2373",
+      "de-erman-bgb:rn:2381",
+      "de-erman-bgb:rn:2550",
+      "de-erman-bgb:rn:2683",
+      "de-erman-bgb:rn:2704",
+      "de-erman-bgb:rn:2715",
+      "de-erman-bgb:rn:3190",
+      "de-erman-bgb:rn:3328",
+      "de-erman-bgb:rn:4619",
+      "de-erman-bgb:rn:4790",
+      "de-erman-bgb:rn:5164",
+      "de-erman-bgb:rn:5246",
+      "de-erman-bgb:rn:5326",
+      "de-erman-bgb:rn:5369"
+    ],
+    "too_long": [
+      "de-erman-bgb:rn:1",
+      "de-erman-bgb:rn:12/89",
+      "de-erman-bgb:rn:12/90",
+      "de-erman-bgb:rn:12/166",
+      "de-erman-bgb:rn:12/277",
+      "de-erman-bgb:rn:199/18",
+      "de-erman-bgb:rn:227/7",
+      "de-erman-bgb:rn:242/127",
+      "de-erman-bgb:rn:254/37",
+      "de-erman-bgb:rn:305c/14",
+      "de-erman-bgb:rn:311c/16",
+      "de-erman-bgb:rn:312d/11",
+      "de-erman-bgb:rn:315/19",
+      "de-erman-bgb:rn:326/49",
+      "de-erman-bgb:rn:387/19"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0,
+    "cards_with_calls_but_no_notes": 1400,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [
+      64,
+      66,
+      67,
+      69,
+      81,
+      200,
+      217,
+      245,
+      262,
+      856,
+      2708,
+      4320,
+      4927,
+      4928,
+      5252,
+      5253,
+      5256,
+      5259,
+      5260,
+      5261,
+      5262,
+      5263,
+      5264,
+      5265,
+      5421,
+      5435,
+      5436,
+      5460,
+      5464,
+      5467,
+      5468,
+      5474,
+      5554,
+      5555,
+      6297,
+      6298,
+      6300,
+      6304,
+      6310,
+      6312
+    ],
+    "count": 434
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 283,
+      "2": 33626
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 14
+  },
+  "absorbed_units": 4,
+  "stops": [
+    "Непрерывность нумерации 97.2% < 98%: пропущено номеров 1803. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

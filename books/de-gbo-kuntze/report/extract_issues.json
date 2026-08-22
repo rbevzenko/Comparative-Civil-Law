@@ -1,0 +1,90 @@
+{
+  "number_issues": [
+    {
+      "raw": "902",
+      "action": "repaired_by_neighbours",
+      "to": 903,
+      "expected": 903,
+      "line": 306,
+      "evidence": "предыдущий 902, следующий 904"
+    },
+    {
+      "raw": "1048",
+      "action": "repaired_by_neighbours",
+      "to": 1047,
+      "expected": 1047,
+      "line": 358,
+      "evidence": "предыдущий 1046, следующий 1048"
+    },
+    {
+      "raw": "1057",
+      "action": "repaired_by_neighbours",
+      "to": 1056,
+      "expected": 1056,
+      "line": 369,
+      "evidence": "предыдущий 1055, следующий 1057"
+    },
+    {
+      "raw": "1140",
+      "action": "repaired_by_neighbours",
+      "to": 1141,
+      "expected": 1141,
+      "line": 406,
+      "evidence": "предыдущий 1140, следующий 1142"
+    },
+    {
+      "raw": "1215",
+      "action": "repaired_by_neighbours",
+      "to": 1216,
+      "expected": 1216,
+      "line": 485,
+      "evidence": "предыдущий 1215, следующий 1217"
+    },
+    {
+      "raw": "0",
+      "action": "repaired_by_neighbours",
+      "to": 8,
+      "expected": 8,
+      "line": 11082,
+      "evidence": "предыдущий 7, следующий 9"
+    },
+    {
+      "raw": "66",
+      "action": "repaired_by_neighbours",
+      "to": 69,
+      "expected": 69,
+      "line": 50850,
+      "evidence": "предыдущий 68, следующий 70"
+    },
+    {
+      "raw": "64",
+      "action": "repaired_by_neighbours",
+      "to": 67,
+      "expected": 67,
+      "line": 50854,
+      "evidence": "предыдущий 66, следующий 68"
+    },
+    {
+      "raw": "75",
+      "action": "repaired_by_neighbours",
+      "to": 65,
+      "expected": 65,
+      "line": 50869,
+      "evidence": "предыдущий 64, следующий 66"
+    }
+  ],
+  "absorbed_units": 0,
+  "sections_found": 0,
+  "toc_entries": 0,
+  "toc_anchored_to_line": 0,
+  "toc_page_only": 0,
+  "pages_without_lines": [
+    2,
+    10,
+    18,
+    28,
+    122
+  ],
+  "profile": "degruyter-guttentag-v1",
+  "method": "digital"
+}
