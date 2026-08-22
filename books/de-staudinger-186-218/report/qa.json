@@ -1,0 +1,148 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-staudinger-186-218",
+  "cards": 995,
+  "profile": "staudinger-online-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.991,
+    "rows": 66,
+    "gaps": [
+      {
+        "family": "Rn",
+        "section": "197",
+        "from": 22,
+        "to": 32,
+        "missing": 9
+      },
+      {
+        "family": "Rn",
+        "section": "212",
+        "from": 2,
+        "to": 4,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "212",
+        "from": 4,
+        "to": 7,
+        "missing": 2
+      },
+      {
+        "family": "Rn",
+        "section": "212",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "212",
+        "from": 3,
+        "to": 5,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 5,
+    "missing_total": 14,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Vorspann": 33,
+      "Rn": 962
+    }
+  },
+  "coverage": {
+    "share": 0.9951,
+    "covered_chars": 1448163,
+    "book_chars": 1455297,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 1962,
+        "from": 1239275,
+        "to": 1241237
+      },
+      {
+        "chars": 1128,
+        "from": 1235425,
+        "to": 1236553
+      },
+      {
+        "chars": 1088,
+        "from": 1313748,
+        "to": 1314836
+      },
+      {
+        "chars": 1016,
+        "from": 1308120,
+        "to": 1309136
+      },
+      {
+        "chars": 555,
+        "from": 1237218,
+        "to": 1237773
+      }
+    ]
+  },
+  "lengths": {
+    "median": 1065,
+    "min": 46,
+    "max": 32950,
+    "too_short": [
+      "de-staudinger-186-218:rn:193/25",
+      "de-staudinger-186-218:rn:194/24",
+      "de-staudinger-186-218:rn:194/27",
+      "de-staudinger-186-218:rn:196/14",
+      "de-staudinger-186-218:rn:197/33",
+      "de-staudinger-186-218:rn:197/44",
+      "de-staudinger-186-218:rn:204/42",
+      "de-staudinger-186-218:rn:206/25",
+      "de-staudinger-186-218:rn:214/30"
+    ],
+    "too_long": [
+      "de-staudinger-186-218:rn:187/6",
+      "de-staudinger-186-218:rn:199/0",
+      "de-staudinger-186-218:rn:204/0"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0,
+    "cards_with_calls_but_no_notes": 105,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 995
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

@@ -1,0 +1,84 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-staudinger-387-397",
+  "cards": 1156,
+  "profile": "staudinger-online-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 22,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Vorspann": 11,
+      "Rn": 1145
+    }
+  },
+  "coverage": {
+    "share": 0.999,
+    "covered_chars": 1152077,
+    "book_chars": 1153232,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 853,
+    "min": 42,
+    "max": 9788,
+    "too_short": [
+      "de-staudinger-387-397:rn:387/182",
+      "de-staudinger-387-397:rn:388/2",
+      "de-staudinger-387-397:rn:389/34",
+      "de-staudinger-387-397:rn:390/17",
+      "de-staudinger-387-397:rn:392/9",
+      "de-staudinger-387-397:rn:394/81",
+      "de-staudinger-387-397:rn:396/10",
+      "de-staudinger-387-397:rn:397/49",
+      "de-staudinger-387-397:rn:397/173",
+      "de-staudinger-387-397:rn:397/197",
+      "de-staudinger-387-397:rn:397/319"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0.0,
+    "cards_with_calls_but_no_notes": 95,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 1156
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

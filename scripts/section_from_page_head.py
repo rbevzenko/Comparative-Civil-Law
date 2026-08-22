@@ -82,7 +82,11 @@ def main():
                 if ln["top"] <= h * a.head_band:
                     m = head_rx.search(t)
                     if m:
-                        sec_by_page[pno] = m.group(1)
+                        # Групп в образце может быть несколько: у тома есть и
+                        # параграфы, и Einleitung без номера вовсе.
+                        val = next((g for g in m.groups() if g), None)
+                        if val:
+                            sec_by_page[pno] = val
                 elif ln["bottom"] >= h * (1 - a.foot_band):
                     m = foot_rx.match(t)
                     if m:

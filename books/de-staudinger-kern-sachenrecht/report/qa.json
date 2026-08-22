@@ -1,0 +1,84 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-staudinger-kern-sachenrecht",
+  "cards": 43,
+  "profile": "staudinger-online-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.4574,
+    "rows": 4,
+    "gaps": [
+      {
+        "family": "Rn",
+        "section": "90",
+        "from": 7,
+        "to": 59,
+        "missing": 51
+      }
+    ],
+    "gaps_total": 1,
+    "missing_total": 51,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Vorspann": 2,
+      "Rn": 41
+    }
+  },
+  "coverage": {
+    "share": 0.9992,
+    "covered_chars": 49710,
+    "book_chars": 49752,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 995,
+    "min": 31,
+    "max": 3668,
+    "too_short": [
+      "de-staudinger-kern-sachenrecht:rn:Vorbem 90/0"
+    ],
+    "too_long": []
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0,
+    "cards_with_calls_but_no_notes": 0,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 43
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 45.7% < 98%: пропущено номеров 51. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}
