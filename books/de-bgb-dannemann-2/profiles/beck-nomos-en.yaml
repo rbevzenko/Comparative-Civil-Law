@@ -1,0 +1,48 @@
+id: beck-nomos-en-v1
+publisher: C.H. Beck / Nomos / Hart
+jurisdiction: DE
+language: en
+# Англоязычный комментарий к ГГУ (Бек/Номос/Харт). Полоса 476.3×703.1, тело
+# кеглем 9.06, аппарат сносок кеглем 8.00 с номером первым словом, номер mn.
+# висит на ВНЕШНЕМ поле. Колонтитул «Time off for search for employment 1–2
+# § 629» несёт параграф и охваченные номера; в подвале «Sagan/Seiwerth 1145» —
+# комментатор и колонцифра, на чётной полосе в обратном порядке.
+# Заголовок параграфа стоит в теле двумя колонками сразу — немецкий текст
+# статьи и английский перевод, — и оба начинаются с «§ 629»: отсюда строка
+# «§ 629 § 629» кеглем 11.19.
+
+units:
+  - type: "mn."
+    id_prefix: "mn"
+    mode: margin
+
+margin:
+  scope: page
+  pad: 0.0
+
+footnotes:
+  mode: font_bottom
+  bottom_band: 0.66
+  note_size_max: 8.2
+
+printed_page:
+  # Нижнее окно между низом последней сноски (0.892 высоты) и подписью
+  # полосы (0.931).
+  band: [0.0, 0.09]
+  max_chars: 40
+  patterns:
+    - '^[A-ZÄÖÜ][A-Za-zÄÖÜäöüß/.\- ]{2,30}\s(\d{1,4})$'
+    - '^(\d{1,4})\s[A-ZÄÖÜ][A-Za-zÄÖÜäöüß/.\- ]{2,30}$'
+
+junk:
+  header_band: 0.078
+
+address:
+  section:
+    mode: pattern
+    pattern: '^§\s?(\d+[a-z]?)\b'
+    min_size: 10.5
+    anchor: start
+
+citation:
+  template: "{cite_prefix} {address}"
