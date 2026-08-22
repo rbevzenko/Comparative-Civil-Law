@@ -1,0 +1,181 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-inso-jaeger-5-2",
+  "cards": 55,
+  "profile": "degruyter-grosskommentar-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 12,
+    "gaps": [
+      {
+        "family": "Rdn.",
+        "section": "159",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "161",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "162",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "165",
+        "from": 3,
+        "to": 5,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "166",
+        "from": 1,
+        "to": 4,
+        "missing": 2
+      },
+      {
+        "family": "Rdn.",
+        "section": "166",
+        "from": 4,
+        "to": 6,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "168",
+        "from": 2,
+        "to": 4,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "170",
+        "from": 3,
+        "to": 6,
+        "missing": 2
+      },
+      {
+        "family": "Rdn.",
+        "section": "170",
+        "from": 2,
+        "to": 4,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 9,
+    "missing_total": 11,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Rdn.": 55
+    }
+  },
+  "coverage": {
+    "share": 0.917,
+    "covered_chars": 2728842,
+    "book_chars": 2975842,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 917,
+        "from": 296763,
+        "to": 297680
+      },
+      {
+        "chars": 787,
+        "from": 955867,
+        "to": 956654
+      },
+      {
+        "chars": 568,
+        "from": 1503375,
+        "to": 1503943
+      }
+    ]
+  },
+  "lengths": {
+    "median": 220,
+    "min": 22,
+    "max": 810421,
+    "too_short": [
+      "de-inso-jaeger-5-2:rdn:160/3",
+      "de-inso-jaeger-5-2:rdn:160/4",
+      "de-inso-jaeger-5-2:rdn:160/5",
+      "de-inso-jaeger-5-2:rdn:160/6",
+      "de-inso-jaeger-5-2:rdn:161/5",
+      "de-inso-jaeger-5-2:rdn:161/6",
+      "de-inso-jaeger-5-2:rdn:162/3",
+      "de-inso-jaeger-5-2:rdn:165/3",
+      "de-inso-jaeger-5-2:rdn:166/7",
+      "de-inso-jaeger-5-2:rdn:170/6",
+      "de-inso-jaeger-5-2:rdn:170/7",
+      "de-inso-jaeger-5-2:rdn:170/8",
+      "de-inso-jaeger-5-2:rdn:171/1",
+      "de-inso-jaeger-5-2:rdn:172/4",
+      "de-inso-jaeger-5-2:rdn:173/3"
+    ],
+    "too_long": [
+      "de-inso-jaeger-5-2:rdn:158/27",
+      "de-inso-jaeger-5-2:rdn:159/3",
+      "de-inso-jaeger-5-2:rdn:159/2",
+      "de-inso-jaeger-5-2:rdn:160/2",
+      "de-inso-jaeger-5-2:rdn:161/2",
+      "de-inso-jaeger-5-2:rdn:162/2",
+      "de-inso-jaeger-5-2:rdn:165/5",
+      "de-inso-jaeger-5-2:rdn:166/3",
+      "de-inso-jaeger-5-2:rdn:168/3",
+      "de-inso-jaeger-5-2:rdn:170/5",
+      "de-inso-jaeger-5-2:rdn:171/3",
+      "de-inso-jaeger-5-2:rdn:172/3",
+      "de-inso-jaeger-5-2:rdn:173/4"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.0,
+    "footnotes_total": 0,
+    "unparsed_blocks": 0,
+    "per_card_median": 0,
+    "cards_with_calls_but_no_notes": 3,
+    "notes_without_visible_call": 0
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "2": 55
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

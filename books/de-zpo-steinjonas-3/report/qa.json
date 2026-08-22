@@ -1,0 +1,450 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-zpo-steinjonas-3",
+  "cards": 3368,
+  "profile": "degruyter-grosskommentar-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.607,
+    "rows": 116,
+    "gaps": [
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 1,
+        "to": 22,
+        "missing": 20
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 22,
+        "to": 62,
+        "missing": 39
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 62,
+        "to": 91,
+        "missing": 28
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 91,
+        "to": 113,
+        "missing": 21
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 113,
+        "to": 136,
+        "missing": 22
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 136,
+        "to": 240,
+        "missing": 103
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 240,
+        "to": 243,
+        "missing": 2
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 243,
+        "to": 285,
+        "missing": 41
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 285,
+        "to": 304,
+        "missing": 18
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 304,
+        "to": 348,
+        "missing": 43
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 348,
+        "to": 352,
+        "missing": 3
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 352,
+        "to": 354,
+        "missing": 1
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 354,
+        "to": 356,
+        "missing": 1
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 356,
+        "to": 369,
+        "missing": 12
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 369,
+        "to": 930,
+        "missing": 560
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 930,
+        "to": 953,
+        "missing": 22
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 953,
+        "to": 997,
+        "missing": 43
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 997,
+        "to": 1007,
+        "missing": 9
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 1007,
+        "to": 1127,
+        "missing": 119
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 1127,
+        "to": 1142,
+        "missing": 14
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 1142,
+        "to": 1165,
+        "missing": 22
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 1165,
+        "to": 1173,
+        "missing": 7
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 1174,
+        "to": 1181,
+        "missing": 6
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 1182,
+        "to": 1188,
+        "missing": 5
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 1188,
+        "to": 1192,
+        "missing": 3
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 1192,
+        "to": 2002,
+        "missing": 809
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 1994,
+        "to": 2021,
+        "missing": 26
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 1995,
+        "to": 2006,
+        "missing": 10
+      },
+      {
+        "family": "Vorspann",
+        "section": null,
+        "from": 1948,
+        "to": 1991,
+        "missing": 42
+      },
+      {
+        "family": "Rdn.",
+        "section": "139",
+        "from": 153,
+        "to": 155,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 96,
+    "missing_total": 2742,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Vorspann": 35,
+      "Rdn.": 3333
+    }
+  },
+  "coverage": {
+    "share": 0.9749,
+    "covered_chars": 3082713,
+    "book_chars": 3162237,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 10661,
+        "from": 1910572,
+        "to": 1921233
+      },
+      {
+        "chars": 4828,
+        "from": 1811339,
+        "to": 1816167
+      },
+      {
+        "chars": 2382,
+        "from": 2052569,
+        "to": 2054951
+      },
+      {
+        "chars": 2079,
+        "from": 1749160,
+        "to": 1751239
+      },
+      {
+        "chars": 2056,
+        "from": 1716801,
+        "to": 1718857
+      },
+      {
+        "chars": 2026,
+        "from": 2876145,
+        "to": 2878171
+      },
+      {
+        "chars": 1864,
+        "from": 1702790,
+        "to": 1704654
+      },
+      {
+        "chars": 1769,
+        "from": 1264010,
+        "to": 1265779
+      },
+      {
+        "chars": 1590,
+        "from": 2050741,
+        "to": 2052331
+      },
+      {
+        "chars": 1547,
+        "from": 1283474,
+        "to": 1285021
+      }
+    ]
+  },
+  "lengths": {
+    "median": 712,
+    "min": 7,
+    "max": 53934,
+    "too_short": [
+      "de-zpo-steinjonas-3:rdn:1",
+      "de-zpo-steinjonas-3:rdn:136",
+      "de-zpo-steinjonas-3:rdn:240",
+      "de-zpo-steinjonas-3:rdn:285",
+      "de-zpo-steinjonas-3:rdn:352",
+      "de-zpo-steinjonas-3:rdn:354",
+      "de-zpo-steinjonas-3:rdn:997",
+      "de-zpo-steinjonas-3:rdn:1127",
+      "de-zpo-steinjonas-3:rdn:1142",
+      "de-zpo-steinjonas-3:rdn:1165",
+      "de-zpo-steinjonas-3:rdn:1173",
+      "de-zpo-steinjonas-3:rdn:1174",
+      "de-zpo-steinjonas-3:rdn:1181",
+      "de-zpo-steinjonas-3:rdn:1182",
+      "de-zpo-steinjonas-3:rdn:1188"
+    ],
+    "too_long": [
+      "de-zpo-steinjonas-3:rdn:183/59",
+      "de-zpo-steinjonas-3:rdn:183/1",
+      "de-zpo-steinjonas-3:rdn:7/2"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.77,
+    "footnotes_total": 9092,
+    "unparsed_blocks": 0,
+    "per_card_median": 2.0,
+    "cards_with_calls_but_no_notes": 137,
+    "notes_without_visible_call": 1110
+  },
+  "dead_pages": {
+    "pages": [
+      690,
+      730,
+      731,
+      732,
+      733,
+      734,
+      735,
+      736,
+      737,
+      1159,
+      1262,
+      1264,
+      1272,
+      1284,
+      1294,
+      1296
+    ],
+    "count": 16
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 3094,
+      "2": 274
+    }
+  },
+  "internal_refs": {
+    "refs_total": 2110,
+    "unresolved": 71,
+    "resolved_share": 0.966,
+    "sample": [
+      {
+        "card": "de-zpo-steinjonas-3:rdn:130/6",
+        "ref": "§ 519 Rdn. 39",
+        "missing": 519
+      },
+      {
+        "card": "de-zpo-steinjonas-3:rdn:131/10",
+        "ref": "§ 520 Rdn. 91",
+        "missing": 520
+      },
+      {
+        "card": "de-zpo-steinjonas-3:rdn:137/4",
+        "ref": "§ 538 Rdn. 32",
+        "missing": 538
+      },
+      {
+        "card": "de-zpo-steinjonas-3:rdn:137/19",
+        "ref": "§ 529 Rdn. 21",
+        "missing": 529
+      },
+      {
+        "card": "de-zpo-steinjonas-3:rdn:138/47",
+        "ref": "§ 528 Rdn. 6",
+        "missing": 528
+      },
+      {
+        "card": "de-zpo-steinjonas-3:rdn:141/46",
+        "ref": "§ 513 Rdn. 10",
+        "missing": 513
+      },
+      {
+        "card": "de-zpo-steinjonas-3:rdn:141/46",
+        "ref": "§ 511 Rdn. 23",
+        "missing": 511
+      },
+      {
+        "card": "de-zpo-steinjonas-3:rdn:166/51",
+        "ref": "§ 829 Rdn. 67",
+        "missing": 829
+      },
+      {
+        "card": "de-zpo-steinjonas-3:rdn:186/17",
+        "ref": "vgl. Rdn. 331",
+        "missing": 331
+      },
+      {
+        "card": "de-zpo-steinjonas-3:rdn:215/7",
+        "ref": "§ 523 Rdn. 8",
+        "missing": 523
+      },
+      {
+        "card": "de-zpo-steinjonas-3:rdn:216/14",
+        "ref": "§ 251 Rdn. 16",
+        "missing": 251
+      },
+      {
+        "card": "de-zpo-steinjonas-3:rdn:216/27",
+        "ref": "§ 522 Rdn. 97",
+        "missing": 522
+      },
+      {
+        "card": "de-zpo-steinjonas-3:rdn:222/19",
+        "ref": "§ 519 Rdn. 21",
+        "missing": 519
+      },
+      {
+        "card": "de-zpo-steinjonas-3:rdn:222/21",
+        "ref": "§ 519 Rdn. 5",
+        "missing": 519
+      },
+      {
+        "card": "de-zpo-steinjonas-3:rdn:224/6",
+        "ref": "§ 524 Rdn. 11",
+        "missing": 524
+      }
+    ]
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 60.7% < 98%: пропущено номеров 2742. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

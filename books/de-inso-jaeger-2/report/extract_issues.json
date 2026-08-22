@@ -1,0 +1,35 @@
+{
+  "number_issues": [
+    {
+      "raw": "2022",
+      "action": "repaired_by_neighbours",
+      "to": 2020,
+      "expected": 2020,
+      "line": 198,
+      "evidence": "предыдущий 2019, следующий 2021"
+    },
+    {
+      "raw": "46",
+      "action": "repaired_by_neighbours",
+      "to": 48,
+      "expected": 48,
+      "line": 5293,
+      "evidence": "предыдущий 47, следующий 49"
+    }
+  ],
+  "absorbed_units": 0,
+  "sections_found": 0,
+  "toc_entries": 0,
+  "toc_anchored_to_line": 0,
+  "toc_page_only": 0,
+  "pages_without_lines": [
+    2,
+    6,
+    8,
+    28,
+    748,
+    782
+  ],
+  "profile": "degruyter-grosskommentar-v1",
+  "method": "digital"
+}

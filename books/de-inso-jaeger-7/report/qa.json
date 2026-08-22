@@ -1,0 +1,152 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-inso-jaeger-7",
+  "cards": 3585,
+  "profile": "degruyter-grosskommentar-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9432,
+    "rows": 92,
+    "gaps": [
+      {
+        "family": "Rdn.",
+        "section": "270",
+        "from": 43,
+        "to": 45,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "285",
+        "from": 15,
+        "to": 228,
+        "missing": 212
+      },
+      {
+        "family": "Rdn.",
+        "section": "285",
+        "from": 228,
+        "to": 233,
+        "missing": 4
+      }
+    ],
+    "gaps_total": 3,
+    "missing_total": 217,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Vorspann": 270,
+      "Rdn.": 3315
+    }
+  },
+  "coverage": {
+    "share": 0.9869,
+    "covered_chars": 3382096,
+    "book_chars": 3426871,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 4876,
+        "from": 3415986,
+        "to": 3420862
+      },
+      {
+        "chars": 1094,
+        "from": 1770531,
+        "to": 1771625
+      },
+      {
+        "chars": 1075,
+        "from": 2054668,
+        "to": 2055743
+      },
+      {
+        "chars": 1048,
+        "from": 1974102,
+        "to": 1975150
+      },
+      {
+        "chars": 912,
+        "from": 799237,
+        "to": 800149
+      },
+      {
+        "chars": 619,
+        "from": 3036906,
+        "to": 3037525
+      }
+    ]
+  },
+  "lengths": {
+    "median": 888,
+    "min": 35,
+    "max": 12972,
+    "too_short": [
+      "de-inso-jaeger-7:rdn:235/72",
+      "de-inso-jaeger-7:rdn:235/73",
+      "de-inso-jaeger-7:rdn:237/9",
+      "de-inso-jaeger-7:rdn:238a/11",
+      "de-inso-jaeger-7:rdn:253/32",
+      "de-inso-jaeger-7:rdn:255/40",
+      "de-inso-jaeger-7:rdn:266/7",
+      "de-inso-jaeger-7:rdn:269c/31",
+      "de-inso-jaeger-7:rdn:270/61",
+      "de-inso-jaeger-7:rdn:270a/4",
+      "de-inso-jaeger-7:rdn:270a/9",
+      "de-inso-jaeger-7:rdn:270a/13",
+      "de-inso-jaeger-7:rdn:270a/28",
+      "de-inso-jaeger-7:rdn:270b/5",
+      "de-inso-jaeger-7:rdn:270b/43"
+    ],
+    "too_long": [
+      "de-inso-jaeger-7:rdn:285/15"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.61,
+    "footnotes_total": 4457,
+    "unparsed_blocks": 0,
+    "per_card_median": 1,
+    "cards_with_calls_but_no_notes": 728,
+    "notes_without_visible_call": 1054
+  },
+  "dead_pages": {
+    "pages": [
+      1356,
+      1357,
+      1358,
+      1359,
+      1360
+    ],
+    "count": 5
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 3583,
+      "2": 2
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 2
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 94.3% < 98%: пропущено номеров 217. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}
