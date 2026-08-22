@@ -135,7 +135,22 @@ def split_sections(lines):
             cur.append(ln)
     if cite:
         blocks.append({"cite": cite, "lines": cur})
-    return blocks
+
+    # Длинный параграф платформа печатает кусками, и строку Zitiervorschlag
+    # ставит в начале КАЖДОГО. У § 434 их сорок девять. Если считать каждый
+    # кусок отдельным параграфом, у него выходит сорок девять «вступлений» с
+    # одинаковым external_id — приёмник затрёт их друг другом, и от § 434
+    # останется последний обрывок. Куски одного параграфа склеиваются в
+    # порядке файла.
+    merged, order = {}, []
+    for b in blocks:
+        c = b["cite"]
+        key = ((c.get("vorbem") or "").strip(), c["par"])
+        if key not in merged:
+            merged[key] = {"cite": c, "lines": []}
+            order.append(key)
+        merged[key]["lines"].extend(b["lines"])
+    return [merged[k] for k in order]
 
 
 def main():
