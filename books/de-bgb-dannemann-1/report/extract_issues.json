@@ -5,7 +5,7 @@
       "action": "repaired_by_neighbours",
       "to": 803,
       "expected": 803,
-      "line": 191,
+      "line": 189,
       "evidence": "предыдущий 802, следующий 804"
     },
     {
@@ -13,7 +13,7 @@
       "action": "repaired_by_neighbours",
       "to": 1208,
       "expected": 1208,
-      "line": 227,
+      "line": 224,
       "evidence": "предыдущий 1207, следующий 1209"
     },
     {
@@ -21,7 +21,7 @@
       "action": "repaired_by_neighbours",
       "to": 6,
       "expected": 6,
-      "line": 13927,
+      "line": 13586,
       "evidence": "предыдущий 5, следующий 7"
     },
     {
@@ -29,15 +29,7 @@
       "action": "repaired_by_neighbours",
       "to": 7,
       "expected": 7,
-      "line": 30733,
-      "evidence": "предыдущий 6, следующий 8"
-    },
-    {
-      "raw": "8",
-      "action": "repaired_by_neighbours",
-      "to": 7,
-      "expected": 7,
-      "line": 34283,
+      "line": 29991,
       "evidence": "предыдущий 6, следующий 8"
     },
     {
@@ -45,7 +37,7 @@
       "action": "repaired_by_neighbours",
       "to": 5,
       "expected": 5,
-      "line": 35382,
+      "line": 34525,
       "evidence": "предыдущий 4, следующий 6"
     },
     {
@@ -53,7 +45,7 @@
       "action": "repaired_by_neighbours",
       "to": 3,
       "expected": 3,
-      "line": 45611,
+      "line": 44513,
       "evidence": "предыдущий 2, следующий 4"
     },
     {
@@ -61,7 +53,7 @@
       "action": "repaired_by_neighbours",
       "to": 2,
       "expected": 2,
-      "line": 67522,
+      "line": 65882,
       "evidence": "предыдущий 1, следующий 3"
     },
     {
@@ -69,7 +61,7 @@
       "action": "repaired_by_neighbours",
       "to": 3,
       "expected": 3,
-      "line": 87587,
+      "line": 85450,
       "evidence": "предыдущий 2, следующий 4"
     },
     {
@@ -77,7 +69,7 @@
       "action": "repaired_by_neighbours",
       "to": 3,
       "expected": 3,
-      "line": 87837,
+      "line": 85695,
       "evidence": "предыдущий 2, следующий 4"
     },
     {
@@ -85,7 +77,7 @@
       "action": "repaired_by_neighbours",
       "to": 5,
       "expected": 5,
-      "line": 88111,
+      "line": 85963,
       "evidence": "предыдущий 4, следующий 6"
     },
     {
@@ -93,7 +85,7 @@
       "action": "repaired_by_neighbours",
       "to": 18,
       "expected": 18,
-      "line": 88173,
+      "line": 86023,
       "evidence": "предыдущий 17, следующий 19"
     },
     {
@@ -101,7 +93,7 @@
       "action": "repaired_by_neighbours",
       "to": 6,
       "expected": 6,
-      "line": 88217,
+      "line": 86066,
       "evidence": "предыдущий 5, следующий 7"
     },
     {
@@ -109,7 +101,7 @@
       "action": "repaired_by_neighbours",
       "to": 5,
       "expected": 5,
-      "line": 88232,
+      "line": 86081,
       "evidence": "предыдущий 4, следующий 6"
     },
     {
@@ -117,7 +109,7 @@
       "action": "repaired_by_neighbours",
       "to": 7,
       "expected": 7,
-      "line": 88477,
+      "line": 86321,
       "evidence": "предыдущий 6, следующий 8"
     },
     {
@@ -125,7 +117,7 @@
       "action": "repaired_by_neighbours",
       "to": 26,
       "expected": 26,
-      "line": 88505,
+      "line": 86348,
       "evidence": "предыдущий 25, следующий 27"
     },
     {
@@ -133,7 +125,7 @@
       "action": "repaired_by_neighbours",
       "to": 2,
       "expected": 2,
-      "line": 89057,
+      "line": 86888,
       "evidence": "предыдущий 1, следующий 3"
     },
     {
@@ -141,7 +133,7 @@
       "action": "repaired_by_neighbours",
       "to": 6,
       "expected": 6,
-      "line": 89175,
+      "line": 87003,
       "evidence": "предыдущий 5, следующий 7"
     },
     {
@@ -149,7 +141,7 @@
       "action": "repaired_by_neighbours",
       "to": 2,
       "expected": 2,
-      "line": 89237,
+      "line": 87064,
       "evidence": "предыдущий 1, следующий 3"
     },
     {
@@ -157,7 +149,7 @@
       "action": "repaired_by_neighbours",
       "to": 5,
       "expected": 5,
-      "line": 89378,
+      "line": 87202,
       "evidence": "предыдущий 4, следующий 6"
     },
     {
@@ -165,7 +157,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 89471,
+      "line": 87293,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -173,7 +165,7 @@
       "action": "repaired_by_neighbours",
       "to": 3,
       "expected": 3,
-      "line": 89731,
+      "line": 87547,
       "evidence": "предыдущий 2, следующий 4"
     },
     {
@@ -181,7 +173,7 @@
       "action": "repaired_by_neighbours",
       "to": 6,
       "expected": 6,
-      "line": 89796,
+      "line": 87611,
       "evidence": "предыдущий 5, следующий 7"
     },
     {
@@ -189,7 +181,7 @@
       "action": "repaired_by_neighbours",
       "to": 2,
       "expected": 2,
-      "line": 89806,
+      "line": 87621,
       "evidence": "предыдущий 1, следующий 3"
     },
     {
@@ -197,7 +189,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 89822,
+      "line": 87636,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -205,7 +197,7 @@
       "action": "repaired_by_neighbours",
       "to": 3,
       "expected": 3,
-      "line": 89837,
+      "line": 87651,
       "evidence": "предыдущий 2, следующий 4"
     },
     {
@@ -213,7 +205,7 @@
       "action": "repaired_by_neighbours",
       "to": 5,
       "expected": 5,
-      "line": 89840,
+      "line": 87654,
       "evidence": "предыдущий 4, следующий 6"
     },
     {
@@ -221,7 +213,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 89871,
+      "line": 87684,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -229,7 +221,7 @@
       "action": "repaired_by_neighbours",
       "to": 2,
       "expected": 2,
-      "line": 89921,
+      "line": 87733,
       "evidence": "предыдущий 1, следующий 3"
     },
     {
@@ -237,7 +229,7 @@
       "action": "repaired_by_neighbours",
       "to": 6,
       "expected": 6,
-      "line": 89936,
+      "line": 87748,
       "evidence": "предыдущий 5, следующий 7"
     },
     {
@@ -245,7 +237,7 @@
       "action": "repaired_by_neighbours",
       "to": 2,
       "expected": 2,
-      "line": 90056,
+      "line": 87865,
       "evidence": "предыдущий 1, следующий 3"
     },
     {
@@ -253,7 +245,7 @@
       "action": "repaired_by_neighbours",
       "to": 3,
       "expected": 3,
-      "line": 90154,
+      "line": 87961,
       "evidence": "предыдущий 2, следующий 4"
     },
     {
@@ -261,7 +253,7 @@
       "action": "repaired_by_neighbours",
       "to": 3,
       "expected": 3,
-      "line": 90318,
+      "line": 88122,
       "evidence": "предыдущий 2, следующий 4"
     },
     {
@@ -269,7 +261,7 @@
       "action": "repaired_by_neighbours",
       "to": 2,
       "expected": 2,
-      "line": 90362,
+      "line": 88165,
       "evidence": "предыдущий 1, следующий 3"
     },
     {
@@ -277,7 +269,7 @@
       "action": "repaired_by_neighbours",
       "to": 5,
       "expected": 5,
-      "line": 90623,
+      "line": 88420,
       "evidence": "предыдущий 4, следующий 6"
     },
     {
@@ -285,7 +277,7 @@
       "action": "repaired_by_neighbours",
       "to": 5,
       "expected": 5,
-      "line": 90719,
+      "line": 88514,
       "evidence": "предыдущий 4, следующий 6"
     },
     {
@@ -293,7 +285,7 @@
       "action": "repaired_by_neighbours",
       "to": 2,
       "expected": 2,
-      "line": 90789,
+      "line": 88582,
       "evidence": "предыдущий 1, следующий 3"
     },
     {
@@ -301,7 +293,7 @@
       "action": "repaired_by_neighbours",
       "to": 5,
       "expected": 5,
-      "line": 90815,
+      "line": 88608,
       "evidence": "предыдущий 4, следующий 6"
     },
     {
@@ -309,7 +301,7 @@
       "action": "repaired_by_neighbours",
       "to": 3,
       "expected": 3,
-      "line": 90825,
+      "line": 88618,
       "evidence": "предыдущий 2, следующий 4"
     },
     {
@@ -317,7 +309,7 @@
       "action": "repaired_by_neighbours",
       "to": 6,
       "expected": 6,
-      "line": 90861,
+      "line": 88653,
       "evidence": "предыдущий 5, следующий 7"
     },
     {
@@ -325,7 +317,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 90881,
+      "line": 88672,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -333,7 +325,7 @@
       "action": "repaired_by_neighbours",
       "to": 3,
       "expected": 3,
-      "line": 90884,
+      "line": 88675,
       "evidence": "предыдущий 2, следующий 4"
     },
     {
@@ -341,7 +333,7 @@
       "action": "repaired_by_neighbours",
       "to": 3,
       "expected": 3,
-      "line": 90898,
+      "line": 88689,
       "evidence": "предыдущий 2, следующий 4"
     },
     {
@@ -349,7 +341,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 90910,
+      "line": 88701,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -357,7 +349,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 91109,
+      "line": 88895,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -365,7 +357,7 @@
       "action": "repaired_by_neighbours",
       "to": 5,
       "expected": 5,
-      "line": 91216,
+      "line": 89000,
       "evidence": "предыдущий 4, следующий 6"
     },
     {
@@ -373,7 +365,7 @@
       "action": "repaired_by_neighbours",
       "to": 5,
       "expected": 5,
-      "line": 91420,
+      "line": 89200,
       "evidence": "предыдущий 4, следующий 6"
     },
     {
@@ -381,7 +373,7 @@
       "action": "repaired_by_neighbours",
       "to": 6,
       "expected": 6,
-      "line": 91501,
+      "line": 89279,
       "evidence": "предыдущий 5, следующий 7"
     },
     {
@@ -389,7 +381,7 @@
       "action": "repaired_by_neighbours",
       "to": 11,
       "expected": 11,
-      "line": 91579,
+      "line": 89355,
       "evidence": "предыдущий 10, следующий 12"
     },
     {
@@ -397,7 +389,7 @@
       "action": "repaired_by_neighbours",
       "to": 2,
       "expected": 2,
-      "line": 91645,
+      "line": 89420,
       "evidence": "предыдущий 1, следующий 3"
     },
     {
@@ -405,7 +397,7 @@
       "action": "repaired_by_neighbours",
       "to": 2,
       "expected": 2,
-      "line": 91664,
+      "line": 89438,
       "evidence": "предыдущий 1, следующий 3"
     },
     {
@@ -413,7 +405,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 91672,
+      "line": 89446,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -421,7 +413,7 @@
       "action": "repaired_by_neighbours",
       "to": 6,
       "expected": 6,
-      "line": 91727,
+      "line": 89500,
       "evidence": "предыдущий 5, следующий 7"
     },
     {
@@ -429,7 +421,7 @@
       "action": "repaired_by_neighbours",
       "to": 3,
       "expected": 3,
-      "line": 91741,
+      "line": 89514,
       "evidence": "предыдущий 2, следующий 4"
     },
     {
@@ -437,7 +429,7 @@
       "action": "repaired_by_neighbours",
       "to": 2,
       "expected": 2,
-      "line": 91768,
+      "line": 89540,
       "evidence": "предыдущий 1, следующий 3"
     },
     {
@@ -445,7 +437,7 @@
       "action": "repaired_by_neighbours",
       "to": 7,
       "expected": 7,
-      "line": 91904,
+      "line": 89673,
       "evidence": "предыдущий 6, следующий 8"
     },
     {
@@ -453,7 +445,7 @@
       "action": "repaired_by_neighbours",
       "to": 6,
       "expected": 6,
-      "line": 91941,
+      "line": 89709,
       "evidence": "предыдущий 5, следующий 7"
     },
     {
@@ -461,7 +453,7 @@
       "action": "repaired_by_neighbours",
       "to": 20,
       "expected": 20,
-      "line": 92050,
+      "line": 89816,
       "evidence": "предыдущий 19, следующий 21"
     },
     {
@@ -469,7 +461,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 92309,
+      "line": 90069,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -477,7 +469,7 @@
       "action": "repaired_by_neighbours",
       "to": 3,
       "expected": 3,
-      "line": 92323,
+      "line": 90083,
       "evidence": "предыдущий 2, следующий 4"
     },
     {
@@ -485,7 +477,7 @@
       "action": "repaired_by_neighbours",
       "to": 8,
       "expected": 8,
-      "line": 92353,
+      "line": 90112,
       "evidence": "предыдущий 7, следующий 9"
     },
     {
@@ -493,7 +485,7 @@
       "action": "repaired_by_neighbours",
       "to": 8,
       "expected": 8,
-      "line": 92371,
+      "line": 90130,
       "evidence": "предыдущий 7, следующий 9"
     },
     {
@@ -501,7 +493,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 92377,
+      "line": 90136,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -509,7 +501,7 @@
       "action": "repaired_by_neighbours",
       "to": 5,
       "expected": 5,
-      "line": 92527,
+      "line": 90283,
       "evidence": "предыдущий 4, следующий 6"
     },
     {
@@ -517,7 +509,7 @@
       "action": "repaired_by_neighbours",
       "to": 7,
       "expected": 7,
-      "line": 92535,
+      "line": 90290,
       "evidence": "предыдущий 6, следующий 8"
     },
     {
@@ -525,7 +517,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 92783,
+      "line": 90533,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -533,7 +525,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 92854,
+      "line": 90602,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -541,7 +533,7 @@
       "action": "repaired_by_neighbours",
       "to": 3,
       "expected": 3,
-      "line": 93272,
+      "line": 91011,
       "evidence": "предыдущий 2, следующий 4"
     },
     {
@@ -549,7 +541,7 @@
       "action": "repaired_by_neighbours",
       "to": 2,
       "expected": 2,
-      "line": 93325,
+      "line": 91063,
       "evidence": "предыдущий 1, следующий 3"
     },
     {
@@ -557,7 +549,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 93339,
+      "line": 91077,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -565,7 +557,7 @@
       "action": "repaired_by_neighbours",
       "to": 2,
       "expected": 2,
-      "line": 93444,
+      "line": 91180,
       "evidence": "предыдущий 1, следующий 3"
     },
     {
@@ -573,7 +565,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 93636,
+      "line": 91367,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -581,7 +573,7 @@
       "action": "repaired_by_neighbours",
       "to": 2,
       "expected": 2,
-      "line": 93642,
+      "line": 91373,
       "evidence": "предыдущий 1, следующий 3"
     },
     {
@@ -589,7 +581,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 93645,
+      "line": 91376,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -597,7 +589,7 @@
       "action": "repaired_by_neighbours",
       "to": 3,
       "expected": 3,
-      "line": 93662,
+      "line": 91393,
       "evidence": "предыдущий 2, следующий 4"
     },
     {
@@ -605,7 +597,7 @@
       "action": "repaired_by_neighbours",
       "to": 2,
       "expected": 2,
-      "line": 93756,
+      "line": 91485,
       "evidence": "предыдущий 1, следующий 3"
     },
     {
@@ -613,7 +605,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 94085,
+      "line": 91807,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -621,7 +613,7 @@
       "action": "repaired_by_neighbours",
       "to": 2,
       "expected": 2,
-      "line": 94139,
+      "line": 91860,
       "evidence": "предыдущий 1, следующий 3"
     },
     {
@@ -629,7 +621,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 94154,
+      "line": 91874,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -637,7 +629,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 94219,
+      "line": 91938,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -645,7 +637,7 @@
       "action": "repaired_by_neighbours",
       "to": 9,
       "expected": 9,
-      "line": 94452,
+      "line": 92166,
       "evidence": "предыдущий 8, следующий 10"
     },
     {
@@ -653,7 +645,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 94480,
+      "line": 92193,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -661,7 +653,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 94506,
+      "line": 92219,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -669,7 +661,7 @@
       "action": "repaired_by_neighbours",
       "to": 2,
       "expected": 2,
-      "line": 94586,
+      "line": 92297,
       "evidence": "предыдущий 1, следующий 3"
     },
     {
@@ -677,7 +669,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 94626,
+      "line": 92336,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -685,7 +677,7 @@
       "action": "repaired_by_neighbours",
       "to": 5,
       "expected": 5,
-      "line": 94651,
+      "line": 92360,
       "evidence": "предыдущий 4, следующий 6"
     },
     {
@@ -693,7 +685,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 94680,
+      "line": 92389,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -701,7 +693,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 94696,
+      "line": 92404,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -709,7 +701,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 94891,
+      "line": 92595,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -717,7 +709,7 @@
       "action": "repaired_by_neighbours",
       "to": 3,
       "expected": 3,
-      "line": 94961,
+      "line": 92664,
       "evidence": "предыдущий 2, следующий 4"
     },
     {
@@ -725,7 +717,7 @@
       "action": "repaired_by_neighbours",
       "to": 5,
       "expected": 5,
-      "line": 94993,
+      "line": 92695,
       "evidence": "предыдущий 4, следующий 6"
     },
     {
@@ -733,7 +725,7 @@
       "action": "repaired_by_neighbours",
       "to": 3,
       "expected": 3,
-      "line": 95265,
+      "line": 92961,
       "evidence": "предыдущий 2, следующий 4"
     },
     {
@@ -741,7 +733,7 @@
       "action": "repaired_by_neighbours",
       "to": 5,
       "expected": 5,
-      "line": 95301,
+      "line": 92996,
       "evidence": "предыдущий 4, следующий 6"
     },
     {
@@ -749,7 +741,7 @@
       "action": "repaired_by_neighbours",
       "to": 2,
       "expected": 2,
-      "line": 95307,
+      "line": 93002,
       "evidence": "предыдущий 1, следующий 3"
     },
     {
@@ -757,7 +749,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 95322,
+      "line": 93017,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -765,7 +757,7 @@
       "action": "repaired_by_neighbours",
       "to": 6,
       "expected": 6,
-      "line": 95661,
+      "line": 93348,
       "evidence": "предыдущий 5, следующий 7"
     },
     {
@@ -773,7 +765,7 @@
       "action": "repaired_by_neighbours",
       "to": 7,
       "expected": 7,
-      "line": 95942,
+      "line": 93623,
       "evidence": "предыдущий 6, следующий 8"
     },
     {
@@ -781,7 +773,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 95955,
+      "line": 93636,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -789,7 +781,7 @@
       "action": "repaired_by_neighbours",
       "to": 13,
       "expected": 13,
-      "line": 95979,
+      "line": 93660,
       "evidence": "предыдущий 12, следующий 14"
     },
     {
@@ -797,7 +789,7 @@
       "action": "repaired_by_neighbours",
       "to": 2,
       "expected": 2,
-      "line": 96161,
+      "line": 93838,
       "evidence": "предыдущий 1, следующий 3"
     },
     {
@@ -805,7 +797,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 96183,
+      "line": 93859,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -813,7 +805,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 96285,
+      "line": 93959,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -821,7 +813,7 @@
       "action": "repaired_by_neighbours",
       "to": 4,
       "expected": 4,
-      "line": 96308,
+      "line": 93981,
       "evidence": "предыдущий 3, следующий 5"
     },
     {
@@ -829,7 +821,7 @@
       "action": "repaired_by_neighbours",
       "to": 2,
       "expected": 2,
-      "line": 96390,
+      "line": 94062,
       "evidence": "предыдущий 1, следующий 3"
     }
   ],
