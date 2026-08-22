@@ -813,3 +813,25 @@ POST карточек — upsert по `external_id`, так что переза�
 Значит, нужен список приставок («sous», «non», «quasi», «contre», «avant»,
 «demi», «ex», «vice», «entre», «hors») и энклитик («ci», «là», «même», «il»,
 «elle», «on», «ce», «lui»), и проверка на выборке ДО перезаливки.
+
+### Девять немецких файлов без текстового слоя — только распознавание
+
+Плотность текста меряна `pdftotext` по страницам 60–90 (92 книги вне
+распечаток beck-online и Staudinger). Ноль знаков на странице означает
+чистый скан:
+
+| стр. | файл |
+|---:|---|
+| 3419 | Kommentar zum BGB Band 1 §§ 1-610 (Bamberger, Roth) |
+| 3047 | GESELLSCHAFTSRECHT (Henssler, Strohn) |
+| 529 | Emmerich-Sonnenschein, Miete, 10. Aufl. |
+| 502 | Larenz/Wolf, Allgemeiner Teil des Bürgerlichen Rechts |
+| 447 | Prütting, Sachenrecht, 37. Aufl. |
+| 332 | Münchener Kommentar zur InsO, Band 1 §§ 217-359 |
+| 277 | Medicus, Allgemeiner Teil des BGB, 10. Aufl. 2010 |
+| 20 | Wieling, Die Grundbucheintragung |
+| 10 | Wilsch, The German Grundbuchordnung |
+
+Итого 8 583 страницы, из них 6 466 приходятся на два тома. Это самая дорогая
+часть папки: ветка B (`ocr.py`) плюс сверка. Браться за неё имеет смысл
+последней — после того, как всё, что читается цифрой, уже в корпусе.
