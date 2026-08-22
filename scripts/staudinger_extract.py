@@ -235,6 +235,20 @@ def main():
                 "chunk_version": P.SCHEMA_VERSION,
             })
 
+    # Один и тот же параграф в файле бывает напечатан дважды: скачивали
+    # внахлёст. Тогда у каждой Randnummer оказывается две карточки с
+    # ОДИНАКОВЫМ external_id, и приёмник затрёт одну другой — какой именно,
+    # зависит от порядка. Оставляем более длинный вариант: короткий обычно
+    # обрывок, начатый на предыдущей полосе.
+    best = {}
+    for c in cards:
+        k = c["external_id"]
+        if k not in best or len(c["text"]) > len(best[k]["text"]):
+            best[k] = c
+    if len(best) < len(cards):
+        print(f"снято повторов внутри файла: {len(cards) - len(best)}")
+    cards = [c for c in cards if c is best.get(c["external_id"])]
+
     print(f"карточек: {len(cards)}")
     for k, v in warn.most_common():
         print(f"  ВНИМАНИЕ: {k}: {v}")
