@@ -37,7 +37,7 @@ SKILL = "/root/.claude/skills/synced/complaw-corpus/scripts"
 sys.path.insert(0, SKILL)
 import pipelib as P
 
-from beck_extract import NUM_ONLY, norm, read_lines
+from beck_extract import NUM_ONLY, join_hyphens, norm, read_lines
 
 try:
     import pdfplumber
@@ -47,7 +47,8 @@ except ImportError:
 # «Staudinger/Klumpp (2021) BGB § 104», «Staudinger/ Bieder/ Gursky (2022) BGB § 387»,
 # «Staudinger/Bork (2025) BGB Vorbem zu §§ 145-156».
 CITE = re.compile(
-    r"^Staudinger/\s*(?P<bearb>[^()]{1,60}?)\s*\((?P<year>\d{4})\)\s*"
+    r"^(?:(?:Zitiervorschlag|Citation):\s*)?"
+    r"Staudinger/\s*(?P<bearb>[^()]{1,60}?)\s*\((?P<year>\d{4})\)\s*"
     r"(?P<gesetz>[A-ZÄÖÜ][A-Za-zÄÖÜäöü]*)\s*"
     r"(?P<vorbem>Vorbem[^§]*)?§+\s*(?P<par>\d+[a-zä]?)")
 
@@ -162,7 +163,7 @@ def main():
             end = marks[j + 1] if j + 1 < len(marks) else len(blk["lines"])
             pieces.append((blk["lines"][k]["rn"], blk["lines"][k:end]))
         for num, chunk in pieces:
-            text = "\n".join(ln["text"] for ln in chunk).strip()
+            text = join_hyphens("\n".join(ln["text"] for ln in chunk).strip())
             if not text:
                 continue
             address = (f"{c['gesetz']} {c['vorbem'].strip()} § {c['par']}" if c["vorbem"]

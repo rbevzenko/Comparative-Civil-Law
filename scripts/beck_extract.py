@@ -96,6 +96,43 @@ def norm(s):
     return re.sub(r"\s+", " ", s.translate(LIG)).strip()
 
 
+# Слово, разорванное переносом, для поиска — два разных слова. «konklu-\ndent»
+# не найдётся ни по «konkludent», ни по одной из половин.
+ELLIPSIS = {"und", "oder", "bzw", "sowie", "wie", "als", "noch", "aber", "bis",
+            "statt", "ohne", "et", "ou", "ni"}
+# Сокращения законов и судов: после них дефис в конце строки почти всегда
+# настоящий («BGB-RGRK», «GmbHG-Kommentar»), а не перенос.
+ABBREV = {"BGB", "EGBGB", "HGB", "ZPO", "StGB", "StPO", "InsO", "AktG", "GmbHG",
+          "AGB", "AGBG", "GG", "UWG", "GWB", "VVG", "WEG", "GVG", "FamFG", "AGG",
+          "RGRK", "NJW", "JZ", "JuS", "BGH", "BAG", "BVerfG", "OLG", "EU", "EG"}
+HYPHEN = re.compile(r"(\w+)-\n(\w+)")
+
+
+def join_hyphens(text):
+    """Склеить слово, разорванное переносом в конце строки.
+
+    Слово, разорванное переносом, для поиска — два разных слова: «konklu-\ndent»
+    не найдётся ни по «konkludent», ни по одной из половин. Во французской
+    части корпуса переносы остались как есть, и это её известный дефект;
+    немецкую собираем уже без них.
+
+    Не всякий дефис в конце строки — перенос. Он бывает знаком пропуска
+    («Rechts- und Staatswissenschaft») и частью составного сокращения
+    («BGB-RGRK»). Первое опознаётся по союзу в начале следующей строки,
+    второе — по списку сокращений. Всё остальное склеивается, включая имена
+    капителью, разорванные пополам: «WESTER-\nMANN» — это Вестерман, а не два
+    слова.
+    """
+    def repl(m):
+        head, tail = m.group(1), m.group(2)
+        if tail.split()[0].strip(".,;:").lower() in ELLIPSIS:
+            return m.group(0)
+        if head in ABBREV:
+            return m.group(0)
+        return head + tail
+    return HYPHEN.sub(repl, text)
+
+
 def splice_patches(lines, patches):
     """Вернуть в строки слова, нарисованные в PDF контурами.
 
@@ -440,7 +477,7 @@ def main():
             # слое её нет, она приходит из распознавания контуров.
             n["text"] = re.sub(r"\s*→\s*$", "", n["text"]).strip()
         for u in units:
-            text = "\n".join(ln["text"] for ln in u["lines"]).strip()
+            text = join_hyphens("\n".join(ln["text"] for ln in u["lines"]).strip())
             if not text:
                 continue
             u.update(section=par, par_sort=par_sort_key(cite["par"]), text=text,
