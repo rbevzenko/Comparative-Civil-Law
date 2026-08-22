@@ -1,0 +1,224 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-inso-jaeger-5-1",
+  "cards": 844,
+  "profile": "degruyter-grosskommentar-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 1.0,
+    "rows": 8,
+    "gaps": [
+      {
+        "family": "Rdn.",
+        "section": "148",
+        "from": 117,
+        "to": 119,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "148",
+        "from": 122,
+        "to": 126,
+        "missing": 3
+      },
+      {
+        "family": "Rdn.",
+        "section": "155",
+        "from": 124,
+        "to": 126,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "155",
+        "from": 126,
+        "to": 130,
+        "missing": 3
+      },
+      {
+        "family": "Rdn.",
+        "section": "155",
+        "from": 1,
+        "to": 155,
+        "missing": 153
+      }
+    ],
+    "gaps_total": 5,
+    "missing_total": 161,
+    "duplicates": [
+      {
+        "family": "Rdn.",
+        "section": "148",
+        "number": 120
+      },
+      {
+        "family": "Rdn.",
+        "section": "148",
+        "number": 120
+      },
+      {
+        "family": "Rdn.",
+        "section": "148",
+        "number": 117
+      },
+      {
+        "family": "Rdn.",
+        "section": "148",
+        "number": 119
+      },
+      {
+        "family": "Rdn.",
+        "section": "148",
+        "number": 120
+      },
+      {
+        "family": "Rdn.",
+        "section": "148",
+        "number": 121
+      },
+      {
+        "family": "Rdn.",
+        "section": "148",
+        "number": 122
+      },
+      {
+        "family": "Rdn.",
+        "section": "148",
+        "number": 126
+      },
+      {
+        "family": "Rdn.",
+        "section": "148",
+        "number": 127
+      },
+      {
+        "family": "Rdn.",
+        "section": "155",
+        "number": 131
+      },
+      {
+        "family": "Rdn.",
+        "section": "155",
+        "number": 131
+      },
+      {
+        "family": "Rdn.",
+        "section": "155",
+        "number": 120
+      },
+      {
+        "family": "Rdn.",
+        "section": "155",
+        "number": 121
+      },
+      {
+        "family": "Rdn.",
+        "section": "155",
+        "number": 122
+      },
+      {
+        "family": "Rdn.",
+        "section": "155",
+        "number": 123
+      },
+      {
+        "family": "Rdn.",
+        "section": "155",
+        "number": 124
+      },
+      {
+        "family": "Rdn.",
+        "section": "155",
+        "number": 126
+      },
+      {
+        "family": "Rdn.",
+        "section": "155",
+        "number": 130
+      },
+      {
+        "family": "Rdn.",
+        "section": "155",
+        "number": 131
+      },
+      {
+        "family": "Rdn.",
+        "section": "155",
+        "number": 5
+      }
+    ],
+    "duplicates_total": 169,
+    "by_family": {
+      "Rdn.": 844
+    }
+  },
+  "coverage": {
+    "share": 0.9779,
+    "covered_chars": 956283,
+    "book_chars": 977941,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 936,
+    "min": 45,
+    "max": 18010,
+    "too_short": [
+      "de-inso-jaeger-5-1:rdn:148/117",
+      "de-inso-jaeger-5-1:rdn:148/120",
+      "de-inso-jaeger-5-1:rdn:152/9",
+      "de-inso-jaeger-5-1:rdn:153/28",
+      "de-inso-jaeger-5-1:rdn:155/121",
+      "de-inso-jaeger-5-1:rdn:155/122",
+      "de-inso-jaeger-5-1:rdn:155/123",
+      "de-inso-jaeger-5-1:rdn:155/124",
+      "de-inso-jaeger-5-1:rdn:155/126",
+      "de-inso-jaeger-5-1:rdn:155/67",
+      "de-inso-jaeger-5-1:rdn:155/5"
+    ],
+    "too_long": [
+      "de-inso-jaeger-5-1:rdn:155/145"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.65,
+    "footnotes_total": 1049,
+    "unparsed_blocks": 0,
+    "per_card_median": 1.0,
+    "cards_with_calls_but_no_notes": 167,
+    "notes_without_visible_call": 150
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "2": 1,
+      "3": 547,
+      "4": 296
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

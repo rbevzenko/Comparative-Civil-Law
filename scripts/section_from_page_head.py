@@ -90,7 +90,12 @@ def main():
                 elif ln["bottom"] >= h * (1 - a.foot_band):
                     m = foot_rx.match(t)
                     if m:
-                        who_by_page[pno] = m.group(1)
+                        # В подвале стоит полное имя («Diederich Eckardt»), а в
+                        # ссылке принята фамилия: «Jaeger/Eckardt». Пару фамилий
+                        # через косую («Prütting/Gebauer») трогать нельзя — это
+                        # два комментатора, а не имя и фамилия.
+                        name = m.group(1).strip()
+                        who_by_page[pno] = name if "/" in name else name.split()[-1]
             page.flush_cache()
             page.get_textmap.cache_clear()
 
