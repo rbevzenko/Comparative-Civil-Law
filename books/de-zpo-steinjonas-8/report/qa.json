@@ -1,0 +1,289 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-zpo-steinjonas-8",
+  "cards": 1475,
+  "profile": "degruyter-grosskommentar-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9993,
+    "rows": 54,
+    "gaps": [
+      {
+        "family": "Rdn.",
+        "section": "688",
+        "from": 8,
+        "to": 10,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "707",
+        "from": 6,
+        "to": 8,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "723",
+        "from": 3,
+        "to": 12,
+        "missing": 8
+      }
+    ],
+    "gaps_total": 3,
+    "missing_total": 10,
+    "duplicates": [
+      {
+        "family": "Rdn.",
+        "section": "592",
+        "number": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "592",
+        "number": 2
+      },
+      {
+        "family": "Rdn.",
+        "section": "592",
+        "number": 3
+      },
+      {
+        "family": "Rdn.",
+        "section": "592",
+        "number": 4
+      },
+      {
+        "family": "Rdn.",
+        "section": "592",
+        "number": 5
+      },
+      {
+        "family": "Rdn.",
+        "section": "592",
+        "number": 6
+      },
+      {
+        "family": "Rdn.",
+        "section": "592",
+        "number": 7
+      },
+      {
+        "family": "Rdn.",
+        "section": "592",
+        "number": 8
+      },
+      {
+        "family": "Rdn.",
+        "section": "592",
+        "number": 9
+      },
+      {
+        "family": "Rdn.",
+        "section": "592",
+        "number": 10
+      },
+      {
+        "family": "Rdn.",
+        "section": "592",
+        "number": 11
+      },
+      {
+        "family": "Rdn.",
+        "section": "592",
+        "number": 12
+      },
+      {
+        "family": "Rdn.",
+        "section": "592",
+        "number": 13
+      },
+      {
+        "family": "Rdn.",
+        "section": "592",
+        "number": 14
+      },
+      {
+        "family": "Rdn.",
+        "section": "592",
+        "number": 15
+      },
+      {
+        "family": "Rdn.",
+        "section": "703d",
+        "number": 5
+      },
+      {
+        "family": "Rdn.",
+        "section": "703d",
+        "number": 5
+      },
+      {
+        "family": "Rdn.",
+        "section": "703d",
+        "number": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "703d",
+        "number": 2
+      },
+      {
+        "family": "Rdn.",
+        "section": "703d",
+        "number": 3
+      }
+    ],
+    "duplicates_total": 57,
+    "by_family": {
+      "Rdn.": 1475
+    }
+  },
+  "coverage": {
+    "share": 0.9879,
+    "covered_chars": 1325521,
+    "book_chars": 1341821,
+    "cards_without_offsets": 0,
+    "biggest_holes": []
+  },
+  "lengths": {
+    "median": 758,
+    "min": 54,
+    "max": 12536,
+    "too_short": [
+      "de-zpo-steinjonas-8:rdn:595/20",
+      "de-zpo-steinjonas-8:rdn:597/23",
+      "de-zpo-steinjonas-8:rdn:597/32",
+      "de-zpo-steinjonas-8:rdn:597/34",
+      "de-zpo-steinjonas-8:rdn:696/3",
+      "de-zpo-steinjonas-8:rdn:699/8",
+      "de-zpo-steinjonas-8:rdn:700/14",
+      "de-zpo-steinjonas-8:rdn:700/18",
+      "de-zpo-steinjonas-8:rdn:708/1",
+      "de-zpo-steinjonas-8:rdn:708/2",
+      "de-zpo-steinjonas-8:rdn:708/3",
+      "de-zpo-steinjonas-8:rdn:708/4",
+      "de-zpo-steinjonas-8:rdn:708/6",
+      "de-zpo-steinjonas-8:rdn:722/24",
+      "de-zpo-steinjonas-8:rdn:722/42"
+    ],
+    "too_long": [
+      "de-zpo-steinjonas-8:rdn:721/45"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.59,
+    "footnotes_total": 4151,
+    "unparsed_blocks": 0,
+    "per_card_median": 1,
+    "cards_with_calls_but_no_notes": 88,
+    "notes_without_visible_call": 3546
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "2": 1336,
+      "3": 139
+    }
+  },
+  "internal_refs": {
+    "refs_total": 287,
+    "unresolved": 126,
+    "resolved_share": 0.561,
+    "sample": [
+      {
+        "card": "de-zpo-steinjonas-8:rdn:592/39",
+        "ref": "§ 595 Rdn. 30",
+        "missing": 595
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:595/20",
+        "ref": "§ 596 Rdn. 24",
+        "missing": 596
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:598/4",
+        "ref": "§ 597 Rdn. 10",
+        "missing": 597
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:598/4",
+        "ref": "§ 597 Rdn. 12",
+        "missing": 597
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:599/2",
+        "ref": "§ 597 Rdn. 16",
+        "missing": 597
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:602/2",
+        "ref": "§ 597 Rdn. 25",
+        "missing": 597
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:602/7",
+        "ref": "§ 592 Rdn. 37",
+        "missing": 592
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:602/9",
+        "ref": "§ 596 Rdn. 22",
+        "missing": 596
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:602/10",
+        "ref": "§ 596 Rdn. 22",
+        "missing": 596
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:602/11",
+        "ref": "§ 600 Rdn. 21",
+        "missing": 600
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:604/1",
+        "ref": "§ 602 Rdn. 10",
+        "missing": 602
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:693/6",
+        "ref": "§ 688 Rdn. 31",
+        "missing": 688
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:693/7",
+        "ref": "§ 699 Rdn. 34",
+        "missing": 699
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:693/7",
+        "ref": "§ 688 Rdn. 23",
+        "missing": 688
+      },
+      {
+        "card": "de-zpo-steinjonas-8:rdn:694/3",
+        "ref": "§ 703a Rdn. 6",
+        "missing": 703
+      }
+    ]
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": []
+}

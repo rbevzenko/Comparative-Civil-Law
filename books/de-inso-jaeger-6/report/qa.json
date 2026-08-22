@@ -1,0 +1,189 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-inso-jaeger-6",
+  "cards": 1535,
+  "profile": "degruyter-grosskommentar-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9528,
+    "rows": 43,
+    "gaps": [
+      {
+        "family": "Rdn.",
+        "section": "175",
+        "from": 3,
+        "to": 5,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "216",
+        "from": 2,
+        "to": 4,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "216",
+        "from": 4,
+        "to": 6,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "216",
+        "from": 11,
+        "to": 13,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "216",
+        "from": 19,
+        "to": 28,
+        "missing": 8
+      },
+      {
+        "family": "Rdn.",
+        "section": "216",
+        "from": 3,
+        "to": 43,
+        "missing": 39
+      },
+      {
+        "family": "Rdn.",
+        "section": "216",
+        "from": 25,
+        "to": 35,
+        "missing": 9
+      },
+      {
+        "family": "Rdn.",
+        "section": "216",
+        "from": 12,
+        "to": 89,
+        "missing": 76
+      },
+      {
+        "family": "Rdn.",
+        "section": "216",
+        "from": 89,
+        "to": 92,
+        "missing": 2
+      },
+      {
+        "family": "Rdn.",
+        "section": "216",
+        "from": 75,
+        "to": 109,
+        "missing": 33
+      },
+      {
+        "family": "Rdn.",
+        "section": "216",
+        "from": 20,
+        "to": 102,
+        "missing": 81
+      },
+      {
+        "family": "Rdn.",
+        "section": "216",
+        "from": 59,
+        "to": 69,
+        "missing": 9
+      }
+    ],
+    "gaps_total": 12,
+    "missing_total": 261,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Rdn.": 1535
+    }
+  },
+  "coverage": {
+    "share": 0.9783,
+    "covered_chars": 1387597,
+    "book_chars": 1418333,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 605,
+        "from": 1405592,
+        "to": 1406197
+      },
+      {
+        "chars": 604,
+        "from": 1395205,
+        "to": 1395809
+      },
+      {
+        "chars": 542,
+        "from": 243711,
+        "to": 244253
+      }
+    ]
+  },
+  "lengths": {
+    "median": 774,
+    "min": 38,
+    "max": 9421,
+    "too_short": [
+      "de-inso-jaeger-6:rdn:176/31",
+      "de-inso-jaeger-6:rdn:178/134",
+      "de-inso-jaeger-6:rdn:179/59",
+      "de-inso-jaeger-6:rdn:208/7",
+      "de-inso-jaeger-6:rdn:209/10",
+      "de-inso-jaeger-6:rdn:216/43",
+      "de-inso-jaeger-6:rdn:216/35",
+      "de-inso-jaeger-6:rdn:216/89",
+      "de-inso-jaeger-6:rdn:216/92",
+      "de-inso-jaeger-6:rdn:216/109",
+      "de-inso-jaeger-6:rdn:216/103",
+      "de-inso-jaeger-6:rdn:216/20"
+    ],
+    "too_long": [
+      "de-inso-jaeger-6:rdn:206/12"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.61,
+    "footnotes_total": 2088,
+    "unparsed_blocks": 0,
+    "per_card_median": 1,
+    "cards_with_calls_but_no_notes": 307,
+    "notes_without_visible_call": 417
+  },
+  "dead_pages": {
+    "pages": [],
+    "count": 0
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "2": 1535
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 0
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 95.3% < 98%: пропущено номеров 261. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

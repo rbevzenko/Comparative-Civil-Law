@@ -1,0 +1,25 @@
+{
+  "number_issues": [
+    {
+      "raw": "22",
+      "action": "repaired_by_neighbours",
+      "to": 24,
+      "expected": 24,
+      "line": 29408,
+      "evidence": "предыдущий 23, следующий 25"
+    }
+  ],
+  "absorbed_units": 0,
+  "sections_found": 63,
+  "toc_entries": 0,
+  "toc_anchored_to_line": 0,
+  "toc_page_only": 0,
+  "pages_without_lines": [
+    2,
+    24,
+    30,
+    898
+  ],
+  "profile": "degruyter-grosskommentar-v1",
+  "method": "digital"
+}

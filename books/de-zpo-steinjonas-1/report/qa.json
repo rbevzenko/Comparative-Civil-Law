@@ -153,9 +153,9 @@
     "biggest_holes": []
   },
   "lengths": {
-    "median": 652,
+    "median": 646,
     "min": 21,
-    "max": 16608,
+    "max": 16540,
     "too_short": [
       "de-zpo-steinjonas-1:rdn:Einleitung/1",
       "de-zpo-steinjonas-1:rdn:1/35",
@@ -183,8 +183,8 @@
     "footnotes_total": 5312,
     "unparsed_blocks": 0,
     "per_card_median": 0.0,
-    "cards_with_calls_but_no_notes": 42,
-    "notes_without_visible_call": 5045
+    "cards_with_calls_but_no_notes": 85,
+    "notes_without_visible_call": 4569
   },
   "dead_pages": {
     "pages": [
