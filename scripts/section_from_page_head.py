@@ -45,6 +45,28 @@ except ImportError:
     sys.exit("Нужен pdfplumber: pip install pdfplumber")
 
 
+PARTICLES = {"von", "vom", "van", "de", "del", "della", "di", "du", "zu", "zur",
+             "den", "der", "ten", "ter", "af", "af.", "y"}
+
+
+def _surname(name):
+    """Фамилия из подписи в подвале, с дворянской частицей.
+
+    В подвале стоит «von Nussbaum», а в ссылке принято
+    «K. Schmidt/Lutter/von Nussbaum»: частица — часть фамилии, а не имя.
+    Просто последнее слово давало «Nussbaum» и портило ссылку.
+    """
+    parts = name.split()
+    if not parts:
+        return ""
+    out = [parts[-1]]
+    i = len(parts) - 2
+    while i >= 0 and parts[i].lower() in PARTICLES:
+        out.insert(0, parts[i])
+        i -= 1
+    return " ".join(out)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--book", required=True)
@@ -101,7 +123,7 @@ def main():
                         # два комментатора, а не имя и фамилия.
                         name = (m.groupdict().get("a") or m.groupdict().get("b")
                                 or m.group(1) or "").strip()
-                        who_by_page[pno] = name if "/" in name else name.split()[-1]
+                        who_by_page[pno] = name if "/" in name else _surname(name)
             page.flush_cache()
             page.get_textmap.cache_clear()
 

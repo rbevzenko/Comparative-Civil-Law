@@ -67,6 +67,20 @@ def build_page(page, i, prof, junk_rx, case_upper=None):
     }
 
 
+def _flush(page):
+    """Освободить разобранные объекты полосы.
+
+    pdfplumber кэширует их в объекте полосы, а полосы живут в pdf.pages до
+    закрытия файла: на книге в несколько тысяч полос это гарантированный
+    OOM в середине разбора.
+    """
+    try:
+        page.flush_cache()
+        page.get_textmap.cache_clear()
+    except Exception:
+        pass
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("pdf")
@@ -93,6 +107,7 @@ def main():
             table = {}
             for i in idx:
                 P.case_width_table(pdf.pages[i].chars, table)
+                _flush(pdf.pages[i])
             case_upper = P.case_upper_widths(table)
             print(f"  правка регистра: испорченных букв {len(case_upper)}", flush=True)
         done = 0
@@ -101,7 +116,12 @@ def main():
             if a.skip_done and os.path.exists(path):
                 done += 1
                 continue
-            P.write_json(path, build_page(pdf.pages[i], i, prof, junk_rx, case_upper))
+            page = pdf.pages[i]
+            P.write_json(path, build_page(page, i, prof, junk_rx, case_upper))
+            # pdfplumber держит разобранные объекты полосы в самой полосе, а
+            # полосы — в pdf.pages. Без сброса память растёт линейно по книге:
+            # Erman (7824 полосы) дважды был убит OOM на 1300-й, дойдя до 14 ГБ.
+            _flush(page)
             done += 1
             if done % 50 == 0:
                 print(f"  страниц разобрано: {done}/{len(idx)}", flush=True)

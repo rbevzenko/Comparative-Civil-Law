@@ -36,6 +36,10 @@ address:
     mode: pattern           # pattern | outline | none
     pattern: '^§+\s*(\d+[a-z]?)\.'
     anchor: start           # start | anywhere
+    min_size: null          # брать образец только со строк не мельче кегля:
+                            # заголовок параграфа набран крупнее тела, и это
+                            # единственное, чем он отличается от ссылки
+                            # «§ 823 Abs. 2 BGB …» в начале строки
     outline_pattern: '§\s*(\d+[a-z]?)'   # если mode: outline
   template: "§ {section} {unit_type} {number}"
 
