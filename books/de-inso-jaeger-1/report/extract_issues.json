@@ -15,9 +15,17 @@
       "expected": 70,
       "line": 5039,
       "evidence": "предыдущий 69, следующий 71"
+    },
+    {
+      "raw": "59",
+      "action": "repaired_by_neighbours",
+      "to": 58,
+      "expected": 58,
+      "line": 28390,
+      "evidence": "предыдущий 57, следующий 59"
     }
   ],
-  "absorbed_units": 0,
+  "absorbed_units": 8,
   "sections_found": 53,
   "toc_entries": 0,
   "toc_anchored_to_line": 0,

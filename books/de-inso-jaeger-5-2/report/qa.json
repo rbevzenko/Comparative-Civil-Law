@@ -1,151 +1,45 @@
 {
   "book": "/home/user/Comparative-Civil-Law/books/de-inso-jaeger-5-2",
-  "cards": 55,
+  "cards": 15,
   "profile": "degruyter-grosskommentar-v1",
   "method": "digital",
   "continuity": {
     "share": 1.0,
-    "rows": 12,
-    "gaps": [
-      {
-        "family": "Rdn.",
-        "section": "159",
-        "from": 1,
-        "to": 3,
-        "missing": 1
-      },
-      {
-        "family": "Rdn.",
-        "section": "161",
-        "from": 1,
-        "to": 3,
-        "missing": 1
-      },
-      {
-        "family": "Rdn.",
-        "section": "162",
-        "from": 1,
-        "to": 3,
-        "missing": 1
-      },
-      {
-        "family": "Rdn.",
-        "section": "165",
-        "from": 3,
-        "to": 5,
-        "missing": 1
-      },
-      {
-        "family": "Rdn.",
-        "section": "166",
-        "from": 1,
-        "to": 4,
-        "missing": 2
-      },
-      {
-        "family": "Rdn.",
-        "section": "166",
-        "from": 4,
-        "to": 6,
-        "missing": 1
-      },
-      {
-        "family": "Rdn.",
-        "section": "168",
-        "from": 2,
-        "to": 4,
-        "missing": 1
-      },
-      {
-        "family": "Rdn.",
-        "section": "170",
-        "from": 3,
-        "to": 6,
-        "missing": 2
-      },
-      {
-        "family": "Rdn.",
-        "section": "170",
-        "from": 2,
-        "to": 4,
-        "missing": 1
-      }
-    ],
-    "gaps_total": 9,
-    "missing_total": 11,
+    "rows": 10,
+    "gaps": [],
+    "gaps_total": 0,
+    "missing_total": 0,
     "duplicates": [],
     "duplicates_total": 0,
     "by_family": {
-      "Rdn.": 55
+      "Rdn.": 15
     }
   },
   "coverage": {
-    "share": 0.917,
-    "covered_chars": 2728842,
-    "book_chars": 2975842,
+    "share": 0.9631,
+    "covered_chars": 2166770,
+    "book_chars": 2249813,
     "cards_without_offsets": 0,
-    "biggest_holes": [
-      {
-        "chars": 917,
-        "from": 296763,
-        "to": 297680
-      },
-      {
-        "chars": 787,
-        "from": 955867,
-        "to": 956654
-      },
-      {
-        "chars": 568,
-        "from": 1503375,
-        "to": 1503943
-      }
-    ]
+    "biggest_holes": []
   },
   "lengths": {
-    "median": 220,
-    "min": 22,
-    "max": 810421,
+    "median": 152707,
+    "min": 20,
+    "max": 513234,
     "too_short": [
-      "de-inso-jaeger-5-2:rdn:160/3",
-      "de-inso-jaeger-5-2:rdn:160/4",
-      "de-inso-jaeger-5-2:rdn:160/5",
-      "de-inso-jaeger-5-2:rdn:160/6",
-      "de-inso-jaeger-5-2:rdn:161/5",
-      "de-inso-jaeger-5-2:rdn:161/6",
-      "de-inso-jaeger-5-2:rdn:162/3",
-      "de-inso-jaeger-5-2:rdn:165/3",
-      "de-inso-jaeger-5-2:rdn:166/7",
-      "de-inso-jaeger-5-2:rdn:170/6",
-      "de-inso-jaeger-5-2:rdn:170/7",
-      "de-inso-jaeger-5-2:rdn:170/8",
-      "de-inso-jaeger-5-2:rdn:171/1",
-      "de-inso-jaeger-5-2:rdn:172/4",
-      "de-inso-jaeger-5-2:rdn:173/3"
-    ],
-    "too_long": [
-      "de-inso-jaeger-5-2:rdn:158/27",
-      "de-inso-jaeger-5-2:rdn:159/3",
-      "de-inso-jaeger-5-2:rdn:159/2",
-      "de-inso-jaeger-5-2:rdn:160/2",
-      "de-inso-jaeger-5-2:rdn:161/2",
-      "de-inso-jaeger-5-2:rdn:162/2",
-      "de-inso-jaeger-5-2:rdn:165/5",
+      "de-inso-jaeger-5-2:rdn:157/4",
       "de-inso-jaeger-5-2:rdn:166/3",
-      "de-inso-jaeger-5-2:rdn:168/3",
-      "de-inso-jaeger-5-2:rdn:170/5",
-      "de-inso-jaeger-5-2:rdn:171/3",
-      "de-inso-jaeger-5-2:rdn:172/3",
-      "de-inso-jaeger-5-2:rdn:173/4"
-    ]
+      "de-inso-jaeger-5-2:rdn:166/6"
+    ],
+    "too_long": []
   },
   "footnotes": {
-    "cards_with_footnotes_share": 0.0,
-    "footnotes_total": 0,
+    "cards_with_footnotes_share": 0.73,
+    "footnotes_total": 410,
     "unparsed_blocks": 0,
-    "per_card_median": 0,
-    "cards_with_calls_but_no_notes": 3,
-    "notes_without_visible_call": 0
+    "per_card_median": 17,
+    "cards_with_calls_but_no_notes": 0,
+    "notes_without_visible_call": 143
   },
   "dead_pages": {
     "pages": [],
@@ -159,7 +53,7 @@
     "cards_without_hierarchy": 0,
     "sample": [],
     "depth_histogram": {
-      "2": 55
+      "2": 15
     }
   },
   "internal_refs": {

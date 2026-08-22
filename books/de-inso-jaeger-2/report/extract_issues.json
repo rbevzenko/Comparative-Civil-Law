@@ -15,9 +15,33 @@
       "expected": 48,
       "line": 5293,
       "evidence": "предыдущий 47, следующий 49"
+    },
+    {
+      "raw": "1",
+      "action": "repaired_by_neighbours",
+      "to": 2,
+      "expected": 2,
+      "line": 21298,
+      "evidence": "предыдущий 1, следующий 3"
+    },
+    {
+      "raw": "19",
+      "action": "repaired_by_neighbours",
+      "to": 12,
+      "expected": 12,
+      "line": 25806,
+      "evidence": "предыдущий 11, следующий 13"
+    },
+    {
+      "raw": "9",
+      "action": "repaired_by_neighbours",
+      "to": 7,
+      "expected": 7,
+      "line": 26033,
+      "evidence": "предыдущий 6, следующий 8"
     }
   ],
-  "absorbed_units": 0,
+  "absorbed_units": 5,
   "sections_found": 0,
   "toc_entries": 0,
   "toc_anchored_to_line": 0,

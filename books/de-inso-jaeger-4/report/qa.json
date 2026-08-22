@@ -4,100 +4,9 @@
   "profile": "degruyter-grosskommentar-v1",
   "method": "digital",
   "continuity": {
-    "share": 0.4048,
-    "rows": 25,
+    "share": 0.8223,
+    "rows": 24,
     "gaps": [
-      {
-        "family": "Vorspann",
-        "section": null,
-        "from": 1,
-        "to": 170,
-        "missing": 168
-      },
-      {
-        "family": "Vorspann",
-        "section": null,
-        "from": 170,
-        "to": 284,
-        "missing": 113
-      },
-      {
-        "family": "Vorspann",
-        "section": null,
-        "from": 284,
-        "to": 399,
-        "missing": 114
-      },
-      {
-        "family": "Vorspann",
-        "section": null,
-        "from": 399,
-        "to": 420,
-        "missing": 20
-      },
-      {
-        "family": "Vorspann",
-        "section": null,
-        "from": 420,
-        "to": 637,
-        "missing": 216
-      },
-      {
-        "family": "Vorspann",
-        "section": null,
-        "from": 637,
-        "to": 734,
-        "missing": 96
-      },
-      {
-        "family": "Vorspann",
-        "section": null,
-        "from": 734,
-        "to": 751,
-        "missing": 16
-      },
-      {
-        "family": "Vorspann",
-        "section": null,
-        "from": 751,
-        "to": 764,
-        "missing": 12
-      },
-      {
-        "family": "Vorspann",
-        "section": null,
-        "from": 764,
-        "to": 769,
-        "missing": 4
-      },
-      {
-        "family": "Vorspann",
-        "section": null,
-        "from": 769,
-        "to": 808,
-        "missing": 38
-      },
-      {
-        "family": "Vorspann",
-        "section": null,
-        "from": 808,
-        "to": 823,
-        "missing": 14
-      },
-      {
-        "family": "Vorspann",
-        "section": null,
-        "from": 823,
-        "to": 2650,
-        "missing": 1826
-      },
-      {
-        "family": "Vorspann",
-        "section": null,
-        "from": 164,
-        "to": 1346,
-        "missing": 1181
-      },
       {
         "family": "Rdn.",
         "section": "103",
@@ -216,10 +125,101 @@
         "from": 76,
         "to": 83,
         "missing": 6
+      },
+      {
+        "family": "Rdn.",
+        "section": "103",
+        "from": 83,
+        "to": 85,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "103",
+        "from": 85,
+        "to": 88,
+        "missing": 2
+      },
+      {
+        "family": "Rdn.",
+        "section": "103",
+        "from": 88,
+        "to": 92,
+        "missing": 3
+      },
+      {
+        "family": "Rdn.",
+        "section": "103",
+        "from": 92,
+        "to": 95,
+        "missing": 2
+      },
+      {
+        "family": "Rdn.",
+        "section": "103",
+        "from": 97,
+        "to": 100,
+        "missing": 2
+      },
+      {
+        "family": "Rdn.",
+        "section": "103",
+        "from": 100,
+        "to": 115,
+        "missing": 14
+      },
+      {
+        "family": "Rdn.",
+        "section": "103",
+        "from": 115,
+        "to": 123,
+        "missing": 7
+      },
+      {
+        "family": "Rdn.",
+        "section": "103",
+        "from": 124,
+        "to": 127,
+        "missing": 2
+      },
+      {
+        "family": "Rdn.",
+        "section": "103",
+        "from": 128,
+        "to": 133,
+        "missing": 4
+      },
+      {
+        "family": "Rdn.",
+        "section": "103",
+        "from": 134,
+        "to": 139,
+        "missing": 4
+      },
+      {
+        "family": "Rdn.",
+        "section": "103",
+        "from": 139,
+        "to": 143,
+        "missing": 3
+      },
+      {
+        "family": "Rdn.",
+        "section": "103",
+        "from": 143,
+        "to": 145,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "103",
+        "from": 145,
+        "to": 147,
+        "missing": 1
       }
     ],
-    "gaps_total": 250,
-    "missing_total": 6874,
+    "gaps_total": 237,
+    "missing_total": 3056,
     "duplicates": [],
     "duplicates_total": 0,
     "by_family": {
@@ -357,6 +357,6 @@
   },
   "absorbed_units": 0,
   "stops": [
-    "Непрерывность нумерации 40.5% < 98%: пропущено номеров 6874. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+    "Непрерывность нумерации 82.2% < 98%: пропущено номеров 3056. Паттерн местами не сработал, и эти куски книги в корпус не попали."
   ]
 }
