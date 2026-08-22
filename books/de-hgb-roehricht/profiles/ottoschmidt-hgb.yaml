@@ -1,0 +1,59 @@
+id: ottoschmidt-hgb-v1
+publisher: Otto Schmidt
+jurisdiction: DE
+language: de
+# Тот же издательский макет, что у K. Schmidt/Lutter к AktG, но файл — не
+# книга, а Druckdatei: начало координат полосы смещено вверх, и колонтитул
+# «§ 139 Rz. 62 Offene Handelsgesellschaft» стоит на top -31.5, тело
+# начинается с -6.0, а служебные строки набора («WMTP GmbH gedruckt am …»,
+# «Werk: HGB5 Druckdaten») — на -148 и -136. Отсюда ОТРИЦАТЕЛЬНЫЕ полосы:
+# доля 0.17 от высоты сняла бы вместе с колонтитулом четверть текста.
+# Полоса 481.9×680.3, тело с x0 114.8 кеглем 9.0, номер Rz. висит на 97.1,
+# аппарат кеглем 8.0 с номером первым словом, внизу «1172 Haas» — колонцифра
+# и комментатор (на чётной и нечётной порядок разный).
+
+units:
+  - type: "Rz."
+    id_prefix: "rz"
+    mode: margin
+
+margin:
+  scope: page
+  pad: 0.0
+
+footnotes:
+  mode: font_bottom
+  bottom_band: 0.30
+  note_size_max: 8.2
+
+printed_page:
+  # Верхняя доля отрицательная: иначе первая строка тела (top -6.0) попадает
+  # в разбор колонцифры наравне с подвалом.
+  band: [-0.02, 0.20]
+  max_chars: 40
+  patterns:
+    - '^[A-ZÄÖÜ][A-Za-zÄÖÜäöüß/.\- ]{2,30}\s(\d{1,4})$'
+    - '^(\d{1,4})\s[A-ZÄÖÜ][A-Za-zÄÖÜäöüß/.\- ]{2,30}$'
+
+junk:
+  # Отрицательная доля: снимаем только то, что выше тела.
+  header_band: -0.02
+  patterns:
+    - '^WMTP GmbH gedruckt'
+    - '^Werk: '
+    # Inhaltsübersicht в начале параграфа набрана кеглем 8.0 — тем же, что
+    # аппарат сносок, — и отличается только отбивкой точками.
+    - '\.\s\.\s\.\s\.'
+
+address:
+  section:
+    # Заголовок параграфа идёт кеглем 13.25 при теле 9.0 — только по кеглю он
+    # и отличается от ссылок «§ 143 …», начинающих строку.
+    mode: pattern
+    pattern: '^§\s?(\d+[a-zä]?)\s+[A-ZÄÖÜ]'
+    min_size: 11.0
+    anchor: start
+
+citation:
+  # Комментатор подставляется позже section_from_page_head.py.
+  template: "{cite_prefix} {address}"
