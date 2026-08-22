@@ -78,8 +78,8 @@ de-inso-jaeger-1:rdn:22, de-inso-jaeger-1:rdn:26, de-inso-jaeger-1:rdn:27, de-in
 ## Случайные карточки для глазной проверки
 
 ### de-inso-jaeger-1:rdn:11/62
-*Jaeger/Gerhardt, InsO, § 11 Rdn. 62*
-Адрес: § 11 Rdn. 62 | иерархия: § 11 | стр. файла 354–356
+*Jaeger, InsO, § 11 Rdn. 62*
+Адрес: § 11 Rdn. 62 | иерархия: § 11 Zulässigkeit des Insolvenzverfahrens | стр. файла 354–356
 Нормы: — | отсылки: —
 
 Mit der Eröffnung des Insolvenzverfahrens über das Vermögen der Gesellschaft wird
@@ -94,8 +94,8 @@ Ist der Gesellschaftsvertrag unwirksam, so stellt dies kein Hindernis für die D
 > [205] Uhlenbruck/Hirte, § 11 Rn 238; vgl auch Rn 19; Hess, InsO, § 11 Rn 41. MünchKomm InsO/O«, § 11 Rn 47. 210 AA offenbar FK/Schmerbach InsO, § 11
 
 ### de-inso-jaeger-1:rdn:25/58
-*Jaeger/Schilken, InsO, § 25 Rdn. 58*
-Адрес: § 25 Rdn. 58 | иерархия: § 25 | стр. файла 706–707
+*Jaeger, InsO, § 25 Rdn. 58*
+Адрес: § 25 Rdn. 58 | иерархия: § 26 Abweisung mangels Masse | стр. файла 706–707
 Нормы: — | отсылки: —
 
 Die Anforderung eines Kostenvorschusses durch das Gericht ist, auch wenn sie im
@@ -103,8 +103,8 @@ Wege einer Beschlussauflage erfolgt (s noch Rn 66 f), keine für die Betroffenen
 
 
 ### de-inso-jaeger-1:rdn:22/154
-*Jaeger/Gerhardt, InsO, § 22 Rdn. 154*
-Адрес: § 22 Rdn. 154 | иерархия: § 22 | стр. файла 616–616
+*Jaeger, InsO, § 22 Rdn. 154*
+Адрес: § 22 Rdn. 154 | иерархия: § 22 Rechtsstellung des vorläufigen Insolvenzverwalters | стр. файла 616–616
 Нормы: — | отсылки: —
 
 Die Beurteilung der Fortführungschancen nach § 22 I Nr 3 ist abzugrenzen von der
@@ -117,8 +117,8 @@ während des Verfahrens erheblich niedriger sein als nach Verfahrensabschluss.27
 > [277] Braun in Henckel/Kreft S 55 f. 283 Zu der Abgrenzung von „Prüfung" und
 
 ### de-inso-jaeger-1:rdn:22/77
-*Jaeger/Gerhardt, InsO, § 22 Rdn. 77*
-Адрес: § 22 Rdn. 77 | иерархия: § 22 | стр. файла 593–593, книги 563–563
+*Jaeger, InsO, § 22 Rdn. 77*
+Адрес: § 22 Rdn. 77 | иерархия: § 22 Rechtsstellung des vorläufigen Insolvenzverwalters | стр. файла 593–593, книги 563–563
 Нормы: — | отсылки: —
 
 a) Fortführung. Zur KO war unstreitig, dass der Sequester das Unternehmen des
@@ -133,8 +133,8 @@ entschieden werden kann, wie nunmehr zu verfahren ist.147
 > [145] Vgl zB Kleiner S 41 f: „typische Sicherungs- venten Bauunternehmen, ZInsO 1999, 216; maßnahme", daher keine Zustimmung Vallender DZWIR 1999, 271; Uhlenbruck erforderlich; OLG Düsseldorf ZIP 1982, Köln
 
 ### de-inso-jaeger-1:rdn:37/63
-*Jaeger/Henckel, InsO, § 37 Rdn. 63*
-Адрес: § 37 Rdn. 63 | иерархия: § 37 | стр. файла 986–987
+*Jaeger, InsO, § 37 Rdn. 63*
+Адрес: § 37 Rdn. 63 | иерархия: § 38 Begriff der Insolvenzgläubiger | стр. файла 986–987
 Нормы: §§ 191 | отсылки: —
 
 a) Allgemeines. Vermögensanspruch iSd § 38 ist das Recht auf eine geldwerte, aus
@@ -146,8 +146,8 @@ Sicherstellung (§§ 191, 198).
 > [191] BGHZ 25, 1, 7; BGH NJW 1958, 497; KG 1968, 1077. MDR 1970, 1019; KG FamRZ 1974, 452;
 
 ### de-inso-jaeger-1:rdn:35/68
-*Jaeger/Müller, InsO, § 35 Rdn. 68*
-Адрес: § 35 Rdn. 68 | иерархия: § 35 | стр. файла 893–894
+*Jaeger, InsO, § 35 Rdn. 68*
+Адрес: § 35 Rdn. 68 | иерархия: § 35 Begriff der Insolvenzmasse | стр. файла 893–894
 Нормы: — | отсылки: —
 
 Im Übrigen ist es auch verfehlt, das Insolvenzrisiko einseitig der Gesellschaft und 1
@@ -162,8 +162,8 @@ c) Nachschüsse
 > [1] 73 Zur Insolvenzmasse gehören auch die Ansprüche der Gesellschaft gegen Gesellschafter auf Rückgewähr von Leistungen, die sie unter Verstoß gegen den Grundsatz der Kapital- erhaltung empfangen haben (
 
 ### de-inso-jaeger-1:rdn:37/66
-*Jaeger/Henckel, InsO, § 37 Rdn. 66*
-Адрес: § 37 Rdn. 66 | иерархия: § 37 | стр. файла 987–988, книги 957–None
+*Jaeger, InsO, § 37 Rdn. 66*
+Адрес: § 37 Rdn. 66 | иерархия: § 38 Begriff der Insolvenzgläubiger | стр. файла 987–988, книги 957–None
 Нормы: § 887 ZPO, §§ 803 ff | отсылки: —
 
 In der Einzelvollstreckung wird auch der Befreiungsanspruch als Anspruch auf eine
@@ -176,8 +176,8 @@ denn vor der Entscheidung nach § 887 I, II ZPO ist der Befreiungsschuldner zu h
 
 
 ### de-inso-jaeger-1:rdn:19/13
-*Jaeger/Müller, InsO, § 19 Rdn. 13*
-Адрес: § 19 Rdn. 13 | иерархия: § 19 | стр. файла 497–497
+*Jaeger, InsO, § 19 Rdn. 13*
+Адрес: § 19 Rdn. 13 | иерархия: § 19 Überschuldung | стр. файла 497–497
 Нормы: §§ 320 | отсылки: —
 
 §§ 320 S 1, 332 I erstrecken den Anwendungsbereich des Überschuldungstatbestands
@@ -186,8 +186,8 @@ auf die Insolvenz von Nachlass und fortgesetzter Gütergemeinschaft.
 > [1] Die unterschiedlichen Ansätze Der Überschuldungstatbestand verlangt einen Vergleich des Aktivvermögens des 15 Schuldners mit seinen Verbindlichkeiten. Wie dies zu geschehen hat, ist jedoch seit lan- g
 
 ### de-inso-jaeger-1:rdn:37/84
-*Jaeger/Henckel, InsO, § 37 Rdn. 84*
-Адрес: § 37 Rdn. 84 | иерархия: § 37 | стр. файла 996–997
+*Jaeger, InsO, § 37 Rdn. 84*
+Адрес: § 37 Rdn. 84 | иерархия: § 38 Begriff der Insolvenzgläubiger | стр. файла 996–997
 Нормы: — | отсылки: —
 
 a) Getilgte Forderung, vorläufig vollstreckbares Urteil. Da die Forderung bei Beginn
@@ -201,8 +201,8 @@ Zieht sie der Insolvenzverwalter für die Masse, so liegt eine Masseverbindlichk
 
 
 ### de-inso-jaeger-1:rdn:5/2
-*Jaeger/Gerhardt, InsO, § 5 Rdn. 2*
-Адрес: § 5 Rdn. 2 | иерархия: § 5 | стр. файла 256–256
+*Jaeger, InsO, § 5 Rdn. 2*
+Адрес: § 5 Rdn. 2 | иерархия: § 5 Verfahrensgrundsätze | стр. файла 256–256
 Нормы: — | отсылки: —
 
 Die Vorschrift des § 5 I S 1 unterstellt die Tätigkeit des Insolvenzgerichts, soweit ein
