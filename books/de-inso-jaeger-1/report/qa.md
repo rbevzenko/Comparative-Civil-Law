@@ -1,24 +1,24 @@
 # Отчёт о качестве: de-inso-jaeger-1
 
-Карточек: 1705 (Vorspann — 78, Rdn. — 1627), профиль `degruyter-grosskommentar-v1`, способ `digital`
+Карточек: 1710 (Vorspann — 78, Rdn. — 1632), профиль `degruyter-grosskommentar-v1`, способ `digital`
 
 | Метрика | Значение | Порог |
 |---|---|---|
-| Непрерывность нумерации | 59.0% (рядов: 44) | ≥ 98% |
+| Непрерывность нумерации | 52.0% (рядов: 44) | ≥ 98% |
 | Покрытие текста книги | 84.6% | ≥ 90% |
 | Карточек, перенесённых из другого прогона | 0 | — |
-| Пропусков в нумерации | 644 (номеров: 5416) | — |
+| Пропусков в нумерации | 648 (номеров: 5502) | — |
 | Дублей номеров | 0 | — |
 | Длина карточки, медиана | 953 символов | — |
-| Карточек со сносками | 67% (всего сносок 4519) | — |
+| Карточек со сносками | 67% (всего сносок 4524) | — |
 | Блоков сносок без читаемых номеров | 0 | — |
-| Мёртвых страниц | 82 | — |
+| Мёртвых страниц | 81 | — |
 | Одинаковых страниц | 0 | — |
 | Карточек без иерархии | 5 | — |
 | Внутренние отсылки разрешаются | 100.0% (0 из 2 не нашлись) | — |
 | Слабых страниц OCR | 0 | — |
-| Спорных номеров | 3 | — |
-| Поглощённых единиц (contains_also) | 8 | — |
+| Спорных номеров | 2 | — |
+| Поглощённых единиц (contains_also) | 12 | — |
 
 ## Пропуски в нумерации
 
@@ -51,12 +51,12 @@
 - 6539 символов, офсеты 273663–280202 в book.txt
 - 6465 символов, офсеты 167321–173786 в book.txt
 - 6033 символов, офсеты 133304–139337 в book.txt
-- 5605 символов, офсеты 2140789–2146394 в book.txt
-- 5563 символов, офсеты 1684822–1690385 в book.txt
+- 5605 символов, офсеты 2140711–2146316 в book.txt
+- 5563 символов, офсеты 1684759–1690322 в book.txt
 - 5182 символов, офсеты 330117–335299 в book.txt
-- 4984 символов, офсеты 1660934–1665918 в book.txt
+- 4975 символов, офсеты 1660880–1665855 в book.txt
+- 4964 символов, офсеты 2001049–2006013 в book.txt
 - 4961 символов, офсеты 263512–268473 в book.txt
-- 4934 символов, офсеты 124921–129855 в book.txt
 
 Обычно это разделы с другой вёрсткой: указатели, таблицы, приложения. Либо отсечь их диапазоном страниц, либо расширить профиль.
 
@@ -65,10 +65,10 @@ de-inso-jaeger-1:rdn:33, de-inso-jaeger-1:rdn:2/21
 Длинная карточка почти всегда означает, что следующий номер не распознан и две единицы слиплись.
 
 ## Подозрительно короткие карточки
-de-inso-jaeger-1:rdn:22, de-inso-jaeger-1:rdn:26, de-inso-jaeger-1:rdn:27, de-inso-jaeger-1:rdn:28, de-inso-jaeger-1:rdn:45, de-inso-jaeger-1:rdn:2/80, de-inso-jaeger-1:rdn:4c/61, de-inso-jaeger-1:rdn:6/23, de-inso-jaeger-1:rdn:15/9, de-inso-jaeger-1:rdn:15/12, de-inso-jaeger-1:rdn:15/69, de-inso-jaeger-1:rdn:15/76, de-inso-jaeger-1:rdn:15/77, de-inso-jaeger-1:rdn:15/78, de-inso-jaeger-1:rdn:15/82
+de-inso-jaeger-1:rdn:22, de-inso-jaeger-1:rdn:26, de-inso-jaeger-1:rdn:27, de-inso-jaeger-1:rdn:28, de-inso-jaeger-1:rdn:45, de-inso-jaeger-1:rdn:2/80, de-inso-jaeger-1:rdn:4c/61, de-inso-jaeger-1:rdn:6/23, de-inso-jaeger-1:rdn:14/2, de-inso-jaeger-1:rdn:14/34, de-inso-jaeger-1:rdn:14/38, de-inso-jaeger-1:rdn:15/87, de-inso-jaeger-1:rdn:15/9, de-inso-jaeger-1:rdn:15/12, de-inso-jaeger-1:rdn:15/69
 
 ## Страницы, не попавшие ни в одну карточку
-34, 80, 86, 87, 88, 89, 107, 108, 116, 126, 134, 140, 145, 158, 161, 165, 166, 174, 175, 193, 194, 195, 196, 375, 611, 612, 629, 630, 646, 681, 682, 871, 872, 875, 876, 935, 936, 951, 952, 956
+34, 80, 86, 87, 88, 89, 107, 108, 116, 126, 134, 140, 145, 158, 161, 165, 166, 174, 175, 193, 194, 195, 196, 375, 611, 612, 629, 630, 646, 681, 682, 871, 872, 875, 876, 936, 951, 956, 973, 984
 
 ## Спорные номера
 
@@ -93,112 +93,127 @@ Ist der Gesellschaftsvertrag unwirksam, so stellt dies kein Hindernis für die D
 > [204] Zur Insolvenzfähigkeit der Innengesell- bereits BGHZ 11, 190 = NJW 1954, 231, schaft, unter Rn 8, 68 mwN. 231 ff; dagegen VYJSchmerbach InsO, § 11
 > [205] Uhlenbruck/Hirte, § 11 Rn 238; vgl auch Rn 19; Hess, InsO, § 11 Rn 41. MünchKomm InsO/O«, § 11 Rn 47. 210 AA offenbar FK/Schmerbach InsO, § 11
 
-### de-inso-jaeger-1:rdn:25/58
-*Jaeger, InsO, § 25 Rdn. 58*
-Адрес: § 25 Rdn. 58 | иерархия: § 26 Abweisung mangels Masse | стр. файла 706–707
+### de-inso-jaeger-1:rdn:25/51
+*Jaeger, InsO, § 25 Rdn. 51*
+Адрес: § 25 Rdn. 51 | иерархия: § 26 Abweisung mangels Masse | стр. файла 702–705
 Нормы: — | отсылки: —
 
-Die Anforderung eines Kostenvorschusses durch das Gericht ist, auch wenn sie im
-Wege einer Beschlussauflage erfolgt (s noch Rn 66 f), keine für die Betroffenen verbindAbweisung mangels Masse § 26
+c) Fortsetzung der aufgelösten Gesellschaft. Für den Fall der Auflösung einer rechtsfähigen Gesellschaft aufgrund Abweisung des Konkursantrages mangels Masse war
+bereits unter der Geltung des LöschG umstritten, ob die Fortsetzung einer solchen aufgelösten Gesellschaft möglich ist. Die hierzu vertretenen Ansichten hängen eng mit der
+Lehre vom Doppeltatbestand (s o Rn 48) zusammen. Zweifelhaft ist, ob eine infolge des
+§ 26 aufgelöste, aber (noch) nicht gelöschte - oder auch eine zu Unrecht gelöschte und
+deshalb in Wirklichkeit noch existente - Gesellschaft durch einen entsprechenden
+Beschluss der Gesellschafter fortgesetzt werden kann oder ob allein die Tatsache der
+Abweisung des Eröffnungsantrages bewirkt, dass die Gesellschaft aus dem Rechtsverkehr
+ausscheidet.145 Die InsO selbst äußert sich dazu nicht.146 Ausdrücklich vorgesehen ist
+allerdings die Möglichkeit der Fortsetzung für den Fal…
 
+> [150] Haas (Fn 141). S 179, 181.
+> [151] S dazu und zu den Möglichkeiten einer Kon- 153 S nur MünchKomm InsOIHaarmeyer § 26 trolle Haas InsR-Handb2 § 92 Rn 137, 138. Rn 27; Kübler/Prütting/Pape InsO § 26
+> [152] Begr zu RegE § 30; Balz Neuordnung des Rn 13; Metzger S 38. Insolvenzrechts, S 1, 16; Häsemeyer Insol- 154 S näher Schilken Gerichtsverfassungsrecht3, venzrecht im Umbruch, S 101, 106; Kilger Rn 88, 1
 
-### de-inso-jaeger-1:rdn:22/154
-*Jaeger, InsO, § 22 Rdn. 154*
-Адрес: § 22 Rdn. 154 | иерархия: § 22 Rechtsstellung des vorläufigen Insolvenzverwalters | стр. файла 616–616
+### de-inso-jaeger-1:rdn:22/145
+*Jaeger, InsO, § 22 Rdn. 145*
+Адрес: § 22 Rdn. 145 | иерархия: § 22 Rechtsstellung des vorläufigen Insolvenzverwalters | стр. файла 613–613, книги 583–583
 Нормы: — | отсылки: —
 
-Die Beurteilung der Fortführungschancen nach § 22 I Nr 3 ist abzugrenzen von der
-Fortführungsprüfung im Rahmen der Prüfung der Überschuldung des Rechtsträgers
-(hierzu Erl zu § 19). Während es sich dort um die Fortführung ohne Verfahrenseröffnung
-handelt, geht es hier um die Fortführung nach Verfahrenseröffnung, dh unter den besonderen Bedingungen des Insolvenzverfahrens und nach dessen Beendigung. Diese Rahmenbedingungen sind unterschiedlich zu beurteilen. So sind während des Verfahrens keine
-Zinsen auf Fremdkapital zu erbringen; diese sind nach § 39 Nr 1 nachrangige Verbindlichkeiten. Weiter ist die Tilgung vorübergehend ausgesetzt. Dadurch können die Kosten
-während des Verfahrens erheblich niedriger sein als nach Verfahrensabschluss.277
+Bereits angesprochen wurde, dass die Stilllegung des Unternehmens des Schuldners
+nach Abs 1 Nr 2 nur mit Zustimmung des Insolvenzgerichts zulässig ist (Rn 83ff). Dasselbe gilt für die Veräußerung des Betriebes (Rn 89 f). Beiden Fällen ist gemeinsam, dass
+es sich um Maßnahmen handelt, die sich jedenfalls de facto nicht wieder rückgängig
+machen lassen. Dementsprechend eng sind die Voraussetzungen, unter denen sie dennoch
+im Eröffnungsverfahren, das nur der Sicherung der Masse dient, zulässig sind. Daraus
+lässt sich folgern, dass Maßnahmen, die sich nicht wieder rückgängig machen lassen,
+vom vorläufigen Insolvenzverwalter grundsätzlich nur getroffen werden dürfen, wenn
+das Insolvenzgericht vorher zugestimmt hat,263 dass es sich dabei nur um Maßnahmen
+handelt, die der Sicherung der Masse dienen, versteht sich von selbst; sonst dürfte sie der
+vorläufige Insolvenzverwalter überhaupt nicht durc…
 
-> [277] Braun in Henckel/Kreft S 55 f. 283 Zu der Abgrenzung von „Prüfung" und
+> [263] Ähnlich Pohlmann Rn 280 ff für „besonders
 
-### de-inso-jaeger-1:rdn:22/77
-*Jaeger, InsO, § 22 Rdn. 77*
-Адрес: § 22 Rdn. 77 | иерархия: § 22 Rechtsstellung des vorläufigen Insolvenzverwalters | стр. файла 593–593, книги 563–563
+### de-inso-jaeger-1:rdn:22/74
+*Jaeger, InsO, § 22 Rdn. 74*
+Адрес: § 22 Rdn. 74 | иерархия: § 22 Rechtsstellung des vorläufigen Insolvenzverwalters | стр. файла 592–592
 Нормы: — | отсылки: —
 
-a) Fortführung. Zur KO war unstreitig, dass der Sequester das Unternehmen des
-Schuldners grundsätzlich fortführen durfte.144 Umstritten war lediglich, ob er dies schon
-aufgrund seiner Bestellung durfte oder ob hierzu eine besondere gerichtliche Anordnung
-erforderlich war.145 Die InsO stellt nunmehr in § 22 I 2 Nr 2 klar, dass der vorläufige
-Insolvenzverwalter im Regelfall ein vom Schuldner betriebenes Unternehmen fortführen
-soll. Das bedeutet, dass weder eine besondere Anordnung des Gerichtes noch die Zustimmung des Schuldners hierzu erforderlich ist. Dogmatisch ist dies als Sicherungsmaßnahme zu begreifen:146 Die Fortführung sorgt dafür, dass das Unternehmen als Vermögensgegenstand erhalten bleibt und seinen Wert behält, damit im Insolvenzverfahren
-entschieden werden kann, wie nunmehr zu verfahren ist.147
+Ob der vorläufige Insolvenzverwalter selbst Dauerschuldverhältnisse eingehen darf
+oder nicht, ist in der InsO nicht geregelt. Grundsätzlich sind Vertragsschlüsse von seiner
+Verwaltungsbefugnis bezüglich der Masse gedeckt. Es sind auch durchaus Konstellationen denkbar, in denen dies zur Verwaltung der Masse, zB zur Fortführung eines
+Betriebes, erforderlich ist. Wenn zB für Auslieferungen ein Kfz benötigt wird und der
+Schuldner kein solches mehr zur Verfügung hat, weil es vor Verfahrenseröffnung vom
+Vorbehaltseigentümer zurückgeholt wurde, ist es häufig sinnvoll, eines zu mieten und
+nicht zu kaufen.
 
-> [144] BGHZ 86, 190, 196; Gerhardt ZIP 1982, 1, InsO/Haarmeyer § 22 Rn 85, 89. 7; Herbert S 122; Kleiner S 41; Kilger FS 147 Zur Betriebsfortführung siehe auch ausführ- 100 Jahre KO, S 189, 196; Kilger/Schmi
-> [145] Vgl zB Kleiner S 41 f: „typische Sicherungs- venten Bauunternehmen, ZInsO 1999, 216; maßnahme", daher keine Zustimmung Vallender DZWIR 1999, 271; Uhlenbruck erforderlich; OLG Düsseldorf ZIP 1982, Köln
 
-### de-inso-jaeger-1:rdn:37/63
-*Jaeger, InsO, § 37 Rdn. 63*
-Адрес: § 37 Rdn. 63 | иерархия: § 38 Begriff der Insolvenzgläubiger | стр. файла 986–987
-Нормы: §§ 191 | отсылки: —
+### de-inso-jaeger-1:rdn:37/48
+*Jaeger, InsO, § 37 Rdn. 48*
+Адрес: § 37 Rdn. 48 | иерархия: § 38 Begriff der Insolvenzgläubiger | стр. файла 979–980
+Нормы: § 736 ZPO | отсылки: —
 
-a) Allgemeines. Vermögensanspruch iSd § 38 ist das Recht auf eine geldwerte, aus
-dem Vermögen des Schuldners beitreibbare Leistung. Das Insolvenzverfahren kann seiBegriff der Insolvenzgläubiger § 38
-mögen des Schuldners als fällig (§ 41). Auflösend bedingte werden wie unbedingte
-behandelt (§ 42), aufschiebend bedingte berechtigen während der Schwebe nur zur
-Sicherstellung (§§ 191, 198).
+dd) OHG, KG. Insolvenzgläubiger der Personengesellschaften sind die persönlichen
+Gläubiger der Gesellschaft, die einen bei der Eröffnung des Insolvenzverfahrens begründeten und im Verfahren verfolgbaren Vermögensanspruch haben (§ 38). Ob die Forderung gegen eine Handelsgesellschaft aus einem Handelsgeschäft herrührt oder nicht,
+macht keinen Unterschied. Andererseits ist die Forderung, die sich nur gegen einen
+Gesellschafter richtet („Privatgläubigerforderung") auch dann von der Teilnahme am
+Insolvenzverfahren der Gesellschaft ausgeschlossen, wenn sie auf einem Handelsgeschäft
+beruht. Auch eine Schuld, die Verbindlichkeit aller Gesellschafter, aber nicht der Gesellschaft ist, zB aus einer gemeinsam im außergesellschaftlichen Bereich begangenen unerlaubten Handlung, kann im Gesellschaftsinsolvenzverfahren der OHG und KG nicht
+verfolgt werden; anders im Verfahren über das Vermögen einer BGB…
 
-> [191] BGHZ 25, 1, 7; BGH NJW 1958, 497; KG 1968, 1077. MDR 1970, 1019; KG FamRZ 1974, 452;
+> [140] S dazu Rn 59. III 2, S 1382 ff; Uhlenbruck/H/rfe InsO § 11
+> [141] Zur Frage der analogen Anwendung des Rn 293. § 130 HGB auf die BGB-Gesellschaft 143 Düringer/Hachenburg/Flechtheim HGB3 s Rn 59. § 144 Anm 7; Ulmer in Großkomm HGB3
+> [142] Karsten Schmidt, Gesellschaftsrecht4 § 47 § 131 Rn 61. Wolfram Henckel 9 49
 
-### de-inso-jaeger-1:rdn:35/68
-*Jaeger, InsO, § 35 Rdn. 68*
-Адрес: § 35 Rdn. 68 | иерархия: § 35 Begriff der Insolvenzmasse | стр. файла 893–894
+### de-inso-jaeger-1:rdn:35/48
+*Jaeger, InsO, § 35 Rdn. 48*
+Адрес: § 35 Rdn. 48 | иерархия: § 35 Begriff der Insolvenzmasse | стр. файла 887–888
 Нормы: — | отсылки: —
 
-Im Übrigen ist es auch verfehlt, das Insolvenzrisiko einseitig der Gesellschaft und 1
-damit letztlich ihren Gläubigern aufzubürden. Vielmehr ist es Sache desjenigen, der
-Anteile an einer Gesellschaft erwerben will, sich über deren wirtschaftliche Situation
+Rechtssystematisch gibt es demnach gute Gründe für ein Verbot der Freigabe in der 1
+Verbandsinsolvenz. Demgegenüber wird argumentiert, der Grundsatz der Vollabwicklung werde durch den Verfahrenszweck der optimalen Haftungsverwirklichung (§ 1 S 1)
+eingeschränkt.395 Wenn die Abwicklung die Gläubigerbefriedigung verkürzen würde, so
+habe letztere uneingeschränkt den Vorrang.396 Doch muss man sehen, dass an der zuverlässigen Abwicklung insolventer Rechtsträger ein überragendes öffentliches Interesse
 § 35 Zweiter Abschnitt. Insolvenzmasse. Einteilung der Gläubiger
-bis zum Abschluss der Zeichnungsverträge aufzuheben. Ein automatisches Erlöschen
-bewirkt die Eröffnung des Insolvenzverfahrens nicht.
-c) Nachschüsse
 
-> [1] 72 Nebenleistungspflichten (§ 55 I AktG, § 3 II GmbHG) sind im Insolvenzverfahren weiter zu erfüllen, soweit hierfür Bedarf besteht. Dies ist bei Zuzahlungen stets der Fall,437 bei Sach- und Dienstlei
-> [1] 73 Zur Insolvenzmasse gehören auch die Ansprüche der Gesellschaft gegen Gesellschafter auf Rückgewähr von Leistungen, die sie unter Verstoß gegen den Grundsatz der Kapital- erhaltung empfangen haben (
+> [395] Balz in Kölner Schrift2, S 3, 12 Rn 32. Kübler/Prütting/Noack GesR Rn 284;
+> [396] In diesem Sinne BGH NJW 2001, 2966 Uhlenbruck/ffrrie InsO § 35 Rn 119; (obiter dicta). Jaeger/Weber KO8 §§ 207, 208 Rn 49;
+> [1] 55 Da der Anspruch auf Leistung der rückständigen Einlage zur Masse gehört, übt der Insolvenzverwalter auch das Recht der Kaduzierung aus (§ 64 AktG, § 21 GmbHG).404 Im Insolvenzverfahren der Aktienge
 
-### de-inso-jaeger-1:rdn:37/66
-*Jaeger, InsO, § 37 Rdn. 66*
-Адрес: § 37 Rdn. 66 | иерархия: § 38 Begriff der Insolvenzgläubiger | стр. файла 987–988, книги 957–None
-Нормы: § 887 ZPO, §§ 803 ff | отсылки: —
+### de-inso-jaeger-1:rdn:37/50
+*Jaeger, InsO, § 37 Rdn. 50*
+Адрес: § 37 Rdn. 50 | иерархия: § 38 Begriff der Insolvenzgläubiger | стр. файла 980–981
+Нормы: §§ 120 | отсылки: —
 
-In der Einzelvollstreckung wird auch der Befreiungsanspruch als Anspruch auf eine
-vertretbare Handlung angesehen, wenn die Schuld der Höhe nach feststeht und auch von
-einem Dritten gleichwertig erfüllt werden kann. Er wird dann nach § 887 ZPO vollstreckt,191 nicht nach §§ 803 ff, auch wenn die Befreiung von einer Geldschuld geschuldet ist.192 Die Vollstreckung nach § 887 ZPO stellt sicher, dass dem Befreiungsschuldner
-die ihm nach materiellem Recht zustehende Wahl verbleibt, wie er die Befreiung bewirkt,
-denn vor der Entscheidung nach § 887 I, II ZPO ist der Befreiungsschuldner zu hören
-(S 891 S 2 ZPO).
-§ 38 Zweiter Abschnitt. Insolvenzmasse. Einteilung der Gläubiger
+Sind Gewinnanteile aus früheren Geschäftsjahren vereinbarungsgemäß nicht, wie es
+die gesetzliche Regelung vorsieht (§§ 120 II, 167 I HGB) dem Kapitalanteil zugeschrieben, sondern auf Privatkonto gutgeschrieben worden, so wird damit zum Ausdruck
+gebracht, dass eine von den Schranken des § 122 H GB unabhängige echte Forderung auf
+Auszahlung gegen die Gesellschaft bestehen soll. Einen Aktivsaldo auf einem solchen
+Sonderkonto kann ein Gesellschafter deshalb als Insolvenzforderung im GesellschaftsBegriff der Insolvenzgläubiger §38
 
 
-### de-inso-jaeger-1:rdn:19/13
-*Jaeger, InsO, § 19 Rdn. 13*
-Адрес: § 19 Rdn. 13 | иерархия: § 19 Überschuldung | стр. файла 497–497
-Нормы: §§ 320 | отсылки: —
-
-§§ 320 S 1, 332 I erstrecken den Anwendungsbereich des Überschuldungstatbestands
-auf die Insolvenz von Nachlass und fortgesetzter Gütergemeinschaft.
-
-> [1] Die unterschiedlichen Ansätze Der Überschuldungstatbestand verlangt einen Vergleich des Aktivvermögens des 15 Schuldners mit seinen Verbindlichkeiten. Wie dies zu geschehen hat, ist jedoch seit lan- g
-
-### de-inso-jaeger-1:rdn:37/84
-*Jaeger, InsO, § 37 Rdn. 84*
-Адрес: § 37 Rdn. 84 | иерархия: § 38 Begriff der Insolvenzgläubiger | стр. файла 996–997
+### de-inso-jaeger-1:rdn:19/2
+*Jaeger, InsO, § 19 Rdn. 2*
+Адрес: § 19 Rdn. 2 | иерархия: § 19 Überschuldung | стр. файла 495–496
 Нормы: — | отсылки: —
 
-a) Getilgte Forderung, vorläufig vollstreckbares Urteil. Da die Forderung bei Beginn
-des Insolvenzverfahrens bestehen muss, scheiden vorher getilgte Ansprüche aus dem
-Bereich der Schuldenmasse aus. War ein Betrag vor dem Insolvenzverfahren auf Grund
-eines auch nur vorläufig vollstreckbaren Urteils beigetrieben worden, so besteht insoweit
-keine Insolvenzforderung mehr, mag auch der Rechtsstreit zur Zeit der Eröffnung des
-Begriff der Insolvenzgläubiger § 38
-Zieht sie der Insolvenzverwalter für die Masse, so liegt eine Masseverbindlichkeit nach
-§ 55 I Nr 1 oder Nr 3 vor.
+Eine Neuerung bedeutet hingegen die auf Initiative des Rechtsausschusses eingefügte
+Vorgabe, dass bei der Bewertung des Vermögens des Schuldners die Fortführung des
+Unternehmens zugrunde zu legen ist, wenn diese nach den Umständen überwiegend
+wahrscheinlich ist (§ 19 II S 2). Dem so genannten modifizierten zweistufigen Überschul-
+§ 19 Erster Teil. Allgemeine Vorschriften
 
+
+### de-inso-jaeger-1:rdn:37/72
+*Jaeger, InsO, § 37 Rdn. 72*
+Адрес: § 37 Rdn. 72 | иерархия: § 38 Begriff der Insolvenzgläubiger | стр. файла 990–990
+Нормы: §§ 403 | отсылки: —
+
+Ist die unvertretbare Handlung auf Grund einer Nebenpflicht geschuldet, die auf Vertrag oder gesetzlichem Schuldverhältnis beruht, so kommt es darauf an, wie das Rechtsverhältnis, dem die Nebenpflicht entspringt, haftungsrechtlich einzuordnen ist. So ist der
+Anspruch auf eine öffentlich beglaubigte Abtretungsurkunde (§§ 403, 1154 I S 2 BGB)
+gegen den Insolvenzschuldner persönlich gerichtet und nicht gegen den Insolvenzverwalter, wenn die Abtretung vor Verfahrenseröffnung vom Schuldner vorgenommen wor2 03
+den ist. Denn dieser Hilfsanspruch sichert das abgetretene Recht, das infolge der vor der
+Eröffnung des Insolvenzverfahrens erfolgten Abtretung aus dem Haftungsvermögen des
+Insolvenzschuldners ausgeschieden ist und deshalb nicht zur Masse gehört.
+
+> [2] 06 dass der Kreditgeber mit der abgesonderten Befriedigung Deckung aus Massegegenständen sucht. Ist der Sicherungsnehmer zur Aussonderung berechtigt, so richtet sich sein Aus- kunftsanspruch gegen den
+> [74] Auskunfts- und Rechnungslegungsansprüche auf gesellschaftsrechtlicher Grundlage können sich im Rahmen der Liquidation oder Auseinandersetzung einer durch das Insol- venzverfahren über das Vermögen ein
 
 ### de-inso-jaeger-1:rdn:5/2
 *Jaeger, InsO, § 5 Rdn. 2*
@@ -219,5 +234,5 @@ bedeutsame Umstände tatsächlich ermitteln soll…
 
 ## СТОП: выгружать нельзя
 
-- Непрерывность нумерации 59.0% < 98%: пропущено номеров 5416. Паттерн местами не сработал, и эти куски книги в корпус не попали.
+- Непрерывность нумерации 52.0% < 98%: пропущено номеров 5502. Паттерн местами не сработал, и эти куски книги в корпус не попали.
 - Покрытие текста 84.6% < 90%: часть книги не попала ни в одну карточку.
