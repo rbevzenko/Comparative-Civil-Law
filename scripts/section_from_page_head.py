@@ -53,7 +53,7 @@ def main():
     ap.add_argument("--foot-pattern", default=r"^([A-ZÄÖÜ][A-Za-zÄÖÜäöüß/.\-]+(?:\s[A-ZÄÖÜ][A-Za-zÄÖÜäöüß/.\-]+)?)\s+\d{1,4}$")
     ap.add_argument("--head-band", type=float, default=0.06)
     ap.add_argument("--foot-band", type=float, default=0.09)
-    ap.add_argument("--address", default="§ {section} Rdn. {number}")
+    ap.add_argument("--address", default="{section} Rdn. {number}")
     ap.add_argument("--citation", required=True)
     ap.add_argument("--only-missing", action="store_true",
                     help="параграф ставить только там, где его нет: обычно он уже\n                          снят по заголовку в теле, а колонтитул — запасной путь")
@@ -107,7 +107,10 @@ def main():
         w = fill_who.get(c["page_start"]) or ""
         if not s:
             continue
-        address = a.address.format(section=s, number=c["number"], unit_type=c["unit_type"])
+        # У параграфа адрес начинается со знака §, у Einleitung и Vorbemerkungen
+        # его нет вовсе: «§ Einleitung Rdn. 1» — не адрес, а нелепость.
+        label = f"§ {s}" if re.match(r"^\d", s) else s
+        address = a.address.format(section=label, number=c["number"], unit_type=c["unit_type"])
         c["section"] = s
         c["address"] = address
         c["citation"] = re.sub(r"\s+", " ", a.citation.format(
