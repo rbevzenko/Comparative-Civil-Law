@@ -107,7 +107,14 @@ def main():
                 continue
             page = pdf.pages[pno - 1]
             h = float(page.height)
-            for ln in P.chars_to_lines(page.chars):
+            # Кластеризация строк по ВСЕЙ полосе — самая долгая часть прогона,
+            # а нужны только колонтитул и подвал: у AktG (4444 полосы) шаг
+            # занимал столько же, сколько весь разбор книги. Символы за
+            # пределами обеих полос отбрасываются до кластеризации, с запасом
+            # в 20 pt на высоту строки.
+            hi, lo = h * a.head_band + 20.0, h * (1 - a.foot_band) - 20.0
+            chars = [c for c in page.chars if c["top"] <= hi or c["bottom"] >= lo]
+            for ln in P.chars_to_lines(chars):
                 t = re.sub(r"\s+", " ", ln["text"]).strip()
                 if not t:
                     continue
