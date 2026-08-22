@@ -35,4 +35,5 @@ address:
     anchor: start
 
 citation:
-  template: "Jaeger/{bearbeiter}, InsO, {address}"
+  # Комментатор подставляется позже section_from_page_head.py.
+  template: "Jaeger, InsO, {address}"

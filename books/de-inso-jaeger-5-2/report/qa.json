@@ -1,45 +1,256 @@
 {
   "book": "/home/user/Comparative-Civil-Law/books/de-inso-jaeger-5-2",
-  "cards": 15,
-  "profile": "degruyter-grosskommentar-v1",
+  "cards": 2107,
+  "profile": "degruyter-grosskommentar-reflow-v1",
   "method": "digital",
   "continuity": {
-    "share": 1.0,
-    "rows": 10,
-    "gaps": [],
-    "gaps_total": 0,
-    "missing_total": 0,
+    "share": 0.9149,
+    "rows": 18,
+    "gaps": [
+      {
+        "family": "Rdn.",
+        "section": "156",
+        "from": 20,
+        "to": 22,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "156",
+        "from": 35,
+        "to": 37,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "156",
+        "from": 66,
+        "to": 68,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "156",
+        "from": 71,
+        "to": 73,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "157",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "157",
+        "from": 4,
+        "to": 6,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "157",
+        "from": 17,
+        "to": 19,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "157",
+        "from": 32,
+        "to": 34,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "157",
+        "from": 39,
+        "to": 41,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "157",
+        "from": 41,
+        "to": 43,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "157",
+        "from": 55,
+        "to": 57,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "158",
+        "from": 17,
+        "to": 19,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "158",
+        "from": 24,
+        "to": 26,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "158",
+        "from": 41,
+        "to": 43,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "158",
+        "from": 44,
+        "to": 46,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "158",
+        "from": 54,
+        "to": 56,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "158",
+        "from": 57,
+        "to": 59,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "159",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "159",
+        "from": 30,
+        "to": 32,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "159",
+        "from": 36,
+        "to": 38,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "159",
+        "from": 45,
+        "to": 47,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "159",
+        "from": 47,
+        "to": 49,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "159",
+        "from": 81,
+        "to": 83,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "160",
+        "from": 10,
+        "to": 12,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "160",
+        "from": 12,
+        "to": 14,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "160",
+        "from": 29,
+        "to": 31,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "160",
+        "from": 35,
+        "to": 37,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "160",
+        "from": 47,
+        "to": 49,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "160",
+        "from": 67,
+        "to": 69,
+        "missing": 1
+      },
+      {
+        "family": "Rdn.",
+        "section": "160",
+        "from": 74,
+        "to": 76,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 195,
+    "missing_total": 201,
     "duplicates": [],
     "duplicates_total": 0,
     "by_family": {
-      "Rdn.": 15
+      "Rdn.": 2107
     }
   },
   "coverage": {
-    "share": 0.9631,
-    "covered_chars": 2166770,
-    "book_chars": 2249813,
+    "share": 0.9868,
+    "covered_chars": 2220257,
+    "book_chars": 2249858,
     "cards_without_offsets": 0,
     "biggest_holes": []
   },
   "lengths": {
-    "median": 152707,
-    "min": 20,
-    "max": 513234,
-    "too_short": [
-      "de-inso-jaeger-5-2:rdn:157/4",
-      "de-inso-jaeger-5-2:rdn:166/3",
-      "de-inso-jaeger-5-2:rdn:166/6"
-    ],
-    "too_long": []
+    "median": 824,
+    "min": 127,
+    "max": 197576,
+    "too_short": [],
+    "too_long": [
+      "de-inso-jaeger-5-2:rdn:165/172",
+      "de-inso-jaeger-5-2:rdn:171/29",
+      "de-inso-jaeger-5-2:rdn:173/141"
+    ]
   },
   "footnotes": {
-    "cards_with_footnotes_share": 0.73,
-    "footnotes_total": 410,
+    "cards_with_footnotes_share": 0.01,
+    "footnotes_total": 420,
     "unparsed_blocks": 0,
-    "per_card_median": 17,
-    "cards_with_calls_but_no_notes": 0,
-    "notes_without_visible_call": 143
+    "per_card_median": 0,
+    "cards_with_calls_but_no_notes": 510,
+    "notes_without_visible_call": 167
   },
   "dead_pages": {
     "pages": [],
@@ -53,7 +264,7 @@
     "cards_without_hierarchy": 0,
     "sample": [],
     "depth_histogram": {
-      "2": 15
+      "2": 2107
     }
   },
   "internal_refs": {
@@ -71,5 +282,7 @@
     "issues_total": 0
   },
   "absorbed_units": 0,
-  "stops": []
+  "stops": [
+    "Непрерывность нумерации 91.5% < 98%: пропущено номеров 201. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
 }

@@ -1,16 +1,16 @@
 # Отчёт о качестве: de-inso-jaeger-5-2
 
-Карточек: 15 (Rdn. — 15), профиль `degruyter-grosskommentar-v1`, способ `digital`
+Карточек: 2107 (Rdn. — 2107), профиль `degruyter-grosskommentar-reflow-v1`, способ `digital`
 
 | Метрика | Значение | Порог |
 |---|---|---|
-| Непрерывность нумерации | 100.0% (рядов: 10) | ≥ 98% |
-| Покрытие текста книги | 96.3% | ≥ 90% |
+| Непрерывность нумерации | 91.5% (рядов: 18) | ≥ 98% |
+| Покрытие текста книги | 98.7% | ≥ 90% |
 | Карточек, перенесённых из другого прогона | 0 | — |
-| Пропусков в нумерации | 0 (номеров: 0) | — |
+| Пропусков в нумерации | 195 (номеров: 201) | — |
 | Дублей номеров | 0 | — |
-| Длина карточки, медиана | 152707 символов | — |
-| Карточек со сносками | 73% (всего сносок 410) | — |
+| Длина карточки, медиана | 824 символов | — |
+| Карточек со сносками | 1% (всего сносок 420) | — |
 | Блоков сносок без читаемых номеров | 0 | — |
 | Мёртвых страниц | 0 | — |
 | Одинаковых страниц | 0 | — |
@@ -20,257 +20,243 @@
 | Спорных номеров | 0 | — |
 | Поглощённых единиц (contains_also) | 0 | — |
 
-## Подозрительно короткие карточки
-de-inso-jaeger-5-2:rdn:157/4, de-inso-jaeger-5-2:rdn:166/3, de-inso-jaeger-5-2:rdn:166/6
+## Пропуски в нумерации
+
+- Rdn., раздел 156: 20 → 22 (нет 1)
+- Rdn., раздел 156: 35 → 37 (нет 1)
+- Rdn., раздел 156: 66 → 68 (нет 1)
+- Rdn., раздел 156: 71 → 73 (нет 1)
+- Rdn., раздел 157: 1 → 3 (нет 1)
+- Rdn., раздел 157: 4 → 6 (нет 1)
+- Rdn., раздел 157: 17 → 19 (нет 1)
+- Rdn., раздел 157: 32 → 34 (нет 1)
+- Rdn., раздел 157: 39 → 41 (нет 1)
+- Rdn., раздел 157: 41 → 43 (нет 1)
+- Rdn., раздел 157: 55 → 57 (нет 1)
+- Rdn., раздел 158: 17 → 19 (нет 1)
+- Rdn., раздел 158: 24 → 26 (нет 1)
+- Rdn., раздел 158: 41 → 43 (нет 1)
+- Rdn., раздел 158: 44 → 46 (нет 1)
+- Rdn., раздел 158: 54 → 56 (нет 1)
+- Rdn., раздел 158: 57 → 59 (нет 1)
+- Rdn., раздел 159: 1 → 3 (нет 1)
+- Rdn., раздел 159: 30 → 32 (нет 1)
+- Rdn., раздел 159: 36 → 38 (нет 1)
+
+Дыра в нумерации — это либо не сработавший паттерн, либо действительно отсутствующий в книге номер. Различать глазами по странице разрыва.
+
+## Подозрительно длинные карточки
+de-inso-jaeger-5-2:rdn:165/172, de-inso-jaeger-5-2:rdn:171/29, de-inso-jaeger-5-2:rdn:173/141
+Длинная карточка почти всегда означает, что следующий номер не распознан и две единицы слиплись.
 
 ## Случайные карточки для глазной проверки
 
-### de-inso-jaeger-5-2:rdn:159/2
-*Jaeger, InsO, § 159 Rdn. 2*
-Адрес: § 159 Rdn. 2 | иерархия: § 159 → Vierter Teil. Verwaltung und Verwertung der Insolvenzmasse | стр. файла 224–248
-Нормы: § 58 InsO, §§ 160, §§ 133, §§ 21, §§ 58, §§ 161, §§ 162, §§ 276, §§ 277, §§ 160ff, §§ 160f, §§ 129ff, §§ 61 | отсылки: —
-
-Einkommen- bzw Körperschaftsteuer
-116
-Veräußert der Verwalter Gegenstände aus der Masse, so können
-durch die Verwertung auch als Masseverbindlichkeit zu begleichende
-Einkommen- bzw Körperschaftsteuer anfallen. S hierzu
-insbesondere
-– allgemein zur Einkommen- bzw Körperschaftsteuer in der
-Insolvenz: Anh § 155 InsSteuerR Rn 72ff, 228ff
-– zur Zuordnung der Verwertungshandlung zum (endgültigen)
-Insolvenzverwalter und zur Abgrenzung von steuerlichen
-Insolvenzforderungen und Masseverbindlichkeiten: Anh § 155
-InsSteuerR Rn 80ff
-– zu den insofern bestehenden Besonderheiten bei der
-Aufdeckung stiller Reserven: Anh § 155 InsSteuerR Rn 87ff
-– zu den Besonderheiten bei Betriebsaufspaltungen: Anh § 155
-InsSteuerR Rn 95ff
-– zur Behandlung von Vorauszahlungen: Anh § 155 InsSteuerR
-Rn 102f.
-117
-Von besonderer Bedeutung ist die ertragsteuerliche Behandlung
-des Sanierungsgewinns (s Anh § 155 InsSteuerR Rn…
-
-> [2] InsO bei bereits durchgeführten Maßnahmen?, ZInsO 1999, 560; Klinck Zur Pflege der Insolvenzmasse durch Insolvenzverwalter, Gläubiger und Insolvenzgericht, KTS 2009, 221; Köchling Informationsasymmetr
-> [1] Normzweck
-> [2] Normhistorie
-
-### de-inso-jaeger-5-2:rdn:166/4
-*Jaeger, InsO, § 166 Rdn. 4*
-Адрес: § 166 Rdn. 4 | иерархия: § 166 → Vierter Teil. Verwaltung und Verwertung der Insolvenzmasse | стр. файла 510–514
-Нормы: §§ 80, §§ 166 ff, §§ 167ff | отсылки: —
-
-Weitere Rechtsgrundlagen für Verfügungen des Verwalters über Absonderungs
-gut
-a) Rechtsgeschäftliche Weiterveräußerungs- und Einziehungsermächtigung
-b) Allgemeine Befugnis des Verwalters zu Maßnahmen der Massebewirtschaft
-ung im Rahmen der Betriebsfortführung (§§ 80 I, 148 I, 172 I)
-c) Ablauf einer nach § 173 II S 2 gesetzten Verwertungsfrist
-2. Die Verwertungsbefugnis des Verwalters als originäre „besondere Verfügungsb
-efugnis“
-a) Verwertungsaufgabe und Verwertungsbefugnis
-aa) Allgemeine Verwertungsaufgabe und Verwertungspflicht im Einzelfal
-l
-bb) Begriff der „Verwertung“ iSv §§ 166 ff
-cc) „Allgemeine“ und „besondere“ Verfügungsbefugnis
-b) Die Verwertungsbefugnis nach § 166 I, II als originäre gesetzliche Befugnis
-c) Konsequenzen für die Verwertungsbefugnis des Absonderungsberechtigten
-aa) Suspendierung der Verfügungs- und Einziehungsbefugnis des Abson
-derungsberechtigten
-bb) Sachliche …
-
-> [1] Erfasste „bewegliche Sachen“ a) Sachen iSv § 90 BGB b) Bewegliche Sachen
-> [2] Typischerweise von § 166 I erfasste Absonderungsrechte a) Sicherungsübertragung (§ 51 Nr 1) aa) Sicherungseigentum bb) Verlängerter bzw erweiterter Eigentumsvorbehalt cc) Anwartschaftsrecht dd) Miteig
-> [3] Besitz des Verwalters a) Teleologische Grundlagen
-
-### de-inso-jaeger-5-2:rdn:166/3
-*Jaeger, InsO, § 166 Rdn. 3*
-Адрес: § 166 Rdn. 3 | иерархия: § 166 → Vierter Teil. Verwaltung und Verwertung der Insolvenzmasse | стр. файла 510–510
+### de-inso-jaeger-5-2:rdn:166/11
+*Jaeger, InsO, § 166 Rdn. 11*
+Адрес: § 166 Rdn. 11 | иерархия: § 166 → Vierter Teil. Verwaltung und Verwertung der Insolvenzmasse | стр. файла 528–528
 Нормы: — | отсылки: —
 
-Verfassungsmäßigkeit
+bb) Durchführung der Verwertung durch den
+Verwalter. Eine mit dem Zugriffsstopp nicht zwingend
+zusammenhängende Frage ist die der tatsächlichen Durchführung
+der Verwertung – denkbar wäre ja auch, die Verwertungsbefugnis
+des Absonderungsberechtigten in dem Moment wiederaufleben zu
+lassen, in dem nach der Vorgabe der Gläubigerschaft die Verwertung
+beginnen soll (§ 159). Das Gesetz sieht hiervon ab und bewertet es
+offenbar auch in dieser Situation noch als durchgreifenden Vorteil,
+dass der konkrete Verwertungsvorgang durch den Verwalter
+gesteuert wird; die Gesetzesmotive verweisen insoweit auf die
+Möglichkeit, durch eine gemeinsame Verwertung
+zusammengehöriger, aber für unterschiedliche Gläubiger belasteter
+Gegenstände einen höheren Verwertungserlös zu erzielen.1579
 
 
-### de-inso-jaeger-5-2:rdn:170/3
-*Jaeger, InsO, § 170 Rdn. 3*
-Адрес: § 170 Rdn. 3 | иерархия: § 170 → Vierter Teil. Verwaltung und Verwertung der Insolvenzmasse | стр. файла 932–1030
-Нормы: § 670 BGB, § 1120 BGB, § 259 BGB, § 254 ZPO, § 242 BGB, § 287 ZPO, § 367 BGB, § 1209 BGB, § 776 BGB, §§ 170, §§ 49, §§ 195, §§ 166ff, §§ 166 ff, §§ 167ff, §§ 170f, §§ 270ff, §§ 12, §§ 166, §§ 311 ff, §§ 20, §§ 53ff, §§ 168, §§ 1247, §§ 167, §§ 209, §§ 169, §§ 138, §§ 60, §§ 55, §§ 94ff, §§ 10, §§ 994, §§ 683 | отсылки: —
-
-Verwertung durch den Absonderungsberechtigten
-a) Anwendbarkeit von § 170 II
-aa) („Unechte“) Freigabe an den Absonderungsberechtigten
-bb) Umsatzsteuer auslösende berechtigte Verwertung durch den Absond
-erungsberechtigten
-cc) Unberechtigte Verwertung durch den Absonderungsberechtigten
-b) Unanwendbarkeit von § 170 II
-aa) Berechtigte Verwertung durch den Absonderungsberechtigten (§ 173
-I)
-bb) Ausübung der Sicherheit vor Verfahrenseröffnung
-IV. Verwertung durch den Absonderungsberechtigten (§ 170 II)
-1. Systematische Einordnung
-2. Zweckmäßigkeit
-3. Einseitige oder konsensuale „Überlassung“?
-4. Durchführung der Verwertung
-5. Vorwegabführung der Feststellungskosten und der Umsatzsteuer
-a) Feststellungskosten
-b) Verwertungskosten
-c) Umsatzsteuer
-d) Durchsetzung
-V. Verwertungsvereinbarungen
-1. Dispositionen über die Höhe der Kostenbeiträge
-2. Verwertungsvereinbarungen iwS
-Freigabe, echte 40, 49 f…
-
-> [1] Berechnungsgrundlage a) Tatsächlicher Erlös b) Bruttoerlös c) Mehr- bzw Übererlös
-> [2] Feststellungskostenbeitrag a) Höhe des Kostenbeitrags b) Feststellungskosten aa) Kosten der tatsächlichen Feststellung bb) Kosten der rechtlichen Feststellung
-> [3] Verwertungskosten a) Umfang b) Gewöhnliche Abwicklungskosten
-
-### de-inso-jaeger-5-2:rdn:166/6
-*Jaeger, InsO, § 166 Rdn. 6*
-Адрес: § 166 Rdn. 6 | иерархия: § 166 → Vierter Teil. Verwaltung und Verwertung der Insolvenzmasse | стр. файла 514–514
+### de-inso-jaeger-5-2:rdn:172/53
+*Jaeger, InsO, § 172 Rdn. 53*
+Адрес: § 172 Rdn. 53 | иерархия: § 172 → Vierter Teil. Verwaltung und Verwertung der Insolvenzmasse | стр. файла 1090–1091
 Нормы: — | отсылки: —
 
-Hilfsansprüche zur Ermöglichung der Verwertung durch den Insolvenzverwalt
-er
+b) Entsprechende Anwendung auf sonstige
+Vermögensrechte. Nach der hier vertretenen Auffassung lässt sich
+der expliziten gesetzlichen Beschränkung des Benutzungsrechts des
+Verwalters auf bewegliche Sachen ein Argument von Gewicht für
+eine entsprechende Beschränkung der Verwertungsbefugnis des
+Verwalters nach § 166 entnehmen (§ 166 Rn 427ff). Wer
+demgegenüber die Ansicht vertritt, § 166 I sei entsprechend auf
+sonstige Vermögensrechte wie Patente, Marken,
+Gebrauchs- und Geschmacksmusterrechte, Urheberrechte
+anwendbar (s § 166 Rn 418ff), kann und muss folgerichtig auch § 172
+I, II auf diese Vermögensrechte entsprechend anwenden.3239 Die mit
+der Verwertungsbefugnis einhergehende Benutzungsbefugnis steht
+daher in der Diskussion um die entsprechende Anwendbarkeit von §
+166 I, II auf solche Rechte zutreffend ganz im Vordergrund; es geht
+sogar primär darum, etwa Immaterialgüterrechte, die für die…
 
 
-### de-inso-jaeger-5-2:rdn:166/5
-*Jaeger, InsO, § 166 Rdn. 5*
-Адрес: § 166 Rdn. 5 | иерархия: § 166 → Vierter Teil. Verwaltung und Verwertung der Insolvenzmasse | стр. файла 514–514
+### de-inso-jaeger-5-2:rdn:170/51
+*Jaeger, InsO, § 170 Rdn. 51*
+Адрес: § 170 Rdn. 51 | иерархия: § 170 → Vierter Teil. Verwaltung und Verwertung der Insolvenzmasse | стр. файла 958–959
 Нормы: — | отсылки: —
 
-Verwertung „in anderer Weise“
-a) Verkauf der Forderung
-b) Inkassozession und Einziehungsermächtigung
-c) Verwertung im Wege der Zwangsvollstreckung
-d) Freigabe
+Die §§ 166ff und damit auch die Kostenbeitragspflicht nach §§
+170, 171 sind grundsätzlich nur im eröffneten Insolvenzverfahren
+anwendbar und gelten also nicht für Veräußerungshandlungen, die
+durch einen vorläufigen Insolvenzverwalter oder mit seiner
+Zustimmung durch den Schuldner geschehen.2858 Hiervon gilt seit
+dem Inkrafttreten des neu eingeführten § 21 II S 1 Nr 5 am 1.7.2007
+allerdings eine Ausnahme: Hat das Insolvenzgericht auf der
+Grundlage dieser Bestimmung eine zur Forderungseinziehung
+ermächtigende Anordnung erlassen und zieht auf dieser
+Grundlage der (starke) vorläufige Verwalter bzw der mit
+Zustimmung des (schwachen) vorläufigen Verwalters handelnde
+Schuldner eine zur Sicherung eines Anspruchs abgetretene
+Forderung anstelle des Gläubigers ein, so gelten die §§ 170, 171 kraft
+expliziter gesetzlicher Verweisung entsprechend (§ 21 II S 1 Nr 5 S 3,
+s § 166 Rn 64ff).
 
 
-### de-inso-jaeger-5-2:rdn:160/37
-*Jaeger, InsO, § 160 Rdn. 37*
-Адрес: § 160 Rdn. 37 | иерархия: § 160 → Vierter Teil. Verwaltung und Verwertung der Insolvenzmasse | стр. файла 248–342
-Нормы: § 451 BGB, § 181 BGB, § 141 BGB, § 613a BGB, § 230 HGB, § 120 ZPO, § 34 BGB, § 1822 BGB, § 1029 ZPO, § 160 inso, § 183 BGB, § 184 BGB, § 826 BGB, § 329 ZPO, § 232 ZPO, § 217 ZPO, §§ 221f ZPO, § 839 BGB, §§ 108ff, §§ 270, §§ 160, §§ 133, §§ 162, §§ 172ff, §§ 1120ff, §§ 85f, §§ 49, §§ 122, §§ 85 f, §§ 157ff, §§ 21, §§ 75, §§ 161, §§ 160ff, §§ 58f, §§ 53, §§ 69, §§ 74, §§ 218, §§ 35, §§ 58ff, §§ 221f, §§ 186ff | отсылки: —
+### de-inso-jaeger-5-2:rdn:169/117
+*Jaeger, InsO, § 169 Rdn. 117*
+Адрес: § 169 Rdn. 117 | иерархия: § 169 → Vierter Teil. Verwaltung und Verwertung der Insolvenzmasse | стр. файла 922–923
+Нормы: — | отсылки: —
 
-potentiell zustimmungspflichtig:
-(1) Aufgabe von Vermögenswerten. Eine Fallgruppe betrifft
-die Aufgabe von Vermögenswerten, also etwa:
-– die nicht unter § 160 II Nr 1 (Rn 48) fallende Veräußerung
-von Einzelgegenständen, etwa von Patenten oder sonstigen
-Schutzrechten, die Voraussetzung für die
-Unternehmensfortführung sind,714 aber auch die Abtretung
-hoher Forderungen;715
-– die Bestellung von Grundpfandrechten und anderen
-Sicherheiten für eigene oder fremde Verbindlichkeiten;716
-– sonstige nicht unter § 160 II Nr 1 (Rn 58) fallende
-Grundstücksgeschäfte;717
-– die Anerkennung eines Aus- oder Absonderungsrechts;718
-– die Freigabe (§ 35 Rn 146ff, § 80 Rn 28ff, § 148 Rn 42ff, § 165
-Rn 83ff) eines einzelnen Vermögensgegenstands an den
-Schuldner719 (s a Rn 63 zur Grundstücksfreigabe; nicht
-hierhin gehört die nach § 35 II, III abzugebende positive oder
-negative Erklärung des Verwalters über die
-Ma…
+a) Verbot der Ausübung von Sicherungsrechten. Im
+Eröffnungsverfahren ist § 169 auch auf Absonderungsgut an sich
+nicht anwendbar; die Bestimmung knüpft an die
+Verwertungsbefugnis des Verwalters aus § 166 I an, die ihrerseits
+erst mit Verfahrenseröffnung entsteht (Rn 40 f, § 166 Rn 62, 133).
+Seit dem Inkrafttreten des Gesetzes zur Vereinfachung des
+Insolvenzverfahrens (InsVereinfG) am 1.7.2007 eröffnet jedoch § 21
+II S 1 Nr 5 dem Gericht die Möglichkeit anzuordnen, dass
+Gegenstände, die im Falle der Eröffnung des Verfahrens von § 166
+erfasst würden, vom Absonderungsberechtigten nicht verwertet oder
+eingezogen werden dürfen und dass solche Gegenstände zur
+Fortführung des Unternehmens des Schuldners eingesetzt werden
+können, soweit sie hierfür von erheblicher Bedeutung sind.2773
+Hierfür bedarf es eines begründeten Antrags des vorläufigen
+Insolvenzverwalters (gleich mit welcher Rechtsmacht au…
 
-> [1] Normzweck a) Gerichtliches Moratorium (§ 161 S 2) b) Unterrichtung des Schuldners (§ 161 S 1)
-> [1] Unterrichtungspflicht
-> [2] Normhistorie
 
-### de-inso-jaeger-5-2:rdn:158/27
-*Jaeger, InsO, § 158 Rdn. 27*
-Адрес: § 158 Rdn. 27 | иерархия: § 158 → Vierter Teil. Verwaltung und Verwertung der Insolvenzmasse | стр. файла 134–224
-Нормы: § 25 HGB, § 613a BGB, § 183 BGB, § 184 BGB, § 329 ZPO, § 232 ZPO, § 839 BGB, §§ 165 InsO, § 138 InsO, § 471 BGB, § 806 ZPO, § 1221 BGB, § 1237 BGB, § 445 BGB, § 60 InsO, § 826 BGB, § 134 BGB, §§ 60, §§ 156, §§ 157f, §§ 157, §§ 108ff, §§ 21, §§ 58f, §§ 111f, §§ 121f, §§ 35, §§ 160ff, §§ 80, §§ 270 ff, §§ 160, §§ 160 ff, §§ 165 ff, §§ 165, §§ 166ff, §§ 166 ff, §§ 187, §§ 161, §§ 450, §§ 814, §§ 1235, §§ 172 ff, §§ 728, §§ 15, §§ 6f, §§ 15a | отсылки: —
+### de-inso-jaeger-5-2:rdn:166/459
+*Jaeger, InsO, § 166 Rdn. 459*
+Адрес: § 166 Rdn. 459 | иерархия: § 166 → Vierter Teil. Verwaltung und Verwertung der Insolvenzmasse | стр. файла 735–736
+Нормы: — | отсылки: —
 
-– Steuerberater und Wirtschaftsprüfer.331
-d) Haftung des Verwalters. Eine persönliche Haftung des
-Insolvenzverwalters für die Verletzung der Pflichten eines
-ordentlichen und gewissenhaften Insolvenzverwalters bei
-der Unternehmensfortführung kommt gegenüber der
-Insolvenzmasse (§ 60) zunächst unter dem Aspekt in Frage, dass
-bereits die Entscheidung über die Unternehmensfortführung bzw
-das Unterlassen eines rechtzeitigen Abbruchs der
-Unternehmensfortführung als solche fehlerhaft war und zu einer
-Masseverkürzung geführt hat.332
-28
-Hat die Unternehmensfortführung in der Masseunzulänglichkeit
-geendet, so haftet der Verwalter nicht nur gegenüber der
-Insolvenzmasse, sondern auch gegenüber den uU ganz oder teilweise
-leer ausgehenden Massegläubigern (§ 61 S 1).333 Materieller
-Haftungsgrund ist hier die Verletzung der Verpflichtung, sich im
-Zuge der Unternehmensfortführung permanent durch Aufstellu…
+Überlässt der Absonderungsberechtigte dem Verwalter das
+Absonderungsgut vereinbarungsgemäß zur Verwertung, so sind im
+Hinblick auf die Feststellungs- und Verwertungskosten nicht
+ohne weiteres die §§ 170 I, 171 anwendbar. Jedoch kann sich das
+Entstehen von Kostenbeiträgen – sei es analog zur gesetzlichen
+Regelung, sei es in größerem oder geringerem Umfang – aufgrund
+ausdrücklicher oder stillschweigender Vereinbarung eben aus dieser
+Verwertungsvereinbarung ergeben (§ 170 Rn 162ff). Ist nichts
+ausdrücklich vereinbart, wird diese Vereinbarung im Zweifel dahin
+auszulegen sein, dass sich das Entstehen von
+Kostenbeitragsansprüchen nach Grund und Höhe an der
+gesetzlichen Bestimmung des § 171 ausrichtet.2299
 
-> [1] Normzweck 1 a) Verwertungsaufgabe nach Maßgabe der Gläubigerentscheidung b) § 159 als interne Erlaubnisnorm
-> [1] § 159 als Verwertungsverbot für andere Vermögensgegenstände als Unternehm en
-> [2] Normhistorie
 
-### de-inso-jaeger-5-2:rdn:168/3
-*Jaeger, InsO, § 168 Rdn. 3*
-Адрес: § 168 Rdn. 3 | иерархия: § 168 → Vierter Teil. Verwaltung und Verwertung der Insolvenzmasse | стр. файла 798–932
-Нормы: § 185 BGB, § 1120 BGB, § 126b BGB, § 130 BGB, § 254 BGB, § 277 BGB, § 242 BGB, § 233 ZPO, § 826 BGB, § 287 ZPO, § 985 BGB, § 903 BGB, § 252 BGB, § 169 InsO, § 246 BGB, § 288 BGB, § 247 BGB, § 315 BGB, § 289 BGB, § 367 BGB, § 222 ZPO, § 48 InsO, §§ 167ff, §§ 49, §§ 270 ff, §§ 166, §§ 311ff, §§ 167, §§ 55, §§ 170, §§ 186ff, §§ 169, §§ 168, §§ 929ff, §§ 166ff, §§ 52, §§ 767, §§ 252, §§ 53, §§ 987, §§ 30e, §§ 30d, §§ 166 ff, §§ 270ff, §§ 60, §§ 35f, §§ 352, §§ 151ff, §§ 5, §§ 280, §§ 31, §§ 187, §§ 165 ff, §§ 81 | отсылки: —
+### de-inso-jaeger-5-2:rdn:162/4
+*Jaeger, InsO, § 162 Rdn. 4*
+Адрес: § 162 Rdn. 4 | иерархия: § 162 → Vierter Teil. Verwaltung und Verwertung der Insolvenzmasse | стр. файла 347–347
+Нормы: — | отсылки: —
 
-Rechtsfolgen
-a) Erfüllung der Mitteilungs- und Wartepflicht
-aa) Ansprüche des Absonderungsberechtigten
-(1) Nachteilsausgleich (§ 168 II Alt 2)
-(2) Schadensersatz wegen Unterwertverkaufs
-(3) Erlösauskehr (§ 170 I S 2)
-bb) Ansprüche der Masse gegen den Verwalter
-b) Verletzung der Mitteilungs- und Wartepflicht
-aa) Ansprüche des Absonderungsberechtigten gegen den Verwalter persö
-nlich
-bb) Ansprüche des Absonderungsberechtigten gegen die Masse
-cc) Ansprüche der Masse gegen den Verwalter
-III. Alternativer Verwertungsvorschlag des Absonderungsberechtigten (§ 16
-d) Kostenbeiträge
-e) Haftung des Verwalters gegenüber der Insolvenzmasse
-4. Ablehnung des Angebots und anderweitige Veräußerung durch den Verwalter
-a) Zulässigkeit
-b) Ersatzansprüche des Absonderungsberechtigten
-aa) Anspruch gegen die Masse auf Nachteilsausgleich (§ 168 II Alt 2)
-(1) Anwendbarkeit
-(2) Differenz zum angebotenen Übernahmep…
+§ 162 hatte in der KO keine Vorgängerregelung, sondern geht
+auf die in den frühen 1980er Jahren aufgekommene Diskussion um
+Vorzüge und Risiken der „übertragenden Sanierung“ zurück.1058
+Während des Gesetzgebungsverfahrens wurde der
+Regelungsgehalt der Norm mehrfach verändert: Nach den
+Ministeriumsentwürfen (§ 172 DiskE/RefE, § 181 RegE) durfte die
+Veräußerung an besonders interessierte Insider nur auf der
+Grundlage eines Insolvenzplans erfolgen.1059 Im Hinblick darauf,
+dass ein Insolvenzplan umfassende Informationsrechte zusichert
+und eine Abstimmung nach Gläubigergruppen vorsieht, nahm man
+an, dass dies die beste Möglichkeit sei, die Gläubiger vor einer
+Übervorteilung zu schützen und zu gewährleisten, dass alle
+Gläubiger zumindest dieselbe Quote wie bei einer Liquidation
+erhalten würden („Pareto-Optimum“). Des Weiteren sahen die
+Entwürfe in ihrem jeweiligen Abs 2 vor, dass der Verwalter …
 
-> [1] Hinweis des Absonderungsberechtigten a) Hinweisrecht b) Inhaltliche Anforderungen c) Günstigere Verwertungsmöglichkeit d) Form e) Frist aa) Länge bb) Berechnung cc) Rechtzeitigkeit des Vorschlags f) U
-> [1] Übernahmeangebot
-> [2] Befolgen des Hinweises (§ 168 II Alt 1) a) Ansprüche des Absonderungsberechtigten b) Haftung des Absonderungsberechtigten c) Haftung des Verwalters gegenüber der Masse
 
-### de-inso-jaeger-5-2:rdn:157/5
-*Jaeger, InsO, § 157 Rdn. 5*
-Адрес: § 157 Rdn. 5 | иерархия: § 157 → Vierter Teil. Verwaltung und Verwertung der Insolvenzmasse | стр. файла 84–134
-Нормы: §§ 166, §§ 270ff, §§ 160ff, §§ 157f, §§ 58 f, §§ 58f, §§ 219ff, §§ 220ff, §§ 217ff, §§ 76f, §§ 129, §§ 270 ff, §§ 160, §§ 162, §§ 103ff, §§ 61 | отсылки: —
+### de-inso-jaeger-5-2:rdn:166/211
+*Jaeger, InsO, § 166 Rdn. 211*
+Адрес: § 166 Rdn. 211 | иерархия: § 166 → Vierter Teil. Verwaltung und Verwertung der Insolvenzmasse | стр. файла 630–630
+Нормы: — | отсылки: —
 
-Anfechtbarkeit des Beschlusses
-Literatur: S zu § 156.
-Alphabetische Übersicht
-Änderung des Versammlungsbeschlusses 50ff
-– Quorum 51
-– Vertagung 52
-Gläubigerversammlung 34ff
-– Beschlussfähigkeit 40ff
-– Beschlussfassung 40ff
-– Mindestpräsenz 51
-– Nichtbefassung 43f, 46f, 52
-– Weisungsrecht 6, 29, 34ff
-Going-concern-Wert 21
-Haftung des Insolvenzverwalters 19, 34, 57
-Haftungsverwirklichung 10
-Initiativrecht, Insolvenzplan 6, 31 f, 35
-Insolvency Judgment Rule 20
-Insolvenzgericht, Kompetenzverlagerung 46 Insolvenzplan 6ff, 11, 18, 23, 27, 29ff, 55f
-– Initiativrecht s dort
-Unternehmen, Begriff 13f
-Unternehmensfortführung 1ff, 8, 11, 15, 17, 19, 26ff, 34, 41, 48, 51, 56f
-– dauerhafte 27
-– vorläufige 26ff
-Unternehmensteil, Begriff 15
-Unternehmensveräußerung 1, 22, 41, 48, 51, 9, 11, 21, 26f, 30, 48
-Veräußerung des Betriebs bzw Unternehmens s Unternehmensveräußerung
-Verbraucherinsolvenzverfahren 8…
+bb) Mittelbarer Besitz in der Rechtsprechung des
+Bundesgerichtshofs. Der Bundesgerichtshof hat es in zwei
+grundlegenden Entscheidungen aus dem Jahr 2006 zunächst
+vermieden, sich grundsätzlich für eine auf mittelbarem Besitz
+beruhende Verwertungsbefugnis des Verwalters auszusprechen. Im
+Urteil vom 16.2.20061907 war ihm das entscheidende Argument für
+die Bejahung der Verwertungsbefugnis, dass der Insolvenzverwalter
+Sicherungsgut, das der Schuldner gewerblich einem Dritten gegen
+Entgelt überlassen habe, regelmäßig sowohl für eine
+Unternehmensfortführung als auch für eine geordnete Abwicklung
+benötige; denn wenn die Absonderungsberechtigten auf das
+Sicherungsgut zugreifen könnten, entfiele die Verpflichtung des
+Vertragspartners zur Entrichtung des Überlassungsentgelts, was eine
+Fortführung des Unternehmens behindern könne. Ergänzend
+argumentierte der Senat, dass die Verwertungsbefugnis des
+V…
 
-> [1] Normzweck
-> [2] Normhistorie
-> [3] Anwendungsbereich a) Eigenverwaltung b) Verbraucherinsolvenzverfahren
 
-## Пороги пройдены
+### de-inso-jaeger-5-2:rdn:159/23
+*Jaeger, InsO, § 159 Rdn. 23*
+Адрес: § 159 Rdn. 23 | иерархия: § 159 → Vierter Teil. Verwaltung und Verwertung der Insolvenzmasse | стр. файла 182–182
+Нормы: — | отсылки: —
 
-Пороги — нижняя граница приличия, а не доказательство. Перед выгрузкой стоит посмотреть случайные карточки выше и разобраться с пропусками, если они есть.
+Außerhalb des Anwendungsbereichs der EuInsVO richten sich bei
+der Eröffnung eines ausländischen Insolvenzverfahrens die
+Wirkungen hinsichtlich der im Inland gelegenen Immobilien des
+Schuldners nach der lex fori concursus (§ 343 I InsO).
+4. Verhältnis zu anderen Vorschriften
+
+
+### de-inso-jaeger-5-2:rdn:168/12
+*Jaeger, InsO, § 168 Rdn. 12*
+Адрес: § 168 Rdn. 12 | иерархия: § 168 → Vierter Teil. Verwaltung und Verwertung der Insolvenzmasse | стр. файла 807–808
+Нормы: — | отсылки: —
+
+Kommt es nicht zu einer entsprechenden Vereinbarung mit dem
+Absonderungsberechtigten, so bedarf der Verwalter, da er nach der
+Verfahrenseröffnung nicht länger auf die früher mit dem Schuldner
+vereinbarten Veräußerungsermächtigungen zurückgreifen kann, zu
+einer wirksamen und lastenfreien Veräußerung – unbeschadet der
+Möglichkeit gutgläubigen Erwerbs (§ 166 Rn 271f) – der gesetzlichen
+Verfügungsbefugnis des § 166 I (§ 166 Rn 121). Der wesentlichen
+Prämisse der o a Auffassung, dass es sich nämlich bei der
+Veräußerung „im ordentlichen Geschäftsgang“ im Rahmen einer
+Betriebsfortführung nicht eigentlich um eine Verwertung iSv § 166 I
+handele (sondern womöglich um eine Variante der nach § 172 I
+erlaubten Benutzung, s ausführlich § 172 Rn 40ff), kann deshalb
+schon aus dem Grund nicht gefolgt werden, dass es bei dieser
+Betrachtung schon an der Befugnis des Verwalters fehlen würde,
+sachenrechtlich…
+
+
+### de-inso-jaeger-5-2:rdn:166/398
+*Jaeger, InsO, § 166 Rdn. 398*
+Адрес: § 166 Rdn. 398 | иерархия: § 166 → Vierter Teil. Verwaltung und Verwertung der Insolvenzmasse | стр. файла 706–707
+Нормы: — | отсылки: —
+
+Nicht ganz ohne Widerspruch zu erfahren2172 nimmt die hM
+deshalb an, der gutgläubige Drittschuldner werde in seinem
+Vertrauen auf den Fortbestand der Einziehungsbefugnis
+des Drittschuldners geschützt, sei es durch die entsprechende
+Anwendung der die cessio legis betreffenden §§ 412, 407 I, 408
+BGB,2173 des § 82 S 12174 oder auch aller dieser Vorschriften im Wege
+einer Gesamtanalogie.2175 Dem ist im Ergebnis schon deshalb
+zuzustimmen, weil anderenfalls die Auslegung der §§ 166 II, 173 I im
+Sinne eines unbedingten Wegfalls der Einziehungsbefugnis
+einschließlich der Empfangszuständigkeit (Rn 383ff) dem
+Drittschuldner gegenüber ganz unverhältnismäßig wäre.
+Wertungsmäßig trägt insoweit vor allem die Parallele zum Übergang
+der Einziehungsbefugnis auf den Pfändungsgläubiger in der
+Einzelzwangsvollstreckung; auch insoweit fehlt es zwar an einer
+Vertrauensschutznorm, jedoch steht die entsprechend…
+
+
+## СТОП: выгружать нельзя
+
+- Непрерывность нумерации 91.5% < 98%: пропущено номеров 201. Паттерн местами не сработал, и эти куски книги в корпус не попали.
