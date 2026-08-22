@@ -61,13 +61,23 @@ def main():
                 ranges.append((book, i))
             singles[(c["section"], c["number"])].append((book, i))
 
+    # Сколько карточек у каждой книги приходится на каждый параграф. Из двух
+    # распечаток одного места оставляем ту, где параграф разобран полнее:
+    # иначе § 986 расползается по двум источникам вперемешку, и ни в одном
+    # он не читается подряд.
+    per_section = defaultdict(int)
+    for book, cs in cards.items():
+        for c in cs:
+            per_section[(book, c["section"])] += 1
+
     drop = defaultdict(set)
     dup_pairs = 0
     for key, places in singles.items():
         if len(places) < 2:
             continue
         dup_pairs += 1
-        best = max(places, key=lambda t: len(cards[t[0]][t[1]]["text"]))
+        best = max(places, key=lambda t: (per_section[(t[0], key[0])],
+                                          len(cards[t[0]][t[1]]["text"])))
         for p in places:
             if p != best:
                 drop[p[0]].add(p[1])

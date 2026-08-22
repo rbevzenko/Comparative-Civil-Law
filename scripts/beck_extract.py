@@ -76,6 +76,11 @@ CITE_LONG = re.compile(
     r"(?P<aufl>\d{1,2})\.\s*Aufl\.\s*(?P<year>\d{4}),\s*"
     r"(?P<gesetz>[A-ZÄÖÜ][A-Za-zÄÖÜäöü]*)\s*(?P<vor>Vor\s*)?§+\s*(?P<par>\d+[a-zä]?)"
     r"(?:\s*(?:und|bis|-|–)\s*§*\s*\d+[a-zä]?)?"
+    # Уточнение внутри параграфа: «BGB § 309 Abs. 5 Rn. 1, 2». Это отдельная
+    # единица комментария со своим счётом Randnummern, и без него Rn. 1
+    # к § 309 Abs. 5 столкнётся с Rn. 1 к § 309 Abs. 1. У § 309 таких
+    # подразделов тринадцать, и на них приходится 371 задание печати.
+    r"(?P<qual>(?:\s*(?:Abs|Nr|S)\.\s*\d+[a-z]?)*)"
     r"(?:\s*Rn\.\s*(?P<rn>[\d\s\-–,]+))?\s*$")
 CITE_SHORT = re.compile(r"^[A-Za-zÄÖÜäöü]+/[^,]{1,60}\s+[A-ZÄÖÜ][A-Za-zÄÖÜäöü]*\s*(Vor\s*)?§+\s*\d")
 
@@ -449,6 +454,18 @@ def job_units(job, warn):
     body = inline_superscripts(body)
     marks = [(k, ln["rn"]) for k, ln in enumerate(body) if ln.get("rn") is not None]
     want = rn_list(cite["rn"]) if cite and cite.get("rn") else []
+    # Задание печати САМО говорит, какие Randnummern в нём напечатаны. Всё,
+    # что распознано на поле вне этого списка, — не номер: это сбитая цифра
+    # сноски или год из ссылки, попавший к правому краю. Без проверки такой
+    # самозванец рвёт ряд на сотни номеров: у § 267 «199» вместо 25 давало
+    # дыру в 174 номера, у § 305 «397» — в 273, у § 327c «281» — в 219.
+    if want:
+        allowed = set(want)
+        marks = [(k, n) for k, n in marks if n in allowed]
+        for k, ln in enumerate(body):
+            if ln.get("rn") is not None and ln["rn"] not in allowed:
+                warn["номер на поле вне задания"] += 1
+                ln["rn"] = None
 
     if not body:
         return [], notes
@@ -548,7 +565,7 @@ def main():
         if not cite:
             warn["задание без ссылки"] += 1
             continue
-        par = ("Vor " if cite["vor"] else "") + cite["par"]
+        par = ("Vor " if cite["vor"] else "") + cite["par"] + re.sub(r"\s+", " ", cite.get("qual") or "")
         werk = werk or cite["werk"]
         aufl = aufl or int(cite["aufl"])
         year = year or int(cite["year"])

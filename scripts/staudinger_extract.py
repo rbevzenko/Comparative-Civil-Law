@@ -61,7 +61,11 @@ CITE_PAR = re.compile(
 CITE_VOR = re.compile(
     r"^(?:[^:]{0,40}:\s*)?Staudinger/\s*(?P<bearb>[^()]{1,60}?)\s*\((?P<year>\d{4})\)\s*"
     r"(?:(?P<gesetz>[A-ZÄÖÜ][A-Za-zÄÖÜäöü]*)\s+)?"
-    r"(?P<vorbem>Vorbem(?:erkungen)?)\s*(?:zu\s*)?§+\s*(?P<par>\d+[a-zä]?(?:\s*(?:-|–|ff)\s*\d*[a-zä]?)?)")
+    # «Vorbemerkungen zu §§ 164-181», «Vorbemerkung zu §§ 158–163» и английский
+    # перевод той же строки — «Preliminary remarks to §§ 116». Три файла из
+    # девятнадцати давали ноль карточек ровно из-за этих написаний.
+    r"(?P<vorbem>Vorbem(?:erkung(?:en)?)?|Preliminary\s+remarks?)\s*(?:zu|to)?\s*"
+    r"§+\s*(?P<par>\d+[a-zä]?(?:\s*(?:-|–|ff)\s*\d*[a-zä]?)?)")
 
 LABEL = re.compile(
     r"^(Werk|Factory|Autor|Author|Redaktor|Editor|Werksstand|Factory status|"
