@@ -44,22 +44,35 @@ try:
 except ImportError:
     sys.exit("Нужен pdfplumber: pip install pdfplumber")
 
-# «Staudinger/Klumpp (2021) BGB § 104», «Staudinger/ Bieder/ Gursky (2022) BGB § 387»,
-# «Staudinger/Bork (2025) BGB Vorbem zu §§ 145-156».
-CITE = re.compile(
-    r"^(?:(?:Zitiervorschlag|Citation):\s*)?"
-    r"Staudinger/\s*(?P<bearb>[^()]{1,60}?)\s*\((?P<year>\d{4})\)\s*"
-    r"(?P<gesetz>[A-ZÄÖÜ][A-Za-zÄÖÜäöü]*)\s*"
-    r"(?P<vorbem>Vorbem[^§]*)?§+\s*(?P<par>\d+[a-zä]?)")
+# Строка Zitiervorschlag — единственный надёжный признак начала параграфа.
+# Ярлык перед ней бывает и по-немецки, и по-английски («Zitiervorschlag:»,
+# «Suggested citation:»), а у части файлов платформа переводит вообще всю
+# шапку («Factory:» вместо «Werk:», «Author:» вместо «Autor:»). Поэтому ярлык
+# берётся любой, лишь бы за ним стояло «Staudinger/».
+#
+# Сама ссылка бывает двух видов:
+#   Staudinger/Klumpp (2021) BGB § 104
+#   Staudinger/Schilken (2024) Vorbemerkungen zu §§ 164-181
+# и второй нельзя терять: Vorbemerkungen — такая же единица цитирования, как
+# параграф, и в них лежит вся общая часть института.
+CITE_PAR = re.compile(
+    r"^(?:[^:]{0,40}:\s*)?Staudinger/\s*(?P<bearb>[^()]{1,60}?)\s*\((?P<year>\d{4})\)\s*"
+    r"(?P<gesetz>[A-ZÄÖÜ][A-Za-zÄÖÜäöü]*)\s*§+\s*(?P<par>\d+[a-zä]?)")
+CITE_VOR = re.compile(
+    r"^(?:[^:]{0,40}:\s*)?Staudinger/\s*(?P<bearb>[^()]{1,60}?)\s*\((?P<year>\d{4})\)\s*"
+    r"(?:(?P<gesetz>[A-ZÄÖÜ][A-Za-zÄÖÜäöü]*)\s+)?"
+    r"(?P<vorbem>Vorbem(?:erkungen)?)\s*(?:zu\s*)?§+\s*(?P<par>\d+[a-zä]?(?:\s*(?:-|–|ff)\s*\d*[a-zä]?)?)")
+
+LABEL = re.compile(
+    r"^(Werk|Factory|Autor|Author|Redaktor|Editor|Werksstand|Factory status|"
+    r"Updatestand|Update status|Quelle|Source)\s*(status)?:")
 
 JUNK = [
     re.compile(r"^samson-[a-z0-9]+", re.I),
     re.compile(r"^\d{2}[./]\d{2}[./]\d{4},\s*\d{2}:\d{2}"),
     re.compile(r"^©\s*Otto Schmidt"),
-    re.compile(r"^(Werk|Factory|Autor|Author|Redaktor|Editor|Werksstand|Updatestand|Quelle|Source|Zitiervorschlag|Citation):\s*$"),
-    re.compile(r"^(Staudinger, BGB|Neubearbeitung \d{4})$"),
+    LABEL,
 ]
-
 
 def body_left(lines):
     """Левый край полосы набора — по длинным строкам без висячего номера."""
@@ -108,7 +121,7 @@ def split_sections(lines):
     """
     blocks, cur, cite = [], [], None
     for ln in lines:
-        m = CITE.match(ln["text"])
+        m = CITE_VOR.match(ln["text"]) or CITE_PAR.match(ln["text"])
         if m:
             if cite:
                 blocks.append({"cite": cite, "lines": cur})
@@ -153,7 +166,8 @@ def main():
         c = blk["cite"]
         pull_hanging_numbers(blk["lines"])
         marks = [k for k, ln in enumerate(blk["lines"]) if ln.get("rn") is not None]
-        sec = (c["vorbem"].strip() + " " if c["vorbem"] else "") + c["par"]
+        vor = (c.get("vorbem") or "").strip()
+        sec = ("Vorbem " + c["par"]) if vor else c["par"]
         if not marks:
             warn["параграф без Randnummern"] += 1
             continue
@@ -166,8 +180,9 @@ def main():
             text = join_hyphens("\n".join(ln["text"] for ln in chunk).strip())
             if not text:
                 continue
-            address = (f"{c['gesetz']} {c['vorbem'].strip()} § {c['par']}" if c["vorbem"]
-                       else f"{c['gesetz']} § {c['par']}")
+            gesetz = (c.get("gesetz") or "BGB").strip()
+            address = (f"{gesetz} Vorbemerkungen zu §§ {c['par']}" if vor
+                       else f"{gesetz} § {c['par']}")
             address += f" Rn {num}" if num else " Schrifttum und Übersicht"
             start = offset
             texts.append(text)
