@@ -1,0 +1,389 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-gmbhg-lutter-hommelhoff",
+  "cards": 3980,
+  "profile": "ottoschmidt-gmbhg-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.9987,
+    "rows": 114,
+    "gaps": [
+      {
+        "family": "Rn",
+        "section": "1",
+        "from": 1,
+        "to": 5,
+        "missing": 3
+      },
+      {
+        "family": "Rn",
+        "section": "1",
+        "from": 6,
+        "to": 8,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "1",
+        "from": 8,
+        "to": 11,
+        "missing": 2
+      },
+      {
+        "family": "Rn",
+        "section": "1",
+        "from": 14,
+        "to": 18,
+        "missing": 3
+      },
+      {
+        "family": "Rn",
+        "section": "1",
+        "from": 19,
+        "to": 23,
+        "missing": 3
+      },
+      {
+        "family": "Rn",
+        "section": "1",
+        "from": 4,
+        "to": 7,
+        "missing": 2
+      },
+      {
+        "family": "Rn",
+        "section": "1",
+        "from": 7,
+        "to": 9,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "1",
+        "from": 10,
+        "to": 15,
+        "missing": 4
+      },
+      {
+        "family": "Rn",
+        "section": "1",
+        "from": 17,
+        "to": 20,
+        "missing": 2
+      },
+      {
+        "family": "Rn",
+        "section": "2",
+        "from": 2,
+        "to": 4,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "3",
+        "from": 4,
+        "to": 7,
+        "missing": 2
+      },
+      {
+        "family": "Rn",
+        "section": "3",
+        "from": 1,
+        "to": 5,
+        "missing": 3
+      },
+      {
+        "family": "Rn",
+        "section": "4",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "4a",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "4a",
+        "from": 6,
+        "to": 8,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "4a",
+        "from": 8,
+        "to": 10,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "4a",
+        "from": 10,
+        "to": 12,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "4a",
+        "from": 12,
+        "to": 14,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "4a",
+        "from": 2,
+        "to": 7,
+        "missing": 4
+      },
+      {
+        "family": "Rn",
+        "section": "4a",
+        "from": 7,
+        "to": 9,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "4a",
+        "from": 9,
+        "to": 11,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "4a",
+        "from": 11,
+        "to": 13,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "4a",
+        "from": 13,
+        "to": 22,
+        "missing": 8
+      },
+      {
+        "family": "Rn",
+        "section": "6",
+        "from": 1,
+        "to": 7,
+        "missing": 5
+      },
+      {
+        "family": "Rn",
+        "section": "6",
+        "from": 7,
+        "to": 12,
+        "missing": 4
+      },
+      {
+        "family": "Rn",
+        "section": "6",
+        "from": 12,
+        "to": 14,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "6",
+        "from": 15,
+        "to": 17,
+        "missing": 1
+      },
+      {
+        "family": "Rn",
+        "section": "6",
+        "from": 17,
+        "to": 20,
+        "missing": 2
+      },
+      {
+        "family": "Rn",
+        "section": "6",
+        "from": 20,
+        "to": 27,
+        "missing": 6
+      },
+      {
+        "family": "Rn",
+        "section": "6",
+        "from": 27,
+        "to": 29,
+        "missing": 1
+      }
+    ],
+    "gaps_total": 196,
+    "missing_total": 435,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Vorspann": 77,
+      "Rn": 3903
+    }
+  },
+  "coverage": {
+    "share": 0.9241,
+    "covered_chars": 3983497,
+    "book_chars": 4310864,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 6185,
+        "from": 513084,
+        "to": 519269
+      },
+      {
+        "chars": 5740,
+        "from": 165852,
+        "to": 171592
+      },
+      {
+        "chars": 5647,
+        "from": 2203658,
+        "to": 2209305
+      },
+      {
+        "chars": 5446,
+        "from": 869021,
+        "to": 874467
+      },
+      {
+        "chars": 5411,
+        "from": 546565,
+        "to": 551976
+      },
+      {
+        "chars": 5268,
+        "from": 4254713,
+        "to": 4259981
+      },
+      {
+        "chars": 5031,
+        "from": 2474044,
+        "to": 2479075
+      },
+      {
+        "chars": 4616,
+        "from": 352649,
+        "to": 357265
+      },
+      {
+        "chars": 4522,
+        "from": 2339958,
+        "to": 2344480
+      },
+      {
+        "chars": 4366,
+        "from": 1847020,
+        "to": 1851386
+      }
+    ]
+  },
+  "lengths": {
+    "median": 800,
+    "min": 51,
+    "max": 12057,
+    "too_short": [
+      "de-gmbhg-lutter-hommelhoff:rn:2017",
+      "de-gmbhg-lutter-hommelhoff:rn:2/36",
+      "de-gmbhg-lutter-hommelhoff:rn:3/51",
+      "de-gmbhg-lutter-hommelhoff:rn:3/76",
+      "de-gmbhg-lutter-hommelhoff:rn:4a/42",
+      "de-gmbhg-lutter-hommelhoff:rn:15/5",
+      "de-gmbhg-lutter-hommelhoff:rn:16/75",
+      "de-gmbhg-lutter-hommelhoff:rn:19/29",
+      "de-gmbhg-lutter-hommelhoff:rn:19/64",
+      "de-gmbhg-lutter-hommelhoff:rn:29/49",
+      "de-gmbhg-lutter-hommelhoff:rn:29/58",
+      "de-gmbhg-lutter-hommelhoff:rn:30/59",
+      "de-gmbhg-lutter-hommelhoff:rn:30/67",
+      "de-gmbhg-lutter-hommelhoff:rn:31/15",
+      "de-gmbhg-lutter-hommelhoff:rn:33/22"
+    ],
+    "too_long": [
+      "de-gmbhg-lutter-hommelhoff:rn:1981"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.84,
+    "footnotes_total": 13256,
+    "unparsed_blocks": 0,
+    "per_card_median": 2.0,
+    "cards_with_calls_but_no_notes": 52,
+    "notes_without_visible_call": 11138
+  },
+  "dead_pages": {
+    "pages": [
+      104,
+      105,
+      106,
+      107,
+      109,
+      110,
+      201,
+      202,
+      274,
+      288,
+      295,
+      324,
+      331,
+      341,
+      359,
+      450,
+      452,
+      453,
+      467,
+      938,
+      942,
+      1090,
+      1103,
+      1104,
+      1105,
+      1110,
+      1162,
+      1178,
+      1213,
+      1216,
+      1217,
+      1421,
+      2086,
+      2087,
+      2105
+    ],
+    "count": 35
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 77,
+      "2": 3903
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 2
+  },
+  "absorbed_units": 0,
+  "stops": []
+}
