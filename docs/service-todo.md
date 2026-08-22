@@ -924,3 +924,65 @@ Medicus/Lorenz Schuldrecht I (449).
 
 Второе, что мешало: кэши растров занимали 16 ГБ при 4.8 ГБ свободного диска.
 `books/*/cache/` воспроизводим и в `.gitignore` — чистится без сожалений.
+
+### Разведка сорока учебников (2026-08-22)
+
+Скрипт `de-pdf/inv/classify_textbooks.py` читает три полосы из середины каждой
+книги и сообщает полосу, кегль тела и число чисел, вынесенных за край набора.
+Текстовый слой есть у ВСЕХ сорока. Столбец «поля» — сколько номеров на полях
+нашлось на трёх полосах: 8 и больше значит, что книга режется по Randnummer,
+0–4 — что номеров нет и резать придётся по параграфу или полосе.
+
+| стр. | полоса | кегль | поля | книга |
+|---:|---|---|---:|---|
+| 570 | 453.6×680.4 | 10.46 | 15 | Medicus_Lorenz_Schuldrecht_II._Besonderer_Teil |
+| 627 | 453.5×680.3 | 8.53 | 15 | Looschelders, Schuldrecht. Allgemeiner Teil |
+| 632 | 481.9×680.4 | 10.2 | 14 | Hubner_Allgemeiner_Teil_des_Burgerlichen_Gesetzbuches |
+| 803 | 453.0×680.0 | 8.04 | 12 | Neuner - Allgemeiner Teil des Bürgerlichen Rechts (перевод) |
+| 521 | 439.4×666.1 | 9.0 | 11 | Besonderes Schuldrecht (Jan Dirk Harke (auth.)) |
+| 449 | 453.5×680.3 | 10.46 | 10 | Medicus_Lorenz_Schuldrecht_I._Allgemeiner_Teil |
+| 568 | 401.8×620.0 | 8.17 | 10 | Leipold_BGB_I_Einfuhrung_und_allgemeiner_Teil |
+| 522 | 439.0×652.0 | 9.48 | 9 | Leenen_BGB_Allgemeiner_Teil_Rechtsgeschaftslehre |
+| 451 | 453.5×680.3 | 9.6 | 8 | Allgemeiner Teil des BGB (Brox, Walker) |
+| 712 | 439.4×652.0 | 9.46 | 8 | BGB Allgemeiner Teil (Detlef Leenen, Martin Häublein) |
+| 481 | 439.4×666.1 | 9.96 | 8 | BGB Allgemeiner Teil (Burkhard Boemke, Bernhard Ulrici (auth.) |
+| 1375 | 595.0×841.9 | 9.76 | 7 | Baur Sturner Sachenrecht 18th edition |
+| 408 | 439.4×652.1 | 9.0 | 6 | Bengel_Simmerding_Grundbuch_Grundstueck_Grenze |
+| 528 | 439.4×666.1 | 9.84 | 6 | Sachenrecht (Hans Josef Wieling) - немецкий язык |
+| 529 | 439.4×666.1 | 9.84 | 6 | Wieling_Sachenrecht |
+| 620 | 439.4×657.6 | 9.75 | 6 | Brehm_Berger_Sachenrecht |
+| 965 | 439.4×666.1 | 10.0 | 5 | Oetker + Maultzsch - Договорное право - особенная часть (2018, 5 издание) |
+| 570 | 368.5×555.7 | 8.53 | 5 | Stadler, Allgemeiner Teil des BGB |
+| 575 | 365.7×555.7 | 8.53 | 5 | Brox, Walker, Allgemeines Schuldrecht |
+| 511 | 439.4×666.1 | 9.96 | 4 | Harke, Allgemeines Schuldrecht |
+| 709 | 408.0×656.0 | 8.5 | 4 | Schuldrecht. Besonderer Teil. 16. Auflage_en |
+| 910 | 612.0×792.0 | 14.4 | 4 | BGB-Schuldrecht Besonderer Teil, eBook |
+| 1113 | 481.9×680.3 | 9.4 | 4 | Wilhelm, Sachenrecht |
+| 1142 | 482.0×680.0 | 7.98 | 3 | Fikentscher,_Heinemann,_Schuldrecht_Allgemeiner_und_Besonderer_Teil |
+| 475 | 482.0×692.0 | 7.1 | 3 | Reich_Schmitz_Einfuhrung_in_das_Burgerliche_Recht |
+| 1166 | 496.0×714.0 | 9.75 | 3 | Oechsler - Обязательственное право |
+| 508 | 327.4×523.8 | 7.97 | 2 | Wolf_Sachenrecht_21_Aufl |
+| 212 | 420.0×631.2 | 9.36 | 2 | Gursky_Sachenrecht |
+| 686 | 418.4×657.3 | 10.81 | 2 | Larenz_Lehrbuch_des_Schuldrechts_I_Allgemeiner_Teil |
+| 619 | 439.4×666.1 | 10.0 | 1 | Zerres_Burgerliches_Recht |
+| 1540 | 482.0×680.0 | 7.98 | 1 | Wilhelm_Sachenrecht_7_Aufl. |
+| 560 | 406.4×643.4 | 9.16 | 0 | Larenz_Lehrbuch_des_Schuldrechts_II_Besonderer_Teil |
+| 10 | 595.3×841.9 | 10.0 | 0 | Wilsch_The_German_Grundbuchordnung |
+| 310 | 612.0×792.0 | 15.0 | 0 | Lohning - Schuldrecht_ii_besonderer |
+| 301 | 595.2×842.0 | 10.4 | 0 | Meder_Czelk_Grundwissen_Sachenrecht |
+| 20 | 468.0×728.0 | 9.0 | 0 | Wieling_Die_Grundbucheintragung |
+| 999 | 439.4×666.1 | 9.2 | 0 | Flume, Das Rechtsgeschäft |
+| 340 | 439.4×637.9 | 10.02 | 0 | Rehberg_BGB_AT |
+| 436 | 846.5×601.9 | 9.3 | 0 | Gernhuber, Das Schuldverhaltnis |
+| 596 | 261.1×429.1 | 6.7 | 0 | Gernhuber, Die Erfullung und ihre Surrogate |
+
+Три книги выпадают из ряда и требуют отдельной подготовки:
+
+* `Gernhuber, Das Schuldverhaltnis` — полоса 846.5×601.9, то есть РАЗВОРОТ
+  в альбомной ориентации: две полосы книги на одной полосе файла, их надо
+  разрезать до разбора;
+* `Gernhuber, Die Erfüllung und ihre Surrogate` — полоса 261×429 при кегле
+  5.5–6.7: файл обрезан по набору, полей нет вовсе;
+* `BGB-Schuldrecht Besonderer Teil, eBook` и `Löhning, Schuldrecht II` —
+  перевёрстанные электронные копии (612×792, кегль 14–15), печатной
+  колонцифры в них нет.
