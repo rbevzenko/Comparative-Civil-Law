@@ -1,314 +1,314 @@
 {
   "book": "/home/user/Comparative-Civil-Law/books/de-bgb-dannemann-1",
-  "cards": 7107,
+  "cards": 7088,
   "profile": "beck-nomos-en-v1",
   "method": "digital",
   "continuity": {
-    "share": 0.4959,
+    "share": 0.6365,
     "rows": 1269,
     "gaps": [
       {
         "family": "mn.",
-        "section": "12",
-        "from": 7,
-        "to": 13,
-        "missing": 5
+        "section": "312b",
+        "from": 489,
+        "to": 498,
+        "missing": 8
       },
       {
         "family": "mn.",
-        "section": "14",
-        "from": 10,
-        "to": 21,
-        "missing": 10
+        "section": "312b",
+        "from": 498,
+        "to": 502,
+        "missing": 3
       },
       {
         "family": "mn.",
-        "section": "113",
-        "from": 3,
-        "to": 5,
-        "missing": 1
+        "section": "312b",
+        "from": 503,
+        "to": 513,
+        "missing": 9
       },
       {
         "family": "mn.",
-        "section": "241",
-        "from": 4,
-        "to": 6,
-        "missing": 1
+        "section": "312b",
+        "from": 513,
+        "to": 521,
+        "missing": 7
       },
       {
         "family": "mn.",
-        "section": "241",
-        "from": 3,
-        "to": 5,
-        "missing": 1
-      },
-      {
-        "family": "mn.",
-        "section": "249",
-        "from": 88,
-        "to": 90,
-        "missing": 1
-      },
-      {
-        "family": "mn.",
-        "section": "286",
-        "from": 8,
-        "to": 10,
-        "missing": 1
-      },
-      {
-        "family": "mn.",
-        "section": "387",
-        "from": 14,
-        "to": 16,
-        "missing": 1
-      },
-      {
-        "family": "mn.",
-        "section": "426",
-        "from": 6,
-        "to": 8,
-        "missing": 1
-      },
-      {
-        "family": "mn.",
-        "section": "437",
-        "from": 2,
-        "to": 4,
-        "missing": 1
-      },
-      {
-        "family": "mn.",
-        "section": "444",
-        "from": 2,
-        "to": 4,
-        "missing": 1
-      },
-      {
-        "family": "mn.",
-        "section": "475",
-        "from": 2,
-        "to": 4,
-        "missing": 1
-      },
-      {
-        "family": "mn.",
-        "section": "611a",
-        "from": 7,
-        "to": 9,
-        "missing": 1
-      },
-      {
-        "family": "mn.",
-        "section": "613a",
-        "from": 3,
-        "to": 5,
-        "missing": 1
-      },
-      {
-        "family": "mn.",
-        "section": "626",
-        "from": 2,
-        "to": 22,
+        "section": "312b",
+        "from": 521,
+        "to": 541,
         "missing": 19
       },
       {
         "family": "mn.",
-        "section": "680",
-        "from": 5,
-        "to": 7,
-        "missing": 1
+        "section": "312b",
+        "from": 541,
+        "to": 553,
+        "missing": 11
       },
       {
         "family": "mn.",
-        "section": "709",
-        "from": 14,
-        "to": 16,
-        "missing": 1
+        "section": "312b",
+        "from": 553,
+        "to": 564,
+        "missing": 10
       },
       {
         "family": "mn.",
-        "section": "823",
-        "from": 46,
-        "to": 48,
-        "missing": 1
+        "section": "312b",
+        "from": 564,
+        "to": 581,
+        "missing": 16
       },
       {
         "family": "mn.",
-        "section": "906",
-        "from": 1,
-        "to": 3,
-        "missing": 1
+        "section": "312b",
+        "from": 581,
+        "to": 802,
+        "missing": 220
       },
       {
         "family": "mn.",
-        "section": "925",
-        "from": 6,
-        "to": 8,
-        "missing": 1
-      },
-      {
-        "family": "mn.",
-        "section": "930",
-        "from": 8,
-        "to": 10,
-        "missing": 1
-      },
-      {
-        "family": "mn.",
-        "section": "1029",
-        "from": 5,
-        "to": 8,
-        "missing": 2
-      },
-      {
-        "family": "mn.",
-        "section": "1029",
-        "from": 8,
-        "to": 10,
-        "missing": 1
-      },
-      {
-        "family": "mn.",
-        "section": "1029",
-        "from": 1,
-        "to": 6,
+        "section": "312b",
+        "from": 804,
+        "to": 809,
         "missing": 4
       },
       {
         "family": "mn.",
-        "section": "1029",
-        "from": 7,
-        "to": 9,
+        "section": "312b",
+        "from": 809,
+        "to": 816,
+        "missing": 6
+      },
+      {
+        "family": "mn.",
+        "section": "312b",
+        "from": 816,
+        "to": 833,
+        "missing": 16
+      },
+      {
+        "family": "mn.",
+        "section": "312b",
+        "from": 834,
+        "to": 846,
+        "missing": 11
+      },
+      {
+        "family": "mn.",
+        "section": "312b",
+        "from": 846,
+        "to": 857,
+        "missing": 10
+      },
+      {
+        "family": "mn.",
+        "section": "312b",
+        "from": 857,
+        "to": 906,
+        "missing": 48
+      },
+      {
+        "family": "mn.",
+        "section": "312b",
+        "from": 906,
+        "to": 913,
+        "missing": 6
+      },
+      {
+        "family": "mn.",
+        "section": "312b",
+        "from": 913,
+        "to": 915,
         "missing": 1
       },
       {
         "family": "mn.",
-        "section": "1296",
-        "from": 12,
-        "to": 30,
-        "missing": 17
+        "section": "312b",
+        "from": 916,
+        "to": 918,
+        "missing": 1
       },
       {
         "family": "mn.",
-        "section": "1296",
-        "from": 13,
-        "to": 22,
-        "missing": 8
+        "section": "312b",
+        "from": 918,
+        "to": 920,
+        "missing": 1
       },
       {
         "family": "mn.",
-        "section": "1296",
-        "from": 22,
-        "to": 40,
-        "missing": 17
+        "section": "312b",
+        "from": 920,
+        "to": 1023,
+        "missing": 102
       },
       {
         "family": "mn.",
-        "section": "1296",
-        "from": 40,
-        "to": 49,
-        "missing": 8
+        "section": "312b",
+        "from": 1023,
+        "to": 1025,
+        "missing": 1
       },
       {
         "family": "mn.",
-        "section": "1296",
-        "from": 49,
-        "to": 60,
-        "missing": 10
+        "section": "312b",
+        "from": 1025,
+        "to": 1028,
+        "missing": 2
+      },
+      {
+        "family": "mn.",
+        "section": "312b",
+        "from": 1028,
+        "to": 1034,
+        "missing": 5
+      },
+      {
+        "family": "mn.",
+        "section": "312b",
+        "from": 1034,
+        "to": 1054,
+        "missing": 19
+      },
+      {
+        "family": "mn.",
+        "section": "312b",
+        "from": 1054,
+        "to": 1061,
+        "missing": 6
+      },
+      {
+        "family": "mn.",
+        "section": "312b",
+        "from": 1061,
+        "to": 1064,
+        "missing": 2
+      },
+      {
+        "family": "mn.",
+        "section": "312b",
+        "from": 1064,
+        "to": 1199,
+        "missing": 134
+      },
+      {
+        "family": "mn.",
+        "section": "312b",
+        "from": 1199,
+        "to": 1204,
+        "missing": 4
+      },
+      {
+        "family": "mn.",
+        "section": "312b",
+        "from": 1204,
+        "to": 1207,
+        "missing": 2
+      },
+      {
+        "family": "mn.",
+        "section": "312b",
+        "from": 1210,
+        "to": 1254,
+        "missing": 43
       }
     ],
-    "gaps_total": 51,
-    "missing_total": 1225,
+    "gaps_total": 116,
+    "missing_total": 2725,
     "duplicates": [],
     "duplicates_total": 0,
     "by_family": {
-      "Vorspann": 151,
-      "mn.": 6956
+      "Vorspann": 9,
+      "mn.": 7079
     }
   },
   "coverage": {
-    "share": 0.9669,
-    "covered_chars": 6864841,
-    "book_chars": 7099930,
+    "share": 0.967,
+    "covered_chars": 6771497,
+    "book_chars": 7002887,
     "cards_without_offsets": 0,
     "biggest_holes": [
       {
-        "chars": 14345,
-        "from": 7074992,
-        "to": 7089337
+        "chars": 14315,
+        "from": 6978003,
+        "to": 6992318
       },
       {
-        "chars": 7325,
-        "from": 6599716,
-        "to": 6607041
+        "chars": 7307,
+        "from": 6503777,
+        "to": 6511084
       },
       {
         "chars": 5795,
-        "from": 1034300,
-        "to": 1040095
+        "from": 1021445,
+        "to": 1027240
       },
       {
-        "chars": 5513,
-        "from": 6645566,
-        "to": 6651079
+        "chars": 5501,
+        "from": 6549525,
+        "to": 6555026
       },
       {
-        "chars": 4427,
-        "from": 6589249,
-        "to": 6593676
+        "chars": 4415,
+        "from": 6493334,
+        "to": 6497749
       },
       {
-        "chars": 3843,
-        "from": 7053855,
-        "to": 7057698
+        "chars": 4301,
+        "from": 4910024,
+        "to": 4914325
       },
       {
-        "chars": 3788,
-        "from": 6641651,
-        "to": 6645439
+        "chars": 3837,
+        "from": 6956914,
+        "to": 6960751
       },
       {
-        "chars": 3534,
-        "from": 6689236,
-        "to": 6692770
+        "chars": 3776,
+        "from": 6545622,
+        "to": 6549398
       },
       {
-        "chars": 3429,
-        "from": 4796222,
-        "to": 4799651
+        "chars": 3528,
+        "from": 6593099,
+        "to": 6596627
       },
       {
-        "chars": 3294,
-        "from": 3420176,
-        "to": 3423470
+        "chars": 3397,
+        "from": 4726323,
+        "to": 4729720
       }
     ]
   },
   "lengths": {
-    "median": 636,
-    "min": 26,
-    "max": 40068,
+    "median": 629,
+    "min": 47,
+    "max": 39557,
     "too_short": [
-      "de-bgb-dannemann-1:mn:489",
-      "de-bgb-dannemann-1:mn:498",
-      "de-bgb-dannemann-1:mn:502",
-      "de-bgb-dannemann-1:mn:503",
-      "de-bgb-dannemann-1:mn:513",
-      "de-bgb-dannemann-1:mn:857",
-      "de-bgb-dannemann-1:mn:906",
-      "de-bgb-dannemann-1:mn:913",
-      "de-bgb-dannemann-1:mn:915",
-      "de-bgb-dannemann-1:mn:918",
-      "de-bgb-dannemann-1:mn:1199",
-      "de-bgb-dannemann-1:mn:1204",
-      "de-bgb-dannemann-1:mn:1208",
-      "de-bgb-dannemann-1:mn:1287",
-      "de-bgb-dannemann-1:mn:1304"
+      "de-bgb-dannemann-1:mn:312b/489",
+      "de-bgb-dannemann-1:mn:312b/498",
+      "de-bgb-dannemann-1:mn:312b/502",
+      "de-bgb-dannemann-1:mn:312b/503",
+      "de-bgb-dannemann-1:mn:312b/513",
+      "de-bgb-dannemann-1:mn:312b/857",
+      "de-bgb-dannemann-1:mn:312b/906",
+      "de-bgb-dannemann-1:mn:312b/913",
+      "de-bgb-dannemann-1:mn:312b/915",
+      "de-bgb-dannemann-1:mn:312b/918",
+      "de-bgb-dannemann-1:mn:312b/1199",
+      "de-bgb-dannemann-1:mn:312b/1204",
+      "de-bgb-dannemann-1:mn:312b/1208",
+      "de-bgb-dannemann-1:mn:312b/1287",
+      "de-bgb-dannemann-1:mn:312b/1304"
     ],
     "too_long": [
-      "de-bgb-dannemann-1:mn:2064",
-      "de-bgb-dannemann-1:mn:1998",
+      "de-bgb-dannemann-1:mn:312b/2064",
+      "de-bgb-dannemann-1:mn:312b/1998",
       "de-bgb-dannemann-1:mn:203/6",
       "de-bgb-dannemann-1:mn:308/8",
       "de-bgb-dannemann-1:mn:311c/1",
@@ -325,23 +325,26 @@
     ]
   },
   "footnotes": {
-    "cards_with_footnotes_share": 0.48,
-    "footnotes_total": 7890,
+    "cards_with_footnotes_share": 0.49,
+    "footnotes_total": 7900,
     "unparsed_blocks": 0,
-    "per_card_median": 0,
-    "cards_with_calls_but_no_notes": 1075,
-    "notes_without_visible_call": 2534
+    "per_card_median": 0.0,
+    "cards_with_calls_but_no_notes": 912,
+    "notes_without_visible_call": 1904
   },
   "dead_pages": {
     "pages": [
-      63,
       171,
+      294,
       513,
+      1118,
       1485,
       1682,
       1799,
       1984,
       2079,
+      2164,
+      2230,
       2231,
       2238,
       2242,
@@ -353,7 +356,7 @@
       2419,
       2420
     ],
-    "count": 18
+    "count": 21
   },
   "duplicate_pages": {
     "count": 0,
@@ -363,8 +366,8 @@
     "cards_without_hierarchy": 0,
     "sample": [],
     "depth_histogram": {
-      "1": 151,
-      "2": 6956
+      "1": 9,
+      "2": 7079
     }
   },
   "internal_refs": {
@@ -379,10 +382,10 @@
     "number_repairs": [],
     "number_guesses": [],
     "number_unreadable": [],
-    "issues_total": 104
+    "issues_total": 103
   },
   "absorbed_units": 24,
   "stops": [
-    "Непрерывность нумерации 49.6% < 98%: пропущено номеров 1225. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+    "Непрерывность нумерации 63.6% < 98%: пропущено номеров 2725. Паттерн местами не сработал, и эти куски книги в корпус не попали."
   ]
 }

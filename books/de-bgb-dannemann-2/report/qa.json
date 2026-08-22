@@ -1,0 +1,359 @@
+{
+  "book": "/home/user/Comparative-Civil-Law/books/de-bgb-dannemann-2",
+  "cards": 5577,
+  "profile": "beck-nomos-en-v1",
+  "method": "digital",
+  "continuity": {
+    "share": 0.6393,
+    "rows": 897,
+    "gaps": [
+      {
+        "family": "mn.",
+        "section": "1712",
+        "from": 479,
+        "to": 484,
+        "missing": 4
+      },
+      {
+        "family": "mn.",
+        "section": "1712",
+        "from": 484,
+        "to": 654,
+        "missing": 169
+      },
+      {
+        "family": "mn.",
+        "section": "1712",
+        "from": 655,
+        "to": 663,
+        "missing": 7
+      },
+      {
+        "family": "mn.",
+        "section": "1712",
+        "from": 663,
+        "to": 678,
+        "missing": 14
+      },
+      {
+        "family": "mn.",
+        "section": "1712",
+        "from": 678,
+        "to": 872,
+        "missing": 193
+      },
+      {
+        "family": "mn.",
+        "section": "1712",
+        "from": 873,
+        "to": 879,
+        "missing": 5
+      },
+      {
+        "family": "mn.",
+        "section": "1712",
+        "from": 879,
+        "to": 888,
+        "missing": 8
+      },
+      {
+        "family": "mn.",
+        "section": "1564",
+        "from": 6,
+        "to": 8,
+        "missing": 1
+      },
+      {
+        "family": "mn.",
+        "section": "1374",
+        "from": 2,
+        "to": 4,
+        "missing": 1
+      },
+      {
+        "family": "mn.",
+        "section": "1379",
+        "from": 6,
+        "to": 8,
+        "missing": 1
+      },
+      {
+        "family": "mn.",
+        "section": "1380",
+        "from": 4,
+        "to": 6,
+        "missing": 1
+      },
+      {
+        "family": "mn.",
+        "section": "1390",
+        "from": 6,
+        "to": 8,
+        "missing": 1
+      },
+      {
+        "family": "mn.",
+        "section": "1408",
+        "from": 5,
+        "to": 7,
+        "missing": 1
+      },
+      {
+        "family": "mn.",
+        "section": "1449",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "mn.",
+        "section": "1519",
+        "from": 3,
+        "to": 5,
+        "missing": 1
+      },
+      {
+        "family": "mn.",
+        "section": "1519",
+        "from": 5,
+        "to": 8,
+        "missing": 2
+      },
+      {
+        "family": "mn.",
+        "section": "1519",
+        "from": 42,
+        "to": 44,
+        "missing": 1
+      },
+      {
+        "family": "mn.",
+        "section": "1519",
+        "from": 1,
+        "to": 4,
+        "missing": 2
+      },
+      {
+        "family": "mn.",
+        "section": "1519",
+        "from": 4,
+        "to": 6,
+        "missing": 1
+      },
+      {
+        "family": "mn.",
+        "section": "1600d",
+        "from": 6,
+        "to": 9,
+        "missing": 2
+      },
+      {
+        "family": "mn.",
+        "section": "1611",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "mn.",
+        "section": "1757",
+        "from": 4,
+        "to": 6,
+        "missing": 1
+      },
+      {
+        "family": "mn.",
+        "section": "1766a",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "mn.",
+        "section": "1767",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "mn.",
+        "section": "1768",
+        "from": 1,
+        "to": 3,
+        "missing": 1
+      },
+      {
+        "family": "mn.",
+        "section": "1772",
+        "from": 2,
+        "to": 4,
+        "missing": 1
+      },
+      {
+        "family": "mn.",
+        "section": "1815",
+        "from": 3,
+        "to": 5,
+        "missing": 1
+      },
+      {
+        "family": "mn.",
+        "section": "1829",
+        "from": 6,
+        "to": 8,
+        "missing": 1
+      },
+      {
+        "family": "mn.",
+        "section": "1899",
+        "from": 2,
+        "to": 4,
+        "missing": 1
+      },
+      {
+        "family": "mn.",
+        "section": "1908c",
+        "from": 2,
+        "to": 5,
+        "missing": 2
+      }
+    ],
+    "gaps_total": 48,
+    "missing_total": 8205,
+    "duplicates": [],
+    "duplicates_total": 0,
+    "by_family": {
+      "Vorspann": 22,
+      "mn.": 5555
+    }
+  },
+  "coverage": {
+    "share": 0.9834,
+    "covered_chars": 4404459,
+    "book_chars": 4478586,
+    "cards_without_offsets": 0,
+    "biggest_holes": [
+      {
+        "chars": 4109,
+        "from": 3990556,
+        "to": 3994665
+      },
+      {
+        "chars": 3267,
+        "from": 2095188,
+        "to": 2098455
+      },
+      {
+        "chars": 2792,
+        "from": 371820,
+        "to": 374612
+      },
+      {
+        "chars": 2730,
+        "from": 1065794,
+        "to": 1068524
+      },
+      {
+        "chars": 2526,
+        "from": 4291202,
+        "to": 4293728
+      },
+      {
+        "chars": 2491,
+        "from": 610415,
+        "to": 612906
+      },
+      {
+        "chars": 2085,
+        "from": 1512769,
+        "to": 1514854
+      },
+      {
+        "chars": 1923,
+        "from": 3315656,
+        "to": 3317579
+      },
+      {
+        "chars": 1899,
+        "from": 2360078,
+        "to": 2361977
+      },
+      {
+        "chars": 1881,
+        "from": 1935073,
+        "to": 1936954
+      }
+    ]
+  },
+  "lengths": {
+    "median": 581,
+    "min": 55,
+    "max": 33849,
+    "too_short": [
+      "de-bgb-dannemann-2:mn:104",
+      "de-bgb-dannemann-2:mn:105",
+      "de-bgb-dannemann-2:mn:130",
+      "de-bgb-dannemann-2:mn:141",
+      "de-bgb-dannemann-2:mn:151",
+      "de-bgb-dannemann-2:mn:177",
+      "de-bgb-dannemann-2:mn:1712/663",
+      "de-bgb-dannemann-2:mn:1712/872",
+      "de-bgb-dannemann-2:mn:1712/879",
+      "de-bgb-dannemann-2:mn:1314/1",
+      "de-bgb-dannemann-2:mn:1357/3",
+      "de-bgb-dannemann-2:mn:1374/11",
+      "de-bgb-dannemann-2:mn:1375/11",
+      "de-bgb-dannemann-2:mn:1378/10",
+      "de-bgb-dannemann-2:mn:1380/6"
+    ],
+    "too_long": [
+      "de-bgb-dannemann-2:mn:1712/888",
+      "de-bgb-dannemann-2:mn:1896/55"
+    ]
+  },
+  "footnotes": {
+    "cards_with_footnotes_share": 0.54,
+    "footnotes_total": 6765,
+    "unparsed_blocks": 0,
+    "per_card_median": 1,
+    "cards_with_calls_but_no_notes": 815,
+    "notes_without_visible_call": 1566
+  },
+  "dead_pages": {
+    "pages": [
+      1269,
+      1420
+    ],
+    "count": 2
+  },
+  "duplicate_pages": {
+    "count": 0,
+    "pages": []
+  },
+  "hierarchy": {
+    "cards_without_hierarchy": 0,
+    "sample": [],
+    "depth_histogram": {
+      "1": 22,
+      "2": 5555
+    }
+  },
+  "internal_refs": {
+    "refs_total": 0,
+    "unresolved": 0,
+    "resolved_share": null,
+    "sample": []
+  },
+  "ocr": {
+    "weak_pages": 0,
+    "weak_sample": [],
+    "number_repairs": [],
+    "number_guesses": [],
+    "number_unreadable": [],
+    "issues_total": 13
+  },
+  "absorbed_units": 0,
+  "stops": [
+    "Непрерывность нумерации 63.9% < 98%: пропущено номеров 8205. Паттерн местами не сработал, и эти куски книги в корпус не попали."
+  ]
+}

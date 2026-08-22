@@ -1,0 +1,140 @@
+{
+  "number_issues": [
+    {
+      "raw": "17",
+      "action": "repaired_by_neighbours",
+      "to": 16,
+      "expected": 16,
+      "line": 8282,
+      "evidence": "предыдущий 15, следующий 17"
+    },
+    {
+      "raw": "2",
+      "action": "repaired_by_neighbours",
+      "to": 3,
+      "expected": 3,
+      "line": 20303,
+      "evidence": "предыдущий 2, следующий 4"
+    },
+    {
+      "raw": "3",
+      "action": "repaired_by_neighbours",
+      "to": 2,
+      "expected": 2,
+      "line": 27797,
+      "evidence": "предыдущий 1, следующий 3"
+    },
+    {
+      "raw": "36",
+      "action": "repaired_by_neighbours",
+      "to": 35,
+      "expected": 35,
+      "line": 27815,
+      "evidence": "предыдущий 34, следующий 36"
+    },
+    {
+      "raw": "7",
+      "action": "repaired_by_neighbours",
+      "to": 6,
+      "expected": 6,
+      "line": 33343,
+      "evidence": "предыдущий 5, следующий 7"
+    },
+    {
+      "raw": "16",
+      "action": "repaired_by_neighbours",
+      "to": 15,
+      "expected": 15,
+      "line": 33349,
+      "evidence": "предыдущий 14, следующий 16"
+    },
+    {
+      "raw": "7",
+      "action": "repaired_by_neighbours",
+      "to": 8,
+      "expected": 8,
+      "line": 56116,
+      "evidence": "предыдущий 7, следующий 9"
+    },
+    {
+      "raw": "27",
+      "action": "repaired_by_neighbours",
+      "to": 28,
+      "expected": 28,
+      "line": 56127,
+      "evidence": "предыдущий 27, следующий 29"
+    },
+    {
+      "raw": "2284",
+      "action": "repaired_by_neighbours",
+      "to": 2282,
+      "expected": 2282,
+      "line": 57815,
+      "evidence": "предыдущий 2281, следующий 2283"
+    },
+    {
+      "raw": "1821",
+      "action": "repaired_by_neighbours",
+      "to": 1822,
+      "expected": 1822,
+      "line": 58164,
+      "evidence": "предыдущий 1821, следующий 1823"
+    },
+    {
+      "raw": "3",
+      "action": "repaired_by_neighbours",
+      "to": 5,
+      "expected": 5,
+      "line": 58420,
+      "evidence": "предыдущий 4, следующий 6"
+    },
+    {
+      "raw": "2",
+      "action": "repaired_by_neighbours",
+      "to": 4,
+      "expected": 4,
+      "line": 58515,
+      "evidence": "предыдущий 3, следующий 5"
+    },
+    {
+      "raw": "2258",
+      "action": "repaired_by_neighbours",
+      "to": 2256,
+      "expected": 2256,
+      "line": 58788,
+      "evidence": "предыдущий 2255, следующий 2257"
+    }
+  ],
+  "absorbed_units": 0,
+  "sections_found": 958,
+  "toc_entries": 0,
+  "toc_anchored_to_line": 0,
+  "toc_page_only": 0,
+  "pages_without_lines": [
+    3,
+    7,
+    23,
+    29,
+    33,
+    34,
+    323,
+    565,
+    825,
+    864,
+    889,
+    1041,
+    1269,
+    1279,
+    1332,
+    1372,
+    1420,
+    1429,
+    1443,
+    1466,
+    1485,
+    1486,
+    1512
+  ],
+  "profile": "beck-nomos-en-v1",
+  "method": "digital"
+}
